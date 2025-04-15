@@ -1,0 +1,8 @@
+key: Column_g4cfbqwe
+type: Column
+props:
+  column:
+    primary: true
+  padding:
+    bottomValue:
+      inputValue: 4

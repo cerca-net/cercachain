@@ -1,0 +1,38 @@
+key: Row_y0j4w4ib
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_evenly
+    crossAxisAlignment: cross_axis_stretch
+    listSpacing: {}
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: UNEXPANDED
+    flexValue:
+      inputValue: 3
+      mostRecentInputValue: 3
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

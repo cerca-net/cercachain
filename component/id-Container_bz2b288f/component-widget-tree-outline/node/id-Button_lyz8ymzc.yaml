@@ -1,0 +1,65 @@
+key: Button_lyz8ymzc
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: u13iz43r
+      textValue:
+        inputValue: Share
+        mostRecentInputValue: Share
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    innerPadding:
+      leftValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      rightValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 10
+        iconDataValue:
+          inputValue:
+            codePoint: 58771
+            family: MaterialIcons
+            matchTextDirection: false
+            name: share
+  padding:
+    type: FF_PADDING_ALL
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

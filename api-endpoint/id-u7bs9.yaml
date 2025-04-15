@@ -1,0 +1,11 @@
+identifier:
+  name: walletconnect
+  key: u7bs9
+url: https://vmkiwrywmjgtvlncbbsy.supabase.co/functions/v1/wallet-connect
+callType: POST
+bodyType: JSON
+body: "{\n  \"walletAddress\": \"0x302Eee40d2D0521D459a579F3B3BF3d8dCCef38c\"\n}"
+headers:
+  - "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZta2l3cnl3bWpndHZsbmNiYnN5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE5Nzc5OTIsImV4cCI6MjA1NzU1Mzk5Mn0.mzGWSfBfq0KTD3cOcIBFGkAOCrloFs9ghzxPKi4EZ-w"
+endpointSettings:
+  escapeVariablesInRequestBody: true

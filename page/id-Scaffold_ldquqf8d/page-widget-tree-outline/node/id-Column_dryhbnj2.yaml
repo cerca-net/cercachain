@@ -1,0 +1,12 @@
+key: Column_dryhbnj2
+type: Column
+props:
+  column:
+    primary: true
+  padding:
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4

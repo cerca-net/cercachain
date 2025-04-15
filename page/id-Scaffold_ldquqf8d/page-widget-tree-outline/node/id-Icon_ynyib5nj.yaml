@@ -1,0 +1,36 @@
+key: Icon_ynyib5nj
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SUCCESS
+    iconDataValue:
+      inputValue:
+        codePoint: 983662
+        family: MaterialIcons
+        matchTextDirection: false
+        name: verified_rounded
+  padding:
+    rightValue:
+      inputValue: 12
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USERS_DATA_FIELD
+                    usersDataField:
+                      name: user_verified
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true

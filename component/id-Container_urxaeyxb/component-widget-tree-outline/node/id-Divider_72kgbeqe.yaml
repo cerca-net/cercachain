@@ -1,0 +1,24 @@
+key: Divider_72kgbeqe
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    indentValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    endIndentValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}

@@ -1,0 +1,6 @@
+rootAction:
+  key: rvnmaz00
+  action:
+    key: bls9rmh6
+trigger:
+  triggerType: ON_TAP

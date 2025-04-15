@@ -1,0 +1,12 @@
+key: RichText_yi37bpyx
+type: RichText
+props:
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

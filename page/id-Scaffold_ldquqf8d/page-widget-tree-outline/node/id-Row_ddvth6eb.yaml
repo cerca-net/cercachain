@@ -1,0 +1,7 @@
+key: Row_ddvth6eb
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_evenly
+  expanded:
+    expandedType: EXPANDED

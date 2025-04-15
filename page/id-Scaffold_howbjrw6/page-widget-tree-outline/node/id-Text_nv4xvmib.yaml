@@ -1,0 +1,27 @@
+key: Text_nv4xvmib
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: TITLE_SMALL
+    isCustomFont: false
+    translationIdentifier:
+      key: nyizwla2
+    textValue:
+      inputValue: Pago Movil
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+  padding:
+    type: FF_PADDING_ONLY
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

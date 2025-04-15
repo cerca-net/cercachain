@@ -1,0 +1,29 @@
+key: Container_wv5f8g3c
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 120
+      height:
+        pixelsValue:
+          inputValue: 46
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      borderWidthValue:
+        inputValue: 1
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: -1

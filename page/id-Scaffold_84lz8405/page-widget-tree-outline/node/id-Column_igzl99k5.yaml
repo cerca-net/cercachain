@@ -1,0 +1,13 @@
+key: Column_igzl99k5
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

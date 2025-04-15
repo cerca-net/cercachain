@@ -1,0 +1,43 @@
+key: Container_sa20d828
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+    maxDimensions: {}
+    minDimensions: {}
+  platformType: MATERIAL
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_hje1djg9
+            - inputValue:
+                serializedValue: Messages
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

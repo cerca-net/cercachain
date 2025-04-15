@@ -1,0 +1,18 @@
+key: Icon_o19tozvz
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 60692
+        family: MaterialIcons
+        matchTextDirection: false
+        name: supervised_user_circle_sharp

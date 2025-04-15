@@ -1,0 +1,25 @@
+key: Icon_5kn99ing
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    iconDataValue:
+      inputValue:
+        codePoint: 58627
+        family: MaterialIcons
+        matchTextDirection: false
+        name: radio_button_checked
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+parameterValues: {}

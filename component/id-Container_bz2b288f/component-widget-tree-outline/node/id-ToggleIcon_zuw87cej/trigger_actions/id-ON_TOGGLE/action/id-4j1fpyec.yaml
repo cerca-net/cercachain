@@ -1,0 +1,27 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        pins:
+          fieldIdentifier:
+            name: pins
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_UNION
+            value:
+              fieldIdentifier:
+                name: pins
+              variable:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USER_REFERENCE
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Column_h4tp6hnj
+key: 4j1fpyec

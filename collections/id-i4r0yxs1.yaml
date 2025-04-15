@@ -1,0 +1,38 @@
+identifier:
+  name: thread
+  key: i4r0yxs1
+fields:
+  user_ref:
+    identifier:
+      name: user_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  public_ref:
+    identifier:
+      name: public_ref
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  submission_ref:
+    identifier:
+      name: submission_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  object_thread:
+    identifier:
+      name: object_thread
+    dataType:
+      listType:
+        scalarType: String

@@ -1,0 +1,40 @@
+key: Icon_vvwcswcr
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 57882
+        family: MaterialIcons
+        matchTextDirection: false
+        name: edit
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  alignment:
+    xValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

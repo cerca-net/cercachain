@@ -1,0 +1,26 @@
+key: Text_3jaqsghe
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: c5oin773
+    textValue:
+      inputValue: Location Tags
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        value: "4279506971"
+      mostRecentInputValue:
+        value: "4279506971"
+    fontWeightValue:
+      inputValue: w500
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

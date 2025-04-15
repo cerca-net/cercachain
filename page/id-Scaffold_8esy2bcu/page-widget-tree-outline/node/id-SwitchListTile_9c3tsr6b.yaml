@@ -1,0 +1,74 @@
+key: SwitchListTile_9c3tsr6b
+type: SwitchListTile
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  switchListTile:
+    title:
+      themeStyle: BODY_LARGE
+      translationIdentifier:
+        key: mdkbf5i3
+      textValue:
+        inputValue: Order Notifications
+      heightValue:
+        inputValue: 2
+        mostRecentInputValue: 2
+    subtitle:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: cxxpnl3g
+      textValue:
+        inputValue: Receive email notifications from our marketing team about new features.
+        mostRecentInputValue: Receive email notifications from our marketing team about new features.
+      colorValue:
+        inputValue:
+          value: "4287338402"
+        mostRecentInputValue:
+          value: "4287338402"
+    contentPadding:
+      type: FF_PADDING_ONLY
+      leftValue:
+        inputValue: 24
+        mostRecentInputValue: 24
+      topValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      rightValue:
+        inputValue: 24
+        mostRecentInputValue: 24
+      bottomValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    initialValueValue:
+      inputValue: true
+      mostRecentInputValue: true
+    tileColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    activeColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    activeTrackColorValue:
+      inputValue:
+        themeColor: ACCENT_1
+      mostRecentInputValue:
+        themeColor: ACCENT_1
+  platformType: ADAPTIVE
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

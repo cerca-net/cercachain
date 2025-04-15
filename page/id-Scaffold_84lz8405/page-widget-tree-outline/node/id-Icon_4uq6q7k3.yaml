@@ -1,0 +1,20 @@
+key: Icon_4uq6q7k3
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4281979584"
+      mostRecentInputValue:
+        value: "4281979584"
+    iconDataValue:
+      inputValue:
+        codePoint: 60979
+        family: MaterialIcons
+        matchTextDirection: false
+        name: account_balance_wallet_outlined
+  responsiveVisibility: {}
+parameterValues: {}

@@ -1,0 +1,13 @@
+key: Stack_vcylkywt
+type: Stack
+props:
+  stack:
+    dimensions: {}
+    childAlignment:
+      xValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      yValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+  responsiveVisibility: {}

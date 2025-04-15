@@ -1,0 +1,119 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: transactions
+      key: zqx5emk4
+    write:
+      updates:
+        user_madeby:
+          fieldIdentifier:
+            name: user_madeby
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: user_ref
+            nodeKeyRef:
+              key: Column_enujka9q
+        user_madeto:
+          fieldIdentifier:
+            name: user_madeto
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: publicuser_ref
+            nodeKeyRef:
+              key: Column_enujka9q
+        total_ref_value_transaction:
+          fieldIdentifier:
+            name: total_ref_value_transaction
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: total_ref_value
+            nodeKeyRef:
+              key: Column_enujka9q
+        w_method:
+          fieldIdentifier:
+            name: w_method
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: wallet_method
+            nodeKeyRef:
+              key: Column_enujka9q
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        order_ref:
+          fieldIdentifier:
+            name: order_ref
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  documentProperty: REFERENCE
+            nodeKeyRef:
+              key: Column_enujka9q
+        o_method:
+          fieldIdentifier:
+            name: o_method
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: order_method
+            nodeKeyRef:
+              key: Column_enujka9q
+        userOut:
+          fieldIdentifier:
+            name: userOut
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: publicusername
+            nodeKeyRef:
+              key: Column_enujka9q
+        UserIn:
+          fieldIdentifier:
+            name: UserIn
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: username
+            nodeKeyRef:
+              key: Column_enujka9q
+key: phhqi38s

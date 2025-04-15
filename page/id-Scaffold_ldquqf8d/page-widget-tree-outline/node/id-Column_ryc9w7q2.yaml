@@ -1,0 +1,19 @@
+key: Column_ryc9w7q2
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    crossAxisAlignment: cross_axis_start
+    primary: true
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

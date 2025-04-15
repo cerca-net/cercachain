@@ -1,0 +1,48 @@
+rootAction:
+  key: ujp5mich
+  conditionActions:
+    falseAction:
+      key: bajfd8n6
+      action:
+        key: sk08wt1a
+      followUpAction:
+        key: qhzn2kak
+        action:
+          key: zflo6vqa
+        followUpAction:
+          key: p5mpqk0c
+          action:
+            key: z5gdj1xy
+          followUpAction:
+            key: ujyh3pra
+            action:
+              key: pg2nhphq
+    trueActions:
+      - condition:
+          variable:
+            source: LOCAL_STATE
+            baseVariable:
+              localState:
+                fieldIdentifier:
+                  name: isBagOpen
+                  key: f6e29ntg
+                stateVariableType: APP_STATE
+        trueAction:
+          key: 74wosxqf
+          action:
+            key: fhnqdhcc
+          followUpAction:
+            key: wjbmvt8q
+            action:
+              key: ko8ypwmp
+            followUpAction:
+              key: lgtgl47j
+              action:
+                key: 3ayc1qmi
+              followUpAction:
+                key: jo4pvfi4
+                action:
+                  key: vlrd6s3u
+    hasMultiConditions: false
+trigger:
+  triggerType: ON_TAP

@@ -1,0 +1,124 @@
+key: ChoiceChips_53bpqzfa
+type: ChoiceChips
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: ahih9kc1
+          textValue:
+            inputValue: Option 1
+      - label:
+          translationIdentifier:
+            key: m7w9n0s9
+          textValue:
+            inputValue: Option 2
+      - label:
+          translationIdentifier:
+            key: kglak0b4
+          textValue:
+            inputValue: Option 3
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 10
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    childAlignment: wrap_space_around
+    disabled:
+      disabledValue:
+        variable:
+          source: FUNCTION_CALL
+          functionCall:
+            values:
+              - variable:
+                  source: FIREBASE_AUTH_USER
+                  baseVariable:
+                    auth:
+                      property: USERS_DATA_FIELD
+                      usersDataField:
+                        name: user_occupations
+                  operations:
+                    - listHasValueOperation: {}
+              - {}
+            condition:
+              relation: EXISTS_AND_NON_EMPTY
+        mostRecentInputValue: false
+    chipSpacingValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rowSpacingValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+    optionsVariable:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USERS_DATA_FIELD
+          usersDataField:
+            name: user_occupations
+      operations:
+        - listTakeOperation:
+            count:
+              inputValue:
+                serializedValue: "3"
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

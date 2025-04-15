@@ -1,0 +1,60 @@
+key: RichTextSpan_n2yb2olf
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: qfimaocr
+      textValue:
+        variable:
+          source: FUNCTION_CALL
+          functionCall:
+            conditionalValue:
+              ifConditionalValues:
+                - condition:
+                    source: FUNCTION_CALL
+                    functionCall:
+                      values:
+                        - variable:
+                            source: FIREBASE_AUTH_USER
+                            baseVariable:
+                              auth:
+                                property: USERS_DATA_FIELD
+                                usersDataField:
+                                  name: user_verified
+                        - inputValue:
+                            serializedValue: "true"
+                      condition:
+                        relation: EQUAL_TO
+                  value:
+                    inputValue:
+                      serializedValue: verified
+                - condition:
+                    source: FUNCTION_CALL
+                    functionCall:
+                      values:
+                        - variable:
+                            source: FIREBASE_AUTH_USER
+                            baseVariable:
+                              auth:
+                                property: USERS_DATA_FIELD
+                                usersDataField:
+                                  name: user_verified_pending
+                        - inputValue:
+                            serializedValue: "true"
+                      condition:
+                        relation: EQUAL_TO
+                  value:
+                    inputValue:
+                      serializedValue: pending
+              elseValue:
+                inputValue:
+                  serializedValue: not verified
+              returnParameter:
+                dataType:
+                  scalarType: String
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY

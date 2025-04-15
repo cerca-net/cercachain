@@ -1,0 +1,145 @@
+key: ChoiceChips_pzi791gz
+type: ChoiceChips
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: oc4jddhx
+          textValue:
+            inputValue: Option 1
+      - label:
+          translationIdentifier:
+            key: ldnaya7j
+          textValue:
+            inputValue: Option 2
+      - label:
+          translationIdentifier:
+            key: 6rekko00
+          textValue:
+            inputValue: Option 3
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    childAlignment: wrap_center
+    chipSpacingValue:
+      inputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+    requireSelectionValue:
+      inputValue: true
+    wrappedValue:
+      inputValue: false
+    optionsVariable:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - listMapOperation:
+            listMapVariable:
+              source: LIST_MAP
+              baseVariable:
+                listMap:
+                  containingParentReturnParameter:
+                    dataType:
+                      listType:
+                        scalarType: Document
+                      subType:
+                        collectionIdentifier:
+                          name: order_methods
+                          key: t9fp60ga
+              operations:
+                - accessDocumentField:
+                    fieldIdentifier:
+                      name: method_type
+        - listSortOperation:
+            sortKey:
+              source: LIST_MAP
+              baseVariable:
+                listMap:
+                  containingParentReturnParameter:
+                    identifier:
+                      name: method_type
+                    dataType:
+                      listType:
+                        scalarType: String
+            isDescending: true
+      nodeKeyRef:
+        key: ChoiceChips_pzi791gz
+name: ChoiceChipsORDERMETHODS
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: order_methods
+          key: t9fp60ga
+  firestore:
+    collectionIdentifier:
+      name: order_methods
+      key: t9fp60ga
+    hideOnEmpty: false
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: method_poster
+            relation: EQUAL_TO
+            variable:
+              source: FIRESTORE_REQUEST
+              baseVariable:
+                firestore: {}
+              operations:
+                - accessDocumentField:
+                    documentProperty: REFERENCE
+              nodeKeyRef:
+                key: Scaffold_x7vnv3sg

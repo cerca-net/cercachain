@@ -1,0 +1,85 @@
+key: Container_g6fjiufc
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 500
+          mostRecentInputValue: 500
+      height:
+        pixelsValue:
+          inputValue: 460
+          mostRecentInputValue: 460
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        topRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions:
+      width:
+        pixelsValue:
+          inputValue: 570
+          mostRecentInputValue: 570
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: UNEXPANDED
+  platformType: MATERIAL
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_n3bkrvda
+            - inputValue:
+                serializedValue: Book
+          condition:
+            relation: EQUAL_TO
+        uiBuilderValue:
+          serializedValue: "true"
+      mostRecentInputValue: false
+  responsiveVisibility:
+    phoneHidden: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+name: cardbook
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,23 @@
+key: Icon_il1596ml
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 61734
+        family: FontAwesomeSolid
+        package: font_awesome_flutter
+        matchTextDirection: false
+        packageIcon:
+          fontAwesome: codeBranch
+        name: codeBranch
+  responsiveVisibility: {}
+parameterValues: {}

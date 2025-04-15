@@ -1,0 +1,71 @@
+key: StaggeredView_j61kybgg
+type: ListView
+props:
+  listView:
+    axis: FF_AXIS_VERTICAL
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+    shrinkWrapValue:
+      inputValue: true
+  padding:
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    orderBy:
+      - collectionFieldIdentifier:
+          name: date
+        descending: true
+    hideOnEmpty: false
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: poster
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: type_object
+            relation: EQUAL_TO
+            inputValue:
+              serializedValue: Item
+      isAnd: true
+  requestManagerSettings:
+    useRequestManager: false
+parameterValues: {}
+valueKey: {}

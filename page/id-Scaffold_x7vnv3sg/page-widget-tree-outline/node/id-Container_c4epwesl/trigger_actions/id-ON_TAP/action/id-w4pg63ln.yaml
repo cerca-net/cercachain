@@ -1,0 +1,8 @@
+key: w4pg63ln
+tabBar:
+  type: JUMP_TO
+  animateToIndex:
+    inputValue:
+      serializedValue: "3"
+  tabBarNodeKeyRef:
+    key: TabBar_1tthmuzt

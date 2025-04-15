@@ -1,0 +1,16 @@
+key: RichText_c0b0dlaz
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

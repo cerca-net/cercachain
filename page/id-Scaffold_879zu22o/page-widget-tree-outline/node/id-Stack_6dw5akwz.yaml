@@ -1,0 +1,10 @@
+key: Stack_6dw5akwz
+type: Stack
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  stack:
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 220

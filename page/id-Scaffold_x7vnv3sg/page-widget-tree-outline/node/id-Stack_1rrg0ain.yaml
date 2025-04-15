@@ -1,0 +1,39 @@
+key: Stack_1rrg0ain
+type: Stack
+props:
+  stack:
+    dimensions: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: analytics
+          key: lv8h14dw
+  firestore:
+    collectionIdentifier:
+      name: analytics
+      key: lv8h14dw
+    hideOnEmpty: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: user_ref
+            relation: EQUAL_TO
+            variable:
+              source: FIRESTORE_REQUEST
+              baseVariable:
+                firestore: {}
+              operations:
+                - accessDocumentField:
+                    documentProperty: REFERENCE
+              nodeKeyRef:
+                key: Scaffold_x7vnv3sg
+valueKey: {}

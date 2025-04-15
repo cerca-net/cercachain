@@ -1,0 +1,17 @@
+key: Container_xmgpcday
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8

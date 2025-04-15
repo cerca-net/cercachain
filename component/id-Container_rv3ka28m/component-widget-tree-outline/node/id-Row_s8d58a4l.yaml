@@ -1,0 +1,15 @@
+key: Row_s8d58a4l
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    minSizeValue:
+      inputValue: true
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 4
+    rightValue:
+      inputValue: 4
+  expanded:
+    expandedType: UNEXPANDED

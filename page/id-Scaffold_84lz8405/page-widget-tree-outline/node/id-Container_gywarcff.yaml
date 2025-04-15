@@ -1,0 +1,16 @@
+key: Container_gywarcff
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 500
+    boxDecoration: {}
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 3
+  responsiveVisibility:
+    desktopHidden: true
+name: FEEDCONTAINER

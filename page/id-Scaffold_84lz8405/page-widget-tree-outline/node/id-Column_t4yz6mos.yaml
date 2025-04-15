@@ -1,0 +1,13 @@
+key: Column_t4yz6mos
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    primary: true
+    listSpacing: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

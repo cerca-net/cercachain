@@ -1,0 +1,18 @@
+key: Divider_u7eq9nna
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    indentValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    endIndentValue:
+      inputValue: 20
+      mostRecentInputValue: 20

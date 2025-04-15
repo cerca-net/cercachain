@@ -1,0 +1,14 @@
+key: RichTextSpan_g8m0szz5
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: y3cebvy3
+      textValue:
+        inputValue: User & Profile
+      fontSizeValue:
+        inputValue: 22
+        mostRecentInputValue: 22
+parameterValues: {}

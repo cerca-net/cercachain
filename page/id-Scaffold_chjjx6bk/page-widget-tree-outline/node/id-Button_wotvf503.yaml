@@ -1,0 +1,71 @@
+key: Button_wotvf503
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: vg5kkj61
+      textValue:
+        inputValue: Set location image
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderWidthValue:
+      inputValue: 1
+    iconValue:
+      inputValue:
+        iconDataValue:
+          inputValue:
+            codePoint: 63526
+            family: MaterialIcons
+            matchTextDirection: false
+            name: ios_share_rounded
+    iconPosition: TRAILING
+  padding: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: zj655t7m
+                nodeKeyRef:
+                  key: Button_wotvf503
+            - {}
+          condition:
+            relation: DOES_NOT_EXIST_OR_IS_EMPTY
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

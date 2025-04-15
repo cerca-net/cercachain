@@ -1,0 +1,48 @@
+key: Image_lwpqcbe2
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    borderRadius:
+      type: FF_BORDER_RADIUS_ONLY
+      topLeftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      topRightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    useBlurHash: false
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: banner
+        nodeKeyRef:
+          key: Scaffold_x7vnv3sg
+      mostRecentInputValue: https://picsum.photos/seed/583/600
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

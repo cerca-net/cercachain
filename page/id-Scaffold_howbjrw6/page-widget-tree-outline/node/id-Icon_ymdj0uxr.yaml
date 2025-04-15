@@ -1,0 +1,26 @@
+key: Icon_ymdj0uxr
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    iconDataValue:
+      inputValue:
+        codePoint: 57847
+        family: MaterialIcons
+        matchTextDirection: false
+        name: done_all
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

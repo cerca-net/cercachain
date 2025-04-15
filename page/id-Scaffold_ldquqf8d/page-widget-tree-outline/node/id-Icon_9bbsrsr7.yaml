@@ -1,0 +1,42 @@
+key: Icon_9bbsrsr7
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: ACCENT_1
+    iconDataValue:
+      inputValue:
+        codePoint: 58438
+        family: MaterialIcons
+        matchTextDirection: false
+        name: not_interested
+  padding:
+    rightValue:
+      inputValue: 12
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USERS_DATA_FIELD
+                    usersDataField:
+                      name: user_verified
+            - inputValue:
+                serializedValue: "false"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

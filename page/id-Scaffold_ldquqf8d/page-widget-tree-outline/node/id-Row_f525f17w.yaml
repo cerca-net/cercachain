@@ -1,0 +1,7 @@
+key: Row_f525f17w
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_evenly
+  expanded:
+    expandedType: EXPANDED

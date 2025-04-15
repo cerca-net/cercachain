@@ -1,0 +1,22 @@
+key: Icon_nku8iu1d
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 983875
+        family: MaterialIcons
+        matchTextDirection: false
+        name: key_rounded
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

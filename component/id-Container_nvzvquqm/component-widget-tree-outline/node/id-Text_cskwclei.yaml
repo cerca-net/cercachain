@@ -1,0 +1,47 @@
+key: Text_cskwclei
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 67n3uccs
+    selectable: false
+    textValue:
+      inputValue: Username
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  alignment:
+    xValue:
+      inputValue: -1
+      mostRecentInputValue: -1
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

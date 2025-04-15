@@ -1,0 +1,29 @@
+key: Text_psg7ypj9
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: fdajd74w
+    textValue:
+      inputValue: "Status :"
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

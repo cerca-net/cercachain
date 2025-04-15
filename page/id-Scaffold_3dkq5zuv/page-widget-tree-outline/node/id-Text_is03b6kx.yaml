@@ -1,0 +1,18 @@
+key: Text_is03b6kx
+type: Text
+props:
+  text:
+    themeStyle: BODY_SMALL
+    translationIdentifier:
+      key: h3e8ln02
+    selectable: false
+    textValue:
+      inputValue: Due
+      mostRecentInputValue: Due
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+parameterValues: {}

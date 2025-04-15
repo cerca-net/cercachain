@@ -1,0 +1,204 @@
+projectConfig:
+  enabled: true
+  supabaseUrl:
+    inputValue:
+      serializedValue: https://vmkiwrywmjgtvlncbbsy.supabase.co
+  anonKey:
+    inputValue:
+      serializedValue: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZta2l3cnl3bWpndHZsbmNiYnN5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE5Nzc5OTIsImV4cCI6MjA1NzU1Mzk5Mn0.mzGWSfBfq0KTD3cOcIBFGkAOCrloFs9ghzxPKi4EZ-w
+databaseConfig:
+  tables:
+    - identifier:
+        name: wallets
+      fields:
+        - identifier:
+            name: id
+          type:
+            dataType:
+              scalarType: String
+          isPrimaryKey: true
+          hasDefault: true
+          isRequired: true
+          description: "Note:\nThis is a Primary Key.<pk\/>"
+          postgresType: uuid
+        - identifier:
+            name: user_id
+          type:
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: false
+          postgresType: uuid
+        - identifier:
+            name: public_adress
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: false
+          postgresType: text
+        - identifier:
+            name: network
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          hasDefault: true
+          isRequired: false
+          postgresType: text
+        - identifier:
+            name: created_at
+          type:
+            dataType:
+              scalarType: DateTime
+          hasDefault: true
+          isRequired: true
+          postgresType: timestamp with time zone
+      isView: false
+    - identifier:
+        name: profiles
+      fields:
+        - identifier:
+            name: id
+          type:
+            dataType:
+              scalarType: Integer
+          isPrimaryKey: true
+          hasDefault: false
+          isRequired: true
+          description: "Note:\nThis is a Primary Key.<pk\/>"
+          postgresType: bigint
+        - identifier:
+            name: wallet_address
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: false
+          postgresType: text
+        - identifier:
+            name: user_id
+          type:
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: false
+          postgresType: uuid
+        - identifier:
+            name: created_at
+          type:
+            dataType:
+              scalarType: DateTime
+          hasDefault: true
+          isRequired: false
+          postgresType: timestamp with time zone
+      isView: false
+    - identifier:
+        name: moralisStreams
+      fields:
+        - identifier:
+            name: hash
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          isPrimaryKey: true
+          hasDefault: false
+          isRequired: true
+          description: "Note:\nThis is a Primary Key.<pk\/>"
+          postgresType: text
+        - identifier:
+            name: value
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: true
+          postgresType: text
+        - identifier:
+            name: from
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: false
+          postgresType: text
+        - identifier:
+            name: to
+          type:
+            allowedDestinationTypes:
+              - String
+              - ImagePath
+              - VideoPath
+              - AudioPath
+              - MediaPath
+            dataType:
+              scalarType: String
+          hasDefault: false
+          isRequired: false
+          postgresType: text
+      isView: false
+    - identifier:
+        name: users
+      fields:
+        - identifier:
+            name: id
+          type:
+            dataType:
+              scalarType: String
+          isPrimaryKey: true
+          hasDefault: true
+          isRequired: true
+          description: "Note:\nThis is a Primary Key.<pk\/>"
+          postgresType: uuid
+        - identifier:
+            name: wallet_address
+          type:
+            dataType:
+              scalarType: JSON
+          hasDefault: false
+          isRequired: true
+          postgresType: jsonb
+        - identifier:
+            name: created_at
+          type:
+            dataType:
+              scalarType: DateTime
+          hasDefault: true
+          isRequired: false
+          postgresType: timestamp with time zone
+      isView: false

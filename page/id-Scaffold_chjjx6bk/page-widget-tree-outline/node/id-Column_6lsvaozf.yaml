@@ -1,0 +1,26 @@
+key: Column_6lsvaozf
+type: Column
+props:
+  column:
+    primary: true
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

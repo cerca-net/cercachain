@@ -1,0 +1,71 @@
+key: Image_xwewhpd2
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 40
+      height:
+        pixelsValue:
+          inputValue: 40
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      topRightValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      bottomLeftValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      bottomRightValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      allValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: WIDGET_STATE
+        baseVariable:
+          widgetState:
+            actionType: UPLOAD_DATA_URL
+            actionKeyRef:
+              key: rw718y55
+        nodeKeyRef:
+          key: IconButton_rfmrs2m0
+      mostRecentInputValue: https://images.unsplash.com/photo-1505033575518-a36ea2ef75ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHVzZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    topValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    rightValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    bottomValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    allValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

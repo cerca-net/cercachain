@@ -1,0 +1,69 @@
+key: ChoiceChips_9tpk74qq
+type: ChoiceChips
+props:
+  expanded:
+    expandedType: EXPANDED
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: yqgnkeui
+          textValue:
+            inputValue: Option 1
+      - label:
+          translationIdentifier:
+            key: 552g899c
+          textValue:
+            inputValue: Option 2
+      - label:
+          translationIdentifier:
+            key: w9yzcqru
+          textValue:
+            inputValue: Option 3
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+    wrappedValue:
+      inputValue: true

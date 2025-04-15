@@ -1,0 +1,29 @@
+key: Row_zaguy45y
+type: Row
+props:
+  row:
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+    topValue:
+      inputValue: 4
+    rightValue:
+      inputValue: 16
+    bottomValue:
+      inputValue: 8
+    allValue:
+      inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

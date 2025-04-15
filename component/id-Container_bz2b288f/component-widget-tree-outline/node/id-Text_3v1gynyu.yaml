@@ -1,0 +1,33 @@
+key: Text_3v1gynyu
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: 8nil7t5u
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: submitter
+        nodeKeyRef:
+          key: Column_h4tp6hnj
+    fontSizeValue:
+      inputValue: 14
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

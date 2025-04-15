@@ -1,0 +1,10 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: zyqpw
+      setValue:
+        inputValue:
+          serializedValue: "true"
+  updateType: WIDGET
+  stateVariableType: WIDGET_CLASS_STATE
+key: 1hc5n7by

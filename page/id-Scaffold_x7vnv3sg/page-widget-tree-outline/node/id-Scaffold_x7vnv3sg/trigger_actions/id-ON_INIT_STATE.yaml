@@ -1,0 +1,10 @@
+rootAction:
+  key: rcsbawon
+  action:
+    key: b592kwo5
+  followUpAction:
+    key: 2021bcuq
+    action:
+      key: bazm3z23
+trigger:
+  triggerType: ON_INIT_STATE

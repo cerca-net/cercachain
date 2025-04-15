@@ -1,0 +1,16 @@
+key: Container_b1rhcdtu
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    boxDecoration: {}
+  expanded:
+    expandedType: UNEXPANDED

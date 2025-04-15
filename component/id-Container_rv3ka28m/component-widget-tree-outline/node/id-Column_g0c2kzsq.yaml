@@ -1,0 +1,49 @@
+key: Column_g0c2kzsq
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  document:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    reference:
+      source: WIDGET_CLASS_PARAMETER
+      baseVariable:
+        widgetClass:
+          paramIdentifier:
+            name: object
+            key: nghtv2
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Container_rv3ka28m
+    singleTimeQuery: false
+  requestManagerSettings:
+    useRequestManager: true
+    scope: WIDGET_CLASS
+    managerIdentifier:
+      key: mwx3682z

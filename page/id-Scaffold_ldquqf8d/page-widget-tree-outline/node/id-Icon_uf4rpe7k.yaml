@@ -1,0 +1,15 @@
+key: Icon_uf4rpe7k
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SUCCESS
+    iconDataValue:
+      inputValue:
+        codePoint: 57496
+        family: MaterialIcons
+        matchTextDirection: false
+        name: arrow_drop_down

@@ -1,0 +1,10 @@
+key: Column_yu80e8sf
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8

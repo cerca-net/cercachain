@@ -1,0 +1,13 @@
+key: Row_095tx45f
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_center
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    leftValue:
+      inputValue: 16
+    rightValue:
+      inputValue: 16

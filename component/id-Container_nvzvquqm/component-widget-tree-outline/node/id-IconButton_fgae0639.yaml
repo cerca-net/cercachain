@@ -1,0 +1,55 @@
+key: IconButton_fgae0639
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+        mostRecentInputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+          mostRecentInputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 57706
+            family: MaterialIcons
+            matchTextDirection: false
+            name: close
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

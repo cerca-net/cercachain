@@ -1,0 +1,11 @@
+key: Row_8j2dar25
+type: Row
+props:
+  row:
+    listSpacing: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,90 @@
+key: Text_8cf1itm9
+type: Text
+props:
+  text:
+    themeStyle: LABEL_SMALL
+    translationIdentifier:
+      key: xxl7gla5
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: date
+          - dateTimeFormat:
+              format: relative
+              isCustom: false
+        nodeKeyRef:
+          key: Column_g0c2kzsq
+      mostRecentInputValue: 2h
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  alignment:
+    xValue:
+      inputValue: -1
+      mostRecentInputValue: -1
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: editing
+                      key: gd9af
+                    stateVariableType: WIDGET_CLASS_STATE
+                nodeKeyRef:
+                  key: Container_rv3ka28m
+            - inputValue:
+                serializedValue: "false"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+animations:
+  - trigger: ON_ACTION_TRIGGER
+    effects:
+      - curve: EASE_IN_OUT
+        fade:
+          begin:
+            inputValue:
+              serializedValue: "1"
+          end:
+            inputValue:
+              serializedValue: "0"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "600"
+    applyInitialState: true
+valueKey: {}

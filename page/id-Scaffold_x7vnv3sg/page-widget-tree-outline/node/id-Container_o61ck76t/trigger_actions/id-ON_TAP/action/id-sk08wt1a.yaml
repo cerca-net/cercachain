@@ -1,0 +1,8 @@
+animation:
+  animationType: WIDGET_ANIMATION_ACTION
+  widgetAnimation:
+    actionType: START_ANIMATION
+    animationNodeKeyRef:
+      key: Container_juof9b14
+key: sk08wt1a
+nonBlocking: true

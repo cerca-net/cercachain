@@ -1,0 +1,44 @@
+key: Text_5aw8r619
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: mr7feod2
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: object_refvalue
+        nodeKeyRef:
+          key: Column_h4tp6hnj
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding: {}
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: iteminfo
+              key: lucd3
+            stateVariableType: WIDGET_CLASS_STATE
+        operations:
+          - negate: {}
+        nodeKeyRef:
+          key: Container_bz2b288f
+        uiBuilderValue:
+          serializedValue: "true"
+      mostRecentInputValue: true

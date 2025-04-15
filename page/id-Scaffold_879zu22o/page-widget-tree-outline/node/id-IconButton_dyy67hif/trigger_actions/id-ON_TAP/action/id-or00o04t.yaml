@@ -1,0 +1,104 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        banner:
+          fieldIdentifier:
+            name: banner
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                actionType: UPLOAD_DATA_URL
+                actionKeyRef:
+                  key: z6186lww
+            nodeKeyRef:
+              key: Container_v63i6fm5
+        profile_picture:
+          fieldIdentifier:
+            name: profile_picture
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                actionType: UPLOAD_DATA_URL
+                actionKeyRef:
+                  key: fhqgrjj2
+            nodeKeyRef:
+              key: Container_82rd6rei
+        name:
+          fieldIdentifier:
+            name: name
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_isvhyqgo
+        surname:
+          fieldIdentifier:
+            name: surname
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_k82bjjoh
+        bio:
+          fieldIdentifier:
+            name: bio
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_75xf73ae
+        user_type:
+          fieldIdentifier:
+            name: user_type
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_j6zx4i7r
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+key: or00o04t

@@ -1,0 +1,18 @@
+key: Container_5ccbil2q
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      boxShadow: {}
+      image: {}
+      borderColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

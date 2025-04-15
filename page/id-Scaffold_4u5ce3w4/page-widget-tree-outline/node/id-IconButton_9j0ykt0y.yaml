@@ -1,0 +1,34 @@
+key: IconButton_9j0ykt0y
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+    borderRadiusValue:
+      inputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: INFO
+        iconDataValue:
+          inputValue:
+            codePoint: 58727
+            family: MaterialIcons
+            matchTextDirection: false
+            name: search
+  padding:
+    leftValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

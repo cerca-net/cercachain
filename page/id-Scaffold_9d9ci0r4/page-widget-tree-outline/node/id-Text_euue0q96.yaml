@@ -1,0 +1,20 @@
+key: Text_euue0q96
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: pb5qnuao
+    selectable: false
+    textValue:
+      inputValue: Objects
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

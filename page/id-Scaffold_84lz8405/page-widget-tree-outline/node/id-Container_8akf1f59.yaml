@@ -1,0 +1,62 @@
+key: Container_8akf1f59
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 130
+          mostRecentInputValue: 130
+      height:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShape: FF_BOX_SHAPE_RECTANGLE
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          value: "4294967295"
+        mostRecentInputValue:
+          value: "4294967295"
+    childAlignment: {}
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    topValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    rightValue:
+      inputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: contentView_1
+parameterValues: {}
+valueKey: {}

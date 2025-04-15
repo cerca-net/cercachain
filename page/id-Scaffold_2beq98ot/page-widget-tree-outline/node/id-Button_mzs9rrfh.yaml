@@ -1,0 +1,85 @@
+key: Button_mzs9rrfh
+type: Button
+props:
+  button:
+    text:
+      fontFamily: Montserrat
+      themeStyle: TITLE_SMALL
+      isCustomFont: false
+      translationIdentifier:
+        key: bi5xuenz
+      textValue:
+        inputValue: Add catalogue
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          value: "4294967295"
+        mostRecentInputValue:
+          value: "4294967295"
+      fontWeightValue:
+        inputValue: w500
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    innerPadding:
+      leftValue:
+        inputValue: 24
+        mostRecentInputValue: 24
+      rightValue:
+        inputValue: 24
+        mostRecentInputValue: 24
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 3
+      mostRecentInputValue: 3
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    iconValue:
+      inputValue:
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_BACKGROUND
+        iconDataValue:
+          inputValue:
+            codePoint: 57415
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add
+  padding:
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

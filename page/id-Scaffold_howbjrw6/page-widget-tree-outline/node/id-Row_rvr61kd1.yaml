@@ -1,0 +1,10 @@
+key: Row_rvr61kd1
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+  padding:
+    topValue:
+      inputValue: 8
+    bottomValue:
+      inputValue: 8

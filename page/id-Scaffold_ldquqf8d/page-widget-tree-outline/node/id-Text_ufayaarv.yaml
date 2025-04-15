@@ -1,0 +1,23 @@
+key: Text_ufayaarv
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 374b7k11
+    selectable: false
+    textValue:
+      inputValue: SEND
+    fontSizeValue:
+      inputValue: 10
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    fontWeightValue:
+      inputValue: w500
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

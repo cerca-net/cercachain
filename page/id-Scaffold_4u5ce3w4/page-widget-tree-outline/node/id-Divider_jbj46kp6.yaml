@@ -1,0 +1,18 @@
+key: Divider_jbj46kp6
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    indentValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    endIndentValue:
+      inputValue: 12
+      mostRecentInputValue: 12

@@ -1,0 +1,10 @@
+key: Text_29t24deh
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: jns9cefi
+    selectable: false
+    textValue:
+      inputValue: username

@@ -1,0 +1,57 @@
+key: Column_hkh8tvu0
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    scrollable: false
+    primary: true
+    listSpacing:
+      startSpacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      endSpacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    minSizeValue:
+      inputValue: true
+      mostRecentInputValue: true
+  padding:
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: analytics
+          key: lv8h14dw
+  firestore:
+    collectionIdentifier:
+      name: analytics
+      key: lv8h14dw
+    hideOnEmpty: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: user_ref
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+parameterValues: {}
+valueKey: {}

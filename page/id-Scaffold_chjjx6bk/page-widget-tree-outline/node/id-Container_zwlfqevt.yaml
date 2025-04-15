@@ -1,0 +1,58 @@
+key: Container_zwlfqevt
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 120
+          mostRecentInputValue: 120
+      height:
+        pixelsValue:
+          inputValue: 4
+          mostRecentInputValue: 4
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+        topRightValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+        bottomLeftValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+        bottomRightValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+        allValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,38 @@
+key: Text_or0rfpsi
+type: Text
+props:
+  text:
+    themeStyle: LABEL_LARGE
+    translationIdentifier:
+      key: ldrckxrf
+    selectable: false
+    textValue:
+      inputValue: Or sign up with
+      mostRecentInputValue: Or sign up with
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

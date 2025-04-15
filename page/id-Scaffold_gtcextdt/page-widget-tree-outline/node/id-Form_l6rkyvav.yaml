@@ -1,0 +1,55 @@
+key: Form_l6rkyvav
+type: Form
+props:
+  form:
+    validations:
+      - isRequired: false
+        uploadData: {}
+        nodeKeyRef:
+          key: Container_m1dr6e0u
+      - isRequired: false
+        uploadData: {}
+        nodeKeyRef:
+          key: Container_oos0wac1
+      - isRequired: false
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: l649sg61
+            textValue:
+              inputValue: Field is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: sprsxbyq
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_bfxlkz37
+      - isRequired: false
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: i4ufhhof
+            textValue:
+              inputValue: Field is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: oyrnknux
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_jiswc1dt
+      - isRequired: false
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: divith4m
+            textValue:
+              inputValue: Field is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: 2jjhpd4u
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_8uqnmzmg

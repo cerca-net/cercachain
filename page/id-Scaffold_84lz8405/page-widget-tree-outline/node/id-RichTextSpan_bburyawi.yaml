@@ -1,0 +1,10 @@
+key: RichTextSpan_bburyawi
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: q7gol38j
+      textValue:
+        inputValue: "# Index : "

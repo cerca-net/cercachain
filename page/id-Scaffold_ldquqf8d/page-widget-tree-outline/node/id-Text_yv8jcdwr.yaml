@@ -1,0 +1,29 @@
+key: Text_yv8jcdwr
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: zn5p428u
+    selectable: false
+    textValue:
+      inputValue: "# :"
+    fontSizeValue:
+      inputValue: 14
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w400
+  padding:
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

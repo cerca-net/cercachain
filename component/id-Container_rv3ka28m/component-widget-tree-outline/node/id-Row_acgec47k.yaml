@@ -1,0 +1,6 @@
+key: Row_acgec47k
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_evenly
+    crossAxisAlignment: cross_axis_center

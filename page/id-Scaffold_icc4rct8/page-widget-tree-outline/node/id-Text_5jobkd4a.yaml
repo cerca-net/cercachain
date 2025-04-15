@@ -1,0 +1,35 @@
+key: Text_5jobkd4a
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: qum9uttj
+    selectable: false
+    textValue:
+      inputValue: Submit Rating
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    leftValue:
+      inputValue: 24
+    bottomValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: -1
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

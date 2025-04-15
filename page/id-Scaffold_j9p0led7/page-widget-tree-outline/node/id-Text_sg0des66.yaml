@@ -1,0 +1,25 @@
+key: Text_sg0des66
+type: Text
+props:
+  text:
+    themeStyle: DISPLAY_SMALL
+    translationIdentifier:
+      key: 41allicc
+    selectable: false
+    textValue:
+      inputValue: Forgot Password
+      mostRecentInputValue: Forgot Password
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

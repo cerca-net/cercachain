@@ -1,0 +1,15 @@
+key: Row_fbhzdro4
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_start
+    listSpacing: {}
+  padding:
+    leftValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

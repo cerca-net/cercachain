@@ -1,0 +1,5 @@
+key: Column_oyololjb
+type: Column
+props:
+  column:
+    primary: true

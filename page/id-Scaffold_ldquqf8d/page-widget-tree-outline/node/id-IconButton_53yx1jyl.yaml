@@ -1,0 +1,31 @@
+key: IconButton_53yx1jyl
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        value: "1241004870"
+    borderRadiusValue:
+      inputValue: 8
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            value: "4294967295"
+        iconDataValue:
+          inputValue:
+            codePoint: 63471
+            family: MaterialIcons
+            matchTextDirection: false
+            name: history_rounded
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,25 @@
+key: Icon_v9uwszzy
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 984417
+        family: MaterialIcons
+        matchTextDirection: false
+        name: route
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

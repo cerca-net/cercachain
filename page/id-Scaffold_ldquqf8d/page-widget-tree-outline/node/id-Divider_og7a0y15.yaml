@@ -1,0 +1,14 @@
+key: Divider_og7a0y15
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 2
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}

@@ -1,0 +1,11 @@
+key: Row_atwdcjy0
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8

@@ -1,0 +1,43 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: user_ratings
+      key: ypidbqz4
+    write:
+      updates:
+        rated_user:
+          fieldIdentifier:
+            name: rated_user
+          variable:
+            source: WIDGET_CLASS_PARAMETER
+            baseVariable:
+              widgetClass:
+                paramIdentifier:
+                  name: publicuser
+                  key: zgpzr1
+            nodeKeyRef:
+              key: Scaffold_icc4rct8
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        value:
+          fieldIdentifier:
+            name: value
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                  dataType:
+                    scalarType: Double
+            nodeKeyRef:
+              key: RatingBar_qcu28i8h
+    parentReference: {}
+key: pli46vx8

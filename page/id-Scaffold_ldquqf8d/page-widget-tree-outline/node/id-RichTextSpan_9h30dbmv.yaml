@@ -1,0 +1,26 @@
+key: RichTextSpan_9h30dbmv
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: e1k78vxc
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - indexInList: {}
+          nodeKeyRef:
+            key: ListView_pdszt2nn
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      italicValue:
+        inputValue: false
+      fontWeightValue:
+        inputValue: w500

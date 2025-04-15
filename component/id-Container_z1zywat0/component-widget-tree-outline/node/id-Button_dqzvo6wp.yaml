@@ -1,0 +1,82 @@
+key: Button_dqzvo6wp
+type: Button
+props:
+  button:
+    text:
+      fontFamily: Inter
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: 9d2kvxka
+      textValue:
+        inputValue: Connect to wallet
+      fontSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      topRightValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      bottomLeftValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      bottomRightValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      allValue:
+        inputValue: 8
+    innerPadding:
+      type: FF_PADDING_ONLY
+      leftValue:
+        inputValue: 20
+        mostRecentInputValue: 20
+      rightValue:
+        inputValue: 20
+        mostRecentInputValue: 20
+    dimensions:
+      width: {}
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    elevationValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    showLoadingIndicatorValue:
+      inputValue: false
+    iconValue:
+      inputValue:
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 983659
+            family: MaterialIcons
+            matchTextDirection: false
+            name: upload_rounded
+  padding:
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+    bottomValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

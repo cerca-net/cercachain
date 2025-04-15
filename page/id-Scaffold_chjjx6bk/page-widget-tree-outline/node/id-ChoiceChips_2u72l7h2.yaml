@@ -1,0 +1,102 @@
+key: ChoiceChips_2u72l7h2
+type: ChoiceChips
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_kvrlfl0y
+            - inputValue:
+                serializedValue: El Hatillo
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: false
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: keogftap
+          textValue:
+            inputValue: El Hatillo
+      - label:
+          translationIdentifier:
+            key: n3id31a1
+          textValue:
+            inputValue: La Union
+      - label:
+          translationIdentifier:
+            key: yno0igh3
+          textValue:
+            inputValue: La Lagunita
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+    wrappedValue:
+      inputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

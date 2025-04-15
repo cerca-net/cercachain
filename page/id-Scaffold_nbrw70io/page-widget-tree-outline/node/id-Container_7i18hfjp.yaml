@@ -1,0 +1,50 @@
+key: Container_7i18hfjp
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 500
+          mostRecentInputValue: 500
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+      gradient:
+        colors:
+          - color:
+              inputValue:
+                color:
+                  value: "2568823849"
+            transitionPoint:
+              inputValue:
+                serializedValue: "0.95"
+          - color:
+              inputValue:
+                color:
+                  value: "593683"
+            transitionPoint:
+              inputValue:
+                serializedValue: "0"
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+    maxDimensions: {}
+    minDimensions: {}
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

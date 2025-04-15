@@ -1,0 +1,33 @@
+key: Container_sat7yfhs
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 12
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 4
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    leftValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 8
+    bottomValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 1

@@ -1,0 +1,46 @@
+rootAction:
+  key: 6egsqzqa
+  conditionActions:
+    falseAction:
+      key: ddn6tm02
+      action:
+        key: xhd5yrx3
+      followUpAction:
+        key: 0o4ikqy3
+        action:
+          key: btuosf0p
+    trueActions:
+      - condition:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              values:
+                - variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: upvote
+                      - listContains:
+                          element:
+                            source: FIREBASE_AUTH_USER
+                            baseVariable:
+                              auth:
+                                property: USER_REFERENCE
+                    nodeKeyRef:
+                      key: Column_h4tp6hnj
+                - inputValue:
+                    serializedValue: "true"
+              condition:
+                relation: EQUAL_TO
+        trueAction:
+          key: btigzli5
+          action:
+            key: prh3cgk2
+    hasMultiConditions: false
+    key: 0p96cslu
+  followUpAction: {}
+trigger:
+  triggerType: ON_TOGGLE

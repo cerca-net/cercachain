@@ -1,0 +1,17 @@
+key: Row_zxi02svg
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,8 @@
+key: Container_y2onz92t
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration: {}
+  expanded:
+    expandedType: UNEXPANDED

@@ -1,0 +1,71 @@
+key: Text_q77n3gc5
+type: Text
+props:
+  text:
+    fontFamily: Outfit
+    themeStyle: DISPLAY_SMALL
+    translationIdentifier:
+      key: jlr7eq86
+    textValue:
+      variable:
+        source: FUNCTION_CALL
+        operations:
+          - numberFormat:
+              formatType: DECIMAL
+              decimalType: AUTOMATIC
+        functionCall:
+          values:
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: generation_i
+                nodeKeyRef:
+                  key: Container_j29vj4gh
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: participation_i
+                nodeKeyRef:
+                  key: Container_j29vj4gh
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: transition_i
+                nodeKeyRef:
+                  key: Container_j29vj4gh
+          customFunction:
+            name: generatedcredits
+            key: qu1oj
+    fontSizeValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w600
+  padding:
+    bottomValue:
+      inputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

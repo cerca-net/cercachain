@@ -1,0 +1,26 @@
+rootAction:
+  key: s5x82kwb
+  action:
+    key: g25duo20
+  followUpAction:
+    key: gvwmp1fi
+    action:
+      key: gj37joac
+    followUpAction:
+      key: d6096mhz
+      action:
+        key: zyixslep
+      followUpAction:
+        key: usa9c86l
+        action:
+          key: sjoddlms
+        followUpAction:
+          key: dwitj63q
+          action:
+            key: io3kiot5
+          followUpAction:
+            key: yeq1e3q9
+            action:
+              key: v8lngy2b
+trigger:
+  triggerType: ON_TAP

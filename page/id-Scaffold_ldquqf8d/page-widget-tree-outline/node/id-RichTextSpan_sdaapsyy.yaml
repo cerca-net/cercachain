@@ -1,0 +1,22 @@
+key: RichTextSpan_sdaapsyy
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: td5b4780
+      selectable: false
+      textValue:
+        inputValue: "Interaction:  "
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+      textAlignValue:
+        inputValue: ALIGN_CENTER

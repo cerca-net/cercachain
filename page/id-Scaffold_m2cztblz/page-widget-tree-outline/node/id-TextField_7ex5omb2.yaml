@@ -1,0 +1,88 @@
+key: TextField_7ex5omb2
+type: TextField
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  expanded:
+    expandedType: UNEXPANDED
+  textField:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+      labelStyle:
+        themeStyle: LABEL_MEDIUM
+      hintText:
+        translationIdentifier:
+          key: 26ihtbl0
+        textValue:
+          inputValue: Add footnote here...
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      filledValue:
+        inputValue: true
+        mostRecentInputValue: true
+      fillColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderWidthValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+      denseValue:
+        inputValue: true
+        mostRecentInputValue: true
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+        mostRecentInputValue:
+          themeColor: ERROR
+    width:
+      pixelsValue:
+        inputValue: Infinity
+        mostRecentInputValue: Infinity
+    maxLinesValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    autofocusValue:
+      inputValue: false
+      mostRecentInputValue: false
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

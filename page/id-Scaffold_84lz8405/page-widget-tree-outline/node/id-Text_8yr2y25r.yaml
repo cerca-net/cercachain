@@ -1,0 +1,15 @@
+key: Text_8yr2y25r
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: b9odq9am
+    textValue:
+      inputValue: Objects
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

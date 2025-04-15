@@ -1,0 +1,18 @@
+key: RichTextSpan_mvxqcacq
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: hpn84sp0
+      textValue:
+        variable:
+          source: FIREBASE_AUTH_USER
+          baseVariable:
+            auth:
+              property: USERS_DATA_FIELD
+              usersDataField:
+                name: name
+      fontWeightValue:
+        inputValue: w700

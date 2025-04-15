@@ -1,0 +1,16 @@
+key: Column_7hjg2jus
+type: Column
+props:
+  column:
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

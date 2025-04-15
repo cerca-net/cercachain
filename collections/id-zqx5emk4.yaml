@@ -1,0 +1,84 @@
+identifier:
+  name: transactions
+  key: zqx5emk4
+fields:
+  user_madeby:
+    identifier:
+      name: user_madeby
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  user_madeto:
+    identifier:
+      name: user_madeto
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  items:
+    identifier:
+      name: items
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  id_transaction:
+    identifier:
+      name: id_transaction
+    dataType:
+      scalarType: String
+  date:
+    identifier:
+      name: date
+    dataType:
+      scalarType: DateTime
+  total_ref_value_transaction:
+    identifier:
+      name: total_ref_value_transaction
+    dataType:
+      scalarType: Double
+  order_ref:
+    identifier:
+      name: order_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  w_method:
+    identifier:
+      name: w_method
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: wallet_methods
+          key: nsf4do4h
+  o_method:
+    identifier:
+      name: o_method
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order_methods
+          key: t9fp60ga
+  UserIn:
+    identifier:
+      name: UserIn
+    dataType:
+      scalarType: String
+  userOut:
+    identifier:
+      name: userOut
+    dataType:
+      scalarType: String

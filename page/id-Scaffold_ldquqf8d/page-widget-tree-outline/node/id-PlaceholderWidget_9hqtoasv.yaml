@@ -1,0 +1,19 @@
+key: PlaceholderWidget_9hqtoasv
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: webViewOpen
+              key: zyqpw
+            stateVariableType: WIDGET_CLASS_STATE
+        operations:
+          - negate: {}
+        nodeKeyRef:
+          key: Scaffold_ldquqf8d
+      mostRecentInputValue: false

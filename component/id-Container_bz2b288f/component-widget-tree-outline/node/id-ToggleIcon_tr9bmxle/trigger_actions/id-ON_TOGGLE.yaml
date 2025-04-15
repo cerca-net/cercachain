@@ -1,0 +1,46 @@
+rootAction:
+  key: "0xcf76a7"
+  conditionActions:
+    falseAction:
+      key: kyj5ibtp
+      action:
+        key: 56smo9gb
+      followUpAction:
+        key: owo7oiy4
+        action:
+          key: jrxqhi0c
+    trueActions:
+      - condition:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              values:
+                - variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: downvote
+                      - listContains:
+                          element:
+                            source: FIREBASE_AUTH_USER
+                            baseVariable:
+                              auth:
+                                property: USER_REFERENCE
+                    nodeKeyRef:
+                      key: Column_h4tp6hnj
+                - inputValue:
+                    serializedValue: "true"
+              condition:
+                relation: EQUAL_TO
+        trueAction:
+          key: g9u610iu
+          action:
+            key: pa8qcca7
+    hasMultiConditions: false
+    key: 5smq88qh
+  followUpAction: {}
+trigger:
+  triggerType: ON_TOGGLE

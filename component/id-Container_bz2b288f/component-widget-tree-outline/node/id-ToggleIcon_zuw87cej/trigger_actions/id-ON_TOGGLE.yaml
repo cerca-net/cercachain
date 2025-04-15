@@ -1,0 +1,53 @@
+rootAction:
+  key: xsw9za3z
+  conditionActions:
+    falseAction:
+      key: ea11ik81
+      action:
+        key: r5zf2lc4
+      followUpAction:
+        key: m6zix883
+        action:
+          key: 4j1fpyec
+        followUpAction:
+          key: nesall0e
+          action:
+            key: vsjot166
+    trueActions:
+      - condition:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              values:
+                - variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: pins
+                      - listContains:
+                          element:
+                            source: FIREBASE_AUTH_USER
+                            baseVariable:
+                              auth:
+                                property: USER_REFERENCE
+                    nodeKeyRef:
+                      key: Column_h4tp6hnj
+                - inputValue:
+                    serializedValue: "true"
+              condition:
+                relation: EQUAL_TO
+        trueAction:
+          key: re5be5wq
+          action:
+            key: jzzsfhs6
+          followUpAction:
+            key: zole91y6
+            action:
+              key: hlsznnsq
+    hasMultiConditions: false
+    key: eqmcbox1
+trigger:
+  triggerType: ON_TOGGLE

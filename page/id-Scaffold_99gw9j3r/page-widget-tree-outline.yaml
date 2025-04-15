@@ -1,0 +1,69 @@
+node:
+  key: Scaffold_99gw9j3r
+  appBar:
+    key: AppBar_ccw9zbs7
+    actions:
+      - key: IconButton_4zgw1rd3
+  body:
+    key: Column_zqx54pxi
+    children:
+      - key: Container_zjkh6z9r
+        children:
+          - key: Column_hxt2ki4u
+            children:
+              - key: Row_kggiq4ov
+                children:
+                  - key: Text_i0l8sjlm
+              - key: Container_w0mvrzii
+                children:
+                  - key: Row_8j2dar25
+                    children:
+                      - key: TextField_kwpsunb6
+                      - key: Container_bmdmwu4c
+                        children:
+                          - key: Row_tfznx74g
+                            children:
+                              - key: Text_bpru8b1p
+                              - key: Icon_a5mff2jl
+              - key: StaggeredView_x8h6rnc2
+                children:
+                  - key: Container_r8y2diqp
+                    children:
+                      - key: Column_2bluppb0
+                        children:
+                          - key: Row_qi9e59pq
+                            children:
+                              - key: CircleImage_q01uq2dd
+                              - key: Text_61fwgq6q
+                              - key: Text_6ip59vju
+                          - key: Stack_irqpsgg0
+                            children:
+                              - key: Row_oy29es37
+                                children:
+                                  - key: Container_7ojunj4y
+                                    children:
+                                      - key: Image_3nsz89lo
+                              - key: Row_cjez9ch6
+                                children:
+                                  - key: Container_a3nchsuq
+                                    children:
+                                      - key: Row_m2tufcjj
+                                        children:
+                                          - key: Icon_4a06r23g
+                                          - key: Text_58j8thvc
+                          - key: Row_k3zip0wf
+                            children:
+                              - key: MediaDisplay_zosup1a1
+                          - key: Row_hqwh659x
+                            children:
+                              - key: Container_ydwee81d
+                                children:
+                                  - key: Stack_ml2852b4
+                                    children:
+                                      - key: Image_mzjcdne9
+                                      - key: AudioPlayer_kkxn8nnq
+                          - key: Column_dmh5qx0z
+                            children:
+                              - key: Text_hpwlt35u
+                              - key: Divider_wvh87m3g
+                              - key: Text_nj1ea52h

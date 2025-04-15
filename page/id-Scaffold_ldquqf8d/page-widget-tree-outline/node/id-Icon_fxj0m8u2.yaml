@@ -1,0 +1,15 @@
+key: Icon_fxj0m8u2
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 59461
+        family: MaterialIcons
+        matchTextDirection: false
+        name: category_sharp

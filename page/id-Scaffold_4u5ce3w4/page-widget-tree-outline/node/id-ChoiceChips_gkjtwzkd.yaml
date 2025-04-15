@@ -1,0 +1,222 @@
+key: ChoiceChips_gkjtwzkd
+type: ChoiceChips
+props:
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  choiceChips:
+    options:
+      - iconData:
+          codePoint: 59045
+          family: MaterialIcons
+          matchTextDirection: false
+          name: video_collection
+        label:
+          translationIdentifier:
+            key: 18f80jiq
+          textValue:
+            inputValue: Post
+      - iconData:
+          codePoint: 983407
+          family: MaterialIcons
+          matchTextDirection: false
+          name: shopping_bag_rounded
+        label:
+          translationIdentifier:
+            key: ighi3yyj
+          textValue:
+            inputValue: Item
+      - iconData:
+          codePoint: 58502
+          family: MaterialIcons
+          matchTextDirection: false
+          name: people
+        label:
+          translationIdentifier:
+            key: qcfd3902
+          textValue:
+            inputValue: Users
+      - iconData:
+          codePoint: 63501
+          family: MaterialIcons
+          matchTextDirection: false
+          name: image_rounded
+        label:
+          translationIdentifier:
+            key: qll7j0w6
+          textValue:
+            inputValue: Image
+      - iconData:
+          codePoint: 59045
+          family: MaterialIcons
+          matchTextDirection: false
+          name: video_collection
+        label:
+          translationIdentifier:
+            key: nf7vus5v
+          textValue:
+            inputValue: Video
+      - iconData:
+          codePoint: 58083
+          family: MaterialIcons
+          matchTextDirection: false
+          name: graphic_eq
+        label:
+          translationIdentifier:
+            key: ixs63p7v
+          textValue:
+            inputValue: Audio
+      - iconData:
+          codePoint: 58953
+          family: MaterialIcons
+          matchTextDirection: false
+          name: text_fields
+        label:
+          translationIdentifier:
+            key: c6gh8s5a
+          textValue:
+            inputValue: Text
+      - iconData:
+          codePoint: 63508
+          family: MaterialIcons
+          matchTextDirection: false
+          name: indeterminate_check_box_rounded
+        label:
+          translationIdentifier:
+            key: tw138i86
+          textValue:
+            inputValue: Product
+      - iconData:
+          codePoint: 62753
+          family: MaterialIcons
+          matchTextDirection: false
+          name: account_box_rounded
+        label:
+          translationIdentifier:
+            key: hr2wsnpt
+          textValue:
+            inputValue: Service
+      - iconData:
+          codePoint: 57782
+          family: MaterialIcons
+          matchTextDirection: false
+          name: date_range
+        label:
+          translationIdentifier:
+            key: qky01nka
+          textValue:
+            inputValue: Event
+      - iconData:
+          codePoint: 58890
+          family: MaterialIcons
+          matchTextDirection: false
+          name: store
+        label:
+          translationIdentifier:
+            key: 01osuru4
+          textValue:
+            inputValue: Place
+      - iconData:
+          codePoint: 58513
+          family: MaterialIcons
+          matchTextDirection: false
+          name: person
+        label:
+          translationIdentifier:
+            key: yjjqv62d
+          textValue:
+            inputValue: People
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    multiselect: true
+    initialOption:
+      translationIdentifier:
+        key: ieh3d638
+    childAlignment: wrap_center
+    chipSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    requireSelectionValue:
+      inputValue: false
+      mostRecentInputValue: false
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

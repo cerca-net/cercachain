@@ -1,0 +1,18 @@
+key: Text_g45lttsf
+type: Text
+props:
+  text:
+    themeStyle: BODY_SMALL
+    translationIdentifier:
+      key: 7tmpiycn
+    selectable: false
+    textValue:
+      inputValue: Task Type
+      mostRecentInputValue: Task Type
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+parameterValues: {}

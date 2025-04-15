@@ -1,0 +1,10 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: 9x31kpxg
+      setValue:
+        inputValue:
+          serializedValue: salidaAudio
+  updateType: WIDGET
+  stateVariableType: APP_STATE
+key: l2gmk22h

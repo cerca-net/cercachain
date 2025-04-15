@@ -1,0 +1,15 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        user_verified_pending:
+          fieldIdentifier:
+            name: user_verified_pending
+          inputValue:
+            serializedValue: "true"
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+key: r19525sv

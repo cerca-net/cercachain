@@ -1,0 +1,8 @@
+key: Container_qqzsd8dl
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration: {}
+  expanded:
+    expandedType: EXPANDED

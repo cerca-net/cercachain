@@ -1,0 +1,10 @@
+key: Text_uvu4qmp4
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: db74d10f
+    selectable: false
+    textValue:
+      inputValue: Completed

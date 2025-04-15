@@ -1,0 +1,120 @@
+key: Container_zdcaru71
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 10
+          mostRecentInputValue: 10
+        topRightValue:
+          inputValue: 10
+          mostRecentInputValue: 10
+        bottomLeftValue:
+          inputValue: 10
+          mostRecentInputValue: 10
+        bottomRightValue:
+          inputValue: 10
+          mostRecentInputValue: 10
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 4
+          mostRecentInputValue: 4
+        colorValue:
+          inputValue:
+            value: "855638016"
+          mostRecentInputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+          mostRecentInputValue: 0
+        dyValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions:
+      height:
+        pixelsValue:
+          inputValue: 460
+          mostRecentInputValue: 460
+    clipContent: true
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility:
+    phoneHidden: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: OptionsContainer
+parameterValues: {}
+animations:
+  - trigger: ON_ACTION_TRIGGER
+    effects:
+      - curve: EASE_IN_OUT
+        fade:
+          begin:
+            inputValue:
+              serializedValue: "0"
+          end:
+            inputValue:
+              serializedValue: "1"
+        duration:
+          inputValue:
+            serializedValue: "400"
+      - curve: EASE_IN_OUT
+        scale:
+          beginDx:
+            inputValue:
+              serializedValue: "0"
+          endDx:
+            inputValue:
+              serializedValue: "1"
+          beginDy:
+            inputValue:
+              serializedValue: "0"
+          endDy:
+            inputValue:
+              serializedValue: "1"
+        delay: {}
+        duration:
+          inputValue:
+            serializedValue: "400"
+    useSameInterval: true
+    applyInitialState: true
+    delay: {}
+    duration:
+      inputValue:
+        serializedValue: "400"
+valueKey: {}

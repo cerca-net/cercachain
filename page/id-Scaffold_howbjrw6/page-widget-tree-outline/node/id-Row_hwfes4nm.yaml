@@ -1,0 +1,7 @@
+key: Row_hwfes4nm
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_end
+    minSizeValue:
+      inputValue: false

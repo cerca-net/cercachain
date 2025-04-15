@@ -1,0 +1,28 @@
+key: Text_0dr9u298
+type: Text
+props:
+  text:
+    fontFamily: Outfit
+    themeStyle: TITLE_SMALL
+    translationIdentifier:
+      key: nmj6ozy8
+    textValue:
+      inputValue: Wallet
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        value: "4281979584"
+      mostRecentInputValue:
+        value: "4281979584"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+parameterValues: {}

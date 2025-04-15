@@ -1,0 +1,26 @@
+key: Icon_4djk8rkf
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 18
+      mostRecentInputValue: 18
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 57984
+        family: MaterialIcons
+        matchTextDirection: false
+        name: filter_list
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

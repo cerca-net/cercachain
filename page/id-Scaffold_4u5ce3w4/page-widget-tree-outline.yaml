@@ -1,0 +1,117 @@
+node:
+  key: Scaffold_4u5ce3w4
+  body:
+    key: Stack_wg8gh7ko
+    children:
+      - key: Column_6zmzpfun
+        children:
+          - key: StaggeredView_0ala32e2
+            children:
+              - key: Container_jlipacve
+                children:
+                  - key: Column_p1cymofn
+                    children:
+                      - key: Row_9l8aqtna
+                        children:
+                          - key: CircleImage_wiq39ojd
+                          - key: Text_gr8t7zoj
+                          - key: Text_8ritsuyj
+                      - key: Container_atvqo3zh
+                        children:
+                          - key: Column_nlqchy5w
+                            children:
+                              - key: Stack_itqg59oq
+                                children:
+                                  - key: Row_3ydf20r5
+                                    children:
+                                      - key: Container_9rvuw31i
+                                        children:
+                                          - key: Image_dvqtmg5h
+                                  - key: Row_ln01of9t
+                                    children:
+                                      - key: Container_nbhj76qe
+                                        children:
+                                          - key: Row_p6rw7jc4
+                                            children:
+                                              - key: Icon_jmamvrtl
+                                              - key: Text_lzqjjajn
+                              - key: Row_oa7wh5z4
+                                children:
+                                  - key: MediaDisplay_d6albddd
+                              - key: Row_8tjy85xv
+                                children:
+                                  - key: Container_da5vpop4
+                                    children:
+                                      - key: Stack_sk8mlcqd
+                                        children:
+                                          - key: Image_ntdy2qeg
+                                          - key: AudioPlayer_fois2np8
+                              - key: Column_eer3451o
+                                children:
+                                  - key: Text_igk7c2f4
+                                  - key: Divider_jbj46kp6
+                                  - key: Text_guw3n8xo
+          - key: StaggeredView_exdmvhny
+            children:
+              - key: Container_q3mzss9g
+                children:
+                  - key: Column_3uzrrxu7
+                    children:
+                      - key: Row_meshsv63
+                        children:
+                          - key: CircleImage_0b3itmpb
+                          - key: Text_6q0d3fs3
+                          - key: Text_3bqid7q1
+                      - key: Stack_3emc5c51
+                        children:
+                          - key: Row_jxhjwhmt
+                            children:
+                              - key: Container_1pfi88go
+                                children:
+                                  - key: Image_a1pkx7r9
+                          - key: Row_i204bpd1
+                            children:
+                              - key: Container_qu0w65ta
+                                children:
+                                  - key: Row_sttq03ha
+                                    children:
+                                      - key: Icon_ejklhz4l
+                                      - key: Text_jdbwnp5r
+                      - key: Row_xrk0l3b4
+                        children:
+                          - key: MediaDisplay_0swfwec4
+                      - key: Row_csz4udeh
+                        children:
+                          - key: Container_3cq1ppss
+                            children:
+                              - key: Stack_9fow3ayu
+                                children:
+                                  - key: Image_kn9sde13
+                                  - key: AudioPlayer_d7n581dy
+                      - key: Column_n5t7txn0
+                        children:
+                          - key: Text_s79jl1fw
+                          - key: Divider_i0su8lzs
+                          - key: Text_5vqdqins
+      - key: Column_vuaf7ulb
+        children:
+          - key: Container_s8m0ay0j
+            children:
+              - key: Stack_vcylkywt
+                children:
+                  - key: Icon_aq360yz5
+                  - key: Icon_27h2xmgw
+          - key: Container_zdcaru71
+            children:
+              - key: Form_ok4k3wkh
+                children:
+                  - key: Column_1er80avg
+                    children:
+                      - key: ChoiceChips_gkjtwzkd
+                      - key: Container_unlb36sa
+                        children:
+                          - key: Row_45umz7ux
+                            children:
+                              - key: IconButton_m5durct2
+                              - key: TextField_j9nqqo0c
+                              - key: IconButton_9j0ykt0y

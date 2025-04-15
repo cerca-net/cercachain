@@ -1,0 +1,276 @@
+key: Chart_lhxqe0co
+type: Chart
+props:
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    allValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  responsiveVisibility: {}
+  chart:
+    chartType: LINE
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    lineChart:
+      lines:
+        - curvedValue:
+            inputValue: true
+            mostRecentInputValue: true
+          lineWidthValue:
+            inputValue: 2
+            mostRecentInputValue: 2
+          fillBelowLineValue:
+            inputValue: true
+            mostRecentInputValue: true
+          fillColorValue:
+            inputValue:
+              value: "1279998447"
+            mostRecentInputValue:
+              value: "1279998447"
+          preventCurveFromOvershootingValue:
+            inputValue: true
+            mostRecentInputValue: true
+        - curvedValue:
+            inputValue: true
+            mostRecentInputValue: true
+          showDotsValue:
+            inputValue: false
+            mostRecentInputValue: false
+          lineWidthValue:
+            inputValue: 2
+            mostRecentInputValue: 2
+          fillBelowLineValue:
+            inputValue: true
+            mostRecentInputValue: true
+          fillColorValue:
+            inputValue:
+              value: "842650304"
+            mostRecentInputValue:
+              value: "842650304"
+          preventCurveFromOvershootingValue:
+            inputValue: true
+            mostRecentInputValue: true
+      axisInfo:
+        axisLabels:
+          bottom:
+            title:
+              themeStyle: BODY_MEDIUM
+              translationIdentifier:
+                key: doaw52vs
+              textValue:
+                inputValue: Last 30 Days
+                mostRecentInputValue: Last 30 Days
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+          left:
+            title:
+              themeStyle: BODY_MEDIUM
+              translationIdentifier:
+                key: 2ostvmuv
+              textValue:
+                inputValue: Avg. Grade
+                mostRecentInputValue: Avg. Grade
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+        axisBounds: {}
+    data:
+      - numbersList:
+          xData:
+            source: RANDOM_DATA
+            baseVariable:
+              randomData:
+                integer:
+                  min:
+                    inputValue:
+                      serializedValue: "0"
+                  max:
+                    inputValue:
+                      serializedValue: "10"
+                isList: true
+          yData:
+            source: RANDOM_DATA
+            baseVariable:
+              randomData:
+                integer:
+                  min:
+                    inputValue:
+                      serializedValue: "0"
+                  max:
+                    inputValue:
+                      serializedValue: "10"
+                isList: true
+        sourceType: NUMBERS_LIST
+        colorValue:
+          inputValue:
+            themeColor: PRIMARY
+          mostRecentInputValue:
+            themeColor: PRIMARY
+      - numbersList:
+          xData:
+            source: RANDOM_DATA
+            baseVariable:
+              randomData:
+                integer:
+                  min:
+                    inputValue:
+                      serializedValue: "0"
+                  max:
+                    inputValue:
+                      serializedValue: "200"
+                isList: true
+          yData:
+            source: RANDOM_DATA
+            baseVariable:
+              randomData:
+                integer:
+                  min:
+                    inputValue:
+                      serializedValue: "0"
+                  max:
+                    inputValue:
+                      serializedValue: "200"
+                isList: true
+        sourceType: NUMBERS_LIST
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+          mostRecentInputValue:
+            themeColor: SECONDARY
+    barChart:
+      bars:
+        - {}
+        - {}
+      barChartAlignment: main_axis_center
+      axisInfo:
+        axisLabels:
+          bottom:
+            title:
+              fontSizeValue:
+                inputValue: 14
+                mostRecentInputValue: 14
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+          left:
+            title:
+              fontSizeValue:
+                inputValue: 14
+                mostRecentInputValue: 14
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+      barWidthValue:
+        inputValue: 25
+        mostRecentInputValue: 25
+      groupSpaceValue:
+        inputValue: 5
+        mostRecentInputValue: 5
+    tooltipInfo:
+      enableTooltipValue:
+        inputValue: true
+        mostRecentInputValue: true
+    legendInfo:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+      alignment:
+        xValue:
+          inputValue: 1
+          mostRecentInputValue: 1
+        yValue:
+          inputValue: 1
+          mostRecentInputValue: 1
+      textPadding:
+        type: FF_PADDING_ONLY
+        leftValue:
+          inputValue: 5
+          mostRecentInputValue: 5
+      legendDimensions:
+        width:
+          pixelsValue:
+            inputValue: 100
+            mostRecentInputValue: 100
+        height:
+          pixelsValue:
+            inputValue: 50
+            mostRecentInputValue: 50
+      legendPadding:
+        type: FF_PADDING_ONLY
+        leftValue:
+          inputValue: 5
+          mostRecentInputValue: 5
+        rightValue:
+          inputValue: 5
+          mostRecentInputValue: 5
+      indicatorSizeValue:
+        inputValue: 10
+        mostRecentInputValue: 10
+      legendBorderColorValue:
+        inputValue:
+          value: "4278190080"
+        mostRecentInputValue:
+          value: "4278190080"
+      legendBorderWidthValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+    hasBeenUpdated: true
+    pieChart:
+      sections:
+        - radius: 100
+        - radius: 100
+      sectionLabelStyle:
+        themeStyle: HEADLINE_SMALL
+      sectionLabelType: NONE
+      labelFormat:
+        labelFormatType: DEFAULT
+      listPieChartColors:
+        - inputValue:
+            color:
+              value: "4292039907"
+      donutHoleColor:
+        inputValue:
+          color:
+            value: "4294967295"
+      donutHoleRadiusValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    backgroundColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderColorValue:
+      inputValue:
+        value: "4278190080"
+      mostRecentInputValue:
+        value: "4278190080"
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    showBorderValue:
+      inputValue: false
+      mostRecentInputValue: false
+    showGridValue:
+      inputValue: false
+      mostRecentInputValue: false
+parameterValues: {}

@@ -1,0 +1,21 @@
+key: Text_s50iimjf
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: xoeqk0hy
+    selectable: false
+    textValue:
+      inputValue: "Upload Profile \nPicture"
+      mostRecentInputValue: "Upload Profile \nPicture"
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  padding: {}

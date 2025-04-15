@@ -1,0 +1,61 @@
+key: Text_3lfop30e
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: zk8eu2r7
+    selectable: false
+    textValue:
+      variable:
+        source: FUNCTION_CALL
+        operations:
+          - numberFormat: {}
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: refvaluesinbagitems
+                      key: e5jgq
+                    stateVariableType: WIDGET_CLASS_STATE
+                operations:
+                  - listSortOperation:
+                      sortKey:
+                        source: LIST_MAP
+                        baseVariable:
+                          listMap:
+                            containingParentReturnParameter:
+                              identifier:
+                                name: refvaluesinbagitems
+                                key: e5jgq
+                              dataType:
+                                listType:
+                                  scalarType: Double
+                        operations:
+                          - numberFormat: {}
+                nodeKeyRef:
+                  key: Scaffold_x7vnv3sg
+          customFunction:
+            name: sumofBagitemsListRefvalues
+            key: mp7e5
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    rightValue:
+      inputValue: 8
+  expanded:
+    expandedType: FLEXIBLE
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

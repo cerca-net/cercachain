@@ -1,0 +1,17 @@
+key: Row_avpg0hlm
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    crossAxisAlignment: cross_axis_center
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

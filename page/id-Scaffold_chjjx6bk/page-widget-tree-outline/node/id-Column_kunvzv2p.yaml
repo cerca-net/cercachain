@@ -1,0 +1,35 @@
+key: Column_kunvzv2p
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

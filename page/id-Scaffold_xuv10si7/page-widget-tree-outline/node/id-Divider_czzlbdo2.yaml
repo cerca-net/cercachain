@@ -1,0 +1,18 @@
+key: Divider_czzlbdo2
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    indentValue:
+      inputValue: 24
+    endIndentValue:
+      inputValue: 24
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}

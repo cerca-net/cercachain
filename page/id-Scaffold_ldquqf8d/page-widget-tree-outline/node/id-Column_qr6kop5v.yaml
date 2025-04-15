@@ -1,0 +1,19 @@
+key: Column_qr6kop5v
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_start
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    minSizeValue:
+      inputValue: true
+      mostRecentInputValue: true
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}

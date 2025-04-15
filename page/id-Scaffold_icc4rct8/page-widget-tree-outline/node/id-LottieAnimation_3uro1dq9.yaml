@@ -1,0 +1,28 @@
+key: LottieAnimation_3uro1dq9
+type: LottieAnimation
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  lottieAnimation:
+    source: FF_SOURCE_TYPE_ASSET
+    fit: FF_BOX_FIT_CONTAIN
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 260
+      height:
+        pixelsValue:
+          inputValue: 260
+    animationType: FF_LOTTIE_ANIMATION_TYPE_LOOP
+    animationStatus: false
+    originalFrameRate: 60
+    usingUpdatedDimensions: true
+    pathValue:
+      inputValue: projects/cercaend-vk8icg/assets/x6izkiusfcmy/waiting.json
+    initialAnimationStatusValue:
+      inputValue: true
+    originalAspectRatioValue:
+      inputValue: 0.9333333333333333

@@ -1,0 +1,18 @@
+key: Icon_ly2h4mx4
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 18
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 58172
+        family: MaterialIcons
+        matchTextDirection: false
+        name: info
+  padding:
+    rightValue:
+      inputValue: 16

@@ -1,0 +1,7 @@
+key: Row_9x3iph1d
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_center
+    crossAxisAlignment: cross_axis_stretch
+    listSpacing: {}

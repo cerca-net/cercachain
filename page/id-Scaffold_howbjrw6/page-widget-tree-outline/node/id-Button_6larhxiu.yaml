@@ -1,0 +1,45 @@
+key: Button_6larhxiu
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: 78j7hal4
+      textValue:
+        inputValue: Confirm
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 16
+    rightValue:
+      inputValue: 16
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

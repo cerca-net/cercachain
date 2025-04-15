@@ -1,0 +1,7 @@
+key: Column_ru0n2sdh
+type: Column
+props:
+  column:
+    primary: true
+  expanded:
+    expandedType: EXPANDED

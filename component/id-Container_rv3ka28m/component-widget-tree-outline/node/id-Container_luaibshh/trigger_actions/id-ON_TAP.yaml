@@ -1,0 +1,66 @@
+rootAction:
+  key: rf9paklx
+  conditionActions:
+    falseAction:
+      key: adk4fvuw
+      action:
+        key: xz90prg6
+      followUpAction:
+        key: jbtqif6m
+        action:
+          key: rjmmafat
+        followUpAction:
+          key: ed11mqa5
+          action:
+            key: wohxx0g2
+          followUpAction:
+            key: 1lwrhply
+            action:
+              key: k2spwhyx
+            followUpAction:
+              key: kv4vigb7
+              action:
+                key: r4bw2obl
+              followUpAction:
+                key: 1shufgqk
+                action:
+                  key: rz9lqp7n
+    trueActions:
+      - condition:
+          variable:
+            source: LOCAL_STATE
+            baseVariable:
+              localState:
+                fieldIdentifier:
+                  name: editing
+                  key: gd9af
+                stateVariableType: WIDGET_CLASS_STATE
+            nodeKeyRef:
+              key: Container_rv3ka28m
+        trueAction:
+          key: xvm464g4
+          action:
+            key: 792mbgll
+          followUpAction:
+            key: zrsbpqsc
+            action:
+              key: mclt2r2a
+            followUpAction:
+              key: wi4u6zii
+              action:
+                key: 49xm526d
+              followUpAction:
+                key: lsjx3qgy
+                action:
+                  key: x9vp1210
+                followUpAction:
+                  key: 445u6gih
+                  action:
+                    key: s82xwayg
+                  followUpAction:
+                    key: e7qhh8a9
+                    action:
+                      key: v34mqaip
+    hasMultiConditions: false
+trigger:
+  triggerType: ON_TAP

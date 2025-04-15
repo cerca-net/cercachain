@@ -1,0 +1,21 @@
+key: Column_1g577qsj
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_center
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 4
+        mostRecentInputValue: 4
+    minSizeValue:
+      inputValue: true
+      mostRecentInputValue: false
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  expanded:
+    expandedType: EXPANDED

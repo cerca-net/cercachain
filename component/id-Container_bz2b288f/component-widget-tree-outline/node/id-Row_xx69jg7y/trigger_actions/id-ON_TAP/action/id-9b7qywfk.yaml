@@ -1,0 +1,24 @@
+navigate:
+  allowBack: false
+  passedParameters:
+    parameterPasses:
+      3plqj9:
+        paramIdentifier:
+          name: profileparameter
+          key: 3plqj9
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: poster
+          nodeKeyRef:
+            key: Column_h4tp6hnj
+    widgetClassNodeKeyRef:
+      key: Scaffold_x7vnv3sg
+  isNavigateBack: false
+  pageNodeKeyRef:
+    key: Scaffold_x7vnv3sg
+key: 9b7qywfk

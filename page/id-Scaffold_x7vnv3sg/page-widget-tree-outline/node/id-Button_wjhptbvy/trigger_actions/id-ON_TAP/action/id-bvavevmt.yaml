@@ -1,0 +1,27 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        user_pins:
+          fieldIdentifier:
+            name: user_pins
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_REMOVE
+            value:
+              fieldIdentifier:
+                name: user_pins
+              variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      documentProperty: REFERENCE
+                nodeKeyRef:
+                  key: Scaffold_x7vnv3sg
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+key: bvavevmt

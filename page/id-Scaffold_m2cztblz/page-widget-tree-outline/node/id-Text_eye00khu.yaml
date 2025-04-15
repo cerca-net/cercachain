@@ -1,0 +1,55 @@
+key: Text_eye00khu
+type: Text
+props:
+  text:
+    themeStyle: TITLE_LARGE
+    translationIdentifier:
+      key: 0q4818sf
+    selectable: false
+    animation:
+      durationMs:
+        inputValue:
+          serializedValue: "600"
+      curve: EASE_IN
+    textValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          conditionalValue:
+            ifConditionalValues:
+              - condition:
+                  source: LOCAL_STATE
+                  baseVariable:
+                    localState:
+                      fieldIdentifier:
+                        name: isNewItem
+                        key: vmo0o
+                      stateVariableType: WIDGET_CLASS_STATE
+                  nodeKeyRef:
+                    key: Scaffold_m2cztblz
+                value:
+                  inputValue:
+                    serializedValue: item
+            elseValue:
+              inputValue:
+                serializedValue: post
+            returnParameter:
+              dataType:
+                scalarType: String
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    textAlignValue:
+      inputValue: ALIGN_START
+  padding: {}
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility:
+    phoneHidden: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

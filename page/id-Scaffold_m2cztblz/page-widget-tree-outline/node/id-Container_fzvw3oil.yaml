@@ -1,0 +1,20 @@
+key: Container_fzvw3oil
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 2

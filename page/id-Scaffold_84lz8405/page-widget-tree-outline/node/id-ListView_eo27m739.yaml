@@ -1,0 +1,21 @@
+key: ListView_eo27m739
+type: ListView
+props:
+  listView:
+    axis: FF_AXIS_VERTICAL
+    primary: true
+    shrinkWrapValue:
+      inputValue: true
+      mostRecentInputValue: true
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

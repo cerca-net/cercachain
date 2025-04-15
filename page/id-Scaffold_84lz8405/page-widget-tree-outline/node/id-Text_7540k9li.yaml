@@ -1,0 +1,16 @@
+key: Text_7540k9li
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: aip8uml4
+    selectable: false
+    textValue:
+      inputValue: Hello World
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

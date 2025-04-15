@@ -1,0 +1,72 @@
+node:
+  key: Scaffold_2beq98ot
+  appBar:
+    key: AppBar_bt3g5bji
+    actions:
+      - key: IconButton_n0bg6qsy
+  body:
+    key: Form_ytvy3g3g
+    children:
+      - key: Column_gl8v5s70
+        children:
+          - key: PageView_4mxinde8
+            children:
+              - key: PlaceholderWidget_fq92f1o4
+                children:
+                  - key: Container_3dz1pjns
+                    children:
+                      - key: Column_jbq7e6rv
+                        children:
+                          - key: Row_gqefho0c
+                            children:
+                              - key: Text_1ky08c69
+                          - key: TextField_3zhuabtm
+                          - key: Divider_cf7bzlv4
+                          - key: Row_6qfofzl4
+                            children:
+                              - key: Text_gjwfssxl
+                              - key: RichText_b66cdosj
+                                children:
+                                  - key: RichTextSpan_iurr25je
+                                  - key: RichTextSpan_tdwjvcdm
+                          - key: StaggeredView_fw30e6it
+                            children:
+                              - key: Container_41uv9xmn
+                                children:
+                                  - key: Stack_8042zri1
+                                    children:
+                                      - key: Row_k1kdw0qc
+                                        children:
+                                          - key: Image_b11fsw87
+                                      - key: Container_iijtdykf
+                                        children:
+                                          - key: Row_gl9bpeev
+                                            children:
+                                              - key: Icon_yx3wdle6
+                                              - key: Text_h6y0lv7o
+                                      - key: Checkbox_e5lzuyd1
+                          - key: IconButton_mkzvg7nm
+              - key: PlaceholderWidget_2pukmxvo
+                children:
+                  - key: Container_xmgpcday
+                    children:
+                      - key: Column_5ml9wyyg
+                        children:
+                          - key: TextField_v4uzrzdt
+                          - key: StaggeredView_j61kybgg
+                            children:
+                              - key: Container_9ztfofq1
+                                children:
+                                  - key: Stack_h9m7jdc9
+                                    children:
+                                      - key: Row_7pfv2bz2
+                                        children:
+                                          - key: Image_qsq7b1jz
+                                      - key: Container_eh86y81j
+                                        children:
+                                          - key: Row_y2wo5w68
+                                            children:
+                                              - key: Icon_maedit8i
+                                              - key: Text_2vcpri3q
+                                      - key: Text_r7p8lxgb
+                          - key: Button_mzs9rrfh

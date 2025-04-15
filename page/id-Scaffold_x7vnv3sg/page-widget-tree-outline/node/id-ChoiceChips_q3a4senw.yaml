@@ -1,0 +1,125 @@
+key: ChoiceChips_q3a4senw
+type: ChoiceChips
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: v1k7vb29
+          textValue:
+            inputValue: All
+            mostRecentInputValue: All
+      - iconData:
+          codePoint: 983508
+          family: MaterialIcons
+          matchTextDirection: false
+          name: star_rounded
+        label:
+          translationIdentifier:
+            key: ww6dzqw4
+          textValue:
+            inputValue: Popular
+            mostRecentInputValue: Popular
+      - iconData:
+          codePoint: 58333
+          family: MaterialIcons
+          matchTextDirection: false
+          name: menu_book
+        label:
+          translationIdentifier:
+            key: jot3aa1n
+          textValue:
+            inputValue: Catalogues
+            mostRecentInputValue: Catalogues
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    initialOption:
+      translationIdentifier:
+        key: wok3m9lz
+      textValue:
+        inputValue: All
+    childAlignment: wrap_center
+    chipSpacingValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    rowSpacingValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    requireSelectionValue:
+      inputValue: true
+      mostRecentInputValue: true
+    wrappedValue:
+      inputValue: false
+      mostRecentInputValue: false
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: ChoiceChipsItems
+parameterValues: {}
+valueKey: {}

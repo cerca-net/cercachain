@@ -1,0 +1,8 @@
+animation:
+  animationType: WIDGET_ANIMATION_ACTION
+  widgetAnimation:
+    actionType: START_ANIMATION
+    animationNodeKeyRef:
+      key: Icon_arqluqd1
+key: zflo6vqa
+nonBlocking: true

@@ -1,0 +1,28 @@
+key: Column_8rl0629v
+type: Column
+props:
+  column:
+    primary: true
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    topValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    rightValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    bottomValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

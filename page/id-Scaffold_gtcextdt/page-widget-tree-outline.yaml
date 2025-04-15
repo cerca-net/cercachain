@@ -1,0 +1,46 @@
+node:
+  key: Scaffold_gtcextdt
+  appBar:
+    key: AppBar_a8cklefe
+    actions:
+      - key: IconButton_9mmpu12g
+  body:
+    key: Container_4smhyccz
+    children:
+      - key: Form_l6rkyvav
+        children:
+          - key: Column_beenrcar
+            children:
+              - key: Container_tu5r1u1x
+                children:
+                  - key: Stack_web4nfmu
+                    children:
+                      - key: Column_beoisv5p
+                        children:
+                          - key: Icon_th8urfl6
+                          - key: Text_swhcoqd1
+                      - key: Container_m1dr6e0u
+              - key: Container_oos0wac1
+                children:
+                  - key: Stack_3mihely2
+                    children:
+                      - key: Column_lir7iqu9
+                        children:
+                          - key: Icon_hqes0fbb
+                          - key: Text_104l7djq
+                      - key: Container_aizovvxb
+              - key: Divider_z59h4nq7
+              - key: Container_11uq0f26
+                children:
+                  - key: Row_guwm5rkd
+                    children:
+                      - key: TextField_bfxlkz37
+                      - key: TextField_jiswc1dt
+              - key: Container_4y94hhut
+                children:
+                  - key: TextField_8uqnmzmg
+              - key: Container_ud4lt2nr
+                children:
+                  - key: Row_mzlju6yr
+                    children:
+                      - key: Text_rds19yoz

@@ -1,0 +1,60 @@
+key: Button_izkhmli4
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: 4trre1jp
+      textValue:
+        inputValue: Upload
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    iconValue:
+      inputValue:
+        iconDataValue:
+          inputValue:
+            codePoint: 983658
+            family: MaterialIcons
+            matchTextDirection: false
+            name: upload_file_rounded
+    iconPosition: TRAILING
+  padding: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: uorwzsxu
+                nodeKeyRef:
+                  key: Button_izkhmli4
+            - {}
+          condition:
+            relation: DOES_NOT_EXIST_OR_IS_EMPTY
+      mostRecentInputValue: true

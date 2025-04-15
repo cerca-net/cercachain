@@ -1,0 +1,218 @@
+identifier:
+  name: order
+  key: 1x1ih0np
+fields:
+  date:
+    identifier:
+      name: date
+    dataType:
+      scalarType: DateTime
+  ref_value:
+    identifier:
+      name: ref_value
+    dataType:
+      scalarType: Double
+  total_ref_value:
+    identifier:
+      name: total_ref_value
+    dataType:
+      scalarType: Double
+  order_completed:
+    identifier:
+      name: order_completed
+    dataType:
+      scalarType: Boolean
+  payment_method:
+    identifier:
+      name: payment_method
+    dataType:
+      scalarType: String
+  order_comlpletion_date:
+    identifier:
+      name: order_comlpletion_date
+    dataType:
+      scalarType: DateTime
+  user_ref:
+    identifier:
+      name: user_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  items:
+    identifier:
+      name: items
+    dataType:
+      listType:
+        scalarType: DataStruct
+      subType:
+        dataStructIdentifier:
+          name: bag_item
+          key: j6zld
+  root_item:
+    identifier:
+      name: root_item
+    dataType:
+      scalarType: DataStruct
+      subType:
+        dataStructIdentifier:
+          name: item
+          key: 2hozp
+  ordersCompleted:
+    identifier:
+      name: ordersCompleted
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  items_inorder:
+    identifier:
+      name: items_inorder
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  publicuser_ref:
+    identifier:
+      name: publicuser_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  order_stats:
+    identifier:
+      name: order_stats
+    dataType:
+      scalarType: Enum
+      subType:
+        enumIdentifier:
+          name: OrderStatuses
+          key: 8yn13
+  order_method:
+    identifier:
+      name: order_method
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order_methods
+          key: t9fp60ga
+  wallet_method:
+    identifier:
+      name: wallet_method
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: wallet_methods
+          key: nsf4do4h
+  username:
+    identifier:
+      name: username
+    dataType:
+      scalarType: String
+  publicusername:
+    identifier:
+      name: publicusername
+    dataType:
+      scalarType: String
+  order_image:
+    identifier:
+      name: order_image
+    dataType:
+      scalarType: ImagePath
+  is_orderimage_uploaded:
+    identifier:
+      name: is_orderimage_uploaded
+    dataType:
+      scalarType: Boolean
+  method_order:
+    identifier:
+      name: method_order
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  method_wallet:
+    identifier:
+      name: method_wallet
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  is_order_accepted:
+    identifier:
+      name: is_order_accepted
+    dataType:
+      scalarType: Boolean
+  is_orderimage_accepted:
+    identifier:
+      name: is_orderimage_accepted
+    dataType:
+      scalarType: Boolean
+  key_1:
+    identifier:
+      name: key_1
+    dataType:
+      scalarType: String
+  key_2:
+    identifier:
+      name: key_2
+    dataType:
+      scalarType: String
+  rev_user:
+    identifier:
+      name: rev_user
+    dataType:
+      scalarType: Integer
+  rev_pubuser:
+    identifier:
+      name: rev_pubuser
+    dataType:
+      scalarType: Integer
+  ref_list_orders:
+    identifier:
+      name: ref_list_orders
+    dataType:
+      listType:
+        scalarType: Double
+  revby_maker:
+    identifier:
+      name: revby_maker
+    dataType:
+      scalarType: Boolean
+  revby_taker:
+    identifier:
+      name: revby_taker
+    dataType:
+      scalarType: Boolean
+  order_finished:
+    identifier:
+      name: order_finished
+    dataType:
+      scalarType: Boolean
+  order_closed:
+    identifier:
+      name: order_closed
+    dataType:
+      scalarType: Boolean
+  rating:
+    identifier:
+      name: rating
+    dataType:
+      listType:
+        scalarType: Integer

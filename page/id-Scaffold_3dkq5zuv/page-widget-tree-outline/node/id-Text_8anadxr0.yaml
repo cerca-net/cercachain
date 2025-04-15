@@ -1,0 +1,19 @@
+key: Text_8anadxr0
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: whsm7nic
+    selectable: false
+    textValue:
+      inputValue: GENERATED
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  responsiveVisibility: {}
+parameterValues: {}

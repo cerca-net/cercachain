@@ -1,0 +1,15 @@
+key: Row_s9etfi06
+type: Row
+props:
+  row:
+    listSpacing:
+      endSpacingValue:
+        inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

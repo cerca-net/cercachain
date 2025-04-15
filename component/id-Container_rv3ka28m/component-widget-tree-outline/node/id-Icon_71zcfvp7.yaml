@@ -1,0 +1,21 @@
+key: Icon_71zcfvp7
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 18
+      mostRecentInputValue: 18
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 58989
+        family: MaterialIcons
+        matchTextDirection: false
+        name: toll
+  padding:
+    leftValue:
+      inputValue: 8

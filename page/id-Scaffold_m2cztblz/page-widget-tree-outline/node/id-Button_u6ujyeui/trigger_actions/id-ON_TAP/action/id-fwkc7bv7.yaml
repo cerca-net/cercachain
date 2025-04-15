@@ -1,0 +1,208 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    write:
+      updates:
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        poster:
+          fieldIdentifier:
+            name: poster
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        header:
+          fieldIdentifier:
+            name: header
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_t7a9u12z
+        type1choice:
+          fieldIdentifier:
+            name: type1choice
+          inputValue: {}
+        video:
+          fieldIdentifier:
+            name: video
+          uploadVariableNodeKey: IconButton_otpvyc5w
+        type0choice:
+          fieldIdentifier:
+            name: type0choice
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_084gzvg9
+        submitter:
+          fieldIdentifier:
+            name: submitter
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: username
+        profilePictureObjectPost:
+          fieldIdentifier:
+            name: profilePictureObjectPost
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: profile_picture
+        type2choice:
+          fieldIdentifier:
+            name: type2choice
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  returnParameter:
+                                    dataType:
+                                      scalarType: String
+                                      nonNullable: false
+                              nodeKeyRef:
+                                key: ChoiceChips_d2ye7kpj
+                          - inputValue:
+                              serializedValue: Movie
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              dataType:
+                                scalarType: String
+                                nonNullable: false
+                        nodeKeyRef:
+                          key: ChoiceChips_sn08hc62
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  returnParameter:
+                                    dataType:
+                                      scalarType: String
+                                      nonNullable: false
+                              nodeKeyRef:
+                                key: ChoiceChips_d2ye7kpj
+                          - inputValue:
+                              serializedValue: Short
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              dataType:
+                                scalarType: String
+                                nonNullable: false
+                        nodeKeyRef:
+                          key: ChoiceChips_teldtmjn
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  returnParameter:
+                                    dataType:
+                                      scalarType: String
+                                      nonNullable: false
+                              nodeKeyRef:
+                                key: ChoiceChips_d2ye7kpj
+                          - inputValue:
+                              serializedValue: Clip
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              dataType:
+                                scalarType: String
+                                nonNullable: false
+                        nodeKeyRef:
+                          key: ChoiceChips_1smtprak
+                elseValue:
+                  inputValue: {}
+                returnParameter:
+                  dataType:
+                    scalarType: String
+        thread:
+          fieldIdentifier:
+            name: thread
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: thread
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        listType:
+                          scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_gso6waap
+        type_object:
+          fieldIdentifier:
+            name: type_object
+          inputValue:
+            serializedValue: Post
+key: fwkc7bv7

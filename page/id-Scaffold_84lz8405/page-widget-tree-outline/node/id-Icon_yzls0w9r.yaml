@@ -1,0 +1,15 @@
+key: Icon_yzls0w9r
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 57410
+        family: MaterialIcons
+        matchTextDirection: false
+        name: account_box

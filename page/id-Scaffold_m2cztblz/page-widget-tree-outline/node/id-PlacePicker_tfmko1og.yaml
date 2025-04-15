@@ -1,0 +1,60 @@
+key: PlacePicker_tfmko1og
+type: PlacePicker
+props:
+  placePicker:
+    buttonOptions:
+      text:
+        themeStyle: TITLE_SMALL
+        translationIdentifier:
+          key: tb7w0dfy
+        textValue:
+          inputValue: Place
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      dimensions:
+        width:
+          pixelsValue:
+            inputValue: 200
+            mostRecentInputValue: 200
+        height:
+          pixelsValue:
+            inputValue: 40
+            mostRecentInputValue: 40
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      fillColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderColorValue:
+        inputValue:
+          value: "0"
+        mostRecentInputValue:
+          value: "0"
+      borderWidthValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+      iconValue:
+        inputValue:
+          sizeValue:
+            inputValue: 16
+            mostRecentInputValue: 16
+          colorValue:
+            inputValue:
+              themeColor: SECONDARY_TEXT
+            mostRecentInputValue:
+              themeColor: SECONDARY_TEXT
+          iconDataValue:
+            inputValue:
+              codePoint: 58569
+              family: MaterialIcons
+              matchTextDirection: false
+              name: place

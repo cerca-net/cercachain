@@ -1,0 +1,11 @@
+key: Column_x84f419y
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    primary: true
+  padding: {}
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 2

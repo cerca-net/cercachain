@@ -1,0 +1,26 @@
+name: Feedpage
+description: ""
+node:
+  key: Scaffold_4u5ce3w4
+pageRouteSettings:
+  routePath: feedpage
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: choiceChipsSelected
+          key: ct83y
+        dataType:
+          scalarType: String
+          nonNullable: false
+  databaseRequestManagers:
+    - identifier:
+        name: feedobject
+        key: hvp6e
+      originalNodeKeyRef:
+        key: Container_jlipacve
+    - identifier:
+        name: feedobjectuser
+        key: um21j
+      originalNodeKeyRef:
+        key: Row_9l8aqtna

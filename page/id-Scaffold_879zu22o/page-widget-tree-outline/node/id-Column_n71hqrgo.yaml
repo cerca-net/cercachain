@@ -1,0 +1,16 @@
+key: Column_n71hqrgo
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    primary: true
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0

@@ -1,0 +1,6 @@
+rootAction:
+  key: lohohdai
+  action:
+    key: 7nccqudk
+trigger:
+  triggerType: ON_TAP

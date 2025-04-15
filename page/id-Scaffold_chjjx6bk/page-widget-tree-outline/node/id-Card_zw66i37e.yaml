@@ -1,0 +1,30 @@
+key: Card_zw66i37e
+type: Card
+props:
+  card:
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      topRightValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      bottomLeftValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      bottomRightValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

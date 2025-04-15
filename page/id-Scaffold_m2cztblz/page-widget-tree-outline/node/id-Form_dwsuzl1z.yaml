@@ -1,0 +1,26 @@
+key: Form_dwsuzl1z
+type: Form
+props:
+  form:
+    validations:
+      - isRequired: true
+        uploadData: {}
+        nodeKeyRef:
+          key: IconButton_im80o0go
+      - isRequired: true
+        text:
+          minimumCharacters: 1
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: m7u2wvq5
+            textValue:
+              inputValue: Field is required
+          maximumCharacters: 240
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: zop2zy01
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_7ex5omb2
+name: FormImage

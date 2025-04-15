@@ -1,0 +1,34 @@
+key: RichTextSpan_htt5wx72
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: xo8vovs1
+      selectable: false
+      textValue:
+        variable:
+          source: LOCAL_STATE
+          defaultValue:
+            serializedValue: "1"
+          baseVariable:
+            localState:
+              fieldIdentifier:
+                name: bagitems
+                key: q0h0h
+              stateVariableType: WIDGET_CLASS_STATE
+          operations:
+            - listNumItems: {}
+            - numberFormat: {}
+          nodeKeyRef:
+            key: Scaffold_x7vnv3sg
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      letterSpacingValue:
+        inputValue: 8
+      fontWeightValue:
+        inputValue: w600

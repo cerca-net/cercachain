@@ -1,0 +1,28 @@
+key: Text_ihb16g91
+type: Text
+props:
+  text:
+    fontFamily: Outfit
+    themeStyle: DISPLAY_SMALL
+    translationIdentifier:
+      key: 4chhei72
+    textValue:
+      inputValue: "  T."
+    fontSizeValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w600
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

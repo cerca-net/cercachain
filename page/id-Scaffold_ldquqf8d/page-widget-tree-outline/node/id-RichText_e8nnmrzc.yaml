@@ -1,0 +1,8 @@
+key: RichText_e8nnmrzc
+type: RichText
+props:
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      fontSizeValue:
+        inputValue: 10

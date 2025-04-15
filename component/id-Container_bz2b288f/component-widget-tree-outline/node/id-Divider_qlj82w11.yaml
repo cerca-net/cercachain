@@ -1,0 +1,25 @@
+key: Divider_qlj82w11
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 0.5
+      mostRecentInputValue: 0.5
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    indentValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    endIndentValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}

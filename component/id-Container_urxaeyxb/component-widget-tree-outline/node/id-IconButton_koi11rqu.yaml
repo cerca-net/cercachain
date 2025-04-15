@@ -1,0 +1,34 @@
+key: IconButton_koi11rqu
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+        mostRecentInputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+          mostRecentInputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 63047
+            family: MaterialIcons
+            matchTextDirection: false
+            name: close_rounded
+  expanded:
+    expandedType: UNEXPANDED

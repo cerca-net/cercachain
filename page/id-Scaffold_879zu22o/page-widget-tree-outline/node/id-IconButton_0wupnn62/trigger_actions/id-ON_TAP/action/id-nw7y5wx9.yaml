@@ -1,0 +1,51 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        user_interests:
+          fieldIdentifier:
+            name: user_interests
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: user_interests
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        listType:
+                          scalarType: String
+                        nonNullable: false
+                operations:
+                  - listUniqueOperation:
+                      uniqueKey:
+                        source: LIST_MAP
+                        baseVariable:
+                          listMap:
+                            containingParentReturnParameter:
+                              dataType:
+                                listType:
+                                  scalarType: String
+                                nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_lth26pes
+        bio:
+          fieldIdentifier:
+            name: bio
+          inputValue: {}
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: market_activity
+          key: 8sbocty8
+key: nw7y5wx9

@@ -1,0 +1,55 @@
+key: TextField_75xf73ae
+type: TextField
+props:
+  padding: {}
+  textField:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+      labelStyle:
+        themeStyle: LABEL_MEDIUM
+      hintText:
+        translationIdentifier:
+          key: anx5jv0q
+        textValue:
+          inputValue: Bio
+          mostRecentInputValue: Bio
+      filledValue:
+        inputValue: true
+        mostRecentInputValue: true
+      fillColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      borderWidthValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+      denseValue:
+        inputValue: true
+        mostRecentInputValue: true
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+        mostRecentInputValue:
+          themeColor: ERROR
+    width:
+      pixelsValue:
+        inputValue: Infinity
+    maxLinesValue:
+      inputValue: 6
+    autofocusValue:
+      inputValue: false
+      mostRecentInputValue: false
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+name: TextField

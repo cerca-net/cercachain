@@ -1,0 +1,28 @@
+key: Text_ch1jowkh
+type: Text
+props:
+  text:
+    fontFamily: Roboto Mono
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: c4yw2f3u
+    textValue:
+      inputValue: "Available :"
+    fontSizeValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    rightValue:
+      inputValue: 16
+  expanded:
+    expandedType: UNEXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+parameterValues: {}

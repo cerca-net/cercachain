@@ -1,0 +1,24 @@
+key: Text_1ky08c69
+type: Text
+props:
+  text:
+    themeStyle: LABEL_MEDIUM
+    translationIdentifier:
+      key: tt5rlnz3
+    selectable: false
+    textValue:
+      inputValue: New Catalogue
+    fontSizeValue:
+      inputValue: 20
+  padding:
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

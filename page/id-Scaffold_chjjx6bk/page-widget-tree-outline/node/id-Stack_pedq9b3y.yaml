@@ -1,0 +1,9 @@
+key: Stack_pedq9b3y
+type: Stack
+props:
+  stack:
+    childAlignment:
+      xValue:
+        inputValue: 0
+      yValue:
+        inputValue: 0

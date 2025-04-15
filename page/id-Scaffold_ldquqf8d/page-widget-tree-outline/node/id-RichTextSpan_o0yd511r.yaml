@@ -1,0 +1,33 @@
+key: RichTextSpan_o0yd511r
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: lhqnvt6s
+      selectable: false
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: "0"
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: order_accum
+            - numberFormat:
+                formatType: COMPACT
+          nodeKeyRef:
+            key: Column_hkh8tvu0
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500

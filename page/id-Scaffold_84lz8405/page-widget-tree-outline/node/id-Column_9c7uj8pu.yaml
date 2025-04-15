@@ -1,0 +1,9 @@
+key: Column_9c7uj8pu
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 16

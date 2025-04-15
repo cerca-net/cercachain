@@ -1,0 +1,55 @@
+key: ToggleIcon_4aqno45o
+type: ToggleIcon
+props:
+  padding: {}
+  expanded:
+    expandedType: UNEXPANDED
+  toggleIcon:
+    valueValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: trsIsSent
+              key: za9dp
+            stateVariableType: WIDGET_CLASS_STATE
+        nodeKeyRef:
+          key: Scaffold_ldquqf8d
+      mostRecentInputValue: false
+    iconOnValue:
+      inputValue:
+        sizeValue:
+          inputValue: 26
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+          mostRecentInputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 62840
+            family: MaterialIcons
+            matchTextDirection: false
+            name: arrow_drop_up_rounded
+    iconOffValue:
+      inputValue:
+        sizeValue:
+          inputValue: 26
+        colorValue:
+          inputValue:
+            themeColor: SUCCESS
+        iconDataValue:
+          inputValue:
+            codePoint: 57496
+            family: MaterialIcons
+            matchTextDirection: false
+            name: arrow_drop_down
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

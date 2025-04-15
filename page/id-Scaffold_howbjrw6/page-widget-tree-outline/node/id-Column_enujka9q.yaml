@@ -1,0 +1,50 @@
+key: Column_enujka9q
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing: {}
+    minSizeValue:
+      inputValue: false
+  padding:
+    type: FF_PADDING_ONLY
+    allValue:
+      inputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  document:
+    collectionIdentifier:
+      name: order
+      key: 1x1ih0np
+    reference:
+      source: WIDGET_CLASS_PARAMETER
+      baseVariable:
+        widgetClass:
+          paramIdentifier:
+            name: orderparameter
+            key: l2k7rx
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Scaffold_howbjrw6
+  requestManagerSettings:
+    useRequestManager: false
+    scope: APP
+valueKey: {}

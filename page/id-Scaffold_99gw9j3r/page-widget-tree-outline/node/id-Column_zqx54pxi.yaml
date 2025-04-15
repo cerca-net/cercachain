@@ -1,0 +1,12 @@
+key: Column_zqx54pxi
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_start
+    scrollable: false
+    primary: true
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

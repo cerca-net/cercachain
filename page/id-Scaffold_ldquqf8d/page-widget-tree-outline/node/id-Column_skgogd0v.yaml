@@ -1,0 +1,12 @@
+key: Column_skgogd0v
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  expanded:
+    expandedType: EXPANDED

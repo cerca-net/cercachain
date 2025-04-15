@@ -1,0 +1,29 @@
+key: Text_9pgvq91m
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: acpsgxy7
+    textValue:
+      inputValue: Enter code recieved
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

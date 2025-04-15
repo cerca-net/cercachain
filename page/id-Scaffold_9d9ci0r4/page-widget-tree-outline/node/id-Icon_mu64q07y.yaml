@@ -1,0 +1,25 @@
+key: Icon_mu64q07y
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 18
+      mostRecentInputValue: 18
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 58727
+        family: MaterialIcons
+        matchTextDirection: false
+        name: search
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

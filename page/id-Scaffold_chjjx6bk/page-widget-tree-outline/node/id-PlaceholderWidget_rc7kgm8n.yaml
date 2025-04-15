@@ -1,0 +1,8 @@
+key: PlaceholderWidget_rc7kgm8n
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

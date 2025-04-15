@@ -1,0 +1,20 @@
+key: Tab_o2k9214x
+type: Tab
+props:
+  tab:
+    text:
+      translationIdentifier:
+        key: uyq9twej
+      textValue:
+        inputValue: Analytics
+        mostRecentInputValue: Analytics
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: AnalyticsTab
+parameterValues: {}

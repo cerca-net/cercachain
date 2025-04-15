@@ -1,0 +1,63 @@
+key: RichText_sjcmec36
+type: RichText
+props:
+  padding: {}
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: zjqwd7xk
+      selectable: false
+      textValue:
+        inputValue: COMPLETED ORDERS
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+      textAlignValue:
+        inputValue: ALIGN_CENTER
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: user_ratings
+          key: ypidbqz4
+  firestore:
+    collectionIdentifier:
+      name: user_ratings
+      key: ypidbqz4
+    orderBy:
+      - collectionFieldIdentifier:
+          name: date
+        descending: true
+    hideOnEmpty: false
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: rated_user
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+  requestManagerSettings: {}
+parameterValues: {}
+valueKey: {}

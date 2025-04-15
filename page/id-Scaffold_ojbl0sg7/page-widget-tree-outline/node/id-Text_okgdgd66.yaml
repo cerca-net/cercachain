@@ -1,0 +1,24 @@
+key: Text_okgdgd66
+type: Text
+props:
+  text:
+    themeStyle: DISPLAY_SMALL
+    translationIdentifier:
+      key: 66c84yjf
+    selectable: false
+    textValue:
+      inputValue: Log in
+      mostRecentInputValue: Log in
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  padding:
+    bottomValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

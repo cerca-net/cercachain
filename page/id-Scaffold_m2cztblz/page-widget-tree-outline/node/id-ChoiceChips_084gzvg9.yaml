@@ -1,0 +1,144 @@
+key: ChoiceChips_084gzvg9
+type: ChoiceChips
+props:
+  padding:
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  choiceChips:
+    options:
+      - iconData:
+          codePoint: 58162
+          family: MaterialIcons
+          matchTextDirection: false
+          name: image
+        label:
+          translationIdentifier:
+            key: 0l25dry9
+          textValue:
+            inputValue: Image
+            mostRecentInputValue: Image
+      - iconData:
+          codePoint: 59045
+          family: MaterialIcons
+          matchTextDirection: false
+          name: video_collection
+        label:
+          translationIdentifier:
+            key: gqhlc2p5
+          textValue:
+            inputValue: Video
+            mostRecentInputValue: Video
+      - iconData:
+          codePoint: 62867
+          family: MaterialIcons
+          matchTextDirection: false
+          name: audiotrack_rounded
+        label:
+          translationIdentifier:
+            key: rxhumk4d
+          textValue:
+            inputValue: Audio
+            mostRecentInputValue: Audio
+      - iconData:
+          codePoint: 58953
+          family: MaterialIcons
+          matchTextDirection: false
+          name: text_fields
+        label:
+          translationIdentifier:
+            key: vdfupv5r
+          textValue:
+            inputValue: Text
+            mostRecentInputValue: Text
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 14
+        mostRecentInputValue: 14
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    initialOption:
+      translationIdentifier:
+        key: xdbfprng
+      textValue:
+        inputValue: Image
+    childAlignment: wrap_center
+    chipSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    requireSelectionValue:
+      inputValue: false
+    wrappedValue:
+      inputValue: false
+      mostRecentInputValue: false
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: ChoiceIPOST
+parameterValues: {}
+valueKey: {}

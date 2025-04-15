@@ -1,0 +1,17 @@
+key: Text_e940wzsr
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: zp38d7fz
+    selectable: false
+    textValue:
+      inputValue: Exchange
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    fontWeightValue:
+      inputValue: w500

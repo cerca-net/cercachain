@@ -1,0 +1,34 @@
+key: Text_3bqid7q1
+type: Text
+props:
+  text:
+    themeStyle: LABEL_SMALL
+    translationIdentifier:
+      key: kxda7n6l
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: date
+          - dateTimeFormat:
+              format: relative
+              isCustom: false
+        nodeKeyRef:
+          key: Row_meshsv63
+    fontSizeValue:
+      inputValue: 10
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

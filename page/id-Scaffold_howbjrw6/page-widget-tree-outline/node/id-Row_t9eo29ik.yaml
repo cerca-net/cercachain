@@ -1,0 +1,11 @@
+key: Row_t9eo29ik
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_center
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0

@@ -1,0 +1,27 @@
+key: Icon_g20eqwmm
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 62080
+        family: MaterialIcons
+        matchTextDirection: false
+        name: person_search_outlined
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

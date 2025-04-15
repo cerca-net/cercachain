@@ -1,0 +1,20 @@
+key: Column_youj54ll
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_start
+    primary: true
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}

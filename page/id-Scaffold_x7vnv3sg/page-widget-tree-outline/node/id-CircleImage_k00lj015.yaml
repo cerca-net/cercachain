@@ -1,0 +1,33 @@
+key: CircleImage_k00lj015
+type: CircleImage
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: profile_picture
+        nodeKeyRef:
+          key: Scaffold_x7vnv3sg
+      mostRecentInputValue: https://picsum.photos/seed/102/600
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4

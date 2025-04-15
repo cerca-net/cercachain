@@ -1,0 +1,25 @@
+key: Container_9exiisv5
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 3

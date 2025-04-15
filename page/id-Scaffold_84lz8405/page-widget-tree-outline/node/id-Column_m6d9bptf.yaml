@@ -1,0 +1,32 @@
+key: Column_m6d9bptf
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_evenly
+    crossAxisAlignment: cross_axis_end
+    primary: true
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    allValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

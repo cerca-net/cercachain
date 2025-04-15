@@ -1,0 +1,8 @@
+key: PlaceholderWidget_v752mpxy
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  visibility:
+    visibleValue:
+      inputValue: true
+      mostRecentInputValue: true

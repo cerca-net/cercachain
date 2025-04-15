@@ -1,0 +1,19 @@
+key: RichTextSpan_m3mt735d
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: mo24tzo4
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: method_id
+          nodeKeyRef:
+            key: ListView_lnvan1b0
+        mostRecentInputValue: "Hello World "

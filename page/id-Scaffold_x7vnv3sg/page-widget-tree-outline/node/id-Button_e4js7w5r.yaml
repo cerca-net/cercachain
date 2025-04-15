@@ -1,0 +1,35 @@
+key: Button_e4js7w5r
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: vd8j3btf
+      textValue:
+        inputValue: Cancel
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 2

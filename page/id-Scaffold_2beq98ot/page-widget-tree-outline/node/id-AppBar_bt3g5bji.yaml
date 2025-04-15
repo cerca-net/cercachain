@@ -1,0 +1,25 @@
+key: AppBar_bt3g5bji
+type: AppBar
+props:
+  appBar:
+    templateType: LARGE_HEADER
+    titleInFlexibleSpaceBar: false
+    defaultBackButtonValue:
+      inputValue: false
+      mostRecentInputValue: false
+    backgroundColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    centerTitleValue:
+      inputValue: false
+      mostRecentInputValue: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}

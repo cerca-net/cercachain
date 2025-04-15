@@ -1,0 +1,40 @@
+key: IconButton_awbtf5h7
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: INFO
+        iconDataValue:
+          inputValue:
+            codePoint: 57415
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,56 @@
+key: IconButton_ih50km0m
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 46
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+    borderRadiusValue:
+      inputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_BACKGROUND
+        iconDataValue:
+          inputValue:
+            codePoint: 983367
+            family: MaterialIcons
+            matchTextDirection: true
+            name: send_rounded
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: Boolean
+                nodeKeyRef:
+                  key: CheckboxListTile_k1gr51vl
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

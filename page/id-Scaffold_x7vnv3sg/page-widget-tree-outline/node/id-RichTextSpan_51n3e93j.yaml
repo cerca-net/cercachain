@@ -1,0 +1,68 @@
+key: RichTextSpan_51n3e93j
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: sejdtg9w
+      selectable: false
+      textValue:
+        variable:
+          source: FUNCTION_CALL
+          functionCall:
+            conditionalValue:
+              ifConditionalValues:
+                - condition:
+                    source: FUNCTION_CALL
+                    functionCall:
+                      values:
+                        - variable:
+                            source: GENERATOR_VARIABLE
+                            baseVariable:
+                              generatorVariable: {}
+                            operations:
+                              - indexInList: {}
+                            nodeKeyRef:
+                              key: ListView_lchq7t5t
+                        - variable:
+                            source: GENERATOR_VARIABLE
+                            baseVariable:
+                              generatorVariable: {}
+                            operations:
+                              - indexInList: {}
+                            nodeKeyRef:
+                              key: ListView_lchq7t5t
+                      condition:
+                        relation: EQUAL_TO
+                  value:
+                    variable:
+                      source: LOCAL_STATE
+                      defaultValue:
+                        serializedValue: "1"
+                      baseVariable:
+                        localState:
+                          fieldIdentifier:
+                            name: bagitems
+                            key: q0h0h
+                          stateVariableType: WIDGET_CLASS_STATE
+                      operations:
+                        - listNumItems: {}
+                        - numberFormat: {}
+                      nodeKeyRef:
+                        key: Scaffold_x7vnv3sg
+              elseValue:
+                inputValue:
+                  serializedValue: "1"
+              returnParameter:
+                dataType:
+                  scalarType: String
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      letterSpacingValue:
+        inputValue: 8
+      fontWeightValue:
+        inputValue: w600

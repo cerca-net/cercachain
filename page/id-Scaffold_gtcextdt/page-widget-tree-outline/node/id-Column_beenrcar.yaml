@@ -1,0 +1,46 @@
+key: Column_beenrcar
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    scrollable: false
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      startSpacingValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: usernames
+          key: i14b35m1
+  firestore:
+    collectionIdentifier:
+      name: usernames
+      key: i14b35m1
+    hideOnEmpty: true
+  requestManagerSettings: {}
+parameterValues: {}
+valueKey: {}

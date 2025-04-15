@@ -1,0 +1,25 @@
+key: Icon_8z88k1d6
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 983556
+        family: MaterialIcons
+        matchTextDirection: false
+        name: sync_alt_rounded
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

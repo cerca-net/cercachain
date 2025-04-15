@@ -1,0 +1,20 @@
+key: Text_jozaunfs
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: k2fm7n0o
+    selectable: false
+    textValue:
+      inputValue: "Select a place :"
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    leftValue:
+      inputValue: 12

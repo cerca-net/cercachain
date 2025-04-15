@@ -1,0 +1,82 @@
+key: Container_o4kfyz0b
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    safeArea: false
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: isNewItem
+                      key: vmo0o
+                    stateVariableType: WIDGET_CLASS_STATE
+                nodeKeyRef:
+                  key: Scaffold_m2cztblz
+            - variable:
+                source: FUNCTION_CALL
+                functionCall:
+                  values:
+                    - variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              dataType:
+                                scalarType: String
+                                nonNullable: false
+                        nodeKeyRef:
+                          key: ChoiceChips_g6ka802q
+                    - inputValue:
+                        serializedValue: Product
+                  condition:
+                    relation: EQUAL_TO
+          combineConditions:
+            operator: AND_OP
+        uiBuilderValue:
+          serializedValue: "false"
+      mostRecentInputValue: false
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: ContainerProduct
+parameterValues: {}
+valueKey: {}

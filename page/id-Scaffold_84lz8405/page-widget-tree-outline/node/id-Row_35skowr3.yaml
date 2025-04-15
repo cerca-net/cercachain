@@ -1,0 +1,13 @@
+key: Row_35skowr3
+type: Row
+props:
+  row: {}
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

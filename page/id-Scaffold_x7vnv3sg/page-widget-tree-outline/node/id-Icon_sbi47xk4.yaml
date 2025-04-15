@@ -1,0 +1,18 @@
+key: Icon_sbi47xk4
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 18
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 57882
+        family: MaterialIcons
+        matchTextDirection: false
+        name: edit
+  padding:
+    rightValue:
+      inputValue: 16

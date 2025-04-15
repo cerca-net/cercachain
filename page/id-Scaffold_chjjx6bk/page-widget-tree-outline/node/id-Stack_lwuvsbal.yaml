@@ -1,0 +1,13 @@
+key: Stack_lwuvsbal
+type: Stack
+props:
+  expanded:
+    expandedType: EXPANDED
+  stack:
+    dimensions: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,41 @@
+key: RatingBar_qcu28i8h
+type: RatingBar
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  ratingBar:
+    iconPadding:
+      type: FF_PADDING_ALL
+      allValue:
+        inputValue: 4
+    direction: FF_AXIS_HORIZONTAL
+    allowInteraction: true
+    iconCountValue:
+      inputValue: 10
+    initialRatingValue:
+      inputValue: 0
+    iconSizeValue:
+      inputValue: 20
+    unratedColorValue:
+      inputValue:
+        themeColor: ACCENT_1
+    fullIconValue:
+      inputValue:
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 57699
+            family: MaterialIcons
+            matchTextDirection: false
+            name: circle
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

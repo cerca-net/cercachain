@@ -1,0 +1,29 @@
+key: Text_doy3n01x
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: qoj4dkrw
+    selectable: false
+    textValue:
+      variable:
+        source: WIDGET_STATE
+        baseVariable:
+          widgetState:
+            actionType: DATE_PICKER
+        operations:
+          - dateTimeFormat:
+              format: d/M/y
+              isCustom: false
+        nodeKeyRef:
+          key: Container_da1pgzmk
+      mostRecentInputValue: Hello World
+  padding:
+    leftValue:
+      inputValue: 12
+  alignment:
+    xValue:
+      inputValue: -1
+    yValue:
+      inputValue: 0

@@ -1,0 +1,168 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    write:
+      updates:
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        poster:
+          fieldIdentifier:
+            name: poster
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        imagesextra:
+          fieldIdentifier:
+            name: imagesextra
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: imagesextra
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: y0gl9fvs
+                nodeKeyRef:
+                  key: IconButton_cqqtuh9o
+        header:
+          fieldIdentifier:
+            name: header
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_l8i4nzb0
+        type1choice:
+          fieldIdentifier:
+            name: type1choice
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_e6deslyk
+        body:
+          fieldIdentifier:
+            name: body
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_q2trxv46
+        type0choice:
+          fieldIdentifier:
+            name: type0choice
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_g6ka802q
+        submitter:
+          fieldIdentifier:
+            name: submitter
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: username
+        profilePictureObjectPost:
+          fieldIdentifier:
+            name: profilePictureObjectPost
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: profile_picture
+        type_object:
+          fieldIdentifier:
+            name: type_object
+          inputValue:
+            serializedValue: Item
+        thread:
+          fieldIdentifier:
+            name: thread
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: thread
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        listType:
+                          scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_yybxzuf1
+        object_refvalue:
+          fieldIdentifier:
+            name: object_refvalue
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_xvt1k7su
+key: irsn0tbl

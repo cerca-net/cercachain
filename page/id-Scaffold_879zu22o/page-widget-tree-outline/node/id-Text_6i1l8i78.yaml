@@ -1,0 +1,16 @@
+key: Text_6i1l8i78
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: z4pso157
+    selectable: false
+    textValue:
+      inputValue: Select your users occupation
+      mostRecentInputValue: Select your users occupation
+    fontSizeValue:
+      inputValue: 22
+      mostRecentInputValue: 22

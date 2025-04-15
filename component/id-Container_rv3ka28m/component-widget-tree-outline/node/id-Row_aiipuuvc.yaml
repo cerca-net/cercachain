@@ -1,0 +1,15 @@
+key: Row_aiipuuvc
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    listSpacing: {}
+  padding: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

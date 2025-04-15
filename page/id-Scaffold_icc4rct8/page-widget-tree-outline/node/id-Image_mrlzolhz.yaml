@@ -1,0 +1,21 @@
+key: Image_mrlzolhz
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_ASSET
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: projects/cercaend-vk8icg/assets/866z74kuxn59/citylansscape2.jpg
+    format: FF_IMAGE_FORMAT_AUTO

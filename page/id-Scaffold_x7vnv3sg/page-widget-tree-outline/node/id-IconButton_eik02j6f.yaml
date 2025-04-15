@@ -1,0 +1,28 @@
+key: IconButton_eik02j6f
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderRadiusValue:
+      inputValue: 12
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 57415
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add
+  padding:
+    rightValue:
+      inputValue: 4

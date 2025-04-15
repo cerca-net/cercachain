@@ -1,0 +1,10 @@
+key: Container_dll64eam
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND

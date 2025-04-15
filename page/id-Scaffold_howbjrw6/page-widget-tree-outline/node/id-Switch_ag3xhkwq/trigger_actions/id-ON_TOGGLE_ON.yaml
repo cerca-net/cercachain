@@ -1,0 +1,57 @@
+rootAction:
+  key: vu9tkfst
+  conditionActions:
+    falseAction:
+      key: krw4aqxg
+      action:
+        key: r3ymcrvk
+    trueActions:
+      - condition:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              values:
+                - variable:
+                    source: FUNCTION_CALL
+                    functionCall:
+                      values:
+                        - variable:
+                            source: WIDGET_STATE
+                            baseVariable:
+                              widgetState:
+                                returnParameter:
+                                  dataType:
+                                    scalarType: Boolean
+                            nodeKeyRef:
+                              key: Switch_hzvz0la9
+                        - inputValue:
+                            serializedValue: "true"
+                      condition:
+                        relation: EQUAL_TO
+                - variable:
+                    source: FUNCTION_CALL
+                    functionCall:
+                      values:
+                        - variable:
+                            source: WIDGET_STATE
+                            baseVariable:
+                              widgetState:
+                                returnParameter:
+                                  dataType:
+                                    scalarType: Boolean
+                            nodeKeyRef:
+                              key: Switch_3ne8sibb
+                        - inputValue:
+                            serializedValue: "true"
+                      condition:
+                        relation: EQUAL_TO
+              combineConditions:
+                operator: AND_OP
+        trueAction:
+          key: 5rt9ysu5
+          action:
+            key: vs48ukuu
+    hasMultiConditions: false
+    key: bvckbszc
+trigger:
+  triggerType: ON_TOGGLE_ON

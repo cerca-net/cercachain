@@ -1,0 +1,18 @@
+key: Icon_6nzg8qw8
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 59045
+        family: MaterialIcons
+        matchTextDirection: false
+        name: video_collection

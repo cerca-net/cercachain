@@ -1,0 +1,14 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: q0h0h
+      removeFromList:
+        variable:
+          source: GENERATOR_VARIABLE
+          baseVariable:
+            generatorVariable: {}
+          nodeKeyRef:
+            key: Column_jposqunx
+  updateType: WIDGET
+  stateVariableType: WIDGET_CLASS_STATE
+key: qeglfpqu

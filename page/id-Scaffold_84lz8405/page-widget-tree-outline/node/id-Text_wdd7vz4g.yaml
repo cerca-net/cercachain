@@ -1,0 +1,16 @@
+key: Text_wdd7vz4g
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: sha2lhg7
+    selectable: false
+    textValue:
+      inputValue: Hello World
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

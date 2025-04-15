@@ -1,0 +1,8 @@
+animation:
+  animationType: WIDGET_ANIMATION_ACTION
+  widgetAnimation:
+    actionType: START_ANIMATION
+    animationNodeKeyRef:
+      key: Icon_aq360yz5
+key: e32xdmwf
+nonBlocking: true

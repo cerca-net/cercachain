@@ -1,0 +1,163 @@
+key: TextField_rzgw4sf5
+type: TextField
+props:
+  padding:
+    bottomValue:
+      inputValue: 12
+  textField:
+    textStyle:
+      themeStyle: HEADLINE_MEDIUM
+      fontSizeValue:
+        inputValue: 18
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      contentPadding:
+        leftValue:
+          inputValue: 16
+          mostRecentInputValue: 16
+        topValue:
+          inputValue: 20
+          mostRecentInputValue: 20
+        rightValue:
+          inputValue: 16
+          mostRecentInputValue: 16
+        bottomValue:
+          inputValue: 20
+          mostRecentInputValue: 20
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+      labelStyle:
+        themeStyle: HEADLINE_MEDIUM
+        fontSizeValue:
+          inputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      labelText:
+        translationIdentifier:
+          key: 4emz7qjp
+        textValue:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  returnParameter:
+                                    dataType:
+                                      scalarType: String
+                                      nonNullable: false
+                              nodeKeyRef:
+                                key: ChoiceChips_0swhq4b8
+                          - inputValue:
+                              serializedValue: Digital Payment
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      inputValue:
+                        serializedValue: Phone number
+                elseValue:
+                  inputValue:
+                    serializedValue: Account number
+                returnParameter:
+                  dataType:
+                    scalarType: String
+          mostRecentInputValue: Account number
+      errorTextStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: ERROR
+          mostRecentInputValue:
+            themeColor: ERROR
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      filledValue:
+        inputValue: true
+        mostRecentInputValue: true
+      fillColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderWidthValue:
+        inputValue: 2
+        mostRecentInputValue: 2
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+        mostRecentInputValue:
+          themeColor: ERROR
+      focusBorderColorValue:
+        inputValue:
+          themeColor: PRIMARY
+        mostRecentInputValue:
+          themeColor: PRIMARY
+    capitalization: WORDS
+    maxLinesValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    autofocusValue:
+      inputValue: true
+      mostRecentInputValue: true
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_0swhq4b8
+            - inputValue:
+                serializedValue: Cash
+          condition:
+            relation: NOT_EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: task
+parameterValues: {}
+valueKey: {}

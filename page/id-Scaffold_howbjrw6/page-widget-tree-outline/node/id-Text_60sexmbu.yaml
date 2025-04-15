@@ -1,0 +1,30 @@
+key: Text_60sexmbu
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: whqjep9l
+    selectable: false
+    textValue:
+      inputValue: Order Processed
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: Boolean
+                nodeKeyRef:
+                  key: Switch_hzvz0la9
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true

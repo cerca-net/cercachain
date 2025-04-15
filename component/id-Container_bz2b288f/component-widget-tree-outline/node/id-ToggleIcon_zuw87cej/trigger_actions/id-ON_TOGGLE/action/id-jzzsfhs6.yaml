@@ -1,0 +1,8 @@
+animation:
+  animationType: WIDGET_ANIMATION_ACTION
+  widgetAnimation:
+    actionType: REVERSE_ANIMATION
+    animationNodeKeyRef:
+      key: ToggleIcon_zuw87cej
+key: jzzsfhs6
+nonBlocking: true

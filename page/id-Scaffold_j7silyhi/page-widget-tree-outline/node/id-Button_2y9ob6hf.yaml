@@ -1,0 +1,70 @@
+key: Button_2y9ob6hf
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: t2wf7c91
+      textValue:
+        inputValue: Create Account
+        mostRecentInputValue: Create Account
+      colorValue:
+        inputValue:
+          value: "4294967295"
+        mostRecentInputValue:
+          value: "4294967295"
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      topRightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      bottomLeftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      bottomRightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      allValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 44
+          mostRecentInputValue: 44
+    elevationValue:
+      inputValue: 3
+      mostRecentInputValue: 3
+    fillColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

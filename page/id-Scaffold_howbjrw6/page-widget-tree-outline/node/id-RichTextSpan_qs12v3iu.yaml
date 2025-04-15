@@ -1,0 +1,10 @@
+key: RichTextSpan_qs12v3iu
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: t6kzh6w6
+      textValue:
+        inputValue: "User: "

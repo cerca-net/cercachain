@@ -1,0 +1,21 @@
+key: Icon_xx0njuk6
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    iconDataValue:
+      inputValue:
+        codePoint: 61736
+        family: MaterialIcons
+        matchTextDirection: false
+        name: info_outlined
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

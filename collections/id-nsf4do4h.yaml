@@ -1,0 +1,39 @@
+identifier:
+  name: wallet_methods
+  key: nsf4do4h
+fields:
+  method_poster:
+    identifier:
+      name: method_poster
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  method_name:
+    identifier:
+      name: method_name
+    dataType:
+      scalarType: String
+  method_type:
+    identifier:
+      name: method_type
+    dataType:
+      scalarType: String
+  method_id:
+    identifier:
+      name: method_id
+    dataType:
+      scalarType: String
+  method_account:
+    identifier:
+      name: method_account
+    dataType:
+      scalarType: String
+  method_thread:
+    identifier:
+      name: method_thread
+    dataType:
+      listType:
+        scalarType: String

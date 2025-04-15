@@ -1,0 +1,26 @@
+key: RichText_b66cdosj
+type: RichText
+props:
+  padding:
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: n6dmdj2n
+      selectable: false
+      textValue:
+        inputValue: Add ID words
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

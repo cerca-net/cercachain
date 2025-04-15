@@ -1,0 +1,20 @@
+key: Icon_2jquyxee
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 62167
+        family: MaterialIcons
+        matchTextDirection: false
+        name: push_pin_outlined
+  responsiveVisibility: {}
+parameterValues: {}

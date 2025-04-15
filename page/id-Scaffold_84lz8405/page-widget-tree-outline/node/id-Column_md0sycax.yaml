@@ -1,0 +1,22 @@
+key: Column_md0sycax
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 12
+    minSizeValue:
+      inputValue: true
+  padding:
+    type: FF_PADDING_ALL
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

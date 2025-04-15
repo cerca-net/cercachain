@@ -1,0 +1,25 @@
+key: Icon_d4pvi1by
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 58987
+        family: MaterialIcons
+        matchTextDirection: false
+        name: toggle_off
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

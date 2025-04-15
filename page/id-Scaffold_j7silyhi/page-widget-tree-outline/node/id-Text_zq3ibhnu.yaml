@@ -1,0 +1,28 @@
+key: Text_zq3ibhnu
+type: Text
+props:
+  text:
+    themeStyle: LABEL_LARGE
+    translationIdentifier:
+      key: ydpo41yy
+    selectable: false
+    textValue:
+      inputValue: Create an account by using the form below.
+      mostRecentInputValue: Create an account by using the form below.
+    textAlignValue:
+      inputValue: ALIGN_START
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

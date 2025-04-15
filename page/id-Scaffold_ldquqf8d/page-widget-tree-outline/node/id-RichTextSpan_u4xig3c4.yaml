@@ -1,0 +1,14 @@
+key: RichTextSpan_u4xig3c4
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: rxvx4t4s
+      textValue:
+        inputValue: "Avg Rating   "
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SUCCESS

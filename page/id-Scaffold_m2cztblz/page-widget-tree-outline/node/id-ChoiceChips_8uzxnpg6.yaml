@@ -1,0 +1,128 @@
+key: ChoiceChips_8uzxnpg6
+type: ChoiceChips
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: 17a369bh
+          textValue:
+            inputValue: Tech
+      - label:
+          translationIdentifier:
+            key: 1ausvomf
+          textValue:
+            inputValue: Food
+      - label:
+          translationIdentifier:
+            key: zkjxj7oh
+          textValue:
+            inputValue: Wellness
+      - label:
+          translationIdentifier:
+            key: kevv3htw
+          textValue:
+            inputValue: Home & Office
+      - label:
+          translationIdentifier:
+            key: ctnxaf2w
+          textValue:
+            inputValue: Apparel
+      - label:
+          translationIdentifier:
+            key: lvkib4l8
+          textValue:
+            inputValue: Vehicle
+      - label:
+          translationIdentifier:
+            key: k7mjfxy4
+          textValue:
+            inputValue: Tools
+      - label:
+          translationIdentifier:
+            key: p3gu0uxj
+          textValue:
+            inputValue: Others
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_BACKGROUND
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    childAlignment: wrap_center
+    chipSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    requireSelectionValue:
+      inputValue: true
+      mostRecentInputValue: true
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: ChoiceChipsItP
+parameterValues: {}
+valueKey: {}

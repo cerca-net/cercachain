@@ -1,0 +1,34 @@
+key: Text_ob6l5kwf
+type: Text
+props:
+  text:
+    themeStyle: TITLE_SMALL
+    translationIdentifier:
+      key: 4v7earmx
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: method_tag
+        nodeKeyRef:
+          key: ListView_rnsm6f78
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

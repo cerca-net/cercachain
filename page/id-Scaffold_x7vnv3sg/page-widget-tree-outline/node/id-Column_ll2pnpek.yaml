@@ -1,0 +1,9 @@
+key: Column_ll2pnpek
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+  expanded:
+    expandedType: EXPANDED

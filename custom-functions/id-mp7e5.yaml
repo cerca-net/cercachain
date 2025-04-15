@@ -1,0 +1,19 @@
+identifier:
+  name: sumofBagitemsListRefvalues
+  key: mp7e5
+arguments:
+  - identifier:
+      name: refvaluefromiteminlist
+      key: mzmc60
+    dataType:
+      listType:
+        scalarType: Double
+      nonNullable: false
+returnParameter:
+  dataType:
+    scalarType: Double
+    nonNullable: true
+tests:
+  - parameterValues:
+      values:
+        mzmc60: "[\"4\",\"6\",\"8\"]"

@@ -1,0 +1,16 @@
+key: Text_ofwvxy5o
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: wfth4mzp
+    textValue:
+      inputValue: List Item Title
+      mostRecentInputValue: List Item Title
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

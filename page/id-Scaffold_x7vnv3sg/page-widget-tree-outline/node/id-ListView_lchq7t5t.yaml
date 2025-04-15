@@ -1,0 +1,53 @@
+key: ListView_lchq7t5t
+type: ListView
+props:
+  listView:
+    axis: FF_AXIS_VERTICAL
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 4
+    shrinkWrapValue:
+      inputValue: true
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+generatorVariable:
+  identifier:
+    name: bag
+  variable:
+    source: LOCAL_STATE
+    baseVariable:
+      localState:
+        fieldIdentifier:
+          name: bagitems
+          key: q0h0h
+        stateVariableType: WIDGET_CLASS_STATE
+    operations:
+      - listUniqueOperation:
+          uniqueKey:
+            source: LIST_MAP
+            baseVariable:
+              listMap:
+                containingParentReturnParameter:
+                  identifier:
+                    name: bagitems
+                    key: q0h0h
+                  dataType:
+                    listType:
+                      scalarType: DocumentReference
+                    subType:
+                      collectionIdentifier:
+                        name: submission
+                        key: p1djqn3b
+    nodeKeyRef:
+      key: Scaffold_x7vnv3sg
+valueKey: {}

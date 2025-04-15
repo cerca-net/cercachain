@@ -1,0 +1,6 @@
+key: Container_oe72jyfi
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration: {}

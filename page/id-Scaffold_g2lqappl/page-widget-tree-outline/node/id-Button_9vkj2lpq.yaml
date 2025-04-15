@@ -1,0 +1,68 @@
+key: Button_9vkj2lpq
+type: Button
+props:
+  button:
+    text:
+      fontFamily: Roboto Mono
+      themeStyle: TITLE_SMALL
+      isCustomFont: false
+      translationIdentifier:
+        key: no1fu3db
+      textValue:
+        inputValue: Explore
+        mostRecentInputValue: Explore
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      fontWeightValue:
+        inputValue: w600
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 100
+        mostRecentInputValue: 100
+    innerPadding:
+      leftValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      rightValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 250
+          mostRecentInputValue: 250
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  padding:
+    topValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 0.85
+      mostRecentInputValue: 0.85
+parameterValues: {}
+valueKey: {}

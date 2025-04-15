@@ -1,0 +1,11 @@
+key: RichTextSpan_iurr25je
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: xldej51d
+      selectable: false
+      textValue:
+        inputValue: "2"

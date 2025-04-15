@@ -1,0 +1,47 @@
+key: Button_y7m6h5uf
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: 0x1viwfk
+      textValue:
+        inputValue: Share
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 24
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    iconValue:
+      inputValue:
+        iconDataValue:
+          inputValue:
+            codePoint: 60555
+            family: MaterialIcons
+            matchTextDirection: false
+            name: share_sharp
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

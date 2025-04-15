@@ -1,0 +1,35 @@
+key: Text_8ritsuyj
+type: Text
+props:
+  text:
+    themeStyle: LABEL_SMALL
+    translationIdentifier:
+      key: jp1yv1hk
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: date
+          - dateTimeFormat:
+              format: relative
+              abbreviated: true
+              isCustom: false
+        nodeKeyRef:
+          key: StaggeredView_0ala32e2
+    fontSizeValue:
+      inputValue: 10
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

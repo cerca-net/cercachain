@@ -1,0 +1,41 @@
+key: Container_fb379o7w
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      colorValue:
+        inputValue:
+          value: "2164260863"
+        mostRecentInputValue:
+          value: "2164260863"
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  expanded:
+    expandedType: UNEXPANDED

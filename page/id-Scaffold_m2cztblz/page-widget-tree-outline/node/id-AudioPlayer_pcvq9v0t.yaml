@@ -1,0 +1,133 @@
+key: AudioPlayer_pcvq9v0t
+type: AudioPlayer
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  audioPlayer:
+    audio:
+      type: FF_AUDIO_TYPE_NETWORK
+      pathValue:
+        variable:
+          source: FUNCTION_CALL
+          functionCall:
+            conditionalValue:
+              ifConditionalValues:
+                - condition:
+                    source: FUNCTION_CALL
+                    functionCall:
+                      values:
+                        - variable:
+                            source: LOCAL_STATE
+                            baseVariable:
+                              localState:
+                                fieldIdentifier:
+                                  name: recorded
+                                  key: 9x31kpxg
+                                stateVariableType: APP_STATE
+                        - {}
+                      condition:
+                        relation: EXISTS_AND_NON_EMPTY
+                  value:
+                    variable:
+                      source: LOCAL_STATE
+                      baseVariable:
+                        localState:
+                          fieldIdentifier:
+                            name: recorded
+                            key: 9x31kpxg
+                          stateVariableType: APP_STATE
+              elseValue:
+                variable:
+                  source: WIDGET_STATE
+                  baseVariable:
+                    widgetState:
+                      actionType: UPLOAD_DATA_URL
+                      actionKeyRef:
+                        key: gpjv6jwb
+                  nodeKeyRef:
+                    key: IconButton_lip0v30n
+              returnParameter:
+                dataType:
+                  scalarType: AudioPath
+      titleValue:
+        variable:
+          source: WIDGET_STATE
+          baseVariable:
+            widgetState:
+              returnParameter:
+                allowedDestinationTypes:
+                  - Integer
+                  - Double
+                  - Boolean
+                  - ImagePath
+                  - VideoPath
+                  - AudioPath
+                dataType:
+                  scalarType: String
+          nodeKeyRef:
+            key: TextField_kv78thil
+        mostRecentInputValue: ""
+    titleTextStyle:
+      themeStyle: TITLE_LARGE
+    playbackDurationTextStyle:
+      themeStyle: LABEL_MEDIUM
+    playInBackground: DISABLED_RESTORE_ON_FOREGROUND
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    playbackButtonColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    activeTrackColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    inactiveTrackColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    elevationValue:
+      inputValue: 0
+    pauseOnNavigateValue:
+      inputValue: true
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: FUNCTION_CALL
+                functionCall:
+                  values:
+                    - variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            actionType: STOP_RECORD_AUDIO
+                            actionKeyRef:
+                              key: gsa5dctw
+                        nodeKeyRef:
+                          key: IconButton_hly6ke8p
+                    - {}
+                  condition:
+                    relation: EXISTS_AND_NON_EMPTY
+            - variable:
+                source: FUNCTION_CALL
+                functionCall:
+                  values:
+                    - variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            actionType: UPLOAD_DATA_URL
+                            actionKeyRef:
+                              key: gpjv6jwb
+                        nodeKeyRef:
+                          key: IconButton_lip0v30n
+                    - {}
+                  condition:
+                    relation: EXISTS_AND_NON_EMPTY
+          combineConditions:
+            operator: OR_OP
+      mostRecentInputValue: true

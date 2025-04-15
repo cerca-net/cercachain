@@ -1,0 +1,25 @@
+key: Icon_fbmgggtf
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 60376
+        family: MaterialIcons
+        matchTextDirection: false
+        name: power_settings_new_sharp
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

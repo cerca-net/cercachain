@@ -1,0 +1,13 @@
+key: Text_vkwb0sc9
+type: Text
+props:
+  text:
+    themeStyle: BODY_SMALL
+    translationIdentifier:
+      key: 2li0qa9j
+    selectable: false
+    textValue:
+      inputValue: Your recent activity is below.
+      mostRecentInputValue: Your recent activity is below.
+  responsiveVisibility: {}
+parameterValues: {}

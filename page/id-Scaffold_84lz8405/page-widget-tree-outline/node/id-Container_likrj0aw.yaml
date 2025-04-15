@@ -1,0 +1,39 @@
+key: Container_likrj0aw
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 4
+        colorValue:
+          inputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+        dyValue:
+          inputValue: 2
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: MAINMENU
+valueKey: {}

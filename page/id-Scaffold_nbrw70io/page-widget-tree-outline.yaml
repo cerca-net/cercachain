@@ -1,0 +1,15 @@
+node:
+  key: Scaffold_nbrw70io
+  body:
+    key: Container_1bcrekcp
+    children:
+      - key: Column_aivxzqut
+        children:
+          - key: IconButton_gsfhobwp
+          - key: Container_7i18hfjp
+            children:
+              - key: Column_62f0mcpa
+                children:
+                  - key: Row_wb2fe9uz
+                    children:
+                      - key: IconButton_cby5fugx

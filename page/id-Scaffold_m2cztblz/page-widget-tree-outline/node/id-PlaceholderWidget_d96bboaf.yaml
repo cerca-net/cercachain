@@ -1,0 +1,21 @@
+key: PlaceholderWidget_d96bboaf
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: isNewItem
+              key: vmo0o
+            stateVariableType: WIDGET_CLASS_STATE
+        operations:
+          - negate: {}
+        nodeKeyRef:
+          key: Scaffold_m2cztblz
+        uiBuilderValue:
+          serializedValue: "true"
+      mostRecentInputValue: true

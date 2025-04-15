@@ -1,0 +1,19 @@
+key: Text_r7p8lxgb
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 5m3j3ego
+    selectable: false
+    textValue:
+      inputValue: Hello World
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: -1

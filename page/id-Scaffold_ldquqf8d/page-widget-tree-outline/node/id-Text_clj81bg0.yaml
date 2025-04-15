@@ -1,0 +1,28 @@
+key: Text_clj81bg0
+type: Text
+props:
+  text:
+    fontFamily: Roboto Mono
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 41f05aue
+    textValue:
+      inputValue: "Available :"
+    fontSizeValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    rightValue:
+      inputValue: 16
+  expanded:
+    expandedType: UNEXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+parameterValues: {}

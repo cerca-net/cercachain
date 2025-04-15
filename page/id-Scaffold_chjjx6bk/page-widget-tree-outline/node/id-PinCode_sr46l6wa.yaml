@@ -1,0 +1,51 @@
+key: PinCode_sr46l6wa
+type: PinCode
+props:
+  responsiveVisibility: {}
+  pinCode:
+    textStyle:
+      themeStyle: BODY_LARGE
+      textValue:
+        inputValue: ""
+    mainAxisAlignment: main_axis_center
+    shape: SHAPE_UNDERLINE
+    autoFocus: true
+    showCursor: false
+    hintText: true
+    errorTextSpace: 16
+    keyboardType: NUMBER
+    lengthValue:
+      inputValue: 8
+    enableActiveFillValue:
+      inputValue: false
+    fieldHeightValue:
+      inputValue: 24
+    fieldWidthValue:
+      inputValue: 18
+    borderWidthValue:
+      inputValue: 2
+    activeColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+    selectedColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    inactiveColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    borderRadiusValue:
+      inputValue: 12
+    obscureTextValue:
+      inputValue: false
+    obscuringCharacterValue:
+      inputValue: "*"
+    hintCharacterValue:
+      inputValue: "*"
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

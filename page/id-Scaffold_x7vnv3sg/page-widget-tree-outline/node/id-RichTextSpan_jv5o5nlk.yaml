@@ -1,0 +1,29 @@
+key: RichTextSpan_jv5o5nlk
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: uo9t1l87
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: "0"
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: user_pins
+            - listNumItems: {}
+            - numberFormat:
+                formatType: COMPACT
+          nodeKeyRef:
+            key: Scaffold_x7vnv3sg
+        mostRecentInputValue: "44"
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT

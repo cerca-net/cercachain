@@ -1,0 +1,39 @@
+key: Column_1r5w3mn1
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_around
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    topValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    rightValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    bottomValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

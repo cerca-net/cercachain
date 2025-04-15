@@ -1,0 +1,178 @@
+fields:
+  - parameter:
+      identifier:
+        name: isCategoriesExpanded
+        key: epwpyo7x
+      dataType:
+        scalarType: Boolean
+    persisted: false
+    serializedDefaultValue:
+      - "false"
+  - parameter:
+      identifier:
+        name: isAssistantExpanded
+        key: nw7130i1
+      dataType:
+        scalarType: Boolean
+    persisted: false
+    serializedDefaultValue:
+      - "false"
+  - parameter:
+      identifier:
+        name: recorded
+        key: 9x31kpxg
+      dataType:
+        scalarType: AudioPath
+    persisted: false
+  - parameter:
+      identifier:
+        name: recording
+        key: ayzinr1c
+      dataType:
+        scalarType: Boolean
+    persisted: false
+    serializedDefaultValue:
+      - "false"
+  - parameter:
+      identifier:
+        name: ImagesList
+        key: 37ulu4oo
+      dataType:
+        listType:
+          scalarType: ImagePath
+    persisted: false
+  - parameter:
+      identifier:
+        name: choicesLists
+        key: 00q4uji3
+      dataType:
+        listType:
+          scalarType: String
+    persisted: false
+  - parameter:
+      identifier:
+        name: isUserOrdering
+        key: mbin5vbr
+      dataType:
+        scalarType: Boolean
+    persisted: false
+  - parameter:
+      identifier:
+        name: isBagOpen
+        key: f6e29ntg
+      dataType:
+        scalarType: Boolean
+    persisted: false
+  - parameter:
+      identifier:
+        name: isUserinPublicpage
+        key: vmajruee
+      dataType:
+        scalarType: Boolean
+    persisted: false
+  - parameter:
+      identifier:
+        name: activethread
+        key: swlhexl4
+      dataType:
+        listType:
+          scalarType: String
+    persisted: false
+  - parameter:
+      identifier:
+        name: showfullfeed
+        key: ejgjec8e
+      dataType:
+        scalarType: Boolean
+    persisted: false
+    serializedDefaultValue:
+      - "true"
+  - parameter:
+      identifier:
+        name: isWalletConnected
+        key: 0xh6z8cw
+      dataType:
+        scalarType: Boolean
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: walletAddress
+        key: 7dwlnb5y
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: chainId
+        key: jdy0nd2h
+      dataType:
+        scalarType: Integer
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: qrCodeURI
+        key: 2yc6nkqo
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: connectionError
+        key: lgo77cp2
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: blockchainUrl
+        key: s50j6c4w
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: contactAdress
+        key: mffkzwrc
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: ethPrivateKey
+        key: tpcs85kr
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: className
+        key: kmpdhm12
+      dataType:
+        scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: transactionHashes
+        key: 35qxigi5
+      dataType:
+        listType:
+          scalarType: String
+      description: ""
+    persisted: false
+  - parameter:
+      identifier:
+        name: lastUpdateTimestamp
+        key: 8sjpksfo
+      dataType:
+        scalarType: DateTime
+      description: ""
+    persisted: false

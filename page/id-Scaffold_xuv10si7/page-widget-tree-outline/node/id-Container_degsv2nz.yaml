@@ -1,0 +1,29 @@
+key: Container_degsv2nz
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      boxShadow: {}
+      image: {}
+    maxDimensions:
+      width:
+        pixelsValue:
+          inputValue: 770
+          mostRecentInputValue: 770
+    minDimensions: {}
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: -1
+      mostRecentInputValue: -1
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+name: max-width
+parameterValues: {}
+valueKey: {}

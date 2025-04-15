@@ -1,0 +1,23 @@
+key: Text_2j03w9sr
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: 66pn5jni
+    selectable: false
+    textValue:
+      inputValue: Referral
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    fontWeightValue:
+      inputValue: w500
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

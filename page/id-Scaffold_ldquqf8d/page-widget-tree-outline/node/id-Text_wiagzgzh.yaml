@@ -1,0 +1,75 @@
+key: Text_wiagzgzh
+type: Text
+props:
+  text:
+    fontFamily: Roboto Mono
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: k9wx9l5l
+    textValue:
+      variable:
+        source: FUNCTION_CALL
+        operations:
+          - numberFormat:
+              formatType: COMPACT
+        functionCall:
+          values:
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: generation_i
+                nodeKeyRef:
+                  key: Container_asweme3u
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: participation_i
+                nodeKeyRef:
+                  key: Container_asweme3u
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: transition_i
+                nodeKeyRef:
+                  key: Container_asweme3u
+          customFunction:
+            name: generatedcredits
+            key: qu1oj
+    fontSizeValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w500
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: -1
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

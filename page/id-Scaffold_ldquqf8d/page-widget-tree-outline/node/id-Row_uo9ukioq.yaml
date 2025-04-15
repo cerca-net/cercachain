@@ -1,0 +1,20 @@
+key: Row_uo9ukioq
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_start
+    listSpacing:
+      spacingValue:
+        inputValue: 4
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

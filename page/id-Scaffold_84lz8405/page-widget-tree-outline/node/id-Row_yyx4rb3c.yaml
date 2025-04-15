@@ -1,0 +1,16 @@
+key: Row_yyx4rb3c
+type: Row
+props:
+  row:
+    crossAxisAlignment: cross_axis_stretch
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 32
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

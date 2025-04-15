@@ -1,0 +1,28 @@
+key: Container_unlb36sa
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+        topRightValue:
+          inputValue: 100
+        bottomLeftValue:
+          inputValue: 12
+        bottomRightValue:
+          inputValue: 100
+        allValue:
+          inputValue: 100
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+  padding:
+    leftValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 8
+  expanded:
+    expandedType: FLEXIBLE

@@ -1,0 +1,22 @@
+key: Row_yyqxywo7
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

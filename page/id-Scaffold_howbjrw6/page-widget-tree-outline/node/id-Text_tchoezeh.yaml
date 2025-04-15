@@ -1,0 +1,35 @@
+key: Text_tchoezeh
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 7qkhdi5d
+    selectable: false
+    textValue:
+      inputValue: Transaction
+    fontSizeValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    colorValue:
+      inputValue:
+        value: "4279571998"
+      mostRecentInputValue:
+        value: "4279571998"
+    fontWeightValue:
+      inputValue: w700
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

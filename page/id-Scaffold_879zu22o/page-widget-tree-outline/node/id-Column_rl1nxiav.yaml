@@ -1,0 +1,8 @@
+key: Column_rl1nxiav
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing: {}

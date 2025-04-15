@@ -1,0 +1,101 @@
+key: Container_z7y2qlja
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 300
+          mostRecentInputValue: 300
+      height:
+        pixelsValue:
+          inputValue: 460
+          mostRecentInputValue: 460
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 4
+          mostRecentInputValue: 4
+        colorValue:
+          inputValue:
+            value: "855638016"
+          mostRecentInputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+          mostRecentInputValue: 0
+        dyValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  expanded:
+    expandedType: UNEXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_n3bkrvda
+            - inputValue:
+                serializedValue: Methods
+          condition:
+            relation: EQUAL_TO
+        uiBuilderValue:
+          serializedValue: "true"
+      mostRecentInputValue: false
+  responsiveVisibility:
+    phoneHidden: false
+name: cardmethods
+parameterValues: {}

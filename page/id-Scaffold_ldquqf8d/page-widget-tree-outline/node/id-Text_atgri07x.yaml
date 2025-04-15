@@ -1,0 +1,31 @@
+key: Text_atgri07x
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 4plssfel
+    textValue:
+      inputValue: Tcoin balance
+    fontSizeValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    topValue:
+      inputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

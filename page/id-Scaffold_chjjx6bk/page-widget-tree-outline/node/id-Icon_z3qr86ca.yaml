@@ -1,0 +1,41 @@
+key: Icon_z3qr86ca
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: INFO
+      mostRecentInputValue:
+        themeColor: INFO
+    iconDataValue:
+      inputValue:
+        codePoint: 58283
+        family: MaterialIcons
+        matchTextDirection: false
+        name: location_on
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

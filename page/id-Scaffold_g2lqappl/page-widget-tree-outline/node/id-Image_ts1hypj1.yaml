@@ -1,0 +1,37 @@
+key: Image_ts1hypj1
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_ASSET
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    borderRadius:
+      type: FF_BORDER_RADIUS_ONLY
+      topLeftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      topRightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: projects/cercaend-vk8icg/assets/866z74kuxn59/citylansscape2.jpg
+      mostRecentInputValue: projects/cercaend-vk8icg/assets/866z74kuxn59/citylansscape2.jpg
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0

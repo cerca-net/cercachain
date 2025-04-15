@@ -1,0 +1,17 @@
+key: Icon_moiw8sb5
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 60555
+        family: MaterialIcons
+        matchTextDirection: false
+        name: share_sharp

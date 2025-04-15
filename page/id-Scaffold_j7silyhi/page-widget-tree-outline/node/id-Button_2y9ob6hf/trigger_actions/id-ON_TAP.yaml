@@ -1,0 +1,64 @@
+rootAction:
+  key: 1oz3mq2c
+  conditionActions:
+    falseAction:
+      key: 3vty2qwp
+      action:
+        key: dm11mqmm
+      followUpAction:
+        key: zmt1gdyr
+        action:
+          key: 04mbpf9i
+        followUpAction:
+          key: swr9nc3v
+          action:
+            key: h71cbqq4
+          followUpAction:
+            key: 1b5zq0xg
+            action:
+              key: roecgppi
+    trueActions:
+      - condition:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              values:
+                - variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: usernames_in_use
+                      - listContains:
+                          element:
+                            source: WIDGET_STATE
+                            baseVariable:
+                              widgetState:
+                                returnParameter:
+                                  allowedDestinationTypes:
+                                    - Integer
+                                    - Double
+                                    - Boolean
+                                    - ImagePath
+                                    - VideoPath
+                                    - AudioPath
+                                  dataType:
+                                    scalarType: String
+                            nodeKeyRef:
+                              key: TextField_pn5iy88j
+                    nodeKeyRef:
+                      key: Container_wo3e383y
+                - inputValue:
+                    serializedValue: "true"
+              condition:
+                relation: EQUAL_TO
+        trueAction:
+          key: 00mc8c7c
+          action:
+            key: dv0ubhy5
+    hasMultiConditions: false
+    key: nuyvx22f
+trigger:
+  triggerType: ON_TAP

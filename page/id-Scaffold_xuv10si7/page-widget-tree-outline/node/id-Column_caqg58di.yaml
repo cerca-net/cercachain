@@ -1,0 +1,17 @@
+key: Column_caqg58di
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    primary: true
+    listSpacing: {}
+    minSizeValue:
+      inputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

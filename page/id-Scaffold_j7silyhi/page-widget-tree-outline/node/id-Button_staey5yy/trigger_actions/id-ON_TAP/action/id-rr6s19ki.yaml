@@ -1,0 +1,38 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        usernames_in_use:
+          fieldIdentifier:
+            name: usernames_in_use
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_UNION
+            value:
+              fieldIdentifier:
+                name: usernames_in_use
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      allowedDestinationTypes:
+                        - Integer
+                        - Double
+                        - Boolean
+                        - ImagePath
+                        - VideoPath
+                        - AudioPath
+                      dataType:
+                        scalarType: String
+                nodeKeyRef:
+                  key: TextField_pn5iy88j
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Container_wo3e383y
+key: rr6s19ki

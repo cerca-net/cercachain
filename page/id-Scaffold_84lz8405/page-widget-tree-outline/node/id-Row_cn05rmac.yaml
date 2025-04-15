@@ -1,0 +1,6 @@
+key: Row_cn05rmac
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_end
+    crossAxisAlignment: cross_axis_end

@@ -1,0 +1,30 @@
+key: Text_hibkdj0c
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: ne2r46ny
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: refvalue
+        nodeKeyRef:
+          key: Column_g0c2kzsq
+      mostRecentInputValue: "12.5"
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    rightValue:
+      inputValue: 4
+  expanded:
+    expandedType: UNEXPANDED

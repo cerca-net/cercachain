@@ -1,0 +1,46 @@
+key: Switch_ag3xhkwq
+type: Switch
+props:
+  platformType: ADAPTIVE
+  responsiveVisibility: {}
+  switchWidget:
+    disabled:
+      disabledValue:
+        variable:
+          source: FUNCTION_CALL
+          functionCall:
+            values:
+              - variable:
+                  source: LOCAL_STATE
+                  baseVariable:
+                    localState:
+                      fieldIdentifier:
+                        name: qrdisplay
+                        key: lb7fi
+                      stateVariableType: WIDGET_CLASS_STATE
+                  nodeKeyRef:
+                    key: Scaffold_howbjrw6
+              - inputValue:
+                  serializedValue: "true"
+            condition:
+              relation: EQUAL_TO
+        mostRecentInputValue: false
+    initialValueValue:
+      inputValue: false
+    activeColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    activeTrackColorValue:
+      inputValue:
+        themeColor: SECONDARY
+    inactiveThumbColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    inactiveTrackColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,64 @@
+node:
+  key: Scaffold_z27a79u3
+  appBar:
+    key: AppBar_o1ne9usm
+    actions:
+      - key: IconButton_kcufllr8
+  body:
+    key: Column_8xo95b9i
+    children:
+      - key: Container_c2fpg7cm
+        children:
+          - key: Column_af9mxkjx
+            children:
+              - key: Row_fcekbj7n
+                children:
+                  - key: Text_cmslopau
+                  - key: ChoiceChips_hje1djg9
+              - key: Container_dmr5khpv
+                children:
+                  - key: Row_1ajrnpe8
+                    children:
+                      - key: TextField_e49umo9p
+                      - key: Container_gj6rj9ab
+                        children:
+                          - key: Row_atwdcjy0
+                            children:
+                              - key: Text_1d5jkf9j
+                              - key: Icon_sgi0p0uw
+              - key: Divider_gkppuova
+              - key: Container_6j7rw6aw
+                children:
+                  - key: ListView_4l0oqs43
+                    children:
+                      - key: Container_8a81te7x
+                        children:
+                          - key: Row_a9p9m368
+                            children:
+                              - key: Container_dll64eam
+                                children:
+                                  - key: CircleImage_6itvhehx
+                              - key: Column_19xo443u
+                                children:
+                                  - key: Text_4tkxxvr5
+                                  - key: Text_bhxkesmx
+              - key: Container_sa20d828
+                children:
+                  - key: ListView_0oyfepzu
+                    children:
+                      - key: Container_2pwa6ha1
+                        children:
+                          - key: Row_j52jxi0f
+                            children:
+                              - key: Container_o6s5orao
+                                children:
+                                  - key: CircleImage_fjbklrqk
+                              - key: Column_o0mta4xa
+                                children:
+                                  - key: Text_qrd98n9d
+                                  - key: Text_wbanvrha
+                              - key: Badge_9je1h3y5
+                                children:
+                                  - key: Container_4spkc037
+                                    children:
+                                      - key: Icon_5oa48t22

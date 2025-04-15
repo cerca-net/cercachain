@@ -1,0 +1,26 @@
+key: Text_5u6w411x
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: w5cgq8zv
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: header
+        nodeKeyRef:
+          key: Column_g0c2kzsq
+      mostRecentInputValue: Hello World
+    fontSizeValue:
+      inputValue: 16
+    fontWeightValue:
+      inputValue: w500
+  expanded:
+    expandedType: UNEXPANDED

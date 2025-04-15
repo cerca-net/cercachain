@@ -1,0 +1,20 @@
+key: Stack_itqg59oq
+type: Stack
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  stack:
+    dimensions: {}
+    childAlignment:
+      xValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      yValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

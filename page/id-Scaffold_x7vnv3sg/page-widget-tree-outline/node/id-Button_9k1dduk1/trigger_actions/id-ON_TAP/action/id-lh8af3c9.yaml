@@ -1,0 +1,131 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: order
+      key: 1x1ih0np
+    write:
+      updates:
+        items_inorder:
+          fieldIdentifier:
+            name: items_inorder
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: items_inorder
+              variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: bagitems
+                      key: q0h0h
+                    stateVariableType: WIDGET_CLASS_STATE
+                operations:
+                  - listUniqueOperation:
+                      uniqueKey:
+                        source: LIST_MAP
+                        baseVariable:
+                          listMap:
+                            containingParentReturnParameter:
+                              identifier:
+                                name: bagitems
+                                key: q0h0h
+                              dataType:
+                                listType:
+                                  scalarType: DocumentReference
+                                subType:
+                                  collectionIdentifier:
+                                    name: submission
+                                    key: p1djqn3b
+                nodeKeyRef:
+                  key: Scaffold_x7vnv3sg
+        user_ref:
+          fieldIdentifier:
+            name: user_ref
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        order_stats:
+          fieldIdentifier:
+            name: order_stats
+          variable:
+            source: ENUMS
+            baseVariable:
+              enumVariable:
+                enumIdentifier:
+                  name: OrderStatuses
+                  key: 8yn13
+                enumElementIdentifier:
+                  name: Pending
+                  key: funoe
+        publicuser_ref:
+          fieldIdentifier:
+            name: publicuser_ref
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  documentProperty: REFERENCE
+            nodeKeyRef:
+              key: Scaffold_x7vnv3sg
+        ref_value:
+          fieldIdentifier:
+            name: ref_value
+          variable:
+            source: WIDGET_CLASS_PARAMETER
+            baseVariable:
+              widgetClass:
+                paramIdentifier:
+                  name: objectrefvalue
+                  key: 5cm19i
+            nodeKeyRef:
+              key: Scaffold_x7vnv3sg
+        username:
+          fieldIdentifier:
+            name: username
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: username
+        publicusername:
+          fieldIdentifier:
+            name: publicusername
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            operations:
+              - accessDocumentField:
+                  fieldIdentifier:
+                    name: username
+            nodeKeyRef:
+              key: Scaffold_x7vnv3sg
+        total_ref_value:
+          fieldIdentifier:
+            name: total_ref_value
+          variable:
+            source: WIDGET_CLASS_PARAMETER
+            baseVariable:
+              widgetClass:
+                paramIdentifier:
+                  name: objectrefvalue
+                  key: 5cm19i
+            nodeKeyRef:
+              key: Scaffold_x7vnv3sg
+key: lh8af3c9

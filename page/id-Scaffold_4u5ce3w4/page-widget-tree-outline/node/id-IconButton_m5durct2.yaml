@@ -1,0 +1,40 @@
+key: IconButton_m5durct2
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 16
+          mostRecentInputValue: 16
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 57785
+            family: MaterialIcons
+            matchTextDirection: false
+            name: delete
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 8
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

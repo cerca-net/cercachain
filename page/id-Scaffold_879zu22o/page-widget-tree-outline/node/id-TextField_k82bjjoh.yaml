@@ -1,0 +1,60 @@
+key: TextField_k82bjjoh
+type: TextField
+props:
+  padding: {}
+  expanded:
+    expandedType: EXPANDED
+  textField:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      textAlignValue:
+        inputValue: ALIGN_CENTER
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+      labelStyle:
+        themeStyle: LABEL_MEDIUM
+      hintText:
+        translationIdentifier:
+          key: 4jwhpr5h
+        textValue:
+          inputValue: Surname
+          mostRecentInputValue: Surname
+      filledValue:
+        inputValue: true
+        mostRecentInputValue: true
+      fillColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      borderWidthValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+      denseValue:
+        inputValue: true
+        mostRecentInputValue: true
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+        mostRecentInputValue:
+          themeColor: ERROR
+    width:
+      pixelsValue:
+        inputValue: Infinity
+        mostRecentInputValue: Infinity
+    maxLinesValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    autofocusValue:
+      inputValue: false
+      mostRecentInputValue: false
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT

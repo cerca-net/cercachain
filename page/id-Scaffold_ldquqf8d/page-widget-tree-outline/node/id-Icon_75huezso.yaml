@@ -1,0 +1,21 @@
+key: Icon_75huezso
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: ACCENT_1
+    iconDataValue:
+      inputValue:
+        codePoint: 57582
+        family: MaterialIcons
+        matchTextDirection: false
+        name: bolt
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

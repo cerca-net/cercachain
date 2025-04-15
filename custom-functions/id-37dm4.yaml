@@ -1,0 +1,18 @@
+identifier:
+  name: averageRating
+  key: 37dm4
+arguments:
+  - identifier:
+      name: ratings
+      key: ga1z7z
+    dataType:
+      listType:
+        scalarType: Integer
+      nonNullable: false
+returnParameter:
+  dataType:
+    scalarType: Integer
+tests:
+  - parameterValues:
+      values:
+        ga1z7z: "[\"2\",\"4\",\"6\"]"

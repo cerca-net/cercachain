@@ -1,0 +1,16 @@
+key: RichTextSpan_4p3tjq1q
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: uxn0fxr0
+      textValue:
+        variable:
+          source: FIREBASE_AUTH_USER
+          baseVariable:
+            auth:
+              property: USERS_DATA_FIELD
+              usersDataField:
+                name: surname
+        mostRecentInputValue: "Hello World "

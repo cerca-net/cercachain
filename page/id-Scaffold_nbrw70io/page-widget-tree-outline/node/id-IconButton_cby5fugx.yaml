@@ -1,0 +1,29 @@
+key: IconButton_cby5fugx
+type: IconButton
+props:
+  iconButton:
+    hasHoverStyle: false
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+    hoverColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 983200
+            family: MaterialIcons
+            matchTextDirection: false
+            name: play_arrow_rounded

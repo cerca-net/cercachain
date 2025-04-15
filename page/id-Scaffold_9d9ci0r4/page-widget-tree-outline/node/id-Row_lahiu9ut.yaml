@@ -1,0 +1,16 @@
+key: Row_lahiu9ut
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_start
+    listSpacing: {}
+    minSizeValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

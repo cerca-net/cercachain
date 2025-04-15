@@ -1,0 +1,60 @@
+key: Text_zw5m55al
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: fzbjkiwp
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        defaultValue:
+          serializedValue: "0"
+        baseVariable:
+          firestore: {}
+        operations:
+          - numberFormat: {}
+        nodeKeyRef:
+          key: Text_zw5m55al
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Integer
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    hideOnEmpty: true
+    singleTimeQuery: true
+    aggregation:
+      aggregationType: COUNT
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: pins
+            relation: ARRAY_CONTAINS
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+  requestManagerSettings: {}
+valueKey: {}

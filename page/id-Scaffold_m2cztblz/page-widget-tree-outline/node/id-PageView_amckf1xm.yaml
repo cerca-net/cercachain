@@ -1,0 +1,92 @@
+key: PageView_amckf1xm
+type: PageView
+props:
+  pageView:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    scrollDirection: FF_AXIS_HORIZONTAL
+    margin: {}
+    indicatorOptions:
+      hasIndicator: true
+      alignment:
+        xValue:
+          inputValue: -1
+          mostRecentInputValue: -1
+        yValue:
+          inputValue: 1
+          mostRecentInputValue: 1
+      indicatorPadding:
+        leftValue:
+          inputValue: 16
+          mostRecentInputValue: 16
+        bottomValue:
+          inputValue: 16
+          mostRecentInputValue: 16
+      expansionFactor: 5
+      outline: false
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      borderRadiusValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      dotWidthValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      dotHeightValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      inactiveColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      activeColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    allowScrolling: true
+    initialPageIndexValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: cl0ouu8e
+                operations:
+                  - listHasValueOperation: {}
+                nodeKeyRef:
+                  key: IconButton_006c4dy6
+            - {}
+          condition:
+            relation: EXISTS_AND_NON_EMPTY
+generatorVariable:
+  identifier:
+    name: imagesforUpload
+  variable:
+    source: WIDGET_STATE
+    baseVariable:
+      widgetState:
+        actionType: UPLOAD_DATA_URL
+        actionKeyRef:
+          key: cl0ouu8e
+    nodeKeyRef:
+      key: IconButton_006c4dy6
+  limit: 3

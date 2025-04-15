@@ -1,0 +1,13 @@
+key: Column_52r9i4bf
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+      startSpacingValue:
+        inputValue: 8
+      endSpacingValue:
+        inputValue: 16

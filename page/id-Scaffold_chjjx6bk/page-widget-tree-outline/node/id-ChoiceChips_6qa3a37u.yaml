@@ -1,0 +1,173 @@
+key: ChoiceChips_6qa3a37u
+type: ChoiceChips
+props:
+  padding:
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_kvrlfl0y
+            - inputValue:
+                serializedValue: Chacao
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: false
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: w34hznip
+          textValue:
+            inputValue: Altamira
+      - label:
+          translationIdentifier:
+            key: 292k5g0d
+          textValue:
+            inputValue: Bello Campo
+      - label:
+          translationIdentifier:
+            key: wlot97hf
+          textValue:
+            inputValue: Campo Alegre
+      - label:
+          translationIdentifier:
+            key: zyu0ahkw
+          textValue:
+            inputValue: Chacao
+      - label:
+          translationIdentifier:
+            key: rzw1ufe4
+          textValue:
+            inputValue: Chuao
+      - label:
+          translationIdentifier:
+            key: 6jxinyb1
+          textValue:
+            inputValue: Country Club
+      - label:
+          translationIdentifier:
+            key: ul8grgmr
+          textValue:
+            inputValue: El Bosque
+      - label:
+          translationIdentifier:
+            key: lox63mg1
+          textValue:
+            inputValue: El Dorado
+      - label:
+          translationIdentifier:
+            key: 0xmvvp5u
+          textValue:
+            inputValue: Pedregal
+      - label:
+          translationIdentifier:
+            key: mdn44iag
+          textValue:
+            inputValue: El Retiro
+      - label:
+          translationIdentifier:
+            key: 10ba4g90
+          textValue:
+            inputValue: El Rosal
+      - label:
+          translationIdentifier:
+            key: cx5ahryd
+          textValue:
+            inputValue: Estado Leal
+      - label:
+          translationIdentifier:
+            key: ca3u9fou
+          textValue:
+            inputValue: La Castellana
+      - label:
+          translationIdentifier:
+            key: 47lkjfl5
+          textValue:
+            inputValue: La Floresta
+      - label:
+          translationIdentifier:
+            key: 9e889g14
+          textValue:
+            inputValue: Los Palos Grandes
+      - label:
+          translationIdentifier:
+            key: 5smfkaaz
+          textValue:
+            inputValue: San Marino
+      - label:
+          translationIdentifier:
+            key: jry70nh8
+          textValue:
+            inputValue: Chacaito
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+    wrappedValue:
+      inputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

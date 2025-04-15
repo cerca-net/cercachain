@@ -1,0 +1,37 @@
+key: Column_6drcmihi
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+      startSpacingValue:
+        inputValue: 8
+      endSpacingValue:
+        inputValue: 8
+    minSizeValue:
+      inputValue: false
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            fieldIdentifier:
+              name: publicuser_ref
+      nodeKeyRef:
+        key: Column_enujka9q

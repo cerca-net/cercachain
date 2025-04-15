@@ -1,0 +1,17 @@
+key: Text_1sho2iqw
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_SMALL
+    translationIdentifier:
+      key: hd3wzqkv
+    textValue:
+      inputValue: Posts (20)
+    fontSizeValue:
+      inputValue: 18
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

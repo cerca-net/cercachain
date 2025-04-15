@@ -1,0 +1,30 @@
+key: Container_sehin945
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 400
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    leftValue:
+      inputValue: 12
+    topValue:
+      inputValue: 16
+    rightValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED

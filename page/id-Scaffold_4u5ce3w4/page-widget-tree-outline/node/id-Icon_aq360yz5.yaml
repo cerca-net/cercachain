@@ -1,0 +1,57 @@
+key: Icon_aq360yz5
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    iconDataValue:
+      inputValue:
+        codePoint: 57978
+        family: MaterialIcons
+        matchTextDirection: false
+        name: filter_alt
+  padding:
+    type: FF_PADDING_ONLY
+  responsiveVisibility: {}
+name: MoreIcon
+parameterValues: {}
+animations:
+  - trigger: ON_ACTION_TRIGGER
+    effects:
+      - curve: EASE_IN_OUT
+        slide:
+          beginDx:
+            inputValue:
+              serializedValue: "0"
+          beginDy:
+            inputValue:
+              serializedValue: "0"
+          endDx:
+            inputValue:
+              serializedValue: "30"
+          endDy:
+            inputValue:
+              serializedValue: "-30"
+        delay: {}
+        duration:
+          inputValue:
+            serializedValue: "600"
+      - curve: EASE_IN_OUT
+        fade:
+          begin:
+            inputValue:
+              serializedValue: "1"
+          end:
+            inputValue:
+              serializedValue: "0"
+        delay: {}
+        duration:
+          inputValue:
+            serializedValue: "600"
+    applyInitialState: true

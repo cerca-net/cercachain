@@ -1,0 +1,20 @@
+key: Text_407o5fxy
+type: Text
+props:
+  text:
+    themeStyle: DISPLAY_SMALL
+    translationIdentifier:
+      key: 24rmtw49
+    selectable: false
+    textValue:
+      inputValue: Sign up
+      mostRecentInputValue: Sign up
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

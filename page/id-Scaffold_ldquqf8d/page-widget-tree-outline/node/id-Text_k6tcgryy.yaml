@@ -1,0 +1,67 @@
+key: Text_k6tcgryy
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: v0hj289z
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        defaultValue:
+          serializedValue: "0"
+        baseVariable:
+          firestore: {}
+        operations:
+          - numberFormat:
+              formatType: COMPACT
+        nodeKeyRef:
+          key: Text_k6tcgryy
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Integer
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    hideOnEmpty: true
+    singleTimeQuery: true
+    aggregation:
+      aggregationType: COUNT
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: poster
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: type_object
+            relation: EQUAL_TO
+            inputValue:
+              serializedValue: Item
+      isAnd: true
+  requestManagerSettings:
+    useRequestManager: true
+    scope: WIDGET_CLASS
+    managerIdentifier:
+      key: n6umi

@@ -1,0 +1,17 @@
+key: Column_6w31mzqz
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    crossAxisAlignment: cross_axis_stretch
+    scrollable: false
+    primary: true
+    listSpacing: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+name: scrollingContainer
+parameterValues: {}
+valueKey: {}

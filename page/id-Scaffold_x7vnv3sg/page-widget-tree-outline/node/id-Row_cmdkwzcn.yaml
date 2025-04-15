@@ -1,0 +1,8 @@
+key: Row_cmdkwzcn
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    minSizeValue:
+      inputValue: false

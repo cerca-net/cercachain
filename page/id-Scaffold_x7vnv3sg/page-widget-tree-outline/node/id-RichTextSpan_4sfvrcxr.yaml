@@ -1,0 +1,11 @@
+key: RichTextSpan_4sfvrcxr
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: d9hwpxrz
+      textValue:
+        inputValue: " "
+        mostRecentInputValue: " "

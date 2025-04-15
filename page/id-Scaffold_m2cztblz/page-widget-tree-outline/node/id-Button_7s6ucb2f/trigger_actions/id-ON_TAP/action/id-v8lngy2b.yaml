@@ -1,0 +1,38 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        objectAvgReference:
+          fieldIdentifier:
+            name: objectAvgReference
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_UNION
+            value:
+              fieldIdentifier:
+                name: objectAvgReference
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      allowedDestinationTypes:
+                        - Integer
+                        - Double
+                        - Boolean
+                        - ImagePath
+                        - VideoPath
+                        - AudioPath
+                      dataType:
+                        scalarType: String
+                nodeKeyRef:
+                  key: TextField_lxnoq5i7
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Column_10i5npdn
+key: v8lngy2b

@@ -1,0 +1,10 @@
+identifier:
+  name: object
+  key: n3on4
+fields:
+  - identifier:
+      name: word_thread
+      key: sus3a
+    dataType:
+      listType:
+        scalarType: String

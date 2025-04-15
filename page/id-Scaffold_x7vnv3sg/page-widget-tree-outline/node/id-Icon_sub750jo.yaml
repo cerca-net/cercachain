@@ -1,0 +1,51 @@
+key: Icon_sub750jo
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 26
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    iconDataValue:
+      inputValue:
+        codePoint: 59496
+        family: MaterialIcons
+        matchTextDirection: false
+        name: close_sharp
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+animations:
+  - trigger: ON_ACTION_TRIGGER
+    hideBeforeAnimating: true
+    effects:
+      - curve: EASE_IN_OUT
+        scale:
+          beginDx:
+            inputValue:
+              serializedValue: "0"
+          endDx:
+            inputValue:
+              serializedValue: "0"
+          beginDy:
+            inputValue:
+              serializedValue: "1"
+          endDy:
+            inputValue:
+              serializedValue: "1"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "600"
+    applyInitialState: false
+valueKey: {}

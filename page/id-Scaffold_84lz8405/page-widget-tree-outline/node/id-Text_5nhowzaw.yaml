@@ -1,0 +1,17 @@
+key: Text_5nhowzaw
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_SMALL
+    translationIdentifier:
+      key: q9v6g5l3
+    textValue:
+      inputValue: Inbox
+    fontSizeValue:
+      inputValue: 18
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

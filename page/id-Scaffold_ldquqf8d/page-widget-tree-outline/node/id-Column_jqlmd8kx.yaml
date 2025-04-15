@@ -1,0 +1,11 @@
+key: Column_jqlmd8kx
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    minSizeValue:
+      inputValue: false
+  expanded:
+    expandedType: EXPANDED

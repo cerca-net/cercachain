@@ -1,0 +1,26 @@
+key: Icon_sf32si8c
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    iconDataValue:
+      inputValue:
+        codePoint: 983556
+        family: MaterialIcons
+        matchTextDirection: false
+        name: sync_alt_rounded
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

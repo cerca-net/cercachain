@@ -1,0 +1,18 @@
+key: RichTextSpan_5xk0etf7
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: q4uwvs4h
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                documentProperty: REFERENCE
+            - documentReferenceId: {}
+          nodeKeyRef:
+            key: ListView_5gih7cll

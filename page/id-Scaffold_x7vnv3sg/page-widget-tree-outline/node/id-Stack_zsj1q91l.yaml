@@ -1,0 +1,15 @@
+key: Stack_zsj1q91l
+type: Stack
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  stack:
+    dimensions: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

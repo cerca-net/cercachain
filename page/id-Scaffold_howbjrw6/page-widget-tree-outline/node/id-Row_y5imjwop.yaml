@@ -1,0 +1,13 @@
+key: Row_y5imjwop
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 16
+    rightValue:
+      inputValue: 16

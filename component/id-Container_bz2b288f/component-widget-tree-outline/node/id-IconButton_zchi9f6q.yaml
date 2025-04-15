@@ -1,0 +1,44 @@
+key: IconButton_zchi9f6q
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+        mostRecentInputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+          mostRecentInputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 57706
+            family: MaterialIcons
+            matchTextDirection: false
+            name: close
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  alignment:
+    xValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    yValue:
+      inputValue: -1
+      mostRecentInputValue: -1

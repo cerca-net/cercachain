@@ -1,0 +1,42 @@
+key: IconButton_t1i5n2kz
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 60
+        mostRecentInputValue: 60
+    borderRadiusValue:
+      inputValue: 30
+      mostRecentInputValue: 30
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 30
+          mostRecentInputValue: 30
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 62764
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add_circle_outline_rounded
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

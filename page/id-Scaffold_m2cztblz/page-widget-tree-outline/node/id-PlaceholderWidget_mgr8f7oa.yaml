@@ -1,0 +1,24 @@
+key: PlaceholderWidget_mgr8f7oa
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: recording
+                      key: ayzinr1c
+                    stateVariableType: APP_STATE
+            - inputValue: {}
+          condition:
+            relation: EQUAL_TO
+        uiBuilderValue:
+          serializedValue: "false"
+      mostRecentInputValue: false

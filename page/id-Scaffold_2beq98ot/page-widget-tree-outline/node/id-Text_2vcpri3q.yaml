@@ -1,0 +1,27 @@
+key: Text_2vcpri3q
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 3xe9huj8
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: refvalue
+        nodeKeyRef:
+          key: StaggeredView_j61kybgg
+      mostRecentInputValue: ""
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  expanded:
+    expandedType: EXPANDED

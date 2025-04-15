@@ -1,0 +1,49 @@
+key: PageView_u441i3wy
+type: PageView
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  pageView:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 500
+    scrollDirection: FF_AXIS_HORIZONTAL
+    margin: {}
+    indicatorOptions:
+      hasIndicator: false
+      alignment:
+        xValue:
+          inputValue: 0
+        yValue:
+          inputValue: 1
+      indicatorPadding:
+        bottomValue:
+          inputValue: 16
+      expansionFactor: 1
+      outline: false
+      spacingValue:
+        inputValue: 8
+      borderRadiusValue:
+        inputValue: 8
+      dotWidthValue:
+        inputValue: 8
+      dotHeightValue:
+        inputValue: 8
+      inactiveColorValue:
+        inputValue:
+          themeColor: ACCENT_1
+      activeColorValue:
+        inputValue:
+          themeColor: PRIMARY
+    allowScrolling: true
+    initialPageIndexValue:
+      inputValue: 0
+name: BagPageView

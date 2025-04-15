@@ -1,0 +1,76 @@
+key: IconButton_ggjdot7r
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 35
+        mostRecentInputValue: 35
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 20
+          mostRecentInputValue: 20
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 57499
+            family: MaterialIcons
+            matchTextDirection: true
+            name: arrow_forward
+  expanded:
+    expandedType: UNEXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: isUserinPublicpage
+                      key: vmajruee
+                    stateVariableType: APP_STATE
+            - inputValue:
+                serializedValue: "false"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  firestore:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    hideOnEmpty: true
+  requestManagerSettings:
+    useRequestManager: true
+    scope: WIDGET_CLASS
+    managerIdentifier:
+      key: 0d8i9
+    uniqueQueryKey: {}
+    overrideCache: {}

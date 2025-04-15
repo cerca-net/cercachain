@@ -1,0 +1,32 @@
+key: RichTextSpan_9ec0n8qo
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: tx5otoay
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: "1"
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: items_inorder
+            - listNumItems: {}
+            - numberFormat: {}
+          nodeKeyRef:
+            key: ListView_6peziyty
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      italicValue:
+        inputValue: false
+      fontWeightValue:
+        inputValue: w500

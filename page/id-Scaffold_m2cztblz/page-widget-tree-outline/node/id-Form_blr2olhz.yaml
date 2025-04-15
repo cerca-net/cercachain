@@ -1,0 +1,73 @@
+key: Form_blr2olhz
+type: Form
+props:
+  responsiveVisibility: {}
+  form:
+    validations:
+      - isRequired: true
+        uploadData:
+          onValidationError: {}
+        nodeKeyRef:
+          key: IconButton_cqqtuh9o
+      - isRequired: true
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: i4ufhhof
+            textValue:
+              inputValue: Field is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: oyrnknux
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_l8i4nzb0
+      - isRequired: false
+        dropDown: {}
+        nodeKeyRef:
+          key: DropDown_g5lawhnx
+      - isRequired: true
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: divith4m
+            textValue:
+              inputValue: Field is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: 2jjhpd4u
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_xvt1k7su
+      - isRequired: true
+        dropDown: {}
+        nodeKeyRef:
+          key: DropDown_9a7f3xy9
+      - isRequired: true
+        placePicker: {}
+        nodeKeyRef:
+          key: PlacePicker_tfmko1og
+      - isRequired: true
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: xdx6g8k1
+            textValue:
+              inputValue: Field is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: hzcwg0a4
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_q2trxv46
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: FormEvent
+parameterValues: {}
+valueKey: {}

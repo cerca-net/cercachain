@@ -1,0 +1,22 @@
+key: Text_u13x279h
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  richText:
+    textStyle:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: 1lk9df3u
+      textValue:
+        inputValue: "Quanity: 1"
+        mostRecentInputValue: "Quanity: 1"
+parameterValues: {}

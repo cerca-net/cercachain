@@ -1,0 +1,18 @@
+key: RichText_wq0u0gzr
+type: RichText
+props:
+  padding: {}
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      colorValue:
+        inputValue:
+          themeColor: PRIMARY_TEXT
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

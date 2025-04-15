@@ -1,0 +1,9 @@
+key: Container_w371whmm
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration: {}
+    clipContent: true
+  expanded:
+    expandedType: FLEXIBLE

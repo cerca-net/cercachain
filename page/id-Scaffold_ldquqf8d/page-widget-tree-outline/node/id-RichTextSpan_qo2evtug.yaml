@@ -1,0 +1,10 @@
+key: RichTextSpan_qo2evtug
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: 6ixhtfyw
+      textValue:
+        inputValue: "# I.D. : "

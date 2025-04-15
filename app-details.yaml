@@ -1,0 +1,17 @@
+name: Cercaend
+authPageInfo:
+  homePageNodeKey: Scaffold_4u5ce3w4
+  signInPageNodeKey: Scaffold_g2lqappl
+appSettings:
+  advancedSettings:
+    canvasKitSettings: {}
+routingSettings:
+  enableRouting: true
+  pagesAreSubroutesOfRoot: false
+initialPageKeyRef:
+  key: Scaffold_4u5ce3w4
+allAppNames:
+  appNames:
+    PROD:
+      packageName: com.mycompany.cercaend
+      displayName: ""

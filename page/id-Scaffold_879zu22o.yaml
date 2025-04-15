@@ -1,0 +1,18 @@
+name: UserSurvey
+node:
+  key: Scaffold_879zu22o
+pageRouteSettings:
+  onlyAuthenticated: false
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: subcollection
+          key: vp5oi
+        dataType:
+          scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: submission
+              key: p1djqn3b
+        description: submission collection

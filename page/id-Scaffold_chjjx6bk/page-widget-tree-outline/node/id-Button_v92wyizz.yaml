@@ -1,0 +1,51 @@
+key: Button_v92wyizz
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 12
+    iconValue:
+      inputValue:
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 61354
+            family: MaterialIcons
+            matchTextDirection: false
+            name: delete_outlined
+  padding: {}
+  alignment:
+    xValue: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: c3trbbfw
+                nodeKeyRef:
+                  key: Button_x08b8dv9
+            - {}
+          condition:
+            relation: EXISTS_AND_NON_EMPTY
+      mostRecentInputValue: false
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

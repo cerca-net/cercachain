@@ -1,0 +1,15 @@
+key: Text_4e6hje33
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: wfmgs8dp
+    selectable: false
+    textValue:
+      inputValue: "Today, 5:30pm"
+      mostRecentInputValue: "Today, 5:30pm"
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+parameterValues: {}

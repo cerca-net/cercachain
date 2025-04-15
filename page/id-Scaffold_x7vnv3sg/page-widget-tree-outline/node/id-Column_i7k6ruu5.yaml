@@ -1,0 +1,10 @@
+key: Column_i7k6ruu5
+type: Column
+props:
+  column:
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+      endSpacingValue:
+        inputValue: 8

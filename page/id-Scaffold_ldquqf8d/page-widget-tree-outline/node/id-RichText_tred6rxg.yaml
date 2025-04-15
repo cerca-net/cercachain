@@ -1,0 +1,14 @@
+key: RichText_tred6rxg
+type: RichText
+props:
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      fontSizeValue:
+        inputValue: 10
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

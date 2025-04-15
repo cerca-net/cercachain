@@ -1,0 +1,24 @@
+key: Text_0nfh98mc
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_MEDIUM
+    translationIdentifier:
+      key: ud6yronp
+    selectable: false
+    textValue:
+      inputValue: Tasks
+      mostRecentInputValue: Tasks
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+parameterValues: {}

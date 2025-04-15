@@ -1,0 +1,26 @@
+key: Text_rpeewd8r
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: zw4hki33
+    selectable: false
+    textValue:
+      inputValue: Update
+      mostRecentInputValue: Update
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+parameterValues: {}

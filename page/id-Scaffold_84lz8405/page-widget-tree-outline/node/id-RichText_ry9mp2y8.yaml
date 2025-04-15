@@ -1,0 +1,28 @@
+key: RichText_ry9mp2y8
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  richText:
+    textStyle:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: y6pr92vz
+      textValue:
+        inputValue: "Quanity: 1"
+        mostRecentInputValue: "Quanity: 1"
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

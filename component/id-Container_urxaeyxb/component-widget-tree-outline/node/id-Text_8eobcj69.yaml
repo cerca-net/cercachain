@@ -1,0 +1,17 @@
+key: Text_8eobcj69
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: 7g01k86v
+    selectable: false
+    textValue:
+      inputValue: Verification
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    fontWeightValue:
+      inputValue: w500

@@ -1,0 +1,232 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    write:
+      updates:
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        poster:
+          fieldIdentifier:
+            name: poster
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        header:
+          fieldIdentifier:
+            name: header
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_kv78thil
+        type1choice:
+          fieldIdentifier:
+            name: type1choice
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_5ewdfyqv
+        audio:
+          fieldIdentifier:
+            name: audio
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: LOCAL_STATE
+                              baseVariable:
+                                localState:
+                                  fieldIdentifier:
+                                    name: recorded
+                                    key: 9x31kpxg
+                                  stateVariableType: APP_STATE
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      variable:
+                        source: LOCAL_STATE
+                        baseVariable:
+                          localState:
+                            fieldIdentifier:
+                              name: recorded
+                              key: 9x31kpxg
+                            stateVariableType: APP_STATE
+                elseValue:
+                  variable:
+                    source: WIDGET_STATE
+                    baseVariable:
+                      widgetState:
+                        actionType: UPLOAD_DATA_URL
+                        actionKeyRef:
+                          key: gpjv6jwb
+                    nodeKeyRef:
+                      key: IconButton_lip0v30n
+                returnParameter:
+                  dataType:
+                    scalarType: AudioPath
+        type0choice:
+          fieldIdentifier:
+            name: type0choice
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_084gzvg9
+        submitter:
+          fieldIdentifier:
+            name: submitter
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: username
+        profilePictureObjectPost:
+          fieldIdentifier:
+            name: profilePictureObjectPost
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USERS_DATA_FIELD
+                usersDataField:
+                  name: profile_picture
+        type2choice:
+          fieldIdentifier:
+            name: type2choice
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  returnParameter:
+                                    dataType:
+                                      scalarType: String
+                                      nonNullable: false
+                              nodeKeyRef:
+                                key: ChoiceChips_5ewdfyqv
+                          - inputValue:
+                              serializedValue: Music
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              dataType:
+                                scalarType: String
+                                nonNullable: false
+                        nodeKeyRef:
+                          key: ChoiceChips_ptj9wbx9
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  returnParameter:
+                                    dataType:
+                                      scalarType: String
+                                      nonNullable: false
+                              nodeKeyRef:
+                                key: ChoiceChips_5ewdfyqv
+                          - inputValue:
+                              serializedValue: Podcast
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              dataType:
+                                scalarType: String
+                                nonNullable: false
+                        nodeKeyRef:
+                          key: ChoiceChips_c5urp1qq
+                elseValue: {}
+                returnParameter:
+                  dataType:
+                    scalarType: String
+        thread:
+          fieldIdentifier:
+            name: thread
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: thread
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        listType:
+                          scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_j58ptxam
+        image:
+          fieldIdentifier:
+            name: image
+          uploadVariableNodeKey: IconButton_xwl8z96d
+        type_object:
+          fieldIdentifier:
+            name: type_object
+          inputValue:
+            serializedValue: Post
+key: nemtc0hl

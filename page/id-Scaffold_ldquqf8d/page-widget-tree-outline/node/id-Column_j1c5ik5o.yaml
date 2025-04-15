@@ -1,0 +1,10 @@
+key: Column_j1c5ik5o
+type: Column
+props:
+  column:
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED

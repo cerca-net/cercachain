@@ -1,0 +1,18 @@
+key: RichTextSpan_m9t5g0b8
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: v26fgq05
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: header
+          nodeKeyRef:
+            key: Row_5irk3wv4

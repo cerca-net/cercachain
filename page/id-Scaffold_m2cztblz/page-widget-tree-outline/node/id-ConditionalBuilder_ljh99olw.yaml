@@ -1,0 +1,11 @@
+key: ConditionalBuilder_ljh99olw
+type: ConditionalBuilder
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  conditionalBuilder: {}

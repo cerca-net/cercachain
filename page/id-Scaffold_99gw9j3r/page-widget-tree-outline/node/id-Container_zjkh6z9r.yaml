@@ -1,0 +1,29 @@
+key: Container_zjkh6z9r
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 7
+        colorValue:
+          inputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+        dyValue:
+          inputValue: 3
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED

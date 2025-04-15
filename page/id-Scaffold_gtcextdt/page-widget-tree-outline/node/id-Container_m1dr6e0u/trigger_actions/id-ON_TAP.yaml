@@ -1,0 +1,6 @@
+rootAction:
+  key: btcyrh5l
+  action:
+    key: 04ak3ls7
+trigger:
+  triggerType: ON_TAP

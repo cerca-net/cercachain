@@ -1,0 +1,94 @@
+name: OBJECT
+description: ""
+params:
+  nghtv2:
+    identifier:
+      name: object
+      key: nghtv2
+    dataType:
+      scalarType: Document
+      nonNullable: true
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+node:
+  key: Container_bz2b288f
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: iteminfo
+          key: lucd3
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"
+    - parameter:
+        identifier:
+          name: vote
+          key: g56y9
+        dataType:
+          scalarType: DocumentReference
+          nonNullable: true
+          subType:
+            collectionIdentifier:
+              name: submission
+              key: p1djqn3b
+    - parameter:
+        identifier:
+          name: pin
+          key: z3o5q
+        dataType:
+          scalarType: Document
+          nonNullable: true
+          subType:
+            collectionIdentifier:
+              name: submission
+              key: p1djqn3b
+    - parameter:
+        identifier:
+          name: user
+          key: cu6k0
+        dataType:
+          scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: users
+              key: dij4596p
+    - parameter:
+        identifier:
+          name: up
+          key: g0fzo
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "true"
+    - parameter:
+        identifier:
+          name: down
+          key: 7z6gl
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "true"
+  databaseRequestManagers:
+    - identifier:
+        name: Objectinformation
+        key: 0d8i9
+      originalNodeKeyRef:
+        key: Row_xx69jg7y
+    - identifier:
+        name: Objectdata
+        key: fufuk
+      originalNodeKeyRef:
+        key: Column_h4tp6hnj
