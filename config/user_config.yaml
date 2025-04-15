@@ -1,0 +1,23 @@
+identifier:
+  name: user
+  key: 9ti4y
+fields:
+  - identifier:
+      name: username
+      key: mww8w
+    dataType:
+      scalarType: String
+  - identifier:
+      name: avatar
+      key: s2ykw
+    dataType:
+      scalarType: ImagePath
+  - identifier:
+      name: user_id
+      key: qilp7
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p

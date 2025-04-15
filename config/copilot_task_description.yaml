@@ -1,0 +1,7 @@
+description: >
+  The repetitive task involves converting structured data provided in YAML format into properly formatted YAML files with a specific naming convention. 
+
+steps:
+  - Format the given YAML data into a code block.
+  - Assign a descriptive and relevant filename based on the data's purpose (e.g., config/<name>_config.yaml).
+  - Provide instructions for saving the content into the config folder of the repository.

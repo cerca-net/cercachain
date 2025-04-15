@@ -3334,7 +3334,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         padding:
                                                                             EdgeInsets.all(12),
                                                                         child:
-                                                                            Container(
+                                                                            SizedBox(
                                                                           width:
                                                                               double.infinity,
                                                                           height:

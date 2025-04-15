@@ -96,7 +96,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                     width: double.infinity,
                     height: 500,
                     child: Padding(

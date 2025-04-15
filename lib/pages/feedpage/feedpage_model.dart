@@ -56,7 +56,9 @@ class FeedpageModel extends FlutterFlowModel<FeedpageWidget> {
 
   @override
   void dispose() {
-    staggeredViewStreamSubscriptions.forEach((s) => s?.cancel());
+    for (var s in staggeredViewStreamSubscriptions) {
+      s?.cancel();
+    }
     staggeredViewPagingController?.dispose();
 
     wordSearcherFocusNode?.dispose();

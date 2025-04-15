@@ -1,0 +1,13 @@
+identifier:
+  name: interactionTypes
+  key: jkzq8
+elements:
+  - identifier:
+      name: Generation
+      key: colj3
+  - identifier:
+      name: Participation
+      key: uxnx3
+  - identifier:
+      name: Transition
+      key: fn4sp

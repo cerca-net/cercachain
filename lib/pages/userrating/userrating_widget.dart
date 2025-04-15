@@ -83,7 +83,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
             Padding(
               padding: EdgeInsets.all(16),
               child: StreamBuilder<UsersRecord>(
-                stream: UsersRecord.getDocument(widget!.publicuser!),
+                stream: UsersRecord.getDocument(widget.publicuser!),
                 builder: (context, snapshot) {
                   // Customize what your widget looks like when it's loading.
                   if (!snapshot.hasData) {
@@ -358,7 +358,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                       ),
                                       child: Padding(
                                         padding: EdgeInsets.all(4),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 200,
                                           child: TextFormField(
                                             controller: _model.textController,
@@ -590,7 +590,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                         .doc()
                                                         .set(
                                                             createUserRatingsRecordData(
-                                                          ratedUser: widget!
+                                                          ratedUser: widget
                                                               .publicuser,
                                                           date:
                                                               getCurrentTimestamp,

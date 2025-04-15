@@ -500,7 +500,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         BorderRadius.circular(
                                                             12),
                                                   ),
-                                                  child: Container(
+                                                  child: SizedBox(
                                                     width: double.infinity,
                                                     height: double.infinity,
                                                     child: Stack(
@@ -518,7 +518,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .take(3)
                                                                       .toList();
 
-                                                              return Container(
+                                                              return SizedBox(
                                                                 width: double
                                                                     .infinity,
                                                                 height: double
@@ -1434,7 +1434,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:
@@ -1927,7 +1927,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             children: [
                                               Expanded(
                                                 flex: 4,
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   height: double.infinity,
                                                   child: Stack(
@@ -2590,7 +2590,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:
@@ -2899,7 +2899,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               ),
                                                             ),
                                                           ),
-                                                          Container(
+                                                          SizedBox(
                                                             width: 200,
                                                             child: Opacity(
                                                               opacity: 0,
@@ -3137,9 +3137,10 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         value;
                                                                     _model.timerValue =
                                                                         displayTime;
-                                                                    if (shouldUpdate)
+                                                                    if (shouldUpdate) {
                                                                       safeSetState(
                                                                           () {});
+                                                                    }
                                                                   },
                                                                   textAlign:
                                                                       TextAlign
@@ -4033,7 +4034,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       4, 8, 4),
-                                                          child: Container(
+                                                          child: SizedBox(
                                                             width:
                                                                 double.infinity,
                                                             child:
@@ -4542,7 +4543,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           CrossAxisAlignment
                                                               .stretch,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           width: 200,
                                                           child: TextFormField(
                                                             controller: _model
@@ -4660,7 +4661,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                         ),
                                                         Expanded(
-                                                          child: Container(
+                                                          child: SizedBox(
                                                             width: 200,
                                                             child:
                                                                 TextFormField(
@@ -5398,7 +5399,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               ),
                                                             ),
                                                           ),
-                                                          Container(
+                                                          SizedBox(
                                                             width: 200,
                                                             child: Opacity(
                                                               opacity: 0,
@@ -5647,7 +5648,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     .take(3)
                                                                     .toList();
 
-                                                            return Container(
+                                                            return SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               height: double
@@ -6812,7 +6813,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:
@@ -6941,7 +6942,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           8,
                                                                           4),
                                                                   child:
-                                                                      Container(
+                                                                      SizedBox(
                                                                     width: double
                                                                         .infinity,
                                                                     child:
@@ -7064,7 +7065,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:
@@ -7433,7 +7434,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               ),
                                                             ),
                                                           ),
-                                                          Container(
+                                                          SizedBox(
                                                             width: 200,
                                                             child: Opacity(
                                                               opacity: 0,
@@ -7649,7 +7650,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               12),
                                                       shape: BoxShape.rectangle,
                                                     ),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: double.infinity,
                                                       height: double.infinity,
                                                       child: Stack(
@@ -7667,7 +7668,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     .take(3)
                                                                     .toList();
 
-                                                                return Container(
+                                                                return SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   height: double
@@ -8723,7 +8724,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           8,
                                                                           4),
                                                                   child:
-                                                                      Container(
+                                                                      SizedBox(
                                                                     width: double
                                                                         .infinity,
                                                                     child:
@@ -9059,7 +9060,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:
@@ -9621,7 +9622,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .take(3)
                                                                       .toList();
 
-                                                              return Container(
+                                                              return SizedBox(
                                                                 width: double
                                                                     .infinity,
                                                                 height: double
@@ -10580,7 +10581,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:
@@ -10709,7 +10710,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           8,
                                                                           4),
                                                                   child:
-                                                                      Container(
+                                                                      SizedBox(
                                                                     width: double
                                                                         .infinity,
                                                                     child:
@@ -10836,7 +10837,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           .transparent,
                                                                   onTap:
                                                                       () async {
-                                                                    final _datePickedDate =
+                                                                    final datePickedDate =
                                                                         await showDatePicker(
                                                                       context:
                                                                           context,
@@ -10881,17 +10882,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       },
                                                                     );
 
-                                                                    if (_datePickedDate !=
+                                                                    if (datePickedDate !=
                                                                         null) {
                                                                       safeSetState(
                                                                           () {
                                                                         _model.datePicked =
                                                                             DateTime(
-                                                                          _datePickedDate
+                                                                          datePickedDate
                                                                               .year,
-                                                                          _datePickedDate
+                                                                          datePickedDate
                                                                               .month,
-                                                                          _datePickedDate
+                                                                          datePickedDate
                                                                               .day,
                                                                         );
                                                                       });
@@ -11142,7 +11143,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         4,
                                                                         8,
                                                                         4),
-                                                            child: Container(
+                                                            child: SizedBox(
                                                               width: double
                                                                   .infinity,
                                                               child:

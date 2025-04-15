@@ -104,7 +104,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
             children: [
               Expanded(
                 flex: 11,
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 500,
                   child: Stack(
@@ -290,7 +290,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           CrossAxisAlignment
                                                               .stretch,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           width:
                                                               double.infinity,
                                                           child: TextFormField(
@@ -408,7 +408,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                     context),
                                                           ),
                                                         ),
-                                                        Container(
+                                                        SizedBox(
                                                           width:
                                                               double.infinity,
                                                           child: TextFormField(
@@ -1172,8 +1172,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                               .end,
                                                                       children: [
                                                                         if (_model.uploadedFileUrl1 !=
-                                                                                null &&
-                                                                            _model.uploadedFileUrl1 !=
                                                                                 '')
                                                                           FlutterFlowIconButton(
                                                                             borderRadius:
@@ -1197,8 +1195,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             },
                                                                           ),
                                                                         if (_model.uploadedFileUrl1 ==
-                                                                                null ||
-                                                                            _model.uploadedFileUrl1 ==
                                                                                 '')
                                                                           FFButtonWidget(
                                                                             onPressed:
@@ -1282,7 +1278,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             ),
                                                           ),
                                                         ),
-                                                        Container(
+                                                        SizedBox(
                                                           width:
                                                               double.infinity,
                                                           child: TextFormField(
@@ -1732,14 +1728,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           onPressed: () async {
                                                             if (() {
                                                               if (_model.uploadedFileUrl1 !=
-                                                                      null &&
-                                                                  _model.uploadedFileUrl1 !=
                                                                       '') {
                                                                 return true;
-                                                              } else if (_model
-                                                                          .uploadedFileUrl2 !=
-                                                                      null &&
-                                                                  _model.uploadedFileUrl2 !=
+                                                              } else if (_model.uploadedFileUrl2 !=
                                                                       '') {
                                                                 return true;
                                                               } else {
@@ -2918,8 +2909,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                         crossAxisAlignment:
                                                                             CrossAxisAlignment.end,
                                                                         children: [
-                                                                          if (_model.uploadedFileUrl3 != null &&
-                                                                              _model.uploadedFileUrl3 != '')
+                                                                          if (_model.uploadedFileUrl3 != '')
                                                                             FlutterFlowIconButton(
                                                                               borderRadius: 12,
                                                                               buttonSize: 40,
@@ -2936,8 +2926,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                                 });
                                                                               },
                                                                             ),
-                                                                          if (_model.uploadedFileUrl3 == null ||
-                                                                              _model.uploadedFileUrl3 == '')
+                                                                          if (_model.uploadedFileUrl3 == '')
                                                                             FFButtonWidget(
                                                                               onPressed: () async {
                                                                                 final selectedMedia = await selectMedia(

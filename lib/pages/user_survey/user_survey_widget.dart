@@ -171,7 +171,7 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                   ),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: double.infinity,
                                     height: 1000,
                                     child: PageView(
@@ -237,7 +237,7 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                       CrossAxisAlignment
                                                           .stretch,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       height: 220,
                                                       child: Stack(
                                                         children: [

@@ -1,0 +1,66 @@
+identifier:
+  name: chats
+  key: fy1vkjxv
+fields:
+  users:
+    identifier:
+      name: users
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  user_a:
+    identifier:
+      name: user_a
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  user_b:
+    identifier:
+      name: user_b
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  last_message:
+    identifier:
+      name: last_message
+    dataType:
+      scalarType: String
+  last_message_time:
+    identifier:
+      name: last_message_time
+    dataType:
+      scalarType: DateTime
+  last_message_sent_by:
+    identifier:
+      name: last_message_sent_by
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  last_message_seen_by:
+    identifier:
+      name: last_message_seen_by
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  group_chat_id:
+    identifier:
+      name: group_chat_id
+    dataType:
+      scalarType: Integer

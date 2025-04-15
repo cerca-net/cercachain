@@ -124,7 +124,7 @@ class _ObjectWidgetState extends State<ObjectWidget>
                 child: StreamBuilder<SubmissionRecord>(
                   stream: _model.objectdata(
                     requestFn: () =>
-                        SubmissionRecord.getDocument(widget!.object!.reference),
+                        SubmissionRecord.getDocument(widget.object!.reference),
                   ),
                   builder: (context, snapshot) {
                     // Customize what your widget looks like when it's loading.
@@ -173,7 +173,7 @@ class _ObjectWidgetState extends State<ObjectWidget>
                                                 .map((e) => e)
                                                 .toList();
 
-                                        return Container(
+                                        return SizedBox(
                                           width: double.infinity,
                                           height: 500,
                                           child: Stack(

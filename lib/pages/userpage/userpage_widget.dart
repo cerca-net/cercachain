@@ -153,7 +153,9 @@ class UserpageModel extends FlutterFlowModel<UserpageWidget> {
   @override
   void dispose() {
     tabBarController?.dispose();
-    staggeredViewStreamSubscriptions1.forEach((s) => s?.cancel());
+    for (var s in staggeredViewStreamSubscriptions1) {
+      s?.cancel();
+    }
     staggeredViewPagingController1?.dispose();
 
     /// Dispose query cache managers for this widget.

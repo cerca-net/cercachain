@@ -1,5 +1,5 @@
 Expanded(
-  child: Padding(
+  child = Padding(
     padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
     child: FFButtonWidget(
       onPressed: () async {

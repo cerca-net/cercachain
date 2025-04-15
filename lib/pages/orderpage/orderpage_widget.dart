@@ -83,7 +83,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
             borderRadius: BorderRadius.circular(12),
           ),
           child: StreamBuilder<OrderRecord>(
-            stream: OrderRecord.getDocument(widget!.orderparameter!.reference),
+            stream: OrderRecord.getDocument(widget.orderparameter!.reference),
             builder: (context, snapshot) {
               // Customize what your widget looks like when it's loading.
               if (!snapshot.hasData) {
@@ -429,7 +429,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                         ),
                         if (columnOrderRecord.userRef == currentUserReference)
                           Expanded(
-                            child: Container(
+                            child: SizedBox(
                               height: 200,
                               child: Visibility(
                                 visible: columnOrderRecord.userRef ==
@@ -1259,8 +1259,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .center,
                                                           children: [
                                                             if (_model.uploadedFileUrl ==
-                                                                    null ||
-                                                                _model.uploadedFileUrl ==
                                                                     '')
                                                               FFButtonWidget(
                                                                 onPressed:
@@ -1386,8 +1384,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 ),
                                                               ),
                                                             if (_model.uploadedFileUrl !=
-                                                                    null &&
-                                                                _model.uploadedFileUrl !=
                                                                     '')
                                                               FFButtonWidget(
                                                                 onPressed:
@@ -2023,7 +2019,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                         EdgeInsets
                                                                             .all(8),
                                                                     child:
-                                                                        Container(
+                                                                        SizedBox(
                                                                       width:
                                                                           300,
                                                                       child:
@@ -2264,7 +2260,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                         if (columnOrderRecord.publicuserRef ==
                             currentUserReference)
                           Expanded(
-                            child: Container(
+                            child: SizedBox(
                               height: 200,
                               child: Visibility(
                                 visible: columnOrderRecord.publicuserRef ==
@@ -3823,7 +3819,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             onChanged: (_model.qrdisplay == true)
                                                                                 ? null
                                                                                 : (newValue) async {
-                                                                                    safeSetState(() => _model.switchValue1 = newValue!);
+                                                                                    safeSetState(() => _model.switchValue1 = newValue);
                                                                                   },
                                                                             activeColor:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
@@ -3874,7 +3870,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             onChanged: (_model.qrdisplay == true)
                                                                                 ? null
                                                                                 : (newValue) async {
-                                                                                    safeSetState(() => _model.switchValue2 = newValue!);
+                                                                                    safeSetState(() => _model.switchValue2 = newValue);
                                                                                   },
                                                                             activeColor:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
@@ -3925,8 +3921,8 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             onChanged: (_model.qrdisplay == true)
                                                                                 ? null
                                                                                 : (newValue) async {
-                                                                                    safeSetState(() => _model.switchValue3 = newValue!);
-                                                                                    if (newValue!) {
+                                                                                    safeSetState(() => _model.switchValue3 = newValue);
+                                                                                    if (newValue) {
                                                                                       if ((_model.switchValue1 == true) && (_model.switchValue2 == true)) {
                                                                                         _model.qrdisplay = true;
                                                                                       } else {
@@ -3979,7 +3975,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                 FlutterFlowTheme.of(context).secondaryText,
                                                                             backgroundColor:
                                                                                 Colors.transparent,
-                                                                            errorBuilder: (_context, _error) =>
+                                                                            errorBuilder: (context, error) =>
                                                                                 SizedBox(
                                                                               width: 140,
                                                                               height: 140,

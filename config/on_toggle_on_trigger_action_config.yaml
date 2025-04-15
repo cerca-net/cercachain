@@ -1,0 +1,6 @@
+rootAction:
+  key: bmf2xwzk
+  action:
+    key: 7w7wh815
+trigger:
+  triggerType: ON_TOGGLE_ON

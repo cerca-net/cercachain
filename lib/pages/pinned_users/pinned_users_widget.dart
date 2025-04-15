@@ -244,7 +244,7 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Expanded(
-                                  child: Container(
+                                  child: SizedBox(
                                     width: 200,
                                     child: TextFormField(
                                       controller: _model.textController,
@@ -279,7 +279,7 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xclass PinnedUsersWidget {
+                                            color: Color(0x0000000class PinnedUsersWidget {
   static String routeName = 'PinnedUsers';
   static String routePath = '/pinspageUsers';
 }

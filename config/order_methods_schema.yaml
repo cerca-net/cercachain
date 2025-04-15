@@ -1,0 +1,34 @@
+identifier:
+  name: order_methods
+  key: t9fp60ga
+fields:
+  method_poster:
+    identifier:
+      name: method_poster
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  method_type:
+    identifier:
+      name: method_type
+    dataType:
+      scalarType: String
+  method_tag:
+    identifier:
+      name: method_tag
+    dataType:
+      scalarType: String
+  method_name:
+    identifier:
+      name: method_name
+    dataType:
+      scalarType: String
+  method_thread:
+    identifier:
+      name: method_thread
+    dataType:
+      listType:
+        scalarType: String

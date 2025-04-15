@@ -1,0 +1,17 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: pph06
+      addToList:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                documentProperty: REFERENCE
+          nodeKeyRef:
+            key: Container_41uv9xmn
+  updateType: WIDGET
+  stateVariableType: WIDGET_CLASS_STATE
+key: 7w7wh815

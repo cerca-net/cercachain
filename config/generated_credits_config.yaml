@@ -1,0 +1,25 @@
+identifier:
+  name: generatedcredits
+  key: qu1oj
+arguments:
+  - identifier:
+      name: generation
+      key: equ3sg
+    dataType:
+      scalarType: Double
+      nonNullable: false
+  - identifier:
+      name: participation
+      key: 85ttpt
+    dataType:
+      scalarType: Double
+      nonNullable: false
+  - identifier:
+      name: transition
+      key: qggin6
+    dataType:
+      scalarType: Double
+      nonNullable: false
+returnParameter:
+  dataType:
+    scalarType: Double

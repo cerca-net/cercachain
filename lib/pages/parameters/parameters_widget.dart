@@ -79,7 +79,7 @@ class _ParametersWidgetState extends State<ParametersWidget> {
               child: SwitchListTile.adaptive(
                 value: _model.switchListTileValue1 ??= true,
                 onChanged: (newValue) async {
-                  safeSetState(() => _model.switchListTileValue1 = newValue!);
+                  safeSetState(() => _model.switchListTileValue1 = newValue);
                 },
                 title: Text(
                   FFLocalizations.of(context).getText(
@@ -115,7 +115,7 @@ class _ParametersWidgetState extends State<ParametersWidget> {
             child: SwitchListTile.adaptive(
               value: _model.switchListTileValue2 ??= true,
               onChanged: (newValue) async {
-                safeSetState(() => _model.switchListTileValue2 = newValue!);
+                safeSetState(() => _model.switchListTileValue2 = newValue);
               },
               title: Text(
                 FFLocalizations.of(context).getText(
@@ -150,7 +150,7 @@ class _ParametersWidgetState extends State<ParametersWidget> {
             child: SwitchListTile.adaptive(
               value: _model.switchListTileValue3 ??= true,
               onChanged: (newValue) async {
-                safeSetState(() => _model.switchListTileValue3 = newValue!);
+                safeSetState(() => _model.switchListTileValue3 = newValue);
               },
               title: Text(
                 FFLocalizations.of(context).getText(

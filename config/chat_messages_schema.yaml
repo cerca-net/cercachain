@@ -1,0 +1,42 @@
+identifier:
+  name: chat_messages
+  key: i4go87wv
+fields:
+  user:
+    identifier:
+      name: user
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  chat:
+    identifier:
+      name: chat
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: chats
+          key: fy1vkjxv
+  text:
+    identifier:
+      name: text
+    dataType:
+      scalarType: String
+  timestamp:
+    identifier:
+      name: timestamp
+    dataType:
+      scalarType: DateTime
+  image:
+    identifier:
+      name: image
+    dataType:
+      scalarType: ImagePath
+  video:
+    identifier:
+      name: video
+    dataType:
+      scalarType: VideoPath
