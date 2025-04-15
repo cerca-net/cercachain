@@ -1,0 +1,74 @@
+key: Container_7oe9dp4d
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        topRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 7
+          mostRecentInputValue: 7
+        colorValue:
+          inputValue:
+            value: "790438953"
+          mostRecentInputValue:
+            value: "790438953"
+        dyValue:
+          inputValue: 3
+          mostRecentInputValue: 3
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: Card23_Inbox
+parameterValues: {}
+valueKey: {}

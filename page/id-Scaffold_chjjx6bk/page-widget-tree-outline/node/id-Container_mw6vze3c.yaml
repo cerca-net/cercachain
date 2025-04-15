@@ -1,0 +1,62 @@
+key: Container_mw6vze3c
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        percentOfScreenSizeValue:
+          inputValue: 90
+          mostRecentInputValue: 90
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        topRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

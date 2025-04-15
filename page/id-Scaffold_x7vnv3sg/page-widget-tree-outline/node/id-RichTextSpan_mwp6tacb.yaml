@@ -1,0 +1,14 @@
+key: RichTextSpan_mwp6tacb
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: fbyjwip0
+      textValue:
+        inputValue: "212"
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT

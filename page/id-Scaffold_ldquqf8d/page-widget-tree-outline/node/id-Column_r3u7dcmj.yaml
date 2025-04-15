@@ -1,0 +1,26 @@
+key: Column_r3u7dcmj
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    crossAxisAlignment: cross_axis_center
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+      startSpacingValue:
+        inputValue: 4
+      endSpacingValue:
+        inputValue: 4
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

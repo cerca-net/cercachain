@@ -1,0 +1,20 @@
+key: Text_7y32s7lx
+type: Text
+props:
+  text:
+    fontFamily: Nunito Sans
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: fz1t8fpi
+    selectable: false
+    textValue:
+      inputValue: Share and discover new potencial
+      mostRecentInputValue: Share and discover new potencial
+    fontSizeValue:
+      inputValue: 18
+      mostRecentInputValue: 18
+  padding:
+    topValue:
+      inputValue: 15
+      mostRecentInputValue: 15

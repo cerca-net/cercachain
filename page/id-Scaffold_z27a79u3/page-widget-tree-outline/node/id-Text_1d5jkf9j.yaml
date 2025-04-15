@@ -1,0 +1,23 @@
+key: Text_1d5jkf9j
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: tyhb469x
+    selectable: false
+    textValue:
+      variable:
+        source: FIREBASE_AUTH_USER
+        defaultValue:
+          serializedValue: "0"
+        baseVariable:
+          auth:
+            property: USERS_DATA_FIELD
+            usersDataField:
+              name: pinned_users
+        operations:
+          - listNumItems: {}
+          - numberFormat:
+              formatType: COMPACT
+      mostRecentInputValue: "18"

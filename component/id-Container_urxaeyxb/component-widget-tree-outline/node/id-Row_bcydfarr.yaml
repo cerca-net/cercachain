@@ -1,0 +1,19 @@
+key: Row_bcydfarr
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 10
+        mostRecentInputValue: 10
+  padding:
+    leftValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

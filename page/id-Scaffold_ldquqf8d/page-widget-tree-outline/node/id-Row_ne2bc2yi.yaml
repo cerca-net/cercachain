@@ -1,0 +1,5 @@
+key: Row_ne2bc2yi
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between

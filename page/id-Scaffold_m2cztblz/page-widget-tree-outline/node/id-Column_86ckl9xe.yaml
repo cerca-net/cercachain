@@ -1,0 +1,15 @@
+key: Column_86ckl9xe
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8

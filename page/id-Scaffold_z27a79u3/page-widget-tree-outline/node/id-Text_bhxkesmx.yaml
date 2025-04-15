@@ -1,0 +1,20 @@
+key: Text_bhxkesmx
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: 6tbzstp4
+    textValue:
+      inputValue: status
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

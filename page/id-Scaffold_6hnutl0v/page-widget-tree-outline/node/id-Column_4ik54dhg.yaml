@@ -1,0 +1,9 @@
+key: Column_4ik54dhg
+type: Column
+props:
+  column:
+    primary: true
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

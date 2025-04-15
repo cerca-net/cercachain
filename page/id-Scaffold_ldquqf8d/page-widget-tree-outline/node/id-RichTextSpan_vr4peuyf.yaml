@@ -1,0 +1,21 @@
+key: RichTextSpan_vr4peuyf
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: 7bhww2lp
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: userOut
+          nodeKeyRef:
+            key: ListView_a6m6xflh
+      fontSizeValue:
+        inputValue: 10

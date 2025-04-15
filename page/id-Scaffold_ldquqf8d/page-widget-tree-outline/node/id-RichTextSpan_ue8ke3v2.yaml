@@ -1,0 +1,9 @@
+key: RichTextSpan_ue8ke3v2
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: havut3rl
+      textValue:
+        inputValue: "14.6"

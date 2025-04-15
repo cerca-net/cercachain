@@ -1,0 +1,46 @@
+key: Text_k9use0p2
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: iy48ih5s
+    selectable: false
+    textValue:
+      inputValue: 2h
+    fontSizeValue:
+      inputValue: 12
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  alignment:
+    xValue:
+      inputValue: -1
+      mostRecentInputValue: -1
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

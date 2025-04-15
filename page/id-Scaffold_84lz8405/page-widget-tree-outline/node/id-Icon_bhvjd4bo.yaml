@@ -1,0 +1,21 @@
+key: Icon_bhvjd4bo
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 63268
+        family: MaterialIcons
+        matchTextDirection: false
+        name: explore_rounded
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

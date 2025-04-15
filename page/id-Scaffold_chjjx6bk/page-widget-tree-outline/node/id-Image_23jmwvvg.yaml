@@ -1,0 +1,70 @@
+key: Image_23jmwvvg
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 60
+          mostRecentInputValue: 60
+      height:
+        pixelsValue:
+          inputValue: 60
+          mostRecentInputValue: 60
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      topRightValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      bottomLeftValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      bottomRightValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+      allValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIREBASE_AUTH_USER
+        baseVariable:
+          auth:
+            property: USERS_DATA_FIELD
+            usersDataField:
+              name: profile_picture
+      mostRecentInputValue: https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    topValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    rightValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    bottomValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    allValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

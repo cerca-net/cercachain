@@ -1,0 +1,11 @@
+key: Stack_xtd97513
+type: Stack
+props:
+  stack:
+    dimensions: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

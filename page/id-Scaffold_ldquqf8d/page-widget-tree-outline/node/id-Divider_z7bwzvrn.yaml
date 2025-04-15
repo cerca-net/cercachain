@@ -1,0 +1,16 @@
+key: Divider_z7bwzvrn
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 2
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    endIndentValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}

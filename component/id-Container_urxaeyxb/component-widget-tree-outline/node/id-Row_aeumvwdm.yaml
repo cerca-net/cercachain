@@ -1,0 +1,7 @@
+key: Row_aeumvwdm
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_end
+  expanded:
+    expandedType: UNEXPANDED

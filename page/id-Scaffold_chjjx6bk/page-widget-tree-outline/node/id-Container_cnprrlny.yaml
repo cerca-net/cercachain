@@ -1,0 +1,48 @@
+key: Container_cnprrlny
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      borderWidthValue:
+        inputValue: 1
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 12
+    topValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+    allValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 2
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

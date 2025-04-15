@@ -1,0 +1,33 @@
+key: Container_nufg674z
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+    allValue:
+      inputValue: 12
+  responsiveVisibility: {}
+parameterValues: {}

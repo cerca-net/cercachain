@@ -1,0 +1,20 @@
+key: Text_ox7xg6ie
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: vlbm0x24
+    textValue:
+      inputValue: Places
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

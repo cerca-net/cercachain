@@ -1,0 +1,21 @@
+key: gpjv6jwb
+uploadData:
+  settings:
+    allowedTypes:
+      photo: false
+      video: false
+      file: true
+    source: FILES
+    fileType: AUDIO
+    showSnackBar: true
+    localFileVariable:
+      source: WIDGET_STATE
+      baseVariable:
+        widgetState:
+          actionType: STOP_RECORD_AUDIO
+          actionKeyRef:
+            key: q34r62et
+      nodeKeyRef:
+        key: IconButton_hly6ke8p
+  destination: FIREBASE
+  actionName: SubmissionAudio

@@ -1,0 +1,72 @@
+key: Button_plltr2ga
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: kpzd6smo
+      textValue:
+        inputValue: Delete object
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      rightValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 32
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ACCENT_1
+      mostRecentInputValue:
+        themeColor: ACCENT_1
+    iconPosition: TRAILING
+  padding:
+    leftValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility:
+    phoneHidden: false
+animations:
+  - trigger: ON_ACTION_TRIGGER
+    effects:
+      - curve: EASE_IN_OUT
+        fade:
+          begin:
+            inputValue:
+              serializedValue: "0"
+          end:
+            inputValue:
+              serializedValue: "1"
+        delay:
+          inputValue:
+            serializedValue: "600"
+        duration:
+          inputValue:
+            serializedValue: "600"
+    applyInitialState: true

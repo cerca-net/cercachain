@@ -1,0 +1,63 @@
+key: CheckboxListTile_k1gr51vl
+type: CheckboxListTile
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+    bottomValue:
+      inputValue: 8
+    allValue:
+      inputValue: 8
+  checkboxListTile:
+    title:
+      themeStyle: TITLE_LARGE
+      translationIdentifier:
+        key: kmmj28py
+      textValue:
+        inputValue: Terms & Conditions
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    subtitle:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: j9zwje2e
+      textValue:
+        inputValue: ""
+    contentPadding:
+      leftValue:
+        inputValue: 12
+      rightValue:
+        inputValue: 12
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    density: COMPACT
+    initialValueValue:
+      inputValue: false
+    tileColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    activeColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    checkColorValue:
+      inputValue:
+        themeColor: INFO
+    checkboxBorderColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    denseValue:
+      inputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

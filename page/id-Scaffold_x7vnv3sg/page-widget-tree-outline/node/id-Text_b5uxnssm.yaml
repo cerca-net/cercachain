@@ -1,0 +1,26 @@
+key: Text_b5uxnssm
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: am409q5i
+    selectable: false
+    textValue:
+      inputValue: Verified
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding: {}
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

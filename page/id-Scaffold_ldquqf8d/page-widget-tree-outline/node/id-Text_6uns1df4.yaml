@@ -1,0 +1,24 @@
+key: Text_6uns1df4
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: swwh73oe
+    selectable: false
+    textValue:
+      inputValue: Vote rate
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: EXPANDED

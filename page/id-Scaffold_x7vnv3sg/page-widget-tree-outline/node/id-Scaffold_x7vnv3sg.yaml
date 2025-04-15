@@ -1,0 +1,79 @@
+key: Scaffold_x7vnv3sg
+type: Scaffold
+props:
+  scaffold:
+    safeArea: false
+    navBarItem:
+      navIcon:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            value: "4288585374"
+          mostRecentInputValue:
+            value: "4288585374"
+        iconDataValue:
+          inputValue:
+            codePoint: 58513
+            family: MaterialIcons
+            matchTextDirection: false
+            name: person
+      navActiveIcon:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: PRIMARY
+          mostRecentInputValue:
+            themeColor: PRIMARY
+        iconDataValue:
+          inputValue:
+            codePoint: 62075
+            family: MaterialIcons
+            matchTextDirection: false
+            name: person_outlined
+      show: false
+      differentActiveIcon: false
+      label:
+        translationIdentifier:
+          key: ysoumgzz
+        textValue:
+          inputValue: ""
+          mostRecentInputValue: ""
+      alwaysShowNavBar: false
+    hideKeyboardOnTap: true
+    backgroundColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: Publicpage
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: WIDGET_CLASS_PARAMETER
+      baseVariable:
+        widgetClass:
+          paramIdentifier:
+            name: profileparameter
+            key: 3plqj9
+      nodeKeyRef:
+        key: Scaffold_x7vnv3sg
+parameterValues: {}

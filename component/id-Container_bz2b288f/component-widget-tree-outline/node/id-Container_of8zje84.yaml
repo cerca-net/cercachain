@@ -1,0 +1,8 @@
+key: Container_of8zje84
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration: {}
+  expanded:
+    expandedType: UNEXPANDED

@@ -1,0 +1,21 @@
+key: Column_8268q2h8
+type: Column
+props:
+  column:
+    scrollable: false
+    primary: true
+    listSpacing: {}
+  padding:
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: scrolling_Column
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,12 @@
+alertDialog:
+  customDialog:
+    passedParameters:
+      parameterPasses: {}
+      widgetClassNodeKeyRef:
+        key: Container_nvzvquqm
+    dimensions: {}
+    barrierColor: {}
+    isGlobal: true
+    componentClassNodeKeyRef:
+      key: Container_nvzvquqm
+key: zwg826f9

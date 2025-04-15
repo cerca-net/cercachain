@@ -1,0 +1,14 @@
+key: RichText_bc1n8da7
+type: RichText
+props:
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      fontSizeValue:
+        inputValue: 10
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

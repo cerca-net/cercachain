@@ -1,0 +1,63 @@
+key: StaggeredView_rkh73hvf
+type: StaggeredView
+props:
+  staggeredView:
+    shrinkWrapValue:
+      inputValue: false
+      mostRecentInputValue: false
+    crossAxisCountValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    crossAxisSpacingValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+    mainAxisSpacingValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+    allowScrollingValue:
+      inputValue: false
+      mostRecentInputValue: true
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    orderBy:
+      - collectionFieldIdentifier:
+          name: date
+        descending: true
+    hideOnEmpty: false
+    ignoreEmptyValues: true
+    pagination:
+      enabled: true
+      isStream: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: poster
+            relation: EQUAL_TO
+            variable:
+              source: FIRESTORE_REQUEST
+              baseVariable:
+                firestore: {}
+              operations:
+                - accessDocumentField:
+                    documentProperty: REFERENCE
+              nodeKeyRef:
+                key: Scaffold_x7vnv3sg
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: type_object
+            relation: EQUAL_TO
+            inputValue:
+              serializedValue: Post
+      isAnd: true

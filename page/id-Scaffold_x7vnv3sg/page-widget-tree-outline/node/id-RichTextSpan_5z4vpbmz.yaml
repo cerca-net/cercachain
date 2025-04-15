@@ -1,0 +1,22 @@
+key: RichTextSpan_5z4vpbmz
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: p1qie27l
+      selectable: false
+      textValue:
+        inputValue: "USER PIN : "
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+      textAlignValue:
+        inputValue: ALIGN_CENTER

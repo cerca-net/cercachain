@@ -1,0 +1,7 @@
+name: Signup
+params: {}
+node:
+  key: Scaffold_j7silyhi
+pageRouteSettings:
+  onlyAuthenticated: false
+classModel: {}

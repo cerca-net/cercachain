@@ -1,0 +1,34 @@
+key: Text_renmd2ub
+type: RichText
+props:
+  padding:
+    leftValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: j0cncy9x
+      selectable: false
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: header
+          nodeKeyRef:
+            key: Row_5irk3wv4
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+      textAlignValue:
+        inputValue: ALIGN_START

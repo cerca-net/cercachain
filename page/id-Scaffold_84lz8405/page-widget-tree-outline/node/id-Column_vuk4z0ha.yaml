@@ -1,0 +1,16 @@
+key: Column_vuk4z0ha
+type: Column
+props:
+  column:
+    scrollable: false
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 12
+  responsiveVisibility:
+    desktopHidden: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

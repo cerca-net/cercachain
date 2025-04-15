@@ -1,0 +1,47 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: ratings
+      key: lrzc5w18
+    write:
+      updates:
+        user_ref:
+          fieldIdentifier:
+            name: user_ref
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        value:
+          fieldIdentifier:
+            name: value
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                  dataType:
+                    scalarType: Double
+            nodeKeyRef:
+              key: RatingBar_qcu28i8h
+        date:
+          fieldIdentifier:
+            name: date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+    parentReference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Column_zbch9m9e
+key: 0cq8zysc

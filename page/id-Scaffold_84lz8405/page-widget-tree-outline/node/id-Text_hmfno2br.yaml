@@ -1,0 +1,16 @@
+key: Text_hmfno2br
+type: Text
+props:
+  text:
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: 3g7rk1a8
+    textValue:
+      inputValue: List Item Title
+      mostRecentInputValue: List Item Title
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

@@ -1,0 +1,20 @@
+key: Container_rguod3s8
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      boxShadow: {}
+      image: {}
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

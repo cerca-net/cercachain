@@ -1,0 +1,36 @@
+key: Text_paxht8x1
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: LABEL_SMALL
+    translationIdentifier:
+      key: 2hslcg8a
+    selectable: false
+    textValue:
+      inputValue: 4m ago
+      mostRecentInputValue: 4m ago
+    fontSizeValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    colorValue:
+      inputValue:
+        value: "4284508805"
+      mostRecentInputValue:
+        value: "4284508805"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 8
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

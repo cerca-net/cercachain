@@ -1,0 +1,28 @@
+key: Text_6kf4gugx
+type: Text
+props:
+  text:
+    themeStyle: LABEL_LARGE
+    translationIdentifier:
+      key: if6uj6h3
+    selectable: false
+    textValue:
+      inputValue: Please fill out your email belo in order to recieve a reset password link.
+      mostRecentInputValue: Please fill out your email belo in order to recieve a reset password link.
+    textAlignValue:
+      inputValue: ALIGN_START
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,27 @@
+key: Text_cb2o1ehq
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: TITLE_SMALL
+    isCustomFont: false
+    translationIdentifier:
+      key: al16wiwg
+    textValue:
+      inputValue: Pago Movil
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+  padding:
+    type: FF_PADDING_ONLY
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

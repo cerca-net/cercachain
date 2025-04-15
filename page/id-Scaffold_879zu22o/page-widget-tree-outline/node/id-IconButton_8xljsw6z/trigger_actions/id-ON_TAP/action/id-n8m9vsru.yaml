@@ -1,0 +1,40 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        user_occupations:
+          fieldIdentifier:
+            name: user_occupations
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: user_occupations
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        listType:
+                          scalarType: String
+                        nonNullable: false
+                operations:
+                  - listUniqueOperation:
+                      uniqueKey:
+                        source: LIST_MAP
+                        baseVariable:
+                          listMap:
+                            containingParentReturnParameter:
+                              dataType:
+                                listType:
+                                  scalarType: String
+                                nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_7y6eehq3
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+key: n8m9vsru

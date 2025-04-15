@@ -1,0 +1,25 @@
+key: Row_0b25sdb2
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    crossAxisAlignment: cross_axis_start
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

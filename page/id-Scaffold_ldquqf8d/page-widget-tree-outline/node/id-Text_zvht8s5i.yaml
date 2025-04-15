@@ -1,0 +1,35 @@
+key: Text_zvht8s5i
+type: Text
+props:
+  text:
+    themeStyle: TITLE_SMALL
+    translationIdentifier:
+      key: rupdv2gn
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: method_name
+        nodeKeyRef:
+          key: ListView_lnvan1b0
+      mostRecentInputValue: Pago Movil
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

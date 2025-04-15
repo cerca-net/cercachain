@@ -1,0 +1,21 @@
+key: RichTextSpan_v8gku0vi
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: d9e7r92g
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: "0"
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: total_ref_value_transaction
+          nodeKeyRef:
+            key: ListView_i90hmck6

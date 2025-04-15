@@ -1,0 +1,27 @@
+key: Container_5wiltt3i
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 2
+    boxDecoration:
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

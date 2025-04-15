@@ -1,0 +1,16 @@
+key: RichTextSpan_ajrae0dw
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: lrkqhrn4
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - indexInList: {}
+          nodeKeyRef:
+            key: ListView_5gih7cll

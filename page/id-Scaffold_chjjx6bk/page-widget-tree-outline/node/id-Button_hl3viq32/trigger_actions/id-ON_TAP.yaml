@@ -1,0 +1,66 @@
+rootAction:
+  key: 6fth3irn
+  conditionActions:
+    falseAction:
+      key: aebo0bx3
+      action:
+        key: b4cq94jo
+    trueActions:
+      - condition:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  actionType: UPLOAD_DATA_URL
+                                  actionKeyRef:
+                                    key: c3trbbfw
+                              nodeKeyRef:
+                                key: Button_x08b8dv9
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      inputValue:
+                        serializedValue: "true"
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  actionType: UPLOAD_DATA_URL
+                                  actionKeyRef:
+                                    key: rw718y55
+                              nodeKeyRef:
+                                key: IconButton_rfmrs2m0
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      inputValue:
+                        serializedValue: "true"
+                elseValue:
+                  inputValue:
+                    serializedValue: "false"
+                returnParameter:
+                  dataType:
+                    scalarType: Boolean
+        trueAction:
+          key: ejm7fyx5
+          action:
+            key: vzi170l3
+    hasMultiConditions: false
+    key: u3rw4uaq
+trigger:
+  triggerType: ON_TAP

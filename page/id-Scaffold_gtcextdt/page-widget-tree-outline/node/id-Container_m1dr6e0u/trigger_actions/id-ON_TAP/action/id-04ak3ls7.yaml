@@ -1,0 +1,13 @@
+key: 04ak3ls7
+uploadData:
+  settings:
+    allowedTypes:
+      photo: true
+      video: false
+      file: false
+    source: GALLERY_OR_CAMERA
+    galleryOrCameraPickerStyle: {}
+    showSnackBar: true
+    localFileVariable: {}
+  destination: FIREBASE
+  actionName: "UploadData_7b45\n"

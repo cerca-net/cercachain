@@ -1,0 +1,166 @@
+key: Container_k3gmomwr
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 600
+          mostRecentInputValue: 600
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 4
+          mostRecentInputValue: 4
+        colorValue:
+          inputValue:
+            value: "855638016"
+          mostRecentInputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+          mostRecentInputValue: 0
+        dyValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions:
+      width:
+        pixelsValue:
+          inputValue: 570
+          mostRecentInputValue: 570
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    allValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+animations:
+  - trigger: ON_PAGE_LOAD
+    hideBeforeAnimating: true
+    effects:
+      - curve: EASE_IN_OUT
+        fade:
+          begin:
+            inputValue:
+              serializedValue: "0"
+          end:
+            inputValue:
+              serializedValue: "1"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "300"
+      - curve: EASE_IN_OUT
+        slide:
+          beginDx:
+            inputValue:
+              serializedValue: "0"
+          beginDy:
+            inputValue:
+              serializedValue: "-140"
+          endDx:
+            inputValue:
+              serializedValue: "0"
+          endDy:
+            inputValue:
+              serializedValue: "0"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "300"
+      - curve: EASE_IN_OUT
+        scale:
+          beginDx:
+            inputValue:
+              serializedValue: "0.9"
+          endDx:
+            inputValue:
+              serializedValue: "1"
+          beginDy:
+            inputValue:
+              serializedValue: "0.9"
+          endDy:
+            inputValue:
+              serializedValue: "1"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "300"
+      - curve: EASE_IN_OUT
+        tilt:
+          beginVertical:
+            inputValue:
+              serializedValue: "20"
+          beginHorizontal:
+            inputValue:
+              serializedValue: "0"
+          endVertical:
+            inputValue:
+              serializedValue: "0"
+          endHorizontal:
+            inputValue:
+              serializedValue: "0"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "300"
+    useSameInterval: true
+    applyInitialState: true
+    delay:
+      inputValue:
+        serializedValue: "0"
+    duration:
+      inputValue:
+        serializedValue: "300"
+valueKey: {}

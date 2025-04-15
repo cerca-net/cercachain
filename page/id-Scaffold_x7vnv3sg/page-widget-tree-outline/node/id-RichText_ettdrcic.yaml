@@ -1,0 +1,18 @@
+key: RichText_ettdrcic
+type: RichText
+props:
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  expanded:
+    expandedType: UNEXPANDED
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      textAlignValue:
+        inputValue: ALIGN_START

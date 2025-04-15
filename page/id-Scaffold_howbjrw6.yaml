@@ -1,0 +1,100 @@
+name: Orderpage
+description: ""
+params:
+  nlcz03:
+    identifier:
+      name: ordertaker
+      key: nlcz03
+    dataType:
+      scalarType: DocumentReference
+      nonNullable: false
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  l2k7rx:
+    identifier:
+      name: orderparameter
+      key: l2k7rx
+    dataType:
+      scalarType: Document
+      nonNullable: false
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  a1xrgs:
+    identifier:
+      name: ordermaker
+      key: a1xrgs
+    dataType:
+      scalarType: DocumentReference
+      nonNullable: false
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+node:
+  key: Scaffold_howbjrw6
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: userparameter
+          key: dg0kt
+        dataType:
+          scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: users
+              key: dij4596p
+    - parameter:
+        identifier:
+          name: publicuserparameter
+          key: ghyej
+        dataType:
+          scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: users
+              key: dij4596p
+    - parameter:
+        identifier:
+          name: qrCodevalue
+          key: mae98
+        dataType:
+          scalarType: DocumentReference
+          nonNullable: true
+          subType:
+            collectionIdentifier:
+              name: order
+              key: 1x1ih0np
+    - parameter:
+        identifier:
+          name: qrdisplay
+          key: lb7fi
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"
+    - parameter:
+        identifier:
+          name: rate1
+          key: d25vu
+        dataType:
+          scalarType: Integer
+          nonNullable: true
+      serializedDefaultValue:
+        - "0"
+    - parameter:
+        identifier:
+          name: rate2
+          key: y2jcg
+        dataType:
+          scalarType: Integer
+          nonNullable: true
+      serializedDefaultValue:
+        - "0"

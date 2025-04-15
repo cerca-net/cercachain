@@ -1,0 +1,11 @@
+key: Stack_27fmx9yz
+type: Stack
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  stack: {}

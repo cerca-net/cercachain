@@ -1,0 +1,8 @@
+animation:
+  animationType: WIDGET_ANIMATION_ACTION
+  widgetAnimation:
+    actionType: START_ANIMATION
+    animationNodeKeyRef:
+      key: Button_plltr2ga
+key: r4bw2obl
+nonBlocking: true

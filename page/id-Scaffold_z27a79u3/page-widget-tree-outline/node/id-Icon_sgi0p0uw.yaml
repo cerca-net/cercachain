@@ -1,0 +1,15 @@
+key: Icon_sgi0p0uw
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 60287
+        family: MaterialIcons
+        matchTextDirection: false
+        name: people_sharp

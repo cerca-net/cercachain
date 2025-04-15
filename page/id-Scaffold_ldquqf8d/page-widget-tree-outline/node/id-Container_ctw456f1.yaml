@@ -1,0 +1,45 @@
+key: Container_ctw456f1
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

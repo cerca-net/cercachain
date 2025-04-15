@@ -1,0 +1,27 @@
+key: Image_mcmhwio6
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 44
+          mostRecentInputValue: 44
+      height:
+        pixelsValue:
+          inputValue: 44
+          mostRecentInputValue: 44
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/default-project-widgets-xzsp5v/assets/ddr0sc80h0hs/@3xlogoMark_outline.png
+      mostRecentInputValue: https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/default-project-widgets-xzsp5v/assets/ddr0sc80h0hs/@3xlogoMark_outline.png
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,24 @@
+key: Column_2g4mka60
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+      startSpacingValue:
+        inputValue: 8
+      endSpacingValue:
+        inputValue: 16
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

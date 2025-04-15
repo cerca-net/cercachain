@@ -1,0 +1,17 @@
+key: Column_wts1fjwp
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    primary: true
+    listSpacing: {}
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

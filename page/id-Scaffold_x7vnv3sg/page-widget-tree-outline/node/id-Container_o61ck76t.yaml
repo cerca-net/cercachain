@@ -1,0 +1,29 @@
+key: Container_o61ck76t
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 52
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,13 @@
+key: RichTextSpan_nmdxf91g
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: icfn8zgw
+      underline: false
+      textValue:
+        inputValue: "REF : "
+      fontWeightValue:
+        inputValue: w500

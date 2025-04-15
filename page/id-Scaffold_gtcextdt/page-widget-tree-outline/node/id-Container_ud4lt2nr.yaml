@@ -1,0 +1,61 @@
+key: Container_ud4lt2nr
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 150
+          mostRecentInputValue: 150
+      height:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 1
+  expanded:
+    expandedType: FLEXIBLE
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+parameterValues: {}
+valueKey: {}

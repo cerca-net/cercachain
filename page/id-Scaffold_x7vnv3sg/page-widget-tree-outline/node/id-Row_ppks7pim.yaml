@@ -1,0 +1,27 @@
+key: Row_ppks7pim
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  document:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    reference:
+      source: GENERATOR_VARIABLE
+      baseVariable:
+        generatorVariable: {}
+      nodeKeyRef:
+        key: ListView_lchq7t5t

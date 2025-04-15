@@ -1,0 +1,35 @@
+key: Form_s1f4e7mc
+type: Form
+props:
+  responsiveVisibility: {}
+  form:
+    validations:
+      - isRequired: true
+        uploadData:
+          onValidationError: {}
+        nodeKeyRef:
+          key: IconButton_hx0i9g25
+      - isRequired: true
+        text:
+          minimumCharacters: 1
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: k5mcha95
+            textValue:
+              inputValue: Field is required
+          maximumCharacters: 240
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: dsilfr2g
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_37hge4ik
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: FormProduct
+parameterValues: {}
+valueKey: {}

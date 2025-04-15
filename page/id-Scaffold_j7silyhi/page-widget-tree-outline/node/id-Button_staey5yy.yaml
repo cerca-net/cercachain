@@ -1,0 +1,90 @@
+key: Button_staey5yy
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: l0vok5gn
+      textValue:
+        inputValue: Continue with Google
+        mostRecentInputValue: Continue with Google
+      colorValue:
+        inputValue:
+          themeColor: PRIMARY_TEXT
+        mostRecentInputValue:
+          themeColor: PRIMARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      topRightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      bottomLeftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      bottomRightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      allValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    hasHoverStyle: true
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 44
+          mostRecentInputValue: 44
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderWidthValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    hoverColorValue:
+      inputValue:
+        themeColor: PRIMARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: PRIMARY_BACKGROUND
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 20
+          mostRecentInputValue: 20
+        iconDataValue:
+          inputValue:
+            codePoint: 61856
+            family: FontAwesomeBrands
+            package: font_awesome_flutter
+            matchTextDirection: false
+            packageIcon:
+              fontAwesome: google
+            name: google
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,19 @@
+key: Column_j6tl63wi
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 4
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

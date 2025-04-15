@@ -1,0 +1,17 @@
+name: MAIN001
+description: ""
+node:
+  key: Scaffold_9d9ci0r4
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: userpreview
+          key: d5u6g
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"

@@ -1,0 +1,57 @@
+key: ToggleIcon_tr9bmxle
+type: ToggleIcon
+props:
+  padding:
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  toggleIcon:
+    valueValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: downvote
+          - listContains:
+              element:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USER_REFERENCE
+        nodeKeyRef:
+          key: Column_h4tp6hnj
+    iconOnValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+          mostRecentInputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: PRIMARY
+          mostRecentInputValue:
+            themeColor: PRIMARY
+        iconDataValue:
+          inputValue:
+            codePoint: 58195
+            family: MaterialIcons
+            matchTextDirection: false
+            name: keyboard_arrow_down
+    iconOffValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+          mostRecentInputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 58195
+            family: MaterialIcons
+            matchTextDirection: false
+            name: keyboard_arrow_down

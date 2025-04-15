@@ -1,0 +1,13 @@
+key: Text_d200ua30
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: hw57vcox
+    selectable: false
+    textValue:
+      inputValue: Upload Banner
+      mostRecentInputValue: Upload Banner

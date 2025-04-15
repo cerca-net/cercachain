@@ -1,0 +1,20 @@
+key: RichTextSpan_q3v44494
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: 3dqpn6vc
+      selectable: false
+      textValue:
+        inputValue: "Order review:"
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500

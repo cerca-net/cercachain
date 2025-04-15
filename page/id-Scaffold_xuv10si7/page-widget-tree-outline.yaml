@@ -1,0 +1,47 @@
+node:
+  key: Scaffold_xuv10si7
+  appBar:
+    key: AppBar_qos6fp1m
+    actions:
+      - key: IconButton_cqgi1412
+  body:
+    key: Form_41vxkgmu
+    children:
+      - key: Column_t0jhla1n
+        children:
+          - key: Container_6szzfret
+            children:
+              - key: Column_caqg58di
+                children:
+                  - key: Text_gg1gvj13
+                  - key: Column_6gi6g68p
+                    children:
+                      - key: Container_degsv2nz
+                      - key: ChoiceChips_by3s0vjo
+                      - key: ChoiceChips_22tqyfb6
+                      - key: ChoiceChips_gy0vmkh9
+                      - key: TextField_fnh16xzc
+                      - key: Container_uynn8ab1
+                        children:
+                          - key: Column_lgkugh4j
+                            children:
+                              - key: Text_jozaunfs
+                      - key: TextField_75amtqk4
+                      - key: Divider_czzlbdo2
+                      - key: CheckboxListTile_fdme4usa
+                  - key: Container_4cohbqfo
+          - key: Container_epwdnncb
+            children:
+              - key: Column_6wxklct3
+                children:
+                  - key: Text_dxnl5aru
+                  - key: ChoiceChips_k7u9u2wd
+                  - key: Text_5qpjtpxk
+                  - key: Row_huw0zb9v
+                    children:
+                      - key: Icon_rivi4ezs
+                      - key: Text_gqnrgut3
+                  - key: Row_zdsntuqu
+                    children:
+                      - key: IconButton_7bm6ywtm
+                      - key: Button_ubwbtw2m

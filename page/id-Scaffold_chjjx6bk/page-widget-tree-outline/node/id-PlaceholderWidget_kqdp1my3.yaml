@@ -1,0 +1,8 @@
+key: PlaceholderWidget_kqdp1my3
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

@@ -1,0 +1,39 @@
+key: IconButton_8xljsw6z
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    borderRadiusValue:
+      inputValue: 30
+      mostRecentInputValue: 30
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+        iconDataValue:
+          inputValue:
+            codePoint: 58397
+            family: MaterialIcons
+            matchTextDirection: true
+            name: navigate_next
+  alignment:
+    xValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    yValue:
+      inputValue: 1
+      mostRecentInputValue: 1

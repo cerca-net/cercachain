@@ -1,0 +1,18 @@
+key: Text_sog3wza5
+type: Text
+props:
+  text:
+    themeStyle: BODY_SMALL
+    translationIdentifier:
+      key: 2p1i1td9
+    selectable: false
+    textValue:
+      inputValue: A summary of outstanding tasks.
+      mostRecentInputValue: A summary of outstanding tasks.
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  responsiveVisibility: {}
+parameterValues: {}

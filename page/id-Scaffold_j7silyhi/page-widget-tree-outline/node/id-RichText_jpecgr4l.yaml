@@ -1,0 +1,30 @@
+key: RichText_jpecgr4l
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+annotations:
+  documentation: You will have to add an action on this rich text to go to your login page.
+valueKey: {}

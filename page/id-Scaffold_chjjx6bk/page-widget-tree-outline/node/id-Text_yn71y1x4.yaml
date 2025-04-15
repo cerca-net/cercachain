@@ -1,0 +1,31 @@
+key: Text_yn71y1x4
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: BODY_LARGE
+    translationIdentifier:
+      key: 8onato6t
+    textValue:
+      inputValue: Submit selfie
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        value: "4279506971"
+      mostRecentInputValue:
+        value: "4279506971"
+    fontWeightValue:
+      inputValue: w500
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

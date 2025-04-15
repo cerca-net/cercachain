@@ -1,0 +1,21 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: credits
+      key: 86gjwu7b
+    write:
+      updates:
+        userRef:
+          fieldIdentifier:
+            name: userRef
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        f_x:
+          fieldIdentifier:
+            name: f_x
+          inputValue:
+            serializedValue: "0"
+key: d4d4ly6p

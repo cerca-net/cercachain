@@ -1,0 +1,9 @@
+key: RichTextSpan_pulxixq7
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: ynev88b4
+      textValue:
+        inputValue: "Hello World "

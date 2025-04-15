@@ -1,0 +1,15 @@
+key: Column_euftuhie
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 16
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

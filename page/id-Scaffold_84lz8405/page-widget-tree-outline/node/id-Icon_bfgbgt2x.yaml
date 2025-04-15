@@ -1,0 +1,20 @@
+key: Icon_bfgbgt2x
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4281979584"
+      mostRecentInputValue:
+        value: "4281979584"
+    iconDataValue:
+      inputValue:
+        codePoint: 983752
+        family: MaterialIcons
+        matchTextDirection: false
+        name: workspaces_rounded
+  responsiveVisibility: {}
+parameterValues: {}

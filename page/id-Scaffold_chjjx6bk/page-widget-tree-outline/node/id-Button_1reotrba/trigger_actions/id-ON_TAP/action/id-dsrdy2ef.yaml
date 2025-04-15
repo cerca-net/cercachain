@@ -1,0 +1,3 @@
+auth:
+  type: VERIFY_EMAIL
+key: dsrdy2ef

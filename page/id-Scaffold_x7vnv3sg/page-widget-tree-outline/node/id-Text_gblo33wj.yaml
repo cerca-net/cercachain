@@ -1,0 +1,33 @@
+key: Text_gblo33wj
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: rrvc7b9p
+    selectable: false
+    textValue:
+      inputValue: "Activities & Interests :"
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    leftValue:
+      inputValue: 24
+  alignment:
+    xValue:
+      inputValue: -1
+    yValue:
+      inputValue: 1
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

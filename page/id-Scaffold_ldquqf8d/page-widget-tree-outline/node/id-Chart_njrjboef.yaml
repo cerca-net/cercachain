@@ -1,0 +1,192 @@
+key: Chart_njrjboef
+type: Chart
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  chart:
+    chartType: BAR
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 230
+    lineChart:
+      lines:
+        - curvedValue:
+            inputValue: true
+          lineWidthValue:
+            inputValue: 2
+          fillBelowLineValue:
+            inputValue: true
+          fillColorValue:
+            inputValue:
+              themeColor: ACCENT_1
+      axisInfo:
+        axisLabels:
+          bottom:
+            title:
+              fontSizeValue:
+                inputValue: 14
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+            reservedSize: 32
+          left:
+            title:
+              fontSizeValue:
+                inputValue: 14
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+            reservedSize: 40
+    data:
+      - numbersList:
+          xData:
+            source: RANDOM_DATA
+            baseVariable:
+              randomData:
+                integer:
+                  min:
+                    inputValue:
+                      serializedValue: "0"
+                  max:
+                    inputValue:
+                      serializedValue: "10"
+                isList: true
+                minLength:
+                  inputValue:
+                    serializedValue: "0"
+                maxLength:
+                  inputValue:
+                    serializedValue: "10"
+          yData:
+            source: RANDOM_DATA
+            baseVariable:
+              randomData:
+                integer:
+                  min:
+                    inputValue:
+                      serializedValue: "0"
+                  max:
+                    inputValue:
+                      serializedValue: "10"
+                isList: true
+                minLength:
+                  inputValue:
+                    serializedValue: "0"
+                maxLength:
+                  inputValue:
+                    serializedValue: "10"
+        sourceType: NUMBERS_LIST
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+    barChart:
+      bars:
+        - {}
+      barChartAlignment: main_axis_start
+      axisInfo:
+        axisLabels:
+          bottom:
+            title:
+              fontSizeValue:
+                inputValue: 14
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+            reservedSize: 28
+          left:
+            title:
+              fontSizeValue:
+                inputValue: 14
+            labelInterval: 10
+            labelFormat:
+              labelFormatType: DEFAULT
+            reservedSize: 42
+        axisBounds: {}
+      barBorderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 4
+      barWidthValue:
+        inputValue: 12
+      groupSpaceValue:
+        inputValue: 4
+    legendInfo:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+      alignment:
+        xValue:
+          inputValue: 1
+        yValue:
+          inputValue: 1
+      textPadding:
+        leftValue:
+          inputValue: 5
+      legendDimensions:
+        width:
+          pixelsValue:
+            inputValue: 100
+        height:
+          pixelsValue:
+            inputValue: 50
+      legendPadding:
+        leftValue:
+          inputValue: 5
+        rightValue:
+          inputValue: 5
+      indicatorSizeValue:
+        inputValue: 10
+      legendBorderColorValue:
+        inputValue:
+          value: "4278190080"
+      legendBorderWidthValue:
+        inputValue: 1
+    hasBeenUpdated: true
+    pieChart:
+      sections:
+        - radius: 100
+      sectionLabelStyle:
+        themeStyle: HEADLINE_SMALL
+      sectionLabelType: NONE
+      labelFormat:
+        labelFormatType: DEFAULT
+      listPieChartColors:
+        - inputValue:
+            color:
+              value: "4287579881"
+        - inputValue:
+            color:
+              value: "4285475019"
+        - inputValue:
+            color:
+              value: "4280628900"
+        - inputValue:
+            color:
+              value: "4283062209"
+      donutHoleColor:
+        inputValue:
+          color:
+            value: "0"
+      donutHoleRadiusValue:
+        inputValue: 0
+    backgroundColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderColorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    borderWidthValue:
+      inputValue: 1
+    showGridValue:
+      inputValue: true
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

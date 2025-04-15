@@ -1,0 +1,21 @@
+key: RichTextSpan_r9c4vfq4
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: iuo5v7st
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: xxxx
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: publicuser_ref
+            - documentReferenceId: {}
+          nodeKeyRef:
+            key: Column_enujka9q

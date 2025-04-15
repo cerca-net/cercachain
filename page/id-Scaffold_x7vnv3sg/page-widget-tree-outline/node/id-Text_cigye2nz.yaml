@@ -1,0 +1,26 @@
+key: Text_cigye2nz
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 6hukamju
+    selectable: false
+    textValue:
+      inputValue: T.
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w600
+  padding:
+    rightValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

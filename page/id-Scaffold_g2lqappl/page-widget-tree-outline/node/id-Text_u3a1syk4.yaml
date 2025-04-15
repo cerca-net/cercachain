@@ -1,0 +1,27 @@
+key: Text_u3a1syk4
+type: Text
+props:
+  text:
+    fontFamily: Nunito Sans
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: p2bvpaxe
+    selectable: false
+    textValue:
+      inputValue: Automated transaction processing
+      mostRecentInputValue: Automated transaction processing
+    fontSizeValue:
+      inputValue: 18
+      mostRecentInputValue: 18
+  padding:
+    topValue:
+      inputValue: 15
+      mostRecentInputValue: 15
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0

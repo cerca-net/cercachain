@@ -1,0 +1,54 @@
+key: CircleImage_sx54rdvj
+type: CircleImage
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 48
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: profile_picture
+        nodeKeyRef:
+          key: CircleImage_sx54rdvj
+      mostRecentInputValue: https://picsum.photos/seed/381/600
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            fieldIdentifier:
+              name: user_ref
+      nodeKeyRef:
+        key: ListView_6peziyty

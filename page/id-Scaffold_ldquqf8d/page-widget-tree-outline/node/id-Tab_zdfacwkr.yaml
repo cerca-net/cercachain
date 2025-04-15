@@ -1,0 +1,19 @@
+key: Tab_zdfacwkr
+type: Tab
+props:
+  tab:
+    text:
+      translationIdentifier:
+        key: 7c1vetmk
+      textValue:
+        inputValue: Wallet
+        mostRecentInputValue: Wallet
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: WalletTab

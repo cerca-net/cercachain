@@ -1,0 +1,43 @@
+key: Container_oos0wac1
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 120
+          mostRecentInputValue: 120
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 63
+          mostRecentInputValue: 63
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+        localFileVariable:
+          source: WIDGET_STATE
+          baseVariable:
+            widgetState:
+              actionType: UPLOAD_DATA
+              actionKeyRef:
+                key: mj0woq4t
+          nodeKeyRef:
+            key: Container_oos0wac1
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: UNEXPANDED

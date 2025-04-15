@@ -1,0 +1,5 @@
+key: ti2evcr1
+multiselectWidgetAction:
+  multiselectWidgetActionType: SELECT_ALL
+  multiselectWidgetNodeKeyRef:
+    key: ChoiceChips_j58ptxam

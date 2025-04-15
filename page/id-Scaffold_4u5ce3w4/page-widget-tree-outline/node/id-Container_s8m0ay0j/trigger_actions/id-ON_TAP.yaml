@@ -1,0 +1,47 @@
+rootAction:
+  key: 010c79sw
+  conditionActions:
+    falseAction:
+      key: onvy35er
+      action:
+        key: xe9eivqw
+      followUpAction:
+        key: zsehjh2x
+        action:
+          key: e32xdmwf
+        followUpAction:
+          key: qctzeo5d
+          action:
+            key: y7c00kjh
+          followUpAction:
+            key: ua6x3lx6
+            action:
+              key: h4b33hqb
+    trueActions:
+      - condition:
+          variable:
+            source: LOCAL_STATE
+            baseVariable:
+              localState:
+                fieldIdentifier:
+                  name: isCategoriesExpanded
+                  key: epwpyo7x
+                stateVariableType: APP_STATE
+        trueAction:
+          key: c6le5dj4
+          action:
+            key: uhgdw5bs
+          followUpAction:
+            key: vwitx2vt
+            action:
+              key: wciq27te
+            followUpAction:
+              key: lnw2ts8w
+              action:
+                key: 7gxc2wc8
+              followUpAction:
+                key: hvwhek10
+                action:
+                  key: 53svuci9
+trigger:
+  triggerType: ON_TAP

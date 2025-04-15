@@ -1,0 +1,24 @@
+key: Column_guuzqm2l
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_start
+    primary: true
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  expanded:
+    expandedType: EXPANDED
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

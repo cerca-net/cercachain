@@ -1,0 +1,17 @@
+key: Row_sg3r47gc
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_start
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

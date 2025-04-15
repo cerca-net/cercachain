@@ -1,0 +1,15 @@
+key: Tab_ixq3h1jp
+type: Tab
+props:
+  tab:
+    text:
+      translationIdentifier:
+        key: nuvjz7is
+      textValue:
+        inputValue: Posts
+        mostRecentInputValue: Posts
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+name: PostsTab

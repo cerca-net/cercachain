@@ -1,0 +1,13 @@
+key: zj655t7m
+uploadData:
+  settings:
+    allowedTypes:
+      photo: true
+      video: false
+      file: false
+    source: GALLERY
+    galleryOrCameraPickerStyle: {}
+    showSnackBar: false
+    localFileVariable: {}
+  destination: FIREBASE
+  actionName: Uploadlocation_id

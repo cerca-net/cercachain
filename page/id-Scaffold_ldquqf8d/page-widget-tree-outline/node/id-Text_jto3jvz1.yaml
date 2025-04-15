@@ -1,0 +1,50 @@
+key: Text_jto3jvz1
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    overflowReplacement: ellipsis
+    translationIdentifier:
+      key: 5qlc4pkr
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: body
+        nodeKeyRef:
+          key: Container_p0oq2aok
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    maxLinesValue:
+      inputValue: 4
+  padding:
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  alignment:
+    xValue:
+      inputValue: -1
+      mostRecentInputValue: -1
+    yValue:
+      inputValue: -1
+      mostRecentInputValue: -1
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,61 @@
+key: Scaffold_m2cztblz
+type: Scaffold
+props:
+  scaffold:
+    safeArea: true
+    navBarItem:
+      navIcon:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            value: "4288585374"
+          mostRecentInputValue:
+            value: "4288585374"
+        iconDataValue:
+          inputValue:
+            codePoint: 57415
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add
+      navActiveIcon:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: PRIMARY
+          mostRecentInputValue:
+            themeColor: PRIMARY
+        iconDataValue:
+          inputValue:
+            codePoint: 57415
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add
+      show: true
+      differentActiveIcon: false
+      floatingNavBarItem:
+        customTextStyle: false
+      label:
+        translationIdentifier:
+          key: 8u9ahb6r
+        textValue:
+          inputValue: ""
+          mostRecentInputValue: ""
+      alwaysShowNavBar: true
+    hideKeyboardOnTap: true
+    disableAndroidBackButton: false
+    backgroundColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: Newpage
+parameterValues: {}

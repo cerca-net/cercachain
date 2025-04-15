@@ -1,0 +1,25 @@
+key: CircleImage_gij1g54e
+type: CircleImage
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 32
+          mostRecentInputValue: 32
+      height:
+        pixelsValue:
+          inputValue: 120
+          mostRecentInputValue: 120
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: https://images.unsplash.com/photo-1654652601971-bea236ac42be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60
+      mostRecentInputValue: https://images.unsplash.com/photo-1654652601971-bea236ac42be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

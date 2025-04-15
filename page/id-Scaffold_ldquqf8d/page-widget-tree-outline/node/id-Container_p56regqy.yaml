@@ -1,0 +1,12 @@
+key: Container_p56regqy
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration: {}
+    clipContent: true
+  padding:
+    topValue:
+      inputValue: 4
+  expanded:
+    expandedType: FLEXIBLE

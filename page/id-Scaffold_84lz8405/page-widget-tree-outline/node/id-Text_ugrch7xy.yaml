@@ -1,0 +1,39 @@
+key: Text_ugrch7xy
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: w3ved2x6
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: username
+        nodeKeyRef:
+          key: ListView_6peziyty
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    bottomValue:
+      inputValue: 4
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

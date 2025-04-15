@@ -1,0 +1,8 @@
+key: PlaceholderWidget_m40vlfi2
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

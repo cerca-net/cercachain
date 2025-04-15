@@ -1,0 +1,15 @@
+key: Icon_mjd5bcxb
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 58170
+        family: MaterialIcons
+        matchTextDirection: false
+        name: inbox

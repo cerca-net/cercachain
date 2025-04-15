@@ -1,0 +1,51 @@
+name: USER_OBJECT
+description: ""
+params:
+  nghtv2:
+    identifier:
+      name: object
+      key: nghtv2
+    dataType:
+      scalarType: Document
+      nonNullable: true
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+node:
+  key: Container_rv3ka28m
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: iteminfo
+          key: lucd3
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"
+    - parameter:
+        identifier:
+          name: editing
+          key: gd9af
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"
+  databaseRequestManagers:
+    - identifier:
+        name: Objectinformation
+        key: uqt3gxow
+      originalNodeKeyRef:
+        key: Row_xx69jg7y
+    - identifier:
+        name: Objectdata
+        key: mwx3682z
+      originalNodeKeyRef:
+        key: Column_h4tp6hnj

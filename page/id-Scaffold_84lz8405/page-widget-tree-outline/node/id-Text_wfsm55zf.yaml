@@ -1,0 +1,21 @@
+key: Text_wfsm55zf
+type: Text
+props:
+  text:
+    themeStyle: LABEL_SMALL
+    translationIdentifier:
+      key: dwqd6q0j
+    textValue:
+      inputValue: Secondary text
+      mostRecentInputValue: Secondary text
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

@@ -1,0 +1,8 @@
+key: Row_qaiot30d
+type: Row
+props:
+  row: {}
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4

@@ -1,0 +1,18 @@
+key: Column_fk9gvqyu
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    primary: true
+    listSpacing: {}
+  padding: {}
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

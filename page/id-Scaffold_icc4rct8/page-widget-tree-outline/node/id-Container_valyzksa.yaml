@@ -1,0 +1,14 @@
+key: Container_valyzksa
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8

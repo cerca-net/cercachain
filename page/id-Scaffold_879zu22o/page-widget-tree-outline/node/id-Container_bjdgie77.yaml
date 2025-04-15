@@ -1,0 +1,40 @@
+key: Container_bjdgie77
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 300
+          mostRecentInputValue: 300
+    boxDecoration:
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 22
+      mostRecentInputValue: 22
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,40 @@
+key: Text_dxnl5aru
+type: Text
+props:
+  text:
+    themeStyle: TITLE_LARGE
+    translationIdentifier:
+      key: sq6lkchs
+    textValue:
+      variable:
+        source: WIDGET_STATE
+        defaultValue:
+          serializedValue: Method name
+        baseVariable:
+          widgetState:
+            returnParameter:
+              allowedDestinationTypes:
+                - Integer
+                - Double
+                - Boolean
+                - ImagePath
+                - VideoPath
+                - AudioPath
+              dataType:
+                scalarType: String
+        nodeKeyRef:
+          key: TextField_fnh16xzc
+      mostRecentInputValue: Podcast Title Goes Here
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

@@ -1,0 +1,19 @@
+key: Row_yqmcz5rw
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_center
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    leftValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

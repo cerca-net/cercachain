@@ -1,0 +1,30 @@
+key: Column_kyemb0h0
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_start
+    primary: true
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  expanded:
+    expandedType: EXPANDED
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+  requestManagerSettings: {}

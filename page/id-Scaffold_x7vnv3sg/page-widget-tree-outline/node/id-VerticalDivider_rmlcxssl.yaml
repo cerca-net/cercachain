@@ -1,0 +1,11 @@
+key: VerticalDivider_rmlcxssl
+type: VerticalDivider
+props:
+  verticalDivider:
+    thicknessValue:
+      inputValue: 2
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    heightValue:
+      inputValue: 100

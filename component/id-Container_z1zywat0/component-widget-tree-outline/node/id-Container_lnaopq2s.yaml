@@ -1,0 +1,121 @@
+key: Container_lnaopq2s
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 320
+      height:
+        pixelsValue:
+          inputValue: 360
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        topRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      gradient:
+        colors:
+          - color:
+              inputValue:
+                color:
+                  themeColor: SECONDARY
+            transitionPoint:
+              inputValue:
+                serializedValue: "0"
+          - color:
+              inputValue:
+                color:
+                  themeColor: SECONDARY_TEXT
+            transitionPoint:
+              inputValue:
+                serializedValue: "1"
+        angleValue:
+          inputValue: 35
+          mostRecentInputValue: 35
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 6
+          mostRecentInputValue: 6
+        colorValue:
+          inputValue:
+            value: "1260003108"
+          mostRecentInputValue:
+            value: "1260003108"
+        dyValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    allValue:
+      inputValue: 4
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: creditCard
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: credits
+          key: 86gjwu7b
+  firestore:
+    collectionIdentifier:
+      name: credits
+      key: 86gjwu7b
+    hideOnEmpty: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: userRef
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+parameterValues: {}
+valueKey: {}

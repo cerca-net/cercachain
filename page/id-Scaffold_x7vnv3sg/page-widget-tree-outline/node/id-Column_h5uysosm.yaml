@@ -1,0 +1,10 @@
+key: Column_h5uysosm
+type: Column
+props:
+  column:
+    scrollable: true
+    primary: true
+    minSizeValue:
+      inputValue: true
+  expanded:
+    expandedType: UNEXPANDED

@@ -1,0 +1,32 @@
+key: Text_2wslmyye
+type: Text
+props:
+  text:
+    fontFamily: Plus Jakarta Sans
+    themeStyle: LABEL_SMALL
+    translationIdentifier:
+      key: zlx06ngl
+    textValue:
+      inputValue: Secondary text
+      mostRecentInputValue: Secondary text
+    fontSizeValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

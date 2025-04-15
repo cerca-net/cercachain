@@ -1,0 +1,16 @@
+key: Container_k0onabag
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+  padding: {}
+  expanded:
+    expandedType: EXPANDED

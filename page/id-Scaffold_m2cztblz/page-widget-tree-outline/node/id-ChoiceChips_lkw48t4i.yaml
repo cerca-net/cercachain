@@ -1,0 +1,286 @@
+key: ChoiceChips_lkw48t4i
+type: ChoiceChips
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: v4blxkc0
+          textValue:
+            variable:
+              source: FUNCTION_CALL
+              defaultValue:
+                serializedValue: " "
+              functionCall:
+                conditionalValue:
+                  ifConditionalValues:
+                    - condition:
+                        source: LOCAL_STATE
+                        baseVariable:
+                          localState:
+                            fieldIdentifier:
+                              name: isNewItem
+                              key: vmo0o
+                            stateVariableType: WIDGET_CLASS_STATE
+                        nodeKeyRef:
+                          key: Scaffold_m2cztblz
+                      value:
+                        inputValue:
+                          serializedValue: Item
+                  elseValue:
+                    inputValue:
+                      serializedValue: Post
+                  returnParameter:
+                    dataType:
+                      scalarType: String
+      - label:
+          translationIdentifier:
+            key: 5kfs9b4s
+          textValue:
+            variable:
+              source: FUNCTION_CALL
+              defaultValue:
+                serializedValue: " "
+              functionCall:
+                conditionalValue:
+                  ifConditionalValues:
+                    - condition:
+                        source: FUNCTION_CALL
+                        functionCall:
+                          values:
+                            - variable:
+                                source: WIDGET_STATE
+                                baseVariable:
+                                  widgetState:
+                                    returnParameter:
+                                      dataType:
+                                        scalarType: String
+                                        nonNullable: false
+                                nodeKeyRef:
+                                  key: ChoiceChips_084gzvg9
+                            - {}
+                          condition:
+                            relation: EXISTS_AND_NON_EMPTY
+                      value:
+                        variable:
+                          source: WIDGET_STATE
+                          baseVariable:
+                            widgetState:
+                              returnParameter:
+                                dataType:
+                                  scalarType: String
+                                  nonNullable: false
+                          nodeKeyRef:
+                            key: ChoiceChips_084gzvg9
+                  elseValue:
+                    inputValue:
+                      serializedValue: ""
+                  returnParameter:
+                    dataType:
+                      scalarType: String
+      - label:
+          translationIdentifier:
+            key: ttidihnd
+          textValue:
+            variable:
+              source: FUNCTION_CALL
+              defaultValue:
+                serializedValue: " ."
+              functionCall:
+                conditionalValue:
+                  ifConditionalValues:
+                    - condition:
+                        source: FUNCTION_CALL
+                        functionCall:
+                          values:
+                            - variable:
+                                source: WIDGET_STATE
+                                baseVariable:
+                                  widgetState:
+                                    returnParameter:
+                                      dataType:
+                                        scalarType: String
+                                        nonNullable: false
+                                nodeKeyRef:
+                                  key: ChoiceChips_cphkerm9
+                            - {}
+                          condition:
+                            relation: EXISTS_AND_NON_EMPTY
+                      value:
+                        variable:
+                          source: WIDGET_STATE
+                          baseVariable:
+                            widgetState:
+                              returnParameter:
+                                dataType:
+                                  scalarType: String
+                                  nonNullable: false
+                          nodeKeyRef:
+                            key: ChoiceChips_cphkerm9
+                  elseValue:
+                    inputValue:
+                      serializedValue: ""
+                  returnParameter:
+                    dataType:
+                      scalarType: String
+      - label:
+          textValue:
+            variable:
+              source: FUNCTION_CALL
+              defaultValue:
+                serializedValue: " ."
+              functionCall:
+                conditionalValue:
+                  ifConditionalValues:
+                    - condition:
+                        source: FUNCTION_CALL
+                        functionCall:
+                          values:
+                            - variable:
+                                source: WIDGET_STATE
+                                baseVariable:
+                                  widgetState:
+                                    returnParameter:
+                                      dataType:
+                                        scalarType: String
+                                        nonNullable: false
+                                nodeKeyRef:
+                                  key: ChoiceChips_cphkerm9
+                            - inputValue:
+                                serializedValue: Article
+                          condition:
+                            relation: EQUAL_TO
+                      value:
+                        variable:
+                          source: WIDGET_STATE
+                          baseVariable:
+                            widgetState:
+                              returnParameter:
+                                dataType:
+                                  scalarType: String
+                                  nonNullable: false
+                          nodeKeyRef:
+                            key: ChoiceChips_j9s2fi37
+                    - condition:
+                        source: FUNCTION_CALL
+                        functionCall:
+                          values:
+                            - variable:
+                                source: WIDGET_STATE
+                                baseVariable:
+                                  widgetState:
+                                    returnParameter:
+                                      dataType:
+                                        scalarType: String
+                                        nonNullable: false
+                                nodeKeyRef:
+                                  key: ChoiceChips_cphkerm9
+                            - inputValue:
+                                serializedValue: Quote
+                          condition:
+                            relation: EQUAL_TO
+                      value:
+                        variable:
+                          source: WIDGET_STATE
+                          baseVariable:
+                            widgetState:
+                              returnParameter:
+                                dataType:
+                                  scalarType: String
+                                  nonNullable: false
+                          nodeKeyRef:
+                            key: ChoiceChips_dkw41lt4
+                    - condition:
+                        source: FUNCTION_CALL
+                        functionCall:
+                          values:
+                            - variable:
+                                source: WIDGET_STATE
+                                baseVariable:
+                                  widgetState:
+                                    returnParameter:
+                                      dataType:
+                                        scalarType: String
+                                        nonNullable: false
+                                nodeKeyRef:
+                                  key: ChoiceChips_cphkerm9
+                            - inputValue:
+                                serializedValue: Story
+                          condition:
+                            relation: EQUAL_TO
+                      value:
+                        variable:
+                          source: WIDGET_STATE
+                          baseVariable:
+                            widgetState:
+                              returnParameter:
+                                dataType:
+                                  scalarType: String
+                                  nonNullable: false
+                          nodeKeyRef:
+                            key: ChoiceChips_euol2eet
+                  elseValue:
+                    inputValue:
+                      serializedValue: ""
+                  returnParameter:
+                    dataType:
+                      scalarType: String
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    multiselect: true
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+    requireSelectionValue:
+      inputValue: true
+    wrappedValue:
+      inputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 0
+    animatedOpacity: {}
+name: ChoiceChipsThreadT
+valueKey: {}

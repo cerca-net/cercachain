@@ -1,0 +1,22 @@
+key: Timer_1bt5iiua
+type: Timer
+props:
+  responsiveVisibility: {}
+  timer:
+    text:
+      themeStyle: HEADLINE_SMALL
+    type: COUNT_DOWN
+    format: FORMAT_MM_SS
+    presetMillisecondsValue:
+      inputValue: 60000
+      mostRecentInputValue: 60000
+    updateStateIntervalMsValue:
+      inputValue: 1000
+      mostRecentInputValue: 1000
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,12 @@
+key: Form_ytvy3g3g
+type: Form
+props:
+  padding: {}
+  responsiveVisibility: {}
+  form: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

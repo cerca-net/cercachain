@@ -1,0 +1,106 @@
+key: DropDown_9a7f3xy9
+type: DropDown
+props:
+  expanded:
+    expandedType: EXPANDED
+  dropDown:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    textStyle:
+      themeStyle: BODY_MEDIUM
+    margin:
+      leftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      rightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    hintText:
+      translationIdentifier:
+        key: k16kj41i
+      textValue:
+        inputValue: Ticket type...
+    valueType:
+      dataType:
+        scalarType: String
+    searchHintText:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: jgm15e2a
+      textValue:
+        inputValue: Search...
+    fixPosition: true
+    searchTextStyle:
+      themeStyle: BODY_MEDIUM
+    label:
+      themeStyle: LABEL_MEDIUM
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    elevationValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    borderRadiusValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    borderColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    hidesUnderlineValue:
+      inputValue: true
+      mostRecentInputValue: true
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 63531
+            family: MaterialIcons
+            matchTextDirection: false
+            name: keyboard_arrow_down_rounded
+    initialOptionKeyValue: {}
+    optionsLabels:
+      values:
+        - translatableText:
+            translationIdentifier:
+              key: zirpqzhy
+            textValue:
+              inputValue: Request
+        - translatableText:
+            translationIdentifier:
+              key: yberehbf
+            textValue:
+              inputValue: Open
+    optionsValues:
+      values:
+        - serializedValue: Option 1
+        - serializedValue: Option 2
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

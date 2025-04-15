@@ -1,0 +1,17 @@
+key: Stack_16ix2acr
+type: Stack
+props:
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 4
+  stack:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity

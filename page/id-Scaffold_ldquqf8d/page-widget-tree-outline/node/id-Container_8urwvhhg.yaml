@@ -1,0 +1,94 @@
+key: Container_8urwvhhg
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 370
+          mostRecentInputValue: 370
+      height:
+        pixelsValue:
+          inputValue: 200
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        topRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      gradient:
+        colors:
+          - color:
+              inputValue:
+                color:
+                  themeColor: SECONDARY
+            transitionPoint:
+              inputValue:
+                serializedValue: "0"
+          - color:
+              inputValue:
+                color:
+                  themeColor: SECONDARY_TEXT
+            transitionPoint:
+              inputValue:
+                serializedValue: "1"
+        angleValue:
+          inputValue: 35
+          mostRecentInputValue: 35
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 6
+          mostRecentInputValue: 6
+        colorValue:
+          inputValue:
+            value: "1260003108"
+          mostRecentInputValue:
+            value: "1260003108"
+        dyValue:
+          inputValue: 2
+          mostRecentInputValue: 2
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    topValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: creditCard2
+parameterValues: {}
+valueKey: {}

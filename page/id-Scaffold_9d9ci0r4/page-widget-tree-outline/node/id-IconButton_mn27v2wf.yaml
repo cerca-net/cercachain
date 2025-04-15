@@ -1,0 +1,22 @@
+key: IconButton_mn27v2wf
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    borderRadiusValue:
+      inputValue: 8
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 58195
+            family: MaterialIcons
+            matchTextDirection: false
+            name: keyboard_arrow_down

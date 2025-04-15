@@ -1,0 +1,25 @@
+key: Row_o9psd7he
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  padding:
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,14 @@
+key: RichTextSpan_u6l9adrx
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: wf5k2qk2
+      textValue:
+        inputValue: "+ "
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SUCCESS

@@ -1,0 +1,144 @@
+key: ChoiceChips_va5acmtn
+type: ChoiceChips
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  choiceChips:
+    options:
+      - iconData:
+          codePoint: 58162
+          family: MaterialIcons
+          matchTextDirection: false
+          name: image
+        label:
+          translationIdentifier:
+            key: e708w00f
+          textValue:
+            inputValue: Image
+      - iconData:
+          codePoint: 58572
+          family: MaterialIcons
+          matchTextDirection: false
+          name: play_circle
+        label:
+          translationIdentifier:
+            key: rvozhkq7
+          textValue:
+            inputValue: Video
+      - iconData:
+          codePoint: 62867
+          family: MaterialIcons
+          matchTextDirection: false
+          name: audiotrack_rounded
+        label:
+          translationIdentifier:
+            key: um6wh61y
+          textValue:
+            inputValue: Audio
+      - iconData:
+          codePoint: 58953
+          family: MaterialIcons
+          matchTextDirection: false
+          name: text_fields
+        label:
+          translationIdentifier:
+            key: 3vgcopam
+          textValue:
+            inputValue: Text
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    multiselect: true
+    initialOption:
+      translationIdentifier:
+        key: zv7h1wfa
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    requireSelectionValue:
+      inputValue: true
+      mostRecentInputValue: true
+    wrappedValue:
+      inputValue: false
+      mostRecentInputValue: false
+    initiallySelected:
+      texts:
+        - translationIdentifier:
+            key: o8yrnf4n
+          textValue:
+            inputValue: Image
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+name: ChoiceChipsPosts
+parameterValues: {}
+valueKey: {}

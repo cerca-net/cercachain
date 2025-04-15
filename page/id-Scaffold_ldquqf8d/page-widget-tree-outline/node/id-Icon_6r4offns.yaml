@@ -1,0 +1,15 @@
+key: Icon_6r4offns
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 58502
+        family: MaterialIcons
+        matchTextDirection: false
+        name: people

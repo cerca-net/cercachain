@@ -1,0 +1,26 @@
+key: Text_cmslopau
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_SMALL
+    translationIdentifier:
+      key: pg44gxt0
+    textValue:
+      inputValue: Users
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+  padding:
+    leftValue:
+      inputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

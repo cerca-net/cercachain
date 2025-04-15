@@ -1,0 +1,14 @@
+key: oy30480g
+uploadData:
+  settings:
+    allowedTypes:
+      photo: false
+      video: true
+      file: false
+    source: GALLERY_OR_CAMERA
+    galleryOrCameraPickerStyle: {}
+    multiUpload: true
+    showSnackBar: true
+    localFileVariable: {}
+  destination: FIREBASE
+  actionName: UploadData_video

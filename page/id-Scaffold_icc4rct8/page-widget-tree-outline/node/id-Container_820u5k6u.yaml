@@ -1,0 +1,34 @@
+key: Container_820u5k6u
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 4
+        colorValue:
+          inputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+        dyValue:
+          inputValue: 2
+      colorValue:
+        inputValue:
+          value: "3758096383"
+    safeArea: true
+    animationDurationValue:
+      inputValue: 100
+  expanded:
+    expandedType: EXPANDED

@@ -1,0 +1,27 @@
+key: Text_2d1s8s7y
+type: Text
+props:
+  text:
+    themeStyle: TITLE_LARGE
+    translationIdentifier:
+      key: iw6r7zs6
+    selectable: false
+    textValue:
+      inputValue: New
+      mostRecentInputValue: New
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  padding: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

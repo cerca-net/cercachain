@@ -1,0 +1,10 @@
+key: Text_jaxc0gj5
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: avm9d42c
+    selectable: false
+    textValue:
+      inputValue: Active

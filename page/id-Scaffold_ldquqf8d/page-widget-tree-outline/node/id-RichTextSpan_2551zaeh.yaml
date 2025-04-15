@@ -1,0 +1,13 @@
+key: RichTextSpan_2551zaeh
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: lmanv682
+      underline: false
+      textValue:
+        inputValue: "ORDER I.D.  #"
+      fontSizeValue:
+        inputValue: 12

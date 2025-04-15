@@ -1,0 +1,38 @@
+key: Text_ey131zcw
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 4s13zj15
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        defaultValue:
+          serializedValue: "0"
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: total_ref_value
+          - numberFormat: {}
+        nodeKeyRef:
+          key: Column_enujka9q
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    rightValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

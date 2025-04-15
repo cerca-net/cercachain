@@ -1,0 +1,8 @@
+key: Stack_ux69ob1o
+type: Stack
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  stack: {}

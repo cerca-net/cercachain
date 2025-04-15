@@ -1,0 +1,21 @@
+key: Row_ixdbddzt
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  expanded:
+    expandedType: UNEXPANDED
+  visibility: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

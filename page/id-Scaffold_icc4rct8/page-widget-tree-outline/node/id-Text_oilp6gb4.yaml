@@ -1,0 +1,26 @@
+key: Text_oilp6gb4
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: z393d99m
+      selectable: false
+      textValue:
+        inputValue: Hello World
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

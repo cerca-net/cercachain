@@ -1,0 +1,26 @@
+key: Text_jdbwnp5r
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: wzdi914w
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: refvalue
+        nodeKeyRef:
+          key: Container_q3mzss9g
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  expanded:
+    expandedType: EXPANDED

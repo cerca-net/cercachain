@@ -1,0 +1,42 @@
+node:
+  key: Scaffold_icc4rct8
+  body:
+    key: Stack_m9fqjo6k
+    children:
+      - key: Image_mrlzolhz
+      - key: Column_zbch9m9e
+        children:
+          - key: Container_820u5k6u
+            children:
+              - key: Column_vi2ei4b9
+                children:
+                  - key: Container_valyzksa
+                    children:
+                      - key: Stack_t1gu2ebk
+                        children:
+                          - key: Container_rguod3s8
+                            children:
+                              - key: Stack_zymudwwr
+                                children:
+                                  - key: LottieAnimation_3uro1dq9
+                                  - key: CircleImage_zvyouqni
+                          - key: Container_khz6zhc7
+                            children:
+                              - key: Column_u1hovl2x
+                                children:
+                                  - key: Text_e78jo93p
+                                  - key: Text_oilp6gb4
+                                    children:
+                                      - key: RichTextSpan_g0fz0bhh
+                                      - key: RichTextSpan_btm5g6f0
+                  - key: Text_5jobkd4a
+                  - key: Container_06ly6l0g
+                    children:
+                      - key: RatingBar_qcu28i8h
+                  - key: Container_z6ikt6y2
+                    children:
+                      - key: TextField_26v4up5z
+                  - key: CheckboxListTile_k1gr51vl
+                  - key: Row_5v0cg7h6
+                    children:
+                      - key: IconButton_ih50km0m

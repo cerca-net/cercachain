@@ -1,0 +1,20 @@
+key: Icon_px37lu7o
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 59014
+        family: MaterialIcons
+        matchTextDirection: false
+        name: turned_in_not
+  responsiveVisibility: {}
+parameterValues: {}

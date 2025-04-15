@@ -1,0 +1,18 @@
+key: Row_ic8cl54i
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_end
+    crossAxisAlignment: cross_axis_end
+    listSpacing: {}
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 1.029
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

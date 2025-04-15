@@ -1,0 +1,37 @@
+key: Text_i0y9a1ho
+type: Text
+props:
+  text:
+    themeStyle: TITLE_MEDIUM
+    translationIdentifier:
+      key: n9t6j7f2
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        defaultValue:
+          serializedValue: status
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: order_stats
+        nodeKeyRef:
+          key: Column_enujka9q
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  platformType: MATERIAL
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

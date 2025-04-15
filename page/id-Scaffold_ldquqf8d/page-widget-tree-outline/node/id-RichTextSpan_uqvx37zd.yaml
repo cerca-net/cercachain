@@ -1,0 +1,15 @@
+key: RichTextSpan_uqvx37zd
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: ufvv30se
+      underline: false
+      textValue:
+        inputValue: "Sender: "
+      fontSizeValue:
+        inputValue: 12
+      fontWeightValue:
+        inputValue: w500

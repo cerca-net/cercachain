@@ -1,0 +1,27 @@
+key: RichTextSpan_upgz0gj6
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: 2mrl07oc
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: "0"
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: user_pin
+            - numberFormat:
+                formatType: COMPACT
+          nodeKeyRef:
+            key: Column_hkh8tvu0
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY

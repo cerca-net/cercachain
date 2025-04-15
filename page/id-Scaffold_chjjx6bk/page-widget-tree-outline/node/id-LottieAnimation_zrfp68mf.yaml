@@ -1,0 +1,28 @@
+key: LottieAnimation_zrfp68mf
+type: LottieAnimation
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  lottieAnimation:
+    source: FF_SOURCE_TYPE_NETWORK
+    fit: FF_BOX_FIT_CONTAIN
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 200
+    animationType: FF_LOTTIE_ANIMATION_TYPE_LOOP
+    animationStatus: false
+    originalFrameRate: 30
+    usingUpdatedDimensions: true
+    pathValue:
+      inputValue: https://lottie.host/2498d03a-d775-4d85-8b19-bba628542fe7/Tp1aSFKrW9.json
+    initialAnimationStatusValue:
+      inputValue: true
+    originalAspectRatioValue:
+      inputValue: 1.3333333333333333

@@ -1,0 +1,47 @@
+key: Container_ogv6p9wb
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      borderColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderWidthValue:
+        inputValue: 2
+        mostRecentInputValue: 2
+    maxDimensions: {}
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ONLY
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

@@ -1,0 +1,5 @@
+key: Column_3emzuc00
+type: Column
+props:
+  column:
+    primary: true

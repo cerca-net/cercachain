@@ -1,0 +1,14 @@
+key: Container_tu9gu47s
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 600
+    boxDecoration: {}
+    animationDurationValue:
+      inputValue: 100

@@ -1,0 +1,49 @@
+active: true
+firebase:
+  createUserDocument:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    write:
+      updates:
+        username:
+          fieldIdentifier:
+            name: username
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_pn5iy88j
+        user_verified:
+          fieldIdentifier:
+            name: user_verified
+          inputValue: {}
+        user_verified_pending:
+          fieldIdentifier:
+            name: user_verified_pending
+          inputValue: {}
+firebaseConfigFileInfos:
+  - androidPath: users/aWn2anedH7YrvzWkquqyr4r5qng1/projects/cercaend-vk8icg/configs/ldzwcsdle9uq/google-services.json
+    iosPath: users/aWn2anedH7YrvzWkquqyr4r5qng1/projects/cercaend-vk8icg/configs/0o2ffecp4npx/GoogleService-Info.plist
+    webConfig: "\/\/ Copy and paste this into your JavaScript code to initialize the Firebase SDK.\n\/\/ You will also need to load the Firebase SDK.\n\/\/ See https:\/\/firebase.google.com\/docs\/web\/setup for more details.\n\nfirebase.initializeApp({\n  \"projectId\": \"cercaend-vk8icg\",\n  \"appId\": \"1:618504134340:web:d3e2ff5b7908d248107391\",\n  \"databaseURL\": \"https:\/\/cercaend-vk8icg-default-rtdb.firebaseio.com\",\n  \"storageBucket\": \"cercaend-vk8icg.appspot.com\",\n  \"locationId\": \"asia-south1\",\n  \"apiKey\": \"AIzaSyB8W1785yBnfMAJZtQcJZ1GnPE97zAmL_Y\",\n  \"authDomain\": \"cercaend-vk8icg.firebaseapp.com\",\n  \"messagingSenderId\": \"618504134340\"\n});\n"
+    androidPackageNames:
+      - com.mycompany.cercaend
+      - com.mycompany.cercaend
+      - com.mycompany.cercaend
+      - com.mycompany.cercaend
+      - com.mycompany.cercaend
+    iosBundleId: com.mycompany.cercaend
+    environment:
+      name: Production
+      key: PROD

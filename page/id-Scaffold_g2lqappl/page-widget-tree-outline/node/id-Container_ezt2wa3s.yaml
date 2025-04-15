@@ -1,0 +1,22 @@
+key: Container_ezt2wa3s
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100

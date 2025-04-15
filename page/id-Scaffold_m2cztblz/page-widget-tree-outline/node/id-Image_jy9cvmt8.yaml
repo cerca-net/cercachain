@@ -1,0 +1,30 @@
+key: Image_jy9cvmt8
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_FILL
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: GENERATOR_VARIABLE
+        baseVariable:
+          generatorVariable: {}
+        nodeKeyRef:
+          key: PageView_2gxcpuok
+      mostRecentInputValue: https://picsum.photos/seed/740/600
+    format: FF_IMAGE_FORMAT_AUTO

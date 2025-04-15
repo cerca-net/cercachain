@@ -1,0 +1,13 @@
+key: Stack_afnefmga
+type: Stack
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  stack:
+    childAlignment:
+      xValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      yValue:
+        inputValue: 1
+        mostRecentInputValue: 1

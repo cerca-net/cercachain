@@ -1,0 +1,41 @@
+key: Container_rm9h4myj
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 200
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+    allValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

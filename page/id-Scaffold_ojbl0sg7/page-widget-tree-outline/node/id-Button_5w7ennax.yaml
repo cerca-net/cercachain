@@ -1,0 +1,61 @@
+key: Button_5w7ennax
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: nope6ond
+      textValue:
+        inputValue: Forgot password?
+        mostRecentInputValue: Forgot password?
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 24
+        mostRecentInputValue: 24
+      rightValue:
+        inputValue: 24
+        mostRecentInputValue: 24
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  padding:
+    topValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 1
+      mostRecentInputValue: 1

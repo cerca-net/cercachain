@@ -1,0 +1,26 @@
+key: Column_vniclc6p
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      startSpacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      endSpacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    minSizeValue:
+      inputValue: true
+  padding:
+    leftValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rightValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    bottomValue:
+      inputValue: 6
+      mostRecentInputValue: 6

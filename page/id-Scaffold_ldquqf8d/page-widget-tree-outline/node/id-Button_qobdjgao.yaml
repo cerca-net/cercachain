@@ -1,0 +1,55 @@
+key: Button_qobdjgao
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    borderRadiusValue:
+      inputValue: 8
+    iconValue:
+      inputValue:
+        colorValue:
+          inputValue:
+            value: "4294967295"
+        iconDataValue:
+          inputValue:
+            codePoint: 63627
+            family: MaterialIcons
+            matchTextDirection: false
+            name: logout_rounded
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 8
+    bottomValue:
+      inputValue: 8
+    allValue:
+      inputValue: 8
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: isWalletConnected
+                      key: 0xh6z8cw
+                    stateVariableType: APP_STATE
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,29 @@
+key: Checkbox_e5lzuyd1
+type: Checkbox
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: -1
+  checkbox:
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 4
+    density: PADDED
+    initialValueValue:
+      inputValue: false
+    uncheckedColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    activeColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    checkColorValue:
+      inputValue:
+        themeColor: INFO

@@ -1,0 +1,14 @@
+key: Column_7dp12k0i
+type: Column
+props:
+  column:
+    primary: true
+    listSpacing:
+      endSpacingValue:
+        inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

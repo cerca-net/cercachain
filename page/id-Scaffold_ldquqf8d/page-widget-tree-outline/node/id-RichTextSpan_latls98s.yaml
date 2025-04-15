@@ -1,0 +1,22 @@
+key: RichTextSpan_latls98s
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: r98tze10
+      selectable: false
+      textValue:
+        inputValue: "(  "
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+      textAlignValue:
+        inputValue: ALIGN_CENTER

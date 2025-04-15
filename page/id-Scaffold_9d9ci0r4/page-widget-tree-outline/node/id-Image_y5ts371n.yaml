@@ -1,0 +1,64 @@
+key: Image_y5ts371n
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: LOCAL_STATE
+                              baseVariable:
+                                localState:
+                                  fieldIdentifier:
+                                    name: userpreview
+                                    key: d5u6g
+                                  stateVariableType: WIDGET_CLASS_STATE
+                              nodeKeyRef:
+                                key: Scaffold_9d9ci0r4
+                          - inputValue:
+                              serializedValue: "true"
+                        condition:
+                          relation: EQUAL_TO
+                    value:
+                      inputValue:
+                        serializedValue: "200"
+                elseValue:
+                  inputValue:
+                    serializedValue: "46"
+                returnParameter:
+                  dataType:
+                    scalarType: Double
+          mostRecentInputValue: 160
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: https://picsum.photos/seed/749/600
+    format: FF_IMAGE_FORMAT_AUTO
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,22 @@
+key: Container_ky6o3t9m
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  expanded:
+    expandedType: EXPANDED

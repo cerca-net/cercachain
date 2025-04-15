@@ -1,0 +1,40 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        downvote:
+          fieldIdentifier:
+            name: downvote
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_UNION
+            value:
+              fieldIdentifier:
+                name: downvote
+              variable:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USER_REFERENCE
+        upvote:
+          fieldIdentifier:
+            name: upvote
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_REMOVE
+            value:
+              fieldIdentifier:
+                name: upvote
+              variable:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USER_REFERENCE
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Column_h4tp6hnj
+key: 56smo9gb

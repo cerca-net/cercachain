@@ -1,0 +1,19 @@
+key: RichTextSpan_orrlfwuo
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: ea1py8cy
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: surname
+          nodeKeyRef:
+            key: Scaffold_x7vnv3sg
+        mostRecentInputValue: Surname

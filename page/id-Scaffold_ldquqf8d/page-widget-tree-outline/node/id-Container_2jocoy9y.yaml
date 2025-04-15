@@ -1,0 +1,34 @@
+key: Container_2jocoy9y
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4

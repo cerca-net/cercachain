@@ -1,0 +1,66 @@
+key: Barcode_ghf3ugzj
+type: Barcode
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 16
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: qrdisplay
+                      key: lb7fi
+                    stateVariableType: WIDGET_CLASS_STATE
+                nodeKeyRef:
+                  key: Scaffold_howbjrw6
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  barcode:
+    type: QR_CODE
+    typeCategory: TWO_DIMENSION
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 140
+      height:
+        pixelsValue:
+          inputValue: 140
+    valueValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              documentProperty: REFERENCE
+          - documentReferenceId: {}
+        nodeKeyRef:
+          key: Column_enujka9q
+      mostRecentInputValue: https://flutterflow.io/
+    foregroundColorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    backgroundColorValue:
+      inputValue:
+        value: "0"
+    showTextValue:
+      inputValue: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

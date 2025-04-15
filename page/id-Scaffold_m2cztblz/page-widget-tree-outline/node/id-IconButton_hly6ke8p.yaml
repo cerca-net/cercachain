@@ -1,0 +1,32 @@
+key: IconButton_hly6ke8p
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+    borderRadiusValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_BACKGROUND
+        iconDataValue:
+          inputValue:
+            codePoint: 61648
+            family: MaterialIcons
+            matchTextDirection: false
+            name: graphic_eq_outlined
+  padding:
+    leftValue:
+      inputValue: 6
+name: IconButtonrr

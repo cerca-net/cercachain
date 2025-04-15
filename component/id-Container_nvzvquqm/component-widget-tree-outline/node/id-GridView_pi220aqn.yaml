@@ -1,0 +1,51 @@
+key: GridView_pi220aqn
+type: StaggeredView
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  expanded:
+    expandedType: EXPANDED
+  staggeredView:
+    shrinkWrapValue:
+      inputValue: false
+      mostRecentInputValue: false
+    crossAxisCountValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    crossAxisSpacingValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+    mainAxisSpacingValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+    allowScrollingValue:
+      inputValue: true
+      mostRecentInputValue: true
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    hideOnEmpty: false
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: poster
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE

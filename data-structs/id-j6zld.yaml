@@ -1,0 +1,28 @@
+identifier:
+  name: bag_item
+  key: j6zld
+fields:
+  - identifier:
+      name: item_ref
+      key: 1v1cg
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  - identifier:
+      name: name
+      key: ifdrw
+    dataType:
+      scalarType: String
+  - identifier:
+      name: image
+      key: dvdc4
+    dataType:
+      scalarType: ImagePath
+  - identifier:
+      name: ref_value
+      key: 0k3ys
+    dataType:
+      scalarType: Double

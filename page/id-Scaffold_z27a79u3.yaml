@@ -1,0 +1,19 @@
+name: PinnedUsers
+description: ""
+node:
+  key: Scaffold_z27a79u3
+pageRouteSettings:
+  routePath: pinspageUsers
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: chats
+          key: s6ort
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"

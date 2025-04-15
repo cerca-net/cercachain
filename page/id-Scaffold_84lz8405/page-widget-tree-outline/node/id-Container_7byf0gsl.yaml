@@ -1,0 +1,29 @@
+key: Container_7byf0gsl
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 34
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    rightValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

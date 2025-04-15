@@ -1,0 +1,40 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        order_stats:
+          fieldIdentifier:
+            name: order_stats
+          variable:
+            source: ENUMS
+            baseVariable:
+              enumVariable:
+                enumIdentifier:
+                  name: OrderStatuses
+                  key: 8yn13
+                enumElementIdentifier:
+                  name: Completed
+                  key: n6by1
+        order_comlpletion_date:
+          fieldIdentifier:
+            name: order_comlpletion_date
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+        order_completed:
+          fieldIdentifier:
+            name: order_completed
+          inputValue:
+            serializedValue: "true"
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Column_enujka9q
+key: 6y35oc7n

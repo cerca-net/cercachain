@@ -1,0 +1,17 @@
+key: Container_wo3k2klw
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration: {}
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  expanded:
+    expandedType: UNEXPANDED

@@ -1,0 +1,17 @@
+key: RichTextSpan_pn9usgv3
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: f4huv1ys
+      textValue:
+        inputValue: "Method: "
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500

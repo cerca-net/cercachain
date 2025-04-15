@@ -1,0 +1,12 @@
+node:
+  key: Scaffold_8esy2bcu
+  appBar:
+    key: AppBar_y9rs244o
+    actions:
+      - key: IconButton_9ghpn9zr
+  body:
+    key: Column_3q4lolfq
+    children:
+      - key: SwitchListTile_wcsv87an
+      - key: SwitchListTile_9c3tsr6b
+      - key: SwitchListTile_ap8ssfkw

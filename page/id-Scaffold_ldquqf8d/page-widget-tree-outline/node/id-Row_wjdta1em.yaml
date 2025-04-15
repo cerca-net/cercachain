@@ -1,0 +1,19 @@
+key: Row_wjdta1em
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+    listSpacing: {}
+  padding:
+    topValue:
+      inputValue: 4
+    rightValue:
+      inputValue: 8
+    bottomValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

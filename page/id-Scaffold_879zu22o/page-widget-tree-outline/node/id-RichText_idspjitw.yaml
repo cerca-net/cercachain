@@ -1,0 +1,24 @@
+key: RichText_idspjitw
+type: RichText
+props:
+  padding:
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

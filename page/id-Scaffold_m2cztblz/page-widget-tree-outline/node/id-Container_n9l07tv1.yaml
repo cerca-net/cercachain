@@ -1,0 +1,45 @@
+key: Container_n9l07tv1
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShape: FF_BOX_SHAPE_RECTANGLE
+      boxShadow: {}
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions: {}
+    clipContent: false
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 2
+  responsiveVisibility:
+    phoneHidden: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

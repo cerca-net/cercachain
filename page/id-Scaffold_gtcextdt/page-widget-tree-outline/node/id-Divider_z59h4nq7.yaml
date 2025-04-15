@@ -1,0 +1,25 @@
+key: Divider_z59h4nq7
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    indentValue:
+      inputValue: 60
+      mostRecentInputValue: 60
+    endIndentValue:
+      inputValue: 60
+      mostRecentInputValue: 60
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}

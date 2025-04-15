@@ -1,0 +1,23 @@
+key: Column_8o8k2f8z
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    scrollable: true
+    primary: true
+    listSpacing: {}
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+name: scrollingContainer
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,46 @@
+key: StaggeredView_x8h6rnc2
+type: StaggeredView
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  expanded:
+    expandedType: FLEXIBLE
+  staggeredView:
+    shrinkWrapValue:
+      inputValue: false
+    crossAxisCountValue:
+      inputValue: 2
+    crossAxisSpacingValue:
+      inputValue: 10
+    mainAxisSpacingValue:
+      inputValue: 10
+    allowScrollingValue:
+      inputValue: true
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    hideOnEmpty: false
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: pins
+            relation: ARRAY_CONTAINS
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+  requestManagerSettings: {}

@@ -1,0 +1,12 @@
+alertDialog:
+  customDialog:
+    passedParameters:
+      parameterPasses: {}
+      widgetClassNodeKeyRef:
+        key: Container_urxaeyxb
+    dimensions: {}
+    barrierColor: {}
+    isGlobal: true
+    componentClassNodeKeyRef:
+      key: Container_urxaeyxb
+key: qdlikgrq

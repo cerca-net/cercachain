@@ -1,0 +1,357 @@
+key: ChoiceChips_7y6eehq3
+type: ChoiceChips
+props:
+  padding:
+    topValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    bottomValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+  expanded:
+    expandedType: EXPANDED
+  choiceChips:
+    options:
+      - iconData:
+          codePoint: 58117
+          family: MaterialIcons
+          matchTextDirection: false
+          name: health_and_safety
+        label:
+          translationIdentifier:
+            key: 9498i41r
+          textValue:
+            inputValue: Healthcare
+            mostRecentInputValue: Healthcare
+      - iconData:
+          codePoint: 984355
+          family: MaterialIcons
+          matchTextDirection: false
+          name: interests
+        label:
+          translationIdentifier:
+            key: lpmcl9f3
+          textValue:
+            inputValue: Retail
+            mostRecentInputValue: Retail
+      - iconData:
+          codePoint: 58089
+          family: MaterialIcons
+          matchTextDirection: false
+          name: grid_on
+        label:
+          translationIdentifier:
+            key: 3cno6qyl
+          textValue:
+            inputValue: Wholesale
+            mostRecentInputValue: Wholesale
+      - iconData:
+          codePoint: 58596
+          family: MaterialIcons
+          matchTextDirection: false
+          name: precision_manufacturing
+        label:
+          translationIdentifier:
+            key: bj916lkf
+          textValue:
+            inputValue: Manufaturing
+            mostRecentInputValue: Manufaturing
+      - iconData:
+          codePoint: 58384
+          family: MaterialIcons
+          matchTextDirection: false
+          name: moving
+        label:
+          translationIdentifier:
+            key: 3takcnep
+          textValue:
+            inputValue: Finance
+            mostRecentInputValue: Finance
+      - iconData:
+          codePoint: 58538
+          family: MaterialIcons
+          matchTextDirection: false
+          name: phone_iphone
+        label:
+          translationIdentifier:
+            key: qhmbbk09
+          textValue:
+            inputValue: Technology
+            mostRecentInputValue: Technology
+      - iconData:
+          codePoint: 984988
+          family: MaterialIcons
+          matchTextDirection: false
+          name: electric_bolt
+        label:
+          translationIdentifier:
+            key: u4l06res
+          textValue:
+            inputValue: Energy
+            mostRecentInputValue: Energy
+      - iconData:
+          codePoint: 60779
+          family: MaterialIcons
+          matchTextDirection: false
+          name: train_sharp
+        label:
+          translationIdentifier:
+            key: xs4qgq4j
+          textValue:
+            inputValue: Transportation
+            mostRecentInputValue: Transportation
+      - iconData:
+          codePoint: 59526
+          family: MaterialIcons
+          matchTextDirection: false
+          name: construction_sharp
+        label:
+          translationIdentifier:
+            key: 9cm00fvq
+          textValue:
+            inputValue: Construction
+            mostRecentInputValue: Construction
+      - iconData:
+          codePoint: 58713
+          family: MaterialIcons
+          matchTextDirection: false
+          name: school
+        label:
+          translationIdentifier:
+            key: omwzhj0q
+          textValue:
+            inputValue: Education
+            mostRecentInputValue: Education
+      - iconData:
+          codePoint: 58146
+          family: MaterialIcons
+          matchTextDirection: false
+          name: hotel
+        label:
+          translationIdentifier:
+            key: d7qp50tz
+          textValue:
+            inputValue: Hospality
+            mostRecentInputValue: Hospality
+      - iconData:
+          codePoint: 57905
+          family: MaterialIcons
+          matchTextDirection: false
+          name: emoji_people
+        label:
+          translationIdentifier:
+            key: lkgpngzb
+          textValue:
+            inputValue: Government
+            mostRecentInputValue: Government
+      - iconData:
+          codePoint: 58381
+          family: MaterialIcons
+          matchTextDirection: false
+          name: movie
+        label:
+          translationIdentifier:
+            key: gk6io9uh
+          textValue:
+            inputValue: Entretainment
+            mostRecentInputValue: Entretainment
+      - iconData:
+          codePoint: 57792
+          family: MaterialIcons
+          matchTextDirection: false
+          name: design_services
+        label:
+          translationIdentifier:
+            key: aghudzi4
+          textValue:
+            inputValue: Design
+            mostRecentInputValue: Design
+      - iconData:
+          codePoint: 57955
+          family: MaterialIcons
+          matchTextDirection: false
+          name: festival
+        label:
+          translationIdentifier:
+            key: xu470d1f
+          textValue:
+            inputValue: Agriculture
+            mostRecentInputValue: Agriculture
+      - iconData:
+          codePoint: 984992
+          family: MaterialIcons
+          matchTextDirection: false
+          name: energy_savings_leaf
+        label:
+          translationIdentifier:
+            key: 064nfovl
+          textValue:
+            inputValue: Natural Resources
+            mostRecentInputValue: Natural Resources
+      - iconData:
+          codePoint: 59315
+          family: MaterialIcons
+          matchTextDirection: false
+          name: attribution_sharp
+        label:
+          translationIdentifier:
+            key: k4zngo00
+          textValue:
+            inputValue: Utilities
+            mostRecentInputValue: Utilities
+      - iconData:
+          codePoint: 58502
+          family: MaterialIcons
+          matchTextDirection: false
+          name: people
+        label:
+          translationIdentifier:
+            key: l90ugofi
+          textValue:
+            inputValue: Professional Services
+            mostRecentInputValue: Professional Services
+      - iconData:
+          codePoint: 984740
+          family: MaterialIcons
+          matchTextDirection: false
+          name: handshake_outlined
+        label:
+          translationIdentifier:
+            key: 11wwxkau
+          textValue:
+            inputValue: Personal Services
+            mostRecentInputValue: Personal Services
+      - iconData:
+          codePoint: 58729
+          family: MaterialIcons
+          matchTextDirection: false
+          name: security
+        label:
+          translationIdentifier:
+            key: qu99e17z
+          textValue:
+            inputValue: Security
+            mostRecentInputValue: Security
+      - iconData:
+          codePoint: 58635
+          family: MaterialIcons
+          matchTextDirection: false
+          name: real_estate_agent
+        label:
+          translationIdentifier:
+            key: 48aksrxo
+          textValue:
+            inputValue: Real Estate
+            mostRecentInputValue: Real Estate
+      - iconData:
+          codePoint: 63364
+          family: MaterialIcons
+          matchTextDirection: false
+          name: food_bank_rounded
+        label:
+          translationIdentifier:
+            key: 3h9kkf1k
+          textValue:
+            inputValue: Food
+            mostRecentInputValue: Food
+      - iconData:
+          codePoint: 57664
+          family: MaterialIcons
+          matchTextDirection: false
+          name: card_travel
+        label:
+          translationIdentifier:
+            key: su48hcw0
+          textValue:
+            inputValue: Travel
+            mostRecentInputValue: Travel
+      - iconData:
+          codePoint: 58865
+          family: MaterialIcons
+          matchTextDirection: false
+          name: sports_score
+        label:
+          translationIdentifier:
+            key: xcrkmowp
+          textValue:
+            inputValue: Sports
+            mostRecentInputValue: Sports
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: PRIMARY
+        mostRecentInputValue:
+          themeColor: PRIMARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    multiselect: true
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    requireSelectionValue:
+      inputValue: false
+      mostRecentInputValue: false
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

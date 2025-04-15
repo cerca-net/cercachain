@@ -1,0 +1,16 @@
+key: Column_idit9o0n
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_evenly
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  padding:
+    type: FF_PADDING_ONLY
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4

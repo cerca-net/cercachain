@@ -1,0 +1,21 @@
+key: Icon_5c2bgze6
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 983662
+        family: MaterialIcons
+        matchTextDirection: false
+        name: verified_rounded
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

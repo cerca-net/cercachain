@@ -1,0 +1,45 @@
+key: TextField_imvzhizq
+type: TextField
+props:
+  expanded:
+    expandedType: EXPANDED
+  textField:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+      labelStyle:
+        themeStyle: LABEL_MEDIUM
+      hintText:
+        translationIdentifier:
+          key: 2px7frfb
+        textValue:
+          inputValue: TextField
+      filledValue:
+        inputValue: false
+      fillColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderWidthValue:
+        inputValue: 1
+      denseValue:
+        inputValue: true
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+    width:
+      pixelsValue:
+        inputValue: 400
+    maxLinesValue:
+      inputValue: 1
+    autofocusValue:
+      inputValue: false
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT

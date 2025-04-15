@@ -1,0 +1,67 @@
+key: Container_v63i6fm5
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 21
+          mostRecentInputValue: 21
+      boxShape: FF_BOX_SHAPE_RECTANGLE
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+        localFileVariable:
+          source: WIDGET_STATE
+          baseVariable:
+            widgetState:
+              actionType: UPLOAD_DATA
+              actionKeyRef:
+                key: z6186lww
+          nodeKeyRef:
+            key: Container_v63i6fm5
+        pathValue:
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                actionType: UPLOAD_DATA_URL
+                actionKeyRef:
+                  key: z6186lww
+            nodeKeyRef:
+              key: Container_v63i6fm5
+      colorValue:
+        inputValue:
+          value: "16777215"
+        mostRecentInputValue:
+          value: "16777215"
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+  requestManagerSettings: {}

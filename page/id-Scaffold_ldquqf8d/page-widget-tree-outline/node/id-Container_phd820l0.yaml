@@ -1,0 +1,31 @@
+key: Container_phd820l0
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+    boxDecoration:
+      colorValue:
+        inputValue:
+          value: "16777215"
+        mostRecentInputValue:
+          value: "16777215"
+    childAlignment:
+      xValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      yValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  expanded:
+    expandedType: EXPANDED

@@ -1,0 +1,49 @@
+key: Container_nwu43w4u
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ONLY
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      borderColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  expanded:
+    expandedType: UNEXPANDED
+    flexValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

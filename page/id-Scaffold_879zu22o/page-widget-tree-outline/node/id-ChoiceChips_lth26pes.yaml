@@ -1,0 +1,275 @@
+key: ChoiceChips_lth26pes
+type: ChoiceChips
+props:
+  padding:
+    topValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    bottomValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+  expanded:
+    expandedType: EXPANDED
+  choiceChips:
+    options:
+      - iconData:
+          codePoint: 57454
+          family: MaterialIcons
+          matchTextDirection: false
+          name: airplanemode_active
+        label:
+          translationIdentifier:
+            key: no5jpekm
+          textValue:
+            inputValue: Travel
+            mostRecentInputValue: Travel
+      - iconData:
+          codePoint: 58333
+          family: MaterialIcons
+          matchTextDirection: false
+          name: menu_book
+        label:
+          translationIdentifier:
+            key: 4ufg73x4
+          textValue:
+            inputValue: Reading
+            mostRecentInputValue: Reading
+      - iconData:
+          codePoint: 984037
+          family: MaterialIcons
+          matchTextDirection: false
+          name: cookie_sharp
+        label:
+          translationIdentifier:
+            key: cvw50ugt
+          textValue:
+            inputValue: Cooking
+            mostRecentInputValue: Cooking
+      - iconData:
+          codePoint: 58467
+          family: MaterialIcons
+          matchTextDirection: false
+          name: outdoor_grill
+        label:
+          translationIdentifier:
+            key: rr5zgldv
+          textValue:
+            inputValue: Outdoor
+            mostRecentInputValue: Outdoor
+      - iconData:
+          codePoint: 61948
+          family: FontAwesomeSolid
+          package: font_awesome_flutter
+          matchTextDirection: false
+          packageIcon:
+            fontAwesome: paintBrush
+          name: paintBrush
+        label:
+          translationIdentifier:
+            key: wvk4c858
+          textValue:
+            inputValue: Art
+            mostRecentInputValue: Art
+      - iconData:
+          codePoint: 59526
+          family: MaterialIcons
+          matchTextDirection: false
+          name: construction_sharp
+        label:
+          translationIdentifier:
+            key: wqly0a13
+          textValue:
+            inputValue: Craft
+            mostRecentInputValue: Craft
+      - iconData:
+          codePoint: 58381
+          family: MaterialIcons
+          matchTextDirection: false
+          name: movie
+        label:
+          translationIdentifier:
+            key: gqomjujw
+          textValue:
+            inputValue: Entretainment
+            mostRecentInputValue: Entretainment
+      - iconData:
+          codePoint: 984758
+          family: MaterialIcons
+          matchTextDirection: false
+          name: sports_gymnastics_sharp
+        label:
+          translationIdentifier:
+            key: bw0eqkha
+          textValue:
+            inputValue: Wellness
+            mostRecentInputValue: Wellness
+      - iconData:
+          codePoint: 59015
+          family: MaterialIcons
+          matchTextDirection: false
+          name: tv
+        label:
+          translationIdentifier:
+            key: 0azskocy
+          textValue:
+            inputValue: Media
+            mostRecentInputValue: Media
+      - iconData:
+          codePoint: 62418
+          family: MaterialIcons
+          matchTextDirection: false
+          name: sports_outlined
+        label:
+          translationIdentifier:
+            key: i7s51dmb
+          textValue:
+            inputValue: Sports
+            mostRecentInputValue: Sports
+      - iconData:
+          codePoint: 57928
+          family: MaterialIcons
+          matchTextDirection: false
+          name: explore
+        label:
+          translationIdentifier:
+            key: dl9ijqgv
+          textValue:
+            inputValue: Exploring
+            mostRecentInputValue: Exploring
+      - iconData:
+          codePoint: 58502
+          family: MaterialIcons
+          matchTextDirection: false
+          name: people
+        label:
+          translationIdentifier:
+            key: sdcyn9v4
+          textValue:
+            inputValue: Meeting
+            mostRecentInputValue: Meeting
+      - iconData:
+          codePoint: 58389
+          family: MaterialIcons
+          matchTextDirection: false
+          name: music_note
+        label:
+          translationIdentifier:
+            key: vdi4gncr
+          textValue:
+            inputValue: Music
+            mostRecentInputValue: Music
+      - iconData:
+          codePoint: 57918
+          family: MaterialIcons
+          matchTextDirection: false
+          name: event
+        label:
+          translationIdentifier:
+            key: aruqfke0
+          textValue:
+            inputValue: Events
+            mostRecentInputValue: Events
+      - iconData:
+          codePoint: 58333
+          family: MaterialIcons
+          matchTextDirection: false
+          name: menu_book
+        label:
+          translationIdentifier:
+            key: 1iz0much
+          textValue:
+            inputValue: Learning
+            mostRecentInputValue: Learning
+      - iconData:
+          codePoint: 57792
+          family: MaterialIcons
+          matchTextDirection: false
+          name: design_services
+        label:
+          translationIdentifier:
+            key: 5ykefu5j
+          textValue:
+            inputValue: Design
+            mostRecentInputValue: Design
+      - label:
+          translationIdentifier:
+            key: 2dfjm9lv
+          textValue:
+            inputValue: ""
+            mostRecentInputValue: ""
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+          mostRecentInputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: PRIMARY
+        mostRecentInputValue:
+          themeColor: PRIMARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    multiselect: true
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

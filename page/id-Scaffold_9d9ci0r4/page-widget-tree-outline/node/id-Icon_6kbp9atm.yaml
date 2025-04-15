@@ -1,0 +1,15 @@
+key: Icon_6kbp9atm
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 59371
+        family: MaterialIcons
+        matchTextDirection: false
+        name: bolt_sharp

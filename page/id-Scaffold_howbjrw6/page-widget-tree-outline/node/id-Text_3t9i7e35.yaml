@@ -1,0 +1,32 @@
+key: Text_3t9i7e35
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 24
+    topValue:
+      inputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  richText:
+    textStyle:
+      themeStyle: HEADLINE_LARGE
+      translationIdentifier:
+        key: 1gjup55i
+      textValue:
+        inputValue: Order
+      fontSizeValue:
+        inputValue: 20
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

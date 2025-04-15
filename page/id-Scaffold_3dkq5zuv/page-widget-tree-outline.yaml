@@ -1,0 +1,71 @@
+node:
+  key: Scaffold_3dkq5zuv
+  appBar:
+    key: AppBar_iy70deub
+    actions:
+      - key: IconButton_x4hnmevn
+  body:
+    key: Column_0yscmh72
+    children:
+      - key: Container_nufg674z
+        children:
+          - key: Column_n5b7l4qr
+            children:
+              - key: Row_gova1gq9
+                children:
+                  - key: IconButton_t1i5n2kz
+                  - key: Column_ev4s3fn6
+                    children:
+                      - key: Text_67nhfokk
+                      - key: Text_vkwb0sc9
+              - key: Row_bg3iknwh
+                children:
+                  - key: Row_vi44r77e
+                    children:
+                      - key: Icon_5kn99ing
+                      - key: Text_8anadxr0
+                  - key: Row_5i86e79y
+                    children:
+                      - key: Icon_dnl3epaq
+                      - key: Text_e8nkmdis
+              - key: Chart_lhxqe0co
+      - key: Container_k6mztnds
+        children:
+          - key: Column_xotyp1x4
+            children:
+              - key: Text_0nfh98mc
+              - key: Text_sog3wza5
+              - key: ListView_2j65vm00
+                children:
+                  - key: Container_qdcy4knm
+                    children:
+                      - key: Row_6z8xonpb
+                        children:
+                          - key: Container_2cn39d5u
+                          - key: Column_youj54ll
+                            children:
+                              - key: Text_ghs66tlv
+                              - key: Text_brdqq63w
+                              - key: Row_sfi9rsrz
+                                children:
+                                  - key: Text_6m7tpr0e
+                                  - key: Text_4e6hje33
+                                  - key: Badge_bcbhhrz5
+                                    children:
+                                      - key: Text_01b7863q
+                  - key: Container_4gtowynm
+                    children:
+                      - key: Row_fyfysa4o
+                        children:
+                          - key: Container_i9urtz2y
+                          - key: Column_exdrmzuf
+                            children:
+                              - key: Text_g45lttsf
+                              - key: Text_okq1eudq
+                              - key: Row_wg8wey18
+                                children:
+                                  - key: Text_is03b6kx
+                                  - key: Text_cmr6rhpk
+                                  - key: Badge_qdn9xcme
+                                    children:
+                                      - key: Text_ndur75l9

@@ -1,0 +1,38 @@
+key: Container_cvhonlw8
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    leftValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 8
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

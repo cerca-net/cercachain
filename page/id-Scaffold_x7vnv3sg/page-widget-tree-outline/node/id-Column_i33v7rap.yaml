@@ -1,0 +1,35 @@
+key: Column_i33v7rap
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_q3a4senw
+            - inputValue:
+                serializedValue: Catalogues
+          condition:
+            relation: EQUAL_TO
+        uiBuilderValue:
+          serializedValue: "false"
+      mostRecentInputValue: false

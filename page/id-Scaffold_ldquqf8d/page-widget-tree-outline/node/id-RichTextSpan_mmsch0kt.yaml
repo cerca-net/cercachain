@@ -1,0 +1,22 @@
+key: RichTextSpan_mmsch0kt
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: t5rt5r2j
+      selectable: false
+      textValue:
+        inputValue: "AVERAGE HASH  :"
+      fontSizeValue:
+        inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+      textAlignValue:
+        inputValue: ALIGN_CENTER

@@ -1,0 +1,11 @@
+key: Column_aivxzqut
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    primary: true
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}

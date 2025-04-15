@@ -1,0 +1,24 @@
+key: CircleImage_y6y9awbg
+type: CircleImage
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: https://picsum.photos/seed/813/600
+      mostRecentInputValue: https://picsum.photos/seed/813/600
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 2
+      mostRecentInputValue: 2

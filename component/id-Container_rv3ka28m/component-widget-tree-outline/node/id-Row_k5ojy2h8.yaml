@@ -1,0 +1,16 @@
+key: Row_k5ojy2h8
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_start
+    scrollable: true
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding:
+    type: FF_PADDING_ONLY
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  expanded:
+    expandedType: UNEXPANDED

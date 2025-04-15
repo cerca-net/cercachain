@@ -1,0 +1,16 @@
+key: Tab_1dqpwbpk
+type: Tab
+props:
+  tab:
+    text:
+      translationIdentifier:
+        key: imxgzxx9
+      textValue:
+        inputValue: Orders
+        mostRecentInputValue: Orders
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+name: OrdersTab
+parameterValues: {}

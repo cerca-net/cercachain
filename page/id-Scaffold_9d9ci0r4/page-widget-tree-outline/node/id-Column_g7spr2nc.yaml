@@ -1,0 +1,5 @@
+key: Column_g7spr2nc
+type: Column
+props:
+  column:
+    primary: true

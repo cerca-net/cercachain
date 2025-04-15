@@ -1,0 +1,29 @@
+identifier:
+  name: item
+  key: 2hozp
+fields:
+  - identifier:
+      name: name
+      key: ypl2h
+    dataType:
+      scalarType: String
+  - identifier:
+      name: description
+      key: vhnzo
+    dataType:
+      scalarType: String
+  - identifier:
+      name: ref_value
+      key: 29d0c
+    dataType:
+      scalarType: Double
+  - identifier:
+      name: item_images
+      key: kr79a
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b

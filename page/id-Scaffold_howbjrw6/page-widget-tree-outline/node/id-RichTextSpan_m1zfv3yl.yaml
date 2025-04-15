@@ -1,0 +1,11 @@
+key: RichTextSpan_m1zfv3yl
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      isCustomFont: false
+      translationIdentifier:
+        key: fq3mtffe
+      fontWeightValue:
+        inputValue: w400

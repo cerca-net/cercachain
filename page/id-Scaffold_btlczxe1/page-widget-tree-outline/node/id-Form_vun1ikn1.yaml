@@ -1,0 +1,56 @@
+key: Form_vun1ikn1
+type: Form
+props:
+  padding: {}
+  responsiveVisibility: {}
+  form:
+    validations:
+      - isRequired: true
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: ojt5j8kx
+            textValue:
+              inputValue: Method Name here... is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: u6dle9q8
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_way65m9q
+      - isRequired: true
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: g1qqg58u
+            textValue:
+              inputValue: I.D. number is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: 8qwtjvtl
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_tynvi34h
+      - isRequired: true
+        text:
+          isRequiredFailMsg:
+            translationIdentifier:
+              key: 05gv2pw2
+            textValue:
+              inputValue: Account number is required
+          selectedOptionFailMsg:
+            translationIdentifier:
+              key: qrpm42wq
+            textValue:
+              inputValue: Please choose an option from the dropdown
+        nodeKeyRef:
+          key: TextField_rzgw4sf5
+    autovalidateMode: DISABLED
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

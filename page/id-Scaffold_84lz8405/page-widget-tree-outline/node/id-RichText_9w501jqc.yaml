@@ -1,0 +1,17 @@
+key: RichText_9w501jqc
+type: RichText
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      colorValue:
+        inputValue:
+          themeColor: PRIMARY_TEXT
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

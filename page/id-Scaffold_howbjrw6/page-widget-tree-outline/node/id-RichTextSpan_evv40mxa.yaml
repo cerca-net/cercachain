@@ -1,0 +1,9 @@
+key: RichTextSpan_evv40mxa
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: ghcepavg
+      textValue:
+        inputValue: "Hello World "

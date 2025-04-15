@@ -1,0 +1,30 @@
+key: IconButton_rfmrs2m0
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 62106
+            family: MaterialIcons
+            matchTextDirection: false
+            name: photo_camera_front_outlined
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0

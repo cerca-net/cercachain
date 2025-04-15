@@ -1,0 +1,14 @@
+rootAction:
+  key: jfph916n
+  action:
+    key: rvjomk8n
+  followUpAction:
+    key: 7gh640zx
+    action:
+      key: 1ocyjnlq
+    followUpAction:
+      key: kj8t80ds
+      action:
+        key: 75ss5vor
+trigger:
+  triggerType: ON_TAP

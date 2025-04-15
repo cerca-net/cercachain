@@ -1,0 +1,199 @@
+rules:
+  collectionRules:
+    dij4596p:
+      creat:
+        users: {}
+      read:
+        everyone: {}
+      update:
+        authenticatedUsers: {}
+      delete:
+        authenticatedUsers: {}
+      deleteWhenUserIsDeleted: true
+    i14b35m1:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        everyone: {}
+    p1djqn3b:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        authenticatedUsers: {}
+    lv8h14dw:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        noOne: {}
+    1x1ih0np:
+      creat:
+        authenticatedUsers: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        authenticatedUsers: {}
+    93o8zqyj:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        noOne: {}
+      delete:
+        noOne: {}
+    j3d3qkb6:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        authenticatedUsers: {}
+      delete:
+        authenticatedUsers: {}
+    nsf4do4h:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        authenticatedUsers: {}
+      delete:
+        authenticatedUsers: {}
+    zqx5emk4:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        noOne: {}
+      delete:
+        noOne: {}
+    i4r0yxs1:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        noOne: {}
+      delete:
+        noOne: {}
+    t9fp60ga:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        authenticatedUsers: {}
+      delete:
+        authenticatedUsers: {}
+    i4go87wv:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        noOne: {}
+      delete:
+        noOne: {}
+    fy1vkjxv:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        everyone: {}
+    lrzc5w18:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        users: {}
+      deleteWhenUserIsDeleted: true
+    ypidbqz4:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        noOne: {}
+    86gjwu7b:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        everyone: {}
+      delete:
+        noOne: {}
+    9fgz1n8b:
+      creat:
+        everyone: {}
+      read:
+        everyone: {}
+      update:
+        noOne: {}
+      delete:
+        noOne: {}
+  usersCollectionReadVisibility: READ_VISIBILITY_SELF
+validation:
+  lastValidatedCollectionHash:
+    orders: "340307229"
+    products: "35347695"
+    posts: "372833967"
+    professionalInfo: "69689543"
+    reviews: "92916983"
+    users: "219109509"
+    images: "192766835"
+    photos: "485468487"
+    market_activity: "244841092"
+    usernames: "42656773"
+    Items: "390507131"
+    submission: "176499959"
+    requests: "429757059"
+    analytics: "162718788"
+    cxtqoizo: "372833967"
+    sqltj91e: "244720798"
+    it8c31nd: "429757059"
+    c1wui79h: "92916983"
+    dij4596p: "70579921"
+    8sbocty8: "277849818"
+    i14b35m1: "309895676"
+    n772qoa6: "390507131"
+    p1djqn3b: "357134367"
+    nf40e4t7: "187433992"
+    lv8h14dw: "173780311"
+    order: "313708078"
+    bag: "484471114"
+    catalogue: "310363239"
+    wallet_methods: "180307428"
+    transactions: "195156144"
+    simple_search: "143553251"
+    filter_thread: "396580957"
+    thread: "457260004"
+    order_methods: "155438684"
+    chat_messages: "435517410"
+    chats: "425839798"
+    user_ratings: "476681770"
+    credits: "127097026"
+    interactions: "168819354"

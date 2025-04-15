@@ -1,0 +1,223 @@
+identifier:
+  name: submission
+  key: p1djqn3b
+fields:
+  image:
+    identifier:
+      name: image
+    dataType:
+      scalarType: ImagePath
+  date:
+    identifier:
+      name: date
+    dataType:
+      scalarType: DateTime
+  header:
+    identifier:
+      name: header
+    dataType:
+      scalarType: String
+  poster:
+    identifier:
+      name: poster
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  imagesextra:
+    identifier:
+      name: imagesextra
+    dataType:
+      listType:
+        scalarType: ImagePath
+  type1choice:
+    identifier:
+      name: type1choice
+    dataType:
+      scalarType: String
+  type2choice:
+    identifier:
+      name: type2choice
+    dataType:
+      scalarType: String
+  video:
+    identifier:
+      name: video
+    dataType:
+      scalarType: VideoPath
+  audio:
+    identifier:
+      name: audio
+    dataType:
+      scalarType: AudioPath
+  body:
+    identifier:
+      name: body
+    dataType:
+      scalarType: String
+  upvote:
+    identifier:
+      name: upvote
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  downvote:
+    identifier:
+      name: downvote
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  refvalue:
+    identifier:
+      name: refvalue
+    dataType:
+      scalarType: String
+  type0choice:
+    identifier:
+      name: type0choice
+    dataType:
+      scalarType: String
+  submitted_date:
+    identifier:
+      name: submitted_date
+    dataType:
+      scalarType: DateTime
+  type_order:
+    identifier:
+      name: type_order
+    dataType:
+      scalarType: String
+  type_activity:
+    identifier:
+      name: type_activity
+    dataType:
+      scalarType: String
+  type_ticket:
+    identifier:
+      name: type_ticket
+    dataType:
+      scalarType: String
+  submitter:
+    identifier:
+      name: submitter
+    dataType:
+      scalarType: String
+  profilePictureObjectPost:
+    identifier:
+      name: profilePictureObjectPost
+    dataType:
+      scalarType: ImagePath
+  ups:
+    identifier:
+      name: ups
+    dataType:
+      scalarType: Integer
+  pins:
+    identifier:
+      name: pins
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  object_is_edited:
+    identifier:
+      name: object_is_edited
+    dataType:
+      scalarType: Boolean
+  shares:
+    identifier:
+      name: shares
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  type0object:
+    identifier:
+      name: type0object
+    dataType:
+      scalarType: Boolean
+  type_object:
+    identifier:
+      name: type_object
+    dataType:
+      scalarType: String
+  thread:
+    identifier:
+      name: thread
+    dataType:
+      listType:
+        scalarType: String
+  object_thread:
+    identifier:
+      name: object_thread
+    dataType:
+      scalarType: DataStruct
+      subType:
+        dataStructIdentifier:
+          name: thread
+          key: hlakp
+  object_in_bag:
+    identifier:
+      name: object_in_bag
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  object_refvalue:
+    identifier:
+      name: object_refvalue
+    dataType:
+      scalarType: Double
+  analytics_ref:
+    identifier:
+      name: analytics_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: analytics
+          key: lv8h14dw
+  object_views:
+    identifier:
+      name: object_views
+    dataType:
+      scalarType: Integer
+  object_viewers:
+    identifier:
+      name: object_viewers
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  objectViewsS:
+    identifier:
+      name: objectViewsS
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p

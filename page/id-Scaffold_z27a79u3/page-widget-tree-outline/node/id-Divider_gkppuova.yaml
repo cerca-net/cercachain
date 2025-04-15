@@ -1,0 +1,9 @@
+key: Divider_gkppuova
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 0.5
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT

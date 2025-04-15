@@ -1,0 +1,33 @@
+key: Button_75sqfrly
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    borderRadiusValue:
+      inputValue: 100
+    iconValue:
+      inputValue:
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 58613
+            family: MaterialIcons
+            matchTextDirection: false
+            name: qr_code
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

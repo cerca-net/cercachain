@@ -1,0 +1,44 @@
+key: PageView_6uoocxpv
+type: PageView
+props:
+  expanded:
+    expandedType: EXPANDED
+  pageView:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 500
+    scrollDirection: FF_AXIS_HORIZONTAL
+    margin: {}
+    indicatorOptions:
+      hasIndicator: false
+      alignment:
+        xValue:
+          inputValue: 0
+        yValue:
+          inputValue: 1
+      indicatorPadding:
+        bottomValue:
+          inputValue: 16
+      expansionFactor: 1
+      outline: false
+      spacingValue:
+        inputValue: 8
+      borderRadiusValue:
+        inputValue: 8
+      dotWidthValue:
+        inputValue: 8
+      dotHeightValue:
+        inputValue: 8
+      inactiveColorValue:
+        inputValue:
+          themeColor: ACCENT_1
+      activeColorValue:
+        inputValue:
+          themeColor: PRIMARY
+    allowScrolling: true
+    initialPageIndexValue:
+      inputValue: 0

@@ -1,0 +1,54 @@
+key: Container_fsra15ah
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 70
+          mostRecentInputValue: 70
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShadow: {}
+      image: {}
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    maxDimensions: {}
+    minDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  alignment:
+    xValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    yValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: Container
+parameterValues: {}
+valueKey: {}

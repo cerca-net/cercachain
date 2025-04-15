@@ -1,0 +1,21 @@
+key: Container_bmdmwu4c
+type: Container
+props:
+  container:
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    leftValue:
+      inputValue: 4

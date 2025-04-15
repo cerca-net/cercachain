@@ -1,0 +1,136 @@
+key: StaggeredView_0ala32e2
+type: StaggeredView
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  alignment:
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: showfullfeed
+                      key: ejgjec8e
+                    stateVariableType: APP_STATE
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  staggeredView:
+    shrinkWrapValue:
+      inputValue: false
+      mostRecentInputValue: false
+    crossAxisCountValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          conditionalValue:
+            ifConditionalValues:
+              - condition:
+                  source: FUNCTION_CALL
+                  functionCall:
+                    values:
+                      - variable:
+                          source: GLOBAL_PROPERTIES
+                          baseVariable:
+                            globalProperties:
+                              property: FRACTION_SCREEN_WIDTH
+                      - inputValue:
+                          serializedValue: "430"
+                    condition:
+                      relation: LESS_THAN
+                value:
+                  inputValue:
+                    serializedValue: "2"
+              - condition:
+                  source: FUNCTION_CALL
+                  functionCall:
+                    values:
+                      - variable:
+                          source: GLOBAL_PROPERTIES
+                          baseVariable:
+                            globalProperties:
+                              property: FRACTION_SCREEN_WIDTH
+                      - inputValue:
+                          serializedValue: "1024"
+                    condition:
+                      relation: LESS_THAN_OR_EQUAL_TO
+                value:
+                  inputValue:
+                    serializedValue: "3"
+            elseValue:
+              inputValue:
+                serializedValue: "2"
+            returnParameter:
+              dataType:
+                scalarType: Integer
+      mostRecentInputValue: 2
+    crossAxisSpacingValue:
+      inputValue: 8
+    mainAxisSpacingValue:
+      inputValue: 8
+    allowScrollingValue:
+      inputValue: true
+      mostRecentInputValue: true
+  queryLoadingWidget:
+    loadingWidget: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  firestore:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    orderBy:
+      - collectionFieldIdentifier:
+          name: date
+        descending: true
+    hideOnEmpty: false
+    ignoreEmptyValues: true
+    pagination:
+      enabled: true
+      isStream: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: thread
+            relation: ARRAY_CONTAINS_ANY
+            variable:
+              source: WIDGET_STATE
+              baseVariable:
+                widgetState:
+                  returnParameter:
+                    dataType:
+                      listType:
+                        scalarType: String
+                      nonNullable: false
+              nodeKeyRef:
+                key: ChoiceChips_gkjtwzkd
+      isAnd: true
+valueKey: {}

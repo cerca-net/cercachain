@@ -1,0 +1,34 @@
+key: Image_0e772ffp
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: image
+        nodeKeyRef:
+          key: Column_h4tp6hnj
+      mostRecentInputValue: https://picsum.photos/seed/668/600
+    format: FF_IMAGE_FORMAT_AUTO

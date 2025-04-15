@@ -1,0 +1,23 @@
+key: Column_2bhwk01r
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_start
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+name: selectWidget

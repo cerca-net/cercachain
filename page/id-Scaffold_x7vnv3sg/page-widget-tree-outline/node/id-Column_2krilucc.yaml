@@ -1,0 +1,8 @@
+key: Column_2krilucc
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    primary: true
+    minSizeValue:
+      inputValue: true

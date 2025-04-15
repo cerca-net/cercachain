@@ -1,0 +1,22 @@
+key: Container_vodiefmw
+type: Container
+props:
+  container:
+    dimensions: {}
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      borderWidthValue:
+        inputValue: 1
+  padding:
+    leftValue:
+      inputValue: 12
+    rightValue:
+      inputValue: 12
+    bottomValue:
+      inputValue: 8

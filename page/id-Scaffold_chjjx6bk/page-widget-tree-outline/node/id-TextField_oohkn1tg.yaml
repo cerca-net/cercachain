@@ -1,0 +1,54 @@
+key: TextField_oohkn1tg
+type: TextField
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  textField:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      fontSizeValue:
+        inputValue: 12
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+      labelStyle:
+        themeStyle: LABEL_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+      hintText:
+        translationIdentifier:
+          key: 81ohf845
+        textValue:
+          inputValue: I.D. number
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      filledValue:
+        inputValue: true
+      fillColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      borderWidthValue:
+        inputValue: 1
+      denseValue:
+        inputValue: true
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+    width:
+      pixelsValue:
+        inputValue: Infinity
+    maxLinesValue:
+      inputValue: 1
+    autofocusValue:
+      inputValue: false
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT

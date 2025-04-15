@@ -1,0 +1,29 @@
+key: Row_a9p9m368
+type: Row
+props:
+  row:
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

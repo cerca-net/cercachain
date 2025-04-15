@@ -1,0 +1,15 @@
+key: Row_gtwlmfl1
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_start
+    listSpacing: {}
+  padding: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,8 @@
+animation:
+  animationType: WIDGET_ANIMATION_ACTION
+  widgetAnimation:
+    actionType: REVERSE_ANIMATION
+    animationNodeKeyRef:
+      key: Icon_ra62duwn
+key: mclt2r2a
+nonBlocking: true

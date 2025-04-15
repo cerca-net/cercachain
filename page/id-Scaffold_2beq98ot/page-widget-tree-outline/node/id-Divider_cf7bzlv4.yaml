@@ -1,0 +1,13 @@
+key: Divider_cf7bzlv4
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    indentValue:
+      inputValue: 12
+    endIndentValue:
+      inputValue: 12

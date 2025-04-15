@@ -1,0 +1,26 @@
+key: Text_9no3u4pe
+type: RichText
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 24
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  richText:
+    textStyle:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: 67bpyave
+      textValue:
+        inputValue: All Activity from this past month.
+        mostRecentInputValue: All Activity from this past month.
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

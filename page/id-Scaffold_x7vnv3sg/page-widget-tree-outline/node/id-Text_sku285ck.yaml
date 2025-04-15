@@ -1,0 +1,27 @@
+key: Text_sku285ck
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: pq4e48bo
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: refvalue
+        nodeKeyRef:
+          key: StaggeredView_nhi6m272
+      mostRecentInputValue: ""
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    textAlignValue:
+      inputValue: ALIGN_CENTER
+  expanded:
+    expandedType: EXPANDED

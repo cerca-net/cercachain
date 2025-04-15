@@ -1,0 +1,106 @@
+key: DropDown_o00mh87b
+type: DropDown
+props:
+  expanded:
+    expandedType: EXPANDED
+  dropDown:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    textStyle:
+      themeStyle: BODY_MEDIUM
+    margin:
+      leftValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+      rightValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    hintText:
+      translationIdentifier:
+        key: b1230r4i
+      textValue:
+        inputValue: Activity type...
+    valueType:
+      dataType:
+        scalarType: String
+    searchHintText:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: msy1y5ik
+      textValue:
+        inputValue: Search...
+    fixPosition: true
+    searchTextStyle:
+      themeStyle: BODY_MEDIUM
+    label:
+      themeStyle: LABEL_MEDIUM
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    elevationValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    borderRadiusValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    borderColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderWidthValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    hidesUnderlineValue:
+      inputValue: true
+      mostRecentInputValue: true
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 63531
+            family: MaterialIcons
+            matchTextDirection: false
+            name: keyboard_arrow_down_rounded
+    initialOptionKeyValue: {}
+    optionsLabels:
+      values:
+        - translatableText:
+            translationIdentifier:
+              key: h1vzr7zn
+            textValue:
+              inputValue: Open
+        - translatableText:
+            translationIdentifier:
+              key: kcpdik3i
+            textValue:
+              inputValue: Booking
+    optionsValues:
+      values:
+        - serializedValue: Option 1
+        - serializedValue: Option 2
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

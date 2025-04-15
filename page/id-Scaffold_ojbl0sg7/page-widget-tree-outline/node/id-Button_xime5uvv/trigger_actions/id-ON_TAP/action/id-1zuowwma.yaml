@@ -1,0 +1,10 @@
+auth:
+  type: CREATE_ACCOUNT
+  provider: GOOGLE
+  emailFieldKeyRef:
+    key: TextField_6n43aput
+  passwordFieldKeyRef:
+    key: TextField_1a5w4eb5
+  confirmPasswordFieldKeyRef:
+    key: TextField_4wszmn1f
+key: 1zuowwma

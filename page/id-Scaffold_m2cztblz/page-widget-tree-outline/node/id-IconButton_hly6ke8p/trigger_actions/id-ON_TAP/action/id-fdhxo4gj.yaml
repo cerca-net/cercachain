@@ -1,0 +1,9 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: ayzinr1c
+      setValue:
+        inputValue: {}
+  updateType: WIDGET
+  stateVariableType: APP_STATE
+key: fdhxo4gj

@@ -1,0 +1,17 @@
+key: Text_55bfsh8n
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_SMALL
+    translationIdentifier:
+      key: 2z55o97c
+    textValue:
+      inputValue: My pins (200)
+    fontSizeValue:
+      inputValue: 18
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

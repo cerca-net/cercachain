@@ -1,0 +1,16 @@
+key: Column_j5fmfc55
+type: Column
+props:
+  column:
+    primary: true
+    listSpacing: {}
+  expanded:
+    expandedType: EXPANDED
+    flexValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

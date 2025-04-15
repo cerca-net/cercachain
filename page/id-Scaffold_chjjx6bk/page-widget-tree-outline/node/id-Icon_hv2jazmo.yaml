@@ -1,0 +1,22 @@
+key: Icon_hv2jazmo
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 32
+      mostRecentInputValue: 32
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 61865
+        family: MaterialIcons
+        matchTextDirection: false
+        name: mail_outline_outlined
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

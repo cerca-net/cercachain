@@ -1,0 +1,6 @@
+backend:
+  customCloudFunctionsConfig:
+    packageJsonConfig:
+      type: PACKAGE_JSON
+      isUnlocked: false
+      fullContent: "{\n  \"name\": \"functions\",\n  \"description\": \"Firebase Custom Cloud Functions\",\n  \"engines\": {\n    \"node\": \"20\"\n  },\n  \"main\": \"index.js\",\n  \"dependencies\": {\n    \"firebase-admin\": \"^11.8.0\",\n    \"firebase-functions\": \"^4.3.1\"\n  },\n  \"private\": true\n}"

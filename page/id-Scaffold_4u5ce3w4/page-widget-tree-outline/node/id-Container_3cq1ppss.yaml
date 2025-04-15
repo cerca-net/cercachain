@@ -1,0 +1,23 @@
+key: Container_3cq1ppss
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 140
+    boxDecoration:
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  expanded:
+    expandedType: UNEXPANDED

@@ -1,0 +1,6 @@
+key: Column_1pknbcsc
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_center
+    primary: true

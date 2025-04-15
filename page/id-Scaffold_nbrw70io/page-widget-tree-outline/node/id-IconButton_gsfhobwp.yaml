@@ -1,0 +1,31 @@
+key: IconButton_gsfhobwp
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    borderRadiusValue:
+      inputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 63047
+            family: MaterialIcons
+            matchTextDirection: false
+            name: close_rounded
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: -1

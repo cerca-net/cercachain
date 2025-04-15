@@ -1,0 +1,17 @@
+key: Text_6nw40ltw
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: rdry5m77
+    selectable: false
+    textValue:
+      inputValue: About
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    fontWeightValue:
+      inputValue: w500
