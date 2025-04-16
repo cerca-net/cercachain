@@ -59,20 +59,16 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+              padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
               child: FlutterFlowIconButton(
                 borderRadius: 12,
                 buttonSize: 40,
-                fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                 icon: Icon(
                   Icons.close_rounded,
-                  color: FlutterFlowTheme.of(context).secondaryText,
                   size: 24,
                 ),
                 onPressed: () async {
@@ -90,11 +86,10 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).alternate,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 7,
                         color: Color(0x33000000),
@@ -107,29 +102,27 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Padding(
                                 padding:
-                                    EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                    const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
                                     'bew8sle5' /* Objects */,
                                   ),
-                                  style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
                                         fontFamily: 'Sora',
-                                        color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         letterSpacing: 0.0,
                                       ),
@@ -139,12 +132,11 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           child: Container(
                             width: double.infinity,
                             height: 40,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               borderRadius: BorderRadius.circular(12),
                             ),
@@ -161,7 +153,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         isDense: true,
-                                        labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
@@ -171,14 +162,13 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                             FFLocalizations.of(context).getText(
                                           'c1hc8t4b' /* Search pinned objects */,
                                         ),
-                                        hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 1,
                                           ),
@@ -186,7 +176,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                               BorderRadius.circular(8),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 1,
                                           ),
@@ -195,7 +185,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .error,
                                             width: 1,
                                           ),
@@ -204,7 +193,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .error,
                                             width: 1,
                                           ),
@@ -212,16 +200,13 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                               BorderRadius.circular(8),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                       ),
-                                      style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
                                             letterSpacing: 0.0,
                                           ),
-                                      cursorColor: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       validator: _model.textControllerValidator
                                           .asValidator(context),
@@ -229,17 +214,16 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4, 0, 0, 0),
                                   child: Container(
                                     height: 100,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(8),
+                                      padding: const EdgeInsets.all(8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -258,7 +242,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                 '0',
                                               ),
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -268,11 +251,10 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                           ),
                                           Icon(
                                             Icons.category_rounded,
-                                            color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
                                             size: 20,
                                           ),
-                                        ].divide(SizedBox(width: 8)),
+                                        ].divide(const SizedBox(width: 8)),
                                       ),
                                     ),
                                   ),
@@ -283,7 +265,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                         ),
                         Flexible(
                           child: Padding(
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             child: StreamBuilder<List<SubmissionRecord>>(
                               stream: querySubmissionRecord(
                                 queryBuilder: (submissionRecord) =>
@@ -302,7 +284,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                       child: CircularProgressIndicator(
                                         valueColor:
                                             AlwaysStoppedAnimation<Color>(
-                                          FlutterFlowTheme.of(context).primary,
                                         ),
                                       ),
                                     ),
@@ -314,7 +295,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
 
                                 return MasonryGridView.builder(
                                   gridDelegate:
-                                      SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                      const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 2,
                                   ),
                                   crossAxisSpacing: 10,
@@ -344,7 +325,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                   valueColor:
                                                       AlwaysStoppedAnimation<
                                                           Color>(
-                                                    FlutterFlowTheme.of(context)
                                                         .primary,
                                                   ),
                                                 ),
@@ -371,7 +351,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                     backgroundColor:
                                                         Colors.transparent,
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                                 0, 0)
                                                             .resolve(
                                                                 Directionality.of(
@@ -399,14 +379,13 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                   BorderRadius.circular(8),
                                               child: Container(
                                                 width: double.infinity,
-                                                constraints: BoxConstraints(
+                                                constraints: const BoxConstraints(
                                                   maxHeight: 320,
                                                 ),
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 5,
                                                       color: Color(0x3416202A),
@@ -430,7 +409,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 8, 12, 8),
                                                       child: FutureBuilder<
@@ -453,7 +432,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                   valueColor:
                                                                       AlwaysStoppedAnimation<
                                                                           Color>(
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                                   ),
@@ -479,7 +457,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                 clipBehavior: Clip
                                                                     .antiAlias,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   shape: BoxShape
                                                                       .circle,
                                                                 ),
@@ -493,7 +471,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                               ),
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12,
                                                                           0,
@@ -502,7 +480,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                   child: Text(
                                                                     oSubmitterSubmissionRecord
                                                                         .submitter,
-                                                                    style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyLarge
                                                                         .override(
@@ -520,7 +497,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             4,
                                                                             0,
@@ -536,7 +513,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                         FFLocalizations.of(context)
                                                                             .languageCode,
                                                                   ),
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
                                                                       .override(
@@ -556,7 +532,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                     ),
                                                     Stack(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 1),
                                                       children: [
                                                         if (objectSubmissionRecord
@@ -598,7 +574,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                       height:
                                                                           200,
                                                                       decoration:
-                                                                          BoxDecoration(),
+                                                                          const BoxDecoration(),
                                                                       child:
                                                                           Visibility(
                                                                         visible: feedobjectimagesItem !=
@@ -646,11 +622,11 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         1, 1),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child:
@@ -659,7 +635,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                     height: 40,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       borderRadius:
@@ -669,7 +644,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               4),
                                                                       child:
                                                                           Row(
@@ -681,7 +656,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                           Icon(
                                                                             Icons.toll,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             size:
                                                                                 16,
                                                                           ),
@@ -690,9 +664,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                                 Text(
                                                                               objectSubmissionRecord.refvalue,
                                                                               textAlign: TextAlign.center,
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -791,7 +763,6 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                               height: 140,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                               ),
@@ -815,7 +786,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0,
                                                                             0),
                                                                     child:
@@ -830,41 +801,34 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                               objectSubmissionRecord.header,
                                                                         ),
                                                                       ),
-                                                                      titleTextStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .titleLarge
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Sora',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             fontSize:
                                                                                 20,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
-                                                                      playbackDurationTextStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       fillColor:
-                                                                          Color(
+                                                                          const Color(
                                                                               0x00000000),
                                                                       playbackButtonColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
                                                                       activeTrackColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primary,
                                                                       inactiveTrackColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
                                                                       elevation:
                                                                           0,
@@ -891,7 +855,7 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                             null))
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8),
+                                                            const EdgeInsets.all(8),
                                                         child: Column(
                                                           mainAxisSize:
                                                               MainAxisSize.min,
@@ -904,23 +868,21 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1, -1),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(8),
                                                                 child: Text(
                                                                   objectSubmissionRecord
                                                                       .header,
                                                                   maxLines: 3,
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -932,17 +894,16 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                               thickness: 1,
                                                               indent: 12,
                                                               endIndent: 12,
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1, -1),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8,
                                                                             0,
@@ -952,13 +913,11 @@ class _PinnedObjectsWidgetState extends State<PinnedObjectsWidget> {
                                                                   objectSubmissionRecord
                                                                       .body,
                                                                   maxLines: 4,
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,

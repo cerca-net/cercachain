@@ -88,20 +88,16 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+              padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
               child: FlutterFlowIconButton(
                 borderRadius: 12,
                 buttonSize: 40,
-                fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                 icon: Icon(
                   Icons.close_rounded,
-                  color: FlutterFlowTheme.of(context).secondaryText,
                   size: 24,
                 ),
                 onPressed: () async {
@@ -119,12 +115,11 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).alternate,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 7,
                         color: Color(0x2F1D2429),
@@ -137,35 +132,33 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Padding(
                                 padding:
-                                    EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                    const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
                                     'pg44gxt0' /* Users */,
                                   ),
-                                  style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
                                         fontFamily: 'Sora',
-                                        color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         letterSpacing: 0.0,
                                       ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(4),
                                 child: FlutterFlowChoiceChips(
                                   options: [
                                     ChipData(
@@ -182,34 +175,26 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                                       .choiceChipsValue = val?.firstOrNull),
                                   selectedChipStyle: ChipStyle(
                                     backgroundColor:
-                                        FlutterFlowTheme.of(context).secondary,
-                                    textStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Inter',
                                           color:
-                                              FlutterFlowTheme.of(context).info,
                                           letterSpacing: 0.0,
                                         ),
                                     iconColor:
-                                        FlutterFlowTheme.of(context).info,
                                     iconSize: 16,
                                     elevation: 0,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   unselectedChipStyle: ChipStyle(
                                     backgroundColor:
-                                        FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                    textStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Inter',
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           letterSpacing: 0.0,
                                         ),
-                                    iconColor: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                     iconSize: 16,
                                     elevation: 0,
@@ -231,12 +216,11 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           child: Container(
                             width: double.infinity,
                             height: 40,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               borderRadius: BorderRadius.circular(12),
                             ),
@@ -253,7 +237,6 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         isDense: true,
-                                        labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
@@ -263,14 +246,13 @@ class _PinnedUsersWidgetState extends State<PinnedUsersWidget> {
                                             FFLocalizations.of(context).getText(
                                           '7n0mr3w0' /* Search pinned users */,
                                         ),
-                                        hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 1,
                                           ),

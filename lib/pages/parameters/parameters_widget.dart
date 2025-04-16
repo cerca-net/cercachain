@@ -44,20 +44,16 @@ class _ParametersWidgetState extends State<ParametersWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         automaticallyImplyLeading: false,
         actions: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+            padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
             child: FlutterFlowIconButton(
               borderRadius: 12,
               buttonSize: 40,
-              fillColor: FlutterFlowTheme.of(context).secondaryBackground,
               icon: Icon(
                 Icons.close_rounded,
-                color: FlutterFlowTheme.of(context).secondaryText,
                 size: 24,
               ),
               onPressed: () async {
@@ -73,7 +69,7 @@ class _ParametersWidgetState extends State<ParametersWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
             child: Material(
               color: Colors.transparent,
               child: SwitchListTile.adaptive(
@@ -85,7 +81,6 @@ class _ParametersWidgetState extends State<ParametersWidget> {
                   FFLocalizations.of(context).getText(
                     'u110qpli' /* Object Notifications */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyLarge.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
                         lineHeight: 2,
@@ -95,18 +90,14 @@ class _ParametersWidgetState extends State<ParametersWidget> {
                   FFLocalizations.of(context).getText(
                     'igkyw93p' /* Receive Push notifications fro... */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Inter',
-                        color: Color(0xFF8B97A2),
+                        color: const Color(0xFF8B97A2),
                         letterSpacing: 0.0,
                       ),
                 ),
-                tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                activeColor: FlutterFlowTheme.of(context).primary,
-                activeTrackColor: FlutterFlowTheme.of(context).accent1,
                 dense: false,
                 controlAffinity: ListTileControlAffinity.trailing,
-                contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+                contentPadding: const EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
               ),
             ),
           ),
@@ -121,7 +112,6 @@ class _ParametersWidgetState extends State<ParametersWidget> {
                 FFLocalizations.of(context).getText(
                   'mdkbf5i3' /* Order Notifications */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyLarge.override(
                       fontFamily: 'Inter',
                       letterSpacing: 0.0,
                       lineHeight: 2,
@@ -131,18 +121,14 @@ class _ParametersWidgetState extends State<ParametersWidget> {
                 FFLocalizations.of(context).getText(
                   'cxxpnl3g' /* Receive email notifications fr... */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Inter',
-                      color: Color(0xFF8B97A2),
+                      color: const Color(0xFF8B97A2),
                       letterSpacing: 0.0,
                     ),
               ),
-              tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-              activeColor: FlutterFlowTheme.of(context).primary,
-              activeTrackColor: FlutterFlowTheme.of(context).accent1,
               dense: false,
               controlAffinity: ListTileControlAffinity.trailing,
-              contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+              contentPadding: const EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
             ),
           ),
           Material(
@@ -156,7 +142,6 @@ class _ParametersWidgetState extends State<ParametersWidget> {
                 FFLocalizations.of(context).getText(
                   '8sot5dum' /* Order Location  */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyLarge.override(
                       fontFamily: 'Inter',
                       letterSpacing: 0.0,
                       lineHeight: 2,
@@ -166,18 +151,14 @@ class _ParametersWidgetState extends State<ParametersWidget> {
                 FFLocalizations.of(context).getText(
                   'oueeplo5' /* Allow Tom to track your instan... */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Inter',
-                      color: Color(0xFF8B97A2),
+                      color: const Color(0xFF8B97A2),
                       letterSpacing: 0.0,
                     ),
               ),
-              tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-              activeColor: FlutterFlowTheme.of(context).primary,
-              activeTrackColor: FlutterFlowTheme.of(context).accent1,
               dense: false,
               controlAffinity: ListTileControlAffinity.trailing,
-              contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+              contentPadding: const EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
             ),
           ),
         ],

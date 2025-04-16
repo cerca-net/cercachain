@@ -1,0 +1,3 @@
+Directory missing: modules
+Directory missing: plugins
+Directory missing: extensions

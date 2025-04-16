@@ -7,24 +7,44 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_appauth/flutter_appauth.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
+// Replace 'your_app' with your actual app name
 import 'package:myapp/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  group('Auth0 Authentication Flow', () {
+    testWidgets('Successful login navigates to home screen', (WidgetTester tester) async {
+      // Mock Auth0 Flutter Appauth and Secure Storage calls
+      // This is a placeholder - implement actual mocking logic
+      // For example, using mocktail or similar mocking framework
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+      // Build our app and trigger a frame.
+      await tester.pumpWidget(const MyApp());
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+      // Implement test logic here - example:
+      // 1. Find and tap the login button
+      // await tester.tap(find.widgetWithText(ElevatedButton, 'Login'));
+      // await tester.pumpAndSettle(); // Wait for navigation
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+      // 2. Verify that we're on the home screen after successful login
+      // expect(find.text('Home Screen'), findsOneWidget);
+    });
+
+    testWidgets('Failed login shows error message', (WidgetTester tester) async {
+      // Mock Auth0 and Secure Storage calls to simulate login failure
+
+      // Build our app and trigger a frame.
+      await tester.pumpWidget(const MyApp());
+
+      // Implement test logic here - example:
+      // 1. Find and tap the login button
+      // await tester.tap(find.widgetWithText(ElevatedButton, 'Login'));
+      // await tester.pumpAndSettle(); // Wait for navigation
+
+      // 2. Verify that an error message is displayed
+      // expect(find.text('Login failed'), findsOneWidget);
+    });
   });
 }

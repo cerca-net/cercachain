@@ -65,14 +65,12 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             body: Center(
               child: SizedBox(
                 width: 50,
                 height: 50,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    FlutterFlowTheme.of(context).primary,
                   ),
                 ),
               ),
@@ -89,20 +87,16 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
               automaticallyImplyLeading: false,
               actions: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
                   child: FlutterFlowIconButton(
                     borderRadius: 12,
                     buttonSize: 40,
-                    fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                     icon: Icon(
                       Icons.close_rounded,
-                      color: FlutterFlowTheme.of(context).secondaryText,
                       size: 24,
                     ),
                     onPressed: () async {
@@ -127,7 +121,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                         height: 50,
                         child: CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            FlutterFlowTheme.of(context).primary,
                           ),
                         ),
                       ),
@@ -140,8 +133,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(12),
                         bottomRight: Radius.circular(12),
                         topLeft: Radius.circular(0),
@@ -152,7 +144,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                       key: _model.formKey,
                       autovalidateMode: AutovalidateMode.disabled,
                       child: Padding(
-                        padding: EdgeInsets.all(12),
+                        padding: const EdgeInsets.all(12),
                         child: StreamBuilder<List<UsernamesRecord>>(
                           stream: queryUsernamesRecord(
                             singleRecord: true,
@@ -166,7 +158,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                   height: 50,
                                   child: CircularProgressIndicator(
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                      FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                 ),
@@ -193,13 +184,12 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                   height: 100,
                                   decoration: BoxDecoration(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   child: Stack(
                                     children: [
                                       Align(
-                                        alignment: AlignmentDirectional(0, 0),
+                                        alignment: const AlignmentDirectional(0, 0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -208,7 +198,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                             Icon(
                                               Icons.upload_file,
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               size: 24,
                                             ),
@@ -219,7 +208,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily:
@@ -245,7 +233,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                   valueColor:
                                                       AlwaysStoppedAnimation<
                                                           Color>(
-                                                    FlutterFlowTheme.of(context)
                                                         .primary,
                                                   ),
                                                 ),
@@ -349,7 +336,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                               width: double.infinity,
                                               height: double.infinity,
                                               decoration: BoxDecoration(
-                                                color: Color(0x00FFFFFF),
+                                                color: const Color(0x00FFFFFF),
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.network(
@@ -368,7 +355,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: const AlignmentDirectional(0, 0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
                                     focusColor: Colors.transparent,
@@ -447,7 +434,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                       width: 120,
                                       height: 120,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         shape: BoxShape.circle,
                                       ),
@@ -455,18 +441,17 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0, 0),
+                                                const AlignmentDirectional(0, 0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(0, 6, 0, 0),
                                                   child: Icon(
                                                     Icons.upload_file,
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .primaryText,
                                                     size: 24,
@@ -480,14 +465,12 @@ Picture */
                                                     ,
                                                   ),
                                                   textAlign: TextAlign.center,
-                                                  style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             'Montserrat',
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                         fontSize: 14,
@@ -499,7 +482,7 @@ Picture */
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0, 0),
+                                                const AlignmentDirectional(0, 0),
                                             child: Container(
                                               width: 120,
                                               height: 120,
@@ -523,15 +506,13 @@ Picture */
                                   thickness: 2,
                                   indent: 60,
                                   endIndent: 60,
-                                  color: FlutterFlowTheme.of(context).alternate,
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: const AlignmentDirectional(0, 0),
                                   child: Container(
                                     width: double.infinity,
                                     height: 30,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
                                           .alternate,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
@@ -553,7 +534,6 @@ Picture */
                                               decoration: InputDecoration(
                                                 isDense: true,
                                                 labelStyle:
-                                                    FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
                                                           fontFamily: 'Inter',
@@ -565,7 +545,6 @@ Picture */
                                                   'ntjeme37' /* Name */,
                                                 ),
                                                 hintStyle:
-                                                    FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
                                                           fontFamily: 'Inter',
@@ -573,7 +552,7 @@ Picture */
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1,
                                                   ),
@@ -582,7 +561,7 @@ Picture */
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1,
                                                   ),
@@ -591,7 +570,6 @@ Picture */
                                                 ),
                                                 errorBorder: OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .error,
                                                     width: 1,
@@ -602,7 +580,6 @@ Picture */
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .error,
                                                     width: 1,
@@ -613,7 +590,6 @@ Picture */
                                                 filled: true,
                                               ),
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -621,7 +597,6 @@ Picture */
                                                       ),
                                               textAlign: TextAlign.center,
                                               cursorColor:
-                                                  FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               validator: _model
                                                   .textController1Validator
@@ -642,7 +617,6 @@ Picture */
                                               decoration: InputDecoration(
                                                 isDense: true,
                                                 labelStyle:
-                                                    FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
                                                           fontFamily: 'Inter',
@@ -654,7 +628,6 @@ Picture */
                                                   '8abdhrml' /* Surname */,
                                                 ),
                                                 hintStyle:
-                                                    FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
                                                           fontFamily: 'Inter',
@@ -662,7 +635,7 @@ Picture */
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1,
                                                   ),
@@ -671,7 +644,7 @@ Picture */
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1,
                                                   ),
@@ -680,7 +653,6 @@ Picture */
                                                 ),
                                                 errorBorder: OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .error,
                                                     width: 1,
@@ -691,7 +663,6 @@ Picture */
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .error,
                                                     width: 1,
@@ -702,7 +673,6 @@ Picture */
                                                 filled: true,
                                               ),
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -710,7 +680,6 @@ Picture */
                                                       ),
                                               textAlign: TextAlign.center,
                                               cursorColor:
-                                                  FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               validator: _model
                                                   .textController2Validator
@@ -718,22 +687,21 @@ Picture */
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 8)),
+                                      ].divide(const SizedBox(width: 8)),
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: const AlignmentDirectional(0, 0),
                                   child: Container(
                                     width: double.infinity,
                                     height: 60,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
                                           .alternate,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(4),
+                                      padding: const EdgeInsets.all(4),
                                       child: SizedBox(
                                         width: 200,
                                         child: TextFormField(
@@ -745,7 +713,6 @@ Picture */
                                           decoration: InputDecoration(
                                             isDense: true,
                                             labelStyle:
-                                                FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
                                                       fontFamily: 'Inter',
@@ -757,14 +724,13 @@ Picture */
                                               'bpcd2ifp' /* Bio */,
                                             ),
                                             hintStyle:
-                                                FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
                                                       fontFamily: 'Inter',
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1,
                                               ),
@@ -772,7 +738,7 @@ Picture */
                                                   BorderRadius.circular(8),
                                             ),
                                             focusedBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1,
                                               ),
@@ -782,7 +748,6 @@ Picture */
                                             errorBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .error,
                                                 width: 1,
                                               ),
@@ -793,7 +758,6 @@ Picture */
                                                 OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .error,
                                                 width: 1,
                                               ),
@@ -802,7 +766,6 @@ Picture */
                                             ),
                                             filled: true,
                                           ),
-                                          style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Inter',
@@ -811,7 +774,6 @@ Picture */
                                           textAlign: TextAlign.start,
                                           maxLines: 8,
                                           cursorColor:
-                                              FlutterFlowTheme.of(context)
                                                   .primaryText,
                                           validator: _model
                                               .textFieldTextControllerValidator
@@ -823,7 +785,7 @@ Picture */
                                 ),
                                 Flexible(
                                   child: Align(
-                                    alignment: AlignmentDirectional(0, 1),
+                                    alignment: const AlignmentDirectional(0, 1),
                                     child: StreamBuilder<UsersRecord>(
                                       stream: UsersRecord.getDocument(
                                           currentUserReference!),
@@ -838,7 +800,6 @@ Picture */
                                                 valueColor:
                                                     AlwaysStoppedAnimation<
                                                         Color>(
-                                                  FlutterFlowTheme.of(context)
                                                       .primary,
                                                 ),
                                               ),
@@ -910,7 +871,6 @@ Picture */
                                             height: 50,
                                             decoration: BoxDecoration(
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .alternate,
                                               borderRadius:
                                                   BorderRadius.circular(12),
@@ -925,7 +885,6 @@ Picture */
                                                       .getText(
                                                     '1iwh4ihg' /* Save Changes */,
                                                   ),
-                                                  style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
@@ -937,7 +896,7 @@ Picture */
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(width: 10)),
+                                              ].divide(const SizedBox(width: 10)),
                                             ),
                                           ),
                                         );
@@ -946,8 +905,8 @@ Picture */
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 8))
-                                  .addToStart(SizedBox(height: 12)),
+                                  .divide(const SizedBox(height: 8))
+                                  .addToStart(const SizedBox(height: 12)),
                             );
                           },
                         ),

@@ -1,0 +1,49 @@
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   android/app/build.gradle.kts
+	modified:   android/settings.gradle.kts
+	modified:   custom-functions/id-37dm4/function-code.dart
+	modified:   lib/components/catalogue/catalogue_model.dart
+	modified:   lib/components/object/object_widget.dart
+	modified:   lib/components/settings_model.dart
+	modified:   lib/components/settings_widget.dart
+	modified:   lib/components/user_object_model.dart
+	modified:   lib/components/user_object_widget.dart
+	modified:   lib/custom_functions.dart
+	modified:   lib/main.dart
+	modified:   lib/pages/about/about_widget.dart
+	modified:   lib/pages/feedpage/feedpage_widget.dart
+	modified:   lib/pages/forgot_password/forgot_password_widget.dart
+	modified:   lib/pages/hashingpage/hashingpage_widget.dart
+	modified:   lib/pages/method_order/method_order_widget.dart
+	modified:   lib/pages/new_catalogue/new_catalogue_model.dart
+	modified:   lib/pages/newpage/newpage_model.dart
+	modified:   lib/pages/newpage/newpage_widget.dart
+	modified:   lib/pages/orderpage/orderpage_widget.dart
+	modified:   lib/pages/parameters/parameters_widget.dart
+	modified:   lib/pages/pinned_objects/pinned_objects_widget.dart
+	modified:   lib/pages/pinned_users/pinned_users_widget.dart
+	modified:   lib/pages/publicpage/publicpage_widget.dart
+	modified:   lib/pages/signup/signup_widget.dart
+	modified:   lib/pages/starting_page/starting_page_widget.dart
+	modified:   lib/pages/system/system_widget.dart
+	modified:   lib/pages/user_profile/user_profile_widget.dart
+	modified:   lib/pages/user_survey/user_survey_widget.dart
+	modified:   lib/pages/userpage/userpage_model.dart
+	modified:   lib/pages/userrating/userrating_widget.dart
+	modified:   lib/pages/userrating_widget.dart
+	modified:   lib/pages/verification/verification_widget.dart
+	modified:   pubspec.lock
+	modified:   pubspec.yaml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	android/app/google-services.json
+	firebase.json
+	full_file_tree.txt
+	git_status.txt
+	lib/firebase_options.dart
+
+no changes added to commit (use "git add" and/or "git commit -a")

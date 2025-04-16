@@ -72,20 +72,16 @@ class _VerificationWidgetState extends State<VerificationWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+              padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
               child: FlutterFlowIconButton(
                 borderRadius: 12,
                 buttonSize: 40,
-                fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                 icon: Icon(
                   Icons.close_rounded,
-                  color: FlutterFlowTheme.of(context).secondaryText,
                   size: 24,
                 ),
                 onPressed: () async {
@@ -110,14 +106,14 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                   child: Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 30),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 30),
                         child: PageView(
                           controller: _model.pageViewController ??=
                               PageController(initialPage: 0),
                           scrollDirection: Axis.horizontal,
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(12),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -125,25 +121,24 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsets.all(8),
+                                      padding: const EdgeInsets.all(8),
                                       child: Container(
                                         width: double.infinity,
                                         height: 200,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .alternate,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0, 0, 0, 4),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 16, 12, 8),
                                                 child: Row(
                                                   mainAxisSize:
@@ -153,7 +148,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                       Icons
                                                           .mail_outline_outlined,
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .secondary,
                                                       size: 32,
@@ -161,7 +155,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(12, 0,
                                                                     8, 0),
                                                         child: Column(
@@ -180,13 +174,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   .getText(
                                                                 '39xfv8gr' /* Main contact tags */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyLarge
                                                                   .override(
                                                                     fontFamily:
                                                                         'Plus Jakarta Sans',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF14181B),
                                                                     fontSize:
                                                                         16,
@@ -199,7 +192,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           4,
@@ -211,13 +204,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                     .getText(
                                                                   'wu0rvc5g' /* Secondary text */,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Plus Jakarta Sans',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF57636C),
                                                                       fontSize:
                                                                           12,
@@ -235,17 +227,17 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0, 0, 4, 0),
                                                       child:
                                                           FlutterFlowIconButton(
                                                         borderColor:
-                                                            Color(0xFFE0E3E7),
+                                                            const Color(0xFFE0E3E7),
                                                         borderRadius: 8,
                                                         borderWidth: 2,
                                                         buttonSize: 40,
-                                                        icon: Icon(
+                                                        icon: const Icon(
                                                           Icons.sync,
                                                           color:
                                                               Color(0xFF57636C),
@@ -259,19 +251,18 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                     ),
                                                   ]
                                                       .addToStart(
-                                                          SizedBox(width: 8))
+                                                          const SizedBox(width: 8))
                                                       .addToEnd(
-                                                          SizedBox(width: 8)),
+                                                          const SizedBox(width: 8)),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(16, 0, 16, 16),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 160,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -279,7 +270,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(12),
+                                                    padding: const EdgeInsets.all(12),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -304,7 +295,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 InputDecoration(
                                                               isDense: true,
                                                               labelStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -320,7 +310,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 'bvxyhfyy' /* Enter main mail account. */,
                                                               ),
                                                               hintStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -333,7 +322,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   width: 1,
@@ -346,7 +334,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               focusedBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0x00000000),
                                                                   width: 1,
@@ -360,7 +348,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -374,7 +361,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -385,11 +371,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             8),
                                                               ),
                                                               filled: true,
-                                                              fillColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
@@ -399,7 +383,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       0.0,
                                                                 ),
                                                             cursorColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                             validator: _model
@@ -422,7 +405,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 InputDecoration(
                                                               isDense: true,
                                                               labelStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -438,7 +420,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 '7f2kh3ik' /* Enter phone number. */,
                                                               ),
                                                               hintStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -451,7 +432,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   width: 1,
@@ -464,7 +444,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               focusedBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0x00000000),
                                                                   width: 1,
@@ -478,7 +458,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -492,7 +471,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -503,11 +481,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             8),
                                                               ),
                                                               filled: true,
-                                                              fillColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
@@ -517,7 +493,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       0.0,
                                                                 ),
                                                             cursorColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                             validator: _model
@@ -526,7 +501,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                     context),
                                                           ),
                                                         ),
-                                                        FFButtonWidget(
                                                           onPressed: () async {
                                                             await authManager
                                                                 .sendEmailVerification();
@@ -536,7 +510,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               .getText(
                                                             'yzti4w19' /* Get codes */,
                                                           ),
-                                                          icon: Icon(
+                                                          icon: const Icon(
                                                             Icons.sms_outlined,
                                                             size: 15,
                                                           ),
@@ -544,7 +518,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               FFButtonOptions(
                                                             height: 40,
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16,
                                                                         0,
@@ -554,17 +528,15 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 IconAlignment
                                                                     .end,
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         0,
                                                                         0,
                                                                         0),
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondary,
                                                             textStyle:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -583,19 +555,18 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(height: 8)),
+                                                          const SizedBox(height: 8)),
                                                     ),
                                                   ),
                                                 ),
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(16),
+                                                  padding: const EdgeInsets.all(16),
                                                   child: Container(
                                                     width: double.infinity,
                                                     height: 100,
                                                     decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       borderRadius:
@@ -604,7 +575,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsets.all(12),
+                                                          const EdgeInsets.all(12),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -623,14 +594,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               Icon(
                                                                 Icons
                                                                     .key_rounded,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
                                                                 size: 32,
                                                               ),
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12,
                                                                           0,
@@ -652,11 +622,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             .getText(
                                                                           'acpsgxy7' /* Enter code recieved */,
                                                                         ),
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyLarge
                                                                             .override(
                                                                               fontFamily: 'Plus Jakarta Sans',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               fontSize: 16,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w500,
@@ -673,7 +641,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0, 0),
                                                                   child: Lottie
                                                                       .network(
@@ -691,7 +659,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           ),
                                                           Container(
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             child:
                                                                 PinCodeTextField(
                                                               autoDisposeControllers:
@@ -700,7 +668,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   context,
                                                               length: 8,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
@@ -723,7 +690,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   16,
                                                               showCursor: false,
                                                               cursorColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                               obscureText:
@@ -739,7 +705,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 fieldWidth: 18,
                                                                 borderWidth: 2,
                                                                 borderRadius:
-                                                                    BorderRadius
+                                                                    const BorderRadius
                                                                         .only(
                                                                   bottomLeft: Radius
                                                                       .circular(
@@ -757,15 +723,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 shape: PinCodeFieldShape
                                                                     .underline,
                                                                 activeColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 inactiveColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                 selectedColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                               ),
@@ -781,13 +744,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       context),
                                                             ),
                                                           ),
-                                                          FFButtonWidget(
                                                             onPressed:
                                                                 () async {
                                                               await _model
                                                                   .pageViewController
                                                                   ?.nextPage(
-                                                                duration: Duration(
+                                                                duration: const Duration(
                                                                     milliseconds:
                                                                         300),
                                                                 curve:
@@ -803,24 +765,22 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 FFButtonOptions(
                                                               height: 40,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
                                                                           16,
                                                                           0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           0,
                                                                           0,
                                                                           0),
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondary,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
@@ -838,7 +798,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           12),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 8)),
                                                       ),
                                                     ),
@@ -852,18 +812,17 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16, 24, 16, 4),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
                                           0.9,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12),
+                                        padding: const EdgeInsets.all(12),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -873,7 +832,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 Card(
                                                   clipBehavior: Clip
                                                       .antiAliasWithSaveLayer,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   shape: RoundedRectangleBorder(
@@ -882,11 +840,10 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             8),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Icon(
                                                       Icons.mail_outline,
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .info,
                                                       size: 24,
@@ -896,7 +853,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 8, 0, 0, 0),
                                                     child: Column(
@@ -908,7 +865,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       0, 0, 0),
                                                           child: Text(
@@ -917,7 +874,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               'ztdch1jj' /* Contact sync */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
@@ -931,7 +887,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       4, 12, 0),
                                                           child: Text(
@@ -940,7 +896,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               'vb9kdi56' /* Enable authentication by synci... */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodySmall
                                                                 .override(
@@ -958,7 +913,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 ),
                                                 Icon(
                                                   Icons.arrow_back,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
                                                   size: 24,
@@ -974,7 +928,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(12),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -982,12 +936,11 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsets.all(8),
+                                      padding: const EdgeInsets.all(8),
                                       child: Container(
                                         width: double.infinity,
                                         height: 200,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .alternate,
                                           borderRadius:
                                               BorderRadius.circular(12),
@@ -996,7 +949,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(12, 16, 12, 8),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -1004,7 +957,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                   Icon(
                                                     Icons
                                                         .person_search_outlined,
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondary,
                                                     size: 32,
@@ -1012,7 +964,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 8, 0),
                                                       child: Column(
@@ -1031,13 +983,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               'itdwxm77' /* I.D. Submission */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF14181B),
                                                                   fontSize: 16,
                                                                   letterSpacing:
@@ -1049,7 +1000,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         4,
@@ -1061,13 +1012,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   .getText(
                                                                 'esiberkj' /* Document */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .labelSmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Plus Jakarta Sans',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF57636C),
                                                                     fontSize:
                                                                         12,
@@ -1088,13 +1038,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                             ),
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(16, 0, 16, 16),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -1102,7 +1051,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(12),
+                                                    padding: const EdgeInsets.all(12),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1120,7 +1069,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             height: 100,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
@@ -1129,7 +1077,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           8),
                                                               border:
                                                                   Border.all(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 width: 1,
@@ -1156,12 +1103,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1, 1),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets
+                                                                        const EdgeInsets
                                                                             .all(8),
                                                                     child: Row(
                                                                       mainAxisSize:
@@ -1179,11 +1126,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             buttonSize:
                                                                                 40,
                                                                             fillColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             icon:
                                                                                 Icon(
                                                                               Icons.delete_outlined,
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                             ),
                                                                             onPressed:
                                                                                 () async {
@@ -1196,7 +1141,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           ),
                                                                         if (_model.uploadedFileUrl1 ==
                                                                                 '')
-                                                                          FFButtonWidget(
                                                                             onPressed:
                                                                                 () async {
                                                                               final selectedMedia = await selectMedia(
@@ -1246,25 +1190,21 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                               '7cr0nik2' /* Upload */,
                                                                             ),
                                                                             icon:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.ios_share_rounded,
                                                                               size: 15,
                                                                             ),
                                                                             options:
                                                                                 FFButtonOptions(
                                                                               height: 40,
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
                                                                               iconAlignment: IconAlignment.end,
-                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-                                                                              color: FlutterFlowTheme.of(context).alternate,
-                                                                              textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                              iconPadding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                               elevation: 0,
                                                                               borderSide: BorderSide(
-                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                 width: 1,
                                                                               ),
                                                                               borderRadius: BorderRadius.circular(8),
@@ -1292,7 +1232,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 InputDecoration(
                                                               isDense: true,
                                                               labelStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -1310,7 +1249,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 '81ohf845' /* I.D. number */,
                                                               ),
                                                               hintStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -1325,7 +1263,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   width: 1,
@@ -1338,7 +1275,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               focusedBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0x00000000),
                                                                   width: 1,
@@ -1352,7 +1289,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -1366,7 +1302,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -1377,11 +1312,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             8),
                                                               ),
                                                               filled: true,
-                                                              fillColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
@@ -1392,7 +1325,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       0.0,
                                                                 ),
                                                             cursorColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                             validator: _model
@@ -1402,7 +1334,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(height: 8)),
+                                                          const SizedBox(height: 8)),
                                                     ),
                                                   ),
                                                 ),
@@ -1410,12 +1342,11 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                             ),
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsets.all(16),
+                                                padding: const EdgeInsets.all(16),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 80,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -1434,7 +1365,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(12, 8,
                                                                     12, 8),
                                                         child: Row(
@@ -1444,7 +1375,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             Icon(
                                                               Icons
                                                                   .portrait_outlined,
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondary,
                                                               size: 32,
@@ -1452,7 +1382,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             Expanded(
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -1475,14 +1405,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           .getText(
                                                                         '8onato6t' /* Submit selfie */,
                                                                       ),
-                                                                      style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyLarge
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Plus Jakarta Sans',
                                                                             color:
-                                                                                Color(0xFF14181B),
+                                                                                const Color(0xFF14181B),
                                                                             fontSize:
                                                                                 16,
                                                                             letterSpacing:
@@ -1500,7 +1429,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(12),
+                                                            const EdgeInsets.all(12),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -1516,7 +1445,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               height: 48,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .accent1,
                                                                 shape: BoxShape
@@ -1524,7 +1452,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(2),
                                                                 child:
                                                                     AuthUserStreamWidget(
@@ -1552,12 +1480,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             ),
                                                             Stack(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 0),
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0, 0),
                                                                   child:
                                                                       Container(
@@ -1565,7 +1493,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                     height: 4,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       borderRadius:
@@ -1579,18 +1506,16 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   height: 44,
                                                                   decoration:
                                                                       BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                     shape: BoxShape
                                                                         .circle,
                                                                   ),
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0, 0),
                                                                   child: Icon(
                                                                     Icons.route,
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     size: 32,
@@ -1603,7 +1528,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               height: 48,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .accent1,
                                                                 shape: BoxShape
@@ -1611,12 +1535,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               ),
                                                               child: Stack(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0, 0),
                                                                 children: [
                                                                   Padding(
                                                                     padding:
-                                                                        EdgeInsets
+                                                                        const EdgeInsets
                                                                             .all(2),
                                                                     child:
                                                                         ClipRRect(
@@ -1638,7 +1562,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0,
                                                                             0),
                                                                     child:
@@ -1648,13 +1572,11 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       buttonSize:
                                                                           40,
                                                                       fillColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
                                                                       icon:
                                                                           Icon(
                                                                         Icons
                                                                             .photo_camera_front_outlined,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         size:
                                                                             24,
@@ -1717,14 +1639,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 ],
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 16)),
                                                         ),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(12),
-                                                        child: FFButtonWidget(
+                                                            const EdgeInsets.all(12),
                                                           onPressed: () async {
                                                             if (() {
                                                               if (_model.uploadedFileUrl1 !=
@@ -1740,7 +1661,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               await _model
                                                                   .pageViewController
                                                                   ?.nextPage(
-                                                                duration: Duration(
+                                                                duration: const Duration(
                                                                     milliseconds:
                                                                         300),
                                                                 curve:
@@ -1755,16 +1676,14 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                     'Please submit the requested data to proceed.',
                                                                     style:
                                                                         TextStyle(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primaryText,
                                                                     ),
                                                                   ),
-                                                                  duration: Duration(
+                                                                  duration: const Duration(
                                                                       milliseconds:
                                                                           4000),
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
                                                                 ),
@@ -1780,24 +1699,22 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               FFButtonOptions(
                                                             height: 40,
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16,
                                                                         0,
                                                                         16,
                                                                         0),
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         0,
                                                                         0,
                                                                         0),
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondary,
                                                             textStyle:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -1817,7 +1734,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8)),
+                                                        const SizedBox(height: 8)),
                                                   ),
                                                 ),
                                               ),
@@ -1828,18 +1745,17 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16, 24, 16, 4),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
                                           0.9,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12),
+                                        padding: const EdgeInsets.all(12),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -1849,7 +1765,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 Card(
                                                   clipBehavior: Clip
                                                       .antiAliasWithSaveLayer,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   shape: RoundedRectangleBorder(
@@ -1858,12 +1773,11 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             8),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Icon(
                                                       Icons
                                                           .verified_user_rounded,
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .info,
                                                       size: 24,
@@ -1873,7 +1787,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 8, 0, 0, 0),
                                                     child: Column(
@@ -1885,7 +1799,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       0, 0, 0),
                                                           child: Text(
@@ -1894,7 +1808,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               'peu1x8vq' /* User verification */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
@@ -1908,7 +1821,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       4, 12, 0),
                                                           child: Text(
@@ -1917,7 +1830,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               'r979cvs0' /* Enable authentication by subit... */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodySmall
                                                                 .override(
@@ -1944,7 +1856,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(12),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -1952,12 +1864,11 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsets.all(8),
+                                      padding: const EdgeInsets.all(8),
                                       child: Container(
                                         width: double.infinity,
                                         height: 200,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .alternate,
                                           borderRadius:
                                               BorderRadius.circular(12),
@@ -1966,14 +1877,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(12, 16, 12, 8),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Icon(
                                                     Icons.map_outlined,
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondary,
                                                     size: 32,
@@ -1981,7 +1891,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 8, 0),
                                                       child: Column(
@@ -2000,13 +1910,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               'c5oin773' /* Location Tags */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF14181B),
                                                                   fontSize: 16,
                                                                   letterSpacing:
@@ -2018,7 +1927,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         4,
@@ -2030,13 +1939,12 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   .getText(
                                                                 'zlx06ngl' /* Secondary text */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .labelSmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Plus Jakarta Sans',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0xFF57636C),
                                                                     fontSize:
                                                                         12,
@@ -2054,20 +1962,19 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                   ),
                                                 ]
                                                     .addToStart(
-                                                        SizedBox(width: 8))
+                                                        const SizedBox(width: 8))
                                                     .addToEnd(
-                                                        SizedBox(width: 8)),
+                                                        const SizedBox(width: 8)),
                                               ),
                                             ),
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(16, 0, 16, 16),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -2075,7 +1982,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -2088,7 +1995,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       12,
                                                                       12,
@@ -2135,17 +2042,14 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             selectedChipStyle:
                                                                 ChipStyle(
                                                               backgroundColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .info,
                                                                         fontSize:
                                                                             12,
@@ -2153,7 +2057,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             0.0,
                                                                       ),
                                                               iconColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
                                                               iconSize: 16,
@@ -2166,24 +2069,20 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             unselectedChipStyle:
                                                                 ChipStyle(
                                                               backgroundColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         fontSize:
                                                                             12,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                              iconColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
                                                               iconSize: 16,
@@ -2214,7 +2113,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             'Baruta')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -2242,16 +2141,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       fontSize:
@@ -2260,7 +2156,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -2273,16 +2168,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -2290,7 +2182,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -2322,7 +2213,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             'Chacao')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12,
                                                                         0,
@@ -2424,16 +2315,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       fontSize:
@@ -2442,7 +2330,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -2455,16 +2342,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -2472,7 +2356,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -2504,7 +2387,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             'El Hatillo')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -2532,16 +2415,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       fontSize:
@@ -2550,7 +2430,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -2563,16 +2442,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -2580,7 +2456,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -2612,7 +2487,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             'Libertador')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -2675,16 +2550,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       fontSize:
@@ -2693,7 +2565,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -2706,16 +2577,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -2723,7 +2591,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -2755,7 +2622,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             'Sucre')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -2773,16 +2640,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       fontSize:
@@ -2791,7 +2655,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -2804,16 +2667,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -2821,7 +2681,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -2852,14 +2711,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                           flex: 2,
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child: Container(
                                                               width: 100,
                                                               height: 100,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 borderRadius:
@@ -2868,7 +2726,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             12),
                                                                 border:
                                                                     Border.all(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   width: 1,
@@ -2894,13 +2751,13 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0,
                                                                             1),
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -2913,10 +2770,8 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                             FlutterFlowIconButton(
                                                                               borderRadius: 12,
                                                                               buttonSize: 40,
-                                                                              fillColor: FlutterFlowTheme.of(context).alternate,
                                                                               icon: Icon(
                                                                                 Icons.delete_outlined,
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                               ),
                                                                               onPressed: () async {
                                                                                 safeSetState(() {
@@ -2927,7 +2782,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                               },
                                                                             ),
                                                                           if (_model.uploadedFileUrl3 == '')
-                                                                            FFButtonWidget(
                                                                               onPressed: () async {
                                                                                 final selectedMedia = await selectMedia(
                                                                                   mediaSource: MediaSource.photoGallery,
@@ -2974,24 +2828,20 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                               text: FFLocalizations.of(context).getText(
                                                                                 'vg5kkj61' /* Set location image */,
                                                                               ),
-                                                                              icon: Icon(
+                                                                              icon: const Icon(
                                                                                 Icons.ios_share_rounded,
                                                                                 size: 15,
                                                                               ),
                                                                               options: FFButtonOptions(
                                                                                 height: 40,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
                                                                                 iconAlignment: IconAlignment.end,
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-                                                                                color: FlutterFlowTheme.of(context).alternate,
-                                                                                textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                     ),
                                                                                 elevation: 0,
                                                                                 borderSide: BorderSide(
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   width: 1,
                                                                                 ),
                                                                                 borderRadius: BorderRadius.circular(8),
@@ -3008,8 +2858,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsets.all(4),
-                                                          child: FFButtonWidget(
+                                                              const EdgeInsets.all(4),
                                                             onPressed:
                                                                 () async {
                                                               await currentUserReference!
@@ -3032,24 +2881,22 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 FFButtonOptions(
                                                               height: 40,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
                                                                           16,
                                                                           0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           0,
                                                                           0,
                                                                           0),
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondary,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
@@ -3080,18 +2927,17 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16, 24, 16, 4),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
                                           0.9,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(12),
+                                        padding: const EdgeInsets.all(12),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -3101,7 +2947,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 Card(
                                                   clipBehavior: Clip
                                                       .antiAliasWithSaveLayer,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   shape: RoundedRectangleBorder(
@@ -3110,11 +2955,10 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                             8),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Icon(
                                                       Icons.location_on,
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .info,
                                                       size: 24,
@@ -3124,7 +2968,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 8, 0, 0, 0),
                                                     child: Column(
@@ -3136,7 +2980,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       0, 0, 0),
                                                           child: Text(
@@ -3145,7 +2989,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               '3paa0qf2' /* Activity Sync */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .headlineSmall
                                                                 .override(
@@ -3159,7 +3002,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       4, 12, 0),
                                                           child: Text(
@@ -3168,7 +3011,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                                                                 .getText(
                                                               '5pbya5zw' /* Enable activity by fixing loca... */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodySmall
                                                                 .override(
@@ -3198,9 +3040,9 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 1),
+                        alignment: const AlignmentDirectional(0, 1),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: smooth_page_indicator.SmoothPageIndicator(
                             controller: _model.pageViewController ??=
                                 PageController(initialPage: 0),
@@ -3209,7 +3051,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                             onDotClicked: (i) async {
                               await _model.pageViewController!.animateToPage(
                                 i,
-                                duration: Duration(milliseconds: 500),
+                                duration: const Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                               safeSetState(() {});
@@ -3220,9 +3062,7 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                               radius: 16,
                               dotWidth: 16,
                               dotHeight: 4,
-                              dotColor: FlutterFlowTheme.of(context).accent1,
                               activeDotColor:
-                                  FlutterFlowTheme.of(context).secondary,
                               paintStyle: PaintingStyle.fill,
                             ),
                           ),

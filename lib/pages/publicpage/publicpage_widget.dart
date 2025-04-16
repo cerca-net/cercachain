@@ -68,8 +68,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      FFAppState().isUserinPublicpage =
-          !(FFAppState().isUserinPublicpage ?? true);
       safeSetState(() {});
       _model.addToBagitems(widget.objectparameter!);
       safeSetState(() {});
@@ -89,15 +87,15 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(100.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(100.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -109,8 +107,8 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1.0),
-            end: Offset(0.0, 1.0),
+            begin: const Offset(0.0, 1.0),
+            end: const Offset(0.0, 1.0),
           ),
         ],
       ),
@@ -123,8 +121,8 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1.0),
-            end: Offset(0.0, 1.0),
+            begin: const Offset(0.0, 1.0),
+            end: const Offset(0.0, 1.0),
           ),
         ],
       ),
@@ -148,7 +146,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
 
     return StreamBuilder<UsersRecord>(
       stream: UsersRecord.getDocument(widget.profileparameter!),
@@ -156,14 +153,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             body: Center(
               child: SizedBox(
                 width: 50,
                 height: 50,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    FlutterFlowTheme.of(context).primary,
                   ),
                 ),
               ),
@@ -180,16 +175,15 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             body: Align(
-              alignment: AlignmentDirectional(0, 0),
+              alignment: const AlignmentDirectional(0, 0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
                 child: SafeArea(
                   child: Container(
                     width: double.infinity,
                     height: double.infinity,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 1170,
                     ),
                     decoration: BoxDecoration(
@@ -213,7 +207,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                               height: 50,
                               child: CircularProgressIndicator(
                                 valueColor: AlwaysStoppedAnimation<Color>(
-                                  FlutterFlowTheme.of(context).primary,
                                 ),
                               ),
                             ),
@@ -241,7 +234,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                   height: 240,
                                   decoration: BoxDecoration(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
                                     borderRadius: BorderRadius.circular(12),
                                     shape: BoxShape.rectangle,
                                   ),
@@ -257,9 +249,8 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                             height: 100,
                                             decoration: BoxDecoration(
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 bottomLeft: Radius.circular(0),
                                                 bottomRight: Radius.circular(0),
                                                 topLeft: Radius.circular(12),
@@ -267,7 +258,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                               ),
                                             ),
                                             child: ClipRRect(
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 bottomLeft: Radius.circular(0),
                                                 bottomRight: Radius.circular(0),
                                                 topLeft: Radius.circular(12),
@@ -284,7 +275,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                         ],
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 8, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -295,7 +286,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                           children: [
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsets.all(4),
+                                                padding: const EdgeInsets.all(4),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.min,
@@ -321,7 +312,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 valueColor:
                                                                     AlwaysStoppedAnimation<
                                                                         Color>(
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                 ),
@@ -338,13 +328,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           height: 100,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .alternate,
                                                             shape:
                                                                 BoxShape.circle,
                                                             border: Border.all(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .primaryBackground,
                                                               width: 1,
@@ -352,7 +340,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     4),
                                                             child: Container(
                                                               width: 100,
@@ -360,7 +348,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               clipBehavior: Clip
                                                                   .antiAlias,
                                                               decoration:
-                                                                  BoxDecoration(
+                                                                  const BoxDecoration(
                                                                 shape: BoxShape
                                                                     .circle,
                                                               ),
@@ -378,7 +366,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 1),
                                                       child: RichText(
                                                         textScaler:
@@ -391,7 +379,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               text:
                                                                   publicpageUsersRecord
                                                                       .name,
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
@@ -410,7 +397,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                   .getText(
                                                                 'd9hwpxrz' /*   */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
@@ -425,10 +411,9 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                   publicpageUsersRecord
                                                                       .surname,
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
-                                                          style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
@@ -444,13 +429,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, -1),
                                                       child: Text(
                                                         publicpageUsersRecord
                                                             .username,
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
@@ -465,7 +449,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       child: ClipRRect(
                                                         child: Container(
                                                           decoration:
-                                                              BoxDecoration(),
+                                                              const BoxDecoration(),
                                                         ),
                                                       ),
                                                     ),
@@ -474,7 +458,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                         true)
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(12, 0,
                                                                     12, 0),
                                                         child: Container(
@@ -482,7 +466,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           height: 40,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             borderRadius:
@@ -504,13 +487,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     .getText(
                                                                   'am409q5i' /* Verified */,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Montserrat',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
@@ -523,21 +504,20 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               Icon(
                                                                 Icons
                                                                     .verified_rounded,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
                                                                 size: 24,
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 8)),
                                                           ),
                                                         ),
                                                       ),
                                                   ]
                                                       .divide(
-                                                          SizedBox(height: 4))
+                                                          const SizedBox(height: 4))
                                                       .addToStart(
-                                                          SizedBox(height: 8)),
+                                                          const SizedBox(height: 8)),
                                                 ),
                                               ),
                                             ),
@@ -552,7 +532,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                   Container(
                                                     width: 100,
                                                     height: 120,
-                                                    decoration: BoxDecoration(),
+                                                    decoration: const BoxDecoration(),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -568,7 +548,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           height: 35,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             borderRadius:
@@ -605,7 +584,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           .animateTo(
                                                                         2,
                                                                         duration:
-                                                                            Duration(milliseconds: 300),
+                                                                            const Duration(milliseconds: 300),
                                                                         curve: Curves
                                                                             .ease,
                                                                       );
@@ -616,7 +595,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     width: 100,
                                                                     height: 100,
                                                                     decoration:
-                                                                        BoxDecoration(),
+                                                                        const BoxDecoration(),
                                                                     child: Row(
                                                                       mainAxisSize:
                                                                           MainAxisSize
@@ -629,12 +608,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           Icons
                                                                               .video_collection,
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           size:
                                                                               20,
                                                                         ),
                                                                         Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               -1,
                                                                               0),
                                                                           child:
@@ -663,7 +641,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     height: 50,
                                                                                     child: CircularProgressIndicator(
                                                                                       valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                        FlutterFlowTheme.of(context).primary,
                                                                                       ),
                                                                                     ),
                                                                                   ),
@@ -676,7 +653,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                   textCount,
                                                                                   formatType: FormatType.compact,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
@@ -697,7 +673,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                   thickness: 1,
                                                                   indent: 8,
                                                                   endIndent: 8,
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                 ),
@@ -723,7 +698,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           .animateTo(
                                                                         3,
                                                                         duration:
-                                                                            Duration(milliseconds: 300),
+                                                                            const Duration(milliseconds: 300),
                                                                         curve: Curves
                                                                             .ease,
                                                                       );
@@ -734,7 +709,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     width: 100,
                                                                     height: 100,
                                                                     decoration:
-                                                                        BoxDecoration(),
+                                                                        const BoxDecoration(),
                                                                     child: Row(
                                                                       mainAxisSize:
                                                                           MainAxisSize
@@ -747,7 +722,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           Icons
                                                                               .shopping_bag_rounded,
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           size:
                                                                               20,
                                                                         ),
@@ -778,7 +752,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                   height: 50,
                                                                                   child: CircularProgressIndicator(
                                                                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
                                                                                     ),
                                                                                   ),
                                                                                 ),
@@ -792,7 +765,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                 textCount,
                                                                                 formatType: FormatType.compact,
                                                                               ),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
                                                                                     fontSize: 16,
                                                                                     letterSpacing: 0.0,
@@ -815,7 +787,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             height: 35,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
@@ -825,7 +796,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child: Column(
                                                                 mainAxisSize:
@@ -838,14 +809,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                   Text(
                                                                     publicpageUsersRecord
                                                                         .bio,
-                                                                    style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
                                                                               'Inter',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
@@ -858,7 +827,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(height: 8)),
+                                                          const SizedBox(height: 8)),
                                                     ),
                                                   ),
                                                 ],
@@ -868,26 +837,23 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                         ),
                                       ),
                                       Align(
-                                        alignment: AlignmentDirectional(-1, -1),
+                                        alignment: const AlignmentDirectional(-1, -1),
                                         child: Padding(
-                                          padding: EdgeInsets.all(12),
+                                          padding: const EdgeInsets.all(12),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
                                             borderRadius: 100,
                                             buttonSize: 35,
                                             fillColor:
-                                                FlutterFlowTheme.of(context)
                                                     .secondaryBackground,
                                             icon: Icon(
                                               Icons.chevron_left_sharp,
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondaryText,
                                               size: 18,
                                             ),
                                             onPressed: () async {
                                               context.safePop();
-                                              FFAppState().isUserinPublicpage =
                                                   false;
                                               safeSetState(() {});
                                             },
@@ -903,39 +869,34 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                       Column(
                                         children: [
                                           Align(
-                                            alignment: Alignment(-1, 0),
+                                            alignment: const Alignment(-1, 0),
                                             child: FlutterFlowButtonTabBar(
                                               useToggleButtonStyle: true,
                                               isScrollable: true,
                                               labelStyle:
-                                                  FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
                                                         fontFamily: 'Inter',
                                                         fontSize: 12,
                                                         letterSpacing: 0.0,
                                                       ),
-                                              unselectedLabelStyle: TextStyle(),
+                                              unselectedLabelStyle: const TextStyle(),
                                               labelColor:
-                                                  FlutterFlowTheme.of(context)
                                                       .primary,
                                               unselectedLabelColor:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondaryText,
                                               backgroundColor:
-                                                  FlutterFlowTheme.of(context)
                                                       .accent1,
                                               unselectedBackgroundColor:
-                                                  FlutterFlowTheme.of(context)
                                                       .alternate,
                                               borderWidth: 0,
                                               borderRadius: 12,
                                               elevation: 0,
                                               labelPadding:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(20, 0, 20, 0),
                                               buttonMargin:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(8, 0, 0, 0),
                                               tabs: [
                                                 Tab(
@@ -988,7 +949,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   4, 0, 4, 0),
                                                       child: Column(
@@ -1005,7 +966,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             width: 100,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
                                                               borderRadius:
@@ -1015,7 +975,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(4),
                                                               child: Column(
                                                                 mainAxisSize:
@@ -1030,12 +990,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1,
                                                                             1),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               24,
                                                                               0,
@@ -1047,11 +1007,9 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                             .getText(
                                                                           'rrvc7b9p' /* Activities & Interests : */,
                                                                         ),
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Montserrat',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w500,
                                                                             ),
@@ -1059,7 +1017,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -1081,16 +1039,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       selectedChipStyle:
                                                                           ChipStyle(
                                                                         backgroundColor:
-                                                                            FlutterFlowTheme.of(context).primary,
-                                                                        textStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).info,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         iconColor:
-                                                                            FlutterFlowTheme.of(context).info,
                                                                         iconSize:
                                                                             16,
                                                                         elevation:
@@ -1101,17 +1055,13 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       unselectedChipStyle:
                                                                           ChipStyle(
                                                                         backgroundColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
-                                                                        textStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               fontSize: 10,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         iconColor:
-                                                                            FlutterFlowTheme.of(context).secondaryText,
                                                                         iconSize:
                                                                             16,
                                                                         elevation:
@@ -1139,7 +1089,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -1161,16 +1111,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       selectedChipStyle:
                                                                           ChipStyle(
                                                                         backgroundColor:
-                                                                            FlutterFlowTheme.of(context).primary,
-                                                                        textStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).info,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         iconColor:
-                                                                            FlutterFlowTheme.of(context).info,
                                                                         iconSize:
                                                                             16,
                                                                         elevation:
@@ -1181,17 +1127,13 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       unselectedChipStyle:
                                                                           ChipStyle(
                                                                         backgroundColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
-                                                                        textStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               fontSize: 10,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         iconColor:
-                                                                            FlutterFlowTheme.of(context).secondaryText,
                                                                         iconSize:
                                                                             16,
                                                                         elevation:
@@ -1219,15 +1161,15 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     ),
                                                                   ),
                                                                 ]
-                                                                    .divide(SizedBox(
+                                                                    .divide(const SizedBox(
                                                                         height:
                                                                             8))
                                                                     .addToStart(
-                                                                        SizedBox(
+                                                                        const SizedBox(
                                                                             height:
                                                                                 8))
                                                                     .addToEnd(
-                                                                        SizedBox(
+                                                                        const SizedBox(
                                                                             height:
                                                                                 8)),
                                                               ),
@@ -1239,7 +1181,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               height: 200,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 borderRadius:
@@ -1249,7 +1190,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             12),
                                                                 child: Column(
@@ -1270,7 +1211,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                         decoration:
                                                                             BoxDecoration(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                           borderRadius:
                                                                               BorderRadius.circular(12),
                                                                         ),
@@ -1284,12 +1224,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               [
                                                                             Expanded(
                                                                               child: Padding(
-                                                                                padding: EdgeInsets.all(8),
+                                                                                padding: const EdgeInsets.all(8),
                                                                                 child: Container(
                                                                                   width: 100,
                                                                                   height: double.infinity,
                                                                                   decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     borderRadius: BorderRadius.circular(12),
                                                                                   ),
                                                                                   child: Column(
@@ -1297,46 +1236,36 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     crossAxisAlignment: CrossAxisAlignment.stretch,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsets.all(8),
+                                                                                        padding: const EdgeInsets.all(8),
                                                                                         child: Text(
                                                                                           FFLocalizations.of(context).getText(
                                                                                             'ieiybayx' /* Places : */,
                                                                                           ),
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w600,
                                                                                               ),
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(12, 4, 12, 0),
                                                                                         child: FlutterFlowChoiceChips(
                                                                                           options: publicpageUsersRecord.userPlaces.take(3).toList().map((label) => ChipData(label)).toList(),
                                                                                           onChanged: (val) => safeSetState(() => _model.choiceChipsValue3 = val?.firstOrNull),
                                                                                           selectedChipStyle: ChipStyle(
-                                                                                            backgroundColor: FlutterFlowTheme.of(context).secondary,
-                                                                                            textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
-                                                                                                  color: FlutterFlowTheme.of(context).info,
                                                                                                   fontSize: 10,
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
-                                                                                            iconColor: FlutterFlowTheme.of(context).info,
                                                                                             iconSize: 16,
                                                                                             elevation: 0,
                                                                                             borderRadius: BorderRadius.circular(8),
                                                                                           ),
                                                                                           unselectedChipStyle: ChipStyle(
-                                                                                            backgroundColor: FlutterFlowTheme.of(context).alternate,
-                                                                                            textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 10,
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
-                                                                                            iconColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                             iconSize: 16,
                                                                                             elevation: 0,
                                                                                             borderRadius: BorderRadius.circular(8),
@@ -1360,12 +1289,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               height: 100,
                                                                               child: VerticalDivider(
                                                                                 thickness: 2,
-                                                                                color: FlutterFlowTheme.of(context).alternate,
                                                                               ),
                                                                             ),
                                                                             Expanded(
                                                                               child: Padding(
-                                                                                padding: EdgeInsets.all(8),
+                                                                                padding: const EdgeInsets.all(8),
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -1373,7 +1301,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                   children: [
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(1, 0),
+                                                                                        alignment: const AlignmentDirectional(1, 0),
                                                                                         child: RichText(
                                                                                           textScaler: MediaQuery.of(context).textScaler,
                                                                                           text: TextSpan(
@@ -1382,9 +1310,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 text: FFLocalizations.of(context).getText(
                                                                                                   'p1qie27l' /* USER PIN :  */,
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Montserrat',
-                                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       fontSize: 12,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w500,
@@ -1399,14 +1325,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                   '0',
                                                                                                 ),
                                                                                                 style: TextStyle(
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 16,
                                                                                                 ),
                                                                                               )
                                                                                             ],
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -1418,7 +1341,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     ),
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(1, 0),
+                                                                                        alignment: const AlignmentDirectional(1, 0),
                                                                                         child: RichText(
                                                                                           textScaler: MediaQuery.of(context).textScaler,
                                                                                           text: TextSpan(
@@ -1427,9 +1350,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 text: FFLocalizations.of(context).getText(
                                                                                                   'ewrxuzmi' /* OBJECT PIN :  */,
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Montserrat',
-                                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       fontSize: 12,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w500,
@@ -1440,14 +1361,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                   'fbyjwip0' /* 212 */,
                                                                                                 ),
                                                                                                 style: TextStyle(
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 16,
                                                                                                 ),
                                                                                               )
                                                                                             ],
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -1459,7 +1377,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     ),
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(1, 0),
+                                                                                        alignment: const AlignmentDirectional(1, 0),
                                                                                         child: RichText(
                                                                                           textScaler: MediaQuery.of(context).textScaler,
                                                                                           text: TextSpan(
@@ -1468,9 +1386,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 text: FFLocalizations.of(context).getText(
                                                                                                   'j6onlmua' /* VOTE RATE :  */,
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Montserrat',
-                                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       fontSize: 12,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w500,
@@ -1481,14 +1397,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                   'avby2qrn' /* 213 */,
                                                                                                 ),
                                                                                                 style: TextStyle(
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 16,
                                                                                                 ),
                                                                                               )
                                                                                             ],
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -1500,7 +1413,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     ),
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(1, 0),
+                                                                                        alignment: const AlignmentDirectional(1, 0),
                                                                                         child: RichText(
                                                                                           textScaler: MediaQuery.of(context).textScaler,
                                                                                           text: TextSpan(
@@ -1509,9 +1422,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 text: FFLocalizations.of(context).getText(
                                                                                                   '6u4ml2fe' /* ORDER RATE :  */,
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Montserrat',
-                                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       fontSize: 12,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w500,
@@ -1522,14 +1433,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                   'gz1x8wb4' /* 213 */,
                                                                                                 ),
                                                                                                 style: TextStyle(
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 16,
                                                                                                 ),
                                                                                               )
                                                                                             ],
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -1548,9 +1456,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 '8jz7qus4' /*  # ORDERS :  */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Montserrat',
-                                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w500,
@@ -1561,14 +1467,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 'yl1fcbft' /* 212 */,
                                                                                               ),
                                                                                               style: TextStyle(
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 fontSize: 16,
                                                                                               ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Montserrat',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 fontSize: 12,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w500,
@@ -1577,11 +1480,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                         textAlign: TextAlign.center,
                                                                                       ),
                                                                                     ),
-                                                                                  ].divide(SizedBox(height: 8)).addToStart(SizedBox(height: 4)).addToEnd(SizedBox(height: 4)),
+                                                                                  ].divide(const SizedBox(height: 8)).addToStart(const SizedBox(height: 4)).addToEnd(const SizedBox(height: 4)),
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                          ].addToStart(SizedBox(width: 8)).addToEnd(SizedBox(width: 8)),
+                                                                          ].addToStart(const SizedBox(width: 8)).addToEnd(const SizedBox(width: 8)),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -1595,14 +1498,13 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                         decoration:
                                                                             BoxDecoration(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                           borderRadius:
                                                                               BorderRadius.circular(12),
                                                                         ),
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(8),
+                                                                              const EdgeInsets.all(8),
                                                                           child:
                                                                               Column(
                                                                             mainAxisSize:
@@ -1622,13 +1524,13 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ].divide(SizedBox(height: 8)),
+                                                                            ].divide(const SizedBox(height: 8)),
                                                                           ),
                                                                         ),
                                                                       ),
                                                                     ),
                                                                   ].divide(
-                                                                      SizedBox(
+                                                                      const SizedBox(
                                                                           height:
                                                                               8)),
                                                                 ),
@@ -1636,12 +1538,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 8)),
                                                       ),
                                                     ),
@@ -1659,7 +1561,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   4, 0, 4, 0),
                                                       child: Column(
@@ -1668,7 +1570,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         8,
@@ -1680,7 +1582,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               height: 50,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 borderRadius:
@@ -1698,7 +1599,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0,
                                                                             0),
                                                                     child:
@@ -1731,17 +1632,13 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       selectedChipStyle:
                                                                           ChipStyle(
                                                                         backgroundColor:
-                                                                            FlutterFlowTheme.of(context).secondary,
-                                                                        textStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).info,
                                                                               fontSize: 12,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         iconColor:
-                                                                            FlutterFlowTheme.of(context).info,
                                                                         iconSize:
                                                                             16,
                                                                         elevation:
@@ -1752,16 +1649,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       unselectedChipStyle:
                                                                           ChipStyle(
                                                                         backgroundColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
-                                                                        textStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         iconColor:
-                                                                            FlutterFlowTheme.of(context).secondaryText,
                                                                         iconSize:
                                                                             16,
                                                                         elevation:
@@ -1806,7 +1699,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                   .infinity,
                                                               height: 100,
                                                               decoration:
-                                                                  BoxDecoration(),
+                                                                  const BoxDecoration(),
                                                               child: PagedMasonryGridView<
                                                                   DocumentSnapshot<
                                                                       Object?>?,
@@ -1855,7 +1748,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           CircularProgressIndicator(
                                                                         valueColor:
                                                                             AlwaysStoppedAnimation<Color>(
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primary,
                                                                         ),
                                                                       ),
@@ -1874,7 +1766,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           CircularProgressIndicator(
                                                                         valueColor:
                                                                             AlwaysStoppedAnimation<Color>(
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primary,
                                                                         ),
                                                                       ),
@@ -1906,7 +1797,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                 height: 50,
                                                                                 child: CircularProgressIndicator(
                                                                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                    FlutterFlowTheme.of(context).primary,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -1934,7 +1824,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     elevation: 0,
                                                                                     insetPadding: EdgeInsets.zero,
                                                                                     backgroundColor: Colors.transparent,
-                                                                                    alignment: AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
+                                                                                    alignment: const AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
                                                                                     child: GestureDetector(
                                                                                       onTap: () {
                                                                                         FocusScope.of(dialogContext).unfocus();
@@ -1953,12 +1843,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               borderRadius: BorderRadius.circular(8),
                                                                               child: Container(
                                                                                 width: double.infinity,
-                                                                                constraints: BoxConstraints(
+                                                                                constraints: const BoxConstraints(
                                                                                   maxHeight: 320,
                                                                                 ),
                                                                                 decoration: BoxDecoration(
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 5,
                                                                                       color: Color(0x3416202A),
@@ -1990,7 +1879,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 return Container(
                                                                                                   width: 200,
                                                                                                   height: 200,
-                                                                                                  decoration: BoxDecoration(),
+                                                                                                  decoration: const BoxDecoration(),
                                                                                                   child: Visibility(
                                                                                                     visible: feedobjectimagesItem != null && feedobjectimagesItem != '',
                                                                                                     child: ClipRRect(
@@ -2053,7 +1942,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 width: 100,
                                                                                                 height: 320,
                                                                                                 decoration: BoxDecoration(
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                 ),
                                                                                                 child: Stack(
                                                                                                   children: [
@@ -2073,21 +1961,14 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                           title: objectSubmissionRecord.header,
                                                                                                         ),
                                                                                                       ),
-                                                                                                      titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
                                                                                                             fontFamily: 'Sora',
-                                                                                                            color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                             fontSize: 20,
                                                                                                             letterSpacing: 0.0,
                                                                                                           ),
-                                                                                                      playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                                             fontFamily: 'Inter',
-                                                                                                            color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                             letterSpacing: 0.0,
                                                                                                           ),
-                                                                                                      fillColor: Color(0x00000000),
-                                                                                                      playbackButtonColor: FlutterFlowTheme.of(context).alternate,
-                                                                                                      activeTrackColor: FlutterFlowTheme.of(context).primary,
-                                                                                                      inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
+                                                                                                      fillColor: const Color(0x00000000),
                                                                                                       elevation: 0,
                                                                                                       playInBackground: PlayInBackground.enabled,
                                                                                                     ),
@@ -2100,22 +1981,20 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                       ),
                                                                                     if ((objectSubmissionRecord.body != null && objectSubmissionRecord.body != '') && !(objectSubmissionRecord.imagesextra.isNotEmpty))
                                                                                       Padding(
-                                                                                        padding: EdgeInsets.all(8),
+                                                                                        padding: const EdgeInsets.all(8),
                                                                                         child: Column(
                                                                                           mainAxisSize: MainAxisSize.min,
                                                                                           mainAxisAlignment: MainAxisAlignment.start,
                                                                                           crossAxisAlignment: CrossAxisAlignment.start,
                                                                                           children: [
                                                                                             Align(
-                                                                                              alignment: AlignmentDirectional(-1, -1),
+                                                                                              alignment: const AlignmentDirectional(-1, -1),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsets.all(8),
+                                                                                                padding: const EdgeInsets.all(8),
                                                                                                 child: Text(
                                                                                                   objectSubmissionRecord.header,
                                                                                                   maxLines: 3,
-                                                                                                  style: FlutterFlowTheme.of(context).titleMedium.override(
                                                                                                         fontFamily: 'Inter',
-                                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                         letterSpacing: 0.0,
                                                                                                       ),
                                                                                                 ),
@@ -2125,18 +2004,15 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                               thickness: 1,
                                                                                               indent: 12,
                                                                                               endIndent: 12,
-                                                                                              color: FlutterFlowTheme.of(context).alternate,
                                                                                             ),
                                                                                             Align(
-                                                                                              alignment: AlignmentDirectional(-1, -1),
+                                                                                              alignment: const AlignmentDirectional(-1, -1),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 8),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 8),
                                                                                                 child: Text(
                                                                                                   objectSubmissionRecord.body,
                                                                                                   maxLines: 4,
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                         fontFamily: 'Inter',
-                                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                         letterSpacing: 0.0,
                                                                                                       ),
                                                                                                 ),
@@ -2175,7 +2051,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   4, 0, 4, 0),
                                                       child: Column(
@@ -2187,7 +2063,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         8,
@@ -2199,7 +2075,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               height: 50,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 borderRadius:
@@ -2209,7 +2084,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             6,
                                                                             6,
@@ -2231,11 +2106,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                         height:
                                                                             100,
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           color:
                                                                               Color(0x00FFFFFF),
                                                                         ),
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0,
                                                                             0),
                                                                         child:
@@ -2246,7 +2121,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               MainAxisAlignment.spaceEvenly,
                                                                           children: [
                                                                             Align(
-                                                                              alignment: AlignmentDirectional(0, 0),
+                                                                              alignment: const AlignmentDirectional(0, 0),
                                                                               child: FlutterFlowChoiceChips(
                                                                                 options: [
                                                                                   ChipData(FFLocalizations.of(context).getText(
@@ -2265,25 +2140,17 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                 ],
                                                                                 onChanged: (val) => safeSetState(() => _model.choiceChipsItemsValue = val?.firstOrNull),
                                                                                 selectedChipStyle: ChipStyle(
-                                                                                  backgroundColor: FlutterFlowTheme.of(context).secondary,
-                                                                                  textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).info,
                                                                                         letterSpacing: 0.0,
                                                                                       ),
-                                                                                  iconColor: FlutterFlowTheme.of(context).info,
                                                                                   iconSize: 16,
                                                                                   elevation: 0,
                                                                                   borderRadius: BorderRadius.circular(8),
                                                                                 ),
                                                                                 unselectedChipStyle: ChipStyle(
-                                                                                  backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                  textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         letterSpacing: 0.0,
                                                                                       ),
-                                                                                  iconColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                   iconSize: 16,
                                                                                   elevation: 0,
                                                                                   borderRadius: BorderRadius.circular(8),
@@ -2318,7 +2185,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             Expanded(
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8,
                                                                             12,
@@ -2358,7 +2225,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               CircularProgressIndicator(
                                                                             valueColor:
                                                                                 AlwaysStoppedAnimation<Color>(
-                                                                              FlutterFlowTheme.of(context).primary,
                                                                             ),
                                                                           ),
                                                                         ),
@@ -2374,7 +2240,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       physics:
                                                                           const NeverScrollableScrollPhysics(),
                                                                       gridDelegate:
-                                                                          SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                                          const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                                         crossAxisCount:
                                                                             2,
                                                                       ),
@@ -2405,7 +2271,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     height: 50,
                                                                                     child: CircularProgressIndicator(
                                                                                       valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                        FlutterFlowTheme.of(context).primary,
                                                                                       ),
                                                                                     ),
                                                                                   ),
@@ -2427,7 +2292,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                         elevation: 0,
                                                                                         insetPadding: EdgeInsets.zero,
                                                                                         backgroundColor: Colors.transparent,
-                                                                                        alignment: AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
+                                                                                        alignment: const AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
                                                                                         child: GestureDetector(
                                                                                           onTap: () {
                                                                                             FocusScope.of(dialogContext).unfocus();
@@ -2446,12 +2311,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                   child: Container(
                                                                                     width: 100,
                                                                                     height: 240,
-                                                                                    constraints: BoxConstraints(
+                                                                                    constraints: const BoxConstraints(
                                                                                       maxHeight: 320,
                                                                                     ),
                                                                                     decoration: BoxDecoration(
-                                                                                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                      boxShadow: [
+                                                                                      boxShadow: const [
                                                                                         BoxShadow(
                                                                                           blurRadius: 5,
                                                                                           color: Color(0x3416202A),
@@ -2495,26 +2359,24 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                             },
                                                                                           ),
                                                                                         Align(
-                                                                                          alignment: AlignmentDirectional(1, 1),
+                                                                                          alignment: const AlignmentDirectional(1, 1),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsets.all(8),
+                                                                                            padding: const EdgeInsets.all(8),
                                                                                             child: Container(
                                                                                               height: 40,
                                                                                               decoration: BoxDecoration(
-                                                                                                color: FlutterFlowTheme.of(context).alternate,
                                                                                                 borderRadius: BorderRadius.circular(12),
                                                                                               ),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsets.all(4),
+                                                                                                padding: const EdgeInsets.all(4),
                                                                                                 child: Row(
                                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
                                                                                                       child: Icon(
                                                                                                         Icons.toll,
-                                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                         size: 16,
                                                                                                       ),
                                                                                                     ),
@@ -2522,22 +2384,18 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                       child: Text(
                                                                                                         staggeredViewSubmissionRecord.refvalue,
                                                                                                         textAlign: TextAlign.center,
-                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Inter',
-                                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                               letterSpacing: 0.0,
                                                                                                             ),
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 4, 0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 4, 0),
                                                                                                       child: FlutterFlowIconButton(
                                                                                                         borderRadius: 12,
                                                                                                         buttonSize: 30,
-                                                                                                        fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                         icon: Icon(
                                                                                                           Icons.add,
-                                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                           size: 14,
                                                                                                         ),
                                                                                                         onPressed: () async {
@@ -2546,7 +2404,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                         },
                                                                                                       ),
                                                                                                     ),
-                                                                                                  ].divide(SizedBox(width: 8)),
+                                                                                                  ].divide(const SizedBox(width: 8)),
                                                                                                 ),
                                                                                               ),
                                                                                             ),
@@ -2608,7 +2466,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                             child:
                                                                                 CircularProgressIndicator(
                                                                               valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                FlutterFlowTheme.of(context).primary,
                                                                               ),
                                                                             ),
                                                                           ),
@@ -2622,7 +2479,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       return ListView
                                                                           .separated(
                                                                         padding:
-                                                                            EdgeInsets.fromLTRB(
+                                                                            const EdgeInsets.fromLTRB(
                                                                           0,
                                                                           4,
                                                                           0,
@@ -2636,7 +2493,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                             listViewCatalogueRecordList.length,
                                                                         separatorBuilder:
                                                                             (_, __) =>
-                                                                                SizedBox(height: 8),
+                                                                                const SizedBox(height: 8),
                                                                         itemBuilder:
                                                                             (context,
                                                                                 listViewIndex) {
@@ -2657,7 +2514,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                       elevation: 0,
                                                                                       insetPadding: EdgeInsets.zero,
                                                                                       backgroundColor: Colors.transparent,
-                                                                                      alignment: AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
+                                                                                      alignment: const AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
                                                                                       child: GestureDetector(
                                                                                         onTap: () {
                                                                                           FocusScope.of(dialogContext).unfocus();
@@ -2673,11 +2530,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                 width: 100,
                                                                                 height: 157,
                                                                                 decoration: BoxDecoration(
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
                                                                                   borderRadius: BorderRadius.circular(12),
                                                                                 ),
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsets.all(12),
+                                                                                  padding: const EdgeInsets.all(12),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.min,
                                                                                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -2688,12 +2544,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                         crossAxisAlignment: CrossAxisAlignment.center,
                                                                                         children: [
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
                                                                                             child: Text(
                                                                                               listViewCatalogueRecord.catalalogueName,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
-                                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                     fontSize: 18,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w600,
@@ -2701,14 +2555,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                             child: Text(
                                                                                               FFLocalizations.of(context).getText(
                                                                                                 'a7rmp25t' /* # : */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
-                                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                     fontSize: 14,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.normal,
@@ -2717,9 +2569,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                           ),
                                                                                           Text(
                                                                                             listViewCatalogueRecord.totalItems.toString(),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 16,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w600,
@@ -2727,12 +2577,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                           ),
                                                                                           Expanded(
                                                                                             child: Align(
-                                                                                              alignment: AlignmentDirectional(1, 0),
+                                                                                              alignment: const AlignmentDirectional(1, 0),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsets.all(8),
+                                                                                                padding: const EdgeInsets.all(8),
                                                                                                 child: Icon(
                                                                                                   Icons.edit,
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   size: 24,
                                                                                                 ),
                                                                                               ),
@@ -2746,11 +2595,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                           decoration: BoxDecoration(
                                                                                             borderRadius: BorderRadius.circular(8),
                                                                                             border: Border.all(
-                                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                               width: 1,
                                                                                             ),
                                                                                           ),
-                                                                                          child: Padding(
+                                                                                          child: const Padding(
                                                                                             padding: EdgeInsets.all(8),
                                                                                             child: Column(
                                                                                               mainAxisSize: MainAxisSize.max,
@@ -2761,7 +2609,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                           ),
                                                                                         ),
                                                                                       ),
-                                                                                    ].divide(SizedBox(height: 8)),
+                                                                                    ].divide(const SizedBox(height: 8)),
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -2772,12 +2620,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     },
                                                                   ),
                                                                 ].divide(
-                                                                    SizedBox(
+                                                                    const SizedBox(
                                                                         height:
                                                                             8)),
                                                               ),
                                                             ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 4)),
                                                       ),
                                                     ),
@@ -2789,18 +2637,16 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                         ],
                                       ),
                                       Align(
-                                        alignment: AlignmentDirectional(1, -1),
+                                        alignment: const AlignmentDirectional(1, -1),
                                         child: Container(
                                           width: 120,
                                           height: 46,
                                           decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
                                                 .alternate,
                                             borderRadius:
                                                 BorderRadius.circular(12),
                                             border: Border.all(
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .alternate,
                                               width: 1,
                                             ),
@@ -2810,7 +2656,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                               Builder(
                                                 builder: (context) {
                                                   if (_model.isPinned) {
-                                                    return FFButtonWidget(
                                                       onPressed: () async {
                                                         await publicpageUsersRecord
                                                             .reference
@@ -2850,7 +2695,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       icon: FaIcon(
                                                         FontAwesomeIcons.mapPin,
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
                                                         size: 14,
@@ -2859,24 +2703,21 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                         width: double.infinity,
                                                         height: double.infinity,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(16, 0,
                                                                     16, 0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0, 0, 0, 0),
-                                                        color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
                                                         textStyle:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   letterSpacing:
@@ -2889,7 +2730,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       ),
                                                     );
                                                   } else {
-                                                    return FFButtonWidget(
                                                       onPressed: () async {
                                                         await publicpageUsersRecord
                                                             .reference
@@ -2929,7 +2769,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       icon: FaIcon(
                                                         FontAwesomeIcons.mapPin,
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondary,
                                                         size: 14,
@@ -2938,25 +2777,22 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                         width: double.infinity,
                                                         height: double.infinity,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(16, 0,
                                                                     16, 0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0, 0, 0, 0),
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         textStyle:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   letterSpacing:
@@ -2978,12 +2814,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8)),
+                              ].divide(const SizedBox(height: 8)),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0, 1),
+                              alignment: const AlignmentDirectional(0, 1),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0, 0, 0, 24),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -2992,15 +2828,14 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                       CrossAxisAlignment.stretch,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 0, 8, 0),
                                       child: Container(
                                         width: 100,
                                         height: 560,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .alternate,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4,
                                               color: Color(0x33000000),
@@ -3018,7 +2853,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                           autovalidateMode:
                                               AutovalidateMode.disabled,
                                           child: Padding(
-                                            padding: EdgeInsets.all(8),
+                                            padding: const EdgeInsets.all(8),
                                             child: SizedBox(
                                               width: double.infinity,
                                               height: 500,
@@ -3036,7 +2871,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(0,
                                                                     8, 0, 0),
                                                         child: Row(
@@ -3049,7 +2884,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24,
                                                                           0,
@@ -3061,13 +2896,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     .getText(
                                                                   'qn31det6' /* Your bag */,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Montserrat',
-                                                                      color: FlutterFlowTheme.of(context)
                                                                           .secondaryText,
                                                                       fontSize:
                                                                           20,
@@ -3084,7 +2917,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8,
                                                                       0,
@@ -3096,7 +2929,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             height: 100,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme.of(
                                                                       context)
                                                                   .secondaryBackground,
                                                               borderRadius:
@@ -3121,7 +2953,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     children: [
                                                                       Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(12),
+                                                                            const EdgeInsets.all(12),
                                                                         child:
                                                                             Builder(
                                                                           builder:
@@ -3136,17 +2968,16 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               itemBuilder: (context, bagIndex) {
                                                                                 final bagItem = bag[bagIndex];
                                                                                 return Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                                                                                   child: Container(
                                                                                     decoration: BoxDecoration(
                                                                                       borderRadius: BorderRadius.circular(12),
                                                                                       border: Border.all(
-                                                                                        color: FlutterFlowTheme.of(context).alternate,
                                                                                         width: 1,
                                                                                       ),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(8),
+                                                                                      padding: const EdgeInsets.all(8),
                                                                                       child: StreamBuilder<SubmissionRecord>(
                                                                                         stream: SubmissionRecord.getDocument(bagItem),
                                                                                         builder: (context, snapshot) {
@@ -3158,7 +2989,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 height: 50,
                                                                                                 child: CircularProgressIndicator(
                                                                                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                    FlutterFlowTheme.of(context).primary,
                                                                                                   ),
                                                                                                 ),
                                                                                               ),
@@ -3173,7 +3003,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                             children: [
                                                                                               Expanded(
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                                   child: RichText(
                                                                                                     textScaler: MediaQuery.of(context).textScaler,
                                                                                                     text: TextSpan(
@@ -3183,9 +3013,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                             _model.bagitems.length.toString(),
                                                                                                             '1',
                                                                                                           ),
-                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                 fontFamily: 'Inter',
-                                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                                 fontSize: 16,
                                                                                                                 letterSpacing: 8,
                                                                                                                 fontWeight: FontWeight.w600,
@@ -3193,12 +3021,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                         ),
                                                                                                         TextSpan(
                                                                                                           text: rowSubmissionRecord.header,
-                                                                                                          style: TextStyle(),
+                                                                                                          style: const TextStyle(),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                             fontFamily: 'Inter',
-                                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                             fontSize: 16,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.w500,
@@ -3209,12 +3035,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                                 child: Text(
                                                                                                   rowSubmissionRecord.objectRefvalue.toString(),
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                         fontFamily: 'Inter',
-                                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                         fontSize: 16,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.w500,
@@ -3222,14 +3046,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                                 child: Text(
                                                                                                   FFLocalizations.of(context).getText(
                                                                                                     '6hukamju' /* T. */,
                                                                                                   ),
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                         fontFamily: 'Inter',
-                                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                         fontSize: 16,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.w600,
@@ -3239,10 +3061,8 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                               FlutterFlowIconButton(
                                                                                                 borderRadius: 100,
                                                                                                 buttonSize: 30,
-                                                                                                fillColor: FlutterFlowTheme.of(context).alternate,
                                                                                                 icon: Icon(
                                                                                                   Icons.close,
-                                                                                                  color: FlutterFlowTheme.of(context).secondary,
                                                                                                   size: 14,
                                                                                                 ),
                                                                                                 onPressed: () async {
@@ -3272,7 +3092,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(8,
                                                                     0, 8, 0),
                                                         child: Row(
@@ -3285,13 +3105,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                           children: [
                                                             Expanded(
                                                               child:
-                                                                  FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   await _model
                                                                       .bagPageViewController
                                                                       ?.nextPage(
-                                                                    duration: Duration(
+                                                                    duration: const Duration(
                                                                         milliseconds:
                                                                             300),
                                                                     curve: Curves
@@ -3303,7 +3122,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     .getText(
                                                                   'w2nk774u' /* Order */,
                                                                 ),
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .login_sharp,
                                                                   size: 20,
@@ -3311,7 +3130,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
@@ -3321,22 +3140,19 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       IconAlignment
                                                                           .end,
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional.fromSTEB(
+                                                                      const EdgeInsetsDirectional.fromSTEB(
                                                                           0,
                                                                           0,
                                                                           0,
                                                                           0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Montserrat',
                                                                         color:
-                                                                            FlutterFlowTheme.of(context).secondaryText,
                                                                         fontSize:
                                                                             14,
                                                                         letterSpacing:
@@ -3350,14 +3166,14 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8)),
                                                         ),
                                                       ),
                                                     ]
-                                                        .divide(SizedBox(
+                                                        .divide(const SizedBox(
                                                             height: 8))
-                                                        .addToEnd(SizedBox(
+                                                        .addToEnd(const SizedBox(
                                                             height: 8)),
                                                   ),
                                                   Column(
@@ -3367,12 +3183,11 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   8),
                                                           child: Container(
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme.of(
                                                                       context)
                                                                   .secondaryBackground,
                                                               borderRadius:
@@ -3382,7 +3197,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child: Column(
                                                                 mainAxisSize:
@@ -3390,7 +3205,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                         .max,
                                                                 children: [
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8,
                                                                             8,
@@ -3409,28 +3224,26 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           height:
                                                                               32,
                                                                           decoration:
-                                                                              BoxDecoration(
+                                                                              const BoxDecoration(
                                                                             color: Color(0xADFF6A73),
                                                                             shape: BoxShape.circle,
                                                                           ),
                                                                           child:
                                                                               Icon(
                                                                             Icons.description_rounded,
-                                                                            color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                             size: 20,
                                                                           ),
                                                                         ),
                                                                         Expanded(
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                             child: Text(
                                                                               FFLocalizations.of(context).getText(
                                                                                 'n04chxo4' /* Order description */,
                                                                               ),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Plus Jakarta Sans',
-                                                                                    color: Color(0xFF15161E),
+                                                                                    color: const Color(0xFF15161E),
                                                                                     fontSize: 14,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.bold,
@@ -3445,7 +3258,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(12),
+                                                                          const EdgeInsets.all(12),
                                                                       child:
                                                                           Builder(
                                                                         builder:
@@ -3458,16 +3271,15 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                             shrinkWrap: true,
                                                                             scrollDirection: Axis.vertical,
                                                                             itemCount: bag.length,
-                                                                            separatorBuilder: (_, __) => SizedBox(height: 4),
+                                                                            separatorBuilder: (_, __) => const SizedBox(height: 4),
                                                                             itemBuilder: (context, bagIndex) {
                                                                               final bagItem = bag[bagIndex];
                                                                               return Container(
                                                                                 decoration: BoxDecoration(
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
                                                                                   borderRadius: BorderRadius.circular(12),
                                                                                 ),
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsets.all(8),
+                                                                                  padding: const EdgeInsets.all(8),
                                                                                   child: StreamBuilder<SubmissionRecord>(
                                                                                     stream: SubmissionRecord.getDocument(bagItem),
                                                                                     builder: (context, snapshot) {
@@ -3479,7 +3291,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                             height: 50,
                                                                                             child: CircularProgressIndicator(
                                                                                               valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                FlutterFlowTheme.of(context).primary,
                                                                                               ),
                                                                                             ),
                                                                                           ),
@@ -3494,7 +3305,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                         children: [
                                                                                           Expanded(
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                               child: RichText(
                                                                                                 textScaler: MediaQuery.of(context).textScaler,
                                                                                                 text: TextSpan(
@@ -3506,9 +3317,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                               '1',
                                                                                                             )
                                                                                                           : '1',
-                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                             fontFamily: 'Inter',
-                                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                             fontSize: 16,
                                                                                                             letterSpacing: 8,
                                                                                                             fontWeight: FontWeight.w600,
@@ -3516,12 +3325,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                                     ),
                                                                                                     TextSpan(
                                                                                                       text: rowSubmissionRecord.header,
-                                                                                                      style: TextStyle(),
+                                                                                                      style: const TextStyle(),
                                                                                                     )
                                                                                                   ],
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                         fontFamily: 'Inter',
-                                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                         fontSize: 16,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.w500,
@@ -3532,12 +3339,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                             child: Text(
                                                                                               rowSubmissionRecord.objectRefvalue.toString(),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
-                                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                     fontSize: 16,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w500,
@@ -3545,14 +3350,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                             child: Text(
                                                                                               FFLocalizations.of(context).getText(
                                                                                                 'q5u81hxr' /* T. */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
-                                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                     fontSize: 16,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w600,
@@ -3572,7 +3375,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -3583,14 +3386,13 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color:
-                                                                            FlutterFlowTheme.of(context).alternate,
                                                                         borderRadius:
                                                                             BorderRadius.circular(12),
                                                                       ),
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(8),
+                                                                            const EdgeInsets.all(8),
                                                                         child:
                                                                             Row(
                                                                           mainAxisSize:
@@ -3600,14 +3402,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           children: [
                                                                             Expanded(
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                 child: Text(
                                                                                   FFLocalizations.of(context).getText(
                                                                                     'b42n7wje' /* Total : */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 16,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -3617,12 +3417,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                             ),
                                                                             Flexible(
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                 child: Text(
                                                                                   functions.sumofBagitemsListRefvalues(_model.refvaluesinbagitems.sortedList(keyOf: (e) => e.toString(), desc: false).toList()).toString(),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 16,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -3631,14 +3429,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'fqagdjt7' /* T. */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w600,
@@ -3651,7 +3447,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             8,
@@ -3664,13 +3460,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color:
-                                                                            FlutterFlowTheme.of(context).alternate,
                                                                         borderRadius:
                                                                             BorderRadius.circular(12),
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0,
                                                                             8,
                                                                             0,
@@ -3683,24 +3478,21 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               MainAxisAlignment.spaceBetween,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'i4u5yua3' /* Comment */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
                                                                                     ),
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
                                                                               child: Icon(
                                                                                 Icons.edit,
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 size: 18,
                                                                               ),
                                                                             ),
@@ -3711,7 +3503,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                   ),
                                                                   Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             12),
                                                                     child:
                                                                         Container(
@@ -3720,13 +3512,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color:
-                                                                            FlutterFlowTheme.of(context).alternate,
                                                                         borderRadius:
                                                                             BorderRadius.circular(12),
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             8,
                                                                             0,
                                                                             8,
@@ -3740,21 +3531,19 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                           children:
                                                                               [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(16, 4, 4, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(16, 4, 4, 0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'rbv2478s' /* Select order method : */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
                                                                                     ),
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsets.all(8),
+                                                                              padding: const EdgeInsets.all(8),
                                                                               child: StreamBuilder<List<OrderMethodsRecord>>(
                                                                                 stream: queryOrderMethodsRecord(
                                                                                   queryBuilder: (orderMethodsRecord) => orderMethodsRecord.where(
@@ -3771,7 +3560,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                         height: 50,
                                                                                         child: CircularProgressIndicator(
                                                                                           valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                            FlutterFlowTheme.of(context).primary,
                                                                                           ),
                                                                                         ),
                                                                                       ),
@@ -3783,27 +3571,19 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     options: choiceChipsORDERMETHODSOrderMethodsRecordList.map((e) => e.methodType).toList().sortedList(keyOf: (e) => e, desc: true).map((label) => ChipData(label)).toList(),
                                                                                     onChanged: (val) => safeSetState(() => _model.choiceChipsORDERMETHODSValue = val?.firstOrNull),
                                                                                     selectedChipStyle: ChipStyle(
-                                                                                      backgroundColor: FlutterFlowTheme.of(context).secondary,
-                                                                                      textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).info,
                                                                                             fontSize: 12,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
-                                                                                      iconColor: FlutterFlowTheme.of(context).info,
                                                                                       iconSize: 16,
                                                                                       elevation: 0,
                                                                                       borderRadius: BorderRadius.circular(8),
                                                                                     ),
                                                                                     unselectedChipStyle: ChipStyle(
-                                                                                      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                      textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             fontSize: 12,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
-                                                                                      iconColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                       iconSize: 16,
                                                                                       elevation: 0,
                                                                                       borderRadius: BorderRadius.circular(8),
@@ -3821,21 +3601,19 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 4, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(16, 0, 4, 0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'zxia3f0n' /* Select wallet method : */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
                                                                                     ),
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsets.all(8),
+                                                                              padding: const EdgeInsets.all(8),
                                                                               child: StreamBuilder<List<WalletMethodsRecord>>(
                                                                                 stream: queryWalletMethodsRecord(
                                                                                   queryBuilder: (walletMethodsRecord) => walletMethodsRecord.where(
@@ -3852,7 +3630,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                         height: 50,
                                                                                         child: CircularProgressIndicator(
                                                                                           valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                            FlutterFlowTheme.of(context).primary,
                                                                                           ),
                                                                                         ),
                                                                                       ),
@@ -3864,27 +3641,19 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                     options: choiceChipsWALLETMETHODSWalletMethodsRecordList.map((e) => e.methodType).toList().sortedList(keyOf: (e) => e, desc: true).map((label) => ChipData(label)).toList(),
                                                                                     onChanged: (val) => safeSetState(() => _model.choiceChipsWALLETMETHODSValue = val?.firstOrNull),
                                                                                     selectedChipStyle: ChipStyle(
-                                                                                      backgroundColor: FlutterFlowTheme.of(context).secondary,
-                                                                                      textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).info,
                                                                                             fontSize: 12,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
-                                                                                      iconColor: FlutterFlowTheme.of(context).info,
                                                                                       iconSize: 16,
                                                                                       elevation: 0,
                                                                                       borderRadius: BorderRadius.circular(8),
                                                                                     ),
                                                                                     unselectedChipStyle: ChipStyle(
-                                                                                      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                      textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             fontSize: 12,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
-                                                                                      iconColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                       iconSize: 16,
                                                                                       elevation: 0,
                                                                                       borderRadius: BorderRadius.circular(8),
@@ -3901,7 +3670,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                                 },
                                                                               ),
                                                                             ),
-                                                                          ].divide(SizedBox(height: 8)).addToStart(SizedBox(height: 8)).addToEnd(SizedBox(height: 8)),
+                                                                          ].divide(const SizedBox(height: 8)).addToStart(const SizedBox(height: 8)).addToEnd(const SizedBox(height: 8)),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -3914,7 +3683,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(8,
                                                                     0, 8, 0),
                                                         child: Row(
@@ -3928,7 +3697,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             Expanded(
                                                               flex: 2,
                                                               child:
-                                                                  FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   _model.bagitems =
@@ -3944,29 +3712,26 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
                                                                           16,
                                                                           0),
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional.fromSTEB(
+                                                                      const EdgeInsetsDirectional.fromSTEB(
                                                                           0,
                                                                           0,
                                                                           0,
                                                                           0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
                                                                         color:
-                                                                            FlutterFlowTheme.of(context).secondary,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -3981,7 +3746,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                             Expanded(
                                                               flex: 3,
                                                               child:
-                                                                  FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   await OrderRecord
@@ -4060,7 +3824,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                         transitionType:
                                                                             PageTransitionType.rightToLeft,
                                                                         duration:
-                                                                            Duration(milliseconds: 450),
+                                                                            const Duration(milliseconds: 450),
                                                                       ),
                                                                     },
                                                                   );
@@ -4073,29 +3837,26 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
                                                                           16,
                                                                           0),
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional.fromSTEB(
+                                                                      const EdgeInsetsDirectional.fromSTEB(
                                                                           0,
                                                                           0,
                                                                           0,
                                                                           0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
                                                                         color:
-                                                                            FlutterFlowTheme.of(context).secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -4107,12 +3868,12 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                 ),
                                                               ),
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8)),
                                                         ),
                                                       ),
                                                     ].addToEnd(
-                                                        SizedBox(height: 8)),
+                                                        const SizedBox(height: 8)),
                                                   ),
                                                 ],
                                               ),
@@ -4125,7 +3886,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 12, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -4140,7 +3901,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                 '0',
                                               ),
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -4152,10 +3912,9 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                             showBadge: true,
                                             shape: badges.BadgeShape.circle,
                                             badgeColor:
-                                                FlutterFlowTheme.of(context)
                                                     .primary,
                                             elevation: 4,
-                                            padding: EdgeInsetsDirectional
+                                            padding: const EdgeInsetsDirectional
                                                 .fromSTEB(8, 8, 8, 8),
                                             position:
                                                 badges.BadgePosition.topEnd(),
@@ -4169,7 +3928,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                               highlightColor:
                                                   Colors.transparent,
                                               onTap: () async {
-                                                if (FFAppState().isBagOpen) {
                                                   if (animationsMap[
                                                           'containerOnActionTriggerAnimation'] !=
                                                       null) {
@@ -4194,7 +3952,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                         .controller
                                                         .reverse();
                                                   }
-                                                  FFAppState().isBagOpen =
                                                       false;
                                                 } else {
                                                   if (animationsMap[
@@ -4228,7 +3985,6 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                                     from:
                                                                         0.0));
                                                   }
-                                                  FFAppState().isBagOpen =
                                                       true;
                                                 }
                                               },
@@ -4236,23 +3992,21 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                 width: 52,
                                                 height: 52,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(4),
+                                                  padding: const EdgeInsets.all(4),
                                                   child: Stack(
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0, 0),
                                                         child: Icon(
                                                           Icons
                                                               .shopping_bag_outlined,
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           size: 26,
@@ -4263,11 +4017,10 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0, 0),
                                                         child: Icon(
                                                           Icons.close_sharp,
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           size: 26,
@@ -4286,7 +4039,7 @@ class _PublicpageWidgetState extends State<PublicpageWidget>
                                         ],
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 12)),
+                                  ].divide(const SizedBox(height: 12)),
                                 ),
                               ),
                             ),

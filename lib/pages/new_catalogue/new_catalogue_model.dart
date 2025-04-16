@@ -61,20 +61,16 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+              padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
               child: FlutterFlowIconButton(
                 borderRadius: 12,
                 buttonSize: 40,
-                fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                 icon: Icon(
                   Icons.close_rounded,
-                  color: FlutterFlowTheme.of(context).secondaryText,
                   size: 24,
                 ),
                 onPressed: () async {
@@ -100,24 +96,23 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                     width: double.infinity,
                     height: 500,
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 40),
+                      padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 40),
                       child: PageView(
                         controller: _model.pageViewController ??=
                             PageController(initialPage: 0),
                         scrollDirection: Axis.horizontal,
                         children: [
                           Padding(
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             child: Container(
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).alternate,
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(16),
+                                    padding: const EdgeInsets.all(16),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -125,13 +120,12 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12, 0, 0, 0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'tt5rlnz3' /* New Catalogue */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   fontFamily: 'Inter',
@@ -144,7 +138,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8, 0, 8, 8),
                                     child: TextFormField(
                                       controller: _model.taskTextController1,
@@ -158,36 +152,30 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                             FFLocalizations.of(context).getText(
                                           '3k85oz1k' /* Search terms */,
                                         ),
-                                        labelStyle: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .override(
                                               fontFamily: 'Sora',
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondaryText,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
                                             ),
-                                        hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
                                               fontSize: 12,
                                               letterSpacing: 0.0,
                                             ),
-                                        errorStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Inter',
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .error,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .alternate,
                                             width: 2,
                                           ),
@@ -196,7 +184,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .primary,
                                             width: 2,
                                           ),
@@ -205,7 +192,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .error,
                                             width: 2,
                                           ),
@@ -214,7 +200,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .error,
                                             width: 2,
                                           ),
@@ -222,13 +207,11 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                               BorderRadius.circular(12),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 20, 16, 20),
                                       ),
-                                      style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
                                             fontFamily: 'Sora',
@@ -236,7 +219,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       cursorColor:
-                                          FlutterFlowTheme.of(context).primary,
                                       validator: (val) {
                                         if (val == null || val.isEmpty) {
                                           return 'Field is required';
@@ -249,11 +231,10 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                     thickness: 1,
                                     indent: 12,
                                     endIndent: 12,
-                                    color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(12),
+                                    padding: const EdgeInsets.all(12),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -261,13 +242,12 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12, 0, 0, 0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'kvbue6ir' /* Select items to include */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   fontFamily: 'Inter',
@@ -277,7 +257,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12, 0, 12, 0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
@@ -290,7 +270,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                       .getText(
                                                     'xldej51d' /* 2 */,
                                                   ),
-                                                  style: FlutterFlowTheme.of(
                                                           context)
                                                       .labelMedium
                                                       .override(
@@ -304,11 +283,10 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                       .getText(
                                                     'nbwgtnjm' /*  /6 */,
                                                   ),
-                                                  style: TextStyle(),
+                                                  style: const TextStyle(),
                                                 )
                                               ],
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -322,7 +300,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 12, 8, 0),
                                       child:
                                           StreamBuilder<List<SubmissionRecord>>(
@@ -353,7 +331,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                   valueColor:
                                                       AlwaysStoppedAnimation<
                                                           Color>(
-                                                    FlutterFlowTheme.of(context)
                                                         .primary,
                                                   ),
                                                 ),
@@ -368,7 +345,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                             physics:
                                                 const NeverScrollableScrollPhysics(),
                                             gridDelegate:
-                                                SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                               crossAxisCount: 2,
                                             ),
                                             crossAxisSpacing: 12,
@@ -399,7 +376,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -419,14 +395,13 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                       width: 100,
                                                       height: 240,
                                                       constraints:
-                                                          BoxConstraints(
+                                                          const BoxConstraints(
                                                         maxHeight: 320,
                                                       ),
                                                       decoration: BoxDecoration(
-                                                        color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
+                                                        boxShadow: const [
                                                           BoxShadow(
                                                             blurRadius: 5,
                                                             color: Color(
@@ -499,18 +474,17 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                             ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1, 1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child: Container(
                                                                 width: 70,
                                                                 height: 40,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   borderRadius:
@@ -520,7 +494,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               4),
                                                                   child: Row(
@@ -534,7 +508,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                       Icon(
                                                                         Icons
                                                                             .toll,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         size:
                                                                             16,
@@ -546,11 +519,9 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                               .refvalue,
                                                                           textAlign:
                                                                               TextAlign.center,
-                                                                          style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
@@ -563,11 +534,11 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1, -1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(4),
                                                               child: Theme(
                                                                 data: ThemeData(
@@ -587,7 +558,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                     ),
                                                                   ),
                                                                   unselectedWidgetColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                 ),
@@ -611,16 +581,13 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                   side:
                                                                       BorderSide(
                                                                     width: 2,
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                   ),
                                                                   activeColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary,
                                                                   checkColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                 ),
@@ -640,17 +607,15 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(1, 0),
+                                    alignment: const AlignmentDirectional(1, 0),
                                     child: Padding(
-                                      padding: EdgeInsets.all(12),
+                                      padding: const EdgeInsets.all(12),
                                       child: FlutterFlowIconButton(
                                         borderRadius: 100,
                                         buttonSize: 46,
-                                        fillColor: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         icon: Icon(
                                           Icons.navigate_next_rounded,
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           size: 24,
                                         ),
@@ -658,7 +623,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                           await _model.pageViewController
                                               ?.nextPage(
                                             duration:
-                                                Duration(milliseconds: 300),
+                                                const Duration(milliseconds: 300),
                                             curve: Curves.ease,
                                           );
                                         },
@@ -670,17 +635,16 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             child: Container(
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).alternate,
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(12),
+                                    padding: const EdgeInsets.all(12),
                                     child: TextFormField(
                                       controller: _model.taskTextController2,
                                       focusNode: _model.taskFocusNode2,
@@ -693,35 +657,29 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                             FFLocalizations.of(context).getText(
                                           's6387byi' /* Catalogue title... */,
                                         ),
-                                        labelStyle: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .override(
                                               fontFamily: 'Sora',
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondaryText,
                                               fontSize: 18,
                                               letterSpacing: 0.0,
                                             ),
-                                        hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
-                                        errorStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Inter',
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .error,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .alternate,
                                             width: 2,
                                           ),
@@ -730,7 +688,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .primary,
                                             width: 2,
                                           ),
@@ -739,7 +696,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .error,
                                             width: 2,
                                           ),
@@ -748,7 +704,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
                                                 .error,
                                             width: 2,
                                           ),
@@ -756,13 +711,11 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                               BorderRadius.circular(12),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 20, 16, 20),
                                       ),
-                                      style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
                                             fontFamily: 'Sora',
@@ -770,7 +723,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       cursorColor:
-                                          FlutterFlowTheme.of(context).primary,
                                       validator: (val) {
                                         if (val == null || val.isEmpty) {
                                           return 'Field is required';
@@ -781,7 +733,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 12, 8, 0),
                                       child:
                                           StreamBuilder<List<SubmissionRecord>>(
@@ -812,7 +764,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                   valueColor:
                                                       AlwaysStoppedAnimation<
                                                           Color>(
-                                                    FlutterFlowTheme.of(context)
                                                         .primary,
                                                   ),
                                                 ),
@@ -831,7 +782,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                 listViewSubmissionRecordList
                                                     .length,
                                             separatorBuilder: (_, __) =>
-                                                SizedBox(height: 8),
+                                                const SizedBox(height: 8),
                                             itemBuilder:
                                                 (context, listViewIndex) {
                                               final listViewSubmissionRecord =
@@ -855,7 +806,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -875,14 +825,13 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                       width: 100,
                                                       height: 100,
                                                       constraints:
-                                                          BoxConstraints(
+                                                          const BoxConstraints(
                                                         maxHeight: 320,
                                                       ),
                                                       decoration: BoxDecoration(
-                                                        color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
-                                                        boxShadow: [
+                                                        boxShadow: const [
                                                           BoxShadow(
                                                             blurRadius: 5,
                                                             color: Color(
@@ -935,7 +884,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(12),
+                                                                              const EdgeInsets.all(12),
                                                                           child:
                                                                               ClipRRect(
                                                                             borderRadius:
@@ -957,18 +906,17 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                             ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1, 1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child: Container(
                                                                 width: 70,
                                                                 height: 40,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   borderRadius:
@@ -978,7 +926,7 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               4),
                                                                   child: Row(
@@ -992,7 +940,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                       Icon(
                                                                         Icons
                                                                             .toll,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         size:
                                                                             16,
@@ -1004,11 +951,9 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                               .refvalue,
                                                                           textAlign:
                                                                               TextAlign.center,
-                                                                          style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
@@ -1021,11 +966,11 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1, -1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(12),
                                                               child: Text(
                                                                 FFLocalizations.of(
@@ -1033,7 +978,6 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                                                     .getText(
                                                                   '5m3j3ego' /* Hello World */,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -1058,9 +1002,8 @@ class _NewCatalogueWidgetState extends State<NewCatalogueWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16, 12, 16, 12),
-                                    child: FFButtonWidget(
                                       onPressed: () async {
                                         if (_model.formKey.currentState ==
                                                 null ||

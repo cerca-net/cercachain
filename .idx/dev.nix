@@ -8,6 +8,7 @@
     pkgs.jdk17
     pkgs.unzip
     pkgs.openssh
+    pkgs.doppler
   ];
   # Sets environment variables in the workspace
   env = {};

@@ -74,12 +74,10 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       body: Padding(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         child: Container(
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).alternate,
             borderRadius: BorderRadius.circular(12),
           ),
           child: StreamBuilder<OrderRecord>(
@@ -93,7 +91,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                     height: 50,
                     child: CircularProgressIndicator(
                       valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
                       ),
                     ),
                   ),
@@ -111,15 +108,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 16, 16, 0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 16, 16, 0),
                         child: FlutterFlowIconButton(
                           borderRadius: 100,
                           buttonSize: 40,
                           fillColor:
-                              FlutterFlowTheme.of(context).secondaryBackground,
                           icon: Icon(
                             Icons.close,
-                            color: FlutterFlowTheme.of(context).secondaryText,
                             size: 20,
                           ),
                           onPressed: () async {
@@ -138,17 +133,16 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                       children: [
                         Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+                              const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.85,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -162,7 +156,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         CrossAxisAlignment.center,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             24, 12, 0, 0),
                                         child: RichText(
                                           textScaler:
@@ -176,11 +170,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   'ptv4zo36' /* Order  */,
                                                 ),
                                                 style:
-                                                    FlutterFlowTheme.of(context)
                                                         .headlineLarge
                                                         .override(
                                                           fontFamily: 'Sora',
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
                                                           fontSize: 28,
@@ -201,11 +193,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               )
                                             ],
-                                            style: FlutterFlowTheme.of(context)
                                                 .headlineLarge
                                                 .override(
                                                   fontFamily: 'Sora',
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
                                                   fontSize: 20,
@@ -217,7 +207,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                     ],
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24, 0, 0, 0),
                                     child: RichText(
                                       textScaler:
@@ -229,7 +219,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 .getText(
                                               '0ed9ruqm' /* I.D. #  */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   fontFamily: 'Inter',
@@ -239,10 +228,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                           TextSpan(
                                             text:
                                                 columnOrderRecord.reference.id,
-                                            style: TextStyle(),
+                                            style: const TextStyle(),
                                           )
                                         ],
-                                        style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
@@ -252,7 +240,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24, 4, 0, 0),
                                     child: RichText(
                                       textScaler:
@@ -264,7 +252,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 .getText(
                                               't6kzh6w6' /* User:  */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   fontFamily: 'Inter',
@@ -277,10 +264,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   .publicuserRef?.id,
                                               'xxxx',
                                             ),
-                                            style: TextStyle(),
+                                            style: const TextStyle(),
                                           )
                                         ],
-                                        style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
@@ -290,7 +276,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24, 4, 0, 0),
                                     child: RichText(
                                       textScaler:
@@ -302,7 +288,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 .getText(
                                               'dul8o5xo' /* User:  */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   fontFamily: 'Inter',
@@ -314,10 +299,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                               columnOrderRecord.userRef?.id,
                                               'yyyy',
                                             ),
-                                            style: TextStyle(),
+                                            style: const TextStyle(),
                                           )
                                         ],
-                                        style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Inter',
@@ -327,24 +311,22 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16, 4, 16, 8),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 0, 0, 0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'fdajd74w' /* Status : */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
                                                   fontFamily: 'Inter',
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
                                                   fontSize: 16,
@@ -355,7 +337,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   4, 0, 0, 0),
                                           child: Text(
                                             valueOrDefault<String>(
@@ -363,11 +345,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   .orderStats?.name,
                                               'status',
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .titleMedium
                                                 .override(
                                                   fontFamily: 'Inter',
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
                                                   fontSize: 16,
@@ -379,7 +359,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20, 0, 20, 12),
                                     child: LinearPercentIndicator(
                                       percent: () {
@@ -414,11 +394,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                       animation: true,
                                       animateFromLastPercent: true,
                                       progressColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondary,
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context).accent1,
-                                      barRadius: Radius.circular(100),
+                                      barRadius: const Radius.circular(100),
                                       padding: EdgeInsets.zero,
                                     ),
                                   ),
@@ -435,7 +413,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                 visible: columnOrderRecord.userRef ==
                                     currentUserReference,
                                 child: Padding(
-                                  padding: EdgeInsets.all(16),
+                                  padding: const EdgeInsets.all(16),
                                   child: PageView(
                                     physics:
                                         const NeverScrollableScrollPhysics(),
@@ -483,13 +461,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -504,13 +481,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Container(
                                                     width: 32,
                                                     height: 32,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xADFF6A73),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Icon(
                                                       Icons.access_time_rounded,
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       size: 20,
@@ -519,7 +495,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 0, 0),
                                                       child: Text(
@@ -529,13 +505,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           'xnqgu47s' /* Pending */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF15161E),
                                                                   fontSize: 14,
                                                                   letterSpacing:
@@ -549,7 +524,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 0, 8, 0),
                                                     child: Text(
@@ -558,13 +533,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           .getText(
                                                         't7e0b90a' /* 4m ago */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .labelSmall
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12,
                                                             letterSpacing: 0.0,
@@ -576,11 +550,10 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 16, 12, 0),
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -588,7 +561,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -599,7 +572,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         Expanded(
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12,
                                                                         0,
@@ -611,13 +584,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .getText(
                                                                 'xn6znbnn' /* Items : */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Inter',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     fontSize:
@@ -637,11 +608,10 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 0, 12, 0),
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -649,7 +619,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -660,7 +630,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         Expanded(
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12,
                                                                         0,
@@ -672,13 +642,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .getText(
                                                                 'vw4ex25c' /* Total : */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Inter',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     fontSize:
@@ -694,7 +662,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 8, 0),
                                                           child: Text(
@@ -705,13 +673,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .toString(),
                                                               '0',
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   fontSize: 16,
@@ -725,7 +691,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 8, 0),
                                                           child: Text(
@@ -734,13 +700,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .getText(
                                                               'sspduwcy' /* T. */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   fontSize: 16,
@@ -759,14 +723,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(12, 0, 12, 0),
                                                   child: Container(
                                                     width: 100,
                                                     height: 240,
                                                     decoration: BoxDecoration(
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       borderRadius:
@@ -792,13 +755,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .orderStats ==
                                                             OrderStatuses
                                                                 .Accepted)
-                                                          FFButtonWidget(
                                                             onPressed:
                                                                 () async {
                                                               await _model
                                                                   .orderMakerController
                                                                   ?.nextPage(
-                                                                duration: Duration(
+                                                                duration: const Duration(
                                                                     milliseconds:
                                                                         300),
                                                                 curve:
@@ -814,30 +776,27 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 FFButtonOptions(
                                                               height: 40,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
                                                                           16,
                                                                           0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           0,
                                                                           0,
                                                                           0),
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -850,17 +809,17 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             ),
                                                           ),
                                                       ]
-                                                          .divide(SizedBox(
+                                                          .divide(const SizedBox(
                                                               height: 8))
-                                                          .addToStart(SizedBox(
+                                                          .addToStart(const SizedBox(
                                                               height: 8))
-                                                          .addToEnd(SizedBox(
+                                                          .addToEnd(const SizedBox(
                                                               height: 16)),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -868,13 +827,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -889,13 +847,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Container(
                                                     width: 32,
                                                     height: 32,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xADFF6A73),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Icon(
                                                       Icons.sync_alt_rounded,
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       size: 20,
@@ -904,7 +861,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 0, 0),
                                                       child: Text(
@@ -914,13 +871,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           'l4s92nyd' /* Transaction */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF15161E),
                                                                   fontSize: 14,
                                                                   letterSpacing:
@@ -934,7 +890,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 0, 8, 0),
                                                     child: Text(
@@ -943,13 +899,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           .getText(
                                                         'i2aoet1k' /* 4m ago */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .labelSmall
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12,
                                                             letterSpacing: 0.0,
@@ -961,13 +916,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 8, 12, 0),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 150,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -975,7 +929,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(12),
+                                                    padding: const EdgeInsets.all(12),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -988,7 +942,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 0, 8),
                                                           child: Text(
@@ -997,13 +951,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .getText(
                                                               'jars4iia' /* Wallet method */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
                                                                       'Montserrat',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   fontSize: 14,
@@ -1025,7 +977,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     .circular(
                                                                         12),
                                                             border: Border.all(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               width: 1,
@@ -1033,7 +984,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child: Column(
                                                               mainAxisSize:
@@ -1049,13 +1000,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       .getText(
                                                                     'nyizwla2' /* Pago Movil */,
                                                                   ),
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Montserrat',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -1067,13 +1016,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       .getText(
                                                                     'e0jdd342' /* 3rd Party Method */,
                                                                   ),
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodySmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -1101,7 +1048,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                 FFLocalizations.of(context).getText(
                                                                               'kzjv21jr' /* # I.D. :  */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
@@ -1112,10 +1058,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               'ynev88b4' /* Hello World  */,
                                                                             ),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           )
                                                                         ],
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -1126,7 +1071,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     Icon(
                                                                       Icons
                                                                           .content_copy_rounded,
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       size: 18,
@@ -1153,7 +1097,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                 FFLocalizations.of(context).getText(
                                                                               'xdselok0' /* # Account :  */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
@@ -1164,10 +1107,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               'ghcepavg' /* Hello World  */,
                                                                             ),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           )
                                                                         ],
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -1178,14 +1120,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     Icon(
                                                                       Icons
                                                                           .content_copy_rounded,
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       size: 18,
                                                                     ),
                                                                   ],
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4)),
                                                             ),
                                                           ),
@@ -1196,13 +1137,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 0, 12, 0),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -1213,7 +1153,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(12, 8,
                                                                     12, 8),
                                                         child: Container(
@@ -1222,7 +1162,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           height: 100,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             borderRadius:
@@ -1249,7 +1188,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0, 0),
                                                         child: Row(
                                                           mainAxisSize:
@@ -1260,7 +1199,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           children: [
                                                             if (_model.uploadedFileUrl ==
                                                                     '')
-                                                              FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   final selectedMedia =
@@ -1338,7 +1276,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     .getText(
                                                                   '4trre1jp' /* Upload */,
                                                                 ),
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .upload_file_rounded,
                                                                   size: 15,
@@ -1346,7 +1284,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
@@ -1356,22 +1294,19 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       IconAlignment
                                                                           .end,
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional
+                                                                      const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -1385,7 +1320,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ),
                                                             if (_model.uploadedFileUrl !=
                                                                     '')
-                                                              FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   safeSetState(
@@ -1405,7 +1339,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     .getText(
                                                                   'ygzwaowi' /* Remove */,
                                                                 ),
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .remove_circle,
                                                                   size: 15,
@@ -1413,7 +1347,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
@@ -1423,22 +1357,19 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       IconAlignment
                                                                           .end,
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional
+                                                                      const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -1459,14 +1390,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(12, 0, 12, 0),
                                                   child: Container(
                                                     width: 100,
                                                     height: 200,
                                                     decoration: BoxDecoration(
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       borderRadius:
@@ -1475,7 +1405,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsets.all(8),
+                                                          const EdgeInsets.all(8),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -1499,20 +1429,19 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16,
                                                                         0,
                                                                         16,
                                                                         0),
                                                             child:
-                                                                FFButtonWidget(
                                                               onPressed:
                                                                   () async {
                                                                 await _model
                                                                     .orderMakerController
                                                                     ?.nextPage(
-                                                                  duration: Duration(
+                                                                  duration: const Duration(
                                                                       milliseconds:
                                                                           300),
                                                                   curve: Curves
@@ -1541,29 +1470,26 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   FFButtonOptions(
                                                                 height: 40,
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
                                                                             16,
                                                                             0),
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
@@ -1578,19 +1504,19 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 16)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -1598,13 +1524,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -1619,13 +1544,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Container(
                                                     width: 32,
                                                     height: 32,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xADFF6A73),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Icon(
                                                       Icons.done_all,
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       size: 20,
@@ -1634,7 +1558,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 0, 0),
                                                       child: Text(
@@ -1644,13 +1568,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           '66iqmk0j' /* Confirmation */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF15161E),
                                                                   fontSize: 14,
                                                                   letterSpacing:
@@ -1664,7 +1587,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 0, 8, 0),
                                                     child: Text(
@@ -1673,13 +1596,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           .getText(
                                                         'qr6squq5' /* 4m ago */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .labelSmall
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12,
                                                             letterSpacing: 0.0,
@@ -1691,13 +1613,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 16, 12, 0),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -1705,7 +1626,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(12),
+                                                    padding: const EdgeInsets.all(12),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1718,7 +1639,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(16,
                                                                       0, 0, 0),
                                                           child: Text(
@@ -1727,13 +1648,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .getText(
                                                               'kv67kckj' /* Management */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Montserrat',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   letterSpacing:
@@ -1750,7 +1669,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             height: 60,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
@@ -1775,7 +1693,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                         .getText(
                                                                       'whqjep9l' /* Order Processed */,
                                                                     ),
-                                                                    style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
@@ -1790,7 +1707,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   height: 2,
                                                                   decoration:
                                                                       BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
                                                                   ),
@@ -1805,7 +1721,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                         .getText(
                                                                       'lz2cofye' /* Order boxed */,
                                                                     ),
-                                                                    style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
@@ -1820,7 +1735,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   height: 2,
                                                                   decoration:
                                                                       BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
                                                                   ),
@@ -1836,7 +1750,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                         .getText(
                                                                       '18xz8tdh' /* Item (s) ready */,
                                                                     ),
-                                                                    style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
@@ -1851,7 +1764,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(height: 8)),
+                                                          const SizedBox(height: 8)),
                                                     ),
                                                   ),
                                                 ),
@@ -1862,13 +1775,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 12, 0, 12, 0),
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         borderRadius:
@@ -1887,18 +1799,16 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowIconButton(
                                                               borderRadius: 100,
                                                               buttonSize: 40,
-                                                              fillColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               icon: Icon(
                                                                 Icons.qr_code,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                               ),
@@ -1925,7 +1835,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   await _model
                                                                       .orderMakerController
                                                                       ?.nextPage(
-                                                                    duration: Duration(
+                                                                    duration: const Duration(
                                                                         milliseconds:
                                                                             300),
                                                                     curve: Curves
@@ -1951,14 +1861,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                         style:
                                                                             TextStyle(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).primary,
                                                                         ),
                                                                       ),
-                                                                      duration: Duration(
+                                                                      duration: const Duration(
                                                                           milliseconds:
                                                                               4000),
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
                                                                     ),
                                                                   );
@@ -1971,7 +1879,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child: Text(
                                                               FFLocalizations.of(
@@ -1979,13 +1887,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .getText(
                                                                 'yt5930k0' /* OR */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Montserrat',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     letterSpacing:
@@ -1998,7 +1904,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -2016,7 +1922,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets
+                                                                        const EdgeInsets
                                                                             .all(8),
                                                                     child:
                                                                         SizedBox(
@@ -2036,7 +1942,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             InputDecoration(
                                                                           isDense:
                                                                               true,
-                                                                          labelStyle: FlutterFlowTheme.of(context)
                                                                               .labelMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
@@ -2046,7 +1951,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               FFLocalizations.of(context).getText(
                                                                             'ywt77d5k' /* I.D. number */,
                                                                           ),
-                                                                          hintStyle: FlutterFlowTheme.of(context)
                                                                               .labelMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
@@ -2055,7 +1959,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                           enabledBorder:
                                                                               OutlineInputBorder(
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Color(0x00000000),
                                                                               width: 1,
                                                                             ),
@@ -2065,7 +1969,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                           focusedBorder:
                                                                               OutlineInputBorder(
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Color(0x00000000),
                                                                               width: 1,
                                                                             ),
@@ -2076,7 +1980,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               OutlineInputBorder(
                                                                             borderSide:
                                                                                 BorderSide(
-                                                                              color: FlutterFlowTheme.of(context).error,
                                                                               width: 1,
                                                                             ),
                                                                             borderRadius:
@@ -2086,7 +1989,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               OutlineInputBorder(
                                                                             borderSide:
                                                                                 BorderSide(
-                                                                              color: FlutterFlowTheme.of(context).error,
                                                                               width: 1,
                                                                             ),
                                                                             borderRadius:
@@ -2095,16 +1997,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                           filled:
                                                                               true,
                                                                           fillColor:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                         ),
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         cursorColor:
-                                                                            FlutterFlowTheme.of(context).primaryText,
                                                                         validator: _model
                                                                             .textControllerValidator
                                                                             .asValidator(context),
@@ -2112,7 +2011,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     ),
                                                                   ),
                                                                 ),
-                                                                FFButtonWidget(
                                                                   onPressed:
                                                                       () async {
                                                                     if (_model
@@ -2186,13 +2084,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             'ERROR',
                                                                             style:
                                                                                 TextStyle(
-                                                                              color: FlutterFlowTheme.of(context).primary,
                                                                             ),
                                                                           ),
                                                                           duration:
-                                                                              Duration(milliseconds: 4000),
+                                                                              const Duration(milliseconds: 4000),
                                                                           backgroundColor:
-                                                                              FlutterFlowTheme.of(context).secondary,
                                                                         ),
                                                                       );
                                                                     }
@@ -2205,22 +2101,20 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   options:
                                                                       FFButtonOptions(
                                                                     height: 40,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
                                                                             16,
                                                                             0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
-                                                                    textStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
@@ -2241,13 +2135,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ],
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 8)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -2266,7 +2160,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                 visible: columnOrderRecord.publicuserRef ==
                                     currentUserReference,
                                 child: Padding(
-                                  padding: EdgeInsets.all(16),
+                                  padding: const EdgeInsets.all(16),
                                   child: PageView(
                                     physics:
                                         const NeverScrollableScrollPhysics(),
@@ -2319,13 +2213,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -2338,13 +2231,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Container(
                                                     width: 32,
                                                     height: 32,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xADFF6A73),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Icon(
                                                       Icons.remove_red_eye,
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       size: 20,
@@ -2353,7 +2245,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 0, 0),
                                                       child: Text(
@@ -2363,13 +2255,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           '9goib2m5' /* Approval */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF15161E),
                                                                   fontSize: 14,
                                                                   letterSpacing:
@@ -2383,7 +2274,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 0, 8, 0),
                                                     child: Text(
@@ -2392,13 +2283,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           .getText(
                                                         '812citbp' /* 4m ago */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .labelSmall
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12,
                                                             letterSpacing: 0.0,
@@ -2411,7 +2301,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(12, 16, 12, 0),
                                                   child: Builder(
                                                     builder: (context) {
@@ -2436,7 +2326,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   intemsinorderIndex];
                                                           return Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0,
                                                                         0,
@@ -2445,7 +2335,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             child: Container(
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 borderRadius:
@@ -2455,7 +2344,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(8),
                                                                 child: Row(
                                                                   mainAxisSize:
@@ -2468,7 +2357,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12,
                                                                             0,
                                                                             0,
@@ -2479,11 +2368,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               .getText(
                                                                             'ar0ewv83' /*  */,
                                                                           ),
-                                                                          style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 fontSize: 16,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w500,
@@ -2492,7 +2379,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
@@ -2504,11 +2391,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             .getText(
                                                                           'iqpsdv4c' /* 225 */,
                                                                         ),
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               fontSize: 16,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w500,
@@ -2516,7 +2401,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
@@ -2528,11 +2413,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             .getText(
                                                                           'olfah8sj' /* T. */,
                                                                         ),
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               fontSize: 16,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
@@ -2551,12 +2434,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 8, 12, 0),
                                                 child: Container(
                                                   width: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -2565,7 +2447,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 8, 0, 8),
                                                     child: Row(
@@ -2577,7 +2459,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(12,
                                                                       0, 0, 0),
                                                           child: Text(
@@ -2586,13 +2468,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .getText(
                                                               'ltidf651' /* Comment */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Montserrat',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   letterSpacing:
@@ -2605,12 +2485,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 16, 0),
                                                           child: Icon(
                                                             Icons.info,
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondary,
                                                             size: 18,
@@ -2622,11 +2501,10 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.all(12),
+                                                padding: const EdgeInsets.all(12),
                                                 child: Container(
                                                   width: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -2652,7 +2530,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               valueColor:
                                                                   AlwaysStoppedAnimation<
                                                                       Color>(
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary,
                                                               ),
@@ -2673,7 +2550,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16,
                                                                         4,
@@ -2685,13 +2562,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .getText(
                                                                 'twwgb871' /* Methods : */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Montserrat',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     letterSpacing:
@@ -2704,11 +2579,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, -1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -2731,16 +2606,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         fontSize:
                                                                             12,
@@ -2748,7 +2620,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             0.0,
                                                                       ),
                                                                   iconColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                   iconSize: 16,
@@ -2761,23 +2632,19 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         fontSize:
                                                                             12,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -2806,12 +2673,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 8)),
                                                       );
                                                     },
@@ -2819,7 +2686,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 0, 12, 8),
                                                 child: Container(
                                                   decoration: BoxDecoration(
@@ -2828,20 +2695,19 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             12),
                                                     border: Border.all(
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       width: 1,
                                                     ),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child: Material(
                                                       color: Colors.transparent,
                                                       child: Theme(
                                                         data: ThemeData(
                                                           checkboxTheme:
-                                                              CheckboxThemeData(
+                                                              const CheckboxThemeData(
                                                             visualDensity:
                                                                 VisualDensity
                                                                     .compact,
@@ -2850,7 +2716,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     .shrinkWrap,
                                                           ),
                                                           unselectedWidgetColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .alternate,
                                                         ),
@@ -2870,13 +2735,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .getText(
                                                               'tnzl7v71' /* Mark as relevant */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .titleLarge
                                                                 .override(
                                                                   fontFamily:
                                                                       'Sora',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   fontSize: 16,
@@ -2884,15 +2747,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                          tileColor: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           activeColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .primary,
                                                           checkColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .info,
                                                           dense: true,
@@ -2900,7 +2760,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ListTileControlAffinity
                                                                   .trailing,
                                                           contentPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(12,
                                                                       0, 12, 0),
                                                           shape:
@@ -2917,7 +2777,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(16, 0, 16, 0),
                                                 child: Row(
                                                   mainAxisSize:
@@ -2927,7 +2787,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   children: [
                                                     Expanded(
                                                       flex: 2,
-                                                      child: FFButtonWidget(
                                                         onPressed: () {
                                                           print(
                                                               'Button pressed ...');
@@ -2942,24 +2801,21 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             FFButtonOptions(
                                                           height: 40,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(16,
                                                                       0, 16, 0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 0, 0),
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .alternate,
                                                           textStyle:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .titleSmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Inter',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     letterSpacing:
@@ -2974,12 +2830,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                     ),
                                                     Expanded(
                                                       flex: 3,
-                                                      child: FFButtonWidget(
                                                         onPressed: () async {
                                                           await _model
                                                               .orderTakerController
                                                               ?.nextPage(
-                                                            duration: Duration(
+                                                            duration: const Duration(
                                                                 milliseconds:
                                                                     300),
                                                             curve: Curves.ease,
@@ -3023,24 +2878,21 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             FFButtonOptions(
                                                           height: 40,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(16,
                                                                       0, 16, 0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 0, 0),
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .alternate,
                                                           textStyle:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .titleSmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Inter',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
                                                                     letterSpacing:
@@ -3053,7 +2905,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         ),
                                                       ),
                                                     ),
-                                                  ].divide(SizedBox(width: 8)),
+                                                  ].divide(const SizedBox(width: 8)),
                                                 ),
                                               ),
                                             ],
@@ -3064,13 +2916,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -3085,13 +2936,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Container(
                                                     width: 32,
                                                     height: 32,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xADFF6A73),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Icon(
                                                       Icons.sync_alt_rounded,
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       size: 20,
@@ -3100,7 +2950,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 0, 0),
                                                       child: Text(
@@ -3110,13 +2960,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           '7qkhdi5d' /* Transaction */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF15161E),
                                                                   fontSize: 14,
                                                                   letterSpacing:
@@ -3130,7 +2979,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 0, 8, 0),
                                                     child: Text(
@@ -3139,13 +2988,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           .getText(
                                                         '2hslcg8a' /* 4m ago */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .labelSmall
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12,
                                                             letterSpacing: 0.0,
@@ -3157,13 +3005,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(12, 8, 12, 0),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 150,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -3171,7 +3018,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(12),
+                                                    padding: const EdgeInsets.all(12),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -3184,7 +3031,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(0,
                                                                       0, 0, 8),
                                                           child: Text(
@@ -3193,13 +3040,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 .getText(
                                                               'eutmuzx9' /* Wallet method */,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
                                                                       'Montserrat',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   fontSize: 14,
@@ -3221,7 +3066,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     .circular(
                                                                         12),
                                                             border: Border.all(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               width: 1,
@@ -3229,7 +3073,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child: Column(
                                                               mainAxisSize:
@@ -3245,13 +3089,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       .getText(
                                                                     'al16wiwg' /* Pago Movil */,
                                                                   ),
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Montserrat',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -3263,13 +3105,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                       .getText(
                                                                     'z5qbtuxr' /* 3rd Party Method */,
                                                                   ),
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodySmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -3297,7 +3137,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                 FFLocalizations.of(context).getText(
                                                                               'dkc63i06' /* # I.D. :  */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
@@ -3308,10 +3147,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               'qai4coun' /* Hello World  */,
                                                                             ),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           )
                                                                         ],
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -3341,7 +3179,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                 FFLocalizations.of(context).getText(
                                                                               'nu3esj9t' /* # Account :  */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
@@ -3352,10 +3189,9 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               'cxd0n0hc' /* Hello World  */,
                                                                             ),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           )
                                                                         ],
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -3365,7 +3201,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     ),
                                                                   ],
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4)),
                                                             ),
                                                           ),
@@ -3389,13 +3225,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   OrderStatuses
                                                       .Document_Uploaded)
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(12, 0, 12, 0),
                                                   child: Container(
                                                     width: 100,
                                                     decoration: BoxDecoration(
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       borderRadius:
@@ -3404,7 +3239,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsets.all(8),
+                                                          const EdgeInsets.all(8),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -3421,7 +3256,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                             height: 100,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
@@ -3450,14 +3284,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 MainAxisSize
                                                                     .max,
                                                             children: [
-                                                              FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   await _model
                                                                       .orderMakerController
                                                                       ?.animateToPage(
                                                                     3,
-                                                                    duration: Duration(
+                                                                    duration: const Duration(
                                                                         milliseconds:
                                                                             500),
                                                                     curve: Curves
@@ -3481,29 +3314,26 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
                                                                           16,
                                                                           0),
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional
+                                                                      const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
@@ -3517,7 +3347,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ),
                                                               Expanded(
                                                                 child:
-                                                                    FFButtonWidget(
                                                                   onPressed:
                                                                       () async {
                                                                     unawaited(
@@ -3526,7 +3355,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             .orderTakerController
                                                                             ?.nextPage(
                                                                           duration:
-                                                                              Duration(milliseconds: 300),
+                                                                              const Duration(milliseconds: 300),
                                                                           curve:
                                                                               Curves.ease,
                                                                         );
@@ -3553,29 +3382,26 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   options:
                                                                       FFButtonOptions(
                                                                     height: 40,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
                                                                             16,
                                                                             0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
-                                                                    textStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Inter',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -3587,16 +3413,16 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   ),
                                                                 ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 8)),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 8)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -3604,13 +3430,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16),
+                                          padding: const EdgeInsets.all(16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -3625,13 +3450,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Container(
                                                     width: 32,
                                                     height: 32,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xADFF6A73),
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Icon(
                                                       Icons.done_all,
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       size: 20,
@@ -3640,7 +3464,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12, 0, 0, 0),
                                                       child: Text(
@@ -3650,13 +3474,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           'ctf9gphd' /* Confirmation */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Plus Jakarta Sans',
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFF15161E),
                                                                   fontSize: 14,
                                                                   letterSpacing:
@@ -3670,7 +3493,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 0, 8, 0),
                                                     child: Text(
@@ -3679,13 +3502,12 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                           .getText(
                                                         'qro12c0n' /* 4m ago */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .labelSmall
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF606A85),
                                                             fontSize: 12,
                                                             letterSpacing: 0.0,
@@ -3698,14 +3520,13 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(12, 16, 12, 0),
                                                   child: Container(
                                                     width: double.infinity,
                                                     height: 400,
                                                     decoration: BoxDecoration(
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       borderRadius:
@@ -3714,7 +3535,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsets.all(12),
+                                                          const EdgeInsets.all(12),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -3727,7 +3548,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16,
                                                                         0,
@@ -3739,13 +3560,11 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   .getText(
                                                                 'e5i5ddrc' /* Management */,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Montserrat',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     letterSpacing:
@@ -3762,7 +3581,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               height: 100,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 borderRadius:
@@ -3772,7 +3590,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(8),
                                                                 child: Column(
                                                                   mainAxisSize:
@@ -3784,7 +3602,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                   children: [
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -3794,7 +3612,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             MainAxisAlignment.spaceBetween,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16,
                                                                                 0,
                                                                                 0,
@@ -3804,9 +3622,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               FFLocalizations.of(context).getText(
                                                                                 'wts8nbpd' /* Processed */,
                                                                               ),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
                                                                                   ),
@@ -3822,20 +3638,16 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                     safeSetState(() => _model.switchValue1 = newValue);
                                                                                   },
                                                                             activeColor:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             activeTrackColor:
-                                                                                FlutterFlowTheme.of(context).secondary,
                                                                             inactiveTrackColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             inactiveThumbColor:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                           ),
                                                                         ],
                                                                       ),
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -3845,7 +3657,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             MainAxisAlignment.spaceBetween,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16,
                                                                                 0,
                                                                                 0,
@@ -3855,9 +3667,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               FFLocalizations.of(context).getText(
                                                                                 'o3akzmsh' /* Boxed */,
                                                                               ),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
                                                                                   ),
@@ -3873,20 +3683,16 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                     safeSetState(() => _model.switchValue2 = newValue);
                                                                                   },
                                                                             activeColor:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             activeTrackColor:
-                                                                                FlutterFlowTheme.of(context).secondary,
                                                                             inactiveTrackColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             inactiveThumbColor:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                           ),
                                                                         ],
                                                                       ),
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -3896,7 +3702,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             MainAxisAlignment.spaceBetween,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16,
                                                                                 0,
                                                                                 0,
@@ -3906,9 +3712,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                               FFLocalizations.of(context).getText(
                                                                                 '386oqqk7' /* Item(s) ready */,
                                                                               ),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
                                                                                   ),
@@ -3931,24 +3735,18 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                                             content: Text(
                                                                                               'Please confirm the item process indicators',
                                                                                               style: TextStyle(
-                                                                                                color: FlutterFlowTheme.of(context).error,
                                                                                               ),
                                                                                             ),
-                                                                                            duration: Duration(milliseconds: 4000),
-                                                                                            backgroundColor: FlutterFlowTheme.of(context).secondary,
+                                                                                            duration: const Duration(milliseconds: 4000),
                                                                                           ),
                                                                                         );
                                                                                       }
                                                                                     }
                                                                                   },
                                                                             activeColor:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             activeTrackColor:
-                                                                                FlutterFlowTheme.of(context).secondary,
                                                                             inactiveTrackColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             inactiveThumbColor:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                           ),
                                                                         ],
                                                                       ),
@@ -3960,7 +3758,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(16),
+                                                                              const EdgeInsets.all(16),
                                                                           child:
                                                                               BarcodeWidget(
                                                                             data:
@@ -3972,11 +3770,10 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             height:
                                                                                 140,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             backgroundColor:
                                                                                 Colors.transparent,
                                                                             errorBuilder: (context, error) =>
-                                                                                SizedBox(
+                                                                                const SizedBox(
                                                                               width: 140,
                                                                               height: 140,
                                                                             ),
@@ -3988,7 +3785,6 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                     if (columnOrderRecord
                                                                             .orderCompleted ==
                                                                         true)
-                                                                      FFButtonWidget(
                                                                         onPressed:
                                                                             () async {
                                                                           context
@@ -4012,7 +3808,7 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                           'clj0r7r5' /* Review */,
                                                                         ),
                                                                         icon:
-                                                                            Icon(
+                                                                            const Icon(
                                                                           Icons
                                                                               .star_rate_rounded,
                                                                           size:
@@ -4022,25 +3818,22 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                                             FFButtonOptions(
                                                                           height:
                                                                               40,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               16,
                                                                               0,
                                                                               16,
                                                                               0),
                                                                           iconAlignment:
                                                                               IconAlignment.end,
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).alternate,
-                                                                          textStyle: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
                                                                                 fontFamily: 'Inter',
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                           elevation:
@@ -4054,14 +3847,14 @@ class _OrderpageWidgetState extends State<OrderpageWidget> {
                                                               ),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 8)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),

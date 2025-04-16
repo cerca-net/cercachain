@@ -1,0 +1,2 @@
+Firebase is used for: Authentication, projectID, storage.
+Supabase is used for: database (wallets, profiles, users).

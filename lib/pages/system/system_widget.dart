@@ -44,21 +44,17 @@ class _SystemWidgetState extends State<SystemWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         automaticallyImplyLeading: false,
         actions: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
+            padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 12, 8),
             child: FlutterFlowIconButton(
               borderRadius: 12,
               buttonSize: 40,
-              fillColor: FlutterFlowTheme.of(context).secondaryBackground,
               icon:
                   Icon(
                 Icons.close_rounded,
-                color: FlutterFlowTheme.of(context).secondaryText,
                 size: 24,
               ),
               onPressed: () async {
@@ -74,7 +70,7 @@ class _SystemWidgetState extends State<SystemWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
             child: Material(
               color: Colors.transparent,
               child: SwitchListTile.adaptive(
@@ -86,7 +82,6 @@ class _SystemWidgetState extends State<SystemWidget> {
                   FFLocalizations.of(context).getText(
                     'syg54hv6' /* Push Notifications */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyLarge.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
                         lineHeight: 2,
@@ -96,23 +91,19 @@ class _SystemWidgetState extends State<SystemWidget> {
                   FFLocalizations.of(context).getText(
                     'kjhboitw' /* Receive Push notifications fro... */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Inter',
-                        color: Color(0xFF8B97A2),
+                        color: const Color(0xFF8B97A2),
                         letterSpacing: 0.0,
                       ),
                 ),
-                tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                activeColor: FlutterFlowTheme.of(context).primary,
-                activeTrackColor: FlutterFlowTheme.of(context).accent1,
                 dense: false,
                 controlAffinity: ListTileControlAffinity.trailing,
-                contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+                contentPadding: const EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
             child: Material(
               color: Colors.transparent,
               child: SwitchListTile.adaptive(
@@ -124,7 +115,6 @@ class _SystemWidgetState extends State<SystemWidget> {
                   FFLocalizations.of(context).getText(
                     '6db3hml9' /* Object Notifications */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyLarge.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
                         lineHeight: 2,
@@ -134,18 +124,14 @@ class _SystemWidgetState extends State<SystemWidget> {
                   FFLocalizations.of(context).getText(
                     'v16cybrp' /* Receive Push notifications fro... */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Inter',
-                        color: Color(0xFF8B97A2),
+                        color: const Color(0xFF8B97A2),
                         letterSpacing: 0.0,
                       ),
                 ),
-                tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                activeColor: FlutterFlowTheme.of(context).primary,
-                activeTrackColor: FlutterFlowTheme.of(context).accent1,
                 dense: false,
                 controlAffinity: ListTileControlAffinity.trailing,
-                contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+                contentPadding: const EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
               ),
             ),
           ),
@@ -160,7 +146,6 @@ class _SystemWidgetState extends State<SystemWidget> {
                 FFLocalizations.of(context).getText(
                   'a3see93f' /* Order Notifications */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyLarge.override(
                       fontFamily: 'Inter',
                       letterSpacing: 0.0,
                       lineHeight: 2,
@@ -170,18 +155,14 @@ class _SystemWidgetState extends State<SystemWidget> {
                 FFLocalizations.of(context).getText(
                   'ow977w7y' /* Receive email notifications fr... */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Inter',
-                      color: Color(0xFF8B97A2),
+                      color: const Color(0xFF8B97A2),
                       letterSpacing: 0.0,
                     ),
               ),
-              tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-              activeColor: FlutterFlowTheme.of(context).primary,
-              activeTrackColor: FlutterFlowTheme.of(context).accent1,
               dense: false,
               controlAffinity: ListTileControlAffinity.trailing,
-              contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+              contentPadding: const EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
             ),
           ),
         ],

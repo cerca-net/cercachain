@@ -72,22 +72,22 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, -140.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -140.0),
+            end: const Offset(0.0, 0.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.9, 0.9),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.349, 0),
-            end: Offset(0, 0),
+            begin: const Offset(0.349, 0),
+            end: const Offset(0, 0),
           ),
         ],
       ),
@@ -107,42 +107,38 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       body: Align(
-        alignment: AlignmentDirectional(0, 0),
+        alignment: const AlignmentDirectional(0, 0),
         child: Container(
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                FlutterFlowTheme.of(context).primary,
-                FlutterFlowTheme.of(context).alternate
               ],
-              stops: [0, 1],
-              begin: AlignmentDirectional(0.87, -1),
-              end: AlignmentDirectional(-0.87, 1),
+              stops: const [0, 1],
+              begin: const AlignmentDirectional(0.87, -1),
+              end: const AlignmentDirectional(-0.87, 1),
             ),
           ),
-          alignment: AlignmentDirectional(0, -1),
+          alignment: const AlignmentDirectional(0, -1),
           child: Align(
-            alignment: AlignmentDirectional(0, 0),
+            alignment: const AlignmentDirectional(0, 0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
                     child: Container(
                       width: double.infinity,
                       height: 600,
-                      constraints: BoxConstraints(
+                      constraints: const BoxConstraints(
                         maxWidth: 570,
                       ),
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4,
                             color: Color(0x33000000),
@@ -155,7 +151,7 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0, 0),
+                        alignment: const AlignmentDirectional(0, 0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -163,12 +159,11 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsets.all(22),
+                                padding: const EdgeInsets.all(22),
                                 child: Container(
                                   width: 100,
                                   height: 300,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                   ),
                                   child: SizedBox(
@@ -189,7 +184,7 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                               CrossAxisAlignment.stretch,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8, 14, 8, 0),
                                               child: RichText(
                                                 textScaler:
@@ -203,7 +198,6 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                           .getText(
                                                         'y3cebvy3' /* User & Profile */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
@@ -213,7 +207,6 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                           ),
                                                     )
                                                   ],
-                                                  style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
@@ -227,7 +220,7 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                               child: Container(
                                                 width: double.infinity,
                                                 height: double.infinity,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.min,
@@ -247,7 +240,6 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                             height: 120,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
                                                               borderRadius:
@@ -256,17 +248,17 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                                           12),
                                                             ),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child: Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 0),
                                                               child: Stack(
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0,
                                                                             0),
                                                                     child:
@@ -282,7 +274,6 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                                           Icons
                                                                               .upload_file,
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).primaryText,
                                                                           size:
                                                                               24,
                                                                         ),
@@ -291,7 +282,6 @@ class _UserSurveyWidgetState extends State<UserSurveyWidget>
                                                                               .getText(
                                                                             'hw57vcox' /* Upload Banner */,
                                                                           ),
-                                                                          style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Montserrat',

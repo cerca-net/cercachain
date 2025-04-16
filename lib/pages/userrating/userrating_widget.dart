@@ -68,7 +68,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Stack(
           children: [
             ClipRRect(
@@ -81,7 +80,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: StreamBuilder<UsersRecord>(
                 stream: UsersRecord.getDocument(widget.publicuser!),
                 builder: (context, snapshot) {
@@ -93,7 +92,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                         height: 50,
                         child: CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            FlutterFlowTheme.of(context).primary,
                           ),
                         ),
                       ),
@@ -113,8 +111,8 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                             width: 100,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: Color(0xDFFFFFFF),
-                              boxShadow: [
+                              color: const Color(0xDFFFFFFF),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4,
                                   color: Color(0x33000000),
@@ -127,33 +125,33 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Stack(
-                                        alignment: AlignmentDirectional(0, 1),
+                                        alignment: const AlignmentDirectional(0, 1),
                                         children: [
                                           Padding(
-                                            padding: EdgeInsets.all(4),
+                                            padding: const EdgeInsets.all(4),
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsets.all(8),
+                                                padding: const EdgeInsets.all(8),
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 0),
                                                       child: Lottie.asset(
                                                         'assets/jsons/waiting.json',
@@ -165,7 +163,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 0),
                                                       child: Container(
                                                         width: 100,
@@ -173,7 +171,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                         clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
@@ -190,7 +188,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                             ),
                                           ),
                                           Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -200,19 +198,17 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Text(
                                                       columnUsersRecord
                                                           .username,
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryText,
                                                             fontSize: 18,
@@ -225,10 +221,10 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: RichText(
                                                       textScaler:
                                                           MediaQuery.of(context)
@@ -239,7 +235,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                             text:
                                                                 columnUsersRecord
                                                                     .name,
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
@@ -253,11 +248,10 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                             text:
                                                                 columnUsersRecord
                                                                     .surname,
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           )
                                                         ],
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
@@ -279,20 +273,18 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                   ),
                                   Expanded(
                                     child: Align(
-                                      alignment: AlignmentDirectional(-1, 0),
+                                      alignment: const AlignmentDirectional(-1, 0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             24, 0, 0, 8),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
                                             'qum9uttj' /* Submit Rating */,
                                           ),
-                                          style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Inter',
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .secondaryText,
                                                 fontSize: 16,
                                                 letterSpacing: 0.0,
@@ -303,21 +295,20 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0, 0),
+                                    alignment: const AlignmentDirectional(0, 0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12, 0, 12, 0),
                                       child: Container(
                                         width: double.infinity,
                                         height: 40,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Align(
-                                          alignment: AlignmentDirectional(0, 0),
+                                          alignment: const AlignmentDirectional(0, 0),
                                           child: RatingBar.builder(
                                             onRatingUpdate: (newValue) =>
                                                 safeSetState(() => _model
@@ -326,20 +317,17 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                 Icon(
                                               Icons.circle,
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondary,
                                             ),
                                             direction: Axis.horizontal,
                                             initialRating:
                                                 _model.ratingBarValue ??= 0,
                                             unratedColor:
-                                                FlutterFlowTheme.of(context)
                                                     .accent1,
                                             itemCount: 10,
-                                            itemPadding: EdgeInsets.all(4),
+                                            itemPadding: const EdgeInsets.all(4),
                                             itemSize: 20,
                                             glowColor:
-                                                FlutterFlowTheme.of(context)
                                                     .secondary,
                                           ),
                                         ),
@@ -347,17 +335,16 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(12),
+                                    padding: const EdgeInsets.all(12),
                                     child: Container(
                                       width: double.infinity,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(4),
+                                        padding: const EdgeInsets.all(4),
                                         child: SizedBox(
                                           width: 200,
                                           child: TextFormField(
@@ -369,7 +356,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                             decoration: InputDecoration(
                                               isDense: true,
                                               labelStyle:
-                                                  FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -381,14 +367,13 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                 '1ne00zdy' /* Leave a comment. */,
                                               ),
                                               hintStyle:
-                                                  FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
                                                         fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1,
                                                 ),
@@ -396,7 +381,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     BorderRadius.circular(8),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1,
                                                 ),
@@ -405,7 +390,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                               ),
                                               errorBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .error,
                                                   width: 1,
@@ -416,7 +400,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .error,
                                                   width: 1,
@@ -425,14 +408,12 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     BorderRadius.circular(8),
                                               ),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             cursorColor:
-                                                FlutterFlowTheme.of(context)
                                                     .primaryText,
                                             validator: _model
                                                 .textControllerValidator
@@ -443,13 +424,13 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12, 0, 12, 8),
                                     child: Material(
                                       color: Colors.transparent,
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
@@ -457,7 +438,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     .shrinkWrap,
                                           ),
                                           unselectedWidgetColor:
-                                              FlutterFlowTheme.of(context)
                                                   .alternate,
                                         ),
                                         child: CheckboxListTile(
@@ -472,11 +452,9 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                             FFLocalizations.of(context).getText(
                                               'kmmj28py' /* Terms & Conditions */,
                                             ),
-                                            style: FlutterFlowTheme.of(context)
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Sora',
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
                                                   fontSize: 16,
@@ -484,18 +462,15 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                 ),
                                           ),
                                           tileColor:
-                                              FlutterFlowTheme.of(context)
                                                   .secondaryBackground,
                                           activeColor:
-                                              FlutterFlowTheme.of(context)
                                                   .primary,
                                           checkColor:
-                                              FlutterFlowTheme.of(context).info,
                                           dense: true,
                                           controlAffinity:
                                               ListTileControlAffinity.trailing,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12, 0, 12, 0),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
@@ -506,7 +481,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(12),
+                                    padding: const EdgeInsets.all(12),
                                     child: StreamBuilder<List<CreditsRecord>>(
                                       stream: queryCreditsRecord(
                                         queryBuilder: (creditsRecord) =>
@@ -527,7 +502,6 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                 valueColor:
                                                     AlwaysStoppedAnimation<
                                                         Color>(
-                                                  FlutterFlowTheme.of(context)
                                                       .primary,
                                                 ),
                                               ),
@@ -555,17 +529,15 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                 true)
                                               Align(
                                                 alignment:
-                                                    AlignmentDirectional(0, 0),
+                                                    const AlignmentDirectional(0, 0),
                                                 child: FlutterFlowIconButton(
                                                   borderRadius: 100,
                                                   buttonSize: 46,
                                                   fillColor:
-                                                      FlutterFlowTheme.of(
                                                               context)
                                                           .secondary,
                                                   icon: Icon(
                                                     Icons.send_rounded,
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     size: 24,
@@ -618,15 +590,13 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                         content: Text(
                                                           'SUCCESS',
                                                           style: TextStyle(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .primaryText,
                                                           ),
                                                         ),
-                                                        duration: Duration(
+                                                        duration: const Duration(
                                                             milliseconds: 4000),
                                                         backgroundColor:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondary,
                                                       ),

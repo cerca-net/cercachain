@@ -49,12 +49,10 @@ class _AboutWidgetState extends State<AboutWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Container(
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).primaryBackground,
             image: DecorationImage(
               fit: BoxFit.cover,
               image: Image.asset(
@@ -67,15 +65,14 @@ class _AboutWidgetState extends State<AboutWidget> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Align(
-                alignment: AlignmentDirectional(1, -1),
+                alignment: const AlignmentDirectional(1, -1),
                 child: Padding(
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   child: FlutterFlowIconButton(
                     borderRadius: 100,
                     buttonSize: 40,
                     icon: Icon(
                       Icons.close_rounded,
-                      color: FlutterFlowTheme.of(context).secondaryText,
                       size: 24,
                     ),
                     onPressed: () {
@@ -89,7 +86,7 @@ class _AboutWidgetState extends State<AboutWidget> {
                   width: double.infinity,
                   height: 500,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [Color(0x00090F13), Color(0x991D2429)],
                       stops: [0, 0.95],
                       begin: AlignmentDirectional(0, -1),
@@ -98,7 +95,7 @@ class _AboutWidgetState extends State<AboutWidget> {
                     borderRadius: BorderRadius.circular(0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -111,11 +108,9 @@ class _AboutWidgetState extends State<AboutWidget> {
                             FlutterFlowIconButton(
                               borderRadius: 100,
                               buttonSize: 40,
-                              fillColor: FlutterFlowTheme.of(context).alternate,
                               icon: Icon(
                                 Icons.play_arrow_rounded,
                                 color:
-                                    FlutterFlowTheme.of(context).secondaryText,
                                 size: 24,
                               ),
                               onPressed: () {
@@ -124,7 +119,7 @@ class _AboutWidgetState extends State<AboutWidget> {
                             ),
                           ],
                         ),
-                      ].divide(SizedBox(height: 8)),
+                      ].divide(const SizedBox(height: 8)),
                     ),
                   ),
                 ),

@@ -54,21 +54,19 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).alternate,
         body: SafeArea(
           top: true,
           child: Container(
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: FlutterFlowTheme.of(context).alternate,
             ),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
                     child: SizedBox(
                       width: double.infinity,
                       height: double.infinity,
@@ -76,7 +74,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                         children: [
                           Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 40),
+                                const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 40),
                             child: PageView(
                               controller: _model.pageViewController ??=
                                   PageController(initialPage: 0),
@@ -85,7 +83,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                 Stack(
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0),
                                         bottomRight: Radius.circular(0),
                                         topLeft: Radius.circular(12),
@@ -99,20 +97,19 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0, 1),
+                                      alignment: const AlignmentDirectional(0, 1),
                                       child: Container(
                                         width: double.infinity,
                                         height: 300,
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              Color(0x00E3E7ED),
-                                              FlutterFlowTheme.of(context)
+                                              const Color(0x00E3E7ED),
                                                   .alternate
                                             ],
-                                            stops: [0, 1],
-                                            begin: AlignmentDirectional(0, -1),
-                                            end: AlignmentDirectional(0, 1),
+                                            stops: const [0, 1],
+                                            begin: const AlignmentDirectional(0, -1),
+                                            end: const AlignmentDirectional(0, 1),
                                           ),
                                         ),
                                         child: Column(
@@ -125,7 +122,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   .getText(
                                                 '73qngijf' /* EXPLORE */,
                                               ),
-                                              style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
                                                   .override(
@@ -136,7 +132,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 15, 0, 0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -144,7 +140,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   'szwv3n45' /* Discover you sorroundings like... */,
                                                 ),
                                                 style:
-                                                    FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
@@ -163,7 +158,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                 Stack(
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0),
                                         bottomRight: Radius.circular(0),
                                         topLeft: Radius.circular(12),
@@ -177,20 +172,19 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0, 1),
+                                      alignment: const AlignmentDirectional(0, 1),
                                       child: Container(
                                         width: double.infinity,
                                         height: 300,
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              Color(0x00E3E7ED),
-                                              FlutterFlowTheme.of(context)
+                                              const Color(0x00E3E7ED),
                                                   .alternate
                                             ],
-                                            stops: [0, 1],
-                                            begin: AlignmentDirectional(0, -1),
-                                            end: AlignmentDirectional(0, 1),
+                                            stops: const [0, 1],
+                                            begin: const AlignmentDirectional(0, -1),
+                                            end: const AlignmentDirectional(0, 1),
                                           ),
                                         ),
                                         child: Column(
@@ -203,7 +197,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   .getText(
                                                 '2naolsoc' /* CONNECT */,
                                               ),
-                                              style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
                                                   .override(
@@ -214,7 +207,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 15, 0, 0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -222,7 +215,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   'fz1t8fpi' /* Share and discover new potenci... */,
                                                 ),
                                                 style:
-                                                    FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
@@ -239,11 +231,11 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                   ],
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: const AlignmentDirectional(0, 0),
                                   child: Stack(
                                     children: [
                                       ClipRRect(
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(0),
                                           bottomRight: Radius.circular(0),
                                           topLeft: Radius.circular(12),
@@ -257,21 +249,20 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                         ),
                                       ),
                                       Align(
-                                        alignment: AlignmentDirectional(0, 1),
+                                        alignment: const AlignmentDirectional(0, 1),
                                         child: Container(
                                           width: double.infinity,
                                           height: 300,
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
                                               colors: [
-                                                Color(0x00E3E7ED),
-                                                FlutterFlowTheme.of(context)
+                                                const Color(0x00E3E7ED),
                                                     .alternate
                                               ],
-                                              stops: [0, 1],
+                                              stops: const [0, 1],
                                               begin:
-                                                  AlignmentDirectional(0, -1),
-                                              end: AlignmentDirectional(0, 1),
+                                                  const AlignmentDirectional(0, -1),
+                                              end: const AlignmentDirectional(0, 1),
                                             ),
                                           ),
                                           child: Column(
@@ -285,7 +276,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                   'wrjzgjvf' /* INTERACT */,
                                                 ),
                                                 style:
-                                                    FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
@@ -298,16 +288,15 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                               ),
                                               Align(
                                                 alignment:
-                                                    AlignmentDirectional(0, 0),
+                                                    const AlignmentDirectional(0, 0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(0, 15, 0, 0),
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
                                                       'p2bvpaxe' /* Automated transaction processi... */,
                                                     ),
-                                                    style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
                                                         .override(
@@ -329,9 +318,9 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                 Stack(
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0, 0),
+                                      alignment: const AlignmentDirectional(0, 0),
                                       child: ClipRRect(
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(0),
                                           bottomRight: Radius.circular(0),
                                           topLeft: Radius.circular(12),
@@ -346,22 +335,21 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0, 1),
+                                      alignment: const AlignmentDirectional(0, 1),
                                       child: Container(
                                         width: double.infinity,
                                         height: double.infinity,
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              Color(0x00E3E7ED),
-                                              FlutterFlowTheme.of(context)
+                                              const Color(0x00E3E7ED),
                                                   .alternate
                                             ],
-                                            stops: [0, 1],
-                                            begin: AlignmentDirectional(0, -1),
-                                            end: AlignmentDirectional(0, 1),
+                                            stops: const [0, 1],
+                                            begin: const AlignmentDirectional(0, -1),
+                                            end: const AlignmentDirectional(0, 1),
                                           ),
-                                          borderRadius: BorderRadius.only(
+                                          borderRadius: const BorderRadius.only(
                                             bottomLeft: Radius.circular(0),
                                             bottomRight: Radius.circular(0),
                                             topLeft: Radius.circular(12),
@@ -375,7 +363,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                           children: [
                                             Opacity(
                                               opacity: 0.85,
-                                              child: FFButtonWidget(
                                                 onPressed: () async {
                                                   context.pushNamed(
                                                       LoginWidget.routeName);
@@ -388,16 +375,14 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                 options: FFButtonOptions(
                                                   width: 250,
                                                   height: 40,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(0, 0, 0, 0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0, 0, 0, 0),
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   textStyle:
-                                                      FlutterFlowTheme.of(
                                                               context)
                                                           .titleSmall
                                                           .override(
@@ -410,7 +395,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                           ),
                                                   elevation: 0,
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,
                                                     width: 1,
@@ -423,7 +407,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                             ),
                                             Opacity(
                                               opacity: 0.85,
-                                              child: FFButtonWidget(
                                                 onPressed: () async {
                                                   context.pushNamed(
                                                       SignupWidget.routeName);
@@ -436,16 +419,14 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                 options: FFButtonOptions(
                                                   width: 250,
                                                   height: 40,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(16, 0, 16, 0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0, 0, 0, 0),
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   textStyle:
-                                                      FlutterFlowTheme.of(
                                                               context)
                                                           .titleSmall
                                                           .override(
@@ -458,7 +439,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                           ),
                                                   elevation: 0,
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,
                                                     width: 1,
@@ -471,7 +451,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                             ),
                                             Opacity(
                                               opacity: 0.85,
-                                              child: FFButtonWidget(
                                                 onPressed: () async {
                                                   context.goNamed(
                                                       FeedpageWidget.routeName);
@@ -484,22 +463,19 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                 options: FFButtonOptions(
                                                   width: 250,
                                                   height: 40,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(16, 0, 16, 0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0, 0, 0, 0),
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .alternate,
-                                                  textStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
                                                         fontFamily:
                                                             'Roboto Mono',
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondary,
                                                         letterSpacing: 0.0,
@@ -508,7 +484,6 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                       ),
                                                   elevation: 0,
                                                   borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     width: 1,
@@ -519,7 +494,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(height: 10)),
+                                          ].divide(const SizedBox(height: 10)),
                                         ),
                                       ),
                                     ),
@@ -529,10 +504,10 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0, 1),
+                            alignment: const AlignmentDirectional(0, 1),
                             child: Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                                  const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
                               child: smooth_page_indicator.SmoothPageIndicator(
                                 controller: _model.pageViewController ??=
                                     PageController(initialPage: 0),
@@ -542,7 +517,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                   await _model.pageViewController!
                                       .animateToPage(
                                     i,
-                                    duration: Duration(milliseconds: 500),
+                                    duration: const Duration(milliseconds: 500),
                                     curve: Curves.ease,
                                   );
                                   safeSetState(() {});
@@ -553,9 +528,7 @@ class _StartingPageWidgetState extends State<StartingPageWidget> {
                                   dotWidth: 8,
                                   dotHeight: 8,
                                   dotColor:
-                                      FlutterFlowTheme.of(context).accent1,
                                   activeDotColor:
-                                      FlutterFlowTheme.of(context).primary,
                                   paintStyle: PaintingStyle.fill,
                                 ),
                               ),

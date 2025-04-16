@@ -107,7 +107,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
 
     return GestureDetector(
       onTap: () {
@@ -116,11 +115,10 @@ class _NewpageWidgetState extends State<NewpageWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+            padding: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
             child: StreamBuilder<List<AnalyticsRecord>>(
               stream: queryAnalyticsRecord(
                 queryBuilder: (analyticsRecord) => analyticsRecord.where(
@@ -138,7 +136,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                       height: 50,
                       child: CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
-                          FlutterFlowTheme.of(context).primary,
                         ),
                       ),
                     ),
@@ -162,11 +159,10 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).alternate,
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(4),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -174,10 +170,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                           children: [
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
+                                  const EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   shape: BoxShape.circle,
                                 ),
@@ -190,13 +185,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                   onIcon: Icon(
                                     Icons.bolt,
                                     color:
-                                        FlutterFlowTheme.of(context).secondary,
                                     size: 22,
                                   ),
                                   offIcon: Icon(
                                     Icons.post_add,
                                     color:
-                                        FlutterFlowTheme.of(context).secondary,
                                     size: 22,
                                   ),
                                 ),
@@ -207,26 +200,22 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                 'iw6r7zs6' /* New */,
                               ),
                               textAlign: TextAlign.center,
-                              style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
                                     fontFamily: 'Sora',
-                                    color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                     letterSpacing: 0.0,
                                   ),
                             ),
                             Expanded(
                               child: AnimatedDefaultTextStyle(
-                                style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
                                       fontFamily: 'Sora',
-                                      color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       letterSpacing: 0.0,
                                     ),
-                                duration: Duration(milliseconds: 600),
+                                duration: const Duration(milliseconds: 600),
                                 curve: Curves.easeIn,
                                 child: Text(
                                   _model.isNewItem ? 'item' : 'post',
@@ -234,7 +223,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 8)),
+                          ].divide(const SizedBox(width: 8)),
                         ),
                       ),
                     ),
@@ -244,16 +233,15 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                         width: 100,
                         height: 50,
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).alternate,
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0, 0),
+                          alignment: const AlignmentDirectional(0, 0),
                           child: Builder(
                             builder: (context) {
                               if (!_model.isNewItem) {
                                 return Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8, 0, 8, 0),
                                   child: FlutterFlowChoiceChips(
                                     options: [
@@ -283,36 +271,28 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             val?.firstOrNull),
                                     selectedChipStyle: ChipStyle(
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondary,
-                                      textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: FlutterFlowTheme.of(context)
                                                 .info,
                                             fontSize: 12,
                                             letterSpacing: 0.0,
                                           ),
                                       iconColor:
-                                          FlutterFlowTheme.of(context).info,
                                       iconSize: 14,
                                       elevation: 0,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     unselectedChipStyle: ChipStyle(
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                      textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
                                             letterSpacing: 0.0,
                                           ),
-                                      iconColor: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       iconSize: 12,
                                       elevation: 0,
@@ -338,7 +318,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                 );
                               } else {
                                 return Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: const AlignmentDirectional(0, 0),
                                   child: FlutterFlowChoiceChips(
                                     options: [
                                       ChipData(
@@ -362,35 +342,27 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             val?.firstOrNull),
                                     selectedChipStyle: ChipStyle(
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondary,
-                                      textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: FlutterFlowTheme.of(context)
                                                 .info,
                                             letterSpacing: 0.0,
                                           ),
                                       iconColor:
-                                          FlutterFlowTheme.of(context).info,
                                       iconSize: 16,
                                       elevation: 0,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     unselectedChipStyle: ChipStyle(
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                      textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
                                             letterSpacing: 0.0,
                                           ),
-                                      iconColor: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       iconSize: 16,
                                       elevation: 0,
@@ -439,7 +411,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                   height: 50,
                                   child: CircularProgressIndicator(
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                      FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                 ),
@@ -468,7 +439,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: double.infinity,
                                       height: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -478,7 +448,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             AutovalidateMode.disabled,
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 8, 16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -493,7 +463,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: double.infinity,
                                                   height: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -559,12 +528,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               -1,
                                                                               1),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16,
                                                                             0,
                                                                             0,
@@ -581,7 +550,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               (i) async {
                                                                             await _model.pageViewController1!.animateToPage(
                                                                               i,
-                                                                              duration: Duration(milliseconds: 500),
+                                                                              duration: const Duration(milliseconds: 500),
                                                                               curve: Curves.ease,
                                                                             );
                                                                             safeSetState(() {});
@@ -599,9 +568,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             dotHeight:
                                                                                 8,
                                                                             dotColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             activeDotColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             paintStyle:
                                                                                 PaintingStyle.fill,
                                                                           ),
@@ -619,11 +586,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             null)
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1, 1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(12),
                                                               child:
                                                                   FlutterFlowIconButton(
@@ -632,13 +599,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 borderRadius:
                                                                     100,
                                                                 buttonSize: 40,
-                                                                fillColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 icon: Icon(
                                                                   Icons
                                                                       .library_add_sharp,
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   size: 20,
@@ -746,7 +711,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: 100,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -754,7 +718,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child:
                                                         SingleChildScrollView(
                                                       child: Column(
@@ -766,7 +730,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -804,22 +768,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -832,22 +792,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -884,7 +840,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   'Design')
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child:
@@ -918,21 +874,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     selectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryBackground,
                                                                       iconSize:
                                                                           16,
@@ -945,21 +897,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     unselectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryText,
                                                                       iconSize:
                                                                           16,
@@ -993,7 +941,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   'Data')
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child:
@@ -1027,21 +975,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     selectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryBackground,
                                                                       iconSize:
                                                                           16,
@@ -1054,21 +998,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     unselectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryText,
                                                                       iconSize:
                                                                           16,
@@ -1102,7 +1042,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   'Media')
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child:
@@ -1131,21 +1071,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     selectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryBackground,
                                                                       iconSize:
                                                                           16,
@@ -1158,21 +1094,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     unselectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryText,
                                                                       iconSize:
                                                                           16,
@@ -1206,7 +1138,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   'Art')
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child:
@@ -1240,21 +1172,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     selectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryBackground,
                                                                       iconSize:
                                                                           16,
@@ -1267,21 +1195,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     unselectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryText,
                                                                       iconSize:
                                                                           16,
@@ -1315,7 +1239,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   'Photo')
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child:
@@ -1354,21 +1278,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     selectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryBackground,
                                                                       iconSize:
                                                                           16,
@@ -1381,21 +1301,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     unselectedChipStyle:
                                                                         ChipStyle(
                                                                       backgroundColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .alternate,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       iconColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryText,
                                                                       iconSize:
                                                                           16,
@@ -1428,7 +1344,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -1450,7 +1366,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -1464,7 +1379,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     '26ihtbl0' /* Add footnote here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -1477,7 +1391,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -1489,7 +1402,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -1502,7 +1415,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -1515,7 +1427,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -1525,11 +1436,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -1540,7 +1449,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                 maxLines: 2,
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -1552,10 +1460,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child:
-                                                                FFButtonWidget(
                                                               onPressed:
                                                                   () async {
                                                                 if (_model.formKey3
@@ -1696,7 +1603,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   .getText(
                                                                 'j1aca0wc' /* Submit */,
                                                               ),
-                                                              icon: Icon(
+                                                              icon: const Icon(
                                                                 Icons
                                                                     .subdirectory_arrow_right,
                                                                 size: 15,
@@ -1705,7 +1612,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   FFButtonOptions(
                                                                 height: 40,
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
@@ -1715,16 +1622,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     IconAlignment
                                                                         .end,
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -1814,23 +1719,19 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -1843,22 +1744,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -1893,7 +1790,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -1906,7 +1803,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: double.infinity,
                                       height: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -1916,7 +1812,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             AutovalidateMode.disabled,
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 8, 16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -1943,7 +1839,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               double.infinity,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             borderRadius:
@@ -1999,11 +1894,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1, 1),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12),
                                                           child:
                                                               FlutterFlowIconButton(
@@ -2012,13 +1907,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             borderRadius: 100,
                                                             buttonSize: 40,
                                                             fillColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                             icon: Icon(
                                                               Icons
                                                                   .library_add_sharp,
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
                                                               size: 20,
@@ -2132,7 +2025,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: 100,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -2140,7 +2032,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child:
                                                         SingleChildScrollView(
                                                       child: Column(
@@ -2152,11 +2044,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         children: [
                                                           Container(
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -2184,22 +2076,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -2212,22 +2100,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -2259,7 +2143,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               'Movie')
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -2292,21 +2176,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   iconSize: 16,
@@ -2319,21 +2199,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -2365,7 +2241,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               'Short')
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -2408,21 +2284,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   iconSize: 16,
@@ -2435,21 +2307,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -2481,7 +2349,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               'Clip')
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -2514,21 +2382,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   iconSize: 16,
@@ -2541,21 +2405,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -2584,7 +2444,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -2606,7 +2466,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -2620,7 +2479,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     'nee80c5b' /* Add footnote here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -2633,7 +2491,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -2645,7 +2502,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -2658,7 +2515,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -2671,7 +2527,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -2681,11 +2536,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -2696,7 +2549,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                 maxLines: 2,
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -2708,10 +2560,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child:
-                                                                FFButtonWidget(
                                                               onPressed:
                                                                   () async {
                                                                 if (_model.formKey7
@@ -2852,7 +2703,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   .getText(
                                                                 'w2wab6rb' /* Submit */,
                                                               ),
-                                                              icon: Icon(
+                                                              icon: const Icon(
                                                                 Icons
                                                                     .subdirectory_arrow_right,
                                                                 size: 15,
@@ -2861,7 +2712,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   FFButtonOptions(
                                                                 height: 40,
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
@@ -2871,16 +2722,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     IconAlignment
                                                                         .end,
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -2962,22 +2811,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .info,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
                                                                   iconColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                   iconSize: 16,
@@ -2990,21 +2835,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -3041,7 +2882,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -3054,7 +2895,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: double.infinity,
                                       height: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -3063,7 +2903,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                         autovalidateMode:
                                             AutovalidateMode.disabled,
                                         child: Padding(
-                                          padding: EdgeInsets.all(8),
+                                          padding: const EdgeInsets.all(8),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -3073,7 +2913,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             children: [
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
                                                   borderRadius:
@@ -3088,7 +2927,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsets.all(8),
+                                                          const EdgeInsets.all(8),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -3127,7 +2966,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   controller: _model
                                                                       .timerController,
                                                                   updateStateInterval:
-                                                                      Duration(
+                                                                      const Duration(
                                                                           milliseconds:
                                                                               1000),
                                                                   onChanged: (value,
@@ -3145,7 +2984,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   textAlign:
                                                                       TextAlign
                                                                           .start,
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .headlineSmall
                                                                       .override(
@@ -3166,7 +3004,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     Builder(
                                                                       builder:
                                                                           (context) {
-                                                                        if (FFAppState().recording ==
                                                                             false) {
                                                                           return Column(
                                                                             mainAxisSize:
@@ -3175,14 +3012,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               FlutterFlowIconButton(
                                                                                 borderRadius: 8,
                                                                                 buttonSize: 40,
-                                                                                fillColor: FlutterFlowTheme.of(context).alternate,
                                                                                 icon: Icon(
                                                                                   Icons.fiber_manual_record,
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   size: 24,
                                                                                 ),
                                                                                 onPressed: () async {
-                                                                                  FFAppState().recording = true;
                                                                                   safeSetState(() {});
                                                                                   await startAudioRecording(
                                                                                     context,
@@ -3200,18 +3034,15 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 MainAxisSize.max,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(6, 0, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(6, 0, 0, 0),
                                                                                 child: FlutterFlowIconButton(
                                                                                   borderRadius: 8,
                                                                                   buttonSize: 40,
-                                                                                  fillColor: FlutterFlowTheme.of(context).secondary,
                                                                                   icon: Icon(
                                                                                     Icons.graphic_eq_outlined,
-                                                                                    color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     size: 24,
                                                                                   ),
                                                                                   onPressed: () async {
-                                                                                    FFAppState().recording = false;
                                                                                     safeSetState(() {});
                                                                                     await stopAudioRecording(
                                                                                       audioRecorder: _model.audioRecorder,
@@ -3224,7 +3055,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
 
                                                                                     _model.timerController.onStopTimer();
                                                                                     context.safePop();
-                                                                                    FFAppState().recorded = 'salidaAudio';
                                                                                     safeSetState(() {});
 
                                                                                     safeSetState(() {});
@@ -3238,24 +3068,21 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                   ],
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 4)),
                                                             ),
-                                                          if (FFAppState()
                                                                       .recorded ==
                                                                   null ||
-                                                              FFAppState()
                                                                       .recorded ==
                                                                   '')
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0, 0),
                                                               child:
                                                                   FlutterFlowIconButton(
                                                                 borderRadius: 8,
                                                                 buttonSize: 40,
-                                                                fillColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                                 icon: Icon(
@@ -3268,11 +3095,8 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 null &&
                                                                             _model.uploadedFileUrl3 !=
                                                                                 ''
-                                                                        ? FlutterFlowTheme.of(context)
                                                                             .secondary
-                                                                        : FlutterFlowTheme.of(context)
                                                                             .secondaryText,
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                   ),
@@ -3370,14 +3194,13 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               thickness: 2,
                                                               indent: 20,
                                                               endIndent: 20,
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
                                                             ),
                                                           ),
                                                           Stack(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             children: [
                                                               Opacity(
@@ -3418,12 +3241,10 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       8,
                                                                   buttonSize:
                                                                       40,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   icon: Icon(
                                                                     Icons.image,
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     size: 20,
@@ -3517,10 +3338,10 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             ],
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 width: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     width: 12)),
                                                       ),
                                                     ),
@@ -3537,16 +3358,13 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 ''))
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(8),
+                                                            const EdgeInsets.all(8),
                                                         child:
                                                             FlutterFlowAudioPlayer(
                                                           audio: Audio.network(
-                                                            FFAppState().recorded !=
                                                                         null &&
-                                                                    FFAppState()
                                                                             .recorded !=
                                                                         ''
-                                                                ? FFAppState()
                                                                     .recorded
                                                                 : _model
                                                                     .uploadedFileUrl3,
@@ -3557,7 +3375,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             ),
                                                           ),
                                                           titleTextStyle:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .titleLarge
                                                                   .override(
@@ -3567,7 +3384,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         0.0,
                                                                   ),
                                                           playbackDurationTextStyle:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .labelMedium
                                                                   .override(
@@ -3576,19 +3392,15 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
-                                                          fillColor: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           playbackButtonColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .primary,
                                                           activeTrackColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .primary,
                                                           inactiveTrackColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .alternate,
                                                           elevation: 0,
@@ -3605,7 +3417,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: double.infinity,
                                                   height: 400,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -3613,7 +3424,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -3626,7 +3437,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsets.all(8),
+                                                              const EdgeInsets.all(8),
                                                           child:
                                                               FlutterFlowChoiceChips(
                                                             options: [
@@ -3656,22 +3467,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             selectedChipStyle:
                                                                 ChipStyle(
                                                               backgroundColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                              iconColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
                                                               iconSize: 16,
@@ -3684,22 +3491,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             unselectedChipStyle:
                                                                 ChipStyle(
                                                               backgroundColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                              iconColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
                                                               iconSize: 16,
@@ -3730,7 +3533,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             'Music')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -3758,22 +3561,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -3786,22 +3585,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -3833,7 +3628,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             'Podcast')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -3861,22 +3656,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -3889,22 +3680,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -3936,7 +3723,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             'Note')
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -3959,22 +3746,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -3987,22 +3770,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -4031,7 +3810,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(8,
                                                                       4, 8, 4),
                                                           child: SizedBox(
@@ -4049,7 +3828,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               decoration:
                                                                   InputDecoration(
                                                                 isDense: true,
-                                                                labelStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
@@ -4064,7 +3842,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         .getText(
                                                                   'cl4h2vv8' /* Header... */,
                                                                 ),
-                                                                hintStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
@@ -4077,7 +3854,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     OutlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                     width: 1,
@@ -4090,7 +3866,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 focusedBorder:
                                                                     OutlineInputBorder(
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Color(
                                                                         0x00000000),
                                                                     width: 1,
@@ -4104,7 +3880,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     OutlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .error,
                                                                     width: 1,
@@ -4118,7 +3893,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     OutlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .error,
                                                                     width: 1,
@@ -4129,11 +3903,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               12),
                                                                 ),
                                                                 filled: true,
-                                                                fillColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
@@ -4144,7 +3916,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   ),
                                                               maxLines: 2,
                                                               cursorColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
                                                               validator: _model
@@ -4215,23 +3986,19 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             selectedChipStyle:
                                                                 ChipStyle(
                                                               backgroundColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .info,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
                                                               iconColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
                                                               iconSize: 16,
@@ -4244,22 +4011,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             unselectedChipStyle:
                                                                 ChipStyle(
                                                               backgroundColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                               textStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                              iconColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryText,
                                                               iconSize: 16,
@@ -4291,10 +4054,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         Expanded(
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 1),
                                                             child:
-                                                                FFButtonWidget(
                                                               onPressed:
                                                                   () async {
                                                                 if (_model.formKey5
@@ -4362,11 +4124,8 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     type1choice:
                                                                         _model
                                                                             .choiceChipsPAValue,
-                                                                    audio: FFAppState().recorded !=
                                                                                 null &&
-                                                                            FFAppState().recorded !=
                                                                                 ''
-                                                                        ? FFAppState()
                                                                             .recorded
                                                                         : _model
                                                                             .uploadedFileUrl3,
@@ -4432,7 +4191,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   .getText(
                                                                 'u5xn9nlx' /* Submit */,
                                                               ),
-                                                              icon: Icon(
+                                                              icon: const Icon(
                                                                 Icons
                                                                     .subdirectory_arrow_right,
                                                                 size: 15,
@@ -4441,7 +4200,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   FFButtonOptions(
                                                                 height: 46,
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
@@ -4451,16 +4210,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     IconAlignment
                                                                         .end,
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -4485,7 +4242,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -4498,7 +4255,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: double.infinity,
                                       height: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -4508,7 +4264,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             AutovalidateMode.disabled,
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 8, 16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -4523,7 +4279,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: double.infinity,
                                                   height: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -4532,7 +4287,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                     shape: BoxShape.rectangle,
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.all(8),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -4556,7 +4311,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 InputDecoration(
                                                               isDense: true,
                                                               labelStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -4572,7 +4326,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 'qguz9xc2' /* Header... */,
                                                               ),
                                                               hintStyle:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -4584,7 +4337,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               enabledBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0x00000000),
                                                                   width: 1,
@@ -4597,7 +4350,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               focusedBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Color(
                                                                       0x00000000),
                                                                   width: 1,
@@ -4611,7 +4364,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -4625,7 +4377,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   OutlineInputBorder(
                                                                 borderSide:
                                                                     BorderSide(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
                                                                   width: 1,
@@ -4636,11 +4387,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             8),
                                                               ),
                                                               filled: true,
-                                                              fillColor: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                             ),
-                                                            style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .titleLarge
                                                                 .override(
@@ -4651,7 +4400,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 ),
                                                             maxLines: 2,
                                                             cursorColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                             validator: _model
@@ -4675,7 +4423,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               decoration:
                                                                   InputDecoration(
                                                                 isDense: false,
-                                                                labelStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
@@ -4690,7 +4437,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         .getText(
                                                                   'or2yy3mb' /* Body... */,
                                                                 ),
-                                                                hintStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
@@ -4702,7 +4448,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 enabledBorder:
                                                                     OutlineInputBorder(
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Color(
                                                                         0x00000000),
                                                                     width: 1,
@@ -4715,7 +4461,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 focusedBorder:
                                                                     OutlineInputBorder(
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Color(
                                                                         0x00000000),
                                                                     width: 1,
@@ -4729,7 +4475,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     OutlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .error,
                                                                     width: 1,
@@ -4743,7 +4488,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     OutlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .error,
                                                                     width: 1,
@@ -4754,11 +4498,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               8),
                                                                 ),
                                                                 filled: true,
-                                                                fillColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
@@ -4779,7 +4521,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       maxLength}) =>
                                                                   null,
                                                               cursorColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
                                                               validator: _model
@@ -4799,7 +4540,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: 100,
                                                   height: 200,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -4807,7 +4547,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child:
                                                         SingleChildScrollView(
                                                       child: Column(
@@ -4819,11 +4559,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         children: [
                                                           Container(
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -4851,22 +4591,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -4879,22 +4615,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -4926,7 +4658,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               'Article')
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -4954,21 +4686,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   iconSize: 16,
@@ -4981,21 +4709,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -5027,7 +4751,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               'Quote')
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -5050,21 +4774,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   iconSize: 16,
@@ -5077,21 +4797,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -5123,7 +4839,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               'Story')
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
                                                                   FlutterFlowChoiceChips(
@@ -5146,21 +4862,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   iconSize: 16,
@@ -5173,21 +4885,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -5216,14 +4924,13 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child:
-                                                                  FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   if (_model.formKey1
@@ -5352,7 +5059,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     .getText(
                                                                   '9y3mo43e' /* Submit */,
                                                                 ),
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .subdirectory_arrow_right,
                                                                   size: 15,
@@ -5360,7 +5067,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
@@ -5370,16 +5077,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       IconAlignment
                                                                           .end,
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional
+                                                                      const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
@@ -5462,22 +5167,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .info,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
                                                                   iconColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                   iconSize: 16,
@@ -5490,21 +5191,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -5541,7 +5238,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -5572,7 +5269,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                   height: 50,
                                   child: CircularProgressIndicator(
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                      FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                 ),
@@ -5600,7 +5296,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: 100,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -5610,7 +5305,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             AutovalidateMode.disabled,
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 8, 16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -5625,7 +5320,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: double.infinity,
                                                   height: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -5691,12 +5385,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1,
                                                                             1),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               16,
                                                                               0,
@@ -5718,7 +5412,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               .animateToPage(
                                                                             i,
                                                                             duration:
-                                                                                Duration(milliseconds: 500),
+                                                                                const Duration(milliseconds: 500),
                                                                             curve:
                                                                                 Curves.ease,
                                                                           );
@@ -5738,9 +5432,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           dotHeight:
                                                                               8,
                                                                           dotColor:
-                                                                              FlutterFlowTheme.of(context).alternate,
                                                                           activeDotColor:
-                                                                              FlutterFlowTheme.of(context).alternate,
                                                                           paintStyle:
                                                                               PaintingStyle.fill,
                                                                         ),
@@ -5758,11 +5450,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           1)
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   1, 1),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowIconButton(
@@ -5771,13 +5463,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               borderRadius: 100,
                                                               buttonSize: 40,
                                                               fillColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                               icon: Icon(
                                                                 Icons
                                                                     .library_add_sharp,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 size: 20,
@@ -5886,7 +5576,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: 100,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -5894,7 +5583,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child:
                                                         SingleChildScrollView(
                                                       child: Column(
@@ -5906,7 +5595,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -5959,22 +5648,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -5987,22 +5672,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6052,22 +5733,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6080,22 +5757,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6154,22 +5827,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6182,22 +5851,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6251,22 +5916,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6279,22 +5940,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6353,22 +6010,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6381,22 +6034,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6450,22 +6099,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6478,22 +6123,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6542,22 +6183,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6570,22 +6207,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6639,22 +6272,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6667,22 +6296,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6736,22 +6361,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -6764,22 +6385,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -6807,7 +6424,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -6829,7 +6446,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -6843,7 +6459,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     '1kaajki4' /* Add Title here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -6856,7 +6471,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -6868,7 +6482,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -6881,7 +6495,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -6894,7 +6507,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -6904,11 +6516,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -6918,7 +6528,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           0.0,
                                                                     ),
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -6935,7 +6544,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             children: [
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           4,
@@ -6961,7 +6570,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           InputDecoration(
                                                                         isDense:
                                                                             true,
-                                                                        labelStyle: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -6971,7 +6579,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             FFLocalizations.of(context).getText(
                                                                           'md7c6owb' /* Ref. */,
                                                                         ),
-                                                                        hintStyle: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -6982,7 +6589,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -6992,7 +6598,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -7006,7 +6612,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).error,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -7018,7 +6623,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).error,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -7028,14 +6632,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         filled:
                                                                             true,
                                                                         fillColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
                                                                         suffixIcon:
-                                                                            Icon(
+                                                                            const Icon(
                                                                           Icons
                                                                               .toll,
                                                                         ),
                                                                       ),
-                                                                      style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
@@ -7045,7 +6647,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 0.0,
                                                                           ),
                                                                       cursorColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primaryText,
                                                                       validator: _model
                                                                           .textController7Validator
@@ -7059,7 +6660,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -7081,7 +6682,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -7095,7 +6695,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     'n2ueuudf' /* Add description here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -7108,7 +6707,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -7120,7 +6718,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -7133,7 +6731,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -7146,7 +6743,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -7156,11 +6752,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -7171,7 +6765,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                 maxLines: 2,
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -7183,18 +6776,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           8,
                                                                           0,
                                                                           0),
                                                               child:
-                                                                  FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   if (_model.formKey6
@@ -7387,7 +6979,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     .getText(
                                                                   'rpbxl6ge' /* Submit */,
                                                                 ),
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .subdirectory_arrow_right,
                                                                   size: 15,
@@ -7395,7 +6987,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
@@ -7405,16 +6997,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       IconAlignment
                                                                           .end,
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional
+                                                                      const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
@@ -7522,22 +7112,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 selectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .info,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
                                                                   iconColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                   iconSize: 16,
@@ -7550,21 +7136,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 unselectedChipStyle:
                                                                     ChipStyle(
                                                                   backgroundColor:
-                                                                      FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Inter',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
-                                                                  iconColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   iconSize: 16,
@@ -7601,7 +7183,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -7614,7 +7196,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: 100,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -7624,7 +7205,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             AutovalidateMode.disabled,
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 8, 16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -7642,7 +7223,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                     width: double.infinity,
                                                     height: double.infinity,
                                                     decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
                                                       borderRadius:
@@ -7703,12 +7283,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         },
                                                                       ),
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             -1,
                                                                             1),
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               16,
                                                                               0,
                                                                               0,
@@ -7725,7 +7305,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 (i) async {
                                                                               await _model.pageViewController3!.animateToPage(
                                                                                 i,
-                                                                                duration: Duration(milliseconds: 500),
+                                                                                duration: const Duration(milliseconds: 500),
                                                                                 curve: Curves.ease,
                                                                               );
                                                                               safeSetState(() {});
@@ -7737,8 +7317,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               radius: 8,
                                                                               dotWidth: 8,
                                                                               dotHeight: 8,
-                                                                              dotColor: FlutterFlowTheme.of(context).alternate,
-                                                                              activeDotColor: FlutterFlowTheme.of(context).alternate,
                                                                               paintStyle: PaintingStyle.fill,
                                                                             ),
                                                                           ),
@@ -7755,11 +7333,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               1)
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1, 1),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             12),
                                                                 child:
@@ -7771,13 +7349,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       100,
                                                                   buttonSize:
                                                                       40,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                                   icon: Icon(
                                                                     Icons
                                                                         .library_add_sharp,
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     size: 20,
@@ -7882,7 +7458,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: 100,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -7890,7 +7465,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child:
                                                         SingleChildScrollView(
                                                       child: Column(
@@ -7902,7 +7477,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -7950,22 +7525,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -7978,22 +7549,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8048,22 +7615,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8076,22 +7639,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8145,22 +7704,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8173,22 +7728,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8242,22 +7793,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8270,22 +7817,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8339,22 +7882,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8367,22 +7906,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8441,22 +7976,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8469,22 +8000,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8538,22 +8065,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8566,22 +8089,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8640,22 +8159,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -8668,22 +8183,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -8717,7 +8228,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               Expanded(
                                                                 flex: 2,
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           4,
@@ -8743,7 +8254,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           InputDecoration(
                                                                         isDense:
                                                                             true,
-                                                                        labelStyle: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -8753,7 +8263,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             FFLocalizations.of(context).getText(
                                                                           'qu87l10i' /* Add Title here... */,
                                                                         ),
-                                                                        hintStyle: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -8764,7 +8273,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -8774,7 +8282,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -8788,7 +8296,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).error,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -8800,7 +8307,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).error,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -8810,9 +8316,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         filled:
                                                                             true,
                                                                         fillColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
                                                                       ),
-                                                                      style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
@@ -8822,7 +8326,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 0.0,
                                                                           ),
                                                                       cursorColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primaryText,
                                                                       validator: _model
                                                                           .textController9Validator
@@ -8834,7 +8337,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               ),
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           4,
@@ -8856,7 +8359,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         InputDecoration(
                                                                       isDense:
                                                                           true,
-                                                                      labelStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelMedium
                                                                           .override(
@@ -8870,7 +8372,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               .getText(
                                                                         'b5pbrunj' /* Ref. */,
                                                                       ),
-                                                                      hintStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelMedium
                                                                           .override(
@@ -8884,7 +8385,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         borderSide:
                                                                             BorderSide(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).alternate,
                                                                           width:
                                                                               1,
                                                                         ),
@@ -8894,7 +8394,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       focusedBorder:
                                                                           OutlineInputBorder(
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Color(0x00000000),
                                                                           width:
@@ -8908,7 +8408,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         borderSide:
                                                                             BorderSide(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).error,
                                                                           width:
                                                                               1,
                                                                         ),
@@ -8920,7 +8419,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         borderSide:
                                                                             BorderSide(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).error,
                                                                           width:
                                                                               1,
                                                                         ),
@@ -8930,15 +8428,13 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       filled:
                                                                           true,
                                                                       fillColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryBackground,
                                                                       suffixIcon:
-                                                                          Icon(
+                                                                          const Icon(
                                                                         Icons
                                                                             .toll,
                                                                       ),
                                                                     ),
-                                                                    style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
@@ -8948,7 +8444,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               0.0,
                                                                         ),
                                                                     cursorColor:
-                                                                        FlutterFlowTheme.of(context)
                                                                             .primaryText,
                                                                     validator: _model
                                                                         .textController10Validator
@@ -8961,7 +8456,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -8998,7 +8493,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 val),
                                                                     width: 200,
                                                                     height: 40,
-                                                                    textStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
@@ -9015,24 +8509,21 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     icon: Icon(
                                                                       Icons
                                                                           .keyboard_arrow_down_rounded,
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       size: 24,
                                                                     ),
-                                                                    fillColor: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
                                                                     elevation:
                                                                         2,
                                                                     borderColor:
-                                                                        FlutterFlowTheme.of(context)
                                                                             .alternate,
                                                                     borderWidth:
                                                                         1,
                                                                     borderRadius:
                                                                         12,
-                                                                    margin: EdgeInsetsDirectional
+                                                                    margin: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -9048,13 +8539,13 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         false,
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 8)),
                                                             ),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -9076,7 +8567,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -9090,7 +8580,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     '7ur6z0n8' /* Add description here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -9103,7 +8592,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -9115,7 +8603,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -9128,7 +8616,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -9141,7 +8628,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -9151,11 +8637,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -9166,7 +8650,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                 maxLines: 2,
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -9178,10 +8661,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child:
-                                                                FFButtonWidget(
                                                               onPressed:
                                                                   () async {
                                                                 if (_model.formKey4
@@ -9343,7 +8825,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   .getText(
                                                                 '8rej0tiv' /* Submit */,
                                                               ),
-                                                              icon: Icon(
+                                                              icon: const Icon(
                                                                 Icons
                                                                     .subdirectory_arrow_right,
                                                                 size: 15,
@@ -9352,7 +8834,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   FFButtonOptions(
                                                                 height: 40,
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
@@ -9362,16 +8844,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     IconAlignment
                                                                         .end,
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0,
                                                                             0,
                                                                             0,
                                                                             0),
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -9471,23 +8951,19 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -9500,22 +8976,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -9550,7 +9022,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -9563,7 +9035,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                       width: 100,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
@@ -9573,7 +9044,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                             AutovalidateMode.disabled,
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 8, 16),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -9599,7 +9070,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         height: double.infinity,
                                                         decoration:
                                                             BoxDecoration(
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           borderRadius:
@@ -9663,12 +9133,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               -1,
                                                                               1),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16,
                                                                             0,
                                                                             0,
@@ -9685,7 +9155,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                               (i) async {
                                                                             await _model.pageViewController4!.animateToPage(
                                                                               i,
-                                                                              duration: Duration(milliseconds: 500),
+                                                                              duration: const Duration(milliseconds: 500),
                                                                               curve: Curves.ease,
                                                                             );
                                                                             safeSetState(() {});
@@ -9703,9 +9173,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             dotHeight:
                                                                                 8,
                                                                             dotColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             activeDotColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             paintStyle:
                                                                                 PaintingStyle.fill,
                                                                           ),
@@ -9725,11 +9193,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           1)
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   1, 1),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child:
                                                                 FlutterFlowIconButton(
@@ -9738,13 +9206,11 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               borderRadius: 100,
                                                               buttonSize: 40,
                                                               fillColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .alternate,
                                                               icon: Icon(
                                                                 Icons
                                                                     .library_add_sharp,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 size: 20,
@@ -9853,7 +9319,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   width: 100,
                                                   height: 100,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
@@ -9861,7 +9326,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             12),
                                                   ),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(4),
+                                                    padding: const EdgeInsets.all(4),
                                                     child:
                                                         SingleChildScrollView(
                                                       child: Column(
@@ -9873,7 +9338,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8),
                                                             child:
                                                                 FlutterFlowChoiceChips(
@@ -9916,22 +9381,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -9944,22 +9405,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10014,22 +9471,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -10042,22 +9495,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10111,22 +9560,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -10139,22 +9584,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10203,22 +9644,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -10231,22 +9668,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10300,22 +9733,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -10328,22 +9757,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10397,22 +9822,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -10425,22 +9846,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10504,22 +9921,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 iconSize: 16,
@@ -10532,22 +9945,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -10575,7 +9984,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -10597,7 +10006,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -10611,7 +10019,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     'd3ftucu4' /* Add Title here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -10624,7 +10031,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -10636,7 +10042,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -10649,7 +10055,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -10662,7 +10067,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -10672,11 +10076,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -10686,7 +10088,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           0.0,
                                                                     ),
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -10703,7 +10104,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                             children: [
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           4,
@@ -10729,7 +10130,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           InputDecoration(
                                                                         isDense:
                                                                             true,
-                                                                        labelStyle: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -10739,7 +10139,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             FFLocalizations.of(context).getText(
                                                                           'tzcs6i18' /* Ref. */,
                                                                         ),
-                                                                        hintStyle: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
@@ -10750,7 +10149,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -10760,7 +10158,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -10774,7 +10172,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).error,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -10786,7 +10183,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).error,
                                                                             width:
                                                                                 1,
                                                                           ),
@@ -10796,14 +10192,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                         filled:
                                                                             true,
                                                                         fillColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
                                                                         suffixIcon:
-                                                                            Icon(
+                                                                            const Icon(
                                                                           Icons
                                                                               .toll,
                                                                         ),
                                                                       ),
-                                                                      style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
@@ -10813,7 +10207,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 0.0,
                                                                           ),
                                                                       cursorColor:
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primaryText,
                                                                       validator: _model
                                                                           .textController13Validator
@@ -10855,10 +10248,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           context,
                                                                           child!,
                                                                           headerBackgroundColor:
-                                                                              FlutterFlowTheme.of(context).primary,
                                                                           headerForegroundColor:
-                                                                              FlutterFlowTheme.of(context).info,
-                                                                          headerTextStyle: FlutterFlowTheme.of(context)
                                                                               .headlineLarge
                                                                               .override(
                                                                                 fontFamily: 'Sora',
@@ -10867,15 +10257,10 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 fontWeight: FontWeight.w600,
                                                                               ),
                                                                           pickerBackgroundColor:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                           pickerForegroundColor:
-                                                                              FlutterFlowTheme.of(context).primaryText,
                                                                           selectedDateTimeBackgroundColor:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                           selectedDateTimeForegroundColor:
-                                                                              FlutterFlowTheme.of(context).secondary,
                                                                           actionButtonForegroundColor:
-                                                                              FlutterFlowTheme.of(context).primaryText,
                                                                           iconSize:
                                                                               24,
                                                                         );
@@ -10918,7 +10303,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       border:
                                                                           Border
                                                                               .all(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .alternate,
                                                                         width:
                                                                             1,
@@ -10927,12 +10311,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     child:
                                                                         Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               -1,
                                                                               0),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12,
                                                                             0,
                                                                             0,
@@ -10945,7 +10329,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             locale:
                                                                                 FFLocalizations.of(context).languageCode,
                                                                           ),
-                                                                          style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
@@ -10957,12 +10340,12 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   ),
                                                                 ),
                                                               ),
-                                                            ].addToEnd(SizedBox(
+                                                            ].addToEnd(const SizedBox(
                                                                 width: 8)),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -10999,7 +10382,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                                 val),
                                                                     width: 200,
                                                                     height: 40,
-                                                                    textStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
@@ -11016,24 +10398,21 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     icon: Icon(
                                                                       Icons
                                                                           .keyboard_arrow_down_rounded,
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       size: 24,
                                                                     ),
-                                                                    fillColor: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
                                                                     elevation:
                                                                         2,
                                                                     borderColor:
-                                                                        FlutterFlowTheme.of(context)
                                                                             .alternate,
                                                                     borderWidth:
                                                                         1,
                                                                     borderRadius:
                                                                         12,
-                                                                    margin: EdgeInsetsDirectional
+                                                                    margin: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -11054,7 +10433,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   height: 40,
                                                                   decoration:
                                                                       BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
                                                                     borderRadius:
@@ -11063,7 +10441,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     border:
                                                                         Border
                                                                             .all(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -11091,7 +10468,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     icon: Icon(
                                                                       Icons
                                                                           .place,
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       size: 16,
@@ -11102,24 +10478,21 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                           200,
                                                                       height:
                                                                           40,
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
-                                                                      textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .titleSmall
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Inter',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
                                                                       elevation:
                                                                           0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -11131,13 +10504,13 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 8)),
                                                             ),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         4,
@@ -11159,7 +10532,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   isDense: true,
-                                                                  labelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -11173,7 +10545,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       .getText(
                                                                     '8ovy98d7' /* Add description here... */,
                                                                   ),
-                                                                  hintStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
@@ -11186,7 +10557,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .alternate,
                                                                       width: 1,
@@ -11198,7 +10568,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                   focusedBorder:
                                                                       OutlineInputBorder(
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Color(
                                                                           0x00000000),
                                                                       width: 1,
@@ -11211,7 +10581,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -11224,7 +10593,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       OutlineInputBorder(
                                                                     borderSide:
                                                                         BorderSide(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .error,
                                                                       width: 1,
@@ -11234,11 +10602,9 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                             12),
                                                                   ),
                                                                   filled: true,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
@@ -11249,7 +10615,6 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     ),
                                                                 maxLines: 2,
                                                                 cursorColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 validator: _model
@@ -11261,18 +10626,17 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           4,
                                                                           0,
                                                                           0),
                                                               child:
-                                                                  FFButtonWidget(
                                                                 onPressed:
                                                                     () async {
                                                                   if (_model
@@ -11404,7 +10768,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                     .getText(
                                                                   'vo01x1c3' /* Submit */,
                                                                 ),
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .subdirectory_arrow_right,
                                                                   size: 15,
@@ -11412,7 +10776,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           0,
@@ -11422,16 +10786,14 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                                       IconAlignment
                                                                           .end,
                                                                   iconPadding:
-                                                                      EdgeInsetsDirectional
+                                                                      const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
-                                                                  textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
                                                                       .override(
@@ -11527,23 +10889,19 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               selectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                                 iconColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                 iconSize: 16,
@@ -11556,22 +10914,18 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                               unselectedChipStyle:
                                                                   ChipStyle(
                                                                 backgroundColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
-                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
-                                                                iconColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 iconSize: 16,
@@ -11606,7 +10960,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 8)),
+                                            ].divide(const SizedBox(height: 8)),
                                           ),
                                         ),
                                       ),
@@ -11617,7 +10971,7 @@ class _NewpageWidgetState extends State<NewpageWidget> {
                           },
                         ),
                       ),
-                  ].divide(SizedBox(height: 8)),
+                  ].divide(const SizedBox(height: 8)),
                 );
               },
             ),

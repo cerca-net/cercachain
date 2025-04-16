@@ -45,19 +45,18 @@ class _SettingsWidgetState extends State<SettingsWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0, 0),
+      alignment: const AlignmentDirectional(0, 0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16, 20, 16, 20),
+        padding: const EdgeInsetsDirectional.fromSTEB(16, 20, 16, 20),
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          constraints: BoxConstraints(
+          constraints: const BoxConstraints(
             maxWidth: 370,
             maxHeight: 550,
           ),
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 4,
                 color: Color(0x33000000),
@@ -70,7 +69,7 @@ class _SettingsWidgetState extends State<SettingsWidget> {
             borderRadius: BorderRadius.circular(12),
           ),
           child: Padding(
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -83,10 +82,8 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                     FlutterFlowIconButton(
                       borderRadius: 100,
                       buttonSize: 30,
-                      fillColor: FlutterFlowTheme.of(context).alternate,
                       icon: Icon(
                         Icons.close_rounded,
-                        color: FlutterFlowTheme.of(context).secondaryText,
                         size: 14,
                       ),
                       onPressed: () async {
@@ -98,8 +95,7 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(12),
                         bottomRight: Radius.circular(12),
                         topLeft: Radius.circular(0),
@@ -107,7 +103,7 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                       ),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: const AlignmentDirectional(0, 0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -125,7 +121,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                               width: 100,
                               height: 40,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                               ),
                               child: Padding(

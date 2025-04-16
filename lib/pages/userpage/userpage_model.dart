@@ -69,7 +69,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
 
     return GestureDetector(
       onTap: () {
@@ -78,24 +77,23 @@ class _UserpageWidgetState extends State<UserpageWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0, 0),
+            alignment: const AlignmentDirectional(0, 0),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
+              padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
               child: Container(
                 width: double.infinity,
                 height: double.infinity,
-                constraints: BoxConstraints(
+                constraints: const BoxConstraints(
                   maxWidth: 1170,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -111,7 +109,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                 height: 50,
                                 child: CircularProgressIndicator(
                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                    FlutterFlowTheme.of(context).primary,
                                   ),
                                 ),
                               ),
@@ -125,7 +122,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                             width: double.infinity,
                             height: 240,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).alternate,
                               borderRadius: BorderRadius.circular(12),
                               shape: BoxShape.rectangle,
                             ),
@@ -136,15 +132,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                   height: 100,
                                   decoration: BoxDecoration(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       bottomLeft: Radius.circular(0),
                                       bottomRight: Radius.circular(0),
                                       topLeft: Radius.circular(12),
                                       topRight: Radius.circular(12),
                                     ),
                                     border: Border.all(
-                                      color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                     ),
                                   ),
@@ -158,7 +152,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                         ? 1.0
                                         : 0.0,
                                     child: ClipRRect(
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0),
                                         bottomRight: Radius.circular(0),
                                         topLeft: Radius.circular(12),
@@ -174,7 +168,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8, 8, 8, 8),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -185,7 +179,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                     children: [
                                       Expanded(
                                         child: Padding(
-                                          padding: EdgeInsets.all(4),
+                                          padding: const EdgeInsets.all(4),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.min,
                                             mainAxisAlignment:
@@ -208,7 +202,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -225,12 +218,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     height: 100,
                                                     decoration: BoxDecoration(
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       shape: BoxShape.circle,
                                                       border: Border.all(
-                                                        color: FlutterFlowTheme
                                                                 .of(context)
                                                             .primaryBackground,
                                                         width: 1,
@@ -247,14 +238,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           : 0.0,
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(4),
+                                                            const EdgeInsets.all(4),
                                                         child: Container(
                                                           width: 100,
                                                           height: 100,
                                                           clipBehavior:
                                                               Clip.antiAlias,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             shape:
                                                                 BoxShape.circle,
                                                           ),
@@ -270,7 +261,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                 },
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(0, 8, 0, 0),
                                                 child: RichText(
                                                   textScaler:
@@ -284,7 +275,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 ?.name,
                                                             ''),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
@@ -305,7 +295,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           'x28kyi58' /*   */,
                                                         ),
                                                         style:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
@@ -320,10 +309,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             currentUserDocument
                                                                 ?.surname,
                                                             ''),
-                                                        style: TextStyle(),
+                                                        style: const TextStyle(),
                                                       )
                                                     ],
-                                                    style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
                                                         .override(
@@ -340,7 +328,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       currentUserDocument
                                                           ?.username,
                                                       ''),
-                                                  style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
@@ -351,12 +338,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                               ),
                                               Flexible(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(0, 4, 0, 0),
                                                   child: ClipRRect(
                                                     child: Container(
                                                       decoration:
-                                                          BoxDecoration(),
+                                                          const BoxDecoration(),
                                                       child:
                                                           AuthUserStreamWidget(
                                                         builder: (context) =>
@@ -384,24 +371,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           selectedChipStyle:
                                                               ChipStyle(
                                                             backgroundColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                             textStyle:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                             iconColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
                                                             iconSize: 16,
@@ -414,17 +397,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           unselectedChipStyle:
                                                               ChipStyle(
                                                             backgroundColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                             textStyle:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -433,7 +413,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           0.0,
                                                                     ),
                                                             iconColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                             iconSize: 16,
@@ -462,7 +441,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(height: 4)),
+                                            ].divide(const SizedBox(height: 4)),
                                           ),
                                         ),
                                       ),
@@ -477,11 +456,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                             Expanded(
                                               child: Align(
                                                 alignment:
-                                                    AlignmentDirectional(0, 1),
+                                                    const AlignmentDirectional(0, 1),
                                                 child: Container(
                                                   width: double.infinity,
                                                   height: 124,
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -497,7 +476,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         height: 35,
                                                         decoration:
                                                             BoxDecoration(
-                                                          color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           borderRadius:
@@ -530,7 +508,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         .tabBarController!
                                                                         .animateTo(
                                                                       2,
-                                                                      duration: Duration(
+                                                                      duration: const Duration(
                                                                           milliseconds:
                                                                               300),
                                                                       curve: Curves
@@ -543,7 +521,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   width: 100,
                                                                   height: 100,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                   child: Row(
                                                                     mainAxisSize:
                                                                         MainAxisSize
@@ -555,13 +533,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Icon(
                                                                         Icons
                                                                             .video_collection,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         size:
                                                                             20,
                                                                       ),
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             -1,
                                                                             0),
                                                                         child: FutureBuilder<
@@ -591,7 +568,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   height: 50,
                                                                                   child: CircularProgressIndicator(
                                                                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
                                                                                     ),
                                                                                   ),
                                                                                 ),
@@ -608,9 +584,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                                 '0',
                                                                               ),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 16,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
@@ -631,7 +605,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 thickness: 1,
                                                                 indent: 8,
                                                                 endIndent: 8,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .alternate,
                                                               ),
@@ -655,7 +628,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         .tabBarController!
                                                                         .animateTo(
                                                                       3,
-                                                                      duration: Duration(
+                                                                      duration: const Duration(
                                                                           milliseconds:
                                                                               300),
                                                                       curve: Curves
@@ -668,7 +641,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   width: 100,
                                                                   height: 100,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                   child: Row(
                                                                     mainAxisSize:
                                                                         MainAxisSize
@@ -680,7 +653,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Icon(
                                                                         Icons
                                                                             .shopping_bag_rounded,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         size:
                                                                             20,
@@ -714,7 +686,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 height: 50,
                                                                                 child: CircularProgressIndicator(
                                                                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                    FlutterFlowTheme.of(context).primary,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -731,9 +702,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ),
                                                                               '0',
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 16,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -756,7 +725,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           height: 35,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             borderRadius:
@@ -766,7 +734,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     4),
                                                             child: Row(
                                                               mainAxisSize:
@@ -802,7 +770,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           100,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                       ),
                                                                       child:
@@ -815,7 +782,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Icon(
                                                                             Icons.people,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             size:
                                                                                 20,
                                                                           ),
@@ -825,7 +791,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             indent:
                                                                                 12,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                           ),
                                                                           Text(
                                                                             valueOrDefault<String>(
@@ -835,9 +800,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ),
                                                                               '0',
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 16,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -877,7 +840,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           100,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                       ),
                                                                       child:
@@ -890,7 +852,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Icon(
                                                                             Icons.category_sharp,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             size:
                                                                                 20,
                                                                           ),
@@ -898,7 +859,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             thickness:
                                                                                 2,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                           ),
                                                                           FutureBuilder<
                                                                               int>(
@@ -919,7 +879,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     height: 50,
                                                                                     child: CircularProgressIndicator(
                                                                                       valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                        FlutterFlowTheme.of(context).primary,
                                                                                       ),
                                                                                     ),
                                                                                   ),
@@ -932,9 +891,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   textCount.toString(),
                                                                                   '0',
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -976,7 +933,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           100,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                       ),
                                                                       child:
@@ -989,7 +945,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Icon(
                                                                             Icons.link_outlined,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             size:
                                                                                 20,
                                                                           ),
@@ -999,15 +954,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             endIndent:
                                                                                 12,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                           ),
                                                                           Text(
                                                                             FFLocalizations.of(context).getText(
                                                                               'g67c2sxv' /* 0 */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 16,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -1024,7 +976,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8)),
+                                                        const SizedBox(height: 8)),
                                                   ),
                                                 ),
                                               ),
@@ -1036,19 +988,17 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1, -1),
+                                  alignment: const AlignmentDirectional(1, -1),
                                   child: Builder(
                                     builder: (context) => Padding(
-                                      padding: EdgeInsets.all(12),
+                                      padding: const EdgeInsets.all(12),
                                       child: FlutterFlowIconButton(
                                         borderColor: Colors.transparent,
                                         borderRadius: 100,
                                         buttonSize: 35,
-                                        fillColor: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         icon: Icon(
                                           Icons.settings_rounded,
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           size: 18,
                                         ),
@@ -1062,7 +1012,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                 backgroundColor:
                                                     Colors.transparent,
                                                 alignment:
-                                                    AlignmentDirectional(0, 0)
+                                                    const AlignmentDirectional(0, 0)
                                                         .resolve(
                                                             Directionality.of(
                                                                 context)),
@@ -1093,33 +1043,28 @@ class _UserpageWidgetState extends State<UserpageWidget>
                         child: Column(
                           children: [
                             Align(
-                              alignment: Alignment(-1, 0),
+                              alignment: const Alignment(-1, 0),
                               child: FlutterFlowButtonTabBar(
                                 useToggleButtonStyle: true,
                                 isScrollable: true,
-                                labelStyle: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
                                       fontFamily: 'Inter',
                                       fontSize: 12,
                                       letterSpacing: 0.0,
                                     ),
-                                unselectedLabelStyle: TextStyle(),
+                                unselectedLabelStyle: const TextStyle(),
                                 labelColor:
-                                    FlutterFlowTheme.of(context).primary,
                                 unselectedLabelColor:
-                                    FlutterFlowTheme.of(context).secondaryText,
                                 backgroundColor:
-                                    FlutterFlowTheme.of(context).accent1,
                                 unselectedBackgroundColor:
-                                    FlutterFlowTheme.of(context).alternate,
                                 borderWidth: 0,
                                 borderRadius: 12,
                                 elevation: 0,
-                                labelPadding: EdgeInsetsDirectional.fromSTEB(
+                                labelPadding: const EdgeInsetsDirectional.fromSTEB(
                                     20, 0, 20, 0),
                                 buttonMargin:
-                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                    const EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
                                 tabs: [
                                   Tab(
                                     text: FFLocalizations.of(context).getText(
@@ -1165,7 +1110,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                 children: [
                                   KeepAliveWidgetWrapper(
                                     builder: (context) => Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 8, 0, 0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
@@ -1174,14 +1119,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4, 0, 4, 0),
                                             child: Container(
                                               width: 100,
                                               height: 50,
                                               decoration: BoxDecoration(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .alternate,
                                                 borderRadius:
                                                     BorderRadius.circular(12),
@@ -1194,7 +1138,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 0),
                                                     child:
                                                         FlutterFlowChoiceChips(
@@ -1230,24 +1174,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       selectedChipStyle:
                                                           ChipStyle(
                                                         backgroundColor:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondary,
                                                         textStyle:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
                                                         iconColor:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .info,
                                                         iconSize: 16,
@@ -1259,24 +1199,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       unselectedChipStyle:
                                                           ChipStyle(
                                                         backgroundColor:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryBackground,
                                                         textStyle:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
                                                         iconColor:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .secondaryText,
                                                         iconSize: 16,
@@ -1315,7 +1251,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                           if (_model.choiceChipsOrdersValue ==
                                               'Inbox')
                                             Padding(
-                                              padding: EdgeInsets.all(8),
+                                              padding: const EdgeInsets.all(8),
                                               child: StreamBuilder<
                                                   List<OrderRecord>>(
                                                 stream: queryOrderRecord(
@@ -1341,7 +1277,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -1363,7 +1298,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         listViewOrderRecordList
                                                             .length,
                                                     separatorBuilder: (_, __) =>
-                                                        SizedBox(height: 8),
+                                                        const SizedBox(height: 8),
                                                     itemBuilder: (context,
                                                         listViewIndex) {
                                                       final listViewOrderRecord =
@@ -1406,7 +1341,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             height: 120,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .alternate,
                                                               borderRadius:
@@ -1416,7 +1350,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(12),
                                                               child: Row(
                                                                 mainAxisSize:
@@ -1424,7 +1358,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         .max,
                                                                 children: [
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8,
                                                                             0,
@@ -1437,7 +1371,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           48,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         shape: BoxShape
                                                                             .circle,
@@ -1445,7 +1378,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(2),
+                                                                            const EdgeInsets.all(2),
                                                                         child: StreamBuilder<
                                                                             UsersRecord>(
                                                                           stream:
@@ -1460,7 +1393,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   height: 50,
                                                                                   child: CircularProgressIndicator(
                                                                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
                                                                                     ),
                                                                                   ),
                                                                                 ),
@@ -1474,7 +1406,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               width: 48,
                                                                               height: 48,
                                                                               clipBehavior: Clip.antiAlias,
-                                                                              decoration: BoxDecoration(
+                                                                              decoration: const BoxDecoration(
                                                                                 shape: BoxShape.circle,
                                                                               ),
                                                                               child: Image.network(
@@ -1490,7 +1422,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               12,
                                                                               0,
@@ -1508,12 +1440,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
                                                                               child: Text(
                                                                                 listViewOrderRecord.username,
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -1523,9 +1453,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           ),
                                                                           Text(
                                                                             listViewOrderRecord.reference.id,
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 12,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w600,
@@ -1541,9 +1469,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'f4huv1ys' /* Method:  */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 12,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -1551,18 +1477,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                                 TextSpan(
                                                                                   text: listViewIndex.toString(),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 12,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).primaryText,
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -1570,7 +1492,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(-1, 1),
+                                                                              alignment: const AlignmentDirectional(-1, 1),
                                                                               child: RichText(
                                                                                 textScaler: MediaQuery.of(context).textScaler,
                                                                                 text: TextSpan(
@@ -1579,9 +1501,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       text: FFLocalizations.of(context).getText(
                                                                                         'yqgfpnuc' /* Items in order:  */,
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             fontSize: 14,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
@@ -1592,18 +1512,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         listViewOrderRecord.itemsInorder.length.toString(),
                                                                                         '1',
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             fontSize: 16,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w500,
                                                                                           ),
                                                                                     )
                                                                                   ],
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).primaryText,
                                                                                         fontSize: 12,
                                                                                         letterSpacing: 0.0,
                                                                                       ),
@@ -1627,12 +1543,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             .end,
                                                                     children: [
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0,
                                                                             -1),
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0,
                                                                               0,
                                                                               8,
@@ -1644,15 +1560,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               listViewOrderRecord.date!,
                                                                               locale: FFLocalizations.of(context).languageCode,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   letterSpacing: 0.0,
                                                                                 ),
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                      FFButtonWidget(
                                                                         onPressed:
                                                                             () {
                                                                           print(
@@ -1665,23 +1578,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             FFButtonOptions(
                                                                           height:
                                                                               28,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               16,
                                                                               0,
                                                                               16,
                                                                               0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0,
                                                                               0,
                                                                               0,
                                                                               0),
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
-                                                                          textStyle: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
                                                                                 fontFamily: 'Inter',
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 fontSize: 12,
                                                                                 letterSpacing: 0.0,
                                                                               ),
@@ -1694,7 +1604,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     ],
                                                                   ),
                                                                 ].divide(
-                                                                    SizedBox(
+                                                                    const SizedBox(
                                                                         width:
                                                                             8)),
                                                               ),
@@ -1710,7 +1620,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                           if (_model.choiceChipsOrdersValue ==
                                               'Sent')
                                             Padding(
-                                              padding: EdgeInsets.all(8),
+                                              padding: const EdgeInsets.all(8),
                                               child: StreamBuilder<
                                                   List<OrderRecord>>(
                                                 stream: queryOrderRecord(
@@ -1736,7 +1646,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -1758,7 +1667,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         listViewOrderRecordList
                                                             .length,
                                                     separatorBuilder: (_, __) =>
-                                                        SizedBox(height: 8),
+                                                        const SizedBox(height: 8),
                                                     itemBuilder: (context,
                                                         listViewIndex) {
                                                       final listViewOrderRecord =
@@ -1797,7 +1706,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           height: 120,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .alternate,
                                                             borderRadius:
@@ -1807,7 +1715,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     12),
                                                             child: Row(
                                                               mainAxisSize:
@@ -1815,7 +1723,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       .max,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           0,
@@ -1827,7 +1735,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     height: 40,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       shape: BoxShape
@@ -1836,7 +1743,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               2),
                                                                       child: StreamBuilder<
                                                                           UsersRecord>(
@@ -1854,7 +1761,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 height: 50,
                                                                                 child: CircularProgressIndicator(
                                                                                   valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                    FlutterFlowTheme.of(context).primary,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -1872,7 +1778,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             clipBehavior:
                                                                                 Clip.antiAlias,
                                                                             decoration:
-                                                                                BoxDecoration(
+                                                                                const BoxDecoration(
                                                                               shape: BoxShape.circle,
                                                                             ),
                                                                             child:
@@ -1889,7 +1795,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -1911,15 +1817,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           child:
                                                                               Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(-1, -1),
+                                                                                const AlignmentDirectional(-1, -1),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
                                                                               child: Text(
                                                                                 listViewOrderRecord.publicusername,
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -1940,9 +1844,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'wdxw6z6m' /* Method:  */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 12,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -1950,18 +1852,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                                 TextSpan(
                                                                                   text: listViewIndex.toString(),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 12,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).primaryText,
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -1979,27 +1877,21 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'bspe9z7u' /* Total:  */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
                                                                                       ),
                                                                                 ),
                                                                                 TextSpan(
                                                                                   text: listViewOrderRecord.totalRefValue.toString(),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 16,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).primaryText,
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -2019,12 +1911,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   children: [
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               0,
                                                                               -1),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0,
                                                                             0,
                                                                             8,
@@ -2037,18 +1929,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             locale:
                                                                                 FFLocalizations.of(context).languageCode,
                                                                           ),
-                                                                          style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Inter',
-                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               0,
                                                                               0,
@@ -2063,11 +1953,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ?.name,
                                                                           'status',
                                                                         ),
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                       ),
@@ -2076,15 +1964,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 ),
                                                               ]
                                                                   .divide(
-                                                                      SizedBox(
+                                                                      const SizedBox(
                                                                           width:
                                                                               8))
                                                                   .addToStart(
-                                                                      SizedBox(
+                                                                      const SizedBox(
                                                                           width:
                                                                               12))
                                                                   .addToEnd(
-                                                                      SizedBox(
+                                                                      const SizedBox(
                                                                           width:
                                                                               12)),
                                                             ),
@@ -2099,15 +1987,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                           if (_model.choiceChipsOrdersValue ==
                                               'Methods')
                                             Padding(
-                                              padding: EdgeInsets.all(8),
+                                              padding: const EdgeInsets.all(8),
                                               child: Container(
                                                 width: 300,
                                                 height: 460,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .alternate,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4,
                                                       color: Color(0x33000000),
@@ -2121,7 +2008,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       BorderRadius.circular(12),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(8, 0, 8, 12),
                                                   child: Column(
                                                     mainAxisSize:
@@ -2132,7 +2019,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsets.all(12),
+                                                            const EdgeInsets.all(12),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -2157,13 +2044,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   textAlign:
                                                                       TextAlign
                                                                           .end,
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .headlineSmall
                                                                       .override(
                                                                         fontFamily:
                                                                             'Montserrat',
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                         fontSize:
                                                                             14,
@@ -2173,7 +2058,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             FontWeight.w500,
                                                                       ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   height: 4)),
                                                             ),
                                                             FlutterFlowIconButton(
@@ -2182,12 +2067,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               borderRadius: 100,
                                                               buttonSize: 30,
                                                               fillColor:
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
                                                               icon: Icon(
                                                                 Icons.add,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
                                                                 size: 14,
@@ -2199,7 +2082,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         .routeName);
                                                               },
                                                             ),
-                                                          ].divide(SizedBox(
+                                                          ].divide(const SizedBox(
                                                               width: 8)),
                                                         ),
                                                       ),
@@ -2231,7 +2114,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   valueColor:
                                                                       AlwaysStoppedAnimation<
                                                                           Color>(
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                                   ),
@@ -2262,7 +2144,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     .length,
                                                             separatorBuilder:
                                                                 (_, __) =>
-                                                                    SizedBox(
+                                                                    const SizedBox(
                                                                         height:
                                                                             8),
                                                             itemBuilder: (context,
@@ -2281,14 +2163,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               12),
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
                                                                     width: 2,
                                                                   ),
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16,
                                                                           8,
@@ -2308,7 +2189,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               12,
                                                                               0,
                                                                               0,
@@ -2323,27 +2204,23 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 CrossAxisAlignment.start,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                                                                                 child: Text(
                                                                                   listViewOrderMethodsRecord.methodTag,
-                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         fontFamily: 'Inter',
-                                                                                        color: FlutterFlowTheme.of(context).primaryText,
                                                                                         letterSpacing: 0.0,
                                                                                       ),
                                                                                 ),
                                                                               ),
                                                                               Text(
                                                                                 listViewOrderMethodsRecord.methodType,
-                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
                                                                                     ),
                                                                               ),
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                                                                                 child: RichText(
                                                                                   textScaler: MediaQuery.of(context).textScaler,
                                                                                   text: TextSpan(
@@ -2352,17 +2229,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         text: FFLocalizations.of(context).getText(
                                                                                           '6ixhtfyw' /* # I.D. :  */,
                                                                                         ),
-                                                                                        style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                               fontFamily: 'Inter',
                                                                                               letterSpacing: 0.0,
                                                                                             ),
                                                                                       ),
                                                                                       TextSpan(
                                                                                         text: listViewOrderMethodsRecord.reference.id,
-                                                                                        style: TextStyle(),
+                                                                                        style: const TextStyle(),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                           fontFamily: 'Inter',
                                                                                           letterSpacing: 0.0,
                                                                                         ),
@@ -2370,7 +2245,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                               ),
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                                                                                 child: RichText(
                                                                                   textScaler: MediaQuery.of(context).textScaler,
                                                                                   text: TextSpan(
@@ -2379,17 +2254,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         text: FFLocalizations.of(context).getText(
                                                                                           '1iy5supo' /* # Index :  */,
                                                                                         ),
-                                                                                        style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                               fontFamily: 'Inter',
                                                                                               letterSpacing: 0.0,
                                                                                             ),
                                                                                       ),
                                                                                       TextSpan(
                                                                                         text: listViewIndex.toString(),
-                                                                                        style: TextStyle(),
+                                                                                        style: const TextStyle(),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                           fontFamily: 'Inter',
                                                                                           letterSpacing: 0.0,
                                                                                         ),
@@ -2409,7 +2282,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         },
                                                       ),
                                                     ].divide(
-                                                        SizedBox(height: 8)),
+                                                        const SizedBox(height: 8)),
                                                   ),
                                                 ),
                                               ),
@@ -2426,7 +2299,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                         borderRadius: BorderRadius.circular(0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4, 0, 4, 0),
                                         child: StreamBuilder<
                                             List<AnalyticsRecord>>(
@@ -2450,7 +2323,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
                                                             Color>(
-                                                      FlutterFlowTheme.of(
                                                               context)
                                                           .primary,
                                                     ),
@@ -2483,7 +2355,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                   width: double.infinity,
                                                   height: 50,
                                                   decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .alternate,
                                                     borderRadius:
@@ -2499,7 +2370,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0, 0),
                                                         child:
                                                             FlutterFlowChoiceChips(
@@ -2534,17 +2405,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           selectedChipStyle:
                                                               ChipStyle(
                                                             backgroundColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
                                                             textStyle:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .info,
                                                                       fontSize:
@@ -2553,7 +2421,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           0.0,
                                                                     ),
                                                             iconColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
                                                             iconSize: 14,
@@ -2566,17 +2433,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           unselectedChipStyle:
                                                               ChipStyle(
                                                             backgroundColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                             textStyle:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -2585,7 +2449,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           0.0,
                                                                     ),
                                                             iconColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                             iconSize: 14,
@@ -2627,14 +2490,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     'Order')
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 8, 0, 0),
                                                     child: Container(
                                                       width: 100,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         borderRadius:
@@ -2647,7 +2509,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -2659,7 +2521,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               height: 100,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 borderRadius:
@@ -2669,7 +2530,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             0,
@@ -2698,18 +2559,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'hhee5bpa' /* Completed orders : */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 14,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 14,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
@@ -2730,9 +2587,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     ),
                                                                                     '0',
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 14,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -2742,12 +2597,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'th5s4iq4' /*  # */,
                                                                                   ),
-                                                                                  style: TextStyle(),
+                                                                                  style: const TextStyle(),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 16,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
@@ -2775,18 +2628,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'hwhozquw' /* Average ref. : */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 14,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 14,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
@@ -2804,9 +2653,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     columnAnalyticsRecord?.orderAvgRef.toString(),
                                                                                     '0',
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 14,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -2816,12 +2663,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'dnmhg8ju' /*  T. */,
                                                                                   ),
-                                                                                  style: TextStyle(),
+                                                                                  style: const TextStyle(),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 16,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
@@ -2850,18 +2695,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     'c6tij4kv' /* Average time : */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 14,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Montserrat',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 14,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
@@ -2871,7 +2712,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(1, 0),
+                                                                              alignment: const AlignmentDirectional(1, 0),
                                                                               child: RichText(
                                                                                 textScaler: MediaQuery.of(context).textScaler,
                                                                                 text: TextSpan(
@@ -2881,9 +2722,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         columnAnalyticsRecord?.orderAvgTime.toString(),
                                                                                         '0',
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Montserrat',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             fontSize: 14,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w500,
@@ -2893,14 +2732,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       text: FFLocalizations.of(context).getText(
                                                                                         'd76thnm5' /*  min. */,
                                                                                       ),
-                                                                                      style: TextStyle(
+                                                                                      style: const TextStyle(
                                                                                         fontSize: 14,
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 16,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -2912,11 +2749,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Icon(
                                                                             Icons.access_alarm,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             size:
                                                                                 20,
                                                                           ),
-                                                                        ].divide(SizedBox(width: 8)),
+                                                                        ].divide(const SizedBox(width: 8)),
                                                                       ),
                                                                     ),
                                                                   ],
@@ -2926,7 +2762,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -2937,7 +2773,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   .infinity,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 borderRadius:
@@ -2947,7 +2782,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8,
                                                                             0,
@@ -2960,7 +2795,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   children: [
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -2970,7 +2805,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             MainAxisAlignment.spaceBetween,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 4,
                                                                                 0,
                                                                                 0,
@@ -2984,18 +2819,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'esjfutcy' /* Bag to order ratio: */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 14,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3004,7 +2835,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 4,
@@ -3019,9 +2850,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       columnAnalyticsRecord?.bagOrderRatio.toString(),
                                                                                       '0.00',
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 16,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3031,12 +2860,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'u1gcrqzf' /*  / 1 */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3049,7 +2876,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -3059,7 +2886,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             MainAxisAlignment.spaceBetween,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 4,
                                                                                 0,
                                                                                 0,
@@ -3073,18 +2900,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '3dqpn6vc' /* Order review: */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 14,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3093,7 +2916,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 4,
@@ -3108,9 +2931,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       columnAnalyticsRecord?.orderAvgReview.toString(),
                                                                                       '0.00',
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 16,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3120,12 +2941,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '79rwpb9j' /*  / 5 */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3142,12 +2961,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 8)),
                                                       ),
                                                     ),
@@ -3157,7 +2976,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     'Order')
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 8, 0, 0),
                                                     child: Container(
@@ -3165,7 +2984,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       height: 180,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         borderRadius:
@@ -3178,7 +2996,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -3197,7 +3015,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Container(
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                       borderRadius:
@@ -3207,7 +3024,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Row(
@@ -3217,7 +3034,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             MainAxisAlignment.spaceBetween,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 4,
                                                                                 0,
                                                                                 0,
@@ -3231,18 +3048,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'may6qt2k' /* Accumulated ref: */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 14,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3251,7 +3064,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 4,
@@ -3266,9 +3079,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       columnAnalyticsRecord?.orderAccumRef.toString(),
                                                                                       '0.00',
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 16,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3278,12 +3089,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'w7yaa7ef' /*  T. */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 16,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3303,7 +3112,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             flex: 2,
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           0,
@@ -3315,7 +3124,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 height: 100,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   borderRadius:
@@ -3325,14 +3133,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               4),
                                                                   child: Stack(
                                                                     children: [
                                                                       Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(12),
+                                                                            const EdgeInsets.all(12),
                                                                         child:
                                                                             SizedBox(
                                                                           width:
@@ -3344,7 +3152,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             barData: [
                                                                               FFBarChartData(
                                                                                 yData: List.generate(random_data.randomInteger(0, 10), (index) => random_data.randomInteger(0, 10)),
-                                                                                color: FlutterFlowTheme.of(context).secondary,
                                                                               )
                                                                             ],
                                                                             xLabels:
@@ -3359,7 +3166,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 BarChartAlignment.start,
                                                                             chartStylingInfo:
                                                                                 ChartStylingInfo(
-                                                                              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                               showGrid: true,
                                                                               showBorder: false,
                                                                             ),
@@ -3377,12 +3183,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         ),
                                                                       ),
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0,
                                                                             1),
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               8,
                                                                               0,
                                                                               8,
@@ -3395,7 +3201,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 12,
                                                                             decoration:
                                                                                 BoxDecoration(
-                                                                              color: FlutterFlowTheme.of(context).alternate,
                                                                               borderRadius: BorderRadius.circular(4),
                                                                             ),
                                                                           ),
@@ -3408,12 +3213,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 8)),
                                                       ),
                                                     ),
@@ -3423,7 +3228,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     'Objects')
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 8, 0, 0),
                                                     child: Container(
@@ -3431,7 +3236,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       height: 220,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         borderRadius:
@@ -3448,7 +3252,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           Expanded(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           0,
@@ -3459,7 +3263,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 height: 100,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   borderRadius:
@@ -3476,7 +3279,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           .stretch,
                                                                   children: [
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               8,
                                                                               8,
@@ -3491,14 +3294,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         decoration:
                                                                             BoxDecoration(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).alternate,
                                                                           borderRadius:
                                                                               BorderRadius.circular(12),
                                                                         ),
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(8),
+                                                                              const EdgeInsets.all(8),
                                                                           child:
                                                                               Row(
                                                                             mainAxisSize:
@@ -3516,14 +3318,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   children: [
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(0, 0),
+                                                                                        alignment: const AlignmentDirectional(0, 0),
                                                                                         child: Text(
                                                                                           FFLocalizations.of(context).getText(
                                                                                             'swwh73oe' /* Vote rate */,
                                                                                           ),
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w500,
                                                                                               ),
@@ -3537,7 +3337,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         children: [
                                                                                           Icon(
                                                                                             Icons.line_axis,
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             size: 24,
                                                                                           ),
                                                                                           Text(
@@ -3545,9 +3344,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               columnAnalyticsRecord?.objectVoterate.toString(),
                                                                                               '0',
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
                                                                                                 ),
@@ -3566,14 +3363,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   children: [
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(0, 0),
+                                                                                        alignment: const AlignmentDirectional(0, 0),
                                                                                         child: Text(
                                                                                           FFLocalizations.of(context).getText(
                                                                                             'dvp6f0s1' /* Pin index */,
                                                                                           ),
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w500,
                                                                                               ),
@@ -3587,7 +3382,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         children: [
                                                                                           Icon(
                                                                                             Icons.height_outlined,
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             size: 24,
                                                                                           ),
                                                                                           FutureBuilder<int>(
@@ -3606,7 +3400,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                     height: 50,
                                                                                                     child: CircularProgressIndicator(
                                                                                                       valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                        FlutterFlowTheme.of(context).primary,
                                                                                                       ),
                                                                                                     ),
                                                                                                   ),
@@ -3619,9 +3412,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                   columnAnalyticsRecord?.objectPin.toString(),
                                                                                                   '0',
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Inter',
-                                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w500,
                                                                                                     ),
@@ -3642,14 +3433,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   children: [
                                                                                     Expanded(
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(0, 0),
+                                                                                        alignment: const AlignmentDirectional(0, 0),
                                                                                         child: Text(
                                                                                           FFLocalizations.of(context).getText(
                                                                                             'hrutzr9j' /* Shares */,
                                                                                           ),
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w500,
                                                                                               ),
@@ -3663,7 +3452,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         children: [
                                                                                           Icon(
                                                                                             Icons.share_sharp,
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             size: 20,
                                                                                           ),
                                                                                           Text(
@@ -3671,9 +3459,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               columnAnalyticsRecord?.objectShare.toString(),
                                                                                               '0',
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
                                                                                                 ),
@@ -3691,7 +3477,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               4),
                                                                       child:
                                                                           Row(
@@ -3702,7 +3488,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         children:
                                                                             [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 12,
                                                                                 0,
                                                                                 0,
@@ -3716,9 +3502,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'pcm2o3qc' /* Impressions:   */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3733,14 +3517,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       '0',
                                                                                     ),
                                                                                     style: TextStyle(
-                                                                                      color: FlutterFlowTheme.of(context).secondary,
                                                                                       fontSize: 16,
                                                                                     ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3750,7 +3531,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -3764,9 +3545,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '0fzxiwqw' /* (   */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3776,18 +3555,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'gnfjwfai' /* 14.6 */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   ),
                                                                                   TextSpan(
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'cicxaux3' /*   % ) */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3796,11 +3573,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               textAlign: TextAlign.center,
                                                                             ),
                                                                           ),
-                                                                        ].divide(SizedBox(width: 4)),
+                                                                        ].divide(const SizedBox(width: 4)),
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               4,
                                                                               12,
@@ -3815,7 +3592,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         children:
                                                                             [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 12,
                                                                                 0,
                                                                                 0,
@@ -3829,9 +3606,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '7wpu4vev' /* Reach:   */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3843,14 +3618,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       '0',
                                                                                     ),
                                                                                     style: TextStyle(
-                                                                                      color: FlutterFlowTheme.of(context).secondary,
                                                                                       fontSize: 16,
                                                                                     ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3860,7 +3632,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -3874,9 +3646,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'r98tze10' /* (   */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3886,18 +3656,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'havut3rl' /* 14.6 */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   ),
                                                                                   TextSpan(
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '5wjcyvnc' /*   % ) */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3906,11 +3674,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               textAlign: TextAlign.center,
                                                                             ),
                                                                           ),
-                                                                        ].divide(SizedBox(width: 4)),
+                                                                        ].divide(const SizedBox(width: 4)),
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               4,
                                                                               12,
@@ -3925,7 +3693,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         children:
                                                                             [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 12,
                                                                                 0,
                                                                                 0,
@@ -3939,9 +3707,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'k0zon12l' /* Interactivity:   */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3953,14 +3719,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       '0',
                                                                                     ),
                                                                                     style: TextStyle(
-                                                                                      color: FlutterFlowTheme.of(context).secondary,
                                                                                       fontSize: 16,
                                                                                     ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -3970,7 +3733,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -3984,9 +3747,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'kyg0mcpi' /* (   */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -3996,18 +3757,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '4wrgn0d6' /* 14.6 */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   ),
                                                                                   TextSpan(
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '1tv2yx6k' /*   % ) */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -4016,7 +3775,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               textAlign: TextAlign.center,
                                                                             ),
                                                                           ),
-                                                                        ].divide(SizedBox(width: 4)),
+                                                                        ].divide(const SizedBox(width: 4)),
                                                                       ),
                                                                     ),
                                                                   ],
@@ -4025,12 +3784,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 8)),
                                                       ),
                                                     ),
@@ -4040,7 +3799,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     'Objects')
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 8, 0, 0),
                                                     child: Container(
@@ -4048,7 +3807,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       height: 120,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         borderRadius:
@@ -4057,13 +3815,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(8),
+                                                            const EdgeInsets.all(8),
                                                         child: Container(
                                                           width: 100,
                                                           height: 100,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             borderRadius:
@@ -4082,7 +3839,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               Expanded(
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               4),
                                                                   child: Row(
@@ -4094,12 +3851,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             .start,
                                                                     children: [
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0,
                                                                             0),
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               12,
                                                                               0,
                                                                               0,
@@ -4109,9 +3866,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             FFLocalizations.of(context).getText(
                                                                               '0xqapb7s' /* Top performer */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
                                                                                 ),
@@ -4121,7 +3876,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Icon(
                                                                         Icons
                                                                             .bolt,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .accent1,
                                                                         size:
                                                                             24,
@@ -4129,12 +3883,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               1,
                                                                               0),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -4146,25 +3900,17 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ],
                                                                               onChanged: (val) => safeSetState(() => _model.choiceChipsValue2 = val?.firstOrNull),
                                                                               selectedChipStyle: ChipStyle(
-                                                                                backgroundColor: FlutterFlowTheme.of(context).alternate,
-                                                                                textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                     ),
-                                                                                iconColor: FlutterFlowTheme.of(context).info,
                                                                                 iconSize: 16,
                                                                                 elevation: 0,
                                                                                 borderRadius: BorderRadius.circular(8),
                                                                               ),
                                                                               unselectedChipStyle: ChipStyle(
-                                                                                backgroundColor: FlutterFlowTheme.of(context).alternate,
-                                                                                textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       letterSpacing: 0.0,
                                                                                     ),
-                                                                                iconColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                 iconSize: 16,
                                                                                 elevation: 0,
                                                                                 borderRadius: BorderRadius.circular(8),
@@ -4181,7 +3927,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             4)),
                                                                   ),
@@ -4190,7 +3936,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               Expanded(
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               4),
                                                                   child: Row(
@@ -4202,7 +3948,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             .spaceBetween,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12,
                                                                             0,
                                                                             0,
@@ -4218,18 +3964,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 text: FFLocalizations.of(context).getText(
                                                                                   'td5b4780' /* Interaction:   */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
                                                                                     ),
                                                                               )
                                                                             ],
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Montserrat',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 12,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -4240,7 +3982,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0,
                                                                             0,
                                                                             12,
@@ -4256,9 +3998,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 text: FFLocalizations.of(context).getText(
                                                                                   '3cb5ipdy' /*  */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -4268,18 +4008,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 text: FFLocalizations.of(context).getText(
                                                                                   'z93v6apx' /* 69 */,
                                                                                 ),
-                                                                                style: TextStyle(),
+                                                                                style: const TextStyle(),
                                                                               ),
                                                                               TextSpan(
                                                                                 text: FFLocalizations.of(context).getText(
                                                                                   'j1km0lc3' /*   % */,
                                                                                 ),
-                                                                                style: TextStyle(),
+                                                                                style: const TextStyle(),
                                                                               )
                                                                             ],
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Montserrat',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 12,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -4289,7 +4027,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               TextAlign.center,
                                                                         ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             4)),
                                                                   ),
@@ -4306,7 +4044,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     'User')
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 0, 8, 0, 0),
                                                     child: Container(
@@ -4314,7 +4052,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                       height: 300,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .alternate,
                                                         borderRadius:
@@ -4330,7 +4067,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -4356,7 +4093,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 height: 50,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   borderRadius:
@@ -4365,7 +4101,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               12),
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0,
                                                                           4,
@@ -4380,7 +4116,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             .spaceBetween,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16,
                                                                             0,
                                                                             0,
@@ -4396,9 +4132,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 text: FFLocalizations.of(context).getText(
                                                                                   '2p6ptbo0' /* User verification status:    */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -4415,14 +4149,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   }
                                                                                 }(),
                                                                                 style: TextStyle(
-                                                                                  color: FlutterFlowTheme.of(context).secondary,
                                                                                   fontSize: 16,
                                                                                 ),
                                                                               )
                                                                             ],
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Montserrat',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 12,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -4437,7 +4168,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               false) ==
                                                                           true)
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0,
                                                                               0,
                                                                               12,
@@ -4447,7 +4178,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             builder: (context) =>
                                                                                 Icon(
                                                                               Icons.verified_rounded,
-                                                                              color: FlutterFlowTheme.of(context).success,
                                                                               size: 24,
                                                                             ),
                                                                           ),
@@ -4457,7 +4187,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               false) ==
                                                                           false)
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0,
                                                                               0,
                                                                               12,
@@ -4467,7 +4197,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             builder: (context) =>
                                                                                 Icon(
                                                                               Icons.not_interested,
-                                                                              color: FlutterFlowTheme.of(context).accent1,
                                                                               size: 24,
                                                                             ),
                                                                           ),
@@ -4480,7 +4209,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         8,
                                                                         0,
@@ -4491,7 +4220,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               height: 100,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 borderRadius:
@@ -4501,7 +4229,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(4),
                                                                 child: Row(
                                                                   mainAxisSize:
@@ -4526,13 +4254,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsets.all(4),
+                                                                              padding: const EdgeInsets.all(4),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                 children: [
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                     child: RichText(
                                                                                       textScaler: MediaQuery.of(context).textScaler,
                                                                                       text: TextSpan(
@@ -4541,9 +4269,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             text: FFLocalizations.of(context).getText(
                                                                                               '1ys6gyt7' /* User impressions:   */,
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -4555,7 +4281,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               '0',
                                                                                             ),
                                                                                             style: TextStyle(
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
                                                                                               fontSize: 16,
                                                                                             ),
                                                                                           ),
@@ -4563,12 +4288,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             text: FFLocalizations.of(context).getText(
                                                                                               'uueru30u' /*  */,
                                                                                             ),
-                                                                                            style: TextStyle(),
+                                                                                            style: const TextStyle(),
                                                                                           )
                                                                                         ],
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                               fontSize: 12,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
@@ -4577,20 +4300,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       textAlign: TextAlign.center,
                                                                                     ),
                                                                                   ),
-                                                                                ].divide(SizedBox(width: 4)),
+                                                                                ].divide(const SizedBox(width: 4)),
                                                                               ),
                                                                             ),
                                                                           ),
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsets.all(4),
+                                                                              padding: const EdgeInsets.all(4),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
                                                                                 children: [
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
                                                                                     child: RichText(
                                                                                       textScaler: MediaQuery.of(context).textScaler,
                                                                                       text: TextSpan(
@@ -4599,9 +4322,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             text: FFLocalizations.of(context).getText(
                                                                                               'zmfg75ax' /* User pin:  */,
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -4616,14 +4337,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               '0',
                                                                                             ),
                                                                                             style: TextStyle(
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
                                                                                               fontSize: 16,
                                                                                             ),
                                                                                           )
                                                                                         ],
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                               fontSize: 12,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
@@ -4639,13 +4357,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsets.all(4),
+                                                                              padding: const EdgeInsets.all(4),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                 children: [
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                     child: RichText(
                                                                                       textScaler: MediaQuery.of(context).textScaler,
                                                                                       text: TextSpan(
@@ -4654,9 +4372,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             text: FFLocalizations.of(context).getText(
                                                                                               'r9cppg5y' /* Object activity:   */,
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Montserrat',
-                                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                   fontSize: 12,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
@@ -4671,14 +4387,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               '0',
                                                                                             ),
                                                                                             style: TextStyle(
-                                                                                              color: FlutterFlowTheme.of(context).secondary,
                                                                                               fontSize: 16,
                                                                                             ),
                                                                                           )
                                                                                         ],
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                               fontSize: 12,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
@@ -4687,7 +4400,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       textAlign: TextAlign.center,
                                                                                     ),
                                                                                   ),
-                                                                                ].divide(SizedBox(width: 4)),
+                                                                                ].divide(const SizedBox(width: 4)),
                                                                               ),
                                                                             ),
                                                                           ),
@@ -4716,9 +4429,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             animateFromLastPercent:
                                                                                 true,
                                                                             progressColor:
-                                                                                FlutterFlowTheme.of(context).secondary,
                                                                             backgroundColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                           ),
                                                                           StreamBuilder<
                                                                               List<UserRatingsRecord>>(
@@ -4741,7 +4452,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     height: 50,
                                                                                     child: CircularProgressIndicator(
                                                                                       valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                        FlutterFlowTheme.of(context).primary,
                                                                                       ),
                                                                                     ),
                                                                                   ),
@@ -4758,7 +4468,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         'rxvx4t4s' /* Avg Rating    */,
                                                                                       ),
                                                                                       style: TextStyle(
-                                                                                        color: FlutterFlowTheme.of(context).success,
                                                                                         fontSize: 12,
                                                                                       ),
                                                                                     ),
@@ -4768,12 +4477,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         formatType: FormatType.decimal,
                                                                                         decimalType: DecimalType.automatic,
                                                                                       ),
-                                                                                      style: TextStyle(),
+                                                                                      style: const TextStyle(),
                                                                                     )
                                                                                   ],
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Montserrat',
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         fontSize: 12,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
@@ -4787,7 +4494,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       ),
                                                                     ),
                                                                   ].divide(
-                                                                      SizedBox(
+                                                                      const SizedBox(
                                                                           width:
                                                                               4)),
                                                                 ),
@@ -4797,7 +4504,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           Expanded(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           0,
@@ -4807,7 +4514,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 width: 100,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   borderRadius:
@@ -4817,7 +4523,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8),
                                                                   child: Column(
@@ -4840,9 +4546,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(-1, 0),
+                                                                              alignment: const AlignmentDirectional(-1, 0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                 child: RichText(
                                                                                   textScaler: MediaQuery.of(context).textScaler,
                                                                                   text: TextSpan(
@@ -4851,18 +4557,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         text: FFLocalizations.of(context).getText(
                                                                                           'gq9s9t12' /* MARKET INDEX :   */,
                                                                                         ),
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                               fontSize: 12,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
                                                                                             ),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -4874,7 +4576,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -4888,9 +4590,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'ili4vcsr' /* (  */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -4901,7 +4601,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       'ym3fo7xk' /* +  */,
                                                                                     ),
                                                                                     style: TextStyle(
-                                                                                      color: FlutterFlowTheme.of(context).success,
                                                                                       fontSize: 16,
                                                                                     ),
                                                                                   ),
@@ -4910,18 +4609,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       columnAnalyticsRecord?.marketIndex.toString(),
                                                                                       '0',
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   ),
                                                                                   TextSpan(
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'scpa7cuh' /*   ) */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -4941,9 +4638,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(-1, 0),
+                                                                              alignment: const AlignmentDirectional(-1, 0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                 child: RichText(
                                                                                   textScaler: MediaQuery.of(context).textScaler,
                                                                                   text: TextSpan(
@@ -4952,18 +4649,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         text: FFLocalizations.of(context).getText(
                                                                                           'ca5v0ewa' /* PERFORMANCE :  */,
                                                                                         ),
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                               fontSize: 12,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
                                                                                             ),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -4975,7 +4668,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -4989,9 +4682,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'm6odsaaz' /* (  */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -5002,7 +4693,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       'wf5k2qk2' /* +  */,
                                                                                     ),
                                                                                     style: TextStyle(
-                                                                                      color: FlutterFlowTheme.of(context).success,
                                                                                       fontSize: 16,
                                                                                     ),
                                                                                   ),
@@ -5011,18 +4701,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       columnAnalyticsRecord?.performance.toString(),
                                                                                       '0',
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   ),
                                                                                   TextSpan(
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       '22l45ua0' /*   % ) */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -5042,9 +4730,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(-1, 0),
+                                                                              alignment: const AlignmentDirectional(-1, 0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                                 child: RichText(
                                                                                   textScaler: MediaQuery.of(context).textScaler,
                                                                                   text: TextSpan(
@@ -5053,18 +4741,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         text: FFLocalizations.of(context).getText(
                                                                                           't5rt5r2j' /* AVERAGE HASH  : */,
                                                                                         ),
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Montserrat',
-                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                                               fontSize: 12,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
                                                                                             ),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Montserrat',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           fontSize: 12,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
@@ -5076,7 +4760,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 12,
@@ -5093,7 +4777,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     ),
                                                                                     style: GoogleFonts.getFont(
                                                                                       'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondary,
                                                                                       fontWeight: FontWeight.w600,
                                                                                       fontSize: 14,
                                                                                     ),
@@ -5102,12 +4785,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     text: FFLocalizations.of(context).getText(
                                                                                       'rrl37m0m' /*    H/S */,
                                                                                     ),
-                                                                                    style: TextStyle(),
+                                                                                    style: const TextStyle(),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Montserrat',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 12,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -5119,13 +4800,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         ],
                                                                       ),
                                                                     ]
-                                                                        .divide(SizedBox(
+                                                                        .divide(const SizedBox(
                                                                             height:
                                                                                 8))
-                                                                        .addToStart(SizedBox(
+                                                                        .addToStart(const SizedBox(
                                                                             height:
                                                                                 4))
-                                                                        .addToEnd(SizedBox(
+                                                                        .addToEnd(const SizedBox(
                                                                             height:
                                                                                 4)),
                                                                   ),
@@ -5134,21 +4815,21 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             ),
                                                           ),
                                                         ]
-                                                            .divide(SizedBox(
+                                                            .divide(const SizedBox(
                                                                 height: 8))
                                                             .addToStart(
-                                                                SizedBox(
+                                                                const SizedBox(
                                                                     height: 8))
-                                                            .addToEnd(SizedBox(
+                                                            .addToEnd(const SizedBox(
                                                                 height: 8)),
                                                       ),
                                                     ),
                                                   ),
                                               ]
                                                   .addToStart(
-                                                      SizedBox(height: 8))
+                                                      const SizedBox(height: 8))
                                                   .addToEnd(
-                                                      SizedBox(height: 8)),
+                                                      const SizedBox(height: 8)),
                                             );
                                           },
                                         ),
@@ -5163,19 +4844,18 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4, 0, 4, 0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 8, 0, 8),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 50,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .alternate,
                                                   borderRadius:
@@ -5190,7 +4870,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 0),
                                                       child:
                                                           FlutterFlowChoiceChips(
@@ -5233,17 +4913,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         selectedChipStyle:
                                                             ChipStyle(
                                                           backgroundColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .secondary,
                                                           textStyle:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Inter',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                     fontSize:
@@ -5252,7 +4929,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         0.0,
                                                                   ),
                                                           iconColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .info,
                                                           iconSize: 16,
@@ -5264,24 +4940,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         unselectedChipStyle:
                                                             ChipStyle(
                                                           backgroundColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .secondaryBackground,
                                                           textStyle:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Inter',
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
                                                           iconColor:
-                                                              FlutterFlowTheme.of(
                                                                       context)
                                                                   .secondaryText,
                                                           iconSize: 16,
@@ -5321,7 +4993,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 100,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: PagedMasonryGridView<
                                                     DocumentSnapshot<Object?>?,
                                                     SubmissionRecord>.count(
@@ -5357,7 +5029,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -5375,7 +5046,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           valueColor:
                                                               AlwaysStoppedAnimation<
                                                                   Color>(
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .primary,
                                                           ),
@@ -5419,7 +5089,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       valueColor:
                                                                           AlwaysStoppedAnimation<
                                                                               Color>(
-                                                                        FlutterFlowTheme.of(context)
                                                                             .primary,
                                                                       ),
                                                                     ),
@@ -5456,7 +5125,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         backgroundColor:
                                                                             Colors.transparent,
                                                                         alignment:
-                                                                            AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
+                                                                            const AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
                                                                         child:
                                                                             GestureDetector(
                                                                           onTap:
@@ -5485,16 +5154,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     width: double
                                                                         .infinity,
                                                                     constraints:
-                                                                        BoxConstraints(
+                                                                        const BoxConstraints(
                                                                       maxHeight:
                                                                           320,
                                                                     ),
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
-                                                                      boxShadow: [
+                                                                      boxShadow: const [
                                                                         BoxShadow(
                                                                           blurRadius:
                                                                               5,
@@ -5542,7 +5210,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     return Container(
                                                                                       width: 200,
                                                                                       height: 200,
-                                                                                      decoration: BoxDecoration(),
+                                                                                      decoration: const BoxDecoration(),
                                                                                       child: Visibility(
                                                                                         visible: feedobjectimagesItem != null && feedobjectimagesItem != '',
                                                                                         child: ClipRRect(
@@ -5613,7 +5281,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     width: 100,
                                                                                     height: 320,
                                                                                     decoration: BoxDecoration(
-                                                                                      color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     ),
                                                                                     child: Stack(
                                                                                       children: [
@@ -5633,21 +5300,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               title: objectSubmissionRecord.header,
                                                                                             ),
                                                                                           ),
-                                                                                          titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
                                                                                                 fontFamily: 'Sora',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                 fontSize: 20,
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
-                                                                                          playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                                 fontFamily: 'Inter',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
-                                                                                          fillColor: Color(0x00000000),
-                                                                                          playbackButtonColor: FlutterFlowTheme.of(context).alternate,
-                                                                                          activeTrackColor: FlutterFlowTheme.of(context).primary,
-                                                                                          inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
+                                                                                          fillColor: const Color(0x00000000),
                                                                                           elevation: 0,
                                                                                           playInBackground: PlayInBackground.enabled,
                                                                                         ),
@@ -5663,7 +5323,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             !(objectSubmissionRecord.imagesextra.isNotEmpty))
                                                                           Padding(
                                                                             padding:
-                                                                                EdgeInsets.all(8),
+                                                                                const EdgeInsets.all(8),
                                                                             child:
                                                                                 Column(
                                                                               mainAxisSize: MainAxisSize.min,
@@ -5671,15 +5331,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                               children: [
                                                                                 Align(
-                                                                                  alignment: AlignmentDirectional(-1, -1),
+                                                                                  alignment: const AlignmentDirectional(-1, -1),
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsets.all(8),
+                                                                                    padding: const EdgeInsets.all(8),
                                                                                     child: Text(
                                                                                       objectSubmissionRecord.header,
                                                                                       maxLines: 3,
-                                                                                      style: FlutterFlowTheme.of(context).titleMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
@@ -5689,18 +5347,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   thickness: 1,
                                                                                   indent: 12,
                                                                                   endIndent: 12,
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
                                                                                 ),
                                                                                 Align(
-                                                                                  alignment: AlignmentDirectional(-1, -1),
+                                                                                  alignment: const AlignmentDirectional(-1, -1),
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 8),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 8, 8),
                                                                                     child: Text(
                                                                                       objectSubmissionRecord.body,
                                                                                       maxLines: 4,
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Inter',
-                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
@@ -5736,7 +5391,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4, 0, 4, 0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -5744,20 +5399,19 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                               CrossAxisAlignment.stretch,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 8, 0, 4),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 50,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .alternate,
                                                   borderRadius:
                                                       BorderRadius.circular(8),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(6, 6, 6, 6),
                                                   child: Row(
                                                     mainAxisSize:
@@ -5771,12 +5425,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                           width: 100,
                                                           height: 100,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             color: Color(
                                                                 0x00FFFFFF),
                                                           ),
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0, 0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -5788,7 +5442,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0, 0),
                                                                 child:
                                                                     FlutterFlowChoiceChips(
@@ -5820,21 +5474,17 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   selectedChipStyle:
                                                                       ChipStyle(
                                                                     backgroundColor:
-                                                                        FlutterFlowTheme.of(context)
                                                                             .secondary,
-                                                                    textStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
                                                                               'Inter',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).info,
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
                                                                     iconColor:
-                                                                        FlutterFlowTheme.of(context)
                                                                             .info,
                                                                     iconSize:
                                                                         16,
@@ -5847,20 +5497,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   unselectedChipStyle:
                                                                       ChipStyle(
                                                                     backgroundColor:
-                                                                        FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
-                                                                    textStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
                                                                               'Inter',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
-                                                                    iconColor: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText,
                                                                     iconSize:
@@ -5907,12 +5553,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       100,
                                                                   buttonSize:
                                                                       30,
-                                                                  fillColor: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
                                                                   icon: Icon(
                                                                     Icons.add,
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .info,
                                                                     size: 14,
@@ -5937,7 +5581,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                 'Catalogues')
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(8, 12, 8, 0),
                                                   child: StreamBuilder<
                                                       List<SubmissionRecord>>(
@@ -5974,7 +5618,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               valueColor:
                                                                   AlwaysStoppedAnimation<
                                                                       Color>(
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary,
                                                               ),
@@ -5991,7 +5634,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         physics:
                                                             const NeverScrollableScrollPhysics(),
                                                         gridDelegate:
-                                                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                                           crossAxisCount: 2,
                                                         ),
                                                         crossAxisSpacing: 12,
@@ -6027,7 +5670,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           CircularProgressIndicator(
                                                                         valueColor:
                                                                             AlwaysStoppedAnimation<Color>(
-                                                                          FlutterFlowTheme.of(context)
                                                                               .primary,
                                                                         ),
                                                                       ),
@@ -6065,7 +5707,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           backgroundColor:
                                                                               Colors.transparent,
                                                                           alignment:
-                                                                              AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
+                                                                              const AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
                                                                           child:
                                                                               GestureDetector(
                                                                             onTap:
@@ -6094,15 +5736,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       height:
                                                                           240,
                                                                       constraints:
-                                                                          BoxConstraints(
+                                                                          const BoxConstraints(
                                                                         maxHeight:
                                                                             320,
                                                                       ),
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
-                                                                        boxShadow: [
+                                                                        boxShadow: const [
                                                                           BoxShadow(
                                                                             blurRadius:
                                                                                 5,
@@ -6152,35 +5793,31 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(1, 1),
+                                                                                const AlignmentDirectional(1, 1),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsets.all(8),
+                                                                              padding: const EdgeInsets.all(8),
                                                                               child: Container(
                                                                                 width: 70,
                                                                                 height: 40,
                                                                                 decoration: BoxDecoration(
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
                                                                                   borderRadius: BorderRadius.circular(12),
                                                                                 ),
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsets.all(4),
+                                                                                  padding: const EdgeInsets.all(4),
                                                                                   child: Row(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                                                     children: [
                                                                                       Icon(
                                                                                         Icons.toll,
-                                                                                        color: FlutterFlowTheme.of(context).secondaryText,
                                                                                         size: 16,
                                                                                       ),
                                                                                       Expanded(
                                                                                         child: Text(
                                                                                           staggeredViewSubmissionRecord.refvalue,
                                                                                           textAlign: TextAlign.center,
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
-                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                         ),
@@ -6242,7 +5879,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 valueColor:
                                                                     AlwaysStoppedAnimation<
                                                                         Color>(
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                 ),
@@ -6256,7 +5892,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
 
                                                         return ListView
                                                             .separated(
-                                                          padding: EdgeInsets
+                                                          padding: const EdgeInsets
                                                               .fromLTRB(
                                                             0,
                                                             4,
@@ -6271,7 +5907,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   .length,
                                                           separatorBuilder: (_,
                                                                   __) =>
-                                                              SizedBox(
+                                                              const SizedBox(
                                                                   height: 8),
                                                           itemBuilder: (context,
                                                               listViewIndex) {
@@ -6306,7 +5942,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         backgroundColor:
                                                                             Colors.transparent,
                                                                         alignment:
-                                                                            AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
+                                                                            const AlignmentDirectional(0, 0).resolve(Directionality.of(context)),
                                                                         child:
                                                                             GestureDetector(
                                                                           onTap:
@@ -6327,7 +5963,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   height: 157,
                                                                   decoration:
                                                                       BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                     borderRadius:
@@ -6337,7 +5972,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             12),
                                                                     child:
                                                                         Column(
@@ -6358,12 +5993,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               CrossAxisAlignment.center,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
                                                                               child: Text(
                                                                                 listViewCatalogueRecord.catalalogueName,
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 18,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w600,
@@ -6371,14 +6004,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'zn5p428u' /* # : */,
                                                                                 ),
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).secondaryText,
                                                                                       fontSize: 14,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.normal,
@@ -6387,9 +6018,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                             Text(
                                                                               listViewCatalogueRecord.totalItems.toString(),
-                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     fontSize: 16,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w600,
@@ -6397,12 +6026,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                             Expanded(
                                                                               child: Align(
-                                                                                alignment: AlignmentDirectional(1, 0),
+                                                                                alignment: const AlignmentDirectional(1, 0),
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsets.all(8),
+                                                                                  padding: const EdgeInsets.all(8),
                                                                                   child: Icon(
                                                                                     Icons.edit,
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     size: 24,
                                                                                   ),
                                                                                 ),
@@ -6419,12 +6047,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 BoxDecoration(
                                                                               borderRadius: BorderRadius.circular(8),
                                                                               border: Border.all(
-                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                 width: 1,
                                                                               ),
                                                                             ),
                                                                             child:
-                                                                                Padding(
+                                                                                const Padding(
                                                                               padding: EdgeInsets.all(8),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
@@ -6435,7 +6062,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             ),
                                                                           ),
                                                                         ),
-                                                                      ].divide(SizedBox(
+                                                                      ].divide(const SizedBox(
                                                                               height: 8)),
                                                                     ),
                                                                   ),
@@ -6446,17 +6073,17 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         );
                                                       },
                                                     ),
-                                                  ].divide(SizedBox(height: 8)),
+                                                  ].divide(const SizedBox(height: 8)),
                                                 ),
                                               ),
-                                          ].divide(SizedBox(height: 4)),
+                                          ].divide(const SizedBox(height: 4)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   KeepAliveWidgetWrapper(
                                     builder: (context) => Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           4, 0, 4, 6),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
@@ -6470,7 +6097,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                             height: 50,
                                             decoration: BoxDecoration(
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .alternate,
                                               borderRadius:
                                                   BorderRadius.circular(8),
@@ -6482,7 +6108,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   child: FlutterFlowChoiceChips(
                                                     options: [
@@ -6515,24 +6141,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     selectedChipStyle:
                                                         ChipStyle(
                                                       backgroundColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .secondary,
                                                       textStyle:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
                                                       iconColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .info,
                                                       iconSize: 16,
@@ -6544,24 +6166,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     unselectedChipStyle:
                                                         ChipStyle(
                                                       backgroundColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryBackground,
                                                       textStyle:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
                                                       iconColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
                                                       iconSize: 16,
@@ -6601,25 +6219,24 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                             Container(
                                               width: 500,
                                               height: 460,
-                                              constraints: BoxConstraints(
+                                              constraints: const BoxConstraints(
                                                 maxWidth: 570,
                                               ),
                                               decoration: BoxDecoration(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .alternate,
                                                 borderRadius:
                                                     BorderRadius.circular(8),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12),
+                                                padding: const EdgeInsets.all(12),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8, 4, 8, 12),
                                                       child: Row(
@@ -6646,13 +6263,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 textAlign:
                                                                     TextAlign
                                                                         .end,
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .headlineSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Montserrat',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -6670,13 +6285,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     .getText(
                                                                   'vn7r2tpm' /* A list of historical transacti... */,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Plus Jakarta Sans',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF606A85),
                                                                       fontSize:
                                                                           14,
@@ -6687,13 +6301,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               .w500,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 4)),
                                                           ),
                                                           Container(
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               shape: BoxShape
@@ -6712,7 +6325,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               onIcon: Icon(
                                                                 Icons
                                                                     .arrow_drop_up_rounded,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
                                                                 size: 26,
@@ -6720,7 +6332,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               offIcon: Icon(
                                                                 Icons
                                                                     .arrow_drop_down,
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .success,
                                                                 size: 26,
@@ -6728,7 +6339,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             ),
                                                           ),
                                                         ].divide(
-                                                            SizedBox(width: 8)),
+                                                            const SizedBox(width: 8)),
                                                       ),
                                                     ),
                                                     if (_model.trsIsSent ==
@@ -6764,7 +6375,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   valueColor:
                                                                       AlwaysStoppedAnimation<
                                                                           Color>(
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                                   ),
@@ -6778,7 +6388,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
 
                                                           return ListView
                                                               .separated(
-                                                            padding: EdgeInsets
+                                                            padding: const EdgeInsets
                                                                 .fromLTRB(
                                                               0,
                                                               12,
@@ -6793,7 +6403,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     .length,
                                                             separatorBuilder:
                                                                 (_, __) =>
-                                                                    SizedBox(
+                                                                    const SizedBox(
                                                                         height:
                                                                             8),
                                                             itemBuilder: (context,
@@ -6806,10 +6416,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 height: 80,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           0,
@@ -6841,7 +6450,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           100,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         borderRadius:
                                                                             BorderRadius.circular(12),
@@ -6850,7 +6458,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Icon(
                                                                         Icons
                                                                             .arrow_drop_up,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondary,
                                                                         size:
                                                                             24,
@@ -6860,7 +6467,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(4),
+                                                                            const EdgeInsets.all(4),
                                                                         child: StreamBuilder<
                                                                             UsersRecord>(
                                                                           stream:
@@ -6875,7 +6482,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   height: 50,
                                                                                   child: CircularProgressIndicator(
                                                                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
                                                                                     ),
                                                                                   ),
                                                                                 ),
@@ -6902,7 +6508,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'bdfckyy1' /* Reciever:  */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
@@ -6911,14 +6516,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: listViewTransactionsRecord.userOut,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 10,
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 fontSize: 10,
                                                                                                 letterSpacing: 0.0,
@@ -6926,16 +6529,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Align(
-                                                                                        alignment: AlignmentDirectional(1, 0),
+                                                                                        alignment: const AlignmentDirectional(1, 0),
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                           child: Text(
                                                                                             dateTimeFormat(
                                                                                               "relative",
                                                                                               listViewTransactionsRecord.date!,
                                                                                               locale: FFLocalizations.of(context).languageShortCode ?? FFLocalizations.of(context).languageCode,
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
@@ -6958,7 +6560,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'glhf9f71' /* Sender:  */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
@@ -6967,14 +6568,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: listViewTransactionsRecord.userIn,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 10,
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 fontSize: 10,
                                                                                                 letterSpacing: 0.0,
@@ -6996,7 +6595,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'czwg08jc' /* ORDER I.D.  # */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
@@ -7007,14 +6605,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                 listViewTransactionsRecord.orderRef?.id,
                                                                                                 'XXXXXX',
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 10,
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 fontSize: 10,
                                                                                                 letterSpacing: 0.0,
@@ -7030,7 +6626,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     mainAxisAlignment: MainAxisAlignment.end,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                         child: RichText(
                                                                                           textScaler: MediaQuery.of(context).textScaler,
                                                                                           text: TextSpan(
@@ -7039,7 +6635,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                 text: FFLocalizations.of(context).getText(
                                                                                                   'rzrzheb1' /* REF :  */,
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Inter',
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w500,
@@ -7050,13 +6645,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                   listViewTransactionsRecord.totalRefValueTransaction.toString(),
                                                                                                   '0',
                                                                                                 ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Inter',
                                                                                                       letterSpacing: 0.0,
                                                                                                     ),
                                                                                               )
                                                                                             ],
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
@@ -7112,7 +6705,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   valueColor:
                                                                       AlwaysStoppedAnimation<
                                                                           Color>(
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                                   ),
@@ -7126,7 +6718,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
 
                                                           return ListView
                                                               .separated(
-                                                            padding: EdgeInsets
+                                                            padding: const EdgeInsets
                                                                 .fromLTRB(
                                                               0,
                                                               12,
@@ -7141,7 +6733,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     .length,
                                                             separatorBuilder:
                                                                 (_, __) =>
-                                                                    SizedBox(
+                                                                    const SizedBox(
                                                                         height:
                                                                             8),
                                                             itemBuilder: (context,
@@ -7154,10 +6746,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 height: 80,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           0,
@@ -7189,7 +6780,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           100,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         borderRadius:
                                                                             BorderRadius.circular(12),
@@ -7198,7 +6788,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           Icon(
                                                                         Icons
                                                                             .arrow_drop_down,
-                                                                        color: FlutterFlowTheme.of(context)
                                                                             .success,
                                                                         size:
                                                                             24,
@@ -7208,7 +6797,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(4),
+                                                                            const EdgeInsets.all(4),
                                                                         child: StreamBuilder<
                                                                             UsersRecord>(
                                                                           stream:
@@ -7223,7 +6812,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   height: 50,
                                                                                   child: CircularProgressIndicator(
                                                                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                      FlutterFlowTheme.of(context).primary,
                                                                                     ),
                                                                                   ),
                                                                                 ),
@@ -7250,7 +6838,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 '8o1mx6c6' /* Reciever:  */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
@@ -7259,14 +6846,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: listViewTransactionsRecord.userOut,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 10,
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 fontSize: 10,
                                                                                                 letterSpacing: 0.0,
@@ -7289,7 +6874,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'ufvv30se' /* Sender:  */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
@@ -7298,14 +6882,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: listViewTransactionsRecord.userIn,
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 10,
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 fontSize: 10,
                                                                                                 letterSpacing: 0.0,
@@ -7327,7 +6909,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'lmanv682' /* ORDER I.D.  # */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 12,
                                                                                                     letterSpacing: 0.0,
@@ -7338,14 +6919,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                 listViewTransactionsRecord.orderRef?.id,
                                                                                                 'XXXXXX',
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     fontSize: 10,
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 fontSize: 10,
                                                                                                 letterSpacing: 0.0,
@@ -7368,7 +6947,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'icfn8zgw' /* REF :  */,
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w500,
@@ -7379,29 +6957,26 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                                 listViewTransactionsRecord.totalRefValueTransaction.toString(),
                                                                                                 '0',
                                                                                               ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: 'Inter',
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Inter',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                         ),
                                                                                       ),
                                                                                       Align(
-                                                                                        alignment: AlignmentDirectional(1, 0),
+                                                                                        alignment: const AlignmentDirectional(1, 0),
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                           child: Text(
                                                                                             dateTimeFormat(
                                                                                               "relative",
                                                                                               listViewTransactionsRecord.date!,
                                                                                               locale: FFLocalizations.of(context).languageShortCode ?? FFLocalizations.of(context).languageCode,
                                                                                             ),
-                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Inter',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
@@ -7435,9 +7010,8 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                               height: 460,
                                               decoration: BoxDecoration(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .alternate,
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     blurRadius: 4,
                                                     color: Color(0x33000000),
@@ -7451,7 +7025,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                     BorderRadius.circular(12),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(8, 0, 8, 12),
                                                 child: Column(
                                                   mainAxisSize:
@@ -7461,7 +7035,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsets.all(12),
+                                                          const EdgeInsets.all(12),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -7486,13 +7060,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 textAlign:
                                                                     TextAlign
                                                                         .end,
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .headlineSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Montserrat',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       fontSize:
@@ -7504,7 +7076,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               .w500,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 height: 4)),
                                                           ),
                                                           FlutterFlowIconButton(
@@ -7513,12 +7085,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             borderRadius: 100,
                                                             buttonSize: 30,
                                                             fillColor:
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
                                                             icon: Icon(
                                                               Icons.add,
-                                                              color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .info,
                                                               size: 14,
@@ -7531,7 +7101,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             },
                                                           ),
                                                         ].divide(
-                                                            SizedBox(width: 8)),
+                                                            const SizedBox(width: 8)),
                                                       ),
                                                     ),
                                                     StreamBuilder<
@@ -7561,7 +7131,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 valueColor:
                                                                     AlwaysStoppedAnimation<
                                                                         Color>(
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                 ),
@@ -7592,7 +7161,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   .length,
                                                           separatorBuilder: (_,
                                                                   __) =>
-                                                              SizedBox(
+                                                              const SizedBox(
                                                                   height: 8),
                                                           itemBuilder: (context,
                                                               listViewIndex) {
@@ -7610,7 +7179,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             12),
                                                                 border:
                                                                     Border.all(
-                                                                  color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
                                                                   width: 2,
@@ -7618,7 +7186,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16,
                                                                             8,
@@ -7638,7 +7206,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12,
                                                                             0,
                                                                             0,
@@ -7653,27 +7221,23 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                                                                               child: Text(
                                                                                 listViewWalletMethodsRecord.methodName,
-                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Inter',
-                                                                                      color: FlutterFlowTheme.of(context).primaryText,
                                                                                       letterSpacing: 0.0,
                                                                                     ),
                                                                               ),
                                                                             ),
                                                                             Text(
                                                                               listViewWalletMethodsRecord.methodType,
-                                                                              style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                     fontFamily: 'Inter',
-                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w500,
                                                                                   ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                                                                               child: RichText(
                                                                                 textScaler: MediaQuery.of(context).textScaler,
                                                                                 text: TextSpan(
@@ -7682,17 +7246,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       text: FFLocalizations.of(context).getText(
                                                                                         '3i3onmpd' /* # I.D. :  */,
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                             fontFamily: 'Inter',
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
                                                                                     TextSpan(
                                                                                       text: listViewWalletMethodsRecord.methodId,
-                                                                                      style: TextStyle(),
+                                                                                      style: const TextStyle(),
                                                                                     )
                                                                                   ],
-                                                                                  style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                         fontFamily: 'Inter',
                                                                                         letterSpacing: 0.0,
                                                                                       ),
@@ -7700,7 +7262,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                                                                               child: RichText(
                                                                                 textScaler: MediaQuery.of(context).textScaler,
                                                                                 text: TextSpan(
@@ -7709,17 +7271,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                       text: FFLocalizations.of(context).getText(
                                                                                         'gn9oxkhn' /* # Account :  */,
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                             fontFamily: 'Inter',
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
                                                                                     TextSpan(
                                                                                       text: listViewWalletMethodsRecord.methodAccount,
-                                                                                      style: TextStyle(),
+                                                                                      style: const TextStyle(),
                                                                                     )
                                                                                   ],
-                                                                                  style: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                         fontFamily: 'Inter',
                                                                                         letterSpacing: 0.0,
                                                                                       ),
@@ -7738,20 +7298,19 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         );
                                                       },
                                                     ),
-                                                  ].divide(SizedBox(height: 8)),
+                                                  ].divide(const SizedBox(height: 8)),
                                                 ),
                                               ),
                                             ),
                                           if (_model.choiceChipsWalletValue ==
                                               'Account')
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 4, 0, 0),
                                               child: Container(
                                                 width: 100,
                                                 height: 600,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
                                                 ),
@@ -7764,7 +7323,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsets.all(4),
+                                                          const EdgeInsets.all(4),
                                                       child: StreamBuilder<
                                                           List<CreditsRecord>>(
                                                         stream:
@@ -7793,7 +7352,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                   valueColor:
                                                                       AlwaysStoppedAnimation<
                                                                           Color>(
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                                   ),
@@ -7820,7 +7378,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                             width: 370,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              boxShadow: [
+                                                              boxShadow: const [
                                                                 BoxShadow(
                                                                   blurRadius: 6,
                                                                   color: Color(
@@ -7835,20 +7393,18 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               gradient:
                                                                   LinearGradient(
                                                                 colors: [
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryText
                                                                 ],
-                                                                stops: [0, 1],
+                                                                stops: const [0, 1],
                                                                 begin:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.94,
                                                                         -1),
                                                                 end:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -0.94,
                                                                         1),
                                                               ),
@@ -7867,7 +7423,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                               children: [
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               12),
                                                                   child: Row(
@@ -7881,13 +7437,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         CrossAxisAlignment
                                                                             .center,
                                                                     children: [
-                                                                      if (FFAppState()
                                                                               .isWalletConnected ==
                                                                           false)
-                                                                        FFButtonWidget(
                                                                           onPressed:
                                                                               () async {
-                                                                            FFAppState().isWalletConnected =
                                                                                 true;
                                                                           },
                                                                           text:
@@ -7898,7 +7451,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               Icon(
                                                                             Icons.account_balance_wallet,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                             size:
                                                                                 15,
                                                                           ),
@@ -7906,23 +7458,20 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 36,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16,
                                                                                 0,
                                                                                 16,
                                                                                 0),
                                                                             iconAlignment:
                                                                                 IconAlignment.end,
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 0,
                                                                                 0),
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   fontSize: 12,
                                                                                   letterSpacing: 0.0,
                                                                                 ),
@@ -7933,7 +7482,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           ),
                                                                         ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12,
                                                                             0,
                                                                             0,
@@ -7947,7 +7496,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           decoration:
                                                                               BoxDecoration(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
                                                                             shape:
                                                                                 BoxShape.circle,
                                                                           ),
@@ -7956,7 +7504,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               0,
                                                                               0),
                                                                           child:
@@ -7969,21 +7517,17 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 BoxDecoration(
                                                                               borderRadius: BorderRadius.circular(12),
                                                                               border: Border.all(
-                                                                                color: FlutterFlowTheme.of(context).alternate,
                                                                                 width: 1,
                                                                               ),
                                                                             ),
                                                                             child:
                                                                                 Visibility(
-                                                                              visible: FFAppState().isWalletConnected == true,
                                                                               child: Align(
-                                                                                alignment: AlignmentDirectional(0, 0),
+                                                                                alignment: const AlignmentDirectional(0, 0),
                                                                                 child: Text(
                                                                                   valueOrDefault<String>(
-                                                                                    FFAppState().walletAddress,
                                                                                     '**** 4477',
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Roboto Mono',
                                                                                         color: Colors.white,
                                                                                         fontSize: 14,
@@ -7996,11 +7540,10 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                      if (FFAppState()
                                                                               .isWalletConnected ==
                                                                           true)
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0,
                                                                               8,
                                                                               8,
@@ -8012,13 +7555,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             buttonSize:
                                                                                 40,
                                                                             icon:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.logout_rounded,
                                                                               color: Colors.white,
                                                                             ),
                                                                             onPressed:
                                                                                 () async {
-                                                                              FFAppState().isWalletConnected = false;
                                                                             },
                                                                           ),
                                                                         ),
@@ -8027,7 +7569,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               16),
                                                                   child: Row(
@@ -8047,9 +7589,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             FFLocalizations.of(context).getText(
                                                                               '374b7k11' /* SEND */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   fontSize: 10,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -8061,9 +7601,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             buttonSize:
                                                                                 40,
                                                                             fillColor:
-                                                                                Color(0x49F83B46),
+                                                                                const Color(0x49F83B46),
                                                                             icon:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.upload_rounded,
                                                                               color: Colors.white,
                                                                               size: 24,
@@ -8073,7 +7613,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               print('IconButton pressed ...');
                                                                             },
                                                                           ),
-                                                                        ].divide(SizedBox(height: 8)),
+                                                                        ].divide(const SizedBox(height: 8)),
                                                                       ),
                                                                       Column(
                                                                         mainAxisSize:
@@ -8084,9 +7624,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             FFLocalizations.of(context).getText(
                                                                               '231pdd7e' /* RECIEVE */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   fontSize: 10,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -8098,9 +7636,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             buttonSize:
                                                                                 40,
                                                                             fillColor:
-                                                                                Color(0x49F83B46),
+                                                                                const Color(0x49F83B46),
                                                                             icon:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.qr_code_sharp,
                                                                               color: Colors.white,
                                                                               size: 24,
@@ -8110,7 +7648,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               print('IconButton pressed ...');
                                                                             },
                                                                           ),
-                                                                        ].divide(SizedBox(height: 8)),
+                                                                        ].divide(const SizedBox(height: 8)),
                                                                       ),
                                                                       Column(
                                                                         mainAxisSize:
@@ -8121,9 +7659,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             FFLocalizations.of(context).getText(
                                                                               'uqrzw76w' /* HISTORY */,
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   fontSize: 10,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -8135,9 +7671,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             buttonSize:
                                                                                 40,
                                                                             fillColor:
-                                                                                Color(0x49F83B46),
+                                                                                const Color(0x49F83B46),
                                                                             icon:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.history_rounded,
                                                                               color: Colors.white,
                                                                               size: 24,
@@ -8147,7 +7683,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               print('IconButton pressed ...');
                                                                             },
                                                                           ),
-                                                                        ].divide(SizedBox(height: 8)),
+                                                                        ].divide(const SizedBox(height: 8)),
                                                                       ),
                                                                       Expanded(
                                                                         flex: 4,
@@ -8161,12 +7697,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               mainAxisAlignment: MainAxisAlignment.end,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                                                                                   child: Text(
                                                                                     FFLocalizations.of(context).getText(
                                                                                       '4plssfel' /* Tcoin balance */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Plus Jakarta Sans',
                                                                                           color: Colors.white,
                                                                                           fontSize: 14,
@@ -8178,20 +7713,19 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               ],
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.end,
                                                                                 children: [
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
                                                                                     child: Text(
                                                                                       formatNumber(
                                                                                         functions.generatedcredits(creditCardCreditsRecord?.generationI, creditCardCreditsRecord?.participationI, creditCardCreditsRecord?.transitionI),
                                                                                         formatType: FormatType.decimal,
                                                                                         decimalType: DecimalType.automatic,
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).displaySmall.override(
                                                                                             fontFamily: 'Outfit',
                                                                                             color: Colors.white,
                                                                                             fontSize: 32,
@@ -8206,7 +7740,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                           ],
                                                                         ),
                                                                       ),
-                                                                    ].divide(SizedBox(
+                                                                    ].divide(const SizedBox(
                                                                         width:
                                                                             12)),
                                                                   ),
@@ -8226,7 +7760,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 .webViewOpen,
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(4),
                                                               child: StreamBuilder<
                                                                   List<
@@ -8260,7 +7794,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             CircularProgressIndicator(
                                                                           valueColor:
                                                                               AlwaysStoppedAnimation<Color>(
-                                                                            FlutterFlowTheme.of(context).primary,
                                                                           ),
                                                                         ),
                                                                       ),
@@ -8286,7 +7819,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     width: 370,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      boxShadow: [
+                                                                      boxShadow: const [
                                                                         BoxShadow(
                                                                           blurRadius:
                                                                               6,
@@ -8302,19 +7835,17 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                       gradient:
                                                                           LinearGradient(
                                                                         colors: [
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondary,
-                                                                          FlutterFlowTheme.of(context)
                                                                               .secondaryText
                                                                         ],
-                                                                        stops: [
+                                                                        stops: const [
                                                                           0,
                                                                           1
                                                                         ],
-                                                                        begin: AlignmentDirectional(
+                                                                        begin: const AlignmentDirectional(
                                                                             0.94,
                                                                             -1),
-                                                                        end: AlignmentDirectional(
+                                                                        end: const AlignmentDirectional(
                                                                             -0.94,
                                                                             1),
                                                                       ),
@@ -8325,7 +7856,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               16),
                                                                       child:
                                                                           Column(
@@ -8337,7 +7868,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             CrossAxisAlignment.end,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 0,
                                                                                 0,
@@ -8352,7 +7883,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   FFLocalizations.of(context).getText(
                                                                                     'h109n1ac' /* Generated D.U. */,
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Roboto Mono',
                                                                                         color: Colors.white,
                                                                                         fontSize: 14,
@@ -8362,7 +7892,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                                 Icon(
                                                                                   Icons.info_outlined,
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
                                                                                   size: 16,
                                                                                 ),
                                                                               ],
@@ -8372,10 +7901,9 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                             thickness:
                                                                                 1,
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 4,
                                                                                 0,
@@ -8386,12 +7914,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
                                                                                   child: Text(
                                                                                     FFLocalizations.of(context).getText(
                                                                                       'c4yw2f3u' /* Available : */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Roboto Mono',
                                                                                           color: Colors.white,
                                                                                           fontSize: 14,
@@ -8402,13 +7929,12 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Align(
-                                                                                    alignment: AlignmentDirectional(-1, 0),
+                                                                                    alignment: const AlignmentDirectional(-1, 0),
                                                                                     child: Text(
                                                                                       formatNumber(
                                                                                         functions.generatedcredits(creditCard1CreditsRecord?.generationI, creditCard1CreditsRecord?.participationI, creditCard1CreditsRecord?.transitionI),
                                                                                         formatType: FormatType.compact,
                                                                                       ),
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Roboto Mono',
                                                                                             color: Colors.white,
                                                                                             fontSize: 14,
@@ -8419,13 +7945,13 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   ),
                                                                                 ),
                                                                                 Container(
-                                                                                  decoration: BoxDecoration(),
+                                                                                  decoration: const BoxDecoration(),
                                                                                 ),
                                                                               ],
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0,
                                                                                 4,
                                                                                 0,
@@ -8436,12 +7962,11 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
                                                                                   child: Text(
                                                                                     FFLocalizations.of(context).getText(
                                                                                       '41f05aue' /* Available : */,
                                                                                     ),
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Roboto Mono',
                                                                                           color: Colors.white,
                                                                                           fontSize: 14,
@@ -8452,16 +7977,15 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Align(
-                                                                                    alignment: AlignmentDirectional(-1, 0),
+                                                                                    alignment: const AlignmentDirectional(-1, 0),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 8, 0),
                                                                                       child: Text(
                                                                                         formatNumber(
                                                                                           functions.generatedcredits(creditCard1CreditsRecord?.generationI, creditCard1CreditsRecord?.participationI, creditCard1CreditsRecord?.transitionI),
                                                                                           formatType: FormatType.decimal,
                                                                                           decimalType: DecimalType.automatic,
                                                                                         ),
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                               fontFamily: 'Roboto Mono',
                                                                                               color: Colors.white,
                                                                                               fontSize: 14,
@@ -8472,7 +7996,6 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                     ),
                                                                                   ),
                                                                                 ),
-                                                                                FFButtonWidget(
                                                                                   onPressed: () async {
                                                                                     _model.webViewOpen = true;
                                                                                     safeSetState(() {});
@@ -8480,17 +8003,16 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   text: FFLocalizations.of(context).getText(
                                                                                     '4y2ugccp' /* Mint */,
                                                                                   ),
-                                                                                  icon: Icon(
+                                                                                  icon: const Icon(
                                                                                     Icons.generating_tokens_outlined,
                                                                                     size: 20,
                                                                                   ),
                                                                                   options: FFButtonOptions(
                                                                                     height: 40,
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
                                                                                     iconAlignment: IconAlignment.end,
-                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-                                                                                    color: Color(0x49F83B46),
-                                                                                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                                                                                    color: const Color(0x49F83B46),
                                                                                           fontFamily: 'Inter',
                                                                                           color: Colors.white,
                                                                                           letterSpacing: 0.0,
@@ -8500,7 +8022,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                                   ),
                                                                                 ),
                                                                                 Container(
-                                                                                  decoration: BoxDecoration(),
+                                                                                  decoration: const BoxDecoration(),
                                                                                 ),
                                                                               ],
                                                                             ),
@@ -8516,14 +8038,14 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                         } else {
                                                           return Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     4),
                                                             child: Container(
                                                               width: 370,
                                                               height: 200,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                boxShadow: [
+                                                                boxShadow: const [
                                                                   BoxShadow(
                                                                     blurRadius:
                                                                         6,
@@ -8539,20 +8061,18 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                 gradient:
                                                                     LinearGradient(
                                                                   colors: [
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondary,
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryText
                                                                   ],
-                                                                  stops: [0, 1],
+                                                                  stops: const [0, 1],
                                                                   begin:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.94,
                                                                           -1),
                                                                   end:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -0.94,
                                                                           1),
                                                                 ),
@@ -8561,7 +8081,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                                                         .circular(
                                                                             8),
                                                               ),
-                                                              child: Column(
+                                                              child: const Column(
                                                                 mainAxisSize:
                                                                     MainAxisSize
                                                                         .max,
@@ -8580,8 +8100,8 @@ class _UserpageWidgetState extends State<UserpageWidget>
                                               ),
                                             ),
                                         ]
-                                            .addToStart(SizedBox(height: 8))
-                                            .addToEnd(SizedBox(height: 8)),
+                                            .addToStart(const SizedBox(height: 8))
+                                            .addToEnd(const SizedBox(height: 8)),
                                       ),
                                     ),
                                   ),
@@ -8591,7 +8111,7 @@ class _UserpageWidgetState extends State<UserpageWidget>
                           ],
                         ),
                       ),
-                    ].divide(SizedBox(height: 8)),
+                    ].divide(const SizedBox(height: 8)),
                   ),
                 ),
               ),

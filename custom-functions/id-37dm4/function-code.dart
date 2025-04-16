@@ -1,4 +1,4 @@
-
+int? calculateAverageRating(List<int>? ratings) {
   if (ratings == null || ratings.isEmpty) {
     return null;
   }
@@ -7,3 +7,4 @@
     sum += rating;
   }
   return (sum / ratings.length).round();
+}

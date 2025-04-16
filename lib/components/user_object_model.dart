@@ -139,18 +139,17 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0, 0),
+      alignment: const AlignmentDirectional(0, 0),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16, 4, 16, 16),
+        padding: const EdgeInsetsDirectional.fromSTEB(16, 4, 16, 16),
         child: Container(
           width: 350,
           height: 650,
-          constraints: BoxConstraints(
+          constraints: const BoxConstraints(
             maxWidth: 770,
           ),
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 4,
                 color: Color(0x33000000),
@@ -165,7 +164,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: StreamBuilder<SubmissionRecord>(
                   stream: _model.objectdata(
                     requestFn: () =>
@@ -180,7 +179,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                           height: 50,
                           child: CircularProgressIndicator(
                             valueColor: AlwaysStoppedAnimation<Color>(
-                              FlutterFlowTheme.of(context).primary,
                             ),
                           ),
                         ),
@@ -199,7 +197,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                             width: double.infinity,
                             height: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               borderRadius: BorderRadius.circular(12),
                             ),
@@ -257,9 +254,9 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                               ),
                                               Align(
                                                 alignment:
-                                                    AlignmentDirectional(0, 1),
+                                                    const AlignmentDirectional(0, 1),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(16, 0, 16, 8),
                                                   child: smooth_page_indicator
                                                       .SmoothPageIndicator(
@@ -281,7 +278,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                           .oImagesController!
                                                           .animateToPage(
                                                         i,
-                                                        duration: Duration(
+                                                        duration: const Duration(
                                                             milliseconds: 500),
                                                         curve: Curves.ease,
                                                       );
@@ -295,11 +292,9 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                       dotWidth: 8,
                                                       dotHeight: 8,
                                                       dotColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .accent4,
                                                       activeDotColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryBackground,
                                                       paintStyle:
@@ -366,7 +361,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                             height: double.infinity,
                                             decoration: BoxDecoration(
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
                                             ),
                                             child: Stack(
@@ -384,10 +378,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 1),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(24),
+                                                    padding: const EdgeInsets.all(24),
                                                     child:
                                                         FlutterFlowAudioPlayer(
                                                       audio: Audio.network(
@@ -400,13 +394,11 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                         ),
                                                       ),
                                                       titleTextStyle:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .titleLarge
                                                               .override(
                                                                 fontFamily:
                                                                     'Sora',
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 fontSize: 20,
@@ -414,30 +406,25 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                                     0.0,
                                                               ),
                                                       playbackDurationTextStyle:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
-                                                                color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
                                                       fillColor:
-                                                          Color(0x00000000),
+                                                          const Color(0x00000000),
                                                       playbackButtonColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       activeTrackColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .primary,
                                                       inactiveTrackColor:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .alternate,
                                                       elevation: 0,
@@ -465,20 +452,19 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4, 4, 4, 4),
                                             child: Container(
                                               width: double.infinity,
                                               height: double.infinity,
                                               decoration: BoxDecoration(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .alternate,
                                                 borderRadius:
                                                     BorderRadius.circular(12),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(12),
+                                                padding: const EdgeInsets.all(12),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -488,7 +474,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                     Text(
                                                       columnSubmissionRecord
                                                           .header,
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
@@ -504,14 +489,12 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                       indent: 12,
                                                       endIndent: 12,
                                                       color:
-                                                          FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
                                                     ),
                                                     Text(
                                                       columnSubmissionRecord
                                                           .body,
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
@@ -522,9 +505,9 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                     ),
                                                   ]
                                                       .divide(
-                                                          SizedBox(height: 12))
+                                                          const SizedBox(height: 12))
                                                       .addToStart(
-                                                          SizedBox(height: 8)),
+                                                          const SizedBox(height: 8)),
                                                 ),
                                               ),
                                             ),
@@ -538,7 +521,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -548,7 +531,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                   height: 35,
                                   decoration: BoxDecoration(
                                     color:
-                                        FlutterFlowTheme.of(context).alternate,
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   child: Row(
@@ -557,13 +539,13 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             4, 4, 4, 4),
                                         child: Container(
                                           width: 100,
                                           height: 100,
                                           decoration: BoxDecoration(
-                                            color: Color(0x80FFFFFF),
+                                            color: const Color(0x80FFFFFF),
                                             borderRadius:
                                                 BorderRadius.circular(12),
                                           ),
@@ -576,10 +558,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                             children: [
                                               Expanded(
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 0),
                                                     child: Text(
                                                       formatNumber(
@@ -588,12 +570,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                         formatType:
                                                             FormatType.compact,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryText,
                                                             fontSize: 12,
@@ -611,7 +591,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                       ),
                                       Expanded(
                                         child: Padding(
-                                          padding: EdgeInsets.all(4),
+                                          padding: const EdgeInsets.all(4),
                                           child: Container(
                                             width: 70,
                                             height: 100,
@@ -629,7 +609,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 0),
                                                     child: Text(
                                                       formatNumber(
@@ -638,12 +618,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                         formatType:
                                                             FormatType.compact,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryText,
                                                             fontSize: 12,
@@ -655,7 +633,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 0),
                                                     child: Text(
                                                       FFLocalizations.of(
@@ -663,12 +641,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                           .getText(
                                                         'q86mo82g' /* Pins */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryText,
                                                             fontSize: 12,
@@ -688,14 +664,13 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                           thickness: 0.5,
                                           indent: 8,
                                           endIndent: 8,
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                         ),
                                       ),
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0, 0, 8, 0),
                                           child: Container(
                                             width: 70,
@@ -714,7 +689,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 0),
                                                     child: Text(
                                                       formatNumber(
@@ -723,12 +698,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                         formatType:
                                                             FormatType.compact,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryText,
                                                             fontSize: 12,
@@ -740,7 +713,7 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 0),
                                                     child: Text(
                                                       FFLocalizations.of(
@@ -748,12 +721,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                           .getText(
                                                         '7wigayxd' /* Shares */,
                                                       ),
-                                                      style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryText,
                                                             fontSize: 12,
@@ -771,27 +742,26 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 8)),
+                            ].divide(const SizedBox(width: 8)),
                           ),
                         ),
                         Container(
                           width: double.infinity,
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxHeight: 340,
                           ),
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).alternate,
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(6),
+                            padding: const EdgeInsets.all(6),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4, 0, 4, 0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
@@ -894,7 +864,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                           width: 30,
                                           height: 30,
                                           decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                             shape: BoxShape.circle,
                                           ),
@@ -902,10 +871,9 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                             children: [
                                               Align(
                                                 alignment:
-                                                    AlignmentDirectional(0, 0),
+                                                    const AlignmentDirectional(0, 0),
                                                 child: Icon(
                                                   Icons.arrow_right_rounded,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
                                                   size: 24,
@@ -916,10 +884,9 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                               ),
                                               Align(
                                                 alignment:
-                                                    AlignmentDirectional(0, 0),
+                                                    const AlignmentDirectional(0, 0),
                                                 child: Icon(
                                                   Icons.keyboard_control,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryText,
                                                   size: 24,
@@ -935,10 +902,10 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                       if (_model.editing == false)
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1, 0),
+                                              const AlignmentDirectional(-1, 0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16, 0, 4, 0),
                                             child: Text(
                                               FFLocalizations.of(context)
@@ -946,7 +913,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                 'vfpxuj2w' /* Created: */,
                                               ),
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -962,9 +928,9 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                         Expanded(
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(-1, 0),
+                                                const AlignmentDirectional(-1, 0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(4, 0, 4, 0),
                                               child: Text(
                                                 dateTimeFormat(
@@ -975,7 +941,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                       .languageCode,
                                                 ),
                                                 style:
-                                                    FlutterFlowTheme.of(context)
                                                         .labelSmall
                                                         .override(
                                                           fontFamily: 'Inter',
@@ -989,12 +954,11 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                           ),
                                         ),
                                       Align(
-                                        alignment: AlignmentDirectional(1, 0),
+                                        alignment: const AlignmentDirectional(1, 0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8, 0, 0, 0),
-                                          child: FFButtonWidget(
                                             onPressed: () async {
                                               await columnSubmissionRecord
                                                   .reference
@@ -1009,20 +973,17 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                             ),
                                             options: FFButtonOptions(
                                               height: 32,
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 16, 0),
                                               iconAlignment: IconAlignment.end,
-                                              iconPadding: EdgeInsetsDirectional
+                                              iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 0, 0, 0),
                                               color:
-                                                  FlutterFlowTheme.of(context)
                                                       .accent1,
-                                              textStyle: FlutterFlowTheme.of(
                                                       context)
                                                   .titleSmall
                                                   .override(
                                                     fontFamily: 'Inter',
-                                                    color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryText,
                                                     fontSize: 14,
@@ -1043,16 +1004,16 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.all(4),
+                                  padding: const EdgeInsets.all(4),
                                   child: Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Visibility(
                                       visible:
                                           columnSubmissionRecord.type0choice !=
                                               'Text',
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12, 4, 12, 8),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
@@ -1062,7 +1023,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                             Text(
                                               columnSubmissionRecord.header,
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -1075,7 +1035,6 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                             Text(
                                               columnSubmissionRecord.body,
                                               style:
-                                                  FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
@@ -1083,25 +1042,24 @@ class _UserObjectWidgetState extends State<UserObjectWidget>
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 12)),
+                                          ].divide(const SizedBox(height: 12)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.all(4),
+                                  padding: const EdgeInsets.all(4),
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(12),
                                       border: Border.all(
-                                        color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         width: 1,
                                       ),
                                     ),
-                                    child: Padding(
+                                    child: const Padding(
                                       padding: EdgeInsets.all(8),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,

@@ -62,8 +62,8 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(30.0, -30.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(30.0, -30.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -89,8 +89,8 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 1.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -109,8 +109,8 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -134,7 +134,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
 
     return GestureDetector(
       onTap: () {
@@ -143,7 +142,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
           child: Stack(
@@ -151,12 +149,11 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
               Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  if (FFAppState().showfullfeed == true)
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(0, 0),
+                        alignment: const AlignmentDirectional(0, 0),
                         child: Padding(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           child: PagedMasonryGridView<
                               DocumentSnapshot<Object?>?,
                               SubmissionRecord>.count(
@@ -190,7 +187,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                   height: 50,
                                   child: CircularProgressIndicator(
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                      FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                 ),
@@ -202,7 +198,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                   height: 50,
                                   child: CircularProgressIndicator(
                                     valueColor: AlwaysStoppedAnimation<Color>(
-                                      FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                 ),
@@ -225,7 +220,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                           child: CircularProgressIndicator(
                                             valueColor:
                                                 AlwaysStoppedAnimation<Color>(
-                                              FlutterFlowTheme.of(context)
                                                   .primary,
                                             ),
                                           ),
@@ -240,13 +234,12 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                       borderRadius: BorderRadius.circular(8),
                                       child: Container(
                                         width: double.infinity,
-                                        constraints: BoxConstraints(
+                                        constraints: const BoxConstraints(
                                           maxHeight: 320,
                                         ),
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 5,
                                               color: Color(0x3416202A),
@@ -282,7 +275,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
                                                             Color>(
-                                                      FlutterFlowTheme.of(
                                                               context)
                                                           .primary,
                                                     ),
@@ -312,7 +304,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                   CrossAxisAlignment.stretch,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(12, 8, 12, 8),
                                                   child: FutureBuilder<
                                                       SubmissionRecord>(
@@ -333,7 +325,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                               valueColor:
                                                                   AlwaysStoppedAnimation<
                                                                       Color>(
-                                                                FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary,
                                                               ),
@@ -358,7 +349,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                             clipBehavior:
                                                                 Clip.antiAlias,
                                                             decoration:
-                                                                BoxDecoration(
+                                                                const BoxDecoration(
                                                               shape: BoxShape
                                                                   .circle,
                                                             ),
@@ -373,7 +364,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                           Expanded(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12,
                                                                           0,
@@ -382,7 +373,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                               child: Text(
                                                                 staggeredViewSubmissionRecord
                                                                     .submitter,
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyLarge
                                                                     .override(
@@ -401,7 +391,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         4,
                                                                         0,
@@ -419,7 +409,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                             context)
                                                                         .languageCode,
                                                               ),
-                                                              style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .labelSmall
                                                                   .override(
@@ -463,7 +452,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                               backgroundColor:
                                                                   Colors
                                                                       .transparent,
-                                                              alignment: AlignmentDirectional(
+                                                              alignment: const AlignmentDirectional(
                                                                       0, 0)
                                                                   .resolve(
                                                                       Directionality.of(
@@ -514,7 +503,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                               backgroundColor:
                                                                   Colors
                                                                       .transparent,
-                                                              alignment: AlignmentDirectional(
+                                                              alignment: const AlignmentDirectional(
                                                                       0, 0)
                                                                   .resolve(
                                                                       Directionality.of(
@@ -543,7 +532,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                     },
                                                     child: Container(
                                                       decoration:
-                                                          BoxDecoration(),
+                                                          const BoxDecoration(),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -553,7 +542,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         children: [
                                                           Stack(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0, 1),
                                                             children: [
                                                               if (staggeredViewSubmissionRecord
@@ -592,7 +581,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                             height:
                                                                                 200,
                                                                             decoration:
-                                                                                BoxDecoration(),
+                                                                                const BoxDecoration(),
                                                                             child:
                                                                                 Visibility(
                                                                               visible: feedobjectimagesItem != null && feedobjectimagesItem != '',
@@ -631,13 +620,13 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                   children: [
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               1,
                                                                               1),
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(8),
+                                                                            const EdgeInsets.all(8),
                                                                         child:
                                                                             Container(
                                                                           width:
@@ -647,14 +636,13 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                           decoration:
                                                                               BoxDecoration(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             borderRadius:
                                                                                 BorderRadius.circular(12),
                                                                           ),
                                                                           child:
                                                                               Padding(
                                                                             padding:
-                                                                                EdgeInsets.all(4),
+                                                                                const EdgeInsets.all(4),
                                                                             child:
                                                                                 Row(
                                                                               mainAxisSize: MainAxisSize.max,
@@ -662,16 +650,13 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                               children: [
                                                                                 Icon(
                                                                                   Icons.toll,
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   size: 16,
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Text(
                                                                                     staggeredViewSubmissionRecord.objectRefvalue.toString(),
                                                                                     textAlign: TextAlign.center,
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: 'Inter',
-                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
                                                                                           letterSpacing: 0.0,
                                                                                         ),
                                                                                   ),
@@ -772,7 +757,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                     height: 140,
                                                                     decoration:
                                                                         BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
                                                                     ),
@@ -794,7 +778,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                           ),
                                                                         ),
                                                                         Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               0,
                                                                               0),
                                                                           child:
@@ -806,25 +790,18 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                                 title: staggeredViewSubmissionRecord.header,
                                                                               ),
                                                                             ),
-                                                                            titleTextStyle: FlutterFlowTheme.of(context).titleLarge.override(
                                                                                   fontFamily: 'Sora',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   fontSize: 20,
                                                                                   letterSpacing: 0.0,
                                                                                 ),
-                                                                            playbackDurationTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   letterSpacing: 0.0,
                                                                                 ),
                                                                             fillColor:
-                                                                                Color(0x00000000),
+                                                                                const Color(0x00000000),
                                                                             playbackButtonColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             activeTrackColor:
-                                                                                FlutterFlowTheme.of(context).primary,
                                                                             inactiveTrackColor:
-                                                                                FlutterFlowTheme.of(context).alternate,
                                                                             elevation:
                                                                                 0,
                                                                             playInBackground:
@@ -848,7 +825,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                   .isNotEmpty))
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child: Column(
                                                                 mainAxisSize:
@@ -863,13 +840,13 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1,
                                                                             -1),
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8),
                                                                       child:
                                                                           Text(
@@ -877,11 +854,9 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                             .header,
                                                                         maxLines:
                                                                             3,
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .titleMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                       ),
@@ -893,18 +868,17 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                     indent: 12,
                                                                     endIndent:
                                                                         12,
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1,
                                                                             -1),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional
+                                                                      padding: const EdgeInsetsDirectional
                                                                           .fromSTEB(
                                                                               8,
                                                                               0,
@@ -916,11 +890,9 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                             .body,
                                                                         maxLines:
                                                                             4,
-                                                                        style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Inter',
-                                                                              color: FlutterFlowTheme.of(context).secondaryText,
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                       ),
@@ -948,12 +920,11 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                         ),
                       ),
                     ),
-                  if (FFAppState().showfullfeed == false)
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(0, 0),
+                        alignment: const AlignmentDirectional(0, 0),
                         child: Padding(
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           child: Builder(
                             builder: (context) {
                               final searchedobjets =
@@ -961,7 +932,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
 
                               return MasonryGridView.builder(
                                 gridDelegate:
-                                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                                    const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 2,
                                 ),
                                 crossAxisSpacing: 10,
@@ -986,7 +957,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                 valueColor:
                                                     AlwaysStoppedAnimation<
                                                         Color>(
-                                                  FlutterFlowTheme.of(context)
                                                       .primary,
                                                 ),
                                               ),
@@ -1012,7 +982,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                   backgroundColor:
                                                       Colors.transparent,
                                                   alignment:
-                                                      AlignmentDirectional(0, 0)
+                                                      const AlignmentDirectional(0, 0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
@@ -1039,14 +1009,13 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                 BorderRadius.circular(8),
                                             child: Container(
                                               width: double.infinity,
-                                              constraints: BoxConstraints(
+                                              constraints: const BoxConstraints(
                                                 maxHeight: 320,
                                               ),
                                               decoration: BoxDecoration(
                                                 color:
-                                                    FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     blurRadius: 5,
                                                     color: Color(0x3416202A),
@@ -1068,7 +1037,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 12, 8, 12, 8),
                                                     child: FutureBuilder<
@@ -1090,7 +1059,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                 valueColor:
                                                                     AlwaysStoppedAnimation<
                                                                         Color>(
-                                                                  FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                 ),
@@ -1115,7 +1083,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                               clipBehavior: Clip
                                                                   .antiAlias,
                                                               decoration:
-                                                                  BoxDecoration(
+                                                                  const BoxDecoration(
                                                                 shape: BoxShape
                                                                     .circle,
                                                               ),
@@ -1130,7 +1098,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                             Expanded(
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             12,
                                                                             0,
@@ -1139,7 +1107,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                 child: Text(
                                                                   oSubmitterSubmissionRecord
                                                                       .submitter,
-                                                                  style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyLarge
                                                                       .override(
@@ -1157,7 +1124,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           4,
                                                                           0,
@@ -1172,7 +1139,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                           context)
                                                                       .languageCode,
                                                                 ),
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelSmall
                                                                     .override(
@@ -1192,7 +1158,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                   ),
                                                   Stack(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0, 1),
                                                     children: [
                                                       if (objectSubmissionRecord
@@ -1231,7 +1197,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                     width: 200,
                                                                     height: 200,
                                                                     decoration:
-                                                                        BoxDecoration(),
+                                                                        const BoxDecoration(),
                                                                     child:
                                                                         Visibility(
                                                                       visible: imagesextraItem !=
@@ -1278,11 +1244,11 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       1, 1),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(8),
                                                                 child:
                                                                     Container(
@@ -1290,7 +1256,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                   height: 40,
                                                                   decoration:
                                                                       BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                     borderRadius:
@@ -1300,7 +1265,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets
+                                                                        const EdgeInsets
                                                                             .all(4),
                                                                     child: Row(
                                                                       mainAxisSize:
@@ -1314,7 +1279,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                           Icons
                                                                               .toll,
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                           size:
                                                                               16,
                                                                         ),
@@ -1324,9 +1288,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                             objectSubmissionRecord.refvalue,
                                                                             textAlign:
                                                                                 TextAlign.center,
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).secondaryText,
                                                                                   letterSpacing: 0.0,
                                                                                 ),
                                                                           ),
@@ -1424,7 +1386,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                           height: 140,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                           ),
@@ -1456,43 +1417,36 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                   ),
                                                                 ),
                                                                 titleTextStyle:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleLarge
                                                                         .override(
                                                                           fontFamily:
                                                                               'Sora',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                           fontSize:
                                                                               20,
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
                                                                 playbackDurationTextStyle:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelMedium
                                                                         .override(
                                                                           fontFamily:
                                                                               'Inter',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
-                                                                fillColor: Color(
+                                                                fillColor: const Color(
                                                                     0x00000000),
                                                                 playbackButtonColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                 activeTrackColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
                                                                 inactiveTrackColor:
-                                                                    FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                 elevation: 0,
@@ -1516,7 +1470,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                           .isNotEmpty))
                                                     Padding(
                                                       padding:
-                                                          EdgeInsets.all(8),
+                                                          const EdgeInsets.all(8),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -1529,23 +1483,21 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1, -1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(8),
                                                               child: Text(
                                                                 objectSubmissionRecord
                                                                     .header,
                                                                 maxLines: 3,
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
@@ -1558,17 +1510,16 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                             thickness: 1,
                                                             indent: 12,
                                                             endIndent: 12,
-                                                            color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .alternate,
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1, -1),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8,
                                                                           0,
@@ -1578,13 +1529,11 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                                 objectSubmissionRecord
                                                                     .body,
                                                                 maxLines: 4,
-                                                                style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Inter',
-                                                                      color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryText,
                                                                       letterSpacing:
@@ -1614,20 +1563,19 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                 ],
               ),
               Padding(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(1, 0),
+                      alignment: const AlignmentDirectional(1, 0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          if (FFAppState().isCategoriesExpanded) {
                             if (animationsMap[
                                     'containerOnActionTriggerAnimation'] !=
                                 null) {
@@ -1650,7 +1598,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                   .controller
                                   .reverse();
                             }
-                            FFAppState().isCategoriesExpanded = false;
                           } else {
                             if (animationsMap[
                                     'containerOnActionTriggerAnimation'] !=
@@ -1674,7 +1621,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                   .controller
                                   .forward(from: 0.0);
                             }
-                            FFAppState().isCategoriesExpanded = true;
                           }
                         },
                         child: ClipRRect(
@@ -1683,8 +1629,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                             width: 60,
                             height: 34,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).secondary,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4,
                                   color: Color(0x33000000),
@@ -1698,9 +1643,9 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                               shape: BoxShape.rectangle,
                             ),
                             child: Stack(
-                              alignment: AlignmentDirectional(0, 0),
+                              alignment: const AlignmentDirectional(0, 0),
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.filter_alt,
                                   color: Colors.white,
                                   size: 24,
@@ -1708,7 +1653,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                   animationsMap[
                                       'iconOnActionTriggerAnimation1']!,
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.close_rounded,
                                   color: Colors.white,
                                   size: 24,
@@ -1726,12 +1671,11 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                       borderRadius: BorderRadius.circular(12),
                       child: Container(
                         width: 200,
-                        constraints: BoxConstraints(
+                        constraints: const BoxConstraints(
                           maxHeight: 460,
                         ),
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).alternate,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4,
                               color: Color(0x33000000),
@@ -1744,12 +1688,12 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                           child: Form(
                             key: _model.formKey,
                             autovalidateMode: AutovalidateMode.disabled,
                             child: Padding(
-                              padding: EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(12),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1822,35 +1766,27 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                         () => _model.choiceChipsValues = val),
                                     selectedChipStyle: ChipStyle(
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondary,
-                                      textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: FlutterFlowTheme.of(context)
                                                 .info,
                                             letterSpacing: 0.0,
                                           ),
                                       iconColor:
-                                          FlutterFlowTheme.of(context).info,
                                       iconSize: 16,
                                       elevation: 0,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     unselectedChipStyle: ChipStyle(
                                       backgroundColor:
-                                          FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                      textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
                                             letterSpacing: 0.0,
                                           ),
-                                      iconColor: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       iconSize: 16,
                                       elevation: 0,
@@ -1871,11 +1807,10 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                   ),
                                   Flexible(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 0, 8, 0),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           borderRadius:
                                               BorderRadius.circular(100),
@@ -1886,17 +1821,15 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0, 0, 8, 0),
                                               child: FlutterFlowIconButton(
                                                 borderRadius: 100,
                                                 buttonSize: 40,
                                                 fillColor:
-                                                    FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
                                                 icon: Icon(
                                                   Icons.delete,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondary,
                                                   size: 16,
@@ -1910,7 +1843,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         .wordSearcherTextController
                                                         ?.clear();
                                                   });
-                                                  FFAppState().showfullfeed =
                                                       true;
                                                   safeSetState(() {});
                                                 },
@@ -1928,7 +1860,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     isDense: true,
-                                                    labelStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
@@ -1941,7 +1872,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                             .getText(
                                                       'cnzvxg2r' /* TextField */,
                                                     ),
-                                                    hintStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
@@ -1950,7 +1880,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1,
@@ -1961,7 +1891,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1,
@@ -1974,7 +1904,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         OutlineInputBorder(
                                                       borderSide: BorderSide(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         width: 1,
@@ -1987,7 +1916,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         OutlineInputBorder(
                                                       borderSide: BorderSide(
                                                         color:
-                                                            FlutterFlowTheme.of(
                                                                     context)
                                                                 .error,
                                                         width: 1,
@@ -1997,11 +1925,9 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                               8),
                                                     ),
                                                     filled: true,
-                                                    fillColor: FlutterFlowTheme
                                                             .of(context)
                                                         .secondaryBackground,
                                                   ),
-                                                  style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
@@ -2009,7 +1935,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                         letterSpacing: 0.0,
                                                       ),
                                                   cursorColor:
-                                                      FlutterFlowTheme.of(
                                                               context)
                                                           .primaryText,
                                                   validator: _model
@@ -2019,17 +1944,15 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8, 0, 0, 0),
                                               child: FlutterFlowIconButton(
                                                 borderRadius: 100,
                                                 buttonSize: 40,
                                                 fillColor:
-                                                    FlutterFlowTheme.of(context)
                                                         .secondary,
                                                 icon: Icon(
                                                   Icons.search,
-                                                  color: FlutterFlowTheme.of(
                                                           context)
                                                       .info,
                                                   size: 24,
@@ -2077,7 +2000,6 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                                       .whenComplete(() =>
                                                           safeSetState(() {}));
 
-                                                  FFAppState().showfullfeed =
                                                       false;
                                                   safeSetState(() {});
                                                 },
@@ -2088,7 +2010,7 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16)),
+                                ].divide(const SizedBox(height: 16)),
                               ),
                             ),
                           ),
@@ -2098,8 +2020,8 @@ class _FeedpageWidgetState extends State<FeedpageWidget>
                       animationsMap['containerOnActionTriggerAnimation']!,
                     ),
                   ]
-                      .divide(SizedBox(height: 8))
-                      .addToStart(SizedBox(height: 24)),
+                      .divide(const SizedBox(height: 8))
+                      .addToStart(const SizedBox(height: 24)),
                 ),
               ),
             ],

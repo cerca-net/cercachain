@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "363608182970",
+    "project_id": "cercachain-otwlq9",
+    "storage_bucket": "cercachain-otwlq9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363608182970:android:3193a38140b2db1447f283",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCamND-8Tqw8voAvwjPPu2RHhtLNmYjyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363608182970:android:b271d4464e59d98c47f283",
+        "android_client_info": {
+          "package_name": "com.mycompany.cercaend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCamND-8Tqw8voAvwjPPu2RHhtLNmYjyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

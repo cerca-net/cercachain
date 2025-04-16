@@ -1,13 +1,7 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
-import '/index.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/gestures.dart';
+import 'package:flutter/gestures.dart' hide GestureBinding;
+// import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -49,7 +43,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -68,11 +62,11 @@ class _UserratingWidgetState extends State<UserratingWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         body: Stack(
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(10),
               child: Image.asset(
                 'assets/images/citylansscape2.jpg',
                 width: double.infinity,
@@ -80,41 +74,25 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                 fit: BoxFit.cover,
               ),
             ),
-            Padding(
-              padding: EdgeInsets.all(16),
-              child: StreamBuilder<UsersRecord>(
-                stream: UsersRecord.getDocument(widget.publicuser!),
-                builder: (context, snapshot) {
-                  // Customize what your widget looks like when it's loading.
-                  if (!snapshot.hasData) {
-                    return Center(
-                      child: SizedBox(
-                        width: 50,
-                        height: 50,
-                        child: CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation<Color>(
-                            FlutterFlowTheme.of(context).primary,
-                          ),
-                        ),
-                      ),
-                    );
-                  }
-
-                  final columnUsersRecord = snapshot.data!;
-
-                  return Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Expanded(
-                        child: SafeArea(
+            // Placeholder for user data loading
+            if (widget.publicuser == null)
+              const Center(child: Text('User not specified'))
+            else
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: SafeArea(
                           child: Container(
                             width: 100,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: Color(0xDFFFFFFF),
-                              boxShadow: [
+                              color: const Color(0xDFFFFFFF),
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4,
                                   color: Color(0x33000000),
@@ -127,33 +105,33 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(8),
+                                    padding: const EdgeInsets.all(8),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Stack(
-                                        alignment: AlignmentDirectional(0, 1),
+                                        alignment: const AlignmentDirectional(0, 1),
                                         children: [
                                           Padding(
-                                            padding: EdgeInsets.all(4),
+                                            padding: const EdgeInsets.all(4),
                                             child: Container(
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                               child: Padding(
-                                                padding: EdgeInsets.all(8),
+                                                padding: const EdgeInsets.all(8),
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 0),
                                                       child: Lottie.asset(
                                                         'assets/jsons/waiting.json',
@@ -165,22 +143,25 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0, 0),
                                                       child: Container(
                                                         width: 100,
-                                                        height: 100,
-                                                        clipBehavior:
+                                                            height: 100,
+                                                            clipBehavior:
                                                             Clip.antiAlias,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           shape:
                                                               BoxShape.circle,
                                                         ),
                                                         child: Image.network(
-                                                          columnUsersRecord
-                                                              .profilePicture,
+                                                          // Placeholder image, replace with actual data later
+                                                          'https://via.placeholder.com/100',
                                                           fit: BoxFit.cover,
+                                                          errorBuilder: (context, error, stackTrace) =>
+                                                            const Icon(Icons.person, size: 50),
+
                                                         ),
                                                       ),
                                                     ),
@@ -190,7 +171,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                             ),
                                           ),
                                           Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -200,75 +181,40 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding: const EdgeInsets.symmetric(horizontal: 10),
                                                     child: Text(
-                                                      columnUsersRecord
-                                                          .username,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            fontSize: 18,
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                          ),
+                                                      'Username Placeholder', style: TextStyle(color: Theme.of(context).textTheme.bodyMedium!.color, fontSize: 20, letterSpacing: 0.0, fontWeight: FontWeight.w500),
                                                     ),
                                                   ),
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0, 0),
                                                   child: Padding(
-                                                    padding: EdgeInsets.all(8),
+                                                    padding:
+                                                        const EdgeInsets.all(8),
                                                     child: RichText(
                                                       textScaler:
                                                           MediaQuery.of(context)
                                                               .textScaler,
-                                                      text: TextSpan(
+                                                      text: const TextSpan(
                                                         children: [
                                                           TextSpan(
-                                                            text:
-                                                                columnUsersRecord
-                                                                    .name,
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Inter',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
+                                                            text: 'User Name',
+                                                            style: TextStyle(fontFamily: 'Readex Pro', color: Color(0xFF57636C), letterSpacing: 0.0,),
                                                           ),
                                                           TextSpan(
-                                                            text:
-                                                                columnUsersRecord
-                                                                    .surname,
-                                                            style: TextStyle(),
+                                                            text:  ' Lastname',
+                                                            style: TextStyle(fontFamily: 'Readex Pro', color: Color(0xFF57636C), letterSpacing: 0.0,), // Assuming surname style should be the same
                                                           )
                                                         ],
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Inter',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
+                                                        style: TextStyle(fontFamily: 'Readex Pro', color: Color(0xFF57636C), letterSpacing: 0.0,),
                                                       ),
                                                     ),
-                                                  ),
                                                 ),
                                               ],
                                             ),
@@ -277,118 +223,90 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                       ),
                                     ),
                                   ),
-                                  Expanded(
+                                  const Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(-1, 0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            24, 0, 0, 8),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'qum9uttj' /* Submit Rating */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Inter',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                fontSize: 16,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                              ),
+                                        padding: EdgeInsets.fromLTRB(24, 0, 0, 8),
+                                        child: Text('Submit Rating',
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w500,
+                                            )
+                                            // Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                            //       fontFamily: 'Inter',
+                                            //       color: Theme.of(context)
+                                            //           .textTheme
+                                            //           .bodyMedium
+                                            //           ?.color,
+                                            //       fontSize: 16,
+                                            //       fontWeight: FontWeight.w500,
+                                            //     ),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0, 0),
+                                    alignment: const AlignmentDirectional(0, 0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           12, 0, 12, 0),
                                       child: Container(
                                         width: double.infinity,
                                         height: 40,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                          color: Theme.of(context)
+                                              .colorScheme.surfaceContainerHighest,
                                           borderRadius:
                                               BorderRadius.circular(12),
                                         ),
                                         child: Align(
-                                          alignment: AlignmentDirectional(0, 0),
+                                          alignment: const AlignmentDirectional(0, 0),
                                           child: RatingBar.builder(
                                             onRatingUpdate: (newValue) =>
-                                                safeSetState(() => _model
+                                                setState(() => _model
                                                     .ratingBarValue = newValue),
                                             itemBuilder: (context, index) =>
                                                 Icon(
                                               Icons.circle,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondary,
+                                              color: Theme.of(context)
+                                                      .colorScheme.secondary,
                                             ),
-                                            direction: Axis.horizontal,
-                                            initialRating:
-                                                _model.ratingBarValue ??= 0,
-                                            unratedColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .accent1,
-                                            itemCount: 10,
-                                            itemPadding: EdgeInsets.all(4),
-                                            itemSize: 20,
-                                            glowColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondary,
+                                              direction: Axis.horizontal,
+                                              initialRating:
+                                                  _model.ratingBarValue ??= 0,
+                                              unratedColor: Theme.of(context).disabledColor,
+                                              itemCount: 10,
+                                              itemPadding: const EdgeInsets.all(4),
+                                            glowColor: Theme.of(context)
+                                                    .colorScheme.secondary,
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(12),
+                                    padding: const EdgeInsets.all(12),
                                     child: Container(
                                       width: double.infinity,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        borderRadius: BorderRadius.circular(12),
+                                          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                                          borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(4),
+                                        padding: const EdgeInsets.all(4),
                                         child: SizedBox(
                                           width: 200,
+                                            cursorColor: Theme.of(context).primaryColor,
+                                              autofocus: false,
                                           child: TextFormField(
-                                            controller: _model.textController,
-                                            focusNode:
-                                                _model.textFieldFocusNode,
-                                            autofocus: false,
-                                            obscureText: false,
-                                            decoration: InputDecoration(
-                                              isDense: true,
-                                              labelStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Inter',
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                              hintText:
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                '1ne00zdy' /* Leave a comment. */,
-                                              ),
-                                              hintStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Inter',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                              controller: _model.textController,
+                                              focusNode: _model.textFieldFocusNode,
+                                              decoration: const InputDecoration(hintText: 'Leave a comment.'),
+                                              cursorColor: Theme.of(context).primaryColor,
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1,
                                                 ),
@@ -396,7 +314,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     BorderRadius.circular(8),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1,
                                                 ),
@@ -404,10 +322,7 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                                     BorderRadius.circular(8),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .error,
+                                                borderSide: const BorderSide(
                                                   width: 1,
                                                 ),
                                                 borderRadius:
@@ -415,88 +330,61 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .error,
+                                                borderSide: const BorderSide(
                                                   width: 1,
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(8),
                                               ),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Inter',
-                                                  letterSpacing: 0.0,
-                                                ),
-                                            cursorColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .primaryText,
-                                            validator: _model
-                                                .textControllerValidator
-                                                .asValidator(context),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12, 0, 12, 8),
                                     child: Material(
-                                      color: Colors.transparent,
+                                        color: Colors.transparent,
                                       child: Theme(
                                         data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
+                                          checkboxTheme: const CheckboxThemeData(
                                             visualDensity:
                                                 VisualDensity.compact,
                                             materialTapTargetSize:
                                                 MaterialTapTargetSize
                                                     .shrinkWrap,
-                                          ),
-                                          unselectedWidgetColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .alternate,
+                                            ),
+                                            unselectedWidgetColor: Theme.of(context).unselectedWidgetColor,
                                         ),
                                         child: CheckboxListTile(
                                           value:
                                               _model
                                                   .checkboxListTileValue ??= false,
                                           onChanged: (newValue) async {
-                                            safeSetState(() =>
+                                            setState(() =>
                                                 _model.checkboxListTileValue =
                                                     newValue!);
                                           },
-                                          title: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'kmmj28py' /* Terms & Conditions */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .titleLarge
-                                                .override(
-                                                  fontFamily: 'Sora',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryText,
+                                            title: const Text(
+                                                'I agree to the Terms & Conditions',
+                                                style: TextStyle(
                                                   fontSize: 16,
-                                                  letterSpacing: 0.0,
-                                                ),
+                                                )
+                                                // Theme.of(context).textTheme.titleLarge?.copyWith(
+                                                //       fontFamily: 'Sora',
+                                                //       fontSize: 16,
+                                                //     ),
                                           ),
-                                          tileColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
-                                          activeColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          checkColor:
-                                              FlutterFlowTheme.of(context).info,
+                                          tileColor: Theme.of(context).colorScheme.surfaceContainerHighest,
+                                          activeColor: Theme.of(context).primaryColor,
+                                          checkColor: Theme.of(context).colorScheme.secondary,
                                           dense: true,
                                           controlAffinity:
                                               ListTileControlAffinity.trailing,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12, 0, 12, 0),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
@@ -507,154 +395,40 @@ class _UserratingWidgetState extends State<UserratingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(12),
-                                    child: StreamBuilder<List<CreditsRecord>>(
-                                      stream: queryCreditsRecord(
-                                        queryBuilder: (creditsRecord) =>
-                                            creditsRecord.where(
-                                          'userRef',
-                                          isEqualTo: currentUserReference,
-                                        ),
-                                        singleRecord: true,
-                                      ),
-                                      builder: (context, snapshot) {
-                                        // Customize what your widget looks like when it's loading.
-                                        if (!snapshot.hasData) {
-                                          return Center(
-                                            child: SizedBox(
-                                              width: 50,
-                                              height: 50,
-                                              child: CircularProgressIndicator(
-                                                valueColor:
-                                                    AlwaysStoppedAnimation<
-                                                        Color>(
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                                ),
-                                              ),
-                                            ),
-                                          );
-                                        }
-                                        List<CreditsRecord>
-                                            rowCreditsRecordList =
-                                            snapshot.data!;
-                                        // Return an empty Container when the item does not exist.
-                                        if (snapshot.data!.isEmpty) {
-                                          return Container();
-                                        }
-                                        final rowCreditsRecord =
-                                            rowCreditsRecordList.isNotEmpty
-                                                ? rowCreditsRecordList.first
-                                                : null;
+                                    padding: const EdgeInsets.all(12),
+                                    // Placeholder for submit button - needs logic for data submission
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        if (_model.checkboxListTileValue ==
+                                            true)
+                                          IconButton(
+                                            icon: const Icon(Icons.send_rounded),
+                                            onPressed: () async {
+                                              // TODO: Implement rating submission logic here
 
-                                        return Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            if (_model.checkboxListTileValue ==
-                                                true)
-                                              Align(
-                                                alignment:
-                                                    AlignmentDirectional(0, 0),
-                                                child: FlutterFlowIconButton(
-                                                  borderRadius: 100,
-                                                  buttonSize: 46,
-                                                  fillColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .secondary,
-                                                  icon: Icon(
-                                                    Icons.send_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    size: 24,
+                                              ScaffoldMessenger.of(context).showSnackBar(
+                                                SnackBar(
+                                                  content: Text(
+                                                    'SUCCESS',
+                                                    style: TextStyle(color: Theme.of(context).primaryColor,),
+                                                    ),
+                                                    duration: const Duration(seconds: 2),
                                                   ),
-                                                  onPressed: () async {
-                                                    await RatingsRecord
-                                                            .createDoc(
-                                                                columnUsersRecord
-                                                                    .reference)
-                                                        .set(
-                                                            createRatingsRecordData(
-                                                      userRef:
-                                                          currentUserReference,
-                                                      value: _model
-                                                          .ratingBarValue
-                                                          ?.round(),
-                                                      date: getCurrentTimestamp,
-                                                    ));
-
-                                                    await UserRatingsRecord
-                                                        .collection
-                                                        .doc()
-                                                        .set(
-                                                            createUserRatingsRecordData(
-                                                          ratedUser: widget
-                                                              .publicuser,
-                                                          date:
-                                                              getCurrentTimestamp,
-                                                          value: _model
-                                                              .ratingBarValue
-                                                              ?.round(),
-                                                        ));
-
-                                                    await rowCreditsRecord!
-                                                        .reference
-                                                        .update({
-                                                      ...mapToFirestore(
-                                                        {
-                                                          'transition_i':
-                                                              FieldValue
-                                                                  .increment(
-                                                                      2.0),
-                                                        },
-                                                      ),
-                                                    });
-                                                    ScaffoldMessenger.of(
-                                                            context)
-                                                        .showSnackBar(
-                                                      SnackBar(
-                                                        content: Text(
-                                                          'SUCCESS',
-                                                          style: TextStyle(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primaryText,
-                                                          ),
-                                                        ),
-                                                        duration: Duration(
-                                                            milliseconds: 4000),
-                                                        backgroundColor:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .secondary,
-                                                      ),
-                                                    );
-
-                                                    context.pushNamed(
-                                                        FeedpageWidget
-                                                            .routeName);
-                                                  },
-                                                ),
-                                              ),
-                                          ],
-                                        );
-                                      },
+                                                );
+                                            },
+                                          ),
+                                      ],
                                     ),
                                   ),
                                 ],
-                              ),
                             ),
                           ),
                         ),
                       ),
-                    ],
-                  );
-                },
+                  ],
+                ),
               ),
-            ),
           ],
         ),
       ),

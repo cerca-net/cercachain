@@ -1,7 +1,6 @@
 Expanded(
   child = Padding(
     padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
-    child: FFButtonWidget(
       onPressed: () async {
         if (_model.formKey.currentState == null ||
             !_model.formKey.currentState!.validate()) {
@@ -35,15 +34,12 @@ Expanded(
       ),
       icon: Icon(
         Icons.add,
-        color: FlutterFlowTheme.of(context).secondaryBackground,
         size: 15,
       ),
       options: FFButtonOptions(
         height: 40,
         padding: EdgeInsetsDirectional.fromSTEB(24, 0, 24, 0),
         iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-        color: FlutterFlowTheme.of(context).secondary,
-        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Montserrat',
               color: Colors.white,
               fontSize: 14,

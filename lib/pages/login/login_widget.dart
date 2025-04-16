@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_appauth/flutter_appauth.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+
+// Auth0 configuration variables - replace with your own
+const String auth0Domain = 'YOUR_AUTH0_DOMAIN';
+const String auth0ClientId = 'YOUR_AUTH0_CLIENT_ID';
 
 class LoginWidget extends StatefulWidget {
   const LoginWidget({super.key});
 
   @override
-  State<LoginWidget> createState() => _LoginWidgetState();
+  _LoginWidgetState createState() => _LoginWidgetState();
 }
 
 class _LoginWidgetState extends State<LoginWidget> {
@@ -12,6 +18,11 @@ class _LoginWidgetState extends State<LoginWidget> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   bool _obscureText = true;
+  bool _isBusy = false;
+  String? _errorMessage;
+
+  final FlutterAppAuth _appAuth = const FlutterAppAuth();
+  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
 
   @override
   void dispose() {
@@ -26,72 +37,68 @@ class _LoginWidgetState extends State<LoginWidget> {
     });
   }
 
+  Future<void> _login() async {
+    try {
+      setState(() {
+        _isBusy = true;
+        _errorMessage = null;
+      });
+
+      final AuthorizationTokenResponse result = await _appAuth
+          .authorizeAndExchangeCode(
+        AuthorizationTokenRequest(
+          auth0ClientId,
+          'YOUR_AUTH0_REDIRECT_URI',
+          issuer: 'https://$auth0Domain',
+          scopes: ['openid', 'profile', 'email', 'offline_access'],
+          promptValues: ['login'],
+        ),
+      );
+
+      //  Successful login - process the result
+      Navigator.pushNamed(context, '/'); // Replace with your home route
+        } catch (e, s) {
+      print('Login error: $e - stack: $s');
+      setState(() {
+        _isBusy = false;
+        _errorMessage = 'An error occurred during login.';
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Form(
-        key: _formKey,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            TextFormField(
-              controller: _emailController,
-              decoration: const InputDecoration(
-                labelText: 'Email',
-                prefixIcon: Icon(Icons.email),
-                border: OutlineInputBorder(),
-              ),
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter your email';
-                }
-                if (!value.contains('@')) {
-                  return 'Please enter a valid email';
-                }
-                return null;
-              },
-            ),
-            const SizedBox(height: 20),
-            TextFormField(
-              controller: _passwordController,
-              decoration: InputDecoration(
-                labelText: 'Password',
-                prefixIcon: const Icon(Icons.lock),
-                suffixIcon: IconButton(
-                  icon: Icon(
-                    _obscureText ? Icons.visibility : Icons.visibility_off,
-                  ),
-                  onPressed: _toggleObscureText,
-                ),
-                border: const OutlineInputBorder(),
-              ),
-              obscureText: _obscureText,
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter your password';
-                }
-                if (value.length < 6) {
-                  return 'Password must be at least 6 characters';
-                }
-                return null;
-              },
-            ),
-            const SizedBox(height: 30),
-            ElevatedButton(
-              onPressed: () {
-                if (_formKey.currentState!.validate()) {
-                  // TODO: Implement login logic here (e.g., authentication)
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Logging in...')),
-                  );
-                }
-              },
-              child: const Text('Login'),
-            ),
-          ],
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Login'),
       ),
+      body: _isBusy
+          ? const Center(child: CircularProgressIndicator())
+          : Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    //Removed email and password form fields
+                    const SizedBox(height: 30),
+                    ElevatedButton(
+                      onPressed: _login,
+                      child: const Text('Login with Auth0'),
+                    ),
+                    if (_errorMessage != null)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16.0),
+                        child: Text(
+                          _errorMessage!,
+                          style: const TextStyle(color: Colors.red),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ),
     );
   }
 }
