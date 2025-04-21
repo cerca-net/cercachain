@@ -1,0 +1,13 @@
+permissionMessages:
+  - permissionType: CAMERA
+    message:
+      translationIdentifier:
+        key: 5d30d5o3
+  - permissionType: PHOTO_LIBRARY
+    message:
+      translationIdentifier:
+        key: 8psauo8g
+  - permissionType: MICROPHONE
+    message:
+      translationIdentifier:
+        key: 1s8ug4lx
