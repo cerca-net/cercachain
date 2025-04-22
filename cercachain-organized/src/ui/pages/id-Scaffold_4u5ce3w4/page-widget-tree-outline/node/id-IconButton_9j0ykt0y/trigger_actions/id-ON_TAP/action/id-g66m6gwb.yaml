@@ -1,0 +1,29 @@
+key: g66m6gwb
+simpleSearchAction:
+  collection:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    searchableFields:
+      - header
+      - submitter
+      - type1choice
+      - type2choice
+      - type0choice
+  searchTerm:
+    variable:
+      source: WIDGET_STATE
+      baseVariable:
+        widgetState:
+          returnParameter:
+            allowedDestinationTypes:
+              - Integer
+              - Double
+              - Boolean
+              - ImagePath
+              - VideoPath
+              - AudioPath
+            dataType:
+              scalarType: String
+      nodeKeyRef:
+        key: TextField_j9nqqo0c

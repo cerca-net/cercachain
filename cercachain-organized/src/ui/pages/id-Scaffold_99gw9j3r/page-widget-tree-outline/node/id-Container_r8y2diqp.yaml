@@ -1,0 +1,104 @@
+key: Container_r8y2diqp
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        topRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomLeftValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        bottomRightValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 5
+          mostRecentInputValue: 5
+        colorValue:
+          inputValue:
+            value: "873865258"
+          mostRecentInputValue:
+            value: "873865258"
+        dyValue:
+          inputValue: 3
+          mostRecentInputValue: 3
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions:
+      height:
+        pixelsValue:
+          inputValue: 320
+          mostRecentInputValue: 320
+    clipContent: true
+    minDimensions: {}
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    bottomValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: object
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  document:
+    collectionIdentifier:
+      name: submission
+      key: p1djqn3b
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: StaggeredView_x8h6rnc2
+    singleTimeQuery: true
+  requestManagerSettings:
+    useRequestManager: false
+    scope: WIDGET_CLASS
+    managerIdentifier:
+      key: hvp6e
+parameterValues: {}
+valueKey: {}

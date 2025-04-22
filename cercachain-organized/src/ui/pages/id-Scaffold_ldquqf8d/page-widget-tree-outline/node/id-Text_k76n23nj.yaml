@@ -1,0 +1,40 @@
+key: Text_k76n23nj
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: l8fqb55h
+    selectable: false
+    textValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: date
+          - dateTimeFormat:
+              format: relative
+              abbreviated: true
+              isCustom: false
+        nodeKeyRef:
+          key: ListView_a6m6xflh
+      mostRecentInputValue: Hello World
+  padding:
+    rightValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

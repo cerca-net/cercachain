@@ -1,0 +1,10 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: lb7fi
+      setValue:
+        inputValue:
+          serializedValue: "true"
+  updateType: NONE
+  stateVariableType: WIDGET_CLASS_STATE
+key: vs48ukuu

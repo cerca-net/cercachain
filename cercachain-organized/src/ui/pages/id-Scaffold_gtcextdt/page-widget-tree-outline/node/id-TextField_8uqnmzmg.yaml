@@ -1,0 +1,67 @@
+key: TextField_8uqnmzmg
+type: TextField
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+  textField:
+    textStyle:
+      themeStyle: BODY_MEDIUM
+      textAlignValue:
+        inputValue: ALIGN_START
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      hintStyle:
+        themeStyle: LABEL_MEDIUM
+      labelStyle:
+        themeStyle: LABEL_MEDIUM
+      hintText:
+        translationIdentifier:
+          key: bpcd2ifp
+        textValue:
+          inputValue: Bio
+          mostRecentInputValue: Bio
+      filledValue:
+        inputValue: true
+        mostRecentInputValue: true
+      borderWidthValue:
+        inputValue: 1
+        mostRecentInputValue: 1
+      denseValue:
+        inputValue: true
+        mostRecentInputValue: true
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+        mostRecentInputValue:
+          themeColor: ERROR
+    width:
+      pixelsValue:
+        inputValue: 200
+        mostRecentInputValue: 200
+    maxLinesValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    autofocusValue:
+      inputValue: false
+      mostRecentInputValue: false
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: TextField
+parameterValues: {}
+valueKey: {}

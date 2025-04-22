@@ -1,0 +1,47 @@
+name: Newpage
+description: ""
+node:
+  key: Scaffold_m2cztblz
+pageRouteSettings:
+  routePath: NewObject2
+  onlyAuthenticated: true
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: isNewItem
+          key: vmo0o
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"
+    - parameter:
+        identifier:
+          name: imagesIn
+          key: 7ewno
+        dataType:
+          listType:
+            scalarType: ImagePath
+          nonNullable: true
+    - parameter:
+        identifier:
+          name: isrecord
+          key: 9a4f3
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "true"
+    - parameter:
+        identifier:
+          name: submissionthread
+          key: p4iwk
+        dataType:
+          scalarType: Document
+          subType:
+            collectionIdentifier:
+              name: thread
+              key: i4r0yxs1

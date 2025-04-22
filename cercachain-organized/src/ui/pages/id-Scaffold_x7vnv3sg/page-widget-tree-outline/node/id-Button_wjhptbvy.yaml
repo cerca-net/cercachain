@@ -1,0 +1,59 @@
+key: Button_wjhptbvy
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: d6n66dbo
+      textValue:
+        inputValue: unpin
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 12
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 62070
+            family: FontAwesomeSolid
+            package: font_awesome_flutter
+            matchTextDirection: false
+            packageIcon:
+              fontAwesome: mapPin
+            name: mapPin
+  expanded:
+    expandedType: UNEXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: ButtonUnpinned
+valueKey: {}

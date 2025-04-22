@@ -1,0 +1,56 @@
+key: CheckboxListTile_fdme4usa
+type: CheckboxListTile
+props:
+  padding:
+    topValue:
+      inputValue: 12
+    bottomValue:
+      inputValue: 12
+  checkboxListTile:
+    title:
+      themeStyle: TITLE_LARGE
+      translationIdentifier:
+        key: 9rahx5w8
+      textValue:
+        inputValue: Terms & Conditions
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    subtitle:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: qymn3ia0
+      textValue:
+        inputValue: ""
+    contentPadding:
+      leftValue:
+        inputValue: 12
+      rightValue:
+        inputValue: 12
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    density: COMPACT
+    initialValueValue:
+      inputValue: true
+    tileColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    activeColorValue:
+      inputValue:
+        themeColor: PRIMARY
+    checkColorValue:
+      inputValue:
+        themeColor: INFO
+    checkboxBorderColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

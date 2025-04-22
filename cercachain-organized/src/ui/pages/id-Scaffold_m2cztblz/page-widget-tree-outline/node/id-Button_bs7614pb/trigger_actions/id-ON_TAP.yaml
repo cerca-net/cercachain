@@ -1,0 +1,22 @@
+rootAction:
+  key: 53svhvc3
+  action:
+    key: w06t0t6c
+  followUpAction:
+    key: x5r60y03
+    action:
+      key: ta5j8i51
+    followUpAction:
+      key: lw60tvr7
+      action:
+        key: irsn0tbl
+      followUpAction:
+        key: ikuc0xmg
+        action:
+          key: fy94q89b
+        followUpAction:
+          key: dtmxr45g
+          action:
+            key: 3n0vtozw
+trigger:
+  triggerType: ON_TAP

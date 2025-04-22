@@ -1,0 +1,49 @@
+key: Badge_exbdr2zz
+type: Badge
+props:
+  badge:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: l1kgjfkx
+      textValue:
+        variable:
+          source: LOCAL_STATE
+          defaultValue:
+            serializedValue: "0"
+          baseVariable:
+            localState:
+              fieldIdentifier:
+                name: bagitems
+                key: q0h0h
+              stateVariableType: WIDGET_CLASS_STATE
+          operations:
+            - listNumItems: {}
+            - numberFormat: {}
+          nodeKeyRef:
+            key: Scaffold_x7vnv3sg
+      fontSizeValue:
+        inputValue: 10
+      colorValue:
+        inputValue:
+          value: "4294967295"
+    innerPadding:
+      leftValue:
+        inputValue: 8
+      topValue:
+        inputValue: 8
+      rightValue:
+        inputValue: 8
+      bottomValue:
+        inputValue: 8
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY
+    elevationValue:
+      inputValue: 4
+    animationValue:
+      inputValue: true
+    showBadgeValue:
+      inputValue: true
+    positionStartValue:
+      inputValue: false

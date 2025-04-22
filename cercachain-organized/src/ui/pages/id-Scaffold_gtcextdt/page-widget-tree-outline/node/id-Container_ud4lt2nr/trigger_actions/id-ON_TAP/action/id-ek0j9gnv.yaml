@@ -1,0 +1,271 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        banner:
+          fieldIdentifier:
+            name: banner
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  actionType: UPLOAD_DATA_URL
+                                  actionKeyRef:
+                                    key: 04ak3ls7
+                              nodeKeyRef:
+                                key: Container_m1dr6e0u
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            actionType: UPLOAD_DATA_URL
+                            actionKeyRef:
+                              key: 04ak3ls7
+                        nodeKeyRef:
+                          key: Container_m1dr6e0u
+                elseValue:
+                  variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: banner
+                    nodeKeyRef:
+                      key: Container_ud4lt2nr
+                returnParameter:
+                  dataType:
+                    scalarType: ImagePath
+        profile_picture:
+          fieldIdentifier:
+            name: profile_picture
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  actionType: UPLOAD_DATA_URL
+                                  actionKeyRef:
+                                    key: mj0woq4t
+                              nodeKeyRef:
+                                key: Container_oos0wac1
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            actionType: UPLOAD_DATA_URL
+                            actionKeyRef:
+                              key: mj0woq4t
+                        nodeKeyRef:
+                          key: Container_oos0wac1
+                elseValue:
+                  variable:
+                    source: FIREBASE_AUTH_USER
+                    baseVariable:
+                      auth:
+                        property: USERS_DATA_FIELD
+                        usersDataField:
+                          name: profile_picture
+                returnParameter:
+                  dataType:
+                    scalarType: ImagePath
+        name:
+          fieldIdentifier:
+            name: name
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: FIRESTORE_REQUEST
+                              baseVariable:
+                                firestore: {}
+                              operations:
+                                - accessDocumentField:
+                                    fieldIdentifier:
+                                      name: name
+                              nodeKeyRef:
+                                key: Container_4smhyccz
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              allowedDestinationTypes:
+                                - Integer
+                                - Double
+                                - Boolean
+                                - ImagePath
+                                - VideoPath
+                                - AudioPath
+                              dataType:
+                                scalarType: String
+                        nodeKeyRef:
+                          key: TextField_bfxlkz37
+                elseValue:
+                  variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: name
+                    nodeKeyRef:
+                      key: Container_ud4lt2nr
+                returnParameter:
+                  dataType:
+                    scalarType: String
+        surname:
+          fieldIdentifier:
+            name: surname
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: FIRESTORE_REQUEST
+                              baseVariable:
+                                firestore: {}
+                              operations:
+                                - accessDocumentField:
+                                    fieldIdentifier:
+                                      name: surname
+                              nodeKeyRef:
+                                key: Container_4smhyccz
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              allowedDestinationTypes:
+                                - Integer
+                                - Double
+                                - Boolean
+                                - ImagePath
+                                - VideoPath
+                                - AudioPath
+                              dataType:
+                                scalarType: String
+                        nodeKeyRef:
+                          key: TextField_jiswc1dt
+                elseValue:
+                  variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: surname
+                    nodeKeyRef:
+                      key: Container_ud4lt2nr
+                returnParameter:
+                  dataType:
+                    scalarType: String
+        bio:
+          fieldIdentifier:
+            name: bio
+          variable:
+            source: FUNCTION_CALL
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: FIRESTORE_REQUEST
+                              baseVariable:
+                                firestore: {}
+                              operations:
+                                - accessDocumentField:
+                                    fieldIdentifier:
+                                      name: bio
+                              nodeKeyRef:
+                                key: Container_4smhyccz
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      variable:
+                        source: WIDGET_STATE
+                        baseVariable:
+                          widgetState:
+                            returnParameter:
+                              allowedDestinationTypes:
+                                - Integer
+                                - Double
+                                - Boolean
+                                - ImagePath
+                                - VideoPath
+                                - AudioPath
+                              dataType:
+                                scalarType: String
+                        nodeKeyRef:
+                          key: TextField_8uqnmzmg
+                elseValue:
+                  variable:
+                    source: FIRESTORE_REQUEST
+                    baseVariable:
+                      firestore: {}
+                    operations:
+                      - accessDocumentField:
+                          fieldIdentifier:
+                            name: bio
+                    nodeKeyRef:
+                      key: Container_ud4lt2nr
+                returnParameter:
+                  dataType:
+                    scalarType: String
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+key: ek0j9gnv

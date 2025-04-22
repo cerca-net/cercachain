@@ -1,0 +1,5 @@
+key: PlaceholderWidget_pg0mwolr
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+name: WalletTabBarPage

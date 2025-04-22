@@ -1,0 +1,15 @@
+key: Stack_cellhvsm
+type: Stack
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  stack:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: Infinity
+          mostRecentInputValue: Infinity

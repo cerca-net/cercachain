@@ -1,0 +1,298 @@
+identifier:
+  name: users
+  key: dij4596p
+fields:
+  bio:
+    identifier:
+      name: bio
+    dataType:
+      scalarType: String
+  email:
+    identifier:
+      name: email
+    dataType:
+      scalarType: String
+  location:
+    identifier:
+      name: location
+    dataType:
+      scalarType: String
+  name:
+    identifier:
+      name: name
+    dataType:
+      scalarType: String
+  surname:
+    identifier:
+      name: surname
+    dataType:
+      scalarType: String
+  username:
+    identifier:
+      name: username
+    dataType:
+      scalarType: String
+  display_name:
+    identifier:
+      name: display_name
+    dataType:
+      scalarType: String
+  photo_url:
+    identifier:
+      name: photo_url
+    dataType:
+      scalarType: ImagePath
+  uid:
+    identifier:
+      name: uid
+    dataType:
+      scalarType: String
+  created_time:
+    identifier:
+      name: created_time
+    dataType:
+      scalarType: DateTime
+  phone_number:
+    identifier:
+      name: phone_number
+    dataType:
+      scalarType: String
+  last_active_time:
+    identifier:
+      name: last_active_time
+    dataType:
+      scalarType: DateTime
+  role:
+    identifier:
+      name: role
+    dataType:
+      scalarType: String
+  title:
+    identifier:
+      name: title
+    dataType:
+      scalarType: String
+  banner:
+    identifier:
+      name: banner
+    dataType:
+      scalarType: ImagePath
+  profile_picture:
+    identifier:
+      name: profile_picture
+    dataType:
+      scalarType: ImagePath
+  usernames:
+    identifier:
+      name: usernames
+    dataType:
+      scalarType: String
+  pinned_users:
+    identifier:
+      name: pinned_users
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  user_pins:
+    identifier:
+      name: user_pins
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  bag_ref:
+    identifier:
+      name: bag_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: bag
+          key: 93o8zqyj
+  user_occupations:
+    identifier:
+      name: user_occupations
+    dataType:
+      listType:
+        scalarType: String
+  user_interests:
+    identifier:
+      name: user_interests
+    dataType:
+      listType:
+        scalarType: String
+  pinned_objects:
+    identifier:
+      name: pinned_objects
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  user_objects:
+    identifier:
+      name: user_objects
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  wallet_methods_user:
+    identifier:
+      name: wallet_methods_user
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: wallet_methods
+          key: nsf4do4h
+  user_bag_objects:
+    identifier:
+      name: user_bag_objects
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  order_ref:
+    identifier:
+      name: order_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  order_methods_user:
+    identifier:
+      name: order_methods_user
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order_methods
+          key: t9fp60ga
+  user_places:
+    identifier:
+      name: user_places
+    dataType:
+      listType:
+        scalarType: String
+  user_type:
+    identifier:
+      name: user_type
+    dataType:
+      scalarType: String
+  user_items:
+    identifier:
+      name: user_items
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  user_posts:
+    identifier:
+      name: user_posts
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  user_transactions:
+    identifier:
+      name: user_transactions
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: transactions
+          key: zqx5emk4
+  shortDescription:
+    identifier:
+      name: shortDescription
+    dataType:
+      scalarType: String
+  analytics_ref:
+    identifier:
+      name: analytics_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: analytics
+          key: lv8h14dw
+  user_verified:
+    identifier:
+      name: user_verified
+    dataType:
+      scalarType: Boolean
+  user_verified_pending:
+    identifier:
+      name: user_verified_pending
+    dataType:
+      scalarType: Boolean
+  user_is_admin:
+    identifier:
+      name: user_is_admin
+    dataType:
+      scalarType: Boolean
+  u_ratings:
+    identifier:
+      name: u_ratings
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: ratings
+          key: lrzc5w18
+  avg_u_rating:
+    identifier:
+      name: avg_u_rating
+    dataType:
+      scalarType: Double
+  ratings:
+    identifier:
+      name: ratings
+    dataType:
+      scalarType: Integer
+  user_ratings:
+    identifier:
+      name: user_ratings
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: user_ratings
+          key: ypidbqz4
+  userCredits:
+    identifier:
+      name: userCredits
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: credits
+          key: 86gjwu7b

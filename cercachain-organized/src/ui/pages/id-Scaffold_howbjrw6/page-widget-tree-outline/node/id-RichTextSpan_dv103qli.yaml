@@ -1,0 +1,10 @@
+key: RichTextSpan_dv103qli
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: nu3esj9t
+      textValue:
+        inputValue: "# Account : "

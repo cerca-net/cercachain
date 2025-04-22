@@ -1,0 +1,48 @@
+key: IconButton_b6tnc7l0
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: INFO
+        iconDataValue:
+          inputValue:
+            codePoint: 57415
+            family: MaterialIcons
+            matchTextDirection: false
+            name: add
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_omustp26
+            - inputValue:
+                serializedValue: Catalogues
+          condition:
+            relation: EQUAL_TO

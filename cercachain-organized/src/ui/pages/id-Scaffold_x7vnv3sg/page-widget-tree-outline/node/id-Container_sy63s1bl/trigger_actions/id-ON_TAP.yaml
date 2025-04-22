@@ -1,0 +1,6 @@
+rootAction:
+  key: mpnx8924
+  action:
+    key: c03rrew3
+trigger:
+  triggerType: ON_TAP

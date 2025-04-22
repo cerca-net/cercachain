@@ -1,0 +1,7 @@
+key: Column_fc0svaqs
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    crossAxisAlignment: cross_axis_end
+    primary: true

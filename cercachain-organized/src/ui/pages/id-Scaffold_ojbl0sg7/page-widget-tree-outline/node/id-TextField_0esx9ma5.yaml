@@ -1,0 +1,101 @@
+key: TextField_0esx9ma5
+type: TextField
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  textField:
+    textStyle:
+      themeStyle: BODY_LARGE
+    inputDecoration:
+      inputBorderType: outline
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      labelStyle:
+        themeStyle: LABEL_LARGE
+      labelText:
+        translationIdentifier:
+          key: dzwgwcti
+        textValue:
+          inputValue: Email
+          mostRecentInputValue: Email
+      hintText: {}
+      borderColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+      filledValue:
+        inputValue: true
+        mostRecentInputValue: true
+      fillColorValue:
+        inputValue:
+          themeColor: PRIMARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: PRIMARY_BACKGROUND
+      borderWidthValue:
+        inputValue: 2
+        mostRecentInputValue: 2
+      errorBorderColorValue:
+        inputValue:
+          themeColor: ERROR
+        mostRecentInputValue:
+          themeColor: ERROR
+      focusBorderColorValue:
+        inputValue:
+          themeColor: PRIMARY
+        mostRecentInputValue:
+          themeColor: PRIMARY
+    keyboardType: EMAIL_ADDRESS
+    width:
+      pixelsValue:
+        inputValue: Infinity
+        mostRecentInputValue: Infinity
+    autoFillHint: EMAIL
+    submitType: SUBMIT_TYPE_NONE
+    maxLinesValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    autofocusValue:
+      inputValue: true
+      mostRecentInputValue: true
+    cursorColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    trailingIconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 22
+          mostRecentInputValue: 22
+        colorValue:
+          inputValue:
+            value: "4285887861"
+          mostRecentInputValue:
+            value: "4285887861"
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+name: emailAddress
+parameterValues: {}
+valueKey: {}

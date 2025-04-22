@@ -1,0 +1,32 @@
+key: Container_m0ypj835
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 260
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 4
+        colorValue:
+          inputValue:
+            value: "855638016"
+        dxValue:
+          inputValue: 0
+        dyValue:
+          inputValue: 2
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+name: PROFILECARD

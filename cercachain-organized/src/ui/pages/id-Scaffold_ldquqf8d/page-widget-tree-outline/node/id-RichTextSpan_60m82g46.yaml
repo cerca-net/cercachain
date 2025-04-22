@@ -1,0 +1,11 @@
+key: RichTextSpan_60m82g46
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: x28kyi58
+      textValue:
+        inputValue: " "
+        mostRecentInputValue: " "

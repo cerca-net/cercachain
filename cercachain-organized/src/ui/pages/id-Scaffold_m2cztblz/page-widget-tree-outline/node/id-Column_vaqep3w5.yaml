@@ -1,0 +1,14 @@
+key: Column_vaqep3w5
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8

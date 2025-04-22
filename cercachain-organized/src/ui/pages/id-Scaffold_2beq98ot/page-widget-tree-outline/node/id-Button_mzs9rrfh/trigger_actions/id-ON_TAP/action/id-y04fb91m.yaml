@@ -1,0 +1,35 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: catalogue
+      key: j3d3qkb6
+    write:
+      updates:
+        user_ref:
+          fieldIdentifier:
+            name: user_ref
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        catalalogue_name:
+          fieldIdentifier:
+            name: catalalogue_name
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_v4uzrzdt
+key: y04fb91m

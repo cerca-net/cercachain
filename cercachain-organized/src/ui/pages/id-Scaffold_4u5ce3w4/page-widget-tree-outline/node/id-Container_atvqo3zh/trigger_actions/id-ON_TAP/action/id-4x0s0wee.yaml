@@ -1,0 +1,22 @@
+alertDialog:
+  customDialog:
+    passedParameters:
+      parameterPasses:
+        nghtv2:
+          paramIdentifier:
+            name: object
+            key: nghtv2
+          variable:
+            source: FIRESTORE_REQUEST
+            baseVariable:
+              firestore: {}
+            nodeKeyRef:
+              key: Container_jlipacve
+      widgetClassNodeKeyRef:
+        key: Container_rv3ka28m
+    dimensions: {}
+    barrierColor: {}
+    isGlobal: true
+    componentClassNodeKeyRef:
+      key: Container_rv3ka28m
+key: 4x0s0wee

@@ -1,0 +1,18 @@
+key: Text_ghs66tlv
+type: Text
+props:
+  text:
+    themeStyle: BODY_SMALL
+    translationIdentifier:
+      key: uskvzpmt
+    selectable: false
+    textValue:
+      inputValue: Task Type
+      mostRecentInputValue: Task Type
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+parameterValues: {}

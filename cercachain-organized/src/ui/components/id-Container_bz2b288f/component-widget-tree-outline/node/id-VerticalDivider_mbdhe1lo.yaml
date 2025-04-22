@@ -1,0 +1,21 @@
+key: VerticalDivider_mbdhe1lo
+type: VerticalDivider
+props:
+  verticalDivider:
+    thicknessValue:
+      inputValue: 0.5
+      mostRecentInputValue: 0.5
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    indentValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    endIndentValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    heightValue:
+      inputValue: 100
+      mostRecentInputValue: 100

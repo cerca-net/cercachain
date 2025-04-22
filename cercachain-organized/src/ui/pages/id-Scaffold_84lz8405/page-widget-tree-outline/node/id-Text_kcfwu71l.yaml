@@ -1,0 +1,17 @@
+key: Text_kcfwu71l
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_SMALL
+    translationIdentifier:
+      key: axco3bgg
+    textValue:
+      inputValue: My orders
+    fontSizeValue:
+      inputValue: 18
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

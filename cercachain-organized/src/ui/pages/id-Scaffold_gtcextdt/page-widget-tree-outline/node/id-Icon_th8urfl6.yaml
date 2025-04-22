@@ -1,0 +1,18 @@
+key: Icon_th8urfl6
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY_TEXT
+      mostRecentInputValue:
+        themeColor: PRIMARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 59030
+        family: MaterialIcons
+        matchTextDirection: false
+        name: upload_file

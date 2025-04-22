@@ -1,0 +1,17 @@
+key: PlaceholderWidget_z7lzvro1
+type: PlaceholderWidget
+props:
+  placeholderWidget: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: isPinned
+              key: 6k82q
+            stateVariableType: WIDGET_CLASS_STATE
+        nodeKeyRef:
+          key: Scaffold_x7vnv3sg
+      mostRecentInputValue: true

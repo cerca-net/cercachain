@@ -1,0 +1,27 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        pinned_users:
+          fieldIdentifier:
+            name: pinned_users
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_REMOVE
+            value:
+              fieldIdentifier:
+                name: pinned_users
+              variable:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USER_REFERENCE
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Scaffold_x7vnv3sg
+key: g2sxk2i3

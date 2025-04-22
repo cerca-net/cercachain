@@ -1,0 +1,29 @@
+key: IconButton_3iv3zwx2
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+          mostRecentInputValue: 24
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 57957
+            family: MaterialIcons
+            matchTextDirection: false
+            name: fiber_manual_record
+name: IconButtonR

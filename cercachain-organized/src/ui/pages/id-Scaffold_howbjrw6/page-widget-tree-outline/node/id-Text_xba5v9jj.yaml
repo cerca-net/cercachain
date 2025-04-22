@@ -1,0 +1,22 @@
+key: Text_xba5v9jj
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: xn6znbnn
+    selectable: false
+    textValue:
+      inputValue: "Items :"
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    leftValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED

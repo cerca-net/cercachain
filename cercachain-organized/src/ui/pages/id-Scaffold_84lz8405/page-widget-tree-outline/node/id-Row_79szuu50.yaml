@@ -1,0 +1,22 @@
+key: Row_79szuu50
+type: Row
+props:
+  row:
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ALL
+    bottomValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+    allValue:
+      inputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

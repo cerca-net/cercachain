@@ -1,0 +1,14 @@
+key: Column_vgc2euem
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 10
+        mostRecentInputValue: 10
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding: {}

@@ -1,0 +1,53 @@
+rootAction:
+  key: fuq6huhm
+  action:
+    key: tjfxefrz
+  followUpAction:
+    key: tgrpj1x2
+    conditionActions:
+      falseAction:
+        key: zd8cv6k3
+        action:
+          key: lsigq2d4
+      trueActions:
+        - condition:
+            variable:
+              source: FUNCTION_CALL
+              functionCall:
+                values:
+                  - variable:
+                      source: ACTION_OUTPUTS
+                      baseVariable:
+                        actionOutput:
+                          outputVariableIdentifier:
+                            name: orderQR
+                          actionKeyRef:
+                            key: tjfxefrz
+                      nodeKeyRef:
+                        key: Button_75sqfrly
+                      actionComponentKeyRef: {}
+                  - variable:
+                      source: FIRESTORE_REQUEST
+                      baseVariable:
+                        firestore: {}
+                      operations:
+                        - accessDocumentField:
+                            documentProperty: REFERENCE
+                        - documentReferenceId: {}
+                      nodeKeyRef:
+                        key: Column_enujka9q
+                condition:
+                  relation: EQUAL_TO
+          trueAction:
+            key: yk18k0qw
+            action:
+              key: r4h7xurj
+            followUpAction:
+              key: ky60d0t3
+              action:
+                key: n7a9824e
+      hasMultiConditions: false
+      key: qphfsmac
+    followUpAction: {}
+trigger:
+  triggerType: ON_TAP

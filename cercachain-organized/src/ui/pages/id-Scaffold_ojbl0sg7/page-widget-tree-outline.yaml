@@ -1,0 +1,20 @@
+node:
+  key: Scaffold_ojbl0sg7
+  body:
+    key: Container_6y2f5phk
+    children:
+      - key: Column_6w31mzqz
+        children:
+          - key: Container_0tafzl3a
+            children:
+              - key: Column_8is3cj3z
+                children:
+                  - key: Row_3jfnnhf1
+                    children:
+                      - key: IconButton_74o9h9ab
+                  - key: Text_okgdgd66
+                  - key: TextField_0esx9ma5
+                  - key: TextField_z6fwh5vz
+                  - key: Button_m80gorwc
+                  - key: Button_xime5uvv
+                  - key: Button_5w7ennax

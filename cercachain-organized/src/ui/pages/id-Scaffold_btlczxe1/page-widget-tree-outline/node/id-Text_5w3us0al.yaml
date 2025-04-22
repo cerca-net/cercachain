@@ -1,0 +1,45 @@
+key: Text_5w3us0al
+type: Text
+props:
+  text:
+    themeStyle: LABEL_MEDIUM
+    translationIdentifier:
+      key: 6t1ks03e
+    textValue:
+      variable:
+        source: WIDGET_STATE
+        defaultValue:
+          serializedValue: Account number
+        baseVariable:
+          widgetState:
+            returnParameter:
+              allowedDestinationTypes:
+                - Integer
+                - Double
+                - Boolean
+                - ImagePath
+                - VideoPath
+                - AudioPath
+              dataType:
+                scalarType: String
+        nodeKeyRef:
+          key: TextField_rzgw4sf5
+      mostRecentInputValue: This is the podcast description and we go over the proper content that is covered in this podcast.
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

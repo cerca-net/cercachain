@@ -1,0 +1,54 @@
+node:
+  key: Scaffold_g2lqappl
+  body:
+    key: Container_ezt2wa3s
+    children:
+      - key: Column_1kapn1tt
+        children:
+          - key: PageView_1l77lt98
+            children:
+              - key: PlaceholderWidget_uifieixd
+                children:
+                  - key: Stack_shw1uxat
+                    children:
+                      - key: Image_mdhd7biw
+                      - key: Container_g7llp9dw
+                        children:
+                          - key: Column_hxw6qtdu
+                            children:
+                              - key: Text_eid2s8ua
+                              - key: Text_pnftx659
+              - key: PlaceholderWidget_56tcrv9o
+                children:
+                  - key: Stack_j4j0m1sx
+                    children:
+                      - key: Image_o6jo04db
+                      - key: Container_b4uahf2j
+                        children:
+                          - key: Column_9sv0s829
+                            children:
+                              - key: Text_ct7wwfok
+                              - key: Text_7y32s7lx
+              - key: PlaceholderWidget_8cmhhrqi
+                children:
+                  - key: Stack_drwjsqjn
+                    children:
+                      - key: Image_606b4oui
+                      - key: Container_biuqigyt
+                        children:
+                          - key: Column_1pknbcsc
+                            children:
+                              - key: Text_6w103kcu
+                              - key: Text_u3a1syk4
+              - key: PlaceholderWidget_9gjl617a
+                children:
+                  - key: Stack_tom5h13d
+                    children:
+                      - key: Image_ts1hypj1
+                      - key: Container_xlgsoqzq
+                        children:
+                          - key: Column_vgc2euem
+                            children:
+                              - key: Button_8gnhaoxe
+                              - key: Button_kuu7yugq
+                              - key: Button_9vkj2lpq

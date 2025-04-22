@@ -1,0 +1,94 @@
+key: MediaDisplay_0swfwec4
+type: MediaDisplay
+props:
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: FIRESTORE_REQUEST
+                baseVariable:
+                  firestore: {}
+                operations:
+                  - accessDocumentField:
+                      fieldIdentifier:
+                        name: video
+                nodeKeyRef:
+                  key: Container_q3mzss9g
+            - {}
+          condition:
+            relation: EXISTS_AND_NON_EMPTY
+        uiBuilderValue:
+          serializedValue: "false"
+      mostRecentInputValue: false
+  mediaDisplay:
+    image:
+      type: FF_IMAGE_TYPE_NETWORK
+      fit: FF_BOX_FIT_COVER
+      dimensions:
+        width:
+          pixelsValue:
+            inputValue: Infinity
+            mostRecentInputValue: Infinity
+        height:
+          pixelsValue:
+            inputValue: Infinity
+            mostRecentInputValue: Infinity
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      cacheFadeDuration: 500
+      pathValue:
+        inputValue: https://picsum.photos/seed/223/600
+        mostRecentInputValue: https://picsum.photos/seed/223/600
+      format: FF_IMAGE_FORMAT_AUTO
+    videoPlayer:
+      type: FF_VIDEO_TYPE_NETWORK
+      dimensions:
+        width:
+          pixelsValue:
+            inputValue: Infinity
+            mostRecentInputValue: Infinity
+        height:
+          pixelsValue:
+            inputValue: Infinity
+            mostRecentInputValue: Infinity
+      pathValue:
+        inputValue: https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4
+        mostRecentInputValue: https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4
+      autoPlayValue:
+        inputValue: true
+        mostRecentInputValue: true
+      loopingValue:
+        inputValue: false
+        mostRecentInputValue: false
+      showControlsValue:
+        inputValue: false
+        mostRecentInputValue: false
+      allowFullScreenValue:
+        inputValue: false
+        mostRecentInputValue: false
+      allowPlaybackSpeedMenuValue:
+        inputValue: false
+        mostRecentInputValue: false
+      pauseOnNavigateValue:
+        inputValue: true
+        mostRecentInputValue: true
+    displayingImage: true
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: video
+        nodeKeyRef:
+          key: Container_q3mzss9g

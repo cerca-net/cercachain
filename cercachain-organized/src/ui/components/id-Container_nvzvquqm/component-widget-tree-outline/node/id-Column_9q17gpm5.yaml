@@ -1,0 +1,15 @@
+key: Column_9q17gpm5
+type: Column
+props:
+  column:
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12

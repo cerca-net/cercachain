@@ -1,0 +1,5 @@
+key: Row_acwmf58u
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_evenly

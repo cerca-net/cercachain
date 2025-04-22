@@ -1,0 +1,25 @@
+key: IconButton_f117ce2i
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 30
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 57706
+            family: MaterialIcons
+            matchTextDirection: false
+            name: close

@@ -1,0 +1,33 @@
+key: Text_fu7lhnyp
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: HEADLINE_SMALL
+    isCustomFont: false
+    translationIdentifier:
+      key: 5en137ce
+    textValue:
+      inputValue: Transaction history
+    fontSizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w600
+    textAlignValue:
+      inputValue: ALIGN_END
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,17 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: q0h0h
+      addToList:
+        variable:
+          source: WIDGET_CLASS_PARAMETER
+          baseVariable:
+            widgetClass:
+              paramIdentifier:
+                name: objectparameter
+                key: t3154n
+          nodeKeyRef:
+            key: Scaffold_x7vnv3sg
+  updateType: WIDGET
+  stateVariableType: WIDGET_CLASS_STATE
+key: bazm3z23

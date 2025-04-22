@@ -1,0 +1,58 @@
+key: Container_32pom7ph
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+      height:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        topLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        topRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomLeftValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        bottomRightValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      boxShape: FF_BOX_SHAPE_RECTANGLE
+      boxShadow: {}
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          value: "4294046968"
+        mostRecentInputValue:
+          value: "4294046968"
+    childAlignment: {}
+    maxDimensions: {}
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    rightValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+  platformType: MATERIAL
+  responsiveVisibility:
+    phoneHidden: false
+    tabletHidden: false
+    tabletLandscapeHidden: false
+    desktopHidden: true
+name: searchDesktop
+parameterValues: {}

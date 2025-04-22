@@ -1,0 +1,20 @@
+key: RichTextSpan_0yfl7g7g
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: esjfutcy
+      selectable: false
+      textValue:
+        inputValue: "Bag to order ratio:"
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500

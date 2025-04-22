@@ -1,0 +1,18 @@
+key: ListView_g6qtd6mi
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_evenly
+    crossAxisAlignment: cross_axis_stretch
+    scrollable: false
+    primary: true
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0

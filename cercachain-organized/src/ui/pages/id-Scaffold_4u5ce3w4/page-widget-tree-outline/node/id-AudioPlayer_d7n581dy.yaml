@@ -1,0 +1,62 @@
+key: AudioPlayer_d7n581dy
+type: AudioPlayer
+props:
+  audioPlayer:
+    audio:
+      type: FF_AUDIO_TYPE_NETWORK
+      pathValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: audio
+          nodeKeyRef:
+            key: Container_q3mzss9g
+      titleValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: header
+          nodeKeyRef:
+            key: Container_q3mzss9g
+    titleTextStyle:
+      themeStyle: TITLE_LARGE
+      fontSizeValue:
+        inputValue: 20
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    playbackDurationTextStyle:
+      themeStyle: LABEL_MEDIUM
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    playInBackground: ENABLED
+    playbackButtonColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    activeTrackColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    inactiveTrackColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    pauseOnNavigateValue:
+      inputValue: true
+      mostRecentInputValue: true

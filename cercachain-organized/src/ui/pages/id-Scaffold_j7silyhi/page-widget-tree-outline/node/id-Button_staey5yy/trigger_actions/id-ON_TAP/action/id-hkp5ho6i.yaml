@@ -1,0 +1,4 @@
+auth:
+  type: CREATE_ACCOUNT
+  provider: GOOGLE
+key: hkp5ho6i

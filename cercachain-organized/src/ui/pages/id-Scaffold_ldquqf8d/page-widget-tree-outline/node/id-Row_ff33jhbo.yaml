@@ -1,0 +1,7 @@
+key: Row_ff33jhbo
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+  expanded:
+    expandedType: EXPANDED

@@ -1,0 +1,23 @@
+key: Text_n19t6em5
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 231pdd7e
+    selectable: false
+    textValue:
+      inputValue: RECIEVE
+    fontSizeValue:
+      inputValue: 10
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+    fontWeightValue:
+      inputValue: w500
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

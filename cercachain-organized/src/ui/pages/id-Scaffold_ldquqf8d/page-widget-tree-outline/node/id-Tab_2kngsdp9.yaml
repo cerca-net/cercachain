@@ -1,0 +1,21 @@
+key: Tab_2kngsdp9
+type: Tab
+props:
+  tab:
+    text:
+      translationIdentifier:
+        key: vrwv3ph2
+      textValue:
+        inputValue: Items
+        mostRecentInputValue: Items
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+name: ItemsTab
+parameterValues: {}

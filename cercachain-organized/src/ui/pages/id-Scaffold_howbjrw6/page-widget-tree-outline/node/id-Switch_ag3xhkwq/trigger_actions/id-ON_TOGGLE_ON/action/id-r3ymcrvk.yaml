@@ -1,0 +1,20 @@
+snackBar:
+  textMessage:
+    inputValue:
+      serializedValue: Please confirm the item process indicators
+  textStyle:
+    variableColor:
+      inputValue:
+        color:
+          themeColor: ERROR
+  durationMillis: 4000
+  subAction:
+    action:
+      navigate:
+        allowBack: true
+  shouldHidePreviousSnackbar: false
+  backgroundColor:
+    inputValue:
+      color:
+        themeColor: SECONDARY
+key: r3ymcrvk

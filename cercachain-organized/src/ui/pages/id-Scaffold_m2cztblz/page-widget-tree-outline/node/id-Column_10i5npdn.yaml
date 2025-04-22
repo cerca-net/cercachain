@@ -1,0 +1,52 @@
+key: Column_10i5npdn
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding:
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: analytics
+          key: lv8h14dw
+  firestore:
+    collectionIdentifier:
+      name: analytics
+      key: lv8h14dw
+    hideOnEmpty: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: user_ref
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+  requestManagerSettings: {}

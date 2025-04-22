@@ -1,0 +1,70 @@
+key: CircleImage_q0wygo2f
+type: CircleImage
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_COVER
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 200
+          mostRecentInputValue: 200
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: profile_picture
+        nodeKeyRef:
+          key: Container_lxacr6qt
+      mostRecentInputValue: https://picsum.photos/seed/102/600
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          conditionalValue:
+            ifConditionalValues:
+              - condition:
+                  source: FUNCTION_CALL
+                  functionCall:
+                    values:
+                      - variable:
+                          source: FIRESTORE_REQUEST
+                          baseVariable:
+                            firestore: {}
+                          operations:
+                            - accessDocumentField:
+                                fieldIdentifier:
+                                  name: profile_picture
+                          nodeKeyRef:
+                            key: Container_pagzcv8c
+                      - {}
+                    condition:
+                      relation: EXISTS_AND_NON_EMPTY
+                value:
+                  inputValue:
+                    serializedValue: "1"
+            elseValue:
+              inputValue:
+                serializedValue: "0"
+            returnParameter:
+              dataType:
+                scalarType: Double
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+valueKey: {}

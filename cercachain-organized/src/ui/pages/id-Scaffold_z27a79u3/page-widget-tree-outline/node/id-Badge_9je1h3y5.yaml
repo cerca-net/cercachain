@@ -1,0 +1,35 @@
+key: Badge_9je1h3y5
+type: Badge
+props:
+  badge:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: pwwoj152
+      textValue:
+        inputValue: "1"
+      fontSizeValue:
+        inputValue: 8
+      colorValue:
+        inputValue:
+          value: "4294967295"
+    innerPadding:
+      leftValue:
+        inputValue: 8
+      topValue:
+        inputValue: 8
+      rightValue:
+        inputValue: 8
+      bottomValue:
+        inputValue: 8
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    elevationValue:
+      inputValue: 4
+    animationValue:
+      inputValue: true
+    showBadgeValue:
+      inputValue: true
+    positionStartValue:
+      inputValue: false

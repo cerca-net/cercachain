@@ -1,0 +1,65 @@
+name: Userpage
+description: ""
+node:
+  key: Scaffold_ldquqf8d
+pageRouteSettings:
+  routePath: Userpage
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: totalAvgRef
+          key: 3w4nd
+        dataType:
+          listType:
+            scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: order
+              key: 1x1ih0np
+    - parameter:
+        identifier:
+          name: trsIsSent
+          key: za9dp
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "true"
+    - parameter:
+        identifier:
+          name: ratingsList
+          key: b2xi5
+        dataType:
+          listType:
+            scalarType: Integer
+          nonNullable: true
+    - parameter:
+        identifier:
+          name: webViewOpen
+          key: zyqpw
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "true"
+  databaseRequestManagers:
+    - identifier:
+        name: itemPosts
+        key: n6umi
+      originalNodeKeyRef:
+        key: Text_k6tcgryy
+    - identifier:
+        name: postsCount
+        key: ja622
+      originalNodeKeyRef:
+        key: Text_au0q7uyq
+    - identifier:
+        name: itemsCount
+        key: g488n
+      originalNodeKeyRef:
+        key: Text_au0q7uyq

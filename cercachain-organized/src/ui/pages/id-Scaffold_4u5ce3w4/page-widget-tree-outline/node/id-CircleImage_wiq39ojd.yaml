@@ -1,0 +1,33 @@
+key: CircleImage_wiq39ojd
+type: CircleImage
+props:
+  image:
+    type: FF_IMAGE_TYPE_NETWORK
+    fit: FF_BOX_FIT_FIT_WIDTH
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 30
+          mostRecentInputValue: 30
+      height:
+        pixelsValue:
+          inputValue: 120
+          mostRecentInputValue: 120
+    cacheFadeDuration: 500
+    pathValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: profilePictureObjectPost
+        nodeKeyRef:
+          key: Row_9l8aqtna
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

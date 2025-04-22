@@ -1,0 +1,24 @@
+key: Row_gbyvk6yy
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_center
+  padding:
+    type: FF_PADDING_ALL
+    leftValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    topValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}

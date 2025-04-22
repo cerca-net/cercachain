@@ -1,0 +1,20 @@
+navigate:
+  allowBack: true
+  passedParameters:
+    parameterPasses:
+      l2k7rx:
+        paramIdentifier:
+          name: orderparameter
+          key: l2k7rx
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          nodeKeyRef:
+            key: ListView_p9eyl4im
+    widgetClassNodeKeyRef:
+      key: Scaffold_howbjrw6
+  isNavigateBack: false
+  pageNodeKeyRef:
+    key: Scaffold_howbjrw6
+key: 7nccqudk

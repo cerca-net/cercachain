@@ -1,0 +1,15 @@
+key: Icon_a5mff2jl
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 20
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 63012
+        family: MaterialIcons
+        matchTextDirection: false
+        name: category_rounded

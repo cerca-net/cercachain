@@ -1,0 +1,13 @@
+key: Stack_3emc5c51
+type: Stack
+props:
+  expanded:
+    expandedType: UNEXPANDED
+  stack:
+    childAlignment:
+      xValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      yValue:
+        inputValue: 1
+        mostRecentInputValue: 1

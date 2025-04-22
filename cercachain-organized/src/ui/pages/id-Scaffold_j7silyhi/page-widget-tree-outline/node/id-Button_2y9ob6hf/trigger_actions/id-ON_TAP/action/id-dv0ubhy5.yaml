@@ -1,0 +1,25 @@
+snackBar:
+  textMessage:
+    inputValue:
+      serializedValue: user not available
+  textStyle:
+    variableColor:
+      inputValue:
+        color:
+          themeColor: PRIMARY_TEXT
+  durationMillis: 4000
+  subAction:
+    showSubAction: false
+    label:
+      inputValue: {}
+    action:
+      navigate:
+        allowBack: true
+      key: 2khxyqs4
+    labelColor: {}
+  shouldHidePreviousSnackbar: false
+  backgroundColor:
+    inputValue:
+      color:
+        themeColor: SECONDARY
+key: dv0ubhy5

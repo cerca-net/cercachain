@@ -1,0 +1,13 @@
+key: Text_okq1eudq
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: wtyn9mt4
+    selectable: false
+    textValue:
+      inputValue: Task Description here this one is really long and it goes over maybe? And goes to two lines.
+      mostRecentInputValue: Task Description here this one is really long and it goes over maybe? And goes to two lines.
+  responsiveVisibility: {}
+parameterValues: {}

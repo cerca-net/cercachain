@@ -1,0 +1,58 @@
+key: Button_281shjlf
+type: Button
+props:
+  button:
+    text:
+      fontFamily: Montserrat
+      themeStyle: TITLE_SMALL
+      isCustomFont: false
+      translationIdentifier:
+        key: w2nk774u
+      textValue:
+        inputValue: Order
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY_BACKGROUND
+      mostRecentInputValue:
+        themeColor: SECONDARY_BACKGROUND
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 20
+        iconDataValue:
+          inputValue:
+            codePoint: 60075
+            family: MaterialIcons
+            matchTextDirection: false
+            name: login_sharp
+    iconPosition: TRAILING
+  expanded:
+    expandedType: EXPANDED
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

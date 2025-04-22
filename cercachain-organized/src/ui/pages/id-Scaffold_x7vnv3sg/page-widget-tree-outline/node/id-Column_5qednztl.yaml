@@ -1,0 +1,49 @@
+key: Column_5qednztl
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_end
+    crossAxisAlignment: cross_axis_stretch
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 12
+    minSizeValue:
+      inputValue: true
+  padding:
+    bottomValue:
+      inputValue: 24
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 1
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: bagitems
+                      key: q0h0h
+                    stateVariableType: WIDGET_CLASS_STATE
+                operations:
+                  - listNumItems: {}
+                nodeKeyRef:
+                  key: Scaffold_x7vnv3sg
+            - {}
+          condition:
+            relation: EXISTS_AND_NON_EMPTY
+      mostRecentInputValue: true
+  responsiveVisibility:
+    phoneHidden: false
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

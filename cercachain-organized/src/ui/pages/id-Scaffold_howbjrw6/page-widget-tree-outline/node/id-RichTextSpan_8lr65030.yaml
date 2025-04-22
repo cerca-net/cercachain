@@ -1,0 +1,17 @@
+key: RichTextSpan_8lr65030
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: HEADLINE_LARGE
+      translationIdentifier:
+        key: ptv4zo36
+      textValue:
+        inputValue: "Order "
+      fontSizeValue:
+        inputValue: 28
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500

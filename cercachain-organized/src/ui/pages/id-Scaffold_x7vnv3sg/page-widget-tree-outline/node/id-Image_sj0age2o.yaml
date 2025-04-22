@@ -1,0 +1,24 @@
+key: Image_sj0age2o
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_ASSET
+    fit: FF_BOX_FIT_NONE
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 200
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 12
+    useBlurHash: false
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: projects/cercaend-vk8icg/assets/j6uoovw2tjht/istockphoto-1174960560-612x612.jpg
+    format: FF_IMAGE_FORMAT_AUTO
+  expanded:
+    expandedType: EXPANDED

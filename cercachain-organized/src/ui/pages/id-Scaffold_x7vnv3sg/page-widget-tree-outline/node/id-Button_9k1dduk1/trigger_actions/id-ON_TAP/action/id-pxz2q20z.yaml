@@ -1,0 +1,46 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        order_accum:
+          fieldIdentifier:
+            name: order_accum
+          fieldValue:
+            fieldValue: INCREMENT
+            increment:
+              inputValue:
+                serializedValue: "1"
+        orderAvgReference:
+          fieldIdentifier:
+            name: orderAvgReference
+          fieldValue:
+            fieldValue: FIRESTORE_ARRAY_UNION
+            value:
+              fieldIdentifier:
+                name: orderAvgReference
+              variable:
+                source: FUNCTION_CALL
+                functionCall:
+                  values:
+                    - variable:
+                        source: LOCAL_STATE
+                        baseVariable:
+                          localState:
+                            fieldIdentifier:
+                              name: refvaluesinbagitems
+                              key: e5jgq
+                            stateVariableType: WIDGET_CLASS_STATE
+                        nodeKeyRef:
+                          key: Scaffold_x7vnv3sg
+                  customFunction:
+                    name: sumofBagitemsListRefvalues
+                    key: mp7e5
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USERS_DATA_FIELD
+          usersDataField:
+            name: analytics_ref
+key: pxz2q20z
+nonBlocking: true

@@ -1,0 +1,14 @@
+key: Column_wo1cwev1
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    crossAxisAlignment: cross_axis_center
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12

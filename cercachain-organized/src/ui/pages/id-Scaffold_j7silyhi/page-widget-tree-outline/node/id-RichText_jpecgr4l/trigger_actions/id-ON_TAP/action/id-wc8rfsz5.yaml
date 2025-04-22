@@ -1,0 +1,12 @@
+navigate:
+  allowBack: true
+  passedParameters:
+    widgetClassNodeKeyRef:
+      key: Scaffold_ojbl0sg7
+  isNavigateBack: false
+  transition:
+    transitionType: FADE_IN
+    durationMillis: 200
+  pageNodeKeyRef:
+    key: Scaffold_ojbl0sg7
+key: wc8rfsz5

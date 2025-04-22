@@ -1,0 +1,17 @@
+key: Column_s5a9dzxf
+type: Column
+props:
+  column:
+    primary: true
+    listSpacing: {}
+  padding:
+    leftValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 8
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

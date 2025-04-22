@@ -1,0 +1,30 @@
+key: Text_1qk4ezca
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: TITLE_SMALL
+    isCustomFont: false
+    translationIdentifier:
+      key: eutmuzx9
+    underline: false
+    textValue:
+      inputValue: Wallet method
+    fontSizeValue:
+      inputValue: 14
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w600
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

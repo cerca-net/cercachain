@@ -1,0 +1,6 @@
+key: Column_c4uqk9gy
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_start
+    primary: true

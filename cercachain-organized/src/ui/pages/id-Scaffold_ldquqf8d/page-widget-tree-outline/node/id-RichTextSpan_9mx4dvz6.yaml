@@ -1,0 +1,20 @@
+key: RichTextSpan_9mx4dvz6
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: hhee5bpa
+      selectable: false
+      textValue:
+        inputValue: "Completed orders :"
+      fontSizeValue:
+        inputValue: 14
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500

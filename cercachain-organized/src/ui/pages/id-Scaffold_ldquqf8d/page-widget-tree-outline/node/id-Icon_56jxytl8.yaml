@@ -1,0 +1,15 @@
+key: Icon_56jxytl8
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY
+    iconDataValue:
+      inputValue:
+        codePoint: 57498
+        family: MaterialIcons
+        matchTextDirection: false
+        name: arrow_drop_up

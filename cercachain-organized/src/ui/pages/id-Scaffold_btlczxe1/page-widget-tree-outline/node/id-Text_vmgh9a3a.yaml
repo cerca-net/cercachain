@@ -1,0 +1,69 @@
+key: Text_vmgh9a3a
+type: Text
+props:
+  text:
+    themeStyle: TITLE_LARGE
+    translationIdentifier:
+      key: q8lwkxse
+    textValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          conditionalValue:
+            ifConditionalValues:
+              - condition:
+                  source: FUNCTION_CALL
+                  functionCall:
+                    values:
+                      - variable:
+                          source: WIDGET_STATE
+                          baseVariable:
+                            widgetState:
+                              returnParameter:
+                                dataType:
+                                  scalarType: String
+                                  nonNullable: false
+                          nodeKeyRef:
+                            key: ChoiceChips_0swhq4b8
+                      - inputValue:
+                          serializedValue: Cash
+                    condition:
+                      relation: NOT_EQUAL_TO
+                value:
+                  variable:
+                    source: WIDGET_STATE
+                    defaultValue:
+                      serializedValue: Method name
+                    baseVariable:
+                      widgetState:
+                        returnParameter:
+                          allowedDestinationTypes:
+                            - Integer
+                            - Double
+                            - Boolean
+                            - ImagePath
+                            - VideoPath
+                            - AudioPath
+                          dataType:
+                            scalarType: String
+                    nodeKeyRef:
+                      key: TextField_way65m9q
+            elseValue:
+              inputValue:
+                serializedValue: Cash
+            returnParameter:
+              dataType:
+                scalarType: String
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 8
+    topValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+parameterValues: {}

@@ -1,0 +1,27 @@
+key: RichTextSpan_2o68vhj4
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: 35cbeahw
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          defaultValue:
+            serializedValue: "0"
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: user_impressions
+            - numberFormat: {}
+          nodeKeyRef:
+            key: Column_hkh8tvu0
+        mostRecentInputValue: "14"
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY

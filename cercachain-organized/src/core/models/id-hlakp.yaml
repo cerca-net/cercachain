@@ -1,0 +1,53 @@
+identifier:
+  name: thread
+  key: hlakp
+fields:
+  - identifier:
+      name: user_ref
+      key: n7ee0
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  - identifier:
+      name: subission_ref
+      key: 3xhxo
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  - identifier:
+      name: object_thread
+      key: 4sstg
+    dataType:
+      listType:
+        scalarType: String
+  - identifier:
+      name: thread_1
+      key: 6lw3m
+    dataType:
+      scalarType: String
+  - identifier:
+      name: thread_2
+      key: 1quy6
+    dataType:
+      scalarType: String
+  - identifier:
+      name: thread_3
+      key: aipo3
+    dataType:
+      scalarType: String
+  - identifier:
+      name: thread_4
+      key: 578kb
+    dataType:
+      scalarType: String
+  - identifier:
+      name: thread_5
+      key: s3mej
+    dataType:
+      scalarType: String

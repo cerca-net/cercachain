@@ -1,0 +1,49 @@
+key: IconButton_otpvyc5w
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+        mostRecentInputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+    borderColorValue:
+      inputValue:
+        value: "0"
+      mostRecentInputValue:
+        value: "0"
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 20
+          mostRecentInputValue: 20
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+          mostRecentInputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 60016
+            family: MaterialIcons
+            matchTextDirection: false
+            name: library_add_sharp
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  alignment:
+    xValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    yValue:
+      inputValue: 1
+      mostRecentInputValue: 1

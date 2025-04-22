@@ -1,0 +1,16 @@
+key: Row_lphi44zi
+type: Row
+props:
+  row:
+    crossAxisAlignment: cross_axis_end
+    minSizeValue:
+      inputValue: true
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+  alignment:
+    xValue:
+      inputValue: 1
+    yValue:
+      inputValue: 1

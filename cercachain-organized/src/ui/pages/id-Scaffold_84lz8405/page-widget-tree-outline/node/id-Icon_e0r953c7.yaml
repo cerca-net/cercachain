@@ -1,0 +1,20 @@
+key: Icon_e0r953c7
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 983866
+        family: MaterialIcons
+        matchTextDirection: false
+        name: interests_rounded
+  responsiveVisibility: {}
+parameterValues: {}

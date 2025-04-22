@@ -1,0 +1,86 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: order_methods
+      key: t9fp60ga
+    write:
+      updates:
+        method_poster:
+          fieldIdentifier:
+            name: method_poster
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        method_type:
+          fieldIdentifier:
+            name: method_type
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  dataType:
+                    scalarType: String
+                    nonNullable: false
+            nodeKeyRef:
+              key: ChoiceChips_by3s0vjo
+        method_tag:
+          fieldIdentifier:
+            name: method_tag
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_75amtqk4
+        method_name:
+          fieldIdentifier:
+            name: method_name
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                returnParameter:
+                  allowedDestinationTypes:
+                    - Integer
+                    - Double
+                    - Boolean
+                    - ImagePath
+                    - VideoPath
+                    - AudioPath
+                  dataType:
+                    scalarType: String
+            nodeKeyRef:
+              key: TextField_fnh16xzc
+        method_thread:
+          fieldIdentifier:
+            name: method_thread
+          fieldValue:
+            fieldValue: SET
+            value:
+              fieldIdentifier:
+                name: method_thread
+              variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        listType:
+                          scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_k7u9u2wd
+key: meah8blp

@@ -1,0 +1,18 @@
+key: VerticalDivider_whd52dmb
+type: VerticalDivider
+props:
+  verticalDivider:
+    thicknessValue:
+      inputValue: 2
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    indentValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    endIndentValue:
+      inputValue: 20
+      mostRecentInputValue: 20
+    heightValue:
+      inputValue: 100
+      mostRecentInputValue: 100

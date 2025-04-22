@@ -1,0 +1,18 @@
+key: Row_gyhbkyb2
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+  padding:
+    leftValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    topValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    rightValue:
+      inputValue: 6
+      mostRecentInputValue: 6
+    bottomValue:
+      inputValue: 6
+      mostRecentInputValue: 6

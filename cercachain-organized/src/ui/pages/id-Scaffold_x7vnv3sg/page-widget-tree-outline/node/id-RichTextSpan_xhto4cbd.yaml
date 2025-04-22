@@ -1,0 +1,22 @@
+key: RichTextSpan_xhto4cbd
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: gwofb4kx
+      textValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: name
+          nodeKeyRef:
+            key: Scaffold_x7vnv3sg
+        mostRecentInputValue: Name
+      fontWeightValue:
+        inputValue: w700

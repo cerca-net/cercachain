@@ -1,0 +1,57 @@
+key: Button_bs7614pb
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: vo01x1c3
+      textValue:
+        inputValue: Submit
+      colorValue:
+        inputValue:
+          value: "4294967295"
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 12
+        mostRecentInputValue: 12
+    innerPadding:
+      leftValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      rightValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+          mostRecentInputValue: 40
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+    iconValue:
+      inputValue:
+        iconDataValue:
+          inputValue:
+            codePoint: 58901
+            family: MaterialIcons
+            matchTextDirection: false
+            name: subdirectory_arrow_right
+    iconPosition: TRAILING
+  padding:
+    topValue:
+      inputValue: 4
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0

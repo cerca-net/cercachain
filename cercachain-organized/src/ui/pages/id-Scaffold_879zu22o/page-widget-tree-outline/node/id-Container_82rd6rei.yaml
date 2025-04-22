@@ -1,0 +1,73 @@
+key: Container_82rd6rei
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 120
+          mostRecentInputValue: 120
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 63
+          mostRecentInputValue: 63
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+        localFileVariable:
+          source: WIDGET_STATE
+          baseVariable:
+            widgetState:
+              actionType: UPLOAD_DATA
+              actionKeyRef:
+                key: fhqgrjj2
+          nodeKeyRef:
+            key: Container_82rd6rei
+        pathValue:
+          variable:
+            source: WIDGET_STATE
+            baseVariable:
+              widgetState:
+                actionType: UPLOAD_DATA_URL
+                actionKeyRef:
+                  key: fhqgrjj2
+            nodeKeyRef:
+              key: Container_82rd6rei
+      colorValue:
+        inputValue:
+          value: "16777215"
+        mostRecentInputValue:
+          value: "16777215"
+      borderColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding: {}
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  document:
+    collectionIdentifier:
+      name: users
+      key: dij4596p
+    reference:
+      source: FIREBASE_AUTH_USER
+      baseVariable:
+        auth:
+          property: USER_REFERENCE
+  requestManagerSettings: {}

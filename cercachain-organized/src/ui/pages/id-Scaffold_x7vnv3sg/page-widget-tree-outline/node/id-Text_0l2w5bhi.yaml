@@ -1,0 +1,22 @@
+key: Text_0l2w5bhi
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: b42n7wje
+    selectable: false
+    textValue:
+      inputValue: "Total :"
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    leftValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED

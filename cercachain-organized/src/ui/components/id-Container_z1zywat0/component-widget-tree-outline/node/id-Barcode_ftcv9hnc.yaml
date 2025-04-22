@@ -1,0 +1,29 @@
+key: Barcode_ftcv9hnc
+type: Barcode
+props:
+  responsiveVisibility: {}
+  barcode:
+    type: QR_CODE
+    typeCategory: TWO_DIMENSION
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 200
+      height:
+        pixelsValue:
+          inputValue: 200
+    valueValue:
+      inputValue: https://flutterflow.io/
+    foregroundColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    backgroundColorValue:
+      inputValue:
+        value: "0"
+    showTextValue:
+      inputValue: true
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

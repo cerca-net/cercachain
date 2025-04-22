@@ -1,0 +1,68 @@
+key: StaggeredView_exdmvhny
+type: StaggeredView
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: showfullfeed
+                      key: ejgjec8e
+                    stateVariableType: APP_STATE
+            - inputValue:
+                serializedValue: "false"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: false
+  responsiveVisibility: {}
+  staggeredView:
+    shrinkWrapValue:
+      inputValue: false
+      mostRecentInputValue: false
+    crossAxisCountValue:
+      inputValue: 2
+      mostRecentInputValue: 2
+    crossAxisSpacingValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+    mainAxisSpacingValue:
+      inputValue: 10
+      mostRecentInputValue: 10
+    allowScrollingValue:
+      inputValue: true
+      mostRecentInputValue: true
+  queryLoadingWidget:
+    loadingWidget: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: StaggeredViewFiltered
+generatorVariable:
+  identifier:
+    name: Searchedobjets
+  variable:
+    source: SIMPLE_SEARCH
+    baseVariable:
+      simpleSearch: {}
+    nodeKeyRef:
+      key: IconButton_9j0ykt0y
+valueKey: {}

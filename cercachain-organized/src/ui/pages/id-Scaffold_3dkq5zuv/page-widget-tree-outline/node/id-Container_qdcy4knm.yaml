@@ -1,0 +1,47 @@
+key: Container_qdcy4knm
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 120
+          mostRecentInputValue: 120
+    boxDecoration:
+      boxShadow:
+        blurRadiusValue:
+          inputValue: 0
+          mostRecentInputValue: 0
+        colorValue:
+          inputValue:
+            value: "4292928487"
+          mostRecentInputValue:
+            value: "4292928487"
+        dxValue:
+          inputValue: 0
+          mostRecentInputValue: 0
+        dyValue:
+          inputValue: 1
+          mostRecentInputValue: 1
+      image:
+        type: FF_IMAGE_TYPE_NETWORK
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+    maxDimensions: {}
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  responsiveVisibility: {}
+parameterValues: {}

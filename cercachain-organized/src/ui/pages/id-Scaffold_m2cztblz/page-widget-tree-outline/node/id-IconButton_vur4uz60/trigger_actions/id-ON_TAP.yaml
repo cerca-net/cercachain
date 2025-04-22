@@ -1,0 +1,6 @@
+rootAction:
+  key: l8pt54x8
+  action:
+    key: r7geddtb
+trigger:
+  triggerType: ON_TAP

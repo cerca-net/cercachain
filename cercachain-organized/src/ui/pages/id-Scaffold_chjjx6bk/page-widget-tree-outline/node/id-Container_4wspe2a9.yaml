@@ -1,0 +1,33 @@
+key: Container_4wspe2a9
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: Infinity
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+    rightValue:
+      inputValue: 16
+    bottomValue:
+      inputValue: 16
+    allValue:
+      inputValue: 16
+  expanded:
+    expandedType: EXPANDED

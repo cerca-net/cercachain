@@ -1,0 +1,18 @@
+key: Text_ct7wwfok
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: 2naolsoc
+    selectable: false
+    textValue:
+      inputValue: CONNECT
+      mostRecentInputValue: CONNECT
+    fontSizeValue:
+      inputValue: 26
+      mostRecentInputValue: 26
+    fontWeightValue:
+      inputValue: w600

@@ -1,0 +1,27 @@
+key: Text_f5r1rhtq
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: rbv2478s
+    selectable: false
+    textValue:
+      inputValue: "Select order method :"
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 16
+    topValue:
+      inputValue: 4
+    rightValue:
+      inputValue: 4
+    allValue:
+      inputValue: 4

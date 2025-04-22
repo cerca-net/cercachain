@@ -1,0 +1,42 @@
+identifier:
+  name: bag
+  key: 93o8zqyj
+fields:
+  user_ref:
+    identifier:
+      name: user_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  items:
+    identifier:
+      name: items
+    dataType:
+      listType:
+        scalarType: DataStruct
+      subType:
+        dataStructIdentifier:
+          name: bag_item
+          key: j6zld
+  in_bag_items:
+    identifier:
+      name: in_bag_items
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  public_user_ref:
+    identifier:
+      name: public_user_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p

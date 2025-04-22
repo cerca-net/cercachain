@@ -1,0 +1,80 @@
+key: AudioPlayer_swr6wl9v
+type: AudioPlayer
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+  audioPlayer:
+    audio:
+      type: FF_AUDIO_TYPE_NETWORK
+      pathValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: audio
+          nodeKeyRef:
+            key: Column_g0c2kzsq
+        mostRecentInputValue: https://filesamples.com/samples/audio/mp3/sample3.mp3
+      titleValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: header
+          nodeKeyRef:
+            key: Column_g0c2kzsq
+        mostRecentInputValue: Title
+    titleTextStyle:
+      themeStyle: TITLE_LARGE
+      fontSizeValue:
+        inputValue: 20
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      textAlignValue:
+        inputValue: ALIGN_START
+    playbackDurationTextStyle:
+      themeStyle: LABEL_MEDIUM
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+      textAlignValue:
+        inputValue: ALIGN_START
+    playInBackground: ENABLED
+    playbackButtonColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    activeTrackColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    inactiveTrackColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    pauseOnNavigateValue:
+      inputValue: true
+      mostRecentInputValue: true

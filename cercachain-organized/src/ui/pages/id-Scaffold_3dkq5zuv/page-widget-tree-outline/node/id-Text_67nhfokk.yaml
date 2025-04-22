@@ -1,0 +1,20 @@
+key: Text_67nhfokk
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_MEDIUM
+    translationIdentifier:
+      key: wdamqwvh
+    selectable: false
+    textValue:
+      inputValue: Welcome
+      mostRecentInputValue: Welcome
+    fontSizeValue:
+      inputValue: 22
+  padding:
+    type: FF_PADDING_ONLY
+    bottomValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+parameterValues: {}

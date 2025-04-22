@@ -1,0 +1,20 @@
+key: Icon_fa37xcgu
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 24
+      mostRecentInputValue: 24
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 983357
+        family: MaterialIcons
+        matchTextDirection: false
+        name: search_rounded
+  responsiveVisibility: {}
+parameterValues: {}

@@ -1,0 +1,15 @@
+key: Text_swhcoqd1
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: 83nti0r2
+    selectable: false
+    textValue:
+      inputValue: Upload Banner
+      mostRecentInputValue: Upload Banner
+    textAlignValue:
+      inputValue: ALIGN_CENTER

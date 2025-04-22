@@ -1,0 +1,6 @@
+validateFormAction:
+  terminateIfValidationFails: false
+  formNodeKeyPath:
+    keyPath:
+      - key: Form_hlcm9pnb
+key: w06t0t6c

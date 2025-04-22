@@ -1,0 +1,115 @@
+key: ChoiceChips_g5pma85q
+type: ChoiceChips
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+    topValue:
+      inputValue: 4
+    rightValue:
+      inputValue: 12
+    allValue:
+      inputValue: 8
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: 1ddw779v
+          textValue:
+            inputValue: Option 1
+      - label:
+          translationIdentifier:
+            key: r427bm1x
+          textValue:
+            inputValue: Option 2
+      - label:
+          translationIdentifier:
+            key: aasaau02
+          textValue:
+            inputValue: Option 3
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 10
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 10
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    childAlignment: wrap_center
+    chipSpacingValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    rowSpacingValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+    optionsVariable:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            fieldIdentifier:
+              name: user_places
+        - listTakeOperation:
+            count:
+              inputValue:
+                serializedValue: "3"
+      nodeKeyRef:
+        key: Scaffold_x7vnv3sg
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

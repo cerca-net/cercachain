@@ -1,0 +1,8 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: lucd3
+      toggle: {}
+  updateType: WIDGET
+  stateVariableType: WIDGET_CLASS_STATE
+key: lpuzwh07

@@ -1,0 +1,22 @@
+key: Text_clb2s1nu
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: vw4ex25c
+    selectable: false
+    textValue:
+      inputValue: "Total :"
+    fontSizeValue:
+      inputValue: 16
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    leftValue:
+      inputValue: 12
+  expanded:
+    expandedType: EXPANDED

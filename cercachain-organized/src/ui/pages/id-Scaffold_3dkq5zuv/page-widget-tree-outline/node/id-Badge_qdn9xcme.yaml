@@ -1,0 +1,57 @@
+key: Badge_qdn9xcme
+type: Badge
+props:
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+  responsiveVisibility: {}
+  badge:
+    text:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: 8fiag2l0
+      textValue:
+        inputValue: "1"
+        mostRecentInputValue: "1"
+      colorValue:
+        inputValue:
+          value: "4294967295"
+        mostRecentInputValue:
+          value: "4294967295"
+    innerPadding:
+      type: FF_PADDING_ALL
+      leftValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      topValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      rightValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      bottomValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      allValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    colorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    elevationValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+    animationValue:
+      inputValue: true
+      mostRecentInputValue: true
+    showBadgeValue:
+      inputValue: true
+      mostRecentInputValue: true
+    positionStartValue:
+      inputValue: true
+      mostRecentInputValue: true
+parameterValues: {}

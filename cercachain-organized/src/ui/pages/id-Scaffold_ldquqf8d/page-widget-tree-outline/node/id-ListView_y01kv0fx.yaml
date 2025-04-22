@@ -1,0 +1,50 @@
+key: ListView_y01kv0fx
+type: ListView
+props:
+  listView:
+    axis: FF_AXIS_VERTICAL
+    primary: true
+    listSpacing:
+      spacingValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+      startSpacingValue:
+        inputValue: 4
+        mostRecentInputValue: 4
+    shrinkWrapValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+databaseRequest:
+  returnParameter:
+    dataType:
+      listType:
+        scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: catalogue
+          key: j3d3qkb6
+  firestore:
+    collectionIdentifier:
+      name: catalogue
+      key: j3d3qkb6
+    limit: 8
+    hideOnEmpty: false
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: user_ref
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE
+parameterValues: {}
+valueKey: {}

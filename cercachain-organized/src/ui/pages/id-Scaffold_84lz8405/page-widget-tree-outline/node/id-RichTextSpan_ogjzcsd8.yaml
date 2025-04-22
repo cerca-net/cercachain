@@ -1,0 +1,15 @@
+key: RichTextSpan_ogjzcsd8
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: h980xqcb
+      textValue:
+        inputValue: "Total: "
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w700

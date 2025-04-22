@@ -1,0 +1,10 @@
+key: Text_0apsvxl2
+type: Text
+props:
+  text:
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: ywv2qql0
+    selectable: false
+    textValue:
+      inputValue: Reviewed

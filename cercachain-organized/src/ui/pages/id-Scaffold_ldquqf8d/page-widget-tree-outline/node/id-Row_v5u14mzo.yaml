@@ -1,0 +1,7 @@
+key: Row_v5u14mzo
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_space_between
+  expanded:
+    expandedType: EXPANDED

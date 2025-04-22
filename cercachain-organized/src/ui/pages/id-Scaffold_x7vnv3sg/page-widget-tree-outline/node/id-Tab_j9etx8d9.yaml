@@ -1,0 +1,19 @@
+key: Tab_j9etx8d9
+type: Tab
+props:
+  tab:
+    text:
+      translationIdentifier:
+        key: ekd3suu5
+      textValue:
+        inputValue: Activity
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 14
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+name: AnalyticsTab
+parameterValues: {}

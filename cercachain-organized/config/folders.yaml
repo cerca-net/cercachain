@@ -1,0 +1,43 @@
+rootFolders:
+  - key: 2wrbgl6k
+    name: LOG
+  - key: ok944gdq
+    name: MAINPAGES
+  - key: xn2xs10r
+    name: COMPONENTS
+  - key: rfzq1qr9
+    name: SECONDARYPAGES
+    children:
+      - key: fw2h26d6
+        name: SETTINGSPAGES
+widgetClassKeyToFolderKey:
+  Scaffold_j7silyhi: 2wrbgl6k
+  Scaffold_j9p0led7: 2wrbgl6k
+  Scaffold_ojbl0sg7: 2wrbgl6k
+  Scaffold_76aw86g7: qnq65l6t
+  Scaffold_g2lqappl: 2wrbgl6k
+  Container_urxaeyxb: xn2xs10r
+  Scaffold_879zu22o: 2wrbgl6k
+  Scaffold_gtcextdt: fw2h26d6
+  Scaffold_ldquqf8d: ok944gdq
+  Scaffold_8esy2bcu: fw2h26d6
+  Scaffold_m2cztblz: ok944gdq
+  Container_bz2b288f: xn2xs10r
+  Scaffold_4u5ce3w4: ok944gdq
+  Container_nvzvquqm: xn2xs10r
+  Container_rv3ka28m: xn2xs10r
+  Scaffold_2beq98ot: rfzq1qr9
+  Scaffold_btlczxe1: rfzq1qr9
+  Scaffold_x7vnv3sg: ok944gdq
+  Scaffold_z27a79u3: rfzq1qr9
+  Scaffold_xuv10si7: rfzq1qr9
+  Scaffold_howbjrw6: ok944gdq
+  Scaffold_nbrw70io: fw2h26d6
+  Scaffold_6hnutl0v: fw2h26d6
+  Scaffold_99gw9j3r: rfzq1qr9
+  Scaffold_3dkq5zuv: rfzq1qr9
+  Scaffold_chjjx6bk: fw2h26d6
+  Scaffold_icc4rct8: rfzq1qr9
+  Scaffold_9d9ci0r4: ok944gdq
+  Scaffold_84lz8405: ok944gdq
+  Container_z1zywat0: xn2xs10r

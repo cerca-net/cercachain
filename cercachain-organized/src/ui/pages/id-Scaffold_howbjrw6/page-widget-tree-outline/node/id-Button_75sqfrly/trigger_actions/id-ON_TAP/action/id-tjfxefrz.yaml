@@ -1,0 +1,9 @@
+barcodeScanner:
+  barcodeMode: false
+  cancelButtonText:
+    translationIdentifier:
+      key: 2h507tgf
+    textValue:
+      inputValue: Cancel
+outputVariableName: orderQR
+key: tjfxefrz

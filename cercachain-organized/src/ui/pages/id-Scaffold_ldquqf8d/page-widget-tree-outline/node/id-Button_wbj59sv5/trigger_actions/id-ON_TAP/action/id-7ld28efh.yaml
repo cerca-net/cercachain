@@ -1,0 +1,10 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: 0xh6z8cw
+      setValue:
+        inputValue:
+          serializedValue: "true"
+  updateType: NONE
+  stateVariableType: APP_STATE
+key: 7ld28efh

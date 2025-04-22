@@ -1,0 +1,50 @@
+key: Button_1reotrba
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: yzti4w19
+      textValue:
+        inputValue: Get codes
+      colorValue:
+        inputValue:
+          value: "4294967295"
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 12
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: SECONDARY
+    disabledColorValue:
+      inputValue:
+        themeColor: ACCENT_1
+    iconValue:
+      inputValue:
+        iconDataValue:
+          inputValue:
+            codePoint: 62381
+            family: MaterialIcons
+            matchTextDirection: false
+            name: sms_outlined
+    iconPosition: TRAILING
+  padding: {}
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

@@ -1,0 +1,18 @@
+key: Text_25llfzcn
+type: Text
+props:
+  text:
+    fontFamily: Montserrat
+    themeStyle: BODY_MEDIUM
+    isCustomFont: false
+    translationIdentifier:
+      key: 2rvm4npd
+    selectable: false
+    textValue:
+      inputValue: "User & Profile "
+      mostRecentInputValue: "User & Profile "
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    fontWeightValue:
+      inputValue: w500

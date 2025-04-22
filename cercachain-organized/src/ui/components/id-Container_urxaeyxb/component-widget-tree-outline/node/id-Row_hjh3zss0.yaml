@@ -1,0 +1,12 @@
+key: Row_hjh3zss0
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 10
+        mostRecentInputValue: 10
+  padding:
+    leftValue:
+      inputValue: 20
+      mostRecentInputValue: 20

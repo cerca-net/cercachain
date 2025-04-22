@@ -1,0 +1,15 @@
+key: Icon_8f8ft0ii
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 18
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+    iconDataValue:
+      inputValue:
+        codePoint: 63084
+        family: MaterialIcons
+        matchTextDirection: false
+        name: content_copy_rounded

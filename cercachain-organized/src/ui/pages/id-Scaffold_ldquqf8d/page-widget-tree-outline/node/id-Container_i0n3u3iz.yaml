@@ -1,0 +1,40 @@
+key: Container_i0n3u3iz
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 100
+          mostRecentInputValue: 100
+      height:
+        pixelsValue:
+          inputValue: 120
+    boxDecoration:
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 12
+          mostRecentInputValue: 12
+      colorValue:
+        inputValue:
+          themeColor: ALTERNATE
+        mostRecentInputValue:
+          themeColor: ALTERNATE
+    animationDurationValue:
+      inputValue: 100
+      mostRecentInputValue: 100
+  visibility:
+    visibleValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: order_completed
+          - negate: {}
+        nodeKeyRef:
+          key: ListView_pdszt2nn
+      mostRecentInputValue: true

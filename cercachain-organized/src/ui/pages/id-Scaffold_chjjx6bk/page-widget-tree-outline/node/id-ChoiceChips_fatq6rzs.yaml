@@ -1,0 +1,137 @@
+key: ChoiceChips_fatq6rzs
+type: ChoiceChips
+props:
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    returnParameter:
+                      dataType:
+                        scalarType: String
+                        nonNullable: false
+                nodeKeyRef:
+                  key: ChoiceChips_kvrlfl0y
+            - inputValue:
+                serializedValue: Libertador
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  choiceChips:
+    options:
+      - label:
+          translationIdentifier:
+            key: t9ctac3z
+          textValue:
+            inputValue: Altagracia
+      - label:
+          translationIdentifier:
+            key: yjzs2n0g
+          textValue:
+            inputValue: Antimano
+      - label:
+          translationIdentifier:
+            key: 3zjhn5va
+          textValue:
+            inputValue: Caricuao
+      - label:
+          translationIdentifier:
+            key: 9j8wj5fd
+          textValue:
+            inputValue: Catedral
+      - label:
+          translationIdentifier:
+            key: nnhv8ol3
+          textValue:
+            inputValue: Coche
+      - label:
+          translationIdentifier:
+            key: ta2cs9c6
+          textValue:
+            inputValue: El Junquito
+      - label:
+          translationIdentifier:
+            key: dqxlocri
+          textValue:
+            inputValue: El Paraiso
+      - label:
+          translationIdentifier:
+            key: 08i1u7z2
+          textValue:
+            inputValue: El Recreo
+      - label:
+          translationIdentifier:
+            key: k9j9lxtk
+          textValue:
+            inputValue: El Valle
+      - label:
+          translationIdentifier:
+            key: 8cnjn9r0
+          textValue:
+            inputValue: La Candelaria
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        fontSizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: ALTERNATE
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+      elevationValue:
+        inputValue: 0
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+    wrappedValue:
+      inputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

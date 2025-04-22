@@ -1,0 +1,83 @@
+key: ToggleIcon_zuw87cej
+type: ToggleIcon
+props:
+  toggleIcon:
+    valueValue:
+      variable:
+        source: FIRESTORE_REQUEST
+        baseVariable:
+          firestore: {}
+        operations:
+          - accessDocumentField:
+              fieldIdentifier:
+                name: pins
+          - listContains:
+              element:
+                source: FIREBASE_AUTH_USER
+                baseVariable:
+                  auth:
+                    property: USER_REFERENCE
+        nodeKeyRef:
+          key: Column_h4tp6hnj
+    iconOnValue:
+      inputValue:
+        sizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 62070
+            family: FontAwesomeSolid
+            package: font_awesome_flutter
+            matchTextDirection: false
+            packageIcon:
+              fontAwesome: mapPin
+            name: mapPin
+    iconOffValue:
+      inputValue:
+        sizeValue:
+          inputValue: 12
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+        iconDataValue:
+          inputValue:
+            codePoint: 62070
+            family: FontAwesomeSolid
+            package: font_awesome_flutter
+            matchTextDirection: false
+            packageIcon:
+              fontAwesome: mapPin
+            name: mapPin
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+animations:
+  - trigger: ON_ACTION_TRIGGER
+    effects:
+      - curve: BOUNCE_OUT
+        scale:
+          beginDx:
+            inputValue:
+              serializedValue: "0.5"
+          endDx:
+            inputValue:
+              serializedValue: "1"
+          beginDy:
+            inputValue:
+              serializedValue: "0.5"
+          endDy:
+            inputValue:
+              serializedValue: "1"
+        delay:
+          inputValue:
+            serializedValue: "0"
+        duration:
+          inputValue:
+            serializedValue: "100"
+    applyInitialState: true
+valueKey: {}

@@ -1,0 +1,79 @@
+key: TabBar_yd6oexql
+type: TabBar
+props:
+  padding:
+    type: FF_PADDING_ONLY
+  expanded:
+    expandedType: FLEXIBLE
+  tabBar:
+    labelPadding:
+      type: FF_PADDING_ONLY
+      leftValue:
+        inputValue: 20
+        mostRecentInputValue: 20
+      rightValue:
+        inputValue: 20
+        mostRecentInputValue: 20
+    labelStyle:
+      themeStyle: LABEL_SMALL
+      isCustomFont: false
+      fontSizeValue:
+        inputValue: 12
+    keepTabStateAlive: true
+    tabAlignment:
+      xValue:
+        inputValue: -1
+        mostRecentInputValue: -1
+    tabBarStyle: TOGGLE_BUTTON
+    buttonMargin:
+      type: FF_PADDING_ONLY
+      leftValue:
+        inputValue: 8
+        mostRecentInputValue: 8
+    tabbarMargin:
+      type: FF_PADDING_ONLY
+    scrollableValue:
+      inputValue: true
+      mostRecentInputValue: true
+    indicatorColorValue:
+      inputValue:
+        themeColor: SECONDARY
+      mostRecentInputValue:
+        themeColor: SECONDARY
+    labelColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    unselectedLabelColorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+      mostRecentInputValue:
+        themeColor: SECONDARY_TEXT
+    initialIndexValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    tabOnBottomValue:
+      inputValue: false
+      mostRecentInputValue: false
+    backgroundColorValue:
+      inputValue:
+        themeColor: ACCENT_1
+      mostRecentInputValue:
+        themeColor: ACCENT_1
+    unselectedBackgroundColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

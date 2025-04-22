@@ -1,0 +1,8 @@
+localStateUpdate:
+  updates:
+    - fieldIdentifier:
+        key: vmajruee
+      toggle: {}
+  updateType: WIDGET
+  stateVariableType: APP_STATE
+key: b592kwo5

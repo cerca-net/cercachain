@@ -1,0 +1,22 @@
+database:
+  updateDocument:
+    write:
+      updates:
+        participation_i:
+          fieldIdentifier:
+            name: participation_i
+          fieldValue:
+            fieldValue: INCREMENT
+            increment:
+              inputValue:
+                serializedValue: "0.01"
+    reference:
+      source: FIRESTORE_REQUEST
+      baseVariable:
+        firestore: {}
+      operations:
+        - accessDocumentField:
+            documentProperty: REFERENCE
+      nodeKeyRef:
+        key: Container_r466er2m
+key: 50ny9lro

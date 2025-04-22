@@ -1,0 +1,63 @@
+key: Text_fjn7gj30
+type: Text
+props:
+  text:
+    fontFamily: Roboto Mono
+    themeStyle: BODY_MEDIUM
+    translationIdentifier:
+      key: 1lomshx0
+    textValue:
+      variable:
+        source: LOCAL_STATE
+        defaultValue:
+          serializedValue: "**** 4477"
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: walletAddress
+              key: 7dwlnb5y
+            stateVariableType: APP_STATE
+    fontSizeValue:
+      inputValue: 14
+      mostRecentInputValue: 14
+    colorValue:
+      inputValue:
+        value: "4294967295"
+      mostRecentInputValue:
+        value: "4294967295"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ALL
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  platformType: MATERIAL
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: isWalletConnected
+                      key: 0xh6z8cw
+                    stateVariableType: APP_STATE
+            - inputValue:
+                serializedValue: "true"
+          condition:
+            relation: EQUAL_TO
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

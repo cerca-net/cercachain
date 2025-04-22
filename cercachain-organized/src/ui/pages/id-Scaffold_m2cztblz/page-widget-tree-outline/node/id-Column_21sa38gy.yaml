@@ -1,0 +1,22 @@
+key: Column_21sa38gy
+type: Column
+props:
+  column:
+    mainAxisAlignment: main_axis_space_between
+    crossAxisAlignment: cross_axis_stretch
+    scrollable: false
+    primary: false
+    listSpacing: {}
+  padding:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 4
+      mostRecentInputValue: 4
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

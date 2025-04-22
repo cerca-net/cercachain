@@ -1,0 +1,28 @@
+identifier:
+  name: user_ratings
+  key: ypidbqz4
+fields:
+  rated_user:
+    identifier:
+      name: rated_user
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  value:
+    identifier:
+      name: value
+    dataType:
+      scalarType: Integer
+  comment:
+    identifier:
+      name: comment
+    dataType:
+      scalarType: String
+  date:
+    identifier:
+      name: date
+    dataType:
+      scalarType: DateTime

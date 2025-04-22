@@ -1,0 +1,98 @@
+name: Publicpage
+description: ""
+params:
+  3plqj9:
+    identifier:
+      name: profileparameter
+      key: 3plqj9
+    dataType:
+      scalarType: DocumentReference
+      nonNullable: true
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  t3154n:
+    identifier:
+      name: objectparameter
+      key: t3154n
+    dataType:
+      scalarType: DocumentReference
+      nonNullable: false
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  5cm19i:
+    identifier:
+      name: objectrefvalue
+      key: 5cm19i
+    dataType:
+      scalarType: Double
+      nonNullable: false
+node:
+  key: Scaffold_x7vnv3sg
+pageRouteSettings:
+  routePath: Publicpage
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: itemadding
+          key: xnone
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "false"
+    - parameter:
+        identifier:
+          name: bagitems
+          key: q0h0h
+        dataType:
+          listType:
+            scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: submission
+              key: p1djqn3b
+    - parameter:
+        identifier:
+          name: userpinned
+          key: bwhb2
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: false
+    - parameter:
+        identifier:
+          name: isPinned
+          key: 6k82q
+        defaultValue:
+          serializedValue: "false"
+        dataType:
+          scalarType: Boolean
+          nonNullable: true
+      serializedDefaultValue:
+        - "true"
+    - parameter:
+        identifier:
+          name: refvaluesinbagitems
+          key: e5jgq
+        dataType:
+          listType:
+            scalarType: Double
+  databaseRequestManagers:
+    - identifier:
+        name: ItemsCount
+        key: pz8lw
+      originalNodeKeyRef:
+        key: Text_ucmubxfr
+    - identifier:
+        name: postsCount
+        key: 58uqx
+      originalNodeKeyRef:
+        key: Text_adlsfvnj

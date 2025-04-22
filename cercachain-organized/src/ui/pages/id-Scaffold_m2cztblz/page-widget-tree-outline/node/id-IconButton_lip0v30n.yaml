@@ -1,0 +1,89 @@
+key: IconButton_lip0v30n
+type: IconButton
+props:
+  iconButton:
+    buttonSize:
+      pixelsValue:
+        inputValue: 40
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    borderRadiusValue:
+      inputValue: 8
+    iconValue:
+      inputValue:
+        sizeValue:
+          inputValue: 24
+        colorValue:
+          variable:
+            source: FUNCTION_CALL
+            defaultValue:
+              color:
+                themeColor: SECONDARY_TEXT
+            functionCall:
+              conditionalValue:
+                ifConditionalValues:
+                  - condition:
+                      source: FUNCTION_CALL
+                      functionCall:
+                        values:
+                          - variable:
+                              source: WIDGET_STATE
+                              baseVariable:
+                                widgetState:
+                                  actionType: UPLOAD_DATA_URL
+                                  actionKeyRef:
+                                    key: gpjv6jwb
+                              nodeKeyRef:
+                                key: IconButton_lip0v30n
+                          - {}
+                        condition:
+                          relation: EXISTS_AND_NON_EMPTY
+                    value:
+                      inputValue:
+                        color:
+                          themeColor: SECONDARY
+                elseValue:
+                  inputValue:
+                    color:
+                      themeColor: SECONDARY_TEXT
+                returnParameter:
+                  dataType:
+                    scalarType: Color
+        iconDataValue:
+          inputValue:
+            codePoint: 983774
+            family: MaterialIcons
+            matchTextDirection: false
+            name: audio_file_rounded
+  alignment:
+    xValue:
+      inputValue: 0
+    yValue:
+      inputValue: 0
+  expanded:
+    expandedType: UNEXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: LOCAL_STATE
+                baseVariable:
+                  localState:
+                    fieldIdentifier:
+                      name: recorded
+                      key: 9x31kpxg
+                    stateVariableType: APP_STATE
+            - inputValue: {}
+          condition:
+            relation: DOES_NOT_EXIST_OR_IS_EMPTY
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

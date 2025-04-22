@@ -1,0 +1,20 @@
+key: Icon_nrcxl9ln
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 63647
+        family: MaterialIcons
+        matchTextDirection: false
+        name: manage_search_rounded
+  responsiveVisibility: {}
+parameterValues: {}

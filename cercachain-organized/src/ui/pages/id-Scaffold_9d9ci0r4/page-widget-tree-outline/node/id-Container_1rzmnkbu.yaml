@@ -1,0 +1,28 @@
+key: Container_1rzmnkbu
+type: Container
+props:
+  container:
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 42
+      height:
+        pixelsValue:
+          inputValue: 100
+    boxDecoration:
+      boxShape: FF_BOX_SHAPE_CIRCLE
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    animationDurationValue:
+      inputValue: 100
+  padding:
+    type: FF_PADDING_ONLY
+    topValue:
+      inputValue: 8
+    rightValue:
+      inputValue: 12
+    bottomValue:
+      inputValue: 8
+    allValue:
+      inputValue: 8

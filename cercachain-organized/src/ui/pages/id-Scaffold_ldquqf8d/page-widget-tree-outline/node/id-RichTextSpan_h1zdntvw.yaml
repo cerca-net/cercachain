@@ -1,0 +1,10 @@
+key: RichTextSpan_h1zdntvw
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: LABEL_MEDIUM
+      translationIdentifier:
+        key: 3i3onmpd
+      textValue:
+        inputValue: "# I.D. : "

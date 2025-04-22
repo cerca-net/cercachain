@@ -1,0 +1,18 @@
+node:
+  key: Scaffold_j9p0led7
+  body:
+    key: Container_ym5vj9xk
+    children:
+      - key: Column_wfl4li2o
+        children:
+          - key: Container_z6e7xqly
+            children:
+              - key: Column_m6mp0kxf
+                children:
+                  - key: Row_tcjrzq8e
+                    children:
+                      - key: IconButton_q49sza52
+                  - key: Text_sg0des66
+                  - key: Text_6kf4gugx
+                  - key: TextField_mqa28skz
+                  - key: Button_l90phiye

@@ -1,0 +1,54 @@
+key: Row_vwo8c1ir
+type: Row
+props:
+  row:
+    mainAxisAlignment: main_axis_center
+    crossAxisAlignment: cross_axis_start
+    minSizeValue:
+      inputValue: false
+      mostRecentInputValue: false
+  padding: {}
+  expanded:
+    expandedType: EXPANDED
+  visibility:
+    visibleValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: isNewItem
+              key: vmo0o
+            stateVariableType: WIDGET_CLASS_STATE
+        operations:
+          - negate: {}
+        nodeKeyRef:
+          key: Scaffold_m2cztblz
+        uiBuilderValue:
+          serializedValue: "true"
+      mostRecentInputValue: true
+name: RowPost
+databaseRequest:
+  returnParameter:
+    dataType:
+      scalarType: Document
+      subType:
+        collectionIdentifier:
+          name: credits
+          key: 86gjwu7b
+  firestore:
+    collectionIdentifier:
+      name: credits
+      key: 86gjwu7b
+    hideOnEmpty: true
+    where:
+      filters:
+        - baseFilter:
+            collectionFieldIdentifier:
+              name: userRef
+            relation: EQUAL_TO
+            variable:
+              source: FIREBASE_AUTH_USER
+              baseVariable:
+                auth:
+                  property: USER_REFERENCE

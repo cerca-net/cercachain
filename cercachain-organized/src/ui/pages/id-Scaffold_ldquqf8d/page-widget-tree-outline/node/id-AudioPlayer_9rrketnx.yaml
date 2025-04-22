@@ -1,0 +1,64 @@
+key: AudioPlayer_9rrketnx
+type: AudioPlayer
+props:
+  audioPlayer:
+    audio:
+      type: FF_AUDIO_TYPE_NETWORK
+      pathValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: audio
+          nodeKeyRef:
+            key: Container_p0oq2aok
+        mostRecentInputValue: https://filesamples.com/samples/audio/mp3/sample3.mp3
+      titleValue:
+        variable:
+          source: FIRESTORE_REQUEST
+          baseVariable:
+            firestore: {}
+          operations:
+            - accessDocumentField:
+                fieldIdentifier:
+                  name: header
+          nodeKeyRef:
+            key: Container_p0oq2aok
+        mostRecentInputValue: Title
+    titleTextStyle:
+      themeStyle: TITLE_LARGE
+      fontSizeValue:
+        inputValue: 20
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    playbackDurationTextStyle:
+      themeStyle: LABEL_MEDIUM
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+    playInBackground: ENABLED
+    playbackButtonColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    activeTrackColorValue:
+      inputValue:
+        themeColor: PRIMARY
+      mostRecentInputValue:
+        themeColor: PRIMARY
+    inactiveTrackColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    elevationValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    pauseOnNavigateValue:
+      inputValue: true
+      mostRecentInputValue: true

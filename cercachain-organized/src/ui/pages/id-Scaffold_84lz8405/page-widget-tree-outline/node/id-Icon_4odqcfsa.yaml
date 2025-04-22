@@ -1,0 +1,20 @@
+key: Icon_4odqcfsa
+type: Icon
+props:
+  icon:
+    sizeValue:
+      inputValue: 28
+      mostRecentInputValue: 28
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    iconDataValue:
+      inputValue:
+        codePoint: 57402
+        family: MaterialIcons
+        matchTextDirection: false
+        name: access_time
+  responsiveVisibility: {}
+parameterValues: {}

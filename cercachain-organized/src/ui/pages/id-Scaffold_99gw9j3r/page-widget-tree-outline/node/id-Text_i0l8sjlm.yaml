@@ -1,0 +1,26 @@
+key: Text_i0l8sjlm
+type: Text
+props:
+  text:
+    themeStyle: HEADLINE_SMALL
+    translationIdentifier:
+      key: bew8sle5
+    textValue:
+      inputValue: Objects
+    colorValue:
+      inputValue:
+        themeColor: SECONDARY_TEXT
+  padding:
+    leftValue:
+      inputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  queryLoadingWidget:
+    loadingWidget:
+      defaultLoadingIndicator: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

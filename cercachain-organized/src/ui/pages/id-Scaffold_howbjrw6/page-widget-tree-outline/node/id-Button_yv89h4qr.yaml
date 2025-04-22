@@ -1,0 +1,66 @@
+key: Button_yv89h4qr
+type: Button
+props:
+  button:
+    text:
+      themeStyle: TITLE_SMALL
+      translationIdentifier:
+        key: ygzwaowi
+      textValue:
+        inputValue: Remove
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      allValue:
+        inputValue: 8
+    innerPadding:
+      leftValue:
+        inputValue: 16
+      rightValue:
+        inputValue: 16
+    dimensions:
+      height:
+        pixelsValue:
+          inputValue: 40
+    elevationValue:
+      inputValue: 0
+    fillColorValue:
+      inputValue:
+        themeColor: ALTERNATE
+    iconValue:
+      inputValue:
+        iconDataValue:
+          inputValue:
+            codePoint: 58647
+            family: MaterialIcons
+            matchTextDirection: false
+            name: remove_circle
+    iconPosition: TRAILING
+  padding: {}
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: uorwzsxu
+                nodeKeyRef:
+                  key: Button_izkhmli4
+            - {}
+          condition:
+            relation: EXISTS_AND_NON_EMPTY
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

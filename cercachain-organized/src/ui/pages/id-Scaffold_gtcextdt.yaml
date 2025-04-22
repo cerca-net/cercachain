@@ -1,0 +1,4 @@
+name: UserProfile
+description: Page to be intended to open only when configuration of personal data is to be changed
+node:
+  key: Scaffold_gtcextdt

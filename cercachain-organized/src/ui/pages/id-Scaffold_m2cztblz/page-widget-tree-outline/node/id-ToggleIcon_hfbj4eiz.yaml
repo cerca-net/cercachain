@@ -1,0 +1,58 @@
+key: ToggleIcon_hfbj4eiz
+type: ToggleIcon
+props:
+  padding: {}
+  expanded:
+    expandedType: UNEXPANDED
+  toggleIcon:
+    valueValue:
+      variable:
+        source: LOCAL_STATE
+        baseVariable:
+          localState:
+            fieldIdentifier:
+              name: isNewItem
+              key: vmo0o
+            stateVariableType: WIDGET_CLASS_STATE
+        nodeKeyRef:
+          key: Scaffold_m2cztblz
+    iconOnValue:
+      inputValue:
+        sizeValue:
+          inputValue: 22
+          mostRecentInputValue: 22
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+          mostRecentInputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 57582
+            family: MaterialIcons
+            matchTextDirection: false
+            name: bolt
+    iconOffValue:
+      inputValue:
+        sizeValue:
+          inputValue: 22
+          mostRecentInputValue: 22
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY
+          mostRecentInputValue:
+            themeColor: SECONDARY
+        iconDataValue:
+          inputValue:
+            codePoint: 58591
+            family: MaterialIcons
+            matchTextDirection: false
+            name: post_add
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

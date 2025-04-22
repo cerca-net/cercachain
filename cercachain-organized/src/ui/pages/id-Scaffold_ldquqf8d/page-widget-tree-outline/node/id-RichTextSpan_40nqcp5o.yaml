@@ -1,0 +1,15 @@
+key: RichTextSpan_40nqcp5o
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      themeStyle: BODY_MEDIUM
+      translationIdentifier:
+        key: 8o1mx6c6
+      underline: false
+      textValue:
+        inputValue: "Reciever: "
+      fontSizeValue:
+        inputValue: 12
+      fontWeightValue:
+        inputValue: w500

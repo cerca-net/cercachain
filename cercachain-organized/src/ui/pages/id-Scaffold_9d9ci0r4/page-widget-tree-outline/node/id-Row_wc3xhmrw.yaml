@@ -1,0 +1,18 @@
+key: Row_wc3xhmrw
+type: Row
+props:
+  row:
+    listSpacing:
+      spacingValue:
+        inputValue: 4
+    minSizeValue:
+      inputValue: true
+      mostRecentInputValue: true
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

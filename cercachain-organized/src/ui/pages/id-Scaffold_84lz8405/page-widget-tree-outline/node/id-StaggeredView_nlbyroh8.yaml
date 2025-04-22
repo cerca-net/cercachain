@@ -1,0 +1,18 @@
+key: StaggeredView_nlbyroh8
+type: StaggeredView
+props:
+  padding:
+    type: FF_PADDING_ALL
+  expanded:
+    expandedType: EXPANDED
+  staggeredView:
+    shrinkWrapValue:
+      inputValue: false
+    crossAxisCountValue:
+      inputValue: 4
+    crossAxisSpacingValue:
+      inputValue: 10
+    mainAxisSpacingValue:
+      inputValue: 10
+    allowScrollingValue:
+      inputValue: true

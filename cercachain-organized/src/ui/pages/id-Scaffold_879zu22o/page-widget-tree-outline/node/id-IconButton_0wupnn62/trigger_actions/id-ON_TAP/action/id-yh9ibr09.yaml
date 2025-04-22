@@ -1,0 +1,24 @@
+database:
+  createDocument:
+    collectionIdentifier:
+      name: analytics
+      key: lv8h14dw
+    write:
+      updates:
+        user_ref:
+          fieldIdentifier:
+            name: user_ref
+          variable:
+            source: FIREBASE_AUTH_USER
+            baseVariable:
+              auth:
+                property: USER_REFERENCE
+        date_created:
+          fieldIdentifier:
+            name: date_created
+          variable:
+            source: GLOBAL_PROPERTIES
+            baseVariable:
+              globalProperties:
+                property: CURRENT_TIMESTAMP
+key: yh9ibr09

@@ -1,0 +1,29 @@
+key: RichText_gm2nspv0
+type: RichText
+props:
+  padding:
+    rightValue:
+      inputValue: 4
+  responsiveVisibility: {}
+  richText:
+    textStyle:
+      fontFamily: Montserrat
+      themeStyle: BODY_MEDIUM
+      isCustomFont: false
+      translationIdentifier:
+        key: rhqpyuty
+      selectable: false
+      textValue:
+        inputValue: "Indicators :"
+      fontSizeValue:
+        inputValue: 16
+      colorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+      fontWeightValue:
+        inputValue: w500
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+valueKey: {}

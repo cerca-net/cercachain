@@ -1,0 +1,33 @@
+key: Text_b8kz8a9o
+type: Text
+props:
+  text:
+    fontFamily: Outfit
+    themeStyle: LABEL_LARGE
+    translationIdentifier:
+      key: fn9yn8fv
+    textValue:
+      inputValue: User
+    fontSizeValue:
+      inputValue: 16
+      mostRecentInputValue: 16
+    colorValue:
+      inputValue:
+        value: "4283917164"
+      mostRecentInputValue:
+        value: "4283917164"
+    fontWeightValue:
+      inputValue: w500
+  padding:
+    type: FF_PADDING_ONLY
+    leftValue:
+      inputValue: 12
+      mostRecentInputValue: 12
+  platformType: MATERIAL
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+    animatedOpacity: {}
+parameterValues: {}
+valueKey: {}

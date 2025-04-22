@@ -1,0 +1,23 @@
+show: true
+backgroundColor:
+  value: "4291284436"
+selectedIconColor:
+  themeColor: PRIMARY
+unselectedIconColor:
+  themeColor: SECONDARY_TEXT
+navBarType: FLOATING_NAV_BAR
+floatingNavBarSettings:
+  width:
+    pixelsValue:
+      inputValue: 250
+      mostRecentInputValue: 250
+  itemMargin:
+    type: FF_PADDING_ALL
+    allValue:
+      inputValue: 12
+  itemPadding:
+    type: FF_PADDING_ONLY
+pageKeyOrder:
+  - Scaffold_4u5ce3w4
+  - Scaffold_m2cztblz
+  - Scaffold_ldquqf8d

@@ -1,0 +1,11 @@
+key: RichTextSpan_pkl2igcl
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: d76thnm5
+      textValue:
+        inputValue: " min."
+      fontSizeValue:
+        inputValue: 14

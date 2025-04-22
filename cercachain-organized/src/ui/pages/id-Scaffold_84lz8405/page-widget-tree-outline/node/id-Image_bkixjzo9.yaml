@@ -1,0 +1,47 @@
+key: Image_bkixjzo9
+type: Image
+props:
+  image:
+    type: FF_IMAGE_TYPE_ASSET
+    fit: FF_BOX_FIT_CONTAIN
+    dimensions:
+      width:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+      height:
+        pixelsValue:
+          inputValue: 50
+          mostRecentInputValue: 50
+    borderRadius:
+      type: FF_BORDER_RADIUS_ALL
+      topLeftValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      topRightValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      bottomLeftValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      bottomRightValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+      allValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    cacheFadeDuration: 500
+    pathValue:
+      inputValue: teams/Ng3pjnz11EXZuZaIgfKa/assets/3pwao99j1yfq/favicon.png
+      mostRecentInputValue: teams/Ng3pjnz11EXZuZaIgfKa/assets/3pwao99j1yfq/favicon.png
+  padding:
+    type: FF_PADDING_ONLY
+    rightValue:
+      inputValue: 12
+  responsiveVisibility: {}
+  opacity:
+    opacityValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+parameterValues: {}
+valueKey: {}

@@ -1,0 +1,10 @@
+identifier:
+  name: usernames
+  key: i14b35m1
+fields:
+  usernames_in_use:
+    identifier:
+      name: usernames_in_use
+    dataType:
+      listType:
+        scalarType: String

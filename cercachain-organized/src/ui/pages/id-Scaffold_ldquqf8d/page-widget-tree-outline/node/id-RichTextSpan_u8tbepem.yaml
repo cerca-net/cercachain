@@ -1,0 +1,43 @@
+key: RichTextSpan_u8tbepem
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: x5haix57
+      textValue:
+        variable:
+          source: FUNCTION_CALL
+          operations:
+            - numberFormat:
+                formatType: DECIMAL
+                decimalType: AUTOMATIC
+          functionCall:
+            values:
+              - variable:
+                  source: FIRESTORE_REQUEST
+                  baseVariable:
+                    firestore: {}
+                  operations:
+                    - listMapOperation:
+                        listMapVariable:
+                          source: LIST_MAP
+                          baseVariable:
+                            listMap:
+                              containingParentReturnParameter:
+                                dataType:
+                                  listType:
+                                    scalarType: Document
+                                  subType:
+                                    collectionIdentifier:
+                                      name: user_ratings
+                                      key: ypidbqz4
+                          operations:
+                            - accessDocumentField:
+                                fieldIdentifier:
+                                  name: value
+                  nodeKeyRef:
+                    key: RichText_sjcmec36
+            customFunction:
+              name: averageRating
+              key: 37dm4

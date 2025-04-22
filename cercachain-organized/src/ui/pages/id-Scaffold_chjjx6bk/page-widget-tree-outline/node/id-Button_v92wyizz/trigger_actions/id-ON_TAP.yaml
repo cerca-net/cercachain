@@ -1,0 +1,6 @@
+rootAction:
+  key: qrsj38vp
+  action:
+    key: 5gfy80py
+trigger:
+  triggerType: ON_TAP

@@ -1,0 +1,11 @@
+key: RichTextSpan_okk9mfhn
+type: RichTextSpan
+props:
+  richTextSpan:
+    textSpan:
+      translationIdentifier:
+        key: 6y6i5t19
+      textValue:
+        inputValue: "Already have an account? "
+        mostRecentInputValue: "Already have an account? "
+parameterValues: {}

@@ -1,0 +1,26 @@
+name: userrating
+description: ""
+params:
+  zgpzr1:
+    identifier:
+      name: publicuser
+      key: zgpzr1
+    dataType:
+      scalarType: DocumentReference
+      nonNullable: false
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+    description: user to be review
+  htetz6:
+    identifier:
+      name: userismaker
+      key: htetz6
+    dataType:
+      scalarType: Boolean
+node:
+  key: Scaffold_icc4rct8
+pageRouteSettings:
+  routePath: userrating
+classModel: {}

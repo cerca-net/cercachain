@@ -1,0 +1,5 @@
+auth:
+  type: RESET_PASSWORD
+  emailFieldKeyRef:
+    key: TextField_mqa28skz
+key: ntwv88zg

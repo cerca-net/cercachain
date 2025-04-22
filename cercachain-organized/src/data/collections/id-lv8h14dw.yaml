@@ -1,0 +1,178 @@
+identifier:
+  name: analytics
+  key: lv8h14dw
+fields:
+  user_ref:
+    identifier:
+      name: user_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  user_objects:
+    identifier:
+      name: user_objects
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: submission
+          key: p1djqn3b
+  user_orders:
+    identifier:
+      name: user_orders
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  object_views_accum:
+    identifier:
+      name: object_views_accum
+    dataType:
+      scalarType: Integer
+  user_object_count:
+    identifier:
+      name: user_object_count
+    dataType:
+      scalarType: Integer
+  object_reach:
+    identifier:
+      name: object_reach
+    dataType:
+      scalarType: Integer
+  user_impressions:
+    identifier:
+      name: user_impressions
+    dataType:
+      scalarType: Integer
+  object_voterate:
+    identifier:
+      name: object_voterate
+    dataType:
+      scalarType: Double
+  object_pin:
+    identifier:
+      name: object_pin
+    dataType:
+      scalarType: Double
+  object_share:
+    identifier:
+      name: object_share
+    dataType:
+      scalarType: Double
+  top_performer:
+    identifier:
+      name: top_performer
+    dataType:
+      scalarType: String
+  order_avg_ref:
+    identifier:
+      name: order_avg_ref
+    dataType:
+      scalarType: Double
+  order_avg_time:
+    identifier:
+      name: order_avg_time
+    dataType:
+      scalarType: Integer
+  order_avg_review:
+    identifier:
+      name: order_avg_review
+    dataType:
+      scalarType: Double
+  bag_order_ratio:
+    identifier:
+      name: bag_order_ratio
+    dataType:
+      scalarType: Double
+  order_accum_ref:
+    identifier:
+      name: order_accum_ref
+    dataType:
+      scalarType: Double
+  order_accum:
+    identifier:
+      name: order_accum
+    dataType:
+      scalarType: Integer
+  user_pin:
+    identifier:
+      name: user_pin
+    dataType:
+      scalarType: Integer
+  market_index:
+    identifier:
+      name: market_index
+    dataType:
+      scalarType: Integer
+  performance:
+    identifier:
+      name: performance
+    dataType:
+      scalarType: Integer
+  user_hash:
+    identifier:
+      name: user_hash
+    dataType:
+      scalarType: Double
+  objectAvgReference:
+    identifier:
+      name: objectAvgReference
+    dataType:
+      listType:
+        scalarType: Double
+  orderAvgReference:
+    identifier:
+      name: orderAvgReference
+    dataType:
+      listType:
+        scalarType: Double
+  order_pubrev_list:
+    identifier:
+      name: order_pubrev_list
+    dataType:
+      listType:
+        scalarType: Integer
+  order_user_rev_list:
+    identifier:
+      name: order_user_rev_list
+    dataType:
+      listType:
+        scalarType: Integer
+  pubusers_ref:
+    identifier:
+      name: pubusers_ref
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  orders_as_maker:
+    identifier:
+      name: orders_as_maker
+    dataType:
+      listType:
+        scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: order
+          key: 1x1ih0np
+  date_created:
+    identifier:
+      name: date_created
+    dataType:
+      scalarType: DateTime
+  ratings:
+    identifier:
+      name: ratings
+    dataType:
+      listType:
+        scalarType: Integer

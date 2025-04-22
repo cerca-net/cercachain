@@ -1,0 +1,17 @@
+name: NewCatalogue
+description: ""
+node:
+  key: Scaffold_2beq98ot
+classModel:
+  stateFields:
+    - parameter:
+        identifier:
+          name: itemlist
+          key: pph06
+        dataType:
+          listType:
+            scalarType: DocumentReference
+          subType:
+            collectionIdentifier:
+              name: submission
+              key: p1djqn3b

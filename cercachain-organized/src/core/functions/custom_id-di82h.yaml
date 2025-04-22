@@ -1,0 +1,31 @@
+identifier:
+  name: averageOrderValue
+  key: di82h
+arguments:
+  - identifier:
+      name: totalrefvalue
+      key: wdf0dw
+    dataType:
+      listType:
+        scalarType: Double
+      nonNullable: false
+  - identifier:
+      name: user
+      key: dtd12v
+    dataType:
+      scalarType: DocumentReference
+      nonNullable: false
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+returnParameter:
+  dataType:
+    scalarType: Double
+    nonNullable: false
+tests:
+  - parameterValues:
+      values:
+        v0c0fa: "[\"4\",\"8\",\"6\"]"
+        wdf0dw: "[\"18\",\"2.5\",\"6\"]"
+        dtd12v: /users/example

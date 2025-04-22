@@ -1,0 +1,21 @@
+key: VerticalDivider_snoxsxze
+type: VerticalDivider
+props:
+  verticalDivider:
+    thicknessValue:
+      inputValue: 1
+      mostRecentInputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE
+      mostRecentInputValue:
+        themeColor: ALTERNATE
+    indentValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    endIndentValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    heightValue:
+      inputValue: 100
+      mostRecentInputValue: 100

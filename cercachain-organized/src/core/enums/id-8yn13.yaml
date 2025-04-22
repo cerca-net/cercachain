@@ -1,0 +1,31 @@
+identifier:
+  name: OrderStatuses
+  key: 8yn13
+elements:
+  - identifier:
+      name: Created
+      key: f1axe
+  - identifier:
+      name: Generated
+      key: 4p744
+  - identifier:
+      name: Pending
+      key: funoe
+  - identifier:
+      name: Accepted
+      key: 31uko
+  - identifier:
+      name: Document_Uploaded
+      key: ixj6h
+  - identifier:
+      name: Document_confirmed
+      key: 29xe8
+  - identifier:
+      name: Key_Swapped
+      key: 6w27y
+  - identifier:
+      name: Completed
+      key: n6by1
+  - identifier:
+      name: Order_Reviewed
+      key: wi8i6

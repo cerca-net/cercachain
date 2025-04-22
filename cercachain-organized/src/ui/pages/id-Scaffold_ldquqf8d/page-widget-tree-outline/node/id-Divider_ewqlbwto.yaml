@@ -1,0 +1,9 @@
+key: Divider_ewqlbwto
+type: Divider
+props:
+  divider:
+    thicknessValue:
+      inputValue: 1
+    colorValue:
+      inputValue:
+        themeColor: ALTERNATE

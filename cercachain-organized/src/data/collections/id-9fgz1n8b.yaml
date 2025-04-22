@@ -1,0 +1,27 @@
+identifier:
+  name: interactions
+  key: 9fgz1n8b
+fields:
+  user_ref:
+    identifier:
+      name: user_ref
+    dataType:
+      scalarType: DocumentReference
+      subType:
+        collectionIdentifier:
+          name: users
+          key: dij4596p
+  type:
+    identifier:
+      name: type
+    dataType:
+      scalarType: Enum
+      subType:
+        enumIdentifier:
+          name: interactionTypes
+          key: jkzq8
+  value:
+    identifier:
+      name: value
+    dataType:
+      scalarType: Double

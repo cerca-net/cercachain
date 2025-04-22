@@ -1,0 +1,118 @@
+key: ChoiceChips_n3bkrvda
+type: ChoiceChips
+props:
+  alignment:
+    xValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+    yValue:
+      inputValue: 0
+      mostRecentInputValue: 0
+  expanded:
+    expandedType: UNEXPANDED
+  choiceChips:
+    options:
+      - iconData:
+          codePoint: 60767
+          family: MaterialIcons
+          matchTextDirection: true
+          name: toc_sharp
+        label:
+          translationIdentifier:
+            key: matvykmi
+          textValue:
+            inputValue: Book
+      - iconData:
+          codePoint: 58231
+          family: MaterialIcons
+          matchTextDirection: false
+          name: library_books
+        label:
+          translationIdentifier:
+            key: ynwxm69q
+          textValue:
+            inputValue: Methods
+      - iconData:
+          codePoint: 62824
+          family: MaterialIcons
+          matchTextDirection: false
+          name: api_rounded
+        label:
+          translationIdentifier:
+            key: gunbpyhb
+          textValue:
+            inputValue: Account
+    selectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: INFO
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY
+        mostRecentInputValue:
+          themeColor: SECONDARY
+      iconColorValue:
+        inputValue:
+          themeColor: INFO
+        mostRecentInputValue:
+          themeColor: INFO
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    unselectedChipStyle:
+      textStyle:
+        themeStyle: BODY_MEDIUM
+        colorValue:
+          inputValue:
+            themeColor: SECONDARY_TEXT
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      backgroundColorValue:
+        inputValue:
+          themeColor: SECONDARY_BACKGROUND
+        mostRecentInputValue:
+          themeColor: SECONDARY_BACKGROUND
+      iconColorValue:
+        inputValue:
+          themeColor: SECONDARY_TEXT
+        mostRecentInputValue:
+          themeColor: SECONDARY_TEXT
+      iconSizeValue:
+        inputValue: 16
+        mostRecentInputValue: 16
+      elevationValue:
+        inputValue: 0
+        mostRecentInputValue: 0
+    initialOption:
+      translationIdentifier:
+        key: 7803th34
+      textValue:
+        inputValue: Book
+    childAlignment: wrap_start
+    chipSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    rowSpacingValue:
+      inputValue: 8
+      mostRecentInputValue: 8
+    requireSelectionValue:
+      inputValue: true
+      mostRecentInputValue: true
+    wrappedValue:
+      inputValue: true
+      mostRecentInputValue: true
+name: ChoiceChipsWallet
+parameterValues: {}

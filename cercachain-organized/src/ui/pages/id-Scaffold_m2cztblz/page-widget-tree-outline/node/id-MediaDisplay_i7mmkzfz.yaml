@@ -1,0 +1,86 @@
+key: MediaDisplay_i7mmkzfz
+type: MediaDisplay
+props:
+  visibility:
+    visibleValue:
+      variable:
+        source: FUNCTION_CALL
+        functionCall:
+          values:
+            - variable:
+                source: WIDGET_STATE
+                baseVariable:
+                  widgetState:
+                    actionType: UPLOAD_DATA_URL
+                    actionKeyRef:
+                      key: oy30480g
+                nodeKeyRef:
+                  key: IconButton_otpvyc5w
+            - {}
+          condition:
+            relation: EXISTS_AND_NON_EMPTY
+  mediaDisplay:
+    image:
+      type: FF_IMAGE_TYPE_NETWORK
+      fit: FF_BOX_FIT_FIT_HEIGHT
+      dimensions:
+        width:
+          pixelsValue:
+            inputValue: 300
+            mostRecentInputValue: 300
+        height:
+          pixelsValue:
+            inputValue: 300
+            mostRecentInputValue: 300
+      borderRadius:
+        type: FF_BORDER_RADIUS_ALL
+        allValue:
+          inputValue: 8
+          mostRecentInputValue: 8
+      cacheFadeDuration: 500
+      pathValue:
+        inputValue: https://picsum.photos/seed/131/600
+        mostRecentInputValue: https://picsum.photos/seed/131/600
+      format: FF_IMAGE_FORMAT_AUTO
+    videoPlayer:
+      type: FF_VIDEO_TYPE_NETWORK
+      dimensions:
+        width:
+          pixelsValue:
+            inputValue: 300
+            mostRecentInputValue: 300
+        height: {}
+      pathValue:
+        inputValue: https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4
+        mostRecentInputValue: https://assets.mixkit.co/videos/preview/mixkit-forest-stream-in-the-sunlight-529-large.mp4
+      autoPlayValue:
+        inputValue: false
+        mostRecentInputValue: false
+      loopingValue:
+        inputValue: true
+        mostRecentInputValue: true
+      showControlsValue:
+        inputValue: true
+        mostRecentInputValue: true
+      allowFullScreenValue:
+        inputValue: false
+        mostRecentInputValue: false
+      allowPlaybackSpeedMenuValue:
+        inputValue: false
+        mostRecentInputValue: false
+      pauseOnNavigateValue:
+        inputValue: true
+        mostRecentInputValue: true
+    displayingImage: true
+    pathValue:
+      variable:
+        source: WIDGET_STATE
+        defaultValue:
+          serializedValue: " "
+        baseVariable:
+          widgetState:
+            actionType: UPLOAD_DATA_URL
+            actionKeyRef:
+              key: oy30480g
+        nodeKeyRef:
+          key: IconButton_otpvyc5w
