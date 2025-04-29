@@ -13,11 +13,11 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
-    "express": "^4.17.1",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "helmet": "^4.6.0",
     "morgan": "^1.10.0"
   },
@@ -28,7 +28,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
-    "ts-node": "^10.4.0",
+    "ts-node": "^10.9.2",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.4"
   },

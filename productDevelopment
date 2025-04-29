@@ -1,0 +1,511 @@
+ATLAS Product Development Plan: From Prototype to Microservices
+This document details the technical strategy and execution plan for developing the ATLAS platform. It outlines the transition from the initial FlutterFlow/Firebase prototype to a robust, scalable microservice architecture utilizing React/TypeScript for the frontend, Supabase (PostgreSQL) for core data management, and Node.js/NestJS for backend services, hosted on Vercel. Future phases will integrate decentralized components including blockchain and IPFS.
+Target Audience: Development Team (including LLM collaborators), Technical Leads, Architects.
+Objective: Provide a clear, technical blueprint for the development lifecycle, ensuring alignment on architecture, technology stack, data models, and integration strategies.
+1. Executive Summary
+The ATLAS project aims to build a hybrid social media and marketplace platform with integrated decentralized features. The current state is a functional MVP prototype built with FlutterFlow and Firebase. The strategic decision is to re-platform the application to a more flexible and scalable architecture. The target architecture is a microservice-based backend primarily interacting with Supabase, a React/TypeScript frontend, Auth0 for authentication, and deployment on Vercel. Subsequent phases will introduce a blockchain layer (potentially a custom or forked chain, or integration with an existing network like Tcoin and Governance Smart Contracts) and IPFS for content storage, moving towards a more decentralized ecosystem. This plan details the technical steps, required infrastructure, and architectural considerations to achieve this vision.
+2. Current State Assessment
+Origin: Initial concept derived from wireframes and Figma designs.
+Prototype: Minimum Viable Product (MVP) developed using FlutterFlow.
+Current Technologies (Prototype):
+Frontend: Flutter/Dart (within FlutterFlow).
+Backend: Firebase (Authentication, Firestore for database, Storage for file uploads).
+Design Assets: Figma designs, wireframes.
+Limitations of Current State:
+FlutterFlow's generated code may not be optimal for a complex, scalable web application.
+Tight coupling between frontend and backend within the FlutterFlow environment.
+Firebase, while suitable for an MVP, may not align with the long-term microservice and decentralized strategy as effectively as the target stack.
+3. Target Architecture
+The target architecture is a hybrid centralized/decentralized microservice model designed for scalability, maintainability, and future expansion.
+Frontend:
+Technology: React with TypeScript.
+Purpose: Dynamic and responsive user interface across web platforms.
+Hosting: Vercel.
+Backend (Centralized):
+Architecture: Microservices.
+Core Services:
+User Service: Handles user registration, authentication (integrating with Auth0), profile management, KYC status, and potentially linking wallet addresses.
+Content Service: Manages metadata for user submissions (Posts, Items), handles content categorization, search indexing triggers, and interacts with storage layers (Supabase Storage, IPFS).
+Order Service: Manages order creation, status tracking, fulfillment logic, notifications, and integrates with transaction methods.
+Wallet Service: Manages user credit balances (centralized initially), interacts with the blockchain layer for Tcoin balances and transactions, manages native wallet functionality, and integrates with external fiat/crypto partners and other blockchain wallets in later phases.
+Social Service: Manages user connections (pinning), feed generation logic, and potentially community discussion integration.
+Governance Service: Manages governance proposals, voting logic, and interacts with Governance Smart Contracts (either on a custom/forked chain or an existing one).
+Reward Service: Calculates and distributes Decentralized Units (D.U.) based on user activity and reputation, triggering Tcoin minting (on the chosen blockchain layer).
+Search Service: Indexes content and user data for efficient search and discovery.
+Notification Service: Manages and sends user notifications (in-app, push, email).
+Analytics Service: Collects, aggregates, and analyzes platform data (user activity, content performance, order statistics).
+Technology Stack (Recommended):
+Language/Framework: Node.js with NestJS (TypeScript). Justification: NestJS provides a structured, enterprise-grade framework well-suited for building scalable microservices with strong TypeScript support. Node.js is performant for I/O-bound tasks.
+API Gateway: A central entry point for frontend requests, routing to appropriate microservices. Could be implemented with NestJS Gateway, or a dedicated solution like Kong or Nginx.
+Message Queue: Kafka or RabbitMQ for asynchronous communication between microservices, ensuring decoupling and handling peak loads.
+Caching: Redis or Memcached for improving performance by caching frequently accessed data.
+Data Management:
+Primary Database: Supabase (PostgreSQL).
+Purpose: Structured storage for core application data (user profiles, submission metadata, orders, analytics, etc.).
+Features Utilized: PostgreSQL database, Supabase Auth (integrated with Auth0), Supabase Storage (initially for files), Supabase Edge Functions (for specific backend logic/triggers).
+Alternative Consideration (Database): MongoDB could offer more flexibility for less structured data like user profiles or content metadata, but PostgreSQL provides strong relational integrity crucial for orders, transactions, and user relationships. Supabase's managed PostgreSQL is a strong fit given the current plan.
+Decentralized Storage (Future): IPFS (InterPlanetary File System) for storing larger content objects (images, videos, audio) associated with submissions. Metadata (IPFS hash) will be stored in Supabase.
+Authentication:
+Technology: Auth0.
+Purpose: Centralized identity management, supporting email/password, social logins (Google), and potentially future authentication methods. Integrates with Supabase Auth.
+Alternative Consideration: Keeping Firebase Auth might simplify the migration slightly due to its current use, but Auth0 offers broader enterprise features and flexibility for a microservice architecture. Supabase Auth can also act as the primary auth system, potentially simplifying the stack by removing Auth0, but Auth0 is explicitly requested. We will proceed with Auth0 integrating with Supabase Auth.
+Decentralized Layer (Future):
+Blockchain Network: Option A: Develop/Fork Custom Chain or Option B: Integrate with Existing Network (e.g., Polygon, Solana, Ethereum L2 - Arbitrum/Optimism).
+Option A (Custom/Fork): Requires significant technical expertise in blockchain development, consensus mechanisms, network security, and infrastructure management. Offers maximum control and customization but incurs high development, operational, and security costs. Requires building or integrating with block explorers, wallets, and other ecosystem tools.
+Option B (Existing Network): Leverages existing infrastructure, security, and developer tooling. Lower development and operational overhead compared to building from scratch. Selection criteria include transaction costs (Gas), speed, ecosystem maturity, developer tooling, security, and alignment with project values.
+Decision Point: A critical decision point in Phase 2/3 will be the final selection between Option A and Option B, based on a detailed technical and business feasibility study.
+Smart Contracts: Tcoin (ERC20 standard or equivalent on a custom chain) for the platform's native token, Governance Smart Contracts for managing proposals and voting logic. These will be deployed on the chosen blockchain layer.
+Wallet Integration: The Wallet Service will initially manage a native, centralized-leaning wallet experience for users within the platform (e.g., displaying balances, initiating transfers via backend). In parallel or subsequent steps, integrate frontend libraries (ethers.js, web3.js) and WalletConnect/Web3Modal to connect user's external wallets (e.g., MetaMask) for direct interaction with smart contracts on the chosen blockchain. This allows users to hold and manage assets outside the platform's direct control.
+Containerization: Docker for packaging microservices.
+Orchestration: Kubernetes (K8s) for managing and scaling deployed microservices (implied by microservice architecture and common practice). Vercel handles hosting for the frontend, but backend microservices would likely require a separate deployment environment (e.g., a cloud provider with K8s or a managed service).
+CI/CD: Automated pipelines (e.g., GitHub Actions, GitLab CI, Jenkins) for building, testing, and deploying frontend and backend services.
+4. Development Phases & Milestones
+Adopting a phased approach based on the provided roadmap, with adjustments for the blockchain options:
+Phase 1: Foundation & Core MVP
+Goal: Establish the core technical stack and deliver a basic functional application with centralized data and authentication.
+Milestones:
+Set up Monorepo structure (using Nx or Turborepo) for frontend, backend services, and shared libraries.
+Initialize React/TypeScript frontend project (apps/atlas_mobile_app).
+Configure Supabase project: Create database, set up initial schema (Users, Submissions, basic Analytics, Orders, Credits tables), configure Supabase Auth.
+Integrate Auth0 with Supabase Auth. Implement user registration, login, and logout flows in the frontend.
+Develop core frontend pages: Starting Page, Login, Signup, User Survey, User Profile, basic Feed view.
+Implement user profile creation and editing in the frontend, interacting with the Supabase users table.
+Implement basic content submission (Posts/Items metadata) in the frontend, uploading files to Supabase Storage and saving metadata to the submissions table.
+Implement basic feed display in the frontend, fetching submission metadata from the submissions table.
+Set up initial deployment pipeline to Vercel for the React frontend.
+Develop and test basic backend microservice skeletons (e.g., User Service, Content Service metadata handling).
+Requires: Supabase Project URL, Supabase Public API Key, Auth0 Domain, Auth0 Client ID, Auth0 Client Secret.
+Phase 2: Transaction & Trust Building (and Blockchain Decision)
+Goal: Enable core commerce flows, introduce initial decentralized elements, build trust mechanisms, and finalize the blockchain strategy.
+Milestones:
+Blockchain Strategy Finalization: Conduct a detailed technical and business feasibility study comparing developing/forking a chain vs. integrating with existing networks. Make a final decision on the blockchain approach (Option A or B).
+Integrate KYC provider into the User Service and frontend workflow. Update user KYC status in the users table.
+Enhance Order Management: Implement order creation, status updates (Pending, Processing, Completed, Cancelled), and basic notifications via the Order Service and Notification Service. Update orders table.
+Implement Native Wallet (Initial): Develop basic centralized wallet functionality within the Wallet Service to manage user credit balances (credits table) and display a placeholder for future Tcoin balances.
+Implement initial Decentralized Unit (D.U.) tracking in the Reward Service, logging user activities and calculating D.U. (stored in the analytics or a dedicated data_units table).
+Develop basic Search and Filter functionality for content in the Search Service and integrate with the frontend feed view.
+Implement basic User Connections (Pin/Unpin Users) logic in the Social Service and frontend, updating the pins table.
+Integrate Decentralized Storage (IPFS) for Object content: Update Content Service to handle uploading content to IPFS and storing the IPFS hash in the submissions table. Update frontend to retrieve content from IPFS gateways.
+Requires: KYC Provider API Key/Credentials.
+Phase 3: Decentralized Core (Blockchain Implementation)
+Goal: Implement the chosen blockchain layer, deploy smart contracts, and integrate core decentralized features.
+Milestones:
+If Option A (Custom/Fork):
+Design and develop the core blockchain protocol (consensus, networking, state management).
+Implement the blockchain node software.
+Set up and manage the blockchain network infrastructure.
+Develop necessary tooling (block explorer, faucet, etc.).
+If Option B (Existing Network):
+Select the final target network based on Phase 2 decision.
+Configure infrastructure for interacting with the chosen network (node provider, etc.).
+Develop and deploy Tcoin Smart Contract (ERC20 or equivalent) on the chosen network.
+Develop and deploy Governance Smart Contracts on the chosen network.
+Enhance Wallet Service: Implement functionality to interact with the deployed Tcoin Smart Contract to view Tcoin balances and initiate sending/receiving Tcoin. This requires integrating with user's external wallets (MetaMask via WalletConnect/Web3Modal) or managing keys securely on the backend for the native wallet (handle with extreme caution).
+Integrate Transaction Methods (Crypto/Tcoin) into the Order Service and Wallet Service, enabling on-chain transactions for orders.
+Implement Governance V1 in the Governance Service and frontend: Allow users to view proposals and implement Tcoin-based voting via smart contract interaction.
+Develop and implement Reward System V1 in the Reward Service: Define rules for Tcoin rewards based on D.U. and activity. Implement logic to trigger Tcoin minting via the Wallet Service and smart contract.
+Refine Feed Algorithm in the Content Service/Social Service for improved content discovery.
+Implement Advanced Search/Discovery features in the Search Service.
+Develop and display User Reputation/Trust Score V1 in the User Service and frontend, based on KYC status, activity, and potentially user ratings.
+Integrate Community Discussion features (e.g., forums, comments) into the Social Service.
+Requires: Deployed Tcoin Smart Contract Address, Deployed Governance Smart Contract Addresses, Blockchain Node Provider API Key, IPFS Pinning Service API Key (if using a service).
+Phase 4: Scaling & Ecosystem Strengthening
+Goal: Optimize for scale, enhance decentralization, and introduce advanced features.
+Milestones:
+Optimize infrastructure for scalability: Scale backend services (Kubernetes), optimize database performance (Supabase), implement advanced caching strategies (Redis).
+Implement D.U. to Tcoin Minting Automation in the Reward Service.
+Explore and potentially implement Resource Contribution Mechanics (P2P Proof-of-Concept) if aligned with the project vision.
+Implement Advanced Wallet Features: Integrate with fiat on/off-ramps and swap partners via the Wallet Service. Integrate support for connecting to a wider range of external blockchain wallets.
+Develop Robust Order Dispute Resolution mechanisms in the Order Service.
+Integrate Full Transaction Methods (Bank, Cash) via partners into the Order Service and Wallet Service.
+Conduct comprehensive Performance Optimization and Security Audits (critical for smart contracts and all services handling sensitive data), including audits of the custom/forked blockchain if applicable.
+5. Component Breakdown & Technologies (Detailed)
+Frontend (apps/atlas_mobile_app):
+Technology: React (with Hooks, Context API or Zustand/Redux for state management), TypeScript, Tailwind CSS (recommended for styling), Vite (build tool).
+Structure: Pages (routed components), Components (reusable UI elements), API clients (for interacting with backend services/Supabase), State management logic, Utility functions, Wallet integration logic (ethers.js/web3.js, WalletConnect/Web3Modal for external wallets, potentially custom logic for the native wallet UI).
+Interaction: Communicates with backend microservices via the API Gateway (REST/GraphQL), directly interacts with Supabase client library for database, auth, and storage, interacts with the blockchain layer via Wallet Service backend APIs and potentially directly via wallet provider libraries for user-initiated on-chain transactions.
+Backend Services (apps/ or services/):
+Technology: Node.js, NestJS (Modules, Controllers, Services, Providers), TypeScript, ORM/Query Builder (e.g., TypeORM, Prisma, or Supabase JS client for direct interaction), Docker.
+Structure: Each service is an independent NestJS application with its own domain logic, database interactions (via Supabase client or ORM), and API endpoints.
+Interaction: Communicate with each other via internal APIs (synchronous) or the Message Queue (asynchronous). Interact with Supabase database, Supabase Storage, external APIs (KYC, payment partners), Blockchain nodes (for reading data), Blockchain transaction broadcasters (for sending signed transactions), IPFS nodes/pinning services.
+API Gateway (apps/api_gateway or managed service):
+Technology: NestJS Gateway, Kong, Nginx, or Cloud Provider API Gateway.
+Purpose: Routes incoming requests to the correct microservice, handles authentication/authorization enforcement, rate limiting, logging.
+Database (Supabase):
+Technology: PostgreSQL.
+Schema: See Section 6.
+Access: Accessed by backend microservices and potentially the frontend (for read-heavy, non-sensitive data) via the Supabase JS client or an ORM configured for PostgreSQL. Row Level Security (RLS) is essential for frontend access.
+Authentication (Auth0 & Supabase Auth):
+Technology: Auth0 SDK/API, Supabase Auth API.
+Flow: Frontend initiates Auth0 flow. Auth0 authenticates the user and issues tokens. Auth0 can be configured to sync user data with Supabase Auth, or the User Service handles creating/linking the user record in Supabase based on Auth0 callbacks.
+File Storage (Supabase Storage & IPFS):
+Technology: Supabase Storage API, IPFS HTTP API or client libraries.
+Usage: Supabase Storage initially for user profiles/banners. Transition to IPFS for submission content (images, videos, audio) in Phase 2. Backend services (Content Service) handle the IPFS pinning process.
+Blockchain Interaction:
+Technology: Blockchain node software (if custom/forked chain), ethers.js or web3.js libraries (in Wallet Service and potentially frontend), Smart Contract ABIs (Application Binary Interfaces), WalletConnect/Web3Modal.
+Usage: Interacting with Tcoin and Governance Smart Contracts (reading balances, sending transactions, voting). Managing native wallet keys securely (if implemented backend-side). Connecting to external user wallets for on-chain interactions.
+Containerization: Docker for packaging microservices.
+6. Data Model & Schema (Supabase/PostgreSQL)
+Based on the identified collections and requirements, here is a proposed PostgreSQL schema for Supabase. This schema should be implemented with appropriate constraints, indexes, and Row Level Security (RLS).
+-- Enable UUID generation if not already enabled
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+-- Users Table
+-- Stores core user profile information
+CREATE TABLE users (
+    user_id UUID PRIMARY KEY, -- Corresponds to Auth0/Supabase Auth UID
+    username VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE, -- Optional, depending on Auth0 config
+    auth_provider_id VARCHAR(255), -- e.g., 'auth0|...', 'google|...'
+    banner_url TEXT, -- URL from Supabase Storage or IPFS gateway
+    profile_picture_url TEXT, -- URL from Supabase Storage or IPFS gateway
+    name VARCHAR(255),
+    surname VARCHAR(255),
+    bio TEXT,
+    user_type VARCHAR(50), -- 'Person' or 'Business'
+    user_occupations TEXT[], -- Array of strings
+    user_interests TEXT[], -- Array of strings
+    user_verified BOOLEAN DEFAULT FALSE, -- KYC verification status
+    user_verified_pending BOOLEAN DEFAULT FALSE, -- KYC pending status
+    wallet_address VARCHAR(255), -- User's primary blockchain wallet address linked
+    reputation_score NUMERIC DEFAULT 0, -- Centralized reputation score
+    trust_score NUMERIC DEFAULT 0, -- Centralized trust score
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Usernames Table (for quick availability check)
+-- Stores all usernames currently in use
+CREATE TABLE usernames (
+    username VARCHAR(255) PRIMARY KEY
+);
+
+-- Submissions Table (for Objects - Posts and Items)
+-- Stores metadata for user-generated content
+CREATE TABLE submissions (
+    submission_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    poster_id UUID REFERENCES users(user_id), -- Creator of the submission
+    type_object VARCHAR(50) NOT NULL, -- 'Post' or 'Item'
+    submission_type VARCHAR(50), -- e.g., 'Image', 'Video', 'Audio', 'Text', 'Product', 'Service', 'Event'
+    date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    ref_value NUMERIC, -- e.g., price for items, or other reference value
+    images_extra TEXT[], -- Array of URLs (Supabase Storage or IPFS gateway)
+    video_url TEXT, -- URL (Supabase Storage or IPFS gateway)
+    audio_url TEXT, -- URL (Supabase Storage or IPFS gateway)
+    body TEXT, -- Text content
+    header VARCHAR(255), -- Title or header text
+    -- Denormalized fields for easier querying (consider trade-offs)
+    submitter_username VARCHAR(255),
+    submitter_profile_picture_url TEXT,
+    -- IPFS hash for decentralized content (Phase 2+)
+    ipfs_hash VARCHAR(255),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Pins Table (Many-to-Many relationship between users and submissions they pin)
+CREATE TABLE pins (
+    user_id UUID REFERENCES users(user_id),
+    submission_id UUID REFERENCES submissions(submission_id),
+    PRIMARY KEY (user_id, submission_id),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Credits Table (Centralized credit system, potentially linked to Tcoin)
+CREATE TABLE credits (
+    credit_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID REFERENCES users(user_id),
+    fx NUMERIC DEFAULT 0, -- Centralized credit value
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Analytics Table (Aggregated analytics data per user)
+CREATE TABLE analytics (
+    analytics_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID REFERENCES users(user_id) UNIQUE, -- One analytics record per user
+    date_created TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP, -- Initial creation date
+    -- Order Stats
+    order_completed_count INTEGER DEFAULT 0,
+    order_average_reference NUMERIC DEFAULT 0,
+    order_average_time_minutes NUMERIC DEFAULT 0, -- Average time to complete order
+    bag_to_order_ratio NUMERIC DEFAULT 0, -- Items added to bag vs orders placed
+    order_review_average NUMERIC DEFAULT 0, -- Average rating received for orders
+    order_accumulated_revenue NUMERIC DEFAULT 0, -- Total revenue from orders (if applicable)
+    -- Object Stats (User's submissions)
+    object_impressions_count INTEGER DEFAULT 0, -- Views on user's objects
+    object_reach_count INTEGER DEFAULT 0, -- Unique users who saw objects
+    object_interactivity_score NUMERIC DEFAULT 0, -- Likes, comments, shares ratio
+    object_top_performer_id UUID REFERENCES submissions(submission_id), -- ID of the best performing object
+    -- User Stats
+    user_impressions_count INTEGER DEFAULT 0, -- Views on user profile
+    user_pin_count INTEGER DEFAULT 0, -- Times user profile was pinned
+    user_object_activity_count INTEGER DEFAULT 0, -- Total interactions on user's objects
+    user_average_hash_rate NUMERIC DEFAULT 0, -- Placeholder, potentially related to contributions
+    user_market_index NUMERIC DEFAULT 0, -- Placeholder, potentially market performance
+    user_performance_index NUMERIC DEFAULT 0, -- Placeholder, overall performance metric
+    user_average_rating_received NUMERIC DEFAULT 0, -- Average rating received from other users
+    -- Data Units (Phase 2+)
+    data_units_earned NUMERIC DEFAULT 0, -- Accumulated Decentralized Units
+    -- Timestamps for updates
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Order Table
+-- Stores details of orders between users
+CREATE TABLE orders (
+    order_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_ref UUID REFERENCES users(user_id), -- The user who placed the order (buyer)
+    public_user_ref UUID REFERENCES users(user_id), -- The user receiving the order (seller)
+    date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    order_stats_id UUID, -- Reference to order status/state (consider enum or separate status table)
+    items_in_order INTEGER DEFAULT 0, -- Count of items/objects in the order
+    total_price NUMERIC, -- Total price of the order
+    method_id UUID, -- Reference to the order method used (delivery/payment)
+    -- Consider adding fields for: shipping address, payment status, etc.
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Order Methods Table
+-- Stores methods users can use for orders (e.g., delivery addresses, payment preferences)
+CREATE TABLE order_methods (
+    method_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    method_poster UUID REFERENCES users(user_id), -- The user who owns this method
+    method_type VARCHAR(50), -- e.g., 'Delivery Address', 'Payment Method'
+    method_details JSONB, -- Store method details (address, payment info) as JSON
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Transactions Table (Centralized log of transactions, potentially linked to on-chain txs)
+CREATE TABLE transactions (
+    transaction_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_madeby UUID REFERENCES users(user_id), -- User who initiated the transaction
+    transaction_type VARCHAR(50), -- e.g., 'Tcoin Transfer', 'Credit Earned', 'Order Payment'
+    amount NUMERIC,
+    currency VARCHAR(10), -- e.g., 'TCOIN', 'CREDIT', 'USD'
+    date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    related_order_id UUID REFERENCES orders(order_id), -- Link to related order if applicable
+    related_submission_id UUID REFERENCES submissions(submission_id), -- Link to related object if applicable
+    blockchain_tx_hash VARCHAR(255), -- Hash of the on-chain transaction (Phase 2+)
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Catalogue Table (User-curated collections of items/objects)
+CREATE TABLE catalogue (
+    catalogue_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_ref UUID REFERENCES users(user_id), -- Owner of the catalogue
+    catalogue_name VARCHAR(255) NOT NULL,
+    total_items INTEGER DEFAULT 0, -- Count of items in the catalogue
+    -- Consider a join table for many-to-many relationship between catalogue and submissions
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Catalogue Items Table (Many-to-Many between catalogue and submissions)
+CREATE TABLE catalogue_items (
+    catalogue_id UUID REFERENCES catalogue(catalogue_id),
+    submission_id UUID REFERENCES submissions(submission_id),
+    PRIMARY KEY (catalogue_id, submission_id),
+    added_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+
+-- Chats Table (for direct messaging threads)
+CREATE TABLE chats (
+    chat_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    -- Consider a join table for participants if more than two
+    user1_id UUID REFERENCES users(user_id),
+    user2_id UUID REFERENCES users(user_id),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Chat Messages Table
+CREATE TABLE chat_messages (
+    message_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    chat_id UUID REFERENCES chats(chat_id),
+    sender_id UUID REFERENCES users(user_id),
+    content TEXT NOT NULL,
+    date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- User Ratings Table (for rating users, e.g., after an order)
+CREATE TABLE user_ratings (
+    rating_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    rated_user UUID REFERENCES users(user_id), -- The user being rated
+    rating_user UUID REFERENCES users(user_id), -- The user providing the rating
+    rating NUMERIC CHECK (rating >= 1 AND rating <= 5), -- Rating value (e.g., 1-5)
+    review TEXT, -- Optional review text
+    date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    related_order_id UUID REFERENCES orders(order_id), -- Link to the order the rating is based on
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Interactions Table (Generic table to log user interactions with objects/users)
+CREATE TABLE interactions (
+    interaction_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID REFERENCES users(user_id), -- User performing the interaction
+    interaction_type VARCHAR(50), -- e.g., 'View', 'Like', 'Share', 'Comment', 'Click'
+    object_type VARCHAR(50), -- 'Submission', 'User', 'Catalogue', 'Order', etc.
+    object_id UUID, -- ID of the object being interacted with
+    date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    -- Consider adding details like: comment_text, share_destination, etc.
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Decentralized Data Considerations:
+-- Blockchain Data: Tcoin balances, on-chain transaction history, governance proposal details, voting records are managed by Smart Contracts on the chosen blockchain layer. Supabase can store references (e.g., wallet_address, blockchain_tx_hash) and potentially cache aggregated/relevant on-chain data for performance, but the source of truth is the blockchain.
+-- IPFS Data: Raw content files are stored on IPFS. The `submissions` table stores the IPFS hash (`ipfs_hash`) which acts as a pointer to the content. Frontend/backend services retrieve content via IPFS gateways using this hash.
+
+-- Potential Data Inconsistency:
+-- Due to the hybrid nature (centralized DB + decentralized components), potential inconsistencies can arise:
+-- 1. Delays in syncing on-chain data (Tcoin balances, votes) with cached data in Supabase.
+-- 2. IPFS content availability issues vs. metadata in Supabase.
+-- 3. Eventual consistency between microservices communicating via message queues.
+-- Mitigation: Implement robust event handling (listening to blockchain events, processing message queue events), clear data ownership per service, retry mechanisms, and monitoring for discrepancies. Define acceptable latency for different data types.
+
+
+7. Core Logic and User Flows
+The user flows identified in the FlutterFlow code (Starting Page, Login, Signup, Forgot Password, User Survey, User Profile) will be re-implemented in the React frontend, interacting with the new backend stack.
+Starting Page: Static page with navigation to Login/Signup.
+Signup Flow:
+User inputs email, username, password (or uses Google Sign-up).
+Frontend calls Auth0/Supabase Auth for user creation.
+User Service (backend) handles creating the user record in the Supabase users table and adds the username to the usernames table. Creates an initial credits record.
+Redirect to User Survey page.
+Login Flow:
+User inputs email/password or uses Google Login (via Auth0/Supabase Auth).
+Authentication service authenticates the user.
+Frontend receives authentication tokens/session information.
+Redirect to Userpage or Feedpage.
+Forgot Password Flow:
+User inputs email.
+Frontend calls Auth0/Supabase Auth password reset function.
+Auth0/Supabase sends a password reset email.
+User Survey Flow:
+Multi-step form in the frontend.
+Collects user type, name, surname, bio, occupations, interests.
+Handles banner and profile picture uploads to Supabase Storage (Phase 1) or IPFS (Phase 2+ for profile pictures/banners if desired for decentralization).
+Frontend calls User Service to update the user's record in the users table with collected data and storage URLs.
+User Service triggers the creation of an analytics record for the new user.
+Redirect to Userpage.
+User Profile Flow:
+Frontend fetches user data from the User Service (reading from the users table).
+Allows editing of profile fields (name, surname, bio, pictures).
+Handles new picture uploads to Supabase Storage/IPFS.
+Frontend calls User Service to update the user's record in the users table.
+Content Management Logic (Posts & Items):
+Creation: Frontend form for selecting content type (Post/Item), adding details (header, body, ref_value for items), uploading media (to Supabase Storage/IPFS). Frontend calls Content Service to save metadata in the submissions table.
+Display: Frontend fetches submission metadata from the Content Service (reading from submissions table), potentially using pagination and filtering. Media is loaded from storage URLs (Supabase/IPFS gateway).
+Interaction: Frontend tracks user interactions (views, likes, pins, etc.) and sends data to the Interaction Service to update the interactions table and trigger updates in the Analytics Service. Pinning updates the pins table via the Social Service.
+Order Management Logic:
+Viewing: Frontend fetches orders from the Order Service (orders table), filtered by buyer (user_ref) for "Sent" or seller (public_user_ref) for "Inbox".
+Details: Frontend fetches specific order details from the Order Service.
+Methods: Frontend fetches user's order methods from the Order Service (order_methods table).
+Analytics Display Logic:
+Frontend fetches aggregated analytics data from the Analytics Service (reading from the analytics table) for the current user and displays metrics.
+8. Integration Strategy
+Frontend to Backend:
+Primary communication via the API Gateway using REST or GraphQL.
+Direct interaction with Supabase client library for real-time subscriptions, simpler CRUD operations, and potentially for performance optimization on specific read operations (with strict RLS).
+Backend Microservices:
+Synchronous communication via internal REST/gRPC APIs for request/response patterns.
+Asynchronous communication via the Message Queue (Kafka/RabbitMQ) for event-driven updates (e.g., Content Service publishes ObjectCreated event, Search Service and Social Service consume it).
+Backend to Supabase:
+Microservices interact with the Supabase PostgreSQL database using the Supabase JS client library or an ORM configured for PostgreSQL.
+Utilize Supabase Edge Functions for specific triggers or lightweight backend logic close to the database.
+Backend to Auth0:
+User Service interacts with Auth0 API for advanced user management, linking identities, etc.
+Backend to IPFS:
+Content Service interacts with IPFS nodes or pinning services via HTTP API or client libraries to add and retrieve content.
+Backend to Blockchain:
+Wallet Service and Governance Service interact with the chosen blockchain layer. This involves interacting with blockchain nodes (via libraries like ethers.js/web3.js or a dedicated node provider), potentially managing keys for the native wallet (securely!), and broadcasting signed transactions.
+Supabase to Decentralized Layer:
+Supabase can store references to on-chain data (e.g., transaction hashes, wallet addresses).
+Supabase can potentially cache aggregated/relevant on-chain data, but requires a mechanism to sync with the blockchain (e.g., listening to events via a backend service).
+Supabase stores IPFS hashes as pointers to content.
+9. Necessary Access and API Keys
+To set up the development environment and deploy the application, the following access and API keys will be required:
+Cloud Provider (if hosting backend microservices or custom blockchain nodes separately from Vercel): Access to AWS, Azure, or GCP account with permissions to create/manage VMs, Kubernetes clusters, databases, storage, etc.
+Vercel: Access to Vercel account with permissions to deploy frontend applications and configure environment variables.
+Supabase:
+Supabase Project URL.
+Supabase Public API Key (for frontend read access with RLS).
+Supabase Service Role Key (for backend services with elevated privileges - handle securely).
+Database connection string (if connecting directly from backend services outside of Supabase client).
+Auth0:
+Auth0 Domain.
+Auth0 Client ID (for frontend).
+Auth0 Client Secret (for backend/User Service - handle securely).
+Auth0 Management API credentials (if needed for backend user management).
+Blockchain Layer:
+If Custom/Forked Chain: Access to infrastructure hosting the blockchain nodes, credentials for managing the network, access to any custom tooling APIs (block explorer, etc.).
+If Existing Network: Deployed Tcoin Smart Contract Address, Deployed Governance Smart Contract Addresses, Blockchain Node Provider API Key (e.g., Infura, Alchemy) for reliable access to the network.
+Wallet credentials (e.g., private keys, mnemonic) for deploying smart contracts and potentially for backend services to interact with contracts (handle extremely securely, consider KMS). If implementing a native wallet with backend key management, this is a critical security surface.
+IPFS:
+IPFS Pinning Service API Key (e.g., Pinata, Web3.storage) for persisting content on IPFS.
+IPFS Gateway URL(s).
+KYC Provider: API Key/Credentials.
+Payment Gateway/Partners (Future Phases): API Keys/Credentials.
+Message Queue (Kafka/RabbitMQ): Access credentials and connection details.
+Caching (Redis/Memcached): Access credentials and connection details.
+Search (Elasticsearch/Algolia): API Keys/Credentials.
+Monitoring/Logging (e.g., Sentry, Datadog): API Keys/Credentials.
+CI/CD (GitHub Actions, etc.): Access to repository with necessary permissions for workflows, access to deployment environments (Vercel, Cloud Provider).
+Management Note: All API keys and sensitive credentials must be stored securely using environment variables, managed secrets (e.g., Kubernetes Secrets, cloud provider secret managers), and never committed directly to the codebase.
+10. Technical Considerations
+Scalability:
+Microservice architecture allows independent scaling of services under heavy load.
+Supabase (PostgreSQL) can be scaled vertically and horizontally. Design schema and queries for performance.
+Message Queue handles traffic spikes and decouples services.
+Caching reduces database load.
+Frontend hosting on Vercel provides automatic scaling for static assets and serverless functions (if used).
+Blockchain Scalability: If using an existing network, scalability depends on the chosen network's capacity. If developing/forking a chain, scalability must be designed into the protocol and infrastructure from the start, which is a significant challenge.
+Security:
+Implement RLS in Supabase for fine-grained data access control.
+Secure API Gateway with authentication and authorization.
+Validate and sanitize all input data on the backend.
+Implement secure coding practices (OWASP guidelines).
+Regular security audits, especially for smart contracts and services handling sensitive data (KYC, wallet interactions).
+Secure storage and management of API keys and secrets.
+Implement HTTPS for all communication.
+Blockchain Security: If using an existing network, you inherit its security model (proof-of-stake, proof-of-work, etc.). If developing/forking a chain, securing the network against attacks (51% attacks, Sybil attacks, etc.) is paramount and complex. Smart contract security audits are critical regardless of the underlying chain. Managing private keys for a native wallet backend-side introduces a high-value target for attackers and requires extremely robust security measures.
+Monitoring and Logging:
+Implement centralized logging for all microservices (e.g., ELK stack, Datadog).
+Set up monitoring for service health, performance metrics, error rates (e.g., Prometheus, Grafana, Datadog, Sentry).
+Define alerts for critical issues.
+Blockchain Monitoring: Monitor blockchain node health, transaction throughput, gas prices (if applicable), and smart contract events.
+Error Handling:
+Implement consistent error handling and reporting across all services and the frontend.
+Use try-catch blocks, validate API responses, and provide informative error messages to users (avoid exposing internal details).
+Implement retry mechanisms for external service calls.
+Blockchain Error Handling: Handle blockchain transaction failures, network congestion, and smart contract errors gracefully.
+CI/CD:
+Automate building, testing, and deployment workflows to ensure rapid and reliable releases.
+Implement automated tests (unit, integration, end-to-end).
+Include automated testing for smart contract interactions and blockchain integration.
+Decentralization Balance: Carefully consider which parts of the application need to be decentralized (Tcoin, core Governance rules) and which can remain centralized for better performance, cost-efficiency, and user experience (e.g., feed generation, search indexing, user profiles - though data pointers can be decentralized). Building a custom chain increases the scope of what can be decentralized but also the complexity.
+Wallet Implementation: Deciding between a purely non-custodial approach (users connect their own wallets) and a hybrid/native wallet (platform manages keys) has significant security and user experience implications. A native wallet simplifies onboarding but shifts security responsibility to the platform. A non-custodial approach is more aligned with decentralization principles but requires users to manage their own keys. A hybrid approach (native wallet for ease of use, with options to withdraw to external wallets) is also possible but adds complexity.
+11. Future Management Considerations (for LLM Development)
+Code Standards and Documentation: Maintain clear, consistent code standards (enforced via linters like ESLint, Prettier) and comprehensive documentation (API documentation, architectural diagrams, READMEs). This is crucial for human and LLM collaborators to understand the codebase. This is even more critical for blockchain-related code and smart contracts.
+Modular Design: The microservice architecture inherently supports modularity. Ensure services have clear responsibilities and minimal coupling.
+API Contracts: Strictly define API contracts between services (e.g., using OpenAPI/Swagger) to ensure clear interfaces for LLM development. Define clear interfaces for interacting with the blockchain layer.
+Testing: Maintain a strong test suite. Automated tests provide a safety net for LLM-generated code changes. Comprehensive testing for blockchain interactions and smart contracts is paramount (unit tests, integration tests, formal verification).
+Task Granularity: Break down development tasks into small, well-defined units that are suitable for LLM execution. Provide clear instructions, context, and expected outcomes for each task.
+Code Review: Implement a rigorous code review process for all changes, including those generated by LLMs. Code review for smart contracts and blockchain-related logic must be exceptionally thorough.
+Observability: Enhance monitoring and logging to quickly identify issues introduced by new code, regardless of its origin. Include specific monitoring for blockchain interactions and network health.
+Outsourcing: The microservice architecture and clear API contracts facilitate outsourcing specific service development to external teams or even specialized LLMs. Ensure clear requirements, communication protocols, and integration testing. Outsourcing blockchain core development or smart contract development requires engaging specialized expertise.
+12. Conclusion
+This document provides a detailed technical plan for the ATLAS platform's development, outlining the transition to a modern microservice architecture with integrated centralized and decentralized components, including the consideration of developing a custom or forked blockchain. By following this structure, maintaining rigorous technical standards, and ensuring clear communication and documentation, the project can be successfully developed and scaled, leveraging both human and future LLM capabilities effectively. The phased approach allows for iterative delivery and integration of complex decentralized features, with a critical decision point regarding the blockchain layer in Phase 2.
+Next Steps:
+Finalize the specific technology choices within the recommended stacks (e.g., specific Message Queue provider, Search engine).
+Set up the monorepo and initial project structure.
+Configure core infrastructure (Supabase, Auth0, Vercel).
+Begin development of Phase 1 milestones, focusing on establishing the core centralized functionality.
+Obtain necessary API keys and access credentials for all required services.
+Conduct detailed design and specification for each microservice before implementation.
+Initiate the detailed technical and business feasibility study for the blockchain layer (custom/fork vs. existing network) as part of the Phase 2 planning.
+Develop a comprehensive testing strategy, including a plan for blockchain and smart contract testing.
+Define the specific processes and tools for LLM integration into the development workflow.
