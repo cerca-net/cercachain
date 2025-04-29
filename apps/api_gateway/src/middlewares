@@ -1,0 +1,25 @@
+// This file contains middleware functions for processing requests before they reach the controllers.
+
+import { Request, Response, NextFunction } from 'express';
+
+// Example middleware for logging requests
+export const loggerMiddleware = (req: Request, res: Response, next: NextFunction) => {
+    console.log(`${req.method} ${req.url}`);
+    next();
+};
+
+// Example middleware for handling errors
+export const errorHandlerMiddleware = (err: any, req: Request, res: Response, next: NextFunction) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+};
+
+// Example middleware for checking authentication
+export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
+    const token = req.headers['authorization'];
+    if (!token) {
+        return res.status(401).send('Unauthorized');
+    }
+    // Token verification logic goes here
+    next();
+};

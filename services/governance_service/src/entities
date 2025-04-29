@@ -1,0 +1,45 @@
+// This file contains entity classes that represent the data models for the governance service.
+
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+
+@Entity()
+export class GovernanceProposal {
+    @PrimaryGeneratedColumn('uuid')
+    id: string;
+
+    @Column()
+    title: string;
+
+    @Column('text')
+    description: string;
+
+    @Column()
+    creatorId: string;
+
+    @Column()
+    status: 'pending' | 'approved' | 'rejected';
+
+    @CreateDateColumn()
+    createdAt: Date;
+
+    @UpdateDateColumn()
+    updatedAt: Date;
+}
+
+@Entity()
+export class GovernanceVote {
+    @PrimaryGeneratedColumn('uuid')
+    id: string;
+
+    @Column()
+    proposalId: string;
+
+    @Column()
+    voterId: string;
+
+    @Column()
+    vote: 'yes' | 'no';
+
+    @CreateDateColumn()
+    createdAt: Date;
+}

@@ -1,0 +1,26 @@
+// This file contains the controllers for handling content-related requests in the content service.
+
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { ContentService } from '../services/content.service';
+import { CreateSubmissionDto } from '../dtos/create-submission.dto';
+import { Submission } from '../entities/submission.entity';
+
+@Controller('content')
+export class ContentController {
+    constructor(private readonly contentService: ContentService) {}
+
+    @Post('submissions')
+    async createSubmission(@Body() createSubmissionDto: CreateSubmissionDto): Promise<Submission> {
+        return this.contentService.createSubmission(createSubmissionDto);
+    }
+
+    @Get('submissions/:id')
+    async getSubmission(@Param('id') id: string): Promise<Submission> {
+        return this.contentService.getSubmission(id);
+    }
+
+    @Get('submissions')
+    async getAllSubmissions(): Promise<Submission[]> {
+        return this.contentService.getAllSubmissions();
+    }
+}

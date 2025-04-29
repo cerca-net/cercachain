@@ -1,0 +1,29 @@
+// This file contains Data Transfer Objects (DTOs) for the social service, which are used for validating and transferring data.
+
+export class CreateConnectionDto {
+    userId: string;
+    targetUserId: string;
+}
+
+export class RemoveConnectionDto {
+    userId: string;
+    targetUserId: string;
+}
+
+export class PinSubmissionDto {
+    userId: string;
+    submissionId: string;
+}
+
+export class UnpinSubmissionDto {
+    userId: string;
+    submissionId: string;
+}
+
+export class GetUserConnectionsDto {
+    userId: string;
+}
+
+export class GetPinnedSubmissionsDto {
+    userId: string;
+}

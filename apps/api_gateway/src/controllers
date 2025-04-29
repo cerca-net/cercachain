@@ -1,0 +1,2 @@
+// This file will contain the controllers for handling incoming requests and responses for the API gateway. 
+// It is intentionally left blank for now as the specific controller implementations will be added later based on the services and routes defined.

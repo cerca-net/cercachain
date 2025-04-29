@@ -1,0 +1,18 @@
+{
+  "name": "atlas-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix apps/api_gateway\" \"npm run start --prefix apps/atlas_mobile_app\"",
+    "build": "npm run build --prefix apps/api_gateway && npm run build --prefix apps/atlas_mobile_app",
+    "test": "npm run test --prefix apps/api_gateway && npm run test --prefix apps/atlas_mobile_app",
+    "lint": "npm run lint --prefix apps/api_gateway && npm run lint --prefix apps/atlas_mobile_app"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  }
+}

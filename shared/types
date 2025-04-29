@@ -1,0 +1,60 @@
+// This file contains shared TypeScript types and interfaces used across the project.
+
+export interface User {
+    userId: string;
+    username: string;
+    email?: string;
+    bannerUrl?: string;
+    profilePictureUrl?: string;
+    name?: string;
+    surname?: string;
+    bio?: string;
+    userType: 'Person' | 'Business';
+    userVerified: boolean;
+    walletAddress?: string;
+    reputationScore: number;
+    trustScore: number;
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export interface Submission {
+    submissionId: string;
+    posterId: string;
+    typeObject: 'Post' | 'Item';
+    submissionType?: string;
+    date: Date;
+    refValue?: number;
+    imagesExtra?: string[];
+    videoUrl?: string;
+    audioUrl?: string;
+    body?: string;
+    header?: string;
+    ipfsHash?: string;
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export interface Order {
+    orderId: string;
+    userId: string;
+    submissionId: string;
+    status: 'Pending' | 'Processing' | 'Completed' | 'Cancelled';
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export interface Credit {
+    creditId: string;
+    userId: string;
+    fx: number;
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export interface Analytics {
+    analyticsId: string;
+    userId: string;
+    activityType: string;
+    timestamp: Date;
+}

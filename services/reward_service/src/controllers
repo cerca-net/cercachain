@@ -1,0 +1,26 @@
+// This file contains the controller for the Reward Service, handling requests related to rewards and decentralized units.
+
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { RewardService } from '../services/reward.service';
+import { CreateRewardDto } from '../dtos/create-reward.dto';
+import { Reward } from '../entities/reward.entity';
+
+@Controller('rewards')
+export class RewardController {
+    constructor(private readonly rewardService: RewardService) {}
+
+    @Post()
+    async createReward(@Body() createRewardDto: CreateRewardDto): Promise<Reward> {
+        return this.rewardService.createReward(createRewardDto);
+    }
+
+    @Get(':id')
+    async getReward(@Param('id') id: string): Promise<Reward> {
+        return this.rewardService.getReward(id);
+    }
+
+    @Get()
+    async getAllRewards(): Promise<Reward[]> {
+        return this.rewardService.getAllRewards();
+    }
+}

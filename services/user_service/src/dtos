@@ -1,0 +1,29 @@
+// This file contains Data Transfer Objects (DTOs) for validating and transferring data.
+
+export class CreateUserDto {
+    username: string;
+    email: string;
+    password: string;
+    name?: string;
+    surname?: string;
+    bio?: string;
+}
+
+export class UpdateUserDto {
+    username?: string;
+    email?: string;
+    name?: string;
+    surname?: string;
+    bio?: string;
+}
+
+export class UserResponseDto {
+    userId: string;
+    username: string;
+    email: string;
+    name: string;
+    surname: string;
+    bio: string;
+    createdAt: Date;
+    updatedAt: Date;
+}

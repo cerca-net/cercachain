@@ -1,0 +1,40 @@
+// This file contains the service logic for the Wallet Service, managing user credit balances and interactions with the blockchain layer.
+
+import { Injectable } from '@nestjs/common';
+import { Wallet } from '../entities/wallet.entity';
+import { CreateWalletDto } from '../dtos/create-wallet.dto';
+import { UpdateWalletDto } from '../dtos/update-wallet.dto';
+
+@Injectable()
+export class WalletService {
+    private wallets: Wallet[] = [];
+
+    create(createWalletDto: CreateWalletDto): Wallet {
+        const newWallet = new Wallet();
+        newWallet.userId = createWalletDto.userId;
+        newWallet.balance = createWalletDto.initialBalance;
+        this.wallets.push(newWallet);
+        return newWallet;
+    }
+
+    findAll(): Wallet[] {
+        return this.wallets;
+    }
+
+    findOne(userId: string): Wallet {
+        return this.wallets.find(wallet => wallet.userId === userId);
+    }
+
+    update(userId: string, updateWalletDto: UpdateWalletDto): Wallet {
+        const wallet = this.findOne(userId);
+        if (wallet) {
+            wallet.balance += updateWalletDto.amount;
+            return wallet;
+        }
+        throw new Error('Wallet not found');
+    }
+
+    delete(userId: string): void {
+        this.wallets = this.wallets.filter(wallet => wallet.userId !== userId);
+    }
+}

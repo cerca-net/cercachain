@@ -1,0 +1,28 @@
+// This file contains the implementation of the Search Service for the ATLAS platform.
+
+import { Injectable } from '@nestjs/common';
+import { SearchDto } from '../dtos/search.dto';
+import { Submission } from '../entities/submission.entity';
+import { SupabaseService } from '../../shared/services/supabase.service';
+
+@Injectable()
+export class SearchService {
+    constructor(private readonly supabaseService: SupabaseService) {}
+
+    async searchSubmissions(query: SearchDto): Promise<Submission[]> {
+        const { searchTerm } = query;
+
+        const { data, error } = await this.supabaseService
+            .from('submissions')
+            .select('*')
+            .ilike('header', `%${searchTerm}%`)
+            .or(`body.ilike.%${searchTerm}%`)
+            .limit(50);
+
+        if (error) {
+            throw new Error(`Search failed: ${error.message}`);
+        }
+
+        return data as Submission[];
+    }
+}

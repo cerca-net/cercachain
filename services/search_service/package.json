@@ -1,0 +1,28 @@
+{
+  "name": "search_service",
+  "version": "1.0.0",
+  "description": "Search service for the ATLAS platform, responsible for indexing and retrieving content.",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.0.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.0",
+    "pg": "^8.7.1",
+    "typeorm": "^0.2.41"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.0",
+    "jest": "^26.6.0",
+    "ts-jest": "^26.5.0",
+    "typescript": "^4.3.5"
+  },
+  "license": "MIT"
+}

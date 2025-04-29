@@ -1,0 +1,22 @@
+// This file contains Data Transfer Objects (DTOs) for the Reward Service.
+
+export class CreateRewardDto {
+    userId: string;
+    amount: number;
+    reason: string;
+}
+
+export class UpdateRewardDto {
+    rewardId: string;
+    amount?: number;
+    reason?: string;
+}
+
+export class RewardResponseDto {
+    rewardId: string;
+    userId: string;
+    amount: number;
+    reason: string;
+    createdAt: Date;
+    updatedAt: Date;
+}

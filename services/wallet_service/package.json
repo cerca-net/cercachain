@@ -1,0 +1,32 @@
+{
+  "name": "wallet_service",
+  "version": "1.0.0",
+  "description": "Wallet service for managing user credit balances and blockchain interactions.",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.0.0",
+    "class-validator": "^0.13.1",
+    "class-transformer": "^0.4.0",
+    "pg": "^8.7.1",
+    "supabase-js": "^1.28.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "ts-node": "^10.4.0",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.2",
+    "@nestjs/testing": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,29 @@
+// This file contains the service logic for the Social Service in the ATLAS platform.
+
+import { Injectable } from '@nestjs/common';
+import { CreateConnectionDto } from '../dtos/create-connection.dto';
+import { UserService } from '../user_service/src/services/user.service';
+
+@Injectable()
+export class SocialService {
+    constructor(private readonly userService: UserService) {}
+
+    async createConnection(createConnectionDto: CreateConnectionDto) {
+        const { userId, targetUserId } = createConnectionDto;
+        // Logic to create a connection (e.g., follow/unfollow)
+        // This could involve updating a database or an in-memory store
+    }
+
+    async getConnections(userId: string) {
+        // Logic to retrieve connections for a user
+        // This could involve querying a database
+    }
+
+    async removeConnection(userId: string, targetUserId: string) {
+        // Logic to remove a connection
+    }
+
+    async generateFeed(userId: string) {
+        // Logic to generate a feed based on user connections and activities
+    }
+}

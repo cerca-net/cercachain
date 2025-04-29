@@ -1,0 +1,10 @@
+export const API_BASE_URL = 'https://api.atlas-platform.com';
+export const DEFAULT_PAGE_SIZE = 20;
+export const MAX_UPLOAD_SIZE_MB = 10;
+export const SUPPORTED_IMAGE_FORMATS = ['image/jpeg', 'image/png', 'image/gif'];
+export const SUPPORTED_VIDEO_FORMATS = ['video/mp4', 'video/webm'];
+export const SUPPORTED_AUDIO_FORMATS = ['audio/mpeg', 'audio/wav'];
+export const AUTH0_DOMAIN = 'your-auth0-domain';
+export const AUTH0_CLIENT_ID = 'your-auth0-client-id';
+export const SUPABASE_URL = 'https://your-supabase-url';
+export const SUPABASE_ANON_KEY = 'your-supabase-anon-key';

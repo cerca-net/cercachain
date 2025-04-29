@@ -1,0 +1,49 @@
+// This file contains the service logic for the Order Service in the ATLAS platform.
+
+import { Injectable } from '@nestjs/common';
+import { Order } from '../entities/order.entity';
+import { CreateOrderDto } from '../dtos/create-order.dto';
+import { UpdateOrderDto } from '../dtos/update-order.dto';
+
+@Injectable()
+export class OrderService {
+    private orders: Order[] = [];
+
+    createOrder(createOrderDto: CreateOrderDto): Order {
+        const newOrder: Order = {
+            id: this.orders.length + 1,
+            ...createOrderDto,
+            createdAt: new Date(),
+            updatedAt: new Date(),
+        };
+        this.orders.push(newOrder);
+        return newOrder;
+    }
+
+    findAllOrders(): Order[] {
+        return this.orders;
+    }
+
+    findOrderById(id: number): Order {
+        return this.orders.find(order => order.id === id);
+    }
+
+    updateOrder(id: number, updateOrderDto: UpdateOrderDto): Order {
+        const orderIndex = this.orders.findIndex(order => order.id === id);
+        if (orderIndex > -1) {
+            const updatedOrder = { ...this.orders[orderIndex], ...updateOrderDto, updatedAt: new Date() };
+            this.orders[orderIndex] = updatedOrder;
+            return updatedOrder;
+        }
+        return null;
+    }
+
+    deleteOrder(id: number): boolean {
+        const orderIndex = this.orders.findIndex(order => order.id === id);
+        if (orderIndex > -1) {
+            this.orders.splice(orderIndex, 1);
+            return true;
+        }
+        return false;
+    }
+}

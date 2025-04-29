@@ -1,0 +1,26 @@
+// This file will contain the OrderController for handling order-related requests.
+
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { OrderService } from '../services/order.service';
+import { CreateOrderDto } from '../dtos/create-order.dto';
+import { Order } from '../entities/order.entity';
+
+@Controller('orders')
+export class OrderController {
+    constructor(private readonly orderService: OrderService) {}
+
+    @Post()
+    async createOrder(@Body() createOrderDto: CreateOrderDto): Promise<Order> {
+        return this.orderService.createOrder(createOrderDto);
+    }
+
+    @Get(':id')
+    async getOrder(@Param('id') id: string): Promise<Order> {
+        return this.orderService.getOrderById(id);
+    }
+
+    @Get()
+    async getAllOrders(): Promise<Order[]> {
+        return this.orderService.getAllOrders();
+    }
+}

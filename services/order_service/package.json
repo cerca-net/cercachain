@@ -1,0 +1,31 @@
+{
+  "name": "order_service",
+  "version": "1.0.0",
+  "description": "Order service for the ATLAS platform, handling order creation, status tracking, and fulfillment logic.",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.0.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.0",
+    "pg": "^8.7.1",
+    "supabase-js": "^1.28.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.0.0",
+    "jest": "^27.0.0",
+    "ts-jest": "^27.0.0",
+    "typescript": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT"
+}

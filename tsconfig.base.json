@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"],
+      "@apps/*": ["apps/*"],
+      "@services/*": ["services/*"]
+    },
+    "outDir": "./dist",
+    "rootDir": "./"
+  },
+  "include": [
+    "apps/**/*",
+    "services/**/*",
+    "shared/**/*",
+    "tsconfig.base.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

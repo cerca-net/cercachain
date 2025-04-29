@@ -1,0 +1,18 @@
+// This file contains Data Transfer Objects (DTOs) for the Wallet Service.
+
+export class CreateWalletDto {
+    userId: string;
+    initialBalance: number;
+}
+
+export class UpdateWalletDto {
+    userId: string;
+    newBalance: number;
+}
+
+export class WalletResponseDto {
+    userId: string;
+    balance: number;
+    createdAt: Date;
+    updatedAt: Date;
+}

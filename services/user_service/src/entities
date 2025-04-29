@@ -1,0 +1,63 @@
+// This file contains entity classes that represent the data models for the user service.
+
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+
+@Entity('users')
+export class User {
+    @PrimaryGeneratedColumn('uuid')
+    user_id: string;
+
+    @Column({ unique: true })
+    username: string;
+
+    @Column({ unique: true, nullable: true })
+    email: string;
+
+    @Column()
+    auth_provider_id: string;
+
+    @Column({ nullable: true })
+    banner_url: string;
+
+    @Column({ nullable: true })
+    profile_picture_url: string;
+
+    @Column()
+    name: string;
+
+    @Column()
+    surname: string;
+
+    @Column({ type: 'text', nullable: true })
+    bio: string;
+
+    @Column()
+    user_type: string;
+
+    @Column('text', { array: true, nullable: true })
+    user_occupations: string[];
+
+    @Column('text', { array: true, nullable: true })
+    user_interests: string[];
+
+    @Column({ default: false })
+    user_verified: boolean;
+
+    @Column({ default: false })
+    user_verified_pending: boolean;
+
+    @Column({ nullable: true })
+    wallet_address: string;
+
+    @Column({ type: 'decimal', default: 0 })
+    reputation_score: number;
+
+    @Column({ type: 'decimal', default: 0 })
+    trust_score: number;
+
+    @CreateDateColumn({ type: 'timestamp with time zone' })
+    created_at: Date;
+
+    @UpdateDateColumn({ type: 'timestamp with time zone' })
+    updated_at: Date;
+}

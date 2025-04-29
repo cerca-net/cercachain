@@ -1,0 +1,23 @@
+// This file contains the controller for the Wallet Service, handling wallet-related operations.
+
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { WalletService } from '../services/wallet.service';
+import { CreateWalletDto } from '../dtos/create-wallet.dto';
+import { Wallet } from '../entities/wallet.entity';
+
+@Controller('wallet')
+export class WalletController {
+    constructor(private readonly walletService: WalletService) {}
+
+    @Post()
+    async createWallet(@Body() createWalletDto: CreateWalletDto): Promise<Wallet> {
+        return this.walletService.createWallet(createWalletDto);
+    }
+
+    @Get(':userId')
+    async getWallet(@Param('userId') userId: string): Promise<Wallet> {
+        return this.walletService.getWalletByUserId(userId);
+    }
+
+    // Additional methods for wallet operations can be added here
+}

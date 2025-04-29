@@ -1,0 +1,36 @@
+// filepath: atlas-platform/services/notification_service/src/services/notification.service.ts
+import { Injectable } from '@nestjs/common';
+import { Notification } from '../entities/notification.entity';
+import { CreateNotificationDto } from '../dtos/create-notification.dto';
+
+@Injectable()
+export class NotificationService {
+    private notifications: Notification[] = [];
+
+    createNotification(createNotificationDto: CreateNotificationDto): Notification {
+        const notification: Notification = {
+            id: this.notifications.length + 1,
+            ...createNotificationDto,
+            createdAt: new Date(),
+        };
+        this.notifications.push(notification);
+        return notification;
+    }
+
+    getAllNotifications(): Notification[] {
+        return this.notifications;
+    }
+
+    getNotificationById(id: number): Notification | undefined {
+        return this.notifications.find(notification => notification.id === id);
+    }
+
+    deleteNotification(id: number): boolean {
+        const index = this.notifications.findIndex(notification => notification.id === id);
+        if (index > -1) {
+            this.notifications.splice(index, 1);
+            return true;
+        }
+        return false;
+    }
+}

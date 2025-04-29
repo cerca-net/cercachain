@@ -1,0 +1,26 @@
+// This file contains the controllers for the social service, handling user connections and social interactions.
+
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { SocialService } from '../services/social_service';
+import { CreateConnectionDto } from '../dtos/create-connection.dto';
+import { Connection } from '../entities/connection.entity';
+
+@Controller('social')
+export class SocialController {
+    constructor(private readonly socialService: SocialService) {}
+
+    @Post('connect')
+    async connectUsers(@Body() createConnectionDto: CreateConnectionDto): Promise<Connection> {
+        return this.socialService.connectUsers(createConnectionDto);
+    }
+
+    @Get('connections/:userId')
+    async getUserConnections(@Param('userId') userId: string): Promise<Connection[]> {
+        return this.socialService.getUserConnections(userId);
+    }
+
+    @Get('feed/:userId')
+    async getUserFeed(@Param('userId') userId: string): Promise<any> {
+        return this.socialService.getUserFeed(userId);
+    }
+}
